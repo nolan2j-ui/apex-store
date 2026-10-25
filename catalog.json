@@ -633,16 +633,6 @@
       "offer_angle": "20% Coach Affiliate Commission + Wholesale Event Tees"
     },
     {
-      "id": "PTN-04",
-      "name": "Shamba Fit / Performance Center OC",
-      "type": "Functional Endurance & Race Gym",
-      "city": "Costa Mesa / Laguna Niguel, CA",
-      "website": "https://www.shambavibe.com",
-      "email": "info@shambaway.com",
-      "phone": "(714) 975-3909",
-      "offer_angle": "Race Prep Apparel & Percussion/Infrared Recovery Bundle"
-    },
-    {
       "id": "PTN-05",
       "name": "Rebel Strength OC",
       "type": "Functional Strength Gym",
@@ -691,26 +681,6 @@
       "email": "info@ocfasttwitch.com",
       "phone": "(714) 485-2122",
       "offer_angle": "TibBar Pro + Nordic Strap Athlete Home Durability Kit"
-    },
-    {
-      "id": "PTN-10",
-      "name": "Eat My Dust Run Club (EMDRC)",
-      "type": "Orange County Community Run Club",
-      "city": "Orange County, CA",
-      "website": "https://www.eatmydustrc.com",
-      "email": "eatmydustrunclub@gmail.com",
-      "phone": "Instagram / Email Direct",
-      "offer_angle": "20% Run Club Treasury Kickback on Compromised Running Tees"
-    },
-    {
-      "id": "PTN-11",
-      "name": "Orange County Track Club (OCTC)",
-      "type": "Track & Distance Running Club",
-      "city": "Costa Mesa, CA",
-      "website": "https://www.octrackclub.org",
-      "email": "octceditor@hotmail.com",
-      "phone": "(949) 863-6166",
-      "offer_angle": "Porta-Potty Line PR Tee & Pneumatic Leg Boot Member Discount"
     },
     {
       "id": "PTN-12",
