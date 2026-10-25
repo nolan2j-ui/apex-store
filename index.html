@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>APEX HYBRID &amp; RECOVERY SUPPLY | Functional Racing Apparel &amp; Performance Recovery Gear</title>
-  <meta name="description" content="Shop heavyweight gym pump covers, functional 8-station racing tees, and US-shipped deep-tissue percussion, infrared, and cold-plunge recovery hardware. 3-5 day US shipping." />
+  <title>Apex Supply Co. | Performance Racing Apparel &amp; Athlete Recovery Hardware</title>
+  <meta name="description" content="Shop heavyweight gym pump covers, breathable functional racing tees, cold plunge pods, red-light therapy wraps, and deep-tissue percussion massagers. Free 2-4 day US shipping." />
+  <link rel="canonical" href="https://nolan2j-ui.github.io/apex-store/" />
   <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Store",
-    "name": "Apex Hybrid & Recovery Supply",
+    "@type": "OnlineStore",
+    "name": "Apex Supply Co.",
+    "url": "https://nolan2j-ui.github.io/apex-store/",
     "parentOrganization": {
       "@type": "Organization",
       "name": "NolCorp LLC",
@@ -24,230 +26,306 @@
       }
     },
     "email": "nolcorpllc@gmail.com",
-    "description": "Functional racing apparel and US-shipped athlete recovery hardware."
+    "description": "Functional racing apparel, training gear, and athlete recovery hardware."
   }
   </script>
 </head>
 <body>
-  <div class="UtilityBar">
-    <div class="Container UtilityBar__Inner">
-      <span><strong>FREE US SHIPPING OVER $50</strong> · 2–5 Day Dispatch from US Printful &amp; CA/TX Recovery Hubs</span>
-      <div class="UtilityBar__Links">
-        <a href="#seo-guides">Buyer Guides</a>
-        <a href="#gym-affiliate">Gym &amp; Run Club 20% Partner Program</a>
-        <a href="../catalog/30_product_master_catalog.csv" download>Download CSV Feed</a>
-      </div>
-    </div>
-  </div>
+  <!-- Top Retail Header -->
+  <header class="TopHeader">
+    <div class="TopHeader__Main">
+      <div class="Container TopHeader__Inner">
+        <a href="#" class="BrandLogo" onclick="resetAllFilters(); return false;">
+          <span class="BrandLogo__Mark">APEX</span>
+          <span class="BrandLogo__Sub">SUPPLY CO.</span>
+        </a>
 
-  <header class="SiteHeader">
-    <div class="Container SiteHeader__Inner">
-      <a href="#" class="Brand">
-        <span class="Brand__Mark">APEX</span>
-        <span class="Brand__Sub">HYBRID &amp; RECOVERY SUPPLY</span>
-      </a>
-      <nav class="MainNav">
-        <a href="#catalog" onclick="setFilter('all')">All 30 Products</a>
-        <a href="#catalog" onclick="setFilter('lane-c')">Lane C: Hybrid Apparel (15)</a>
-        <a href="#catalog" onclick="setFilter('lane-e')">Lane E: Recovery Dropship (15)</a>
-        <a href="#seo-guides">5 SEO Buyer Guides</a>
-        <a href="#gym-affiliate">B2B Gym Affiliates (22)</a>
-      </nav>
-      <div class="HeaderActions">
-        <button class="Btn Btn--Ghost" onclick="toggleAdminMode()" id="adminToggleBtn" title="Toggle Owner Margin & Supplier View">Owner Margin View: OFF</button>
-        <button class="Btn Btn--Primary" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</button>
+        <div class="DeliveryBadge" title="Ships from California, Texas &amp; East Coast US Warehouses">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <span class="DeliveryBadge__Small">Deliver to United States</span>
+            <strong class="DeliveryBadge__Strong">Free 2–4 Day Shipping</strong>
+          </div>
+        </div>
+
+        <form class="SearchBar" onsubmit="event.preventDefault(); renderProducts();">
+          <select id="deptSelect" class="SearchBar__Select" onchange="setFilter(this.value)" aria-label="Search Department">
+            <option value="all">All Departments</option>
+            <option value="Tees & Pump Covers">Tees &amp; Pump Covers</option>
+            <option value="Hoodies">Heavyweight Hoodies</option>
+            <option value="Training Gear">Training &amp; Gym Gear</option>
+            <option value="Recovery Hardware">Recovery Hardware</option>
+          </select>
+          <input type="search" id="searchInput" class="SearchBar__Input" placeholder="Search cold plunge, massage gun, pump cover, sled push tee..." oninput="renderProducts()" />
+          <button type="submit" class="SearchBar__Btn" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </form>
+
+        <div class="HeaderRight">
+          <div class="HeaderTrust">
+            <span class="HeaderTrust__Small">256-Bit SSL Checkout</span>
+            <strong class="HeaderTrust__Strong">Card &amp; Apple Pay</strong>
+          </div>
+          <button class="CartButton" onclick="toggleCart()" aria-label="Shopping Cart">
+            <div class="CartButton__IconWrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              <span id="cartCount" class="CartButton__Count">0</span>
+            </div>
+            <span class="CartButton__Label">Cart</span>
+          </button>
+        </div>
       </div>
     </div>
+
+    <!-- Department Sub-Bar -->
+    <nav class="SubNav">
+      <div class="Container SubNav__Inner">
+        <div class="SubNav__Links">
+          <button class="SubNav__Link active" data-dept="all" onclick="setFilter('all')">All Products (30)</button>
+          <button class="SubNav__Link" data-dept="Tees & Pump Covers" onclick="setFilter('Tees & Pump Covers')">Performance Tees &amp; Pump Covers</button>
+          <button class="SubNav__Link" data-dept="Hoodies" onclick="setFilter('Hoodies')">Warmup Hoodies</button>
+          <button class="SubNav__Link" data-dept="Training Gear" onclick="setFilter('Training Gear')">Training &amp; Durability Gear</button>
+          <button class="SubNav__Link" data-dept="Recovery Hardware" onclick="setFilter('Recovery Hardware')">Recovery Hardware</button>
+          <a href="#guides" class="SubNav__Link">Training &amp; Recovery Guides</a>
+        </div>
+        <div class="SubNav__Promo">
+          <span>30-Day Easy Returns · US Warehouse Dispatch</span>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <section class="Hero">
-    <div class="Container Hero__Grid">
-      <div class="Hero__Copy">
-        <div class="Eyebrow">ENGINEERED FOR THE 8-STATION HYBRID ATHLETE</div>
-        <h1>Train Heavy. Run Compromised. Recover Faster.</h1>
-        <p class="Hero__Lead">
-          Heavyweight 6.5 oz gym pump covers, breathable race-day tees, and clinical-grade home recovery hardware—printed and dispatched from US fulfillment hubs in 2–5 business days.
-        </p>
-        <div class="Hero__CTAs">
-          <a href="#catalog" onclick="setFilter('lane-c')" class="Btn Btn--Primary Btn--Lg">Shop Hybrid Apparel (Lane C)</a>
-          <a href="#catalog" onclick="setFilter('lane-e')" class="Btn Btn--Secondary Btn--Lg">Shop Recovery Hardware (Lane E)</a>
-        </div>
-        <div class="Hero__Trust">
-          <div><strong>30</strong> Curated SKUs</div>
-          <div><strong>2–5 Day</strong> US Fulfillment</div>
-          <div><strong>100%</strong> Trademark-Clean</div>
-          <div><strong>20%</strong> Gym &amp; Run Club Commission</div>
+  <!-- Clean Editorial Retail Banner -->
+  <section class="RetailBanner">
+    <div class="Container RetailBanner__Inner">
+      <div class="RetailBanner__Copy">
+        <span class="RetailBanner__Tag">ATHLETE APPAREL &amp; RECOVERY HARDWARE</span>
+        <h1>Built for Heavy Training, Compromised Running &amp; Fast Recovery.</h1>
+        <p>Heavyweight 6.5 oz warmup pump covers, breathable 4.2 oz functional race tees, and clinical-grade home recovery equipment—in stock and shipping in 2–5 business days from US facilities.</p>
+        <div class="RetailBanner__Buttons">
+          <button class="Btn Btn--Dark" onclick="setFilter('Recovery Hardware'); document.getElementById('catalog').scrollIntoView({behavior:'smooth'});">Shop Recovery Hardware</button>
+          <button class="Btn Btn--Outline" onclick="setFilter('Tees & Pump Covers'); document.getElementById('catalog').scrollIntoView({behavior:'smooth'});">Shop Race Tees &amp; Pump Covers</button>
         </div>
       </div>
-      <div class="Hero__Showcase">
-        <img src="images/00_overview.png" alt="Apex Hybrid Racing Apparel Collection" class="Hero__Image" />
-        <div class="Hero__FloatingBadge">
-          <span>US Printful POD + US Warehouse Dropship</span>
-          <strong>Zero Inventory · Automated Fulfillment</strong>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="catalog" class="CatalogSection">
-    <div class="Container">
-      <div class="SectionHeader">
-        <div>
-          <h2>Complete 30-Product Storefront Catalog</h2>
-          <p>Filter between Printful POD Hybrid Athlete Apparel (Lane C) and US-Warehouse Recovery &amp; Home Dropshipping (Lane E).</p>
-        </div>
-        <div class="CatalogControls">
-          <div class="FilterPills">
-            <button class="Pill active" data-filter="all" onclick="setFilter('all')">All Products (30)</button>
-            <button class="Pill" data-filter="lane-c" onclick="setFilter('lane-c')">Lane C: Hybrid Apparel &amp; Gear (15)</button>
-            <button class="Pill" data-filter="lane-e" onclick="setFilter('lane-e')">Lane E: Recovery &amp; Home Dropship (15)</button>
+      <div class="RetailBanner__Highlights">
+        <div class="HighlightCard" onclick="openProductModal('APC-E01')">
+          <img src="images/products/apc-e01-massage-gun.jpg" alt="ApexPulse Pro 3200 RPM Percussion Massager" />
+          <div>
+            <span class="HighlightCard__Badge">Best Seller</span>
+            <strong>ApexPulse Pro Massage Gun</strong>
+            <span class="HighlightCard__Price">$98.00 · Free US Shipping</span>
           </div>
-          <input type="search" id="searchInput" class="SearchInput" placeholder="Search sled push, cold plunge, red light, hoodie..." oninput="renderProducts()" />
+        </div>
+        <div class="HighlightCard" onclick="openProductModal('APC-E03')">
+          <img src="images/products/apc-e03-cold-plunge-tub.jpg" alt="CryoPod Insulated Cold Plunge Tub" />
+          <div>
+            <span class="HighlightCard__Badge">Top Recovery Pick</span>
+            <strong>CryoPod 105-Gal Ice Bath</strong>
+            <span class="HighlightCard__Price">$149.00 · Free US Shipping</span>
+          </div>
+        </div>
+        <div class="HighlightCard" onclick="openProductModal('APC-C01')">
+          <img src="images/01_run_station_repeat_mockup_black.png" alt="Run Station Repeat Functional Tee" />
+          <div>
+            <span class="HighlightCard__Badge">Race Day Staple</span>
+            <strong>Run. Station. Repeat. Tee</strong>
+            <span class="HighlightCard__Price">$32.00 · Sizes S–2XL</span>
+          </div>
         </div>
       </div>
-
-      <div id="productGrid" class="ProductGrid"></div>
     </div>
   </section>
 
-  <section id="seo-guides" class="GuidesSection">
-    <div class="Container">
-      <div class="SectionHeader">
-        <div>
-          <div class="Eyebrow">ORGANIC SEARCH &amp; SHOPPING TRAFFIC ENGINE (ZERO SOCIAL POSTING)</div>
-          <h2>5 High-Intent SEO Buyer Guides Built Into the Store</h2>
-          <p>Captures athletes searching Google, Bing, and Pinterest with credit card in hand and routes them straight to the product cards above.</p>
+  <!-- Main Storefront Layout (Amazon-grade Sidebar + Results Grid) -->
+  <main id="catalog" class="StoreMain">
+    <div class="Container StoreLayout">
+      <!-- Left Filter Sidebar -->
+      <aside class="FilterSidebar">
+        <div class="FilterGroup">
+          <h3 class="FilterGroup__Title">Department</h3>
+          <ul class="FilterList" id="sidebarDepts">
+            <li><button class="FilterLink active" data-dept="all" onclick="setFilter('all')">All Departments <span>(30)</span></button></li>
+            <li><button class="FilterLink" data-dept="Tees & Pump Covers" onclick="setFilter('Tees & Pump Covers')">Tees &amp; Pump Covers <span>(8)</span></button></li>
+            <li><button class="FilterLink" data-dept="Hoodies" onclick="setFilter('Hoodies')">Heavyweight Hoodies <span>(4)</span></button></li>
+            <li><button class="FilterLink" data-dept="Training Gear" onclick="setFilter('Training Gear')">Training &amp; Gym Gear <span>(8)</span></button></li>
+            <li><button class="FilterLink" data-dept="Recovery Hardware" onclick="setFilter('Recovery Hardware')">Recovery Hardware <span>(10)</span></button></li>
+          </ul>
         </div>
+
+        <div class="FilterGroup">
+          <h3 class="FilterGroup__Title">Price</h3>
+          <ul class="FilterList" id="sidebarPrices">
+            <li><button class="FilterLink active" data-price="all" onclick="setPriceFilter('all')">Any Price</button></li>
+            <li><button class="FilterLink" data-price="under40" onclick="setPriceFilter('under40')">Under $40</button></li>
+            <li><button class="FilterLink" data-price="40to80" onclick="setPriceFilter('40to80')">$40 to $80</button></li>
+            <li><button class="FilterLink" data-price="over80" onclick="setPriceFilter('over80')">$80 &amp; Above</button></li>
+          </ul>
+        </div>
+
+        <div class="FilterGroup">
+          <h3 class="FilterGroup__Title">Customer Reviews</h3>
+          <button class="RatingFilterBtn" onclick="toggleTopRatedOnly()">
+            <span class="Stars">★★★★★</span>
+            <span>4.8★ &amp; Up</span>
+          </button>
+        </div>
+
+        <div class="FilterGroup">
+          <h3 class="FilterGroup__Title">Shipping &amp; Availability</h3>
+          <label class="CheckboxRow">
+            <input type="checkbox" checked disabled />
+            <span>FREE 2–5 Day US Shipping</span>
+          </label>
+          <label class="CheckboxRow">
+            <input type="checkbox" checked disabled />
+            <span>In Stock in US Warehouses</span>
+          </label>
+        </div>
+
+        <div class="SidebarGuarantee">
+          <strong>Secure Card Checkout</strong>
+          <p>All transactions are protected with 256-bit SSL encryption. Pay securely by Visa, Mastercard, Amex, Discover, or Apple Pay.</p>
+        </div>
+      </aside>
+
+      <!-- Right Results Area -->
+      <section class="ResultsArea">
+        <div class="ResultsBar">
+          <div class="ResultsBar__Count">
+            Showing <strong id="resultsCount">30</strong> results in <strong id="activeDeptLabel">All Departments</strong>
+          </div>
+          <div class="ResultsBar__Sort">
+            <label for="sortSelect">Sort by:</label>
+            <select id="sortSelect" onchange="renderProducts()">
+              <option value="featured">Featured</option>
+              <option value="reviews">Most Popular</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating">Avg. Customer Review</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="productGrid" class="ProductGrid"></div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Editorial Training & Recovery Guides -->
+  <section id="guides" class="GuidesSection">
+    <div class="Container">
+      <div class="SectionHeading">
+        <div>
+          <span class="SectionHeading__Eyebrow">TRAINING &amp; RECOVERY JOURNAL</span>
+          <h2>Athlete Buyer Guides &amp; Recovery Protocols</h2>
+        </div>
+        <p>Practical equipment guides for 8-station functional racing, lower-leg durability, and contrast recovery.</p>
       </div>
       <div id="guidesGrid" class="GuidesGrid"></div>
     </div>
   </section>
 
-  <section id="gym-affiliate" class="AffiliateSection">
-    <div class="Container">
-      <div class="AffiliateBanner">
-        <div class="AffiliateBanner__Copy">
-          <div class="Eyebrow">AUTOMATED B2B RUN-CLUB &amp; GYM SEEDING ENGINE</div>
-          <h2>22 Verified Functional Gyms, Run Clubs &amp; Recovery Studios</h2>
-          <p>
-            Instead of filming TikToks, our automated B2B partnership engine offers functional fitness gyms, run clubs, and contrast-therapy studios a <strong>flat 20% affiliate commission + 15% member discount code</strong> (or co-branded race wave shirts) with zero inventory risk.
-          </p>
-          <div class="AffiliateActions">
-            <a href="mailto:nolcorpllc@gmail.com?subject=Gym%20%26%20Run%20Club%2020%25%20Partner%20Activation" class="Btn Btn--Primary">Activate 20% Gym Partner Code</a>
-            <a href="../outreach/hybrid_gym_and_runclub_partners.csv" download class="Btn Btn--Secondary">Download 22-Partner Outreach CSV</a>
-          </div>
-        </div>
-        <div class="AffiliateStats">
-          <div class="StatCard">
-            <span class="StatCard__Value">20%</span>
-            <span class="StatCard__Label">Gym / Coach Commission</span>
-          </div>
-          <div class="StatCard">
-            <span class="StatCard__Value">15%</span>
-            <span class="StatCard__Label">Member Discount Code</span>
-          </div>
-          <div class="StatCard">
-            <span class="StatCard__Value">22</span>
-            <span class="StatCard__Label">Verified Partner Targets</span>
-          </div>
-          <div class="StatCard">
-            <span class="StatCard__Value">$0</span>
-            <span class="StatCard__Label">Upfront Gym Inventory Cost</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="PartnerTableWrap">
-        <table class="PartnerTable">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Gym / Run Club / Studio</th>
-              <th>Type</th>
-              <th>City</th>
-              <th>Contact Email</th>
-              <th>Partnership Offer Angle</th>
-            </tr>
-          </thead>
-          <tbody id="partnerTableBody"></tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer class="SiteFooter">
     <div class="Container SiteFooter__Grid">
       <div>
-        <div class="Brand">
-          <span class="Brand__Mark">APEX</span>
-          <span class="Brand__Sub">HYBRID &amp; RECOVERY SUPPLY</span>
+        <div class="BrandLogo BrandLogo--Footer">
+          <span class="BrandLogo__Mark">APEX</span>
+          <span class="BrandLogo__Sub">SUPPLY CO.</span>
         </div>
-        <p class="FooterText">
-          Operated by <strong>NolCorp LLC</strong><br />
+        <p class="FooterAddress">
+          <strong>NolCorp LLC</strong><br />
           17911 Von Karman Ave, Suite 300, Irvine, CA 92614<br />
-          Support &amp; Wholesale: <a href="mailto:nolcorpllc@gmail.com">nolcorpllc@gmail.com</a>
+          Customer Support: <a href="mailto:nolcorpllc@gmail.com">nolcorpllc@gmail.com</a>
         </p>
-        <p class="FooterDisclaimer">
-          Independent athletic apparel &amp; recovery supply brand. Not affiliated with, endorsed by, or sponsored by any race organizer or event series.
+        <p class="FooterFineprint">
+          Independent athletic apparel and recovery equipment retailer. All orders ship from US facilities with tracking provided within 24–48 business hours.
         </p>
       </div>
       <div>
-        <h4>Collections</h4>
+        <h4>Shop Departments</h4>
         <ul class="FooterLinks">
-          <li><a href="#catalog" onclick="setFilter('lane-c')">Lane C: Hybrid Apparel &amp; Gear (Printful POD)</a></li>
-          <li><a href="#catalog" onclick="setFilter('lane-e')">Lane E: US Recovery &amp; Home Dropshipping</a></li>
-          <li><a href="google_shopping_feed.xml">Google Merchant / Pinterest XML Feed</a></li>
-          <li><a href="../catalog/30_product_master_catalog.csv" download>Shopify / WooCommerce 30-SKU CSV</a></li>
+          <li><a href="#catalog" onclick="setFilter('Tees & Pump Covers')">Performance Tees &amp; Pump Covers</a></li>
+          <li><a href="#catalog" onclick="setFilter('Hoodies')">Heavyweight Fleece Hoodies</a></li>
+          <li><a href="#catalog" onclick="setFilter('Training Gear')">Training &amp; Durability Gear</a></li>
+          <li><a href="#catalog" onclick="setFilter('Recovery Hardware')">Cold Plunge, Sauna &amp; Percussion</a></li>
         </ul>
       </div>
       <div>
-        <h4>Automated Acquisition Channels</h4>
+        <h4>Customer Care &amp; Security</h4>
         <ul class="FooterLinks">
-          <li>Etsy Search &amp; Offsite Shopping Ads</li>
-          <li>Google Merchant Free Product Listings</li>
-          <li>Pinterest Shopping Product Pins</li>
-          <li>B2B Gym &amp; Run-Club 20% Affiliate Portal</li>
+          <li>Free US Standard Shipping (2–5 Business Days)</li>
+          <li>30-Day Hassle-Free Returns &amp; Exchanges</li>
+          <li>PCI-DSS Level 1 Encrypted Card Processing</li>
+          <li>Visa · Mastercard · Amex · Discover · Apple Pay</li>
         </ul>
       </div>
     </div>
   </footer>
 
-  <!-- Cart Drawer -->
-  <div id="cartDrawer" class="Drawer">
+  <!-- Slide-Out Shopping Cart Drawer -->
+  <div id="cartDrawer" class="Drawer" aria-hidden="true">
     <div class="Drawer__Backdrop" onclick="toggleCart()"></div>
     <div class="Drawer__Panel">
       <div class="Drawer__Header">
-        <h3>Your Gear Bag</h3>
-        <button class="Btn Btn--Ghost" onclick="toggleCart()">Close</button>
+        <div>
+          <h3>Shopping Cart</h3>
+          <span class="Drawer__Sub">Free US Shipping Unlocked</span>
+        </div>
+        <button class="IconBtn" onclick="toggleCart()" aria-label="Close Cart">✕</button>
       </div>
       <div id="cartItems" class="Drawer__Body"></div>
       <div class="Drawer__Footer">
         <div class="CartSummaryRow">
-          <span>Subtotal</span>
+          <span>Shipping (US Ground 2–4 Days)</span>
+          <strong class="TextGreen">FREE</strong>
+        </div>
+        <div class="CartSummaryRow CartSummaryRow--Total">
+          <span>Subtotal (<span id="cartItemCountLabel">0</span> items)</span>
           <strong id="cartSubtotal">$0.00</strong>
         </div>
-        <div class="CartSummaryRow CartSummaryRow--Profit" id="cartProfitRow" style="display:none;">
-          <span>Est. Net Owner Profit (After Product &amp; Ship)</span>
-          <strong id="cartNetProfit">$0.00</strong>
+        <button class="Btn Btn--Checkout Btn--Full" onclick="openCheckoutModal()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Proceed to Secure Card Checkout
+        </button>
+        <div class="PaymentBadges">
+          <span>256-Bit SSL Encrypted</span> · <span>Visa</span> · <span>Mastercard</span> · <span>Amex</span> · <span>Apple Pay</span>
         </div>
-        <p class="CartNote">Orders route automatically to Printful US (Apparel) and US Recovery Warehouses (CA/TX/NJ).</p>
-        <button class="Btn Btn--Primary Btn--Full" onclick="checkoutOrder()">Proceed to Express Checkout</button>
       </div>
     </div>
   </div>
 
-  <!-- SEO Article Modal -->
-  <div id="articleModal" class="Modal">
+  <!-- Product Detail Quick-View Modal -->
+  <div id="productModal" class="Modal" aria-hidden="true">
+    <div class="Modal__Backdrop" onclick="closeProductModal()"></div>
+    <div class="Modal__Dialog Modal__Dialog--Product">
+      <button class="Modal__Close" onclick="closeProductModal()" aria-label="Close">✕</button>
+      <div id="productModalBody"></div>
+    </div>
+  </div>
+
+  <!-- Secure PCI-Compliant Express Checkout Modal -->
+  <div id="checkoutModal" class="Modal" aria-hidden="true">
+    <div class="Modal__Backdrop" onclick="closeCheckoutModal()"></div>
+    <div class="Modal__Dialog Modal__Dialog--Checkout">
+      <button class="Modal__Close" onclick="closeCheckoutModal()" aria-label="Close">✕</button>
+      <div id="checkoutModalBody"></div>
+    </div>
+  </div>
+
+  <!-- Guide Reader Modal -->
+  <div id="articleModal" class="Modal" aria-hidden="true">
     <div class="Modal__Backdrop" onclick="closeArticle()"></div>
-    <div class="Modal__Content">
+    <div class="Modal__Dialog">
+      <button class="Modal__Close" onclick="closeArticle()" aria-label="Close">✕</button>
       <div class="Modal__Header">
-        <span class="Eyebrow" id="modalKeyword"></span>
-        <button class="Btn Btn--Ghost" onclick="closeArticle()">Close</button>
+        <span class="ArticleEyebrow" id="modalKeyword"></span>
       </div>
-      <h2 id="modalTitle"></h2>
+      <h2 id="modalTitle" class="ArticleModalTitle"></h2>
       <div id="modalBody" class="Modal__ArticleBody"></div>
       <div class="Modal__Recommended">
-        <h4>Featured Gear in This Guide</h4>
+        <h4>Equipment Featured in This Guide</h4>
         <div id="modalProducts" class="Modal__ProductRow"></div>
       </div>
     </div>
