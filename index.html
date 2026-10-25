@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APEX HYBRID &amp; RECOVERY SUPPLY | Functional Racing Apparel &amp; Performance Recovery Gear</title>
+  <meta name="description" content="Shop heavyweight gym pump covers, functional 8-station racing tees, and US-shipped deep-tissue percussion, infrared, and cold-plunge recovery hardware. 3-5 day US shipping." />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Apex Hybrid & Recovery Supply",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "NolCorp LLC",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "17911 Von Karman Ave, Suite 300",
+        "addressLocality": "Irvine",
+        "addressRegion": "CA",
+        "postalCode": "92614",
+        "addressCountry": "US"
+      }
+    },
+    "email": "nolcorpllc@gmail.com",
+    "description": "Functional racing apparel and US-shipped athlete recovery hardware."
+  }
+  </script>
+</head>
+<body>
+  <div class="UtilityBar">
+    <div class="Container UtilityBar__Inner">
+      <span><strong>FREE US SHIPPING OVER $50</strong> · 2–5 Day Dispatch from US Printful &amp; CA/TX Recovery Hubs</span>
+      <div class="UtilityBar__Links">
+        <a href="#seo-guides">Buyer Guides</a>
+        <a href="#gym-affiliate">Gym &amp; Run Club 20% Partner Program</a>
+        <a href="../catalog/30_product_master_catalog.csv" download>Download CSV Feed</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="SiteHeader">
+    <div class="Container SiteHeader__Inner">
+      <a href="#" class="Brand">
+        <span class="Brand__Mark">APEX</span>
+        <span class="Brand__Sub">HYBRID &amp; RECOVERY SUPPLY</span>
+      </a>
+      <nav class="MainNav">
+        <a href="#catalog" onclick="setFilter('all')">All 30 Products</a>
+        <a href="#catalog" onclick="setFilter('lane-c')">Lane C: Hybrid Apparel (15)</a>
+        <a href="#catalog" onclick="setFilter('lane-e')">Lane E: Recovery Dropship (15)</a>
+        <a href="#seo-guides">5 SEO Buyer Guides</a>
+        <a href="#gym-affiliate">B2B Gym Affiliates (25)</a>
+      </nav>
+      <div class="HeaderActions">
+        <button class="Btn Btn--Ghost" onclick="toggleAdminMode()" id="adminToggleBtn" title="Toggle Owner Margin & Supplier View">Owner Margin View: OFF</button>
+        <button class="Btn Btn--Primary" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="Hero">
+    <div class="Container Hero__Grid">
+      <div class="Hero__Copy">
+        <div class="Eyebrow">ENGINEERED FOR THE 8-STATION HYBRID ATHLETE</div>
+        <h1>Train Heavy. Run Compromised. Recover Faster.</h1>
+        <p class="Hero__Lead">
+          Heavyweight 6.5 oz gym pump covers, breathable race-day tees, and clinical-grade home recovery hardware—printed and dispatched from US fulfillment hubs in 2–5 business days.
+        </p>
+        <div class="Hero__CTAs">
+          <a href="#catalog" onclick="setFilter('lane-c')" class="Btn Btn--Primary Btn--Lg">Shop Hybrid Apparel (Lane C)</a>
+          <a href="#catalog" onclick="setFilter('lane-e')" class="Btn Btn--Secondary Btn--Lg">Shop Recovery Hardware (Lane E)</a>
+        </div>
+        <div class="Hero__Trust">
+          <div><strong>30</strong> Curated SKUs</div>
+          <div><strong>2–5 Day</strong> US Fulfillment</div>
+          <div><strong>100%</strong> Trademark-Clean</div>
+          <div><strong>20%</strong> Gym &amp; Run Club Commission</div>
+        </div>
+      </div>
+      <div class="Hero__Showcase">
+        <img src="images/00_overview.png" alt="Apex Hybrid Racing Apparel Collection" class="Hero__Image" />
+        <div class="Hero__FloatingBadge">
+          <span>US Printful POD + US Warehouse Dropship</span>
+          <strong>Zero Inventory · Automated Fulfillment</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalog" class="CatalogSection">
+    <div class="Container">
+      <div class="SectionHeader">
+        <div>
+          <h2>Complete 30-Product Storefront Catalog</h2>
+          <p>Filter between Printful POD Hybrid Athlete Apparel (Lane C) and US-Warehouse Recovery &amp; Home Dropshipping (Lane E).</p>
+        </div>
+        <div class="CatalogControls">
+          <div class="FilterPills">
+            <button class="Pill active" data-filter="all" onclick="setFilter('all')">All Products (30)</button>
+            <button class="Pill" data-filter="lane-c" onclick="setFilter('lane-c')">Lane C: Hybrid Apparel &amp; Gear (15)</button>
+            <button class="Pill" data-filter="lane-e" onclick="setFilter('lane-e')">Lane E: Recovery &amp; Home Dropship (15)</button>
+          </div>
+          <input type="search" id="searchInput" class="SearchInput" placeholder="Search sled push, cold plunge, red light, hoodie..." oninput="renderProducts()" />
+        </div>
+      </div>
+
+      <div id="productGrid" class="ProductGrid"></div>
+    </div>
+  </section>
+
+  <section id="seo-guides" class="GuidesSection">
+    <div class="Container">
+      <div class="SectionHeader">
+        <div>
+          <div class="Eyebrow">ORGANIC SEARCH &amp; SHOPPING TRAFFIC ENGINE (ZERO SOCIAL POSTING)</div>
+          <h2>5 High-Intent SEO Buyer Guides Built Into the Store</h2>
+          <p>Captures athletes searching Google, Bing, and Pinterest with credit card in hand and routes them straight to the product cards above.</p>
+        </div>
+      </div>
+      <div id="guidesGrid" class="GuidesGrid"></div>
+    </div>
+  </section>
+
+  <section id="gym-affiliate" class="AffiliateSection">
+    <div class="Container">
+      <div class="AffiliateBanner">
+        <div class="AffiliateBanner__Copy">
+          <div class="Eyebrow">AUTOMATED B2B RUN-CLUB &amp; GYM SEEDING ENGINE</div>
+          <h2>25 Verified Functional Gyms, Run Clubs &amp; Recovery Studios</h2>
+          <p>
+            Instead of filming TikToks, our automated B2B partnership engine offers functional fitness gyms, run clubs, and contrast-therapy studios a <strong>flat 20% affiliate commission + 15% member discount code</strong> (or co-branded race wave shirts) with zero inventory risk.
+          </p>
+          <div class="AffiliateActions">
+            <a href="mailto:nolcorpllc@gmail.com?subject=Gym%20%26%20Run%20Club%2020%25%20Partner%20Activation" class="Btn Btn--Primary">Activate 20% Gym Partner Code</a>
+            <a href="../outreach/hybrid_gym_and_runclub_partners.csv" download class="Btn Btn--Secondary">Download 25-Partner Outreach CSV</a>
+          </div>
+        </div>
+        <div class="AffiliateStats">
+          <div class="StatCard">
+            <span class="StatCard__Value">20%</span>
+            <span class="StatCard__Label">Gym / Coach Commission</span>
+          </div>
+          <div class="StatCard">
+            <span class="StatCard__Value">15%</span>
+            <span class="StatCard__Label">Member Discount Code</span>
+          </div>
+          <div class="StatCard">
+            <span class="StatCard__Value">25</span>
+            <span class="StatCard__Label">Verified Partner Targets</span>
+          </div>
+          <div class="StatCard">
+            <span class="StatCard__Value">$0</span>
+            <span class="StatCard__Label">Upfront Gym Inventory Cost</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="PartnerTableWrap">
+        <table class="PartnerTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Gym / Run Club / Studio</th>
+              <th>Type</th>
+              <th>City</th>
+              <th>Contact Email</th>
+              <th>Partnership Offer Angle</th>
+            </tr>
+          </thead>
+          <tbody id="partnerTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="SiteFooter">
+    <div class="Container SiteFooter__Grid">
+      <div>
+        <div class="Brand">
+          <span class="Brand__Mark">APEX</span>
+          <span class="Brand__Sub">HYBRID &amp; RECOVERY SUPPLY</span>
+        </div>
+        <p class="FooterText">
+          Operated by <strong>NolCorp LLC</strong><br />
+          17911 Von Karman Ave, Suite 300, Irvine, CA 92614<br />
+          Support &amp; Wholesale: <a href="mailto:nolcorpllc@gmail.com">nolcorpllc@gmail.com</a>
+        </p>
+        <p class="FooterDisclaimer">
+          Independent athletic apparel &amp; recovery supply brand. Not affiliated with, endorsed by, or sponsored by any race organizer or event series.
+        </p>
+      </div>
+      <div>
+        <h4>Collections</h4>
+        <ul class="FooterLinks">
+          <li><a href="#catalog" onclick="setFilter('lane-c')">Lane C: Hybrid Apparel &amp; Gear (Printful POD)</a></li>
+          <li><a href="#catalog" onclick="setFilter('lane-e')">Lane E: US Recovery &amp; Home Dropshipping</a></li>
+          <li><a href="google_shopping_feed.xml">Google Merchant / Pinterest XML Feed</a></li>
+          <li><a href="../catalog/30_product_master_catalog.csv" download>Shopify / WooCommerce 30-SKU CSV</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Automated Acquisition Channels</h4>
+        <ul class="FooterLinks">
+          <li>Etsy Search &amp; Offsite Shopping Ads</li>
+          <li>Google Merchant Free Product Listings</li>
+          <li>Pinterest Shopping Product Pins</li>
+          <li>B2B Gym &amp; Run-Club 20% Affiliate Portal</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div id="cartDrawer" class="Drawer">
+    <div class="Drawer__Backdrop" onclick="toggleCart()"></div>
+    <div class="Drawer__Panel">
+      <div class="Drawer__Header">
+        <h3>Your Gear Bag</h3>
+        <button class="Btn Btn--Ghost" onclick="toggleCart()">Close</button>
+      </div>
+      <div id="cartItems" class="Drawer__Body"></div>
+      <div class="Drawer__Footer">
+        <div class="CartSummaryRow">
+          <span>Subtotal</span>
+          <strong id="cartSubtotal">$0.00</strong>
+        </div>
+        <div class="CartSummaryRow CartSummaryRow--Profit" id="cartProfitRow" style="display:none;">
+          <span>Est. Net Owner Profit (After Product &amp; Ship)</span>
+          <strong id="cartNetProfit">$0.00</strong>
+        </div>
+        <p class="CartNote">Orders route automatically to Printful US (Apparel) and US Recovery Warehouses (CA/TX/NJ).</p>
+        <button class="Btn Btn--Primary Btn--Full" onclick="checkoutOrder()">Proceed to Express Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEO Article Modal -->
+  <div id="articleModal" class="Modal">
+    <div class="Modal__Backdrop" onclick="closeArticle()"></div>
+    <div class="Modal__Content">
+      <div class="Modal__Header">
+        <span class="Eyebrow" id="modalKeyword"></span>
+        <button class="Btn Btn--Ghost" onclick="closeArticle()">Close</button>
+      </div>
+      <h2 id="modalTitle"></h2>
+      <div id="modalBody" class="Modal__ArticleBody"></div>
+      <div class="Modal__Recommended">
+        <h4>Featured Gear in This Guide</h4>
+        <div id="modalProducts" class="Modal__ProductRow"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
