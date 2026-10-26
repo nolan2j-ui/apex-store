@@ -642,14 +642,14 @@ def inject_static_seo_into_index():
 
     index_html = re.sub(
         r'<div class="ProductGrid" id="productGrid">.*?</div>\s*</div>\s*</div>\s*</div>\s*</main>',
-        f'<div class="ProductGrid" id="productGrid">\n{chr(10).join(static_cards)}\n          </div>\n        </div>\n      </div>\n    </div>\n  </main>',
+        lambda m: f'<div class="ProductGrid" id="productGrid">\n{chr(10).join(static_cards)}\n          </div>\n        </div>\n      </div>\n    </div>\n  </main>',
         index_html,
         flags=re.DOTALL,
     )
 
     index_html = re.sub(
         r'<div class="GuidesGrid" id="guidesGrid">.*?</div>\s*</div>\s*</section>',
-        f'<div class="GuidesGrid" id="guidesGrid">\n{chr(10).join(static_guides)}\n      </div>\n    </div>\n  </section>',
+        lambda m: f'<div class="GuidesGrid" id="guidesGrid">\n{chr(10).join(static_guides)}\n      </div>\n    </div>\n  </section>',
         index_html,
         flags=re.DOTALL,
     )
@@ -658,7 +658,7 @@ def inject_static_seo_into_index():
     if 'id="seoSchemaJsonLd"' in index_html:
         index_html = re.sub(
             r'\s*<script type="application/ld\+json" id="seoSchemaJsonLd">.*?</script>\s*</head>',
-            "\n" + schema_block,
+            lambda m: "\n" + schema_block,
             index_html,
             flags=re.DOTALL,
         )
