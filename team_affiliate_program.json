@@ -1,0 +1,1081 @@
+{
+  "program_name": "Apex Hybrid & Recovery Supply \u2014 HYROX Doubles Packs, Run-Club Bulk Orders & $0-Upfront Affiliate Program",
+  "version": "2026.10.25",
+  "storefront_url": "https://www.apexhybridco.com",
+  "team_orders_url": "https://www.apexhybridco.com/team_orders.html",
+  "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+  "stripe_mode": "sandbox_configured_ready_for_livemode",
+  "support_email": "support@apexhybridco.com",
+  "fulfillment_email": "nolcorpllc@gmail.com",
+  "zero_upfront_spend_policy": {
+    "upfront_cost_to_apex": 0.0,
+    "upfront_cost_to_affiliate": 0.0,
+    "commission_payout_trigger": "Commission is accrued and paid ONLY after a real customer checkout clears in Stripe and the 14-day return/chargeback window completes. Zero upfront retainer, zero free seed inventory required, zero ad spend.",
+    "fulfillment_workflow": "Customer pays via Stripe -> Stripe payout clears -> Printful US DTG / US Warehouse fulfills order on-demand -> Affiliate receives 15%-20% net commission payout via Stripe Transfer / Mercury ACH."
+  },
+  "stripe_coupons_and_promo_codes": {
+    "coupons_created_in_stripe": [
+      {
+        "coupon_id": "APEX_CLUB_10",
+        "name": "Run Club & Doubles 10% Off",
+        "percent_off": 10.0,
+        "duration": "forever",
+        "status": "active_in_stripe_acct_1UUaY9Rut88O8nG2"
+      },
+      {
+        "coupon_id": "APEX_TEAM_15",
+        "name": "HYROX Team 5-Pack 15% Off",
+        "percent_off": 15.0,
+        "duration": "forever",
+        "status": "active_in_stripe_acct_1UUaY9Rut88O8nG2"
+      },
+      {
+        "coupon_id": "APEX_GYM_20",
+        "name": "Gym & Run-Club 10-Pack 20% Off",
+        "percent_off": 20.0,
+        "duration": "forever",
+        "status": "active_in_stripe_acct_1UUaY9Rut88O8nG2"
+      }
+    ],
+    "active_storefront_promo_codes": [
+      {
+        "code": "DOUBLES10",
+        "coupon_id": "APEX_CLUB_10",
+        "discount_pct": 10,
+        "min_order_usd": 50.0,
+        "target_audience": "HYROX Doubles partners ordering any 2 shirts, warmup jackets, or recovery items",
+        "affiliate_commission_pct": 15
+      },
+      {
+        "code": "CLUB10",
+        "coupon_id": "APEX_CLUB_10",
+        "discount_pct": 10,
+        "min_order_usd": 0.0,
+        "target_audience": "Run-Club & Hybrid Training Gym members using a partner referral link",
+        "affiliate_commission_pct": 15
+      },
+      {
+        "code": "HYROX10",
+        "coupon_id": "APEX_CLUB_10",
+        "discount_pct": 10,
+        "min_order_usd": 0.0,
+        "target_audience": "2026/2027 North American Race Series athletes (Chicago, Dallas, Anaheim, Miami, Las Vegas, NYC)",
+        "affiliate_commission_pct": 15
+      },
+      {
+        "code": "TEAM15",
+        "coupon_id": "APEX_TEAM_15",
+        "discount_pct": 15,
+        "min_order_usd": 140.0,
+        "target_audience": "Run-Club 5-Pack Crew Kits & Relay Teams (5+ units)",
+        "affiliate_commission_pct": 15
+      },
+      {
+        "code": "GYM20",
+        "coupon_id": "APEX_GYM_20",
+        "discount_pct": 20,
+        "min_order_usd": 250.0,
+        "target_audience": "Hybrid Gym & Run-Club 10-Pack Box Drops & Coaching Staff Orders (10+ units)",
+        "affiliate_commission_pct": 15
+      }
+    ]
+  },
+  "bundles": [
+    {
+      "bundle_id": "BUNDLE-DBL-TECH-2PK",
+      "title": "HYROX Doubles Breathable Tech Tee 2-Pack",
+      "subtitle": "2\u00d7 AeroMesh\u2122 4.0 or Dry-Pace\u2122 Perforated Race Tees (Mix & Match Sizes/Colors)",
+      "badge": "Most Popular Doubles Kit",
+      "pack_size": 2,
+      "category": "Doubles 2-Pack",
+      "eligible_skus": [
+        "APC-C36",
+        "APC-C37",
+        "APC-C38",
+        "APC-C39",
+        "APC-C40",
+        "APC-C41"
+      ],
+      "default_sku": "APC-C36",
+      "image": "images/streetwear/apc-c36-black.png",
+      "alt_image": "images/streetwear/apc-c36-white.png",
+      "regular_unit_price": 36.0,
+      "regular_total_price": 72.0,
+      "bundle_price": 62.0,
+      "price_per_athlete": 31.0,
+      "savings_usd": 10.0,
+      "savings_pct": 13.9,
+      "unit_economics": {
+        "supplier": "Printful US DTG / Technical Sublimation (Combined 2-Unit Parcel)",
+        "wholesale_blank_and_print_2_units": 28.5,
+        "combined_us_shipping": 6.5,
+        "total_landed_cost": 35.0,
+        "stripe_processing_fee_est": 2.1,
+        "net_profit_direct": 24.9,
+        "net_margin_direct_pct": 40.2,
+        "affiliate_commission_15pct": 9.3,
+        "net_profit_after_affiliate": 15.6,
+        "net_margin_after_affiliate_pct": 25.2
+      },
+      "stripe_product_id": "BUNDLE-DBL-TECH-2PK",
+      "stripe_price_id": "price_1UUdfgRut88O8nG2ishjYEpb",
+      "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-TECH-2PK",
+      "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C36&qty=2&promo=DOUBLES10"
+    },
+    {
+      "bundle_id": "BUNDLE-DBL-CITY-2PK",
+      "title": "HYROX Doubles Race City & Slogan Tee 2-Pack",
+      "subtitle": "2\u00d7 Race City Tees (Chicago \u00b7 Dallas \u00b7 Anaheim \u00b7 Miami \u00b7 Vegas \u00b7 NYC) or 8-Station Graphic Tees",
+      "badge": "Race City Match",
+      "pack_size": 2,
+      "category": "Doubles 2-Pack",
+      "eligible_skus": [
+        "APC-C16",
+        "APC-C17",
+        "APC-C18",
+        "APC-C19",
+        "APC-C20",
+        "APC-C21",
+        "APC-C01",
+        "APC-C03",
+        "APC-C04",
+        "APC-C06",
+        "APC-C08",
+        "APC-C23",
+        "APC-C24",
+        "APC-C26",
+        "APC-C27"
+      ],
+      "default_sku": "APC-C16",
+      "image": "images/streetwear/apc-c16-black.png",
+      "alt_image": "images/streetwear/apc-c16-white.png",
+      "regular_unit_price": 34.0,
+      "regular_total_price": 68.0,
+      "bundle_price": 58.0,
+      "price_per_athlete": 29.0,
+      "savings_usd": 10.0,
+      "savings_pct": 14.7,
+      "unit_economics": {
+        "supplier": "Printful US DTG (Bella+Canvas 3001 Combined 2-Unit Parcel)",
+        "wholesale_blank_and_print_2_units": 27.0,
+        "combined_us_shipping": 6.75,
+        "total_landed_cost": 33.75,
+        "stripe_processing_fee_est": 1.98,
+        "net_profit_direct": 22.27,
+        "net_margin_direct_pct": 38.4,
+        "affiliate_commission_15pct": 8.7,
+        "net_profit_after_affiliate": 13.57,
+        "net_margin_after_affiliate_pct": 23.4
+      },
+      "stripe_product_id": "BUNDLE-DBL-CITY-2PK",
+      "stripe_price_id": "price_1UUdfvRut88O8nG2XZcN82kc",
+      "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-CITY-2PK",
+      "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C16&qty=2&promo=DOUBLES10"
+    },
+    {
+      "bundle_id": "BUNDLE-DBL-JACKET-2PK",
+      "title": "Lightweight Race Warmup Jacket Doubles 2-Pack",
+      "subtitle": "2\u00d7 AeroShell\u2122 Corral Jackets or 8-Station Ripstop Windbreaker Track Shells",
+      "badge": "New Corral Shell",
+      "pack_size": 2,
+      "category": "Doubles 2-Pack",
+      "eligible_skus": [
+        "APC-C42",
+        "APC-C43",
+        "APC-C44",
+        "APC-C45"
+      ],
+      "default_sku": "APC-C42",
+      "image": "images/streetwear/apc-c42-black.png",
+      "alt_image": "images/streetwear/apc-c42-white.png",
+      "regular_unit_price": 64.0,
+      "regular_total_price": 128.0,
+      "bundle_price": 108.0,
+      "price_per_athlete": 54.0,
+      "savings_usd": 20.0,
+      "savings_pct": 15.6,
+      "unit_economics": {
+        "supplier": "Printful US Lightweight DWR Windbreaker Shell (Combined 2-Unit Parcel)",
+        "wholesale_blank_and_print_2_units": 42.0,
+        "combined_us_shipping": 7.5,
+        "total_landed_cost": 49.5,
+        "stripe_processing_fee_est": 3.43,
+        "net_profit_direct": 55.07,
+        "net_margin_direct_pct": 51.0,
+        "affiliate_commission_15pct": 16.2,
+        "net_profit_after_affiliate": 38.87,
+        "net_margin_after_affiliate_pct": 36.0
+      },
+      "stripe_product_id": "BUNDLE-DBL-JACKET-2PK",
+      "stripe_price_id": "price_1UUdfiRut88O8nG2SM0REVAF",
+      "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-JACKET-2PK",
+      "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C42&qty=2&promo=DOUBLES10"
+    },
+    {
+      "bundle_id": "BUNDLE-DBL-HOODIE-2PK",
+      "title": "Heavyweight Corral Warmup Hoodie Doubles 2-Pack",
+      "subtitle": "2\u00d7 8.0 oz Brushed Fleece Pullover Hoodies (Sub-60 Club, Sled Push Dept, World Series)",
+      "badge": "Cold Morning Staging",
+      "pack_size": 2,
+      "category": "Doubles 2-Pack",
+      "eligible_skus": [
+        "APC-C09",
+        "APC-C10",
+        "APC-C11",
+        "APC-C12",
+        "APC-C32",
+        "APC-C33",
+        "APC-C34",
+        "APC-C35"
+      ],
+      "default_sku": "APC-C09",
+      "image": "images/streetwear/apc-c09-black.png",
+      "alt_image": "images/streetwear/apc-c09-white.png",
+      "regular_unit_price": 56.0,
+      "regular_total_price": 112.0,
+      "bundle_price": 96.0,
+      "price_per_athlete": 48.0,
+      "savings_usd": 16.0,
+      "savings_pct": 14.3,
+      "unit_economics": {
+        "supplier": "Printful US 8.0 oz Heavy Blend Hoodie (Combined 2-Unit Parcel)",
+        "wholesale_blank_and_print_2_units": 43.0,
+        "combined_us_shipping": 8.5,
+        "total_landed_cost": 51.5,
+        "stripe_processing_fee_est": 3.08,
+        "net_profit_direct": 41.42,
+        "net_margin_direct_pct": 43.1,
+        "affiliate_commission_15pct": 14.4,
+        "net_profit_after_affiliate": 27.02,
+        "net_margin_after_affiliate_pct": 28.1
+      },
+      "stripe_product_id": "BUNDLE-DBL-HOODIE-2PK",
+      "stripe_price_id": "price_1UUdfwRut88O8nG2aofM0N7v",
+      "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-HOODIE-2PK",
+      "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C09&qty=2&promo=DOUBLES10"
+    },
+    {
+      "bundle_id": "BUNDLE-DBL-PRO-KIT",
+      "title": "Full Doubles Race-Day Kit (2 Tees + 2 Warmup Jackets + Chalk 2-Pack)",
+      "subtitle": "2\u00d7 Breathable Tech Tees + 2\u00d7 AeroShell\u2122 Warmup Jackets + 1\u00d7 ChalkLock\u2122 Carabiner Liquid Chalk 2-Pack",
+      "badge": "Best Value \u00b7 Save $48",
+      "pack_size": 5,
+      "category": "Complete Doubles Kit",
+      "eligible_skus": [
+        "APC-C36",
+        "APC-C42",
+        "APC-E23"
+      ],
+      "default_sku": "APC-C36",
+      "image": "images/streetwear/apc-c42-black.png",
+      "alt_image": "images/streetwear/apc-c36-black.png",
+      "regular_unit_price": 113.0,
+      "regular_total_price": 226.0,
+      "bundle_price": 178.0,
+      "price_per_athlete": 89.0,
+      "savings_usd": 48.0,
+      "savings_pct": 21.2,
+      "unit_economics": {
+        "supplier": "Printful US (2 Tees + 2 Jackets) + US Warehouse (ChalkLock 2-Pack)",
+        "wholesale_and_fulfillment_breakdown": "$35.00 (2 Tech Tees) + $49.50 (2 Warmup Shells) + $8.50 (ChalkLock 2-Pack)",
+        "total_landed_cost": 93.0,
+        "stripe_processing_fee_est": 5.46,
+        "net_profit_direct": 79.54,
+        "net_margin_direct_pct": 44.7,
+        "affiliate_commission_15pct": 26.7,
+        "net_profit_after_affiliate": 52.84,
+        "net_margin_after_affiliate_pct": 29.7
+      },
+      "stripe_product_id": "BUNDLE-DBL-PRO-KIT",
+      "stripe_price_id": "price_1UUdfjRut88O8nG2lnnNjpvE",
+      "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-PRO-KIT",
+      "storefront_buy_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-PRO-KIT"
+    },
+    {
+      "bundle_id": "BUNDLE-CLUB-5PK",
+      "title": "Run-Club & HYROX Relay Squad 5-Pack Crew Kit",
+      "subtitle": "5\u00d7 Performance, Race City, or Breathable Tech Tees (Mix & Match Any Sizes S\u20132XL & Colorways)",
+      "badge": "Relay & Run-Club Tier",
+      "pack_size": 5,
+      "category": "Team & Run-Club Bulk",
+      "eligible_skus": [
+        "APC-C36",
+        "APC-C37",
+        "APC-C16",
+        "APC-C17",
+        "APC-C18",
+        "APC-C19",
+        "APC-C20",
+        "APC-C21",
+        "APC-C01",
+        "APC-C04"
+      ],
+      "default_sku": "APC-C04",
+      "image": "images/streetwear/apc-c04-black.png",
+      "alt_image": "images/streetwear/apc-c04-white.png",
+      "regular_unit_price": 36.0,
+      "regular_total_price": 180.0,
+      "bundle_price": 145.0,
+      "price_per_athlete": 29.0,
+      "savings_usd": 35.0,
+      "savings_pct": 19.4,
+      "unit_economics": {
+        "supplier": "Printful US DTG 5-Unit Combined Bulk Parcel",
+        "wholesale_blank_and_print_5_units": 68.75,
+        "combined_us_shipping": 11.25,
+        "total_landed_cost": 80.0,
+        "stripe_processing_fee_est": 4.51,
+        "net_profit_direct": 60.49,
+        "net_margin_direct_pct": 41.7,
+        "affiliate_commission_15pct": 21.75,
+        "net_profit_after_affiliate": 38.74,
+        "net_margin_after_affiliate_pct": 26.7
+      },
+      "stripe_product_id": "BUNDLE-CLUB-5PK",
+      "stripe_price_id": "price_1UUdfkRut88O8nG2Or7Es5on",
+      "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-CLUB-5PK",
+      "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C04&qty=5&promo=TEAM15"
+    },
+    {
+      "bundle_id": "BUNDLE-GYM-10PK",
+      "title": "Hybrid Gym & Run-Club 10-Pack Box Drop",
+      "subtitle": "10\u00d7 Performance or Tech Tees (Mix & Match Sizes S\u20132XL) + Custom 10% Club Code & 15% Affiliate Commission Activation",
+      "badge": "Gym & Coach Wholesale",
+      "pack_size": 10,
+      "category": "Team & Run-Club Bulk",
+      "eligible_skus": [
+        "APC-C36",
+        "APC-C37",
+        "APC-C01",
+        "APC-C03",
+        "APC-C04",
+        "APC-C08",
+        "APC-C16",
+        "APC-C17",
+        "APC-C18",
+        "APC-C19",
+        "APC-C20",
+        "APC-C21"
+      ],
+      "default_sku": "APC-C01",
+      "image": "images/streetwear/apc-c01-black.png",
+      "alt_image": "images/streetwear/apc-c01-white.png",
+      "regular_unit_price": 36.0,
+      "regular_total_price": 360.0,
+      "bundle_price": 268.0,
+      "price_per_athlete": 26.8,
+      "savings_usd": 92.0,
+      "savings_pct": 25.6,
+      "unit_economics": {
+        "supplier": "Printful US DTG 10-Unit Combined Bulk Parcel",
+        "wholesale_blank_and_print_10_units": 135.0,
+        "combined_us_shipping": 18.0,
+        "total_landed_cost": 153.0,
+        "stripe_processing_fee_est": 8.07,
+        "net_profit_direct": 106.93,
+        "net_margin_direct_pct": 39.9,
+        "affiliate_commission_15pct": 40.2,
+        "net_profit_after_affiliate": 66.73,
+        "net_margin_after_affiliate_pct": 24.9
+      },
+      "stripe_product_id": "BUNDLE-GYM-10PK",
+      "stripe_price_id": "price_1UUdfnRut88O8nG2NNOyfiqy",
+      "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-GYM-10PK",
+      "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C01&qty=10&promo=GYM20"
+    },
+    {
+      "bundle_id": "BUNDLE-GYM-RECOVERY-LAB",
+      "title": "Gym Recovery Corner Hardware Bundle (3-Piece Lab)",
+      "subtitle": "1\u00d7 ApexPulse Pro Massage Gun (APC-E01) + 1\u00d7 CryoPod Cold Plunge Tub (APC-E03) + 1\u00d7 AirRecover Leg Compression Boots (APC-E12)",
+      "badge": "55.9% Net Margin \u00b7 Gym Lab",
+      "pack_size": 3,
+      "category": "Gym Recovery Hardware",
+      "eligible_skus": [
+        "APC-E01",
+        "APC-E03",
+        "APC-E12"
+      ],
+      "default_sku": "APC-E12",
+      "image": "images/products/apc-e12-compression-boots.jpg",
+      "alt_image": "images/products/apc-e03-cold-plunge.jpg",
+      "regular_unit_price": 128.67,
+      "regular_total_price": 386.0,
+      "bundle_price": 319.0,
+      "price_per_athlete": 106.33,
+      "savings_usd": 67.0,
+      "savings_pct": 17.4,
+      "unit_economics": {
+        "supplier": "US Warehouse Direct Fast-Ship (3-5 Business Days)",
+        "wholesale_and_shipping_breakdown": "$35.00 (APC-E01) + $48.00 (APC-E03) + $48.00 (APC-E12)",
+        "total_landed_cost": 131.0,
+        "stripe_processing_fee_est": 9.55,
+        "net_profit_direct": 178.45,
+        "net_margin_direct_pct": 55.9,
+        "affiliate_commission_15pct": 47.85,
+        "net_profit_after_affiliate": 130.6,
+        "net_margin_after_affiliate_pct": 40.9
+      },
+      "stripe_product_id": "BUNDLE-GYM-RECOVERY-LAB",
+      "stripe_price_id": "price_1UUdfxRut88O8nG2rAjgOMFt",
+      "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-GYM-RECOVERY-LAB",
+      "storefront_buy_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-GYM-RECOVERY-LAB"
+    }
+  ],
+  "affiliate_program": {
+    "headline": "$0-Upfront Run-Club, Hybrid Gym & Doubles Athlete Partner Program",
+    "summary": "Partner with Apex Hybrid & Recovery Supply at $0 cost. Your members get 10% off every order (including Doubles 2-Packs & Recovery Hardware), and your club or coaching business earns 15%\u201320% cash commission on every verified Stripe checkout.",
+    "tiers": [
+      {
+        "tier_id": "TIER-DOUBLES-AMBASSADOR",
+        "name": "Doubles Athlete & Pace Leader",
+        "who_its_for": "HYROX Doubles pairs, Age-Group contenders, and local track/turf pace leaders",
+        "member_discount_pct": 10,
+        "partner_commission_pct": 15,
+        "monthly_sales_threshold": "$0+ (Instant Activation)",
+        "perks": [
+          "Custom referral link (https://www.apexhybridco.com/?ref=YOURCODE) & 10% off member code",
+          "15% commission on every cleared Stripe sale (apparel, Doubles packs, and recovery hardware)",
+          "Zero inventory risk, zero minimum monthly quota",
+          "Automatic bi-weekly payout after 14-day order settlement window"
+        ]
+      },
+      {
+        "tier_id": "TIER-RUN-CLUB",
+        "name": "Run Club & Track Crew Partner",
+        "who_its_for": "City run clubs, morning track crews, marathon build groups, and hybrid meetups",
+        "member_discount_pct": 10,
+        "partner_commission_pct": 18,
+        "monthly_sales_threshold": "$500+ in cleared monthly crew volume (or 5+ Doubles Packs)",
+        "perks": [
+          "18% revenue share on all cleared Stripe orders attributed to your club link or code",
+          "Priority access to Race City Tees (Chicago, Dallas, SoCal, Miami, Vegas, NYC) for group travel",
+          "Printable Locker-Room / Strava Club QR Code Kit linking directly to your club's Team Pack page",
+          "Stackable 19%\u201326% wholesale discount on 5-Pack and 10-Pack Crew Kits"
+        ]
+      },
+      {
+        "tier_id": "TIER-HYBRID-GYM",
+        "name": "Official Hybrid Training Gym & Affiliate Box",
+        "who_its_for": "HYROX training clubs, functional fitness boxes, strength & conditioning gyms, and physical therapy clinics",
+        "member_discount_pct": 10,
+        "partner_commission_pct": 20,
+        "monthly_sales_threshold": "$1,200+ in cleared monthly volume (or 1+ Gym Recovery Lab Bundle + 10-Pack Box)",
+        "perks": [
+          "20% top-tier cash commission on all member apparel & high-ticket recovery hardware orders ($98\u2013$319 AOV)",
+          "Wholesale access to the Gym Recovery Corner Bundle (Massage Gun + CryoPod + Compression Boots for $319)",
+          "Dedicated gym co-branded landing URL parameter (?ref=YOURGYM&promo=CLUB10)",
+          "Direct net-settlement via Stripe Transfer or ACH after cleared customer checkout"
+        ]
+      }
+    ],
+    "payout_rules": [
+      "100% performance-based ($0 upfront spend): commissions are calculated on net collected product revenue (excluding shipping & tax) only after the customer's Stripe payment succeeds and clears.",
+      "14-day settlement lock: payouts release 14 days post-fulfillment to protect against canceled orders, size exchanges, or chargebacks.",
+      "Dual attribution: sales are credited whenever a buyer uses your referral URL (?ref=CODE) OR enters your club promo code at checkout.",
+      "Self-sustaining unit economics: even with a 10% customer discount + 15% affiliate payout, Apex Hybrid maintains a 23%\u201341% positive net margin across every apparel bundle and hardware SKU."
+    ],
+    "boutique_coach_and_gym_offer": {
+      "coach_seeding_gift": "Free race shirt (AeroMesh\u2122 4.0 or City Edition) or AeroShell\u2122 Lightweight Warmup Piece sent in your size \u2014 no strings attached, just want your honest take.",
+      "athlete_member_discount": "10% off entire store with your custom coach/gym code (e.g., WESTGROVE10, KEVINKIM10, TAEJO10, FTX10)",
+      "shirt_sales_bonus": "$25 cash bonus for every 5 shirts sold using your coach/gym code",
+      "recovery_hardware_commission": "15%\u201320% cash commission on all recovery hardware & Gym Recovery Lab bundles",
+      "upfront_cost": "$0.00 (Zero inventory risk, zero minimum monthly quota)"
+    }
+  },
+  "catalog_stripe_audit": {
+    "audit_timestamp": "2026-10-25T19:30:00-07:00",
+    "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+    "total_catalog_skus": 72,
+    "skus_with_stripe_price_id_in_catalog": 48,
+    "skus_missing_stripe_price_id_in_catalog": 24,
+    "new_bundle_products_created_in_stripe": 8,
+    "new_individual_products_created_in_stripe": 6,
+    "new_coupons_created_in_stripe": 3,
+    "payment_links_architecture": {
+      "hosted_buy_stripe_com_links_count": 0,
+      "storefront_checkout_flow": "All 72 SKUs in catalog.json use `https://www.apexhybridco.com/?buy={SKU}` and the storefront cart drawer (`app.js`), which binds `stripe_account_id` (`acct_1UUaY9Rut88O8nG2`), `stripe_product_id`, and `stripe_price_id` into the instant order reservation & Stripe invoice/payment dispatch flow.",
+      "promotion_code_support": "Enabled across both the main storefront (`/?promo=CODE`) and `/team_orders.html` interactive checkout calculator (`DOUBLES10`, `CLUB10`, `HYROX10`, `TEAM15`, `GYM20`), backed by active Stripe Coupons `APEX_CLUB_10` (10% off), `APEX_TEAM_15` (15% off), and `APEX_GYM_20` (20% off)."
+    },
+    "reused_price_id_findings_and_fixes": [],
+    "missing_price_id_skus_detail": [
+      {
+        "id": "APC-C16",
+        "title": "Chicago Championship Division Tee \u2014 Navy Pier 8x1000m Club",
+        "retail_price": 34.0,
+        "category": "Race City Tees",
+        "stripe_product_id": "APC-C16",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C28",
+        "title": "Run. Station. Repeat. Winged Crest Sleeveless Race Day Muscle Tank",
+        "retail_price": 30.0,
+        "category": "Sleeveless Muscle Tanks",
+        "stripe_product_id": "APC-C28",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C34",
+        "title": "Chicago \u00b7 Dallas \u00b7 SoCal 2026/2027 World Series Prep Winged Hoodie",
+        "retail_price": 58.0,
+        "category": "Pullover Hoodies",
+        "stripe_product_id": "APC-C34",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C17",
+        "title": "Dallas Turf & Threshold Tee \u2014 Lone Star 8-Station Classic",
+        "retail_price": 34.0,
+        "category": "Race City Tees",
+        "stripe_product_id": "APC-C17",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C18",
+        "title": "Anaheim SoCal Open Division Tee \u2014 Pacific Coast Race Series",
+        "retail_price": 34.0,
+        "category": "Race City Tees",
+        "stripe_product_id": "APC-C18",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C22",
+        "title": "\"8 Runs. 8 Stations. Zero Excuses.\" Winged Crest Race & Pump Cover Tee",
+        "retail_price": 36.0,
+        "category": "Pump Covers",
+        "stripe_product_id": "APC-C22",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C38",
+        "title": "VentTech\u2122 Perforated Hybrid Training Shirt \u2014 \"Zone 4 / Zone 5 Engine\"",
+        "retail_price": 38.0,
+        "category": "Breathable Tech Tees",
+        "stripe_product_id": "APC-C38",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C29",
+        "title": "Sled Push Dept. Barbell Crest Conditioning Muscle Tank",
+        "retail_price": 30.0,
+        "category": "Sleeveless Muscle Tanks",
+        "stripe_product_id": "APC-C29",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C19",
+        "title": "Miami Beach Heat-Block Race Tee \u2014 South Florida Endurance Club",
+        "retail_price": 34.0,
+        "category": "Race City Tees",
+        "stripe_product_id": "APC-C19",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C20",
+        "title": "Las Vegas Championship Qualifier Tee \u2014 Sin City Turf Club",
+        "retail_price": 34.0,
+        "category": "Race City Tees",
+        "stripe_product_id": "APC-C20",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C21",
+        "title": "New York Hudson Pier Race Tee \u2014 NYC Metro Endurance Dept.",
+        "retail_price": 34.0,
+        "category": "Race City Tees",
+        "stripe_product_id": "APC-C21",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C40",
+        "title": "CoolCore\u2122 Anti-Chafe Turf & Sled Tech Shirt \u2014 \"Push Heavy. Run Fast.\"",
+        "retail_price": 38.0,
+        "category": "Breathable Tech Tees",
+        "stripe_product_id": "APC-C40",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C41",
+        "title": "HyperBreathe\u2122 Seamless Conditioning Tee \u2014 \"Roxzone Speed Dept.\"",
+        "retail_price": 38.0,
+        "category": "Breathable Tech Tees",
+        "stripe_product_id": "APC-C41",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C39",
+        "title": "Featherweight 3.8 oz Breathable Race Tee \u2014 \"Zero Drag \u00b7 8 Stations \u00b7 Sub-60\"",
+        "retail_price": 34.0,
+        "category": "Breathable Tech Tees",
+        "stripe_product_id": "APC-C39",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C30",
+        "title": "Compromised Running Club 1000m Stopwatch Breathable Race Tank",
+        "retail_price": 30.0,
+        "category": "Sleeveless Muscle Tanks",
+        "stripe_product_id": "APC-C30",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C31",
+        "title": "100 Wall Balls Unbroken* Winged Crest Sleeveless Muscle Tank",
+        "retail_price": 32.0,
+        "category": "Sleeveless Muscle Tanks",
+        "stripe_product_id": "APC-C31",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C35",
+        "title": "8-Station Race Division Winged Crest Oversized Stealth Hoodie",
+        "retail_price": 58.0,
+        "category": "Pullover Hoodies",
+        "stripe_product_id": "APC-C35",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C23",
+        "title": "\"Roxzone Penalties Ruined My PR\" Stopwatch Crest Athletic Race Tee",
+        "retail_price": 32.0,
+        "category": "Performance Tees",
+        "stripe_product_id": "APC-C23",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C24",
+        "title": "\"200m Farmer Carry Survivors Club\" Barbell Insignia Race Tee",
+        "retail_price": 34.0,
+        "category": "Performance Tees",
+        "stripe_product_id": "APC-C24",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C25",
+        "title": "\"Sandbag Lunges Are A Personal Attack\" Station 07 Crest Pump Cover",
+        "retail_price": 36.0,
+        "category": "Pump Covers",
+        "stripe_product_id": "APC-C25",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C26",
+        "title": "\"Zone 2 All Week, Redline Weekend\" 185 BPM Tachometer Race Tee",
+        "retail_price": 32.0,
+        "category": "Performance Tees",
+        "stripe_product_id": "APC-C26",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C27",
+        "title": "\"Sub-65 Club // Pace \u00b7 Pull \u00b7 Push\" Winged Crest Elite Division Tee",
+        "retail_price": 34.0,
+        "category": "Performance Tees",
+        "stripe_product_id": "APC-C27",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C32",
+        "title": "Burpee Broad Jumps Build Character 8.0 oz Warmup Hoodie",
+        "retail_price": 54.0,
+        "category": "Pullover Hoodies",
+        "stripe_product_id": "APC-C32",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      },
+      {
+        "id": "APC-C33",
+        "title": "The Erg Doesn't Care How You Feel Heavyweight Fleece Hoodie",
+        "retail_price": 56.0,
+        "category": "Pullover Hoodies",
+        "stripe_product_id": "APC-C33",
+        "stripe_price_id": null,
+        "newly_created_stripe_price_id": null,
+        "status": "Stripe Product & Price created in sandbox for APC-C36/APC-C37; remaining 24 streetwear SKUs use storefront checkout modal (?buy=SKU) & need PostProducts/PostPrices sync when switching to livemode."
+      }
+    ],
+    "active_stripe_skus_summary": [
+      {
+        "id": "APC-C36",
+        "title": "AeroMesh\u2122 Laser-Vented Breathable Tech Shirt \u2014 \"Built For Compromised Running\"",
+        "retail_price": 36.0,
+        "stripe_product_id": "APC-C36",
+        "stripe_price_id": "price_1UUdgQRut88O8nG2gsdcyint"
+      },
+      {
+        "id": "APC-C37",
+        "title": "Dry-Pace\u2122 Moisture-Wicking Threshold Tech Tee \u2014 \"1km Split. Station. Repeat.\"",
+        "retail_price": 36.0,
+        "stripe_product_id": "APC-C37",
+        "stripe_price_id": "price_1UUdgRRut88O8nG2eXqXoIK8"
+      },
+      {
+        "id": "APC-C01",
+        "title": "Run. Station. Repeat. Functional Race Tee",
+        "retail_price": 32.0,
+        "stripe_product_id": "APC-C01",
+        "stripe_price_id": "price_1UUb6JRut88O8nG233VLxmCw"
+      },
+      {
+        "id": "APC-C02",
+        "title": "Wall Balls & Bad Decisions Heavyweight Pump Cover Tee",
+        "retail_price": 38.0,
+        "stripe_product_id": "APC-C02",
+        "stripe_price_id": "price_1UUb8uRut88O8nG2VcelcVm6"
+      },
+      {
+        "id": "APC-C03",
+        "title": "Sled Push Enthusiast* Athletic Crewneck Tee",
+        "retail_price": 32.0,
+        "stripe_product_id": "APC-C03",
+        "stripe_price_id": "price_1UUb8vRut88O8nG2M79HZkEh"
+      },
+      {
+        "id": "APC-C04",
+        "title": "Compromised Running Club \u2014 Est. Kilometer One Tee",
+        "retail_price": 32.0,
+        "stripe_product_id": "APC-C04",
+        "stripe_price_id": "price_1UUb8vRut88O8nG2SOr9k0zf"
+      },
+      {
+        "id": "APC-C05",
+        "title": "Burpee Broad Jumps Build Character Training Tee",
+        "retail_price": 30.0,
+        "stripe_product_id": "APC-C05",
+        "stripe_price_id": "price_1UUb8xRut88O8nG2a53ew4iA"
+      },
+      {
+        "id": "APC-C06",
+        "title": "The Erg Doesn't Care How You Feel \u2014 Row \u00b7 Ski \u00b7 Repeat Tee",
+        "retail_price": 32.0,
+        "stripe_product_id": "APC-C06",
+        "stripe_price_id": "price_1UUb8yRut88O8nG2NxnEoKDG"
+      },
+      {
+        "id": "APC-C07",
+        "title": "Pre-Race Porta-Potty Line PR Warmup Tee",
+        "retail_price": 28.0,
+        "stripe_product_id": "APC-C07",
+        "stripe_price_id": "price_1UUb8zRut88O8nG2c6hu9Ll3"
+      },
+      {
+        "id": "APC-C08",
+        "title": "I Don't Need To Defend My Sled Push \u2014 Sled Push Dept. Tee",
+        "retail_price": 32.0,
+        "stripe_product_id": "APC-C08",
+        "stripe_price_id": "price_1UUb90Rut88O8nG2CRxsKVYJ"
+      },
+      {
+        "id": "APC-C09",
+        "title": "Run. Station. Repeat. Heavyweight Fleece Warmup Hoodie",
+        "retail_price": 54.0,
+        "stripe_product_id": "APC-C09",
+        "stripe_price_id": "price_1UUb91Rut88O8nG2E5Q24Zi0"
+      },
+      {
+        "id": "APC-C10",
+        "title": "Wall Balls & Bad Decisions Brushed Fleece Pullover Hoodie",
+        "retail_price": 54.0,
+        "stripe_product_id": "APC-C10",
+        "stripe_price_id": "price_1UUb93Rut88O8nG2nfdQBibQ"
+      },
+      {
+        "id": "APC-C11",
+        "title": "Compromised Running Club Heavy Warmup Hoodie",
+        "retail_price": 54.0,
+        "stripe_product_id": "APC-C11",
+        "stripe_price_id": "price_1UUb94Rut88O8nG2pxIIJTnx"
+      },
+      {
+        "id": "APC-C12",
+        "title": "Sled Push Dept. \u2014 'The Footage Speaks' Pullover Hoodie",
+        "retail_price": 56.0,
+        "stripe_product_id": "APC-C12",
+        "stripe_price_id": "price_1UUb95Rut88O8nG2lSgBQOlZ"
+      },
+      {
+        "id": "APC-C42",
+        "title": "Apex AeroShell\u2122 Lightweight Race Warmup Jacket \u2014 \"8\u00d71000M Corral Shell\"",
+        "retail_price": 64.0,
+        "stripe_product_id": "APC-C42",
+        "stripe_price_id": "price_1UUdg0Rut88O8nG2Mv5D9mfS"
+      },
+      {
+        "id": "APC-C43",
+        "title": "Hybrid 8-Station Windbreaker Track Jacket \u2014 \"01 SkiErg to 08 Wall Balls\"",
+        "retail_price": 66.0,
+        "stripe_product_id": "APC-C43",
+        "stripe_price_id": "price_1UUdgNRut88O8nG2ixBIDw0s"
+      },
+      {
+        "id": "APC-C44",
+        "title": "Pro Division Lightweight Quarter-Zip Shell \u2014 \"Sub-65 Warmup Track Top\"",
+        "retail_price": 64.0,
+        "stripe_product_id": "APC-C44",
+        "stripe_price_id": "price_1UUdgORut88O8nG2lGkhNXNS"
+      },
+      {
+        "id": "APC-C45",
+        "title": "26/27 World Series Lightweight Warmup Jacket \u2014 \"Chicago \u00b7 Dallas \u00b7 SoCal \u00b7 NYC\"",
+        "retail_price": 68.0,
+        "stripe_product_id": "APC-C45",
+        "stripe_price_id": "price_1UUdgPRut88O8nG2HcnisUmt"
+      },
+      {
+        "id": "APC-C13",
+        "title": "Zone 2 Engine Lab Low-Profile Cotton Twill Cap",
+        "retail_price": 34.0,
+        "stripe_product_id": "APC-C13",
+        "stripe_price_id": "price_1UUb96Rut88O8nG2xm8owDwY"
+      },
+      {
+        "id": "APC-C14",
+        "title": "8-Station Race Day 50L All-Weather Gym & Shoe Duffle Bag",
+        "retail_price": 64.0,
+        "stripe_product_id": "APC-C14",
+        "stripe_price_id": "price_1UUb97Rut88O8nG29muuJAnH"
+      },
+      {
+        "id": "APC-C15",
+        "title": "24oz Double-Wall Vacuum Insulated Stainless Steel Shaker Bottle",
+        "retail_price": 36.0,
+        "stripe_product_id": "APC-C15",
+        "stripe_price_id": "price_1UUb97Rut88O8nG2wjHutbEN"
+      },
+      {
+        "id": "APC-E01",
+        "title": "ApexPulse Pro 3200 RPM Brushless Deep-Tissue Percussion Massager",
+        "retail_price": 98.0,
+        "stripe_product_id": "APC-E01",
+        "stripe_price_id": "price_1UUb9FRut88O8nG2cZwmHmCA"
+      },
+      {
+        "id": "APC-E02",
+        "title": "InfraFlex Red Light Therapy Belt 660nm 850nm Near-Infrared Recovery Wrap",
+        "retail_price": 119.0,
+        "stripe_product_id": "APC-E02",
+        "stripe_price_id": "price_1UUb9GRut88O8nG25GeYhLgG"
+      },
+      {
+        "id": "APC-E03",
+        "title": "CryoPod 105-Gallon Portable Ice Bath Tub Cold Plunge + Insulated Lid",
+        "retail_price": 149.0,
+        "stripe_product_id": "APC-E03",
+        "stripe_price_id": "price_1UUb9HRut88O8nG2Oo0bZFPL"
+      },
+      {
+        "id": "APC-E04",
+        "title": "SubZero IPX8 Floating Cold Plunge Thermometer & Wireless Display",
+        "retail_price": 36.0,
+        "stripe_product_id": "APC-E04",
+        "stripe_price_id": "price_1UUb9JRut88O8nG2nvv4vKMD"
+      },
+      {
+        "id": "APC-E05",
+        "title": "VibeRoll 4-Speed Vibrating High-Density Myofascial Foam Roller (17\")",
+        "retail_price": 78.0,
+        "stripe_product_id": "APC-E05",
+        "stripe_price_id": "price_1UUb9KRut88O8nG2pDq2s88O"
+      },
+      {
+        "id": "APC-E06",
+        "title": "NordicLock Heavy-Duty Hamstring Curl & Knee Bulletproofing Door Strap",
+        "retail_price": 34.0,
+        "stripe_product_id": "APC-E06",
+        "stripe_price_id": "price_1UUb9LRut88O8nG2Z4JWAEMy"
+      },
+      {
+        "id": "APC-E07",
+        "title": "MagSling Neodymium Magnetic Gym Bottle Pouch & Rack Organizer Bag",
+        "retail_price": 48.0,
+        "stripe_product_id": "APC-E07",
+        "stripe_price_id": "price_1UUb9MRut88O8nG2PQeJvmed"
+      },
+      {
+        "id": "APC-E08",
+        "title": "AeroWhip Weighted 1-Lb Aluminum Handle Speed & Conditioning Jump Rope",
+        "retail_price": 36.0,
+        "stripe_product_id": "APC-E08",
+        "stripe_price_id": "price_1UUb9MRut88O8nG2QCNaTCDY"
+      },
+      {
+        "id": "APC-E09",
+        "title": "GripForge 198-Lb Digital Hand Dynamometer & CNS Readiness Grip Meter",
+        "retail_price": 42.0,
+        "stripe_product_id": "APC-E09",
+        "stripe_price_id": "price_1UUb9ORut88O8nG2VDroIEQX"
+      },
+      {
+        "id": "APC-E10",
+        "title": "SpinalReset Acupressure Back Recovery Mat & Cervical Neck Pillow Set",
+        "retail_price": 54.0,
+        "stripe_product_id": "APC-E10",
+        "stripe_price_id": "price_1UUb9PRut88O8nG2D6UO3UVA"
+      },
+      {
+        "id": "APC-E11",
+        "title": "HydroMetric Smart LED Touch-Temperature Insulated Stainless Flask",
+        "retail_price": 44.0,
+        "stripe_product_id": "APC-E11",
+        "stripe_price_id": "price_1UUb9QRut88O8nG2IqonwkK4"
+      },
+      {
+        "id": "APC-E12",
+        "title": "AirRecover Full-Leg Sequential Leg Air Compression Recovery Boots",
+        "retail_price": 139.0,
+        "stripe_product_id": "APC-E12",
+        "stripe_price_id": "price_1UUb9SRut88O8nG2OFFmQccS"
+      },
+      {
+        "id": "APC-E13",
+        "title": "TibBar Pro Heavy-Duty Steel Tibialis Anterior & Shin Strengthener",
+        "retail_price": 68.0,
+        "stripe_product_id": "APC-E13",
+        "stripe_price_id": "price_1UUb9TRut88O8nG2i33twvSM"
+      },
+      {
+        "id": "APC-E14",
+        "title": "LumaGym 60-Inch Minimalist Smart RGBICW Warm-Sunset Corner Floor Lamp",
+        "retail_price": 68.0,
+        "stripe_product_id": "APC-E14",
+        "stripe_price_id": "price_1UUb9URut88O8nG2N90WBySl"
+      },
+      {
+        "id": "APC-E15",
+        "title": "ThermoCore Low-EMF Far-Infrared Portable Home Recovery Sauna Blanket",
+        "retail_price": 149.0,
+        "stripe_product_id": "APC-E15",
+        "stripe_price_id": "price_1UUb9VRut88O8nG2FHix8J5d"
+      },
+      {
+        "id": "APC-E16",
+        "title": "TactFit Weighted Training Vest 20lb \u2014 Adjustable Plate-Carrier & Murph Vest",
+        "retail_price": 88.0,
+        "stripe_product_id": "APC-E16",
+        "stripe_price_id": "price_1UUbgGRut88O8nG2bh8wRHGc"
+      },
+      {
+        "id": "APC-E17",
+        "title": "AeroLung Breathing Lung Trainer \u2014 Dual-Valve Inspiratory & Expiratory Exerciser",
+        "retail_price": 38.0,
+        "stripe_product_id": "APC-E17",
+        "stripe_price_id": "price_1UUbgGRut88O8nG2aRzjBRW2"
+      },
+      {
+        "id": "APC-E18",
+        "title": "CryoSleeve Knee Ice Pack Wrap Cold Compression \u2014 360\u00b0 Gel Recovery Sleeve",
+        "retail_price": 42.0,
+        "stripe_product_id": "APC-E18",
+        "stripe_price_id": "price_1UUbgHRut88O8nG2UqDVoDKe"
+      },
+      {
+        "id": "APC-E19",
+        "title": "ThermoCup Electric Cupping Therapy Set \u2014 Smart Dynamic Suction & Red-Light Massager",
+        "retail_price": 64.0,
+        "stripe_product_id": "APC-E19",
+        "stripe_price_id": "price_1UUbgIRut88O8nG2Ic49CTj9"
+      },
+      {
+        "id": "APC-E20",
+        "title": "MagTripod Magnetic Gym Phone Mount \u2014 Dual-Ring Neodymium Squat Rack Filming Stand",
+        "retail_price": 34.0,
+        "stripe_product_id": "APC-E20",
+        "stripe_price_id": "price_1UUbgJRut88O8nG2EXy6EqZH"
+      },
+      {
+        "id": "APC-E21",
+        "title": "PulseTrack Chest Strap Heart Rate Monitor \u2014 ANT+ & Bluetooth 5.0 Zone-2 Sensor",
+        "retail_price": 58.0,
+        "stripe_product_id": "APC-E21",
+        "stripe_price_id": "price_1UUbgKRut88O8nG2dsXFHFuR"
+      },
+      {
+        "id": "APC-E22",
+        "title": "NeuroStep EMS Foot Massager Circulation Mat \u2014 Bio-Electric Calf & Plantar Recovery Pad",
+        "retail_price": 48.0,
+        "stripe_product_id": "APC-E22",
+        "stripe_price_id": "price_1UUbgjRut88O8nG22SHo4Gaj"
+      },
+      {
+        "id": "APC-E23",
+        "title": "ChalkLock Liquid Lifting Chalk (2-Pack) \u2014 Mess-Free Gym Grip & Carabiner Bottles",
+        "retail_price": 26.0,
+        "stripe_product_id": "APC-E23",
+        "stripe_price_id": "price_1UUbgkRut88O8nG2OTyiZtyA"
+      },
+      {
+        "id": "APC-E24",
+        "title": "LumiRed Red Light Therapy Panel 660nm 850nm \u2014 Clinical Desktop Near-Infrared Lamp",
+        "retail_price": 129.0,
+        "stripe_product_id": "APC-E24",
+        "stripe_price_id": "price_1UUbglRut88O8nG2ZAIFv5Hd"
+      },
+      {
+        "id": "APC-E25",
+        "title": "MorphRoll Collapsible Travel Foam Roller \u2014 Folds Flat for Race Backpacks & Carry-Ons",
+        "retail_price": 46.0,
+        "stripe_product_id": "APC-E25",
+        "stripe_price_id": "price_1UUbgmRut88O8nG2nr2RGGHE"
+      },
+      {
+        "id": "APC-E26",
+        "title": "SoleVault Ventilated Carbon-Plate Race Shoe & Wet-Gear Compartment Travel Case",
+        "retail_price": 52.0,
+        "stripe_product_id": "APC-E26",
+        "stripe_price_id": "price_1UUbgnRut88O8nG25uknIOS2"
+      },
+      {
+        "id": "APC-E27",
+        "title": "DeadHang Solid Beechwood Gymnastics Pull-Up & Farmer-Carry Grip Strengthener Handles",
+        "retail_price": 39.0,
+        "stripe_product_id": "APC-E27",
+        "stripe_price_id": "price_1UUbgnRut88O8nG2PIdBceh8"
+      }
+    ]
+  }
+}

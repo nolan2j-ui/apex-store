@@ -11,24 +11,26 @@
       "list_price": 45.0,
       "rating": 5.0,
       "reviews": 218,
-      "image": "images/streetwear/apc-c36-black.png",
-      "alt_image": "images/streetwear/apc-c36-white.png",
+      "image": "images/streetwear/apc-c36-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c36-white.png?v=20261025v4",
       "badge": "Best Seller",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Ultra-breathable 4.0 oz AeroMesh\u2122 perforated poly-spandex HYROX\u00ae race shirt with laser-vented shoulder/spine airflow zones, contrast flatlock raglan seams, and Winged AERO Crest.",
+      "short_desc": "Ultra-breathable 4.0 oz AeroMesh\u2122 perforated poly-spandex HYROX\u00ae race shirt with laser-vented shoulder/spine airflow zones, contrast flatlock raglan seams, and Winged AERO Crest \u2014 fulfilled via Fourthwall US athletic production hubs (also available in Comfort Colors 1717 heavyweight cotton or Independent Trading Co. PRM4500 warmup layer).",
       "highlights": [
         "4.0 oz/yd\u00b2 88% micro-perforated polyester / 12% elastane 4-way stretch AeroMesh\u2122 weave",
         "Laser-perforated shoulder and upper-back ventilation zones dump heat at 175+ BPM",
         "Anti-chafe contrast flatlock raglan seams + Winged AERO chest emblem & sleeve badge",
-        " hydrophobic quick-dry finish evaporates sweat 3x faster than standard gym tees"
+        " hydrophobic quick-dry finish evaporates sweat 3x faster than standard gym tees \u2014 fulfilled on-demand via Fourthwall US hubs"
       ],
       "review_quote": "Finally a true breathable tech shirt built specifically for HYROX! Breathes like a marathon singlet but durable enough for sandbag lunges.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C36",
       "has_colorways": true,
-      "stripe_price_id": "price_1UUdgQRut88O8nG2gsdcyint"
+      "stripe_price_id": "price_1UUdgQRut88O8nG2gsdcyint",
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Fourthwall AeroMesh\u2122 Tech Tee / Comfort Colors 1717 Heavyweight Option (fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C16",
@@ -41,23 +43,25 @@
       "list_price": 42.0,
       "rating": 4.9,
       "reviews": 164,
-      "image": "images/streetwear/apc-c16-black.png",
-      "alt_image": "images/streetwear/apc-c16-white.png",
+      "image": "images/streetwear/apc-c16-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c16-white.png?v=20261025v4",
       "badge": "Race City Edition",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Custom winged Apex crest 'CHICAGO // 8 STATIONS \u00b7 8KM \u2014 NAVY PIER RACE WEEKEND' shirt built for athletes racing Chicago HYROX\u00ae and Midwest 8-station endurance events. Available in Breathable AeroMesh\u2122 or 4.2 oz Airlume Cotton.",
+      "short_desc": "Custom winged Apex crest 'CHICAGO // 8 STATIONS \u00b7 8KM \u2014 NAVY PIER RACE WEEKEND' shirt built for athletes racing Chicago HYROX\u00ae and Midwest 8-station endurance events. Available in Breathable AeroMesh\u2122 or 4.2 oz Airlume Cotton \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
         "Custom Winged Apex Shield & Sleeve Insignia ('CHI\u00b708 // 8 STATIONS \u00b7 8KM CLUB')",
-        "Choice of ultra-breathable moisture-wicking AeroMesh\u2122 tech knit or 4.2 oz combed ring-spun cotton",
+        "Choice of ultra-breathable moisture-wicking AeroMesh\u2122 tech knit or 6.1 oz Comfort Colors 1717 ring-spun garment-dyed heavyweight cotton",
         "Engineered for high-output Navy Pier indoor turf sleds, erg intervals, and compromised running",
         "100% original Apex Hybrid Co. graphic \u2014 ships in 2\u20134 business days across the US"
       ],
       "review_quote": "Our entire Chicago doubles and pro training squad ordered these for race weekend at Navy Pier. Fits incredible through the shoulders.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C16",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C28",
@@ -70,23 +74,25 @@
       "list_price": 36.0,
       "rating": 4.9,
       "reviews": 182,
-      "image": "images/streetwear/apc-c28-black.png",
-      "alt_image": "images/streetwear/apc-c28-white.png",
+      "image": "images/streetwear/apc-c28-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c28-white.png?v=20261025v4",
       "badge": "Best Seller",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Breathable sleeveless race-day muscle tank featuring the Winged APEX Shield Crest ('RUN. STATION. REPEAT.') for unrestricted overhead mobility on wall balls and SkiErg.",
+      "short_desc": "Breathable sleeveless race-day muscle tank featuring the Winged APEX Shield Crest ('RUN. STATION. REPEAT.') for unrestricted overhead mobility on wall balls and SkiErg \u2014 crafted on the AS Colour Barnard / Heavyweight Athletic Tank blank (fulfilled via Fourthwall).",
       "highlights": [
-        "Deep athletic armhole cut eliminates shoulder restriction on SkiErg, burpees, and wall balls",
+        "AS Colour Barnard / Heavyweight Athletic Tank blank with deep ergonomic armholes (fulfilled via Fourthwall)",
         "Lightweight 4.0 oz breathable moisture-wicking cotton-poly jersey with lower-hem Apex badge",
         "Winged APEX Race Day Series chest crest in high-contrast crimson-ember and white",
         "Zero underarm chafing across 60\u201390 minutes of high-heart-rate racing"
       ],
       "review_quote": "Raced in this tank in Dallas\u2014zero shoulder restriction on the 100 wall balls and stayed bone dry.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C28",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "AS Colour Barnard / Heavyweight Athletic Tank (relaxed sleeveless athletic cut, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C34",
@@ -99,23 +105,25 @@
       "list_price": 68.0,
       "rating": 5.0,
       "reviews": 168,
-      "image": "images/streetwear/apc-c34-black.png",
-      "alt_image": "images/streetwear/apc-c34-white.png",
+      "image": "images/streetwear/apc-c34-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c34-white.png?v=20261025v4",
       "badge": "Best Seller",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Commemorative 2026/2027 North American Tour heavyweight fleece hoodie featuring the Winged 26/27 Apex Shield ('WORLD SERIES PREP \u2014 CHICAGO \u00b7 DALLAS \u00b7 SOCAL').",
+      "short_desc": "Commemorative 2026/2027 North American Tour heavyweight fleece hoodie featuring the Winged 26/27 Apex Shield ('WORLD SERIES PREP \u2014 CHICAGO \u00b7 DALLAS \u00b7 SOCAL') \u2014 crafted on the Independent Trading Co. PRM4500 9 oz heavyweight pigment-dyed fleece hoodie blank (fulfilled via Fourthwall).",
       "highlights": [
         "Winged 26/27 Apex Championship Crest on chest + woven Apex Delta pocket badge",
-        "Heavyweight 8.0 oz ring-spun brushed fleece for race travel and athlete corral warmups",
+        "Heavyweight 9.0 oz Independent Trading Co. PRM4500 pigment-dyed fleece for race travel and athlete corral warmups",
         "Structured double-layer hood and deep kangaroo hand-warmer pocket",
         "Fast 2\u20134 business day US shipping"
       ],
       "review_quote": "Wore this on the flight to Chicago and in the warmup corral\u2014looks like an official pro tour hoodie.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C34",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Independent Trading Co. PRM4500 (9 oz heavyweight pigment-dyed fleece hoodie, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C37",
@@ -128,24 +136,26 @@
       "list_price": 44.0,
       "rating": 4.9,
       "reviews": 174,
-      "image": "images/streetwear/apc-c37-black.png",
-      "alt_image": "images/streetwear/apc-c37-white.png",
+      "image": "images/streetwear/apc-c37-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c37-white.png?v=20261025v4",
       "badge": "Top Rated",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Sweat-wicking Dry-Pace\u2122 micro-pique mesh fitness shirt featuring our 1000M Stopwatch Tachometer Crest ('1KM SPLIT. STATION. REPEAT.') for HYROX\u00ae and threshold running.",
+      "short_desc": "Sweat-wicking Dry-Pace\u2122 micro-pique mesh fitness shirt featuring our 1000M Stopwatch Tachometer Crest ('1KM SPLIT. STATION. REPEAT.') for HYROX\u00ae and threshold running \u2014 fulfilled via Fourthwall US athletic production hubs (also available in Comfort Colors 1717 heavyweight cotton or Independent Trading Co. PRM4500 warmup layer).",
       "highlights": [
         "Breathable capillary-action Dry-Pace\u2122 knit pulls sweat away from skin in seconds",
         "Features 1000M Stopwatch Tachometer chest logo + laser-vented shoulder panels",
         "Odor-resistant silver-ion antimicrobial treatment keeps gear fresh through multi-brick weeks",
-        "Available in Titanium Charcoal and Ice White (Sizes S\u20132XL)"
+        "Available in Titanium Charcoal and Ice White (Sizes S\u20132XL) \u2014 fulfilled on-demand via Fourthwall US hubs"
       ],
       "review_quote": "Zero sweat cling during 8x1000m threshold repeats. The raglan sleeve cut feels effortless on the SkiErg.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C37",
       "has_colorways": true,
-      "stripe_price_id": "price_1UUdgRRut88O8nG2eXqXoIK8"
+      "stripe_price_id": "price_1UUdgRRut88O8nG2eXqXoIK8",
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Fourthwall AeroMesh\u2122 Tech Tee / Comfort Colors 1717 Heavyweight Option (fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C17",
@@ -158,23 +168,25 @@
       "list_price": 42.0,
       "rating": 4.9,
       "reviews": 148,
-      "image": "images/streetwear/apc-c17-black.png",
-      "alt_image": "images/streetwear/apc-c17-white.png",
+      "image": "images/streetwear/apc-c17-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c17-white.png?v=20261025v4",
       "badge": "Race City Edition",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from Texas Facility",
       "has_sizes": true,
-      "short_desc": "Custom winged Apex crest 'DALLAS // LONE STAR DIVISION \u2014 HEAVY SLEDS & FAST SPLITS' shirt designed for athletes competing in Dallas HYROX\u00ae and Texas functional racing.",
+      "short_desc": "Custom winged Apex crest 'DALLAS // LONE STAR DIVISION \u2014 HEAVY SLEDS & FAST SPLITS' shirt designed for athletes competing in Dallas HYROX\u00ae and Texas functional racing \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
-        "Winged DAL\u00b7TX Championship Shield + Sleeve Apex Delta badge",
+        "Comfort Colors 1717 blank (6.1 oz/yd\u00b2 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)",
         "Breathable sweat-dispersing weave keeps core cool inside convention center race halls",
         "Anti-chafe flatlock shoulder seams for 1,000m SkiErg and 100 wall ball finishers",
         "Printed and dispatched directly from our Texas & California fulfillment hubs"
       ],
       "review_quote": "Wore this for our Dallas race simulation\u2014super breathable and the winged Lone Star crest looks elite.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C17",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C18",
@@ -187,23 +199,25 @@
       "list_price": 42.0,
       "rating": 5.0,
       "reviews": 192,
-      "image": "images/streetwear/apc-c18-black.png",
-      "alt_image": "images/streetwear/apc-c18-white.png",
+      "image": "images/streetwear/apc-c18-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c18-white.png?v=20261025v4",
       "badge": "SoCal Favorite",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from Irvine/CA Hub",
       "has_sizes": true,
-      "short_desc": "Designed in Orange County ('ANAHEIM // PACIFIC COAST SERIES \u00b7 8 RUNS \u00b7 8 STATIONS') for athletes racing Anaheim & Southern California HYROX\u00ae events.",
+      "short_desc": "Designed in Orange County ('ANAHEIM // PACIFIC COAST SERIES \u00b7 8 RUNS \u00b7 8 STATIONS') for athletes racing Anaheim & Southern California HYROX\u00ae events \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
-        "Features Winged SOCAL Apex Crest + left-sleeve pentagon shield insignia",
+        "Comfort Colors 1717 blank (6.1 oz/yd\u00b2 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)",
         "Featherlight breathable fabric built for sunny SoCal track bricks and indoor convention turf",
         "Athletic tapered fit through chest and lats with zero waist bunching on burpee broad jumps",
         "Fast local dispatch from Southern California"
       ],
       "review_quote": "Repping OC at the Anaheim race! Hands down the cleanest hybrid racing shirt in our gym.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C18",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C22",
@@ -216,23 +230,25 @@
       "list_price": 44.0,
       "rating": 4.9,
       "reviews": 205,
-      "image": "images/streetwear/apc-c22-black.png",
-      "alt_image": "images/streetwear/apc-c22-white.png",
+      "image": "images/streetwear/apc-c22-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c22-white.png?v=20261025v4",
       "badge": "Best Seller",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Signature 8X8 Winged Apex Crest shirt ('8 RUNS. 8 STATIONS. ZERO EXCUSES. \u2014 EARN YOUR FINISH SPLIT') engineered for HYROX\u00ae simulation days and strength warmups.",
+      "short_desc": "Signature 8X8 Winged Apex Crest shirt ('8 RUNS. 8 STATIONS. ZERO EXCUSES. \u2014 EARN YOUR FINISH SPLIT') engineered for HYROX\u00ae simulation days and strength warmups \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
-        "Features Winged 8X8 Apex Race Division shield crest and left-sleeve pentagon logo",
+        "Comfort Colors 1717 blank (6.1 oz/yd\u00b2 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)",
         "Breathable combed cotton weave balances structured drape with airflow under load",
         "Reinforced double-needle collar and shoulder taping for sled and barbell sessions",
         "Printed in the USA with zero-crack water-based athletic ink"
       ],
       "review_quote": "The winged 8x8 logo on the chest makes it look like an official pro division jersey. Unreal quality.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C22",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C38",
@@ -245,23 +261,25 @@
       "list_price": 46.0,
       "rating": 4.9,
       "reviews": 162,
-      "image": "images/streetwear/apc-c38-black.png",
-      "alt_image": "images/streetwear/apc-c38-white.png",
+      "image": "images/streetwear/apc-c38-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c38-white.png?v=20261025v4",
       "badge": "Breathable Tech",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "High-airflow VentTech\u2122 perforated fitness shirt with underarm and spine ventilation channels and Winged Z4/Z5 Apex Crest for high-heart-rate HYROX\u00ae simulations.",
+      "short_desc": "High-airflow VentTech\u2122 perforated fitness shirt with underarm and spine ventilation channels and Winged Z4/Z5 Apex Crest for high-heart-rate HYROX\u00ae simulations \u2014 fulfilled via Fourthwall US athletic production hubs (also available in Comfort Colors 1717 heavyweight cotton or Independent Trading Co. PRM4500 warmup layer).",
       "highlights": [
         "Body-mapped micro-mesh spine and underarm gussets maximize convective airflow",
         "Winged Z4/Z5 VentTech\u2122 chest insignia + left-sleeve Apex shield decal",
         "4-way stretch technical knit moves smoothly through burpee broad jumps and rowing",
-        "Ships free in 2\u20134 business days from US warehouses"
+        "Ships free in 2\u20134 business days from US warehouses \u2014 fulfilled on-demand via Fourthwall US hubs"
       ],
       "review_quote": "You can literally feel the air moving through the upper back mesh on the run loops. Elite race shirt.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C38",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Fourthwall AeroMesh\u2122 Tech Tee / Comfort Colors 1717 Heavyweight Option (fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C29",
@@ -274,23 +292,25 @@
       "list_price": 36.0,
       "rating": 4.9,
       "reviews": 141,
-      "image": "images/streetwear/apc-c29-black.png",
-      "alt_image": "images/streetwear/apc-c29-white.png",
+      "image": "images/streetwear/apc-c29-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c29-white.png?v=20261025v4",
       "badge": "Top Rated",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Sleeveless turf conditioning tank with our SLED Barbell & Track-Ring Insignia ('SLED PUSH DEPARTMENT \u2014 LOW HANDLE \u00b7 DRIVE THE TURF') for HYROX\u00ae strength blocks.",
+      "short_desc": "Sleeveless turf conditioning tank with our SLED Barbell & Track-Ring Insignia ('SLED PUSH DEPARTMENT \u2014 LOW HANDLE \u00b7 DRIVE THE TURF') for HYROX\u00ae strength blocks \u2014 crafted on the AS Colour Barnard / Heavyweight Athletic Tank blank (fulfilled via Fourthwall).",
       "highlights": [
-        "Features SLED Barbell Track Ring chest emblem + lower-hem Apex Delta jock tag",
+        "AS Colour Barnard / Heavyweight Athletic Tank blank with deep ergonomic armholes (fulfilled via Fourthwall)",
         "Breathable 4.0 oz athletic knit dumps core heat during heavy prowler pushes and pulls",
         "Reinforced scoop neck and armhole binding prevents stretching in the wash",
         "Available in Stealth Black and Bone White (Sizes S\u20132XL)"
       ],
       "review_quote": "Best sleeveless cut for garage turf sessions and summer track workouts.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C29",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "AS Colour Barnard / Heavyweight Athletic Tank (relaxed sleeveless athletic cut, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C19",
@@ -303,23 +323,25 @@
       "list_price": 42.0,
       "rating": 4.9,
       "reviews": 127,
-      "image": "images/streetwear/apc-c19-black.png",
-      "alt_image": "images/streetwear/apc-c19-white.png",
+      "image": "images/streetwear/apc-c19-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c19-white.png?v=20261025v4",
       "badge": "Race City Edition",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "High-airflow 'MIAMI BEACH // HUMIDITY \u00b7 THRESHOLD \u00b7 100 REPS' race tee with winged MIA\u00b708 crest for Miami HYROX\u00ae competitors and high-humidity coastal runners.",
+      "short_desc": "High-airflow 'MIAMI BEACH // HUMIDITY \u00b7 THRESHOLD \u00b7 100 REPS' race tee with winged MIA\u00b708 crest for Miami HYROX\u00ae competitors and high-humidity coastal runners \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
-        "Winged MIA\u00b708 Apex Shield + Sleeve Emblem in high-contrast crimson-ember and white",
+        "Comfort Colors 1717 blank (6.1 oz/yd\u00b2 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)",
         "Rapid-evaporation breathable weave prevents sweat saturation in South Florida humidity",
         "Reinforced athletic crew collar holds its structure through heavy sled pushes",
         "Available in Vintage Black and Bone White (Unisex S\u20132XL)"
       ],
       "review_quote": "Doesn't cling when soaked in Miami humidity. The chest crest and sleeve badge look like a pro team kit.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C19",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C20",
@@ -332,23 +354,25 @@
       "list_price": 42.0,
       "rating": 4.9,
       "reviews": 139,
-      "image": "images/streetwear/apc-c20-black.png",
-      "alt_image": "images/streetwear/apc-c20-white.png",
+      "image": "images/streetwear/apc-c20-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c20-white.png?v=20261025v4",
       "badge": "Race City Edition",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "'LAS VEGAS // CHAMPIONSHIP QUALIFIER \u2014 ALL IN ON STATION EIGHT' winged crest tee engineered for Las Vegas HYROX\u00ae race weekend and desert conditioning blocks.",
+      "short_desc": "'LAS VEGAS // CHAMPIONSHIP QUALIFIER \u2014 ALL IN ON STATION EIGHT' winged crest tee engineered for Las Vegas HYROX\u00ae race weekend and desert conditioning blocks \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
-        "Custom LAS\u00b7NV Winged Championship Shield + Sleeve Apex Insignia",
+        "Comfort Colors 1717 blank (6.1 oz/yd\u00b2 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)",
         "Breathable moisture-wicking cotton/tech blend for fast indoor convention center tracks",
         "Soft-hand water-based graphic never traps chest heat during Zone 4 runs",
         "Ships free in 2\u20134 business days across the US"
       ],
       "review_quote": "Wore this flying into Vegas for race weekend and got stopped three times in the athlete check-in line asking where to buy it.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C20",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C21",
@@ -361,23 +385,25 @@
       "list_price": 42.0,
       "rating": 4.9,
       "reviews": 176,
-      "image": "images/streetwear/apc-c21-black.png",
-      "alt_image": "images/streetwear/apc-c21-white.png",
+      "image": "images/streetwear/apc-c21-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c21-white.png?v=20261025v4",
       "badge": "Best Seller",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from East/West Coast Hubs",
       "has_sizes": true,
-      "short_desc": "'NEW YORK // METRO ENDURANCE DEPT. \u2014 SUB-60 PACE OR DIE TRYING' winged NYC\u00b708 crest shirt built for New York HYROX\u00ae racers and Hudson River track clubs.",
+      "short_desc": "'NEW YORK // METRO ENDURANCE DEPT. \u2014 SUB-60 PACE OR DIE TRYING' winged NYC\u00b708 crest shirt built for New York HYROX\u00ae racers and Hudson River track clubs \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
-        "Winged NYC\u00b708 Shield Crest + Sleeve Pentagon Badge",
+        "Comfort Colors 1717 blank (6.1 oz/yd\u00b2 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)",
         "Tailored athletic cut for high-cadence 1,000m repeats and sled pulls",
         "Breathable pre-shrunk ring-spun fabric with tear-away neck label",
         "Available in Sizes S\u20132XL with free 30-day exchanges"
       ],
       "review_quote": "Sub-60 Pace Or Die Trying goes so hard. Best NYC hybrid race shirt out right now.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C21",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C40",
@@ -390,23 +416,25 @@
       "list_price": 46.0,
       "rating": 4.9,
       "reviews": 159,
-      "image": "images/streetwear/apc-c40-black.png",
-      "alt_image": "images/streetwear/apc-c40-white.png",
+      "image": "images/streetwear/apc-c40-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c40-white.png?v=20261025v4",
       "badge": "Top Rated",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Cooling-yarn CoolCore\u2122 breathable fitness shirt with our TURF Barbell Track-Ring Crest ('PUSH HEAVY. RUN FAST.') and abrasion-resistant shoulders for sleds and sandbags.",
+      "short_desc": "Cooling-yarn CoolCore\u2122 breathable fitness shirt with our TURF Barbell Track-Ring Crest ('PUSH HEAVY. RUN FAST.') and abrasion-resistant shoulders for sleds and sandbags \u2014 fulfilled via Fourthwall US athletic production hubs (also available in Comfort Colors 1717 heavyweight cotton or Independent Trading Co. PRM4500 warmup layer).",
       "highlights": [
         "CoolCore\u2122 conductive cooling fibers lower skin surface temperature by up to 3\u00b0F during exertion",
         "TURF Barbell + Track Ring chest crest + reinforced anti-chafe shoulder panels",
         "Laser-vented upper chest grid accelerates sweat evaporation in warm venues",
-        "Available in Deep Cobalt Navy and Ice White (S\u20132XL)"
+        "Available in Deep Cobalt Navy and Ice White (S\u20132XL) \u2014 fulfilled on-demand via Fourthwall US hubs"
       ],
       "review_quote": "Holds up to heavy sandbag lunges on the shoulders while breathing like a high-end running shirt.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C40",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Fourthwall AeroMesh\u2122 Tech Tee / Comfort Colors 1717 Heavyweight Option (fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C41",
@@ -419,23 +447,25 @@
       "list_price": 46.0,
       "rating": 5.0,
       "reviews": 188,
-      "image": "images/streetwear/apc-c41-black.png",
-      "alt_image": "images/streetwear/apc-c41-white.png",
+      "image": "images/streetwear/apc-c41-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c41-white.png?v=20261025v4",
       "badge": "New Release",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Body-mapped HyperBreathe\u2122 seamless ventilation fitness shirt with Winged ROX Crest ('ROXZONE SPEED DEPT.') engineered for zero-friction HYROX\u00ae race days.",
+      "short_desc": "Body-mapped HyperBreathe\u2122 seamless ventilation fitness shirt with Winged ROX Crest ('ROXZONE SPEED DEPT.') engineered for zero-friction HYROX\u00ae race days \u2014 fulfilled via Fourthwall US athletic production hubs (also available in Comfort Colors 1717 heavyweight cotton or Independent Trading Co. PRM4500 warmup layer).",
       "highlights": [
         "Body-mapped open-mesh ventilation zones across chest, underarms, and thoracic spine",
         "Winged ROX HyperBreathe\u2122 Shield Emblem + Sleeve Pentagon Insignia",
         "Ultra-soft chafe-free construction built for 60+ minutes of high-cadence racing",
-        "Ships free in 2\u20134 business days from US facilities"
+        "Ships free in 2\u20134 business days from US facilities \u2014 fulfilled on-demand via Fourthwall US hubs"
       ],
       "review_quote": "Wore this for a 1:02 race finish\u2014zero chafing, maximum airflow, and the winged ROX crest is pure class.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C41",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Fourthwall AeroMesh\u2122 Tech Tee / Comfort Colors 1717 Heavyweight Option (fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C39",
@@ -448,23 +478,25 @@
       "list_price": 42.0,
       "rating": 4.9,
       "reviews": 146,
-      "image": "images/streetwear/apc-c39-black.png",
-      "alt_image": "images/streetwear/apc-c39-white.png",
+      "image": "images/streetwear/apc-c39-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c39-white.png?v=20261025v4",
       "badge": "Featherweight 3.8oz",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Ultralight 3.8 oz breathable tri-blend performance race shirt with SUB60 Stopwatch Crest ('ZERO DRAG \u00b7 8 STATIONS \u00b7 SUB-60') for speed-focused HYROX\u00ae athletes.",
+      "short_desc": "Ultralight 3.8 oz breathable tri-blend performance race shirt with SUB60 Stopwatch Crest ('ZERO DRAG \u00b7 8 STATIONS \u00b7 SUB-60') for speed-focused HYROX\u00ae athletes \u2014 fulfilled via Fourthwall US athletic production hubs (also available in Comfort Colors 1717 heavyweight cotton or Independent Trading Co. PRM4500 warmup layer).",
       "highlights": [
         "Featherweight 3.8 oz moisture-wicking poly/cotton/rayon tri-blend with laser-vented shoulders",
         "SUB60 Tachometer Dial chest logo + flatlock orange contrast seams",
         "Feels weightless on the back half of an 8-kilometer functional race",
-        "Available in Tactical Slate-Olive and Arctic White (S\u20132XL)"
+        "Available in Tactical Slate-Olive and Arctic White (S\u20132XL) \u2014 fulfilled on-demand via Fourthwall US hubs"
       ],
       "review_quote": "Lightest fitness shirt I've ever worn. Feels like wearing nothing at kilometer 7.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C39",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Fourthwall AeroMesh\u2122 Tech Tee / Comfort Colors 1717 Heavyweight Option (fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C30",
@@ -477,23 +509,25 @@
       "list_price": 36.0,
       "rating": 4.8,
       "reviews": 119,
-      "image": "images/streetwear/apc-c30-black.png",
-      "alt_image": "images/streetwear/apc-c30-white.png",
+      "image": "images/streetwear/apc-c30-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c30-white.png?v=20261025v4",
       "badge": "",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Featherlight breathable race tank featuring the 1000M Stopwatch Tachometer Crest ('COMPROMISED RUNNING CLUB \u2014 EST. KILOMETER ONE') for HYROX\u00ae brick sessions.",
+      "short_desc": "Featherlight breathable race tank featuring the 1000M Stopwatch Tachometer Crest ('COMPROMISED RUNNING CLUB \u2014 EST. KILOMETER ONE') for HYROX\u00ae brick sessions \u2014 crafted on the AS Colour Barnard / Heavyweight Athletic Tank blank (fulfilled via Fourthwall).",
       "highlights": [
-        "1000M Stopwatch Tachometer chest crest + lower-hem Apex Shield badge",
+        "AS Colour Barnard / Heavyweight Athletic Tank blank with deep ergonomic armholes (fulfilled via Fourthwall)",
         "Sweat-wicking breathable weave built for hot indoor convention halls and summer track repeats",
         "Ergonomic racer-cut armholes keep lats and delts completely free",
         "Ships free in 2\u20134 business days across the US"
       ],
       "review_quote": "Super light, doesn't stick to your chest on kilometer 6, and the stopwatch graphic looks awesome.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C30",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "AS Colour Barnard / Heavyweight Athletic Tank (relaxed sleeveless athletic cut, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C31",
@@ -506,23 +540,25 @@
       "list_price": 38.0,
       "rating": 4.9,
       "reviews": 154,
-      "image": "images/streetwear/apc-c31-black.png",
-      "alt_image": "images/streetwear/apc-c31-white.png",
+      "image": "images/streetwear/apc-c31-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c31-white.png?v=20261025v4",
       "badge": "New Release",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Winged '100X // STATION EIGHT \u2014 100 WALL BALLS UNBROKEN* (*IN MY HEAD BEFORE SET FOUR)' sleeveless muscle tank built for overhead target accuracy.",
+      "short_desc": "Winged '100X // STATION EIGHT \u2014 100 WALL BALLS UNBROKEN* (*IN MY HEAD BEFORE SET FOUR)' sleeveless muscle tank built for overhead target accuracy \u2014 crafted on the AS Colour Barnard / Heavyweight Athletic Tank blank (fulfilled via Fourthwall).",
       "highlights": [
-        "Winged 100X Station Eight Shield Crest + lower-hem Apex Delta badge",
+        "AS Colour Barnard / Heavyweight Athletic Tank blank with deep ergonomic armholes (fulfilled via Fourthwall)",
         "Zero sleeve drag during high-rep medicine ball thrusters and overhead throws",
         "Breathable moisture-dispersing athletic jersey",
         "Unisex athletic sizing S\u20132XL"
       ],
       "review_quote": "Zero shoulder tug when throwing 100 wall balls and the '*In My Head Before Set Four' line gets everyone.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C31",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "AS Colour Barnard / Heavyweight Athletic Tank (relaxed sleeveless athletic cut, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C35",
@@ -535,23 +571,25 @@
       "list_price": 68.0,
       "rating": 4.9,
       "reviews": 145,
-      "image": "images/streetwear/apc-c35-black.png",
-      "alt_image": "images/streetwear/apc-c35-white.png",
+      "image": "images/streetwear/apc-c35-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c35-white.png?v=20261025v4",
       "badge": "New Release",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Matte-obsidian 8.0 oz oversized pullover hoodie featuring our Winged APEX Stealth Division emblem ('8-STATION RACE DIVISION \u2014 ENDURANCE \u00b7 STRENGTH \u00b7 RECOVERY').",
+      "short_desc": "Matte-obsidian 9.0 oz Independent Trading Co. PRM4500 heavyweight pigment-dyed pullover hoodie (fulfilled via Fourthwall) featuring our Winged APEX Stealth Division emblem ('8-STATION RACE DIVISION \u2014 ENDURANCE \u00b7 STRENGTH \u00b7 RECOVERY').",
       "highlights": [
-        "Winged APEX Stealth Division chest insignia + pocket Apex Delta shield",
+        "Independent Trading Co. PRM4500 (9.0 oz/yd\u00b2 heavyweight pigment-dyed ring-spun fleece hoodie, fulfilled via Fourthwall)",
         "Relaxed drop-shoulder athletic cut layers effortlessly over breathable race tees",
         "Zero-pill air-jet fleece interior with spandex-reinforced ribbed cuffs",
         "Available in Sizes S\u20132XL with free US ground shipping"
       ],
       "review_quote": "The winged stealth crest makes this the cleanest hoodie in my closet. Super thick and comfortable.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C35",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Independent Trading Co. PRM4500 (9 oz heavyweight pigment-dyed fleece hoodie, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C23",
@@ -564,23 +602,25 @@
       "list_price": 38.0,
       "rating": 4.9,
       "reviews": 134,
-      "image": "images/streetwear/apc-c23-black.png",
-      "alt_image": "images/streetwear/apc-c23-white.png",
+      "image": "images/streetwear/apc-c23-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c23-white.png?v=20261025v4",
       "badge": "New Release",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Featuring our '-03:00' Race Stopwatch Tachometer Crest and 'ROXZONE PENALTIES RUINED MY PR \u2014 PACE THE TRANSITIONS' graphic for HYROX\u00ae athletes who learned the hard way.",
+      "short_desc": "Featuring our '-03:00' Race Stopwatch Tachometer Crest and 'ROXZONE PENALTIES RUINED MY PR \u2014 PACE THE TRANSITIONS' graphic for HYROX\u00ae athletes who learned the hard way \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
         "Custom '-03:00' Stopwatch Tachometer Dial logo + Sleeve Apex Delta badge",
-        "Featherlight 4.2 oz breathable Airlume cotton for fast transition runs",
+        "Heavyweight 6.1 oz Comfort Colors 1717 garment-dyed ring-spun cotton for fast transition runs",
         "No-chafe athletic fit built for 8x1000m intervals and brick workouts",
         "Available in Vintage Black and Bone White (S\u20132XL)"
       ],
       "review_quote": "Every single person in my HYROX training group laughed out loud when I walked in wearing this.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C23",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C24",
@@ -593,23 +633,25 @@
       "list_price": 40.0,
       "rating": 4.9,
       "reviews": 149,
-      "image": "images/streetwear/apc-c24-black.png",
-      "alt_image": "images/streetwear/apc-c24-white.png",
+      "image": "images/streetwear/apc-c24-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c24-white.png?v=20261025v4",
       "badge": "Top Rated",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Loaded barbell & track-ring crest ('200M // FARMER CARRY SURVIVORS CLUB \u2014 GRIP GAVE OUT AT METER 150') built for HYROX\u00ae Station 6 specialists.",
+      "short_desc": "Loaded barbell & track-ring crest ('200M // FARMER CARRY SURVIVORS CLUB \u2014 GRIP GAVE OUT AT METER 150') built for HYROX\u00ae Station 6 specialists \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
-        "Custom 200M Barbell + Double Track Ring insignia + Sleeve Apex Shield",
+        "Comfort Colors 1717 blank (6.1 oz/yd\u00b2 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)",
         "Breathable moisture-dispersing cotton keeps forearms and torso cool during heavy carries",
         "Tapered shoulder seam prevents fabric bunching under kettlebell or trap-bar loads",
         "Ships free in 2\u20134 business days from US facilities"
       ],
       "review_quote": "The barbell crest graphic is super sharp and the sleeve logo gives it a legit athletic brand feel.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C24",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C25",
@@ -622,23 +664,25 @@
       "list_price": 44.0,
       "rating": 4.9,
       "reviews": 172,
-      "image": "images/streetwear/apc-c25-black.png",
-      "alt_image": "images/streetwear/apc-c25-white.png",
+      "image": "images/streetwear/apc-c25-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c25-white.png?v=20261025v4",
       "badge": "Best Seller",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "'100M // SANDBAG LUNGES \u2014 PERSONAL ATTACK \u00b7 STATION 07 SURVIVOR' barbell crest tee for HYROX\u00ae athletes grinding through 100 meters of weighted walking lunges.",
+      "short_desc": "'100M // SANDBAG LUNGES \u2014 PERSONAL ATTACK \u00b7 STATION 07 SURVIVOR' barbell crest tee for HYROX\u00ae athletes grinding through 100 meters of weighted walking lunges \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
-        "Features 100M Barbell Track Ring Crest + Sleeve Apex Pentagon Badge",
+        "Comfort Colors 1717 blank (6.1 oz/yd\u00b2 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)",
         "Reinforced shoulder yoke withstands 20kg/30kg sandbag friction without stretching",
         "Breathable mid-heavyweight cotton weave for leg day warmups and turf lunges",
         "Machine washable, pre-shrunk unisex sizing S\u20132XL"
       ],
       "review_quote": "Station 7 survivors unite! Thick collar over the traps so the sandbag doesn't rub your neck raw.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C25",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C26",
@@ -651,23 +695,25 @@
       "list_price": 38.0,
       "rating": 4.8,
       "reviews": 121,
-      "image": "images/streetwear/apc-c26-black.png",
-      "alt_image": "images/streetwear/apc-c26-white.png",
+      "image": "images/streetwear/apc-c26-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c26-white.png?v=20261025v4",
       "badge": "",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "185 BPM Heart-Rate Tachometer Crest ('ZONE 2 ALL WEEK. REDLINE WEEKEND. \u2014 AEROBIC ENGINE LAB') built for polarized marathon and HYROX\u00ae training blocks.",
+      "short_desc": "185 BPM Heart-Rate Tachometer Crest ('ZONE 2 ALL WEEK. REDLINE WEEKEND. \u2014 AEROBIC ENGINE LAB') built for polarized marathon and HYROX\u00ae training blocks \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
         "Custom 185BPM Stopwatch Tachometer Crest + Sleeve Apex Delta Insignia",
-        "Featherlight 4.2 oz breathable cotton keeps heart rate drift low on long aerobic runs",
+        "Heavyweight 6.1 oz Comfort Colors 1717 ring-spun garment-dyed cotton keeps heart rate drift low on long aerobic runs",
         "Zero-plastisol water-based print allows full chest ventilation",
         "Dispatched in 2\u20134 business days from US warehouses"
       ],
       "review_quote": "Describes my entire training calendar in one shirt. Super soft and breathable on 10-mile runs.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C26",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C27",
@@ -680,23 +726,25 @@
       "list_price": 42.0,
       "rating": 4.9,
       "reviews": 158,
-      "image": "images/streetwear/apc-c27-black.png",
-      "alt_image": "images/streetwear/apc-c27-white.png",
+      "image": "images/streetwear/apc-c27-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c27-white.png?v=20261025v4",
       "badge": "Top Rated",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Winged 'SUB-65 // PRO PACING CLUB \u2014 PACE \u00b7 PULL \u00b7 PUSH \u00b7 CHASE THE SPLIT' shirt for competitive HYROX\u00ae Open, Pro, and Doubles racers chasing a sub-65 finish.",
+      "short_desc": "Winged 'SUB-65 // PRO PACING CLUB \u2014 PACE \u00b7 PULL \u00b7 PUSH \u00b7 CHASE THE SPLIT' shirt for competitive HYROX\u00ae Open, Pro, and Doubles racers chasing a sub-65 finish \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
-        "Winged SUB-65 Apex Shield Emblem + Sleeve Pentagon Insignia",
+        "Comfort Colors 1717 blank (6.1 oz/yd\u00b2 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)",
         "Athletic race-cut silhouette engineered for sub-4:00/km compromised kilometer splits",
         "Breathable moisture-dispersing fabric with flatlock shoulder construction",
         "Available in Vintage Black and Bone White (S\u20132XL)"
       ],
       "review_quote": "Bought this as motivation for my sub-65 build in Chicago and wore it onto the podium!",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C27",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C32",
@@ -709,23 +757,25 @@
       "list_price": 64.0,
       "rating": 4.9,
       "reviews": 112,
-      "image": "images/streetwear/apc-c32-black.png",
-      "alt_image": "images/streetwear/apc-c32-white.png",
+      "image": "images/streetwear/apc-c32-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c32-white.png?v=20261025v4",
       "badge": "",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "8.0 oz plush brushed-fleece pullover hoodie ('BURPEE BROAD JUMPS BUILD CHARACTER \u2014 I HAVE ENOUGH CHARACTER, THANKS') for HYROX\u00ae corral warmups and cold-morning conditioning.",
+      "short_desc": "9.0 oz Independent Trading Co. PRM4500 heavyweight pigment-dyed fleece pullover hoodie (fulfilled via Fourthwall) ('BURPEE BROAD JUMPS BUILD CHARACTER \u2014 I HAVE ENOUGH CHARACTER, THANKS') for HYROX\u00ae corral warmups and cold-morning conditioning.",
       "highlights": [
-        "8.0 oz/yd\u00b2 50/50 ring-spun cotton and pill-resistant air-jet fleece",
+        "9.0 oz/yd\u00b2 heavyweight pigment-dyed ring-spun fleece (Independent Trading Co. PRM4500, fulfilled via Fourthwall)",
         "Double-lined warmup hood with matte drawstrings and front kangaroo pocket",
         "Athletic rib-knit cuffs and waistband lock in body heat before wave start",
         "Ships free in 2\u20134 business days from US facilities"
       ],
       "review_quote": "My favorite warmup hoodie for 6 AM winter track and turf sessions.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C32",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Independent Trading Co. PRM4500 (9 oz heavyweight pigment-dyed fleece hoodie, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C33",
@@ -738,23 +788,25 @@
       "list_price": 66.0,
       "rating": 4.9,
       "reviews": 137,
-      "image": "images/streetwear/apc-c33-black.png",
-      "alt_image": "images/streetwear/apc-c33-white.png",
+      "image": "images/streetwear/apc-c33-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c33-white.png?v=20261025v4",
       "badge": "Top Rated",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Heavyweight 8.0 oz brushed fleece warmup hoodie ('THE ERG DOESN'T CARE HOW YOU FEEL \u2014 ROW \u00b7 SKI \u00b7 REPEAT') built for Concept2 SkiErg and RowErg threshold athletes.",
+      "short_desc": "Heavyweight 9.0 oz Independent Trading Co. PRM4500 pigment-dyed fleece warmup hoodie (fulfilled via Fourthwall) ('THE ERG DOESN'T CARE HOW YOU FEEL \u2014 ROW \u00b7 SKI \u00b7 REPEAT') built for Concept2 SkiErg and RowErg threshold athletes.",
       "highlights": [
-        "Plush 8.0 oz fleece interior elevates core temperature fast before erg intervals",
+        "Heavyweight 9.0 oz Independent Trading Co. PRM4500 pigment-dyed fleece interior elevates core temperature fast before erg intervals",
         "High-contrast crimson-ember and off-white chest print resists cracking",
         "Reinforced double-needle seams at shoulders, armholes, and waistband",
         "Available in Unisex Athletic Sizes S\u20132XL"
       ],
       "review_quote": "Warm, thick, and the print looks crisp even after months of garage gym sessions.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C33",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Independent Trading Co. PRM4500 (9 oz heavyweight pigment-dyed fleece hoodie, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C01",
@@ -766,26 +818,28 @@
       "list_price": 38.0,
       "rating": 4.9,
       "reviews": 184,
-      "image": "images/streetwear/apc-c01-black.png",
-      "alt_image": "images/streetwear/apc-c01-white.png",
+      "image": "images/streetwear/apc-c01-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c01-white.png?v=20261025v4",
       "badge": "Best Seller",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Lightweight 4.2 oz Airlume combed ring-spun cotton tee built for 8-station functional racing and compromised running intervals \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton).",
+      "short_desc": "Heavyweight 6.1 oz Comfort Colors 1717 100% ring-spun garment-dyed cotton tee (relaxed athletic streetwear fit, fulfilled via Fourthwall) built for 8-station functional racing and compromised running intervals \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton).",
       "highlights": [
-        "4.2 oz/yd\u00b2 100% Airlume combed and ring-spun cotton (Bella+Canvas 3001 athletic cut)",
+        "6.1 oz/yd\u00b2 100% ring-spun garment-dyed heavyweight cotton (Comfort Colors 1717 relaxed athletic streetwear fit, fulfilled via Fourthwall)",
         "Pre-shrunk fabric with side-seamed construction and shoulder-to-shoulder taping",
         "Breathable moisture-dispersing weave designed for high-heart-rate station transitions",
         "Printed to order in the USA with soft-hand water-based ink that never cracks or peels"
       ],
       "review_quote": "Wore this for my last 8-station race simulation\u2014lightweight, zero chafing on the ski erg or wall balls.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C01",
       "stripe_price_id": "price_1UUb6JRut88O8nG233VLxmCw",
       "product_url": "https://apexhybridco.com/products/run-station-repeat-performance-tee.html",
       "seo_title": "Run. Station. Repeat. Functional Race Tee \u2014 Men's & Women's Hybrid Athlete Running Shirt",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C02",
@@ -797,26 +851,28 @@
       "list_price": 44.0,
       "rating": 4.9,
       "reviews": 142,
-      "image": "images/streetwear/apc-c02-black.png",
-      "alt_image": "images/streetwear/apc-c02-white.png",
+      "image": "images/streetwear/apc-c02-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c02-white.png?v=20261025v4",
       "badge": "Best Seller",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "100 reps, no regrets. Relaxed drop-shoulder 6.5 oz heavyweight carded cotton pump cover built for barbell warmups and strength blocks \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton).",
+      "short_desc": "100 reps, no regrets. Relaxed drop-shoulder 6.5 oz heavyweight carded cotton pump cover built for barbell warmups and strength blocks \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton) \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
-        "Heavyweight 6.5 oz/yd\u00b2 100% carded cotton with structured boxy drape",
+        "Comfort Colors 1717 blank (6.1 oz/yd\u00b2 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)",
         "Relaxed drop-shoulder silhouette with thick 1x1 ribbed crew neck collar",
         "Holds its shape through heavy warmup sets and cold-morning garage sessions",
         "High-contrast chest typography printed in California & Texas fulfillment hubs"
       ],
       "review_quote": "Thick collar, true heavyweight feel, and gets laughs at every Saturday morning partner workout.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C02",
       "stripe_price_id": "price_1UUb8uRut88O8nG2VcelcVm6",
       "product_url": "https://apexhybridco.com/products/wall-balls-bad-decisions-oversized-pump-cover.html",
       "seo_title": "Wall Balls & Bad Decisions Heavyweight Gym Pump Cover \u2014 6.5 oz Oversized Cotton Workout Tee",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C03",
@@ -828,26 +884,28 @@
       "list_price": 36.0,
       "rating": 4.8,
       "reviews": 97,
-      "image": "images/streetwear/apc-c03-black.png",
-      "alt_image": "images/streetwear/apc-c03-white.png",
+      "image": "images/streetwear/apc-c03-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c03-white.png?v=20261025v4",
       "badge": "Top Rated",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "High-contrast off-white and safety-orange chest graphic ('*My legs have filed a complaint') on breathable pre-shrunk cotton \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton).",
+      "short_desc": "High-contrast off-white and safety-orange chest graphic ('*My legs have filed a complaint') on breathable pre-shrunk cotton \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton) \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
-        "4.2 oz Airlume combed ring-spun cotton with tailored athletic fit through chest and arms",
+        "6.1 oz Comfort Colors 1717 100% ring-spun garment-dyed heavyweight cotton with tailored athletic fit through chest and arms",
         "Soft-touch direct-to-garment print that breathes across turf sled pushes",
         "Tear-away neck label for zero skin irritation during conditioning sets",
         "Available in Vintage Black and Bone White (Sizes S\u20132XL)"
       ],
       "review_quote": "Fit is spot-on around the shoulders and the print quality after five washes is still crisp.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C03",
       "stripe_price_id": "price_1UUb8vRut88O8nG2M79HZkEh",
       "product_url": "https://apexhybridco.com/products/sled-push-enthusiast-race-day-tee.html",
       "seo_title": "Sled Push Enthusiast Athletic Crewneck Tee \u2014 Functional Fitness & Turf Conditioning Shirt",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C04",
@@ -859,26 +917,28 @@
       "list_price": null,
       "rating": 4.8,
       "reviews": 76,
-      "image": "images/streetwear/apc-c04-black.png",
-      "alt_image": "images/streetwear/apc-c04-white.png",
+      "image": "images/streetwear/apc-c04-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c04-white.png?v=20261025v4",
       "badge": "",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Built for the exact feeling of hitting kilometer one right after heavy sleds and walking lunges. Soft ring-spun athletic cotton \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton).",
+      "short_desc": "Built for the exact feeling of hitting kilometer one right after heavy sleds and walking lunges. Soft ring-spun athletic cotton \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton) \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
-        "Featherlight 4.2 oz ring-spun cotton weave for warm-weather track and brick sessions",
+        "Heavyweight 6.1 oz Comfort Colors 1717 ring-spun garment-dyed cotton weave for warm-weather track and brick sessions",
         "Pre-shrunk side-seamed body prevents twisting after machine washing",
         "Clean track-club chest emblem in off-white and safety orange",
         "Dispatched in 2\u20134 business days from US facilities"
       ],
       "review_quote": "Our whole Tuesday night brick-run group picked these up. Super soft right out of the package.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C04",
       "stripe_price_id": "price_1UUb8vRut88O8nG2SOr9k0zf",
       "product_url": "https://apexhybridco.com/products/compromised-running-society-club-tee.html",
       "seo_title": "Compromised Running Club Performance Tee \u2014 Brick Workout & Endurance Running Shirt",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C05",
@@ -890,26 +950,28 @@
       "list_price": 35.0,
       "rating": 4.7,
       "reviews": 64,
-      "image": "images/streetwear/apc-c05-black.png",
-      "alt_image": "images/streetwear/apc-c05-white.png",
+      "image": "images/streetwear/apc-c05-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c05-white.png?v=20261025v4",
       "badge": "",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Bold athletic chest print with 'I have enough character, thanks' micro-caption for Station 4 conditioning days \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton).",
+      "short_desc": "Bold athletic chest print with 'I have enough character, thanks' micro-caption for Station 4 conditioning days \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton) \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
-        "4.2 oz 100% combed ring-spun cotton with stretch recovery",
+        "6.1 oz Comfort Colors 1717 100% ring-spun garment-dyed heavyweight cotton with stretch recovery",
         "No-chafe flatlock shoulder seams for overhead and floor transitions",
         "Breathable zero-plastisol chest print",
         "Machine wash cold, tumble dry low"
       ],
       "review_quote": "Lightweight enough to actually train in and the subtle subtext cracks everyone up.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C05",
       "stripe_price_id": "price_1UUb8xRut88O8nG2a53ew4iA",
       "product_url": "https://apexhybridco.com/products/burpee-broad-jumps-build-character-tee.html",
       "seo_title": "Burpee Broad Jumps Build Character Training Tee \u2014 Functional Conditioning Workout Shirt",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C06",
@@ -921,26 +983,28 @@
       "list_price": 36.0,
       "rating": 4.9,
       "reviews": 118,
-      "image": "images/streetwear/apc-c06-black.png",
-      "alt_image": "images/streetwear/apc-c06-white.png",
+      "image": "images/streetwear/apc-c06-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c06-white.png?v=20261025v4",
       "badge": "Best Seller",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "The digital monitor shows split times, not sympathy. Engineered for 1,000m SkiErg and RowErg threshold repeats \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton).",
+      "short_desc": "The digital monitor shows split times, not sympathy. Engineered for 1,000m SkiErg and RowErg threshold repeats \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton) \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
         "Athletic shoulder cut allows full lats extension on SkiErg and indoor rower pulls",
-        "4.2 oz breathable combed cotton keeps core temperature regulated indoors",
+        "6.1 oz Comfort Colors 1717 ring-spun garment-dyed heavyweight cotton keeps core temperature regulated indoors",
         "High-durability DTG print in crisp white and safety orange",
         "Ships in 2\u20134 business days across the US"
       ],
       "review_quote": "My go-to shirt for 5k row tests and threshold intervals. Fits great through the lats.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C06",
       "stripe_price_id": "price_1UUb8yRut88O8nG2NxnEoKDG",
       "product_url": "https://apexhybridco.com/products/the-erg-doesnt-care-how-you-feel-tee.html",
       "seo_title": "The Erg Doesn't Care How You Feel Tee \u2014 Indoor Rowing & SkiErg Conditioning Shirt",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C07",
@@ -952,26 +1016,28 @@
       "list_price": 32.0,
       "rating": 4.8,
       "reviews": 53,
-      "image": "images/streetwear/apc-c07-black.png",
-      "alt_image": "images/streetwear/apc-c07-white.png",
+      "image": "images/streetwear/apc-c07-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c07-white.png?v=20261025v4",
       "badge": "",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Every race morning has two starts: the gun and the pit-stop line before wave call. Soft ring-spun warmup tee \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton).",
+      "short_desc": "Every race morning has two starts: the gun and the pit-stop line before wave call. Soft ring-spun warmup tee \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton) \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
         "Original race-morning graphic with custom icon and 'Go Before The Gun' crest",
-        "4.2 oz combed ring-spun cotton for corral warmups and post-race travel",
+        "6.1 oz Comfort Colors 1717 ring-spun garment-dyed heavyweight cotton for corral warmups and post-race travel",
         "True-to-size unisex athletic sizing (S to 2XL)",
         "Printed and shipped from US facilities"
       ],
       "review_quote": "Bought this as a gift for my marathon/hybrid training partner\u2014best race morning shirt ever.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C07",
       "stripe_price_id": "price_1UUb8zRut88O8nG2c6hu9Ll3",
       "product_url": "https://apexhybridco.com/products/porta-potty-line-pr-pre-race-tee.html",
       "seo_title": "Pre-Race Porta-Potty Line PR Warmup Tee \u2014 Marathon & Hybrid Race Morning Running Shirt",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C08",
@@ -983,26 +1049,28 @@
       "list_price": 36.0,
       "rating": 4.9,
       "reviews": 89,
-      "image": "images/streetwear/apc-c08-black.png",
-      "alt_image": "images/streetwear/apc-c08-white.png",
+      "image": "images/streetwear/apc-c08-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c08-white.png?v=20261025v4",
       "badge": "New Release",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "'The Footage Speaks For Itself.' Custom sled emblem and chest typography for athletes who grind across the turf line \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton).",
+      "short_desc": "'The Footage Speaks For Itself.' Custom sled emblem and chest typography for athletes who grind across the turf line \u2014 engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh\u2122 or Combed Ring-Spun Cotton) \u2014 printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
       "highlights": [
         "Features custom weighted prowler sled illustration and Sled Push Dept. insignia",
-        "4.2 oz Airlume ring-spun cotton\u2014soft, breathable, and durable",
+        "6.1 oz Comfort Colors 1717 ring-spun garment-dyed heavyweight cotton\u2014soft, breathable, and durable",
         "Reinforced crew neck collar holds its shape after heavy training sessions",
         "Available in Vintage Black and Bone White"
       ],
       "review_quote": "The sled graphic looks awesome in person. Great athletic fit that isn't boxy at the waist.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C08",
       "stripe_price_id": "price_1UUb90Rut88O8nG2CRxsKVYJ",
       "product_url": "https://apexhybridco.com/products/defend-my-sled-push-dept-tee.html",
       "seo_title": "I Don't Need To Defend My Sled Push Tee \u2014 Sled Push Dept. Functional Strength Shirt",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C09",
@@ -1014,26 +1082,28 @@
       "list_price": 64.0,
       "rating": 4.9,
       "reviews": 131,
-      "image": "images/streetwear/apc-c09-black.png",
-      "alt_image": "images/streetwear/apc-c09-white.png",
+      "image": "images/streetwear/apc-c09-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c09-white.png?v=20261025v4",
       "badge": "Best Seller",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "8.0 oz mid-heavyweight brushed fleece pullover hoodie with double-lined hood for early morning track intervals and post-race recovery \u2014 built for HYROX\u00ae corral warmups, cold-morning track sessions, and post-race recovery.",
+      "short_desc": "9.0 oz Independent Trading Co. PRM4500 heavyweight pigment-dyed fleece pullover hoodie (fulfilled via Fourthwall) with double-lined hood for early morning track intervals and post-race recovery \u2014 built for HYROX\u00ae corral warmups, cold-morning track sessions, and post-race recovery.",
       "highlights": [
-        "8.0 oz/yd\u00b2 50/50 ring-spun cotton and poly air-jet yarn for a pill-resistant plush finish",
+        "9.0 oz/yd\u00b2 heavyweight pigment-dyed ring-spun fleece (Independent Trading Co. PRM4500, fulfilled via Fourthwall)",
         "Double-lined hood with color-matched drawcord and front kangaroo pouch pocket",
         "1x1 athletic rib-knit cuffs and waistband with spandex for warmth retention",
         "Double-needle stitching at waistband, armholes, and collar"
       ],
       "review_quote": "Super warm without feeling stiff. I wear it to every 5:30 AM track warmup.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C09",
       "stripe_price_id": "price_1UUb91Rut88O8nG2E5Q24Zi0",
       "product_url": "https://apexhybridco.com/products/run-station-repeat-heavy-blend-hoodie.html",
       "seo_title": "Run. Station. Repeat. Heavyweight Fleece Warmup Hoodie \u2014 8.0 oz Athletic Pullover Sweatshirt",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Independent Trading Co. PRM4500 (9 oz heavyweight pigment-dyed fleece hoodie, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C10",
@@ -1045,26 +1115,28 @@
       "list_price": 64.0,
       "rating": 4.8,
       "reviews": 94,
-      "image": "images/streetwear/apc-c10-black.png",
-      "alt_image": "images/streetwear/apc-c10-white.png",
+      "image": "images/streetwear/apc-c10-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c10-white.png?v=20261025v4",
       "badge": "",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Plush pre-shrunk 8.0 oz fleece hoodie engineered for cold garage gym warmups and post-event recovery \u2014 built for HYROX\u00ae corral warmups, cold-morning track sessions, and post-race recovery.",
+      "short_desc": "Heavyweight 9.0 oz Independent Trading Co. PRM4500 pigment-dyed fleece hoodie (fulfilled via Fourthwall) engineered for cold garage gym warmups and post-event recovery \u2014 built for HYROX\u00ae corral warmups, cold-morning track sessions, and post-race recovery.",
       "highlights": [
-        "Soft brushed fleece interior traps heat during warmup sets",
+        "Independent Trading Co. PRM4500 (9.0 oz/yd\u00b2 heavyweight pigment-dyed ring-spun fleece hoodie, fulfilled via Fourthwall)",
         "Spacious kangaroo pocket and athletic ribbed cuffs",
         "High-opacity chest print that resists cracking",
         "Ships in 2\u20135 business days from US hubs"
       ],
       "review_quote": "Coziest gym hoodie I own. Size L fits nicely oversized for warming up on squat days.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C10",
       "stripe_price_id": "price_1UUb93Rut88O8nG2nfdQBibQ",
       "product_url": "https://apexhybridco.com/products/wall-balls-bad-decisions-hoodie.html",
       "seo_title": "Wall Balls & Bad Decisions Brushed Fleece Pullover Hoodie \u2014 Heavyweight Gym Warmup Hoodie",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Independent Trading Co. PRM4500 (9 oz heavyweight pigment-dyed fleece hoodie, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C11",
@@ -1076,26 +1148,28 @@
       "list_price": 62.0,
       "rating": 4.8,
       "reviews": 68,
-      "image": "images/streetwear/apc-c11-black.png",
-      "alt_image": "images/streetwear/apc-c11-white.png",
+      "image": "images/streetwear/apc-c11-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c11-white.png?v=20261025v4",
       "badge": "",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Soft brushed interior with ribbed cuffs and safety-orange 'Est. Kilometer One' chest print for cold morning run clubs \u2014 built for HYROX\u00ae corral warmups, cold-morning track sessions, and post-race recovery.",
+      "short_desc": "Soft brushed interior with ribbed cuffs and safety-orange 'Est. Kilometer One' chest print for cold morning run clubs \u2014 built for HYROX\u00ae corral warmups, cold-morning track sessions, and post-race recovery \u2014 crafted on the Independent Trading Co. PRM4500 9 oz heavyweight pigment-dyed fleece hoodie blank (fulfilled via Fourthwall).",
       "highlights": [
-        "8.0 oz ring-spun fleece blend with zero-pill air-jet yarn",
+        "9.0 oz Independent Trading Co. PRM4500 heavyweight pigment-dyed fleece with zero-pill air-jet yarn",
         "Classic athletic pullover cut with reinforced seams",
         "Ideal layer before stripping down to race-weight gear",
         "Available in sizes S through 2XL"
       ],
       "review_quote": "Great weight for chilly morning miles before the sun comes up.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C11",
       "stripe_price_id": "price_1UUb94Rut88O8nG2pxIIJTnx",
       "product_url": "https://apexhybridco.com/products/compromised-running-club-fleece-hoodie.html",
       "seo_title": "Compromised Running Club Heavy Warmup Hoodie \u2014 Cold Morning Run Club Fleece Pullover",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Independent Trading Co. PRM4500 (9 oz heavyweight pigment-dyed fleece hoodie, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C12",
@@ -1107,26 +1181,28 @@
       "list_price": 65.0,
       "rating": 4.9,
       "reviews": 82,
-      "image": "images/streetwear/apc-c12-black.png",
-      "alt_image": "images/streetwear/apc-c12-white.png",
+      "image": "images/streetwear/apc-c12-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c12-white.png?v=20261025v4",
       "badge": "Top Rated",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "short_desc": "Heavy-duty 8.0 oz warmup hoodie featuring the Sled Push Dept. crest for strength and turf conditioning athletes \u2014 built for HYROX\u00ae corral warmups, cold-morning track sessions, and post-race recovery.",
+      "short_desc": "Heavyweight 9.0 oz Independent Trading Co. PRM4500 pigment-dyed fleece warmup hoodie (fulfilled via Fourthwall) featuring the Sled Push Dept. crest for strength and turf conditioning athletes \u2014 built for HYROX\u00ae corral warmups, cold-morning track sessions, and post-race recovery.",
       "highlights": [
-        "8.0 oz plush fleece with double-lined hood and matte drawstrings",
+        "9.0 oz Independent Trading Co. PRM4500 heavyweight pigment-dyed fleece with double-lined hood and matte drawstrings",
         "Crisp multi-color chest graphic with custom sled icon",
         "Athletic rib-knit hem stays in place during warmup movements",
         "Fast 2\u20135 business day US shipping"
       ],
       "review_quote": "Love the graphic and the fleece is thick and warm. Holds up great in the wash.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C12",
       "stripe_price_id": "price_1UUb95Rut88O8nG2lSgBQOlZ",
       "product_url": "https://apexhybridco.com/products/defend-my-sled-push-fleece-hoodie.html",
       "seo_title": "Sled Push Dept. Heavyweight Pullover Hoodie \u2014 Functional Strength & Conditioning Fleece",
-      "has_colorways": true
+      "has_colorways": true,
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Independent Trading Co. PRM4500 (9 oz heavyweight pigment-dyed fleece hoodie, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C42",
@@ -1139,24 +1215,26 @@
       "list_price": 84.0,
       "rating": 5.0,
       "reviews": 164,
-      "image": "images/streetwear/apc-c42-black.png",
-      "alt_image": "images/streetwear/apc-c42-white.png",
+      "image": "images/streetwear/apc-c42-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c42-white.png?v=20261025v4",
       "badge": "New Release",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
       "has_colorways": true,
-      "short_desc": "Ultra-lightweight 4-way stretch AeroShell\u2122 DWR windbreaker warmup jacket engineered for cold morning race corrals, outdoor 8\u00d71000m intervals, and Roxzone warmups.",
+      "short_desc": "Ultra-lightweight 4-way stretch AeroShell\u2122 DWR windbreaker warmup jacket engineered for cold morning race corrals, outdoor 8\u00d71000m intervals, and Roxzone warmups \u2014 built on the Champion CO200 Packable Quarter-Zip / Windbreaker Jacket shell (water-resistant micro-poplin shell with embroidered chest crest, fulfilled via Fourthwall).",
       "highlights": [
-        "Featherweight 3.9 oz ripstop nylon-spandex shell with DWR wind & light-rain protection",
+        "Champion CO200 Packable Quarter-Zip / Windbreaker Jacket (water-resistant micro-poplin shell with embroidered chest crest, fulfilled via Fourthwall)",
         "Laser-perforated underarm & upper-spine thermal dump vents prevent overheating during warmup runs",
         "Matte lockable YKK front zipper + zippered chest telemetry pocket for race band & gels",
         "247 Race Division chest insignia & 01 SkiErg \u2013 08 Wall Balls split telemetry print"
       ],
       "review_quote": "Wore this in the Chicago morning wave corral and stripped it 2 minutes before the horn. Packs into a duffle pocket and looks elite.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C42",
-      "stripe_price_id": "price_1UUdg0Rut88O8nG2Mv5D9mfS"
+      "stripe_price_id": "price_1UUdg0Rut88O8nG2Mv5D9mfS",
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Champion CO200 Packable Quarter-Zip / Windbreaker Jacket (water-resistant micro-poplin shell with embroidered chest crest, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C43",
@@ -1169,24 +1247,26 @@
       "list_price": 86.0,
       "rating": 4.9,
       "reviews": 142,
-      "image": "images/streetwear/apc-c43-black.png",
-      "alt_image": "images/streetwear/apc-c43-white.png",
+      "image": "images/streetwear/apc-c43-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c43-white.png?v=20261025v4",
       "badge": "Pro Division",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
       "has_colorways": true,
-      "short_desc": "Articulated raglan windbreaker track jacket featuring full 01\u201308 station telemetry architecture, breathable mesh lining, and zero-snag athletic cuffs.",
+      "short_desc": "Articulated raglan windbreaker track jacket featuring full 01\u201308 station telemetry architecture, breathable mesh lining, and zero-snag athletic cuffs \u2014 built on the Champion CO200 Packable Quarter-Zip / Windbreaker Jacket shell (water-resistant micro-poplin shell with embroidered chest crest, fulfilled via Fourthwall).",
       "highlights": [
-        "Articulated shoulder gussets built for SkiErg, rowing, and dynamic warmup drills",
+        "Champion CO200 Packable Quarter-Zip / Windbreaker Jacket (water-resistant micro-poplin shell with embroidered chest crest, fulfilled via Fourthwall)",
         "Micro-mesh interior lining wicks sweat without clinging over a tech tee or tank",
         "Elasticated wrist cuffs & drawcord hem lock in warmth between outdoor track repeats",
         "High-contrast 08-Station Race Division streetwear typography in Black or Bone"
       ],
       "review_quote": "The cut across the shoulders and chest is spot-on. Looks like a $160 Represent 247 track jacket.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C43",
-      "stripe_price_id": "price_1UUdgNRut88O8nG2ixBIDw0s"
+      "stripe_price_id": "price_1UUdgNRut88O8nG2ixBIDw0s",
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Champion CO200 Packable Quarter-Zip / Windbreaker Jacket (water-resistant micro-poplin shell with embroidered chest crest, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C44",
@@ -1199,24 +1279,26 @@
       "list_price": 82.0,
       "rating": 5.0,
       "reviews": 129,
-      "image": "images/streetwear/apc-c44-black.png",
-      "alt_image": "images/streetwear/apc-c44-white.png",
+      "image": "images/streetwear/apc-c44-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c44-white.png?v=20261025v4",
       "badge": "Athlete Favorite",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
       "has_colorways": true,
-      "short_desc": "Streamlined quarter-zip technical warmup shell built for threshold tempo runs, early-wave check-in, and hybrid gym sessions.",
+      "short_desc": "Streamlined quarter-zip technical warmup shell built for threshold tempo runs, early-wave check-in, and hybrid gym sessions \u2014 built on the Champion CO200 Packable Quarter-Zip / Windbreaker Jacket shell (water-resistant micro-poplin shell with embroidered chest crest, fulfilled via Fourthwall).",
       "highlights": [
-        "4-way stretch woven technical shell with anti-chafe chin guard and stand collar",
+        "Champion CO200 Packable Quarter-Zip / Windbreaker Jacket (water-resistant micro-poplin shell with embroidered chest crest, fulfilled via Fourthwall)",
         "Deep ventilation quarter-zip dumps heat instantly during Zone 2 to Zone 4 warmup progressions",
         "Sweat-proof concealed side zip pocket secures keys, AirPods, and race timing chip",
         "Sub-65 Pro Division chest emblem + 8\u00d71000m race telemetry graphic"
       ],
       "review_quote": "My go-to layer for 5 AM track intervals and race weekend check-in.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C44",
-      "stripe_price_id": "price_1UUdgORut88O8nG2lGkhNXNS"
+      "stripe_price_id": "price_1UUdgORut88O8nG2lGkhNXNS",
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Champion CO200 Packable Quarter-Zip / Windbreaker Jacket (water-resistant micro-poplin shell with embroidered chest crest, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C45",
@@ -1229,24 +1311,26 @@
       "list_price": 88.0,
       "rating": 5.0,
       "reviews": 188,
-      "image": "images/streetwear/apc-c45-black.png",
-      "alt_image": "images/streetwear/apc-c45-white.png",
+      "image": "images/streetwear/apc-c45-black.png?v=20261025v4",
+      "alt_image": "images/streetwear/apc-c45-white.png?v=20261025v4",
       "badge": "Tour Edition",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
       "has_colorways": true,
-      "short_desc": "Commemorative 2026/2027 North American Championship Tour lightweight warmup jacket honoring Chicago, Dallas, Anaheim, Las Vegas, Miami, and New York.",
+      "short_desc": "Commemorative 2026/2027 North American Championship Tour lightweight warmup jacket honoring Chicago, Dallas, Anaheim, Las Vegas, Miami, and New York \u2014 built on the Champion CO200 Packable Quarter-Zip / Windbreaker Jacket shell (water-resistant micro-poplin shell with embroidered chest crest, fulfilled via Fourthwall).",
       "highlights": [
-        "Tour-grade water-repellent stretch woven shell with Matte Black & Bone colorway options",
+        "Champion CO200 Packable Quarter-Zip / Windbreaker Jacket (water-resistant micro-poplin shell with embroidered chest crest, fulfilled via Fourthwall)",
         "Features 2026/2027 North American race venue callouts + 8-station split telemetry block",
         "Relaxed athletic streetwear fit layers cleanly over pump covers and breathable tech tees",
         "Reinforced collar, cuffs, and double-needle hem built for year-round travel and racing"
       ],
       "review_quote": "Every person in my training group asked where I got this warmup jacket before our Dallas simulation.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C45",
-      "stripe_price_id": "price_1UUdgPRut88O8nG2HcnisUmt"
+      "stripe_price_id": "price_1UUdgPRut88O8nG2HcnisUmt",
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Champion CO200 Packable Quarter-Zip / Windbreaker Jacket (water-resistant micro-poplin shell with embroidered chest crest, fulfilled via Fourthwall)"
     },
     {
       "id": "APC-C13",
@@ -1258,13 +1342,13 @@
       "list_price": 40.0,
       "rating": 4.8,
       "reviews": 112,
-      "image": "images/products/apc-c13-cap.jpg",
+      "image": "images/products/apc-c13-cap.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Warehouse",
       "has_sizes": false,
-      "short_desc": "100% chino cotton twill unstructured low-profile cap with breathable stitched eyelets and adjustable antique brass buckle Essential durability & conditioning gear for HYROX\u00ae, DEKA\u00ae, and hybrid endurance athletes.",
+      "short_desc": "100% chino cotton twill unstructured low-profile cap with breathable stitched eyelets and adjustable antique brass buckle Essential durability & conditioning gear for HYROX\u00ae, DEKA\u00ae, and hybrid endurance athletes \u2014 fulfilled via Fourthwall US.",
       "highlights": [
         "100% bio-washed chino cotton twill (Yupoong 6245CM unstructured 6-panel cut)",
         "Pre-curved visor with sweat-absorbing internal cotton headband",
@@ -1272,11 +1356,13 @@
         "Lightweight, packable silhouette for long aerobic Zone 2 runs"
       ],
       "review_quote": "Fits low on the crown just like a broken-in running hat should. Doesn't trap heat on long runs.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C13",
       "stripe_price_id": "price_1UUb96Rut88O8nG2xm8owDwY",
       "product_url": "https://apexhybridco.com/products/zone-2-engine-builder-embroidered-dad-hat.html",
-      "seo_title": "Zone 2 Engine Lab Low-Profile Cotton Twill Running Cap \u2014 Unstructured Athletic Dad Hat"
+      "seo_title": "Zone 2 Engine Lab Low-Profile Cotton Twill Running Cap \u2014 Unstructured Athletic Dad Hat",
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Fourthwall Custom Athletic Gear & Embroidery (fulfilled via Fourthwall US)"
     },
     {
       "id": "APC-C14",
@@ -1288,13 +1374,13 @@
       "list_price": 79.0,
       "rating": 4.9,
       "reviews": 208,
-      "image": "images/products/apc-c14-duffle.jpg",
+      "image": "images/products/apc-c14-duffle.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Best Seller",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Warehouse",
       "has_sizes": false,
-      "short_desc": "Water-resistant 900D Oxford tactical gym duffle with ventilated shoe tunnel, wet-gear pocket, and convertible backpack straps Essential durability & conditioning gear for HYROX\u00ae, DEKA\u00ae, and hybrid endurance athletes.",
+      "short_desc": "Water-resistant 900D Oxford tactical gym duffle with ventilated shoe tunnel, wet-gear pocket, and convertible backpack straps Essential durability & conditioning gear for HYROX\u00ae, DEKA\u00ae, and hybrid endurance athletes \u2014 fulfilled via Fourthwall US.",
       "highlights": [
         "50-liter capacity with dedicated ventilated side compartment for racing shoes",
         "Water-resistant 900D high-density Oxford fabric with heavy-duty SBS zippers",
@@ -1302,11 +1388,13 @@
         "MOLLE exterior webbing plus internal waterproof pocket for post-workout clothes"
       ],
       "review_quote": "Fits my lifters, running shoes, belt, jump rope, and two shakers with room to spare.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C14",
       "stripe_price_id": "price_1UUb97Rut88O8nG29muuJAnH",
       "product_url": "https://apexhybridco.com/products/apex-8-station-race-day-tactical-duffle.html",
-      "seo_title": "50L Tactical Gym Duffle Bag with Ventilated Shoe Compartment \u2014 Race Day Backpack Duffle"
+      "seo_title": "50L Tactical Gym Duffle Bag with Ventilated Shoe Compartment \u2014 Race Day Backpack Duffle",
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Fourthwall Custom Athletic Gear & Embroidery (fulfilled via Fourthwall US)"
     },
     {
       "id": "APC-C15",
@@ -1318,13 +1406,13 @@
       "list_price": 42.0,
       "rating": 4.8,
       "reviews": 165,
-      "image": "images/products/apc-c15-shaker.jpg",
+      "image": "images/products/apc-c15-shaker.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "",
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Warehouse",
       "has_sizes": false,
-      "short_desc": "Matte black 18/8 food-grade stainless steel shaker bottle with wire mixing whisk, leakproof flip cap, and 24-hour cold retention Essential durability & conditioning gear for HYROX\u00ae, DEKA\u00ae, and hybrid endurance athletes.",
+      "short_desc": "Matte black 18/8 food-grade stainless steel shaker bottle with wire mixing whisk, leakproof flip cap, and 24-hour cold retention Essential durability & conditioning gear for HYROX\u00ae, DEKA\u00ae, and hybrid endurance athletes \u2014 fulfilled via Fourthwall US.",
       "highlights": [
         "Double-wall\u9285-lined vacuum insulation keeps electrolytes ice-cold for up to 24 hours",
         "18/8 medical-grade stainless steel prevents odor retention and plastic aftertaste",
@@ -1332,11 +1420,13 @@
         "Sweat-free matte black powder coat with heavy-duty carry loop"
       ],
       "review_quote": "Zero leaks in my gym bag and ice literally stays solid from morning training until evening.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-C15",
       "stripe_price_id": "price_1UUb97Rut88O8nG2wjHutbEN",
       "product_url": "https://apexhybridco.com/products/electrolyte-pacing-insulated-shaker-bottle.html",
-      "seo_title": "24oz Double-Wall Vacuum Insulated Stainless Steel Protein Shaker Bottle with Wire Whisk"
+      "seo_title": "24oz Double-Wall Vacuum Insulated Stainless Steel Protein Shaker Bottle with Wire Whisk",
+      "fulfillment_partner": "Fourthwall",
+      "fourthwall_blank": "Fourthwall Custom Athletic Gear & Embroidery (fulfilled via Fourthwall US)"
     },
     {
       "id": "APC-E01",
@@ -1348,7 +1438,7 @@
       "list_price": 129.0,
       "rating": 4.9,
       "reviews": 412,
-      "image": "images/products/apc-e01-massage-gun.jpg",
+      "image": "images/products/apc-e01-massage-gun.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Best Seller",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1362,7 +1452,7 @@
         "Includes 6 specialized attachment heads, USB-C fast charging (6-hour battery), and zippered EVA case"
       ],
       "review_quote": "Every bit as powerful as $300 massage guns I've used at physical therapy clinics, and way quieter.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E01",
       "stripe_price_id": "price_1UUb9FRut88O8nG2cZwmHmCA",
       "product_url": "https://apexhybridco.com/products/pro-3200rpm-brushless-percussion-massage-gun.html",
@@ -1378,7 +1468,7 @@
       "list_price": 159.0,
       "rating": 4.8,
       "reviews": 239,
-      "image": "images/products/apc-e02-red-light-belt.jpg",
+      "image": "images/products/apc-e02-red-light-belt.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Top Rated",
       "ship_time": "FREE 3\u20134 Day US Delivery",
@@ -1392,7 +1482,7 @@
         "Can be powered via wall adapter or portable USB power bank while relaxing on the couch"
       ],
       "review_quote": "Game changer for patellar tendonitis during high-volume sled and running blocks.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E02",
       "stripe_price_id": "price_1UUb9GRut88O8nG25GeYhLgG",
       "product_url": "https://apexhybridco.com/products/dual-wavelength-660nm-850nm-red-light-recovery-wrap.html",
@@ -1408,7 +1498,7 @@
       "list_price": 199.0,
       "rating": 4.9,
       "reviews": 327,
-      "image": "images/products/apc-e03-cold-plunge-tub.jpg",
+      "image": "images/products/apc-e03-cold-plunge-tub.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Best Seller",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1422,7 +1512,7 @@
         "Includes insulated all-weather cover, drain hose with shutoff valve, and carry bag"
       ],
       "review_quote": "Set it up on my apartment balcony in 5 minutes. Holds temperature remarkably well with the lid on.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E03",
       "stripe_price_id": "price_1UUb9HRut88O8nG2Oo0bZFPL",
       "product_url": "https://apexhybridco.com/products/insulated-portable-cold-plunge-ice-pod-pro.html",
@@ -1438,7 +1528,7 @@
       "list_price": 45.0,
       "rating": 4.7,
       "reviews": 154,
-      "image": "images/products/apc-e04-plunge-thermometer.jpg",
+      "image": "images/products/apc-e04-plunge-thermometer.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1452,7 +1542,7 @@
         "Backlit high-contrast LCD screen with \u00b0F / \u00b0C toggle"
       ],
       "review_quote": "Super accurate in 38\u00b0F ice water and love being able to check the temp from my kitchen.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E04",
       "stripe_price_id": "price_1UUb9JRut88O8nG2nvv4vKMD",
       "product_url": "https://apexhybridco.com/products/floating-digital-cold-plunge-thermometer-timer.html",
@@ -1468,7 +1558,7 @@
       "list_price": 98.0,
       "rating": 4.8,
       "reviews": 276,
-      "image": "images/products/apc-e05-foam-roller.jpg",
+      "image": "images/products/apc-e05-foam-roller.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Top Rated",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1482,7 +1572,7 @@
         "USB-C rechargeable battery with drawcord mesh carry bag included"
       ],
       "review_quote": "Rolling tight calves and IT bands with vibration on level 3 takes half the time of a regular roller.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E05",
       "stripe_price_id": "price_1UUb9KRut88O8nG2pDq2s88O",
       "product_url": "https://apexhybridco.com/products/4-speed-vibrating-high-density-mobility-foam-roller.html",
@@ -1498,7 +1588,7 @@
       "list_price": 44.0,
       "rating": 4.8,
       "reviews": 318,
-      "image": "images/products/apc-e06-nordic-strap.jpg",
+      "image": "images/products/apc-e06-nordic-strap.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1512,7 +1602,7 @@
         "Ideal for Nordic curls, Spanish squats, razor curls, and anchored core work"
       ],
       "review_quote": "Rock solid under the door and the foam padding doesn't dig into my Achilles at all.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E06",
       "stripe_price_id": "price_1UUb9LRut88O8nG2Z4JWAEMy",
       "product_url": "https://apexhybridco.com/products/nordic-hamstring-curl-door-anchor-strap-pro.html",
@@ -1528,7 +1618,7 @@
       "list_price": 58.0,
       "rating": 4.9,
       "reviews": 291,
-      "image": "images/products/apc-e07-magnetic-gym-bag.jpg",
+      "image": "images/products/apc-e07-magnetic-gym-bag.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Best Seller",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1542,7 +1632,7 @@
         "Includes detachable crossbody shoulder strap, key clip, and lockable zippered wallet compartment"
       ],
       "review_quote": "Snaps right onto the squat rack upright and doesn't budge even with a full 40oz stainless bottle.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E07",
       "stripe_price_id": "price_1UUb9MRut88O8nG2PQeJvmed",
       "product_url": "https://apexhybridco.com/products/magnetic-gym-bag-bottle-phone-organizer-pouch.html",
@@ -1558,7 +1648,7 @@
       "list_price": 45.0,
       "rating": 4.8,
       "reviews": 187,
-      "image": "images/products/apc-e08-speed-jump-rope.jpg",
+      "image": "images/products/apc-e08-speed-jump-rope.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1572,7 +1662,7 @@
         "Fully adjustable length up to 9.8 ft with zippered storage pouch"
       ],
       "review_quote": "Smooth spin on the bearings and the removable handle weights torch your shoulders and grip.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E08",
       "stripe_price_id": "price_1UUb9MRut88O8nG2QCNaTCDY",
       "product_url": "https://apexhybridco.com/products/ball-bearing-weighted-aluminium-speed-jump-rope.html",
@@ -1588,7 +1678,7 @@
       "list_price": 52.0,
       "rating": 4.8,
       "reviews": 224,
-      "image": "images/products/apc-e09-grip-dynamometer.jpg",
+      "image": "images/products/apc-e09-grip-dynamometer.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1602,7 +1692,7 @@
         "Includes 2x AAA batteries\u2014ready to test right out of the box"
       ],
       "review_quote": "I test my grip every morning alongside HRV to gauge CNS fatigue before heavy deadlift and carry days.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E09",
       "stripe_price_id": "price_1UUb9ORut88O8nG2VDroIEQX",
       "product_url": "https://apexhybridco.com/products/digital-dynamometer-farmer-carry-grip-trainer-set.html",
@@ -1618,7 +1708,7 @@
       "list_price": 68.0,
       "rating": 4.7,
       "reviews": 356,
-      "image": "images/products/apc-e10-acupressure-mat.jpg",
+      "image": "images/products/apc-e10-acupressure-mat.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1632,7 +1722,7 @@
         "Rolls up compactly for travel or storage"
       ],
       "review_quote": "Lying on this for 12 minutes after a long run melts lower-back tightness and puts me right to sleep.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E10",
       "stripe_price_id": "price_1UUb9PRut88O8nG2D6UO3UVA",
       "product_url": "https://apexhybridco.com/products/acupressure-myofascial-recovery-mat-pillow-set.html",
@@ -1648,7 +1738,7 @@
       "list_price": 54.0,
       "rating": 4.7,
       "reviews": 143,
-      "image": "images/products/apc-e11-smart-flask.jpg",
+      "image": "images/products/apc-e11-smart-flask.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1662,7 +1752,7 @@
         "Long-life internal lithium cell requires zero charging cables"
       ],
       "review_quote": "Sleek matte black finish and the temperature readout on the lid works every single tap.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E11",
       "stripe_price_id": "price_1UUb9QRut88O8nG2IqonwkK4",
       "product_url": "https://apexhybridco.com/products/smart-led-hydration-reminder-thermal-flask-32oz.html",
@@ -1678,7 +1768,7 @@
       "list_price": 189.0,
       "rating": 4.9,
       "reviews": 389,
-      "image": "images/products/apc-e12-compression-boots.jpg",
+      "image": "images/products/apc-e12-compression-boots.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Best Seller",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1692,7 +1782,7 @@
         "Rip-stop wipe-clean nylon sleeves with heavy-duty zippers and storage carry bag"
       ],
       "review_quote": "20 minutes in these boots after a long Sunday run makes my legs feel brand new on Monday morning.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E12",
       "stripe_price_id": "price_1UUb9SRut88O8nG2OFFmQccS",
       "product_url": "https://apexhybridco.com/products/rechargeable-pneumatic-calf-shin-compression-sleeves.html",
@@ -1708,7 +1798,7 @@
       "list_price": 89.0,
       "rating": 4.9,
       "reviews": 214,
-      "image": "images/products/apc-e13-tib-bar.jpg",
+      "image": "images/products/apc-e13-tib-bar.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Top Rated",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1722,7 +1812,7 @@
         "Includes heavy-duty snap-lock barbell collar clamp and locking pin"
       ],
       "review_quote": "Completely cured my recurring shin splints within four weeks of doing 3 sets twice a week.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E13",
       "stripe_price_id": "price_1UUb9TRut88O8nG2i33twvSM",
       "product_url": "https://apexhybridco.com/products/tibialis-anterior-shin-splint-trainer-bar.html",
@@ -1738,7 +1828,7 @@
       "list_price": 84.0,
       "rating": 4.7,
       "reviews": 178,
-      "image": "images/products/apc-e14-corner-lamp.jpg",
+      "image": "images/products/apc-e14-corner-lamp.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1752,7 +1842,7 @@
         "Heavy-duty matte black aluminum housing with tool-free 5-minute assembly"
       ],
       "review_quote": "Gives our garage gym and sauna corner a high-end studio atmosphere. Very sturdy base.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E14",
       "stripe_price_id": "price_1UUb9URut88O8nG2N90WBySl",
       "product_url": "https://apexhybridco.com/products/minimalist-rgbic-ambient-home-gym-corner-floor-lamp.html",
@@ -1768,7 +1858,7 @@
       "list_price": 199.0,
       "rating": 4.9,
       "reviews": 304,
-      "image": "images/products/apc-e15-sauna-blanket.jpg",
+      "image": "images/products/apc-e15-sauna-blanket.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Best Seller",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1782,7 +1872,7 @@
         "Folds neatly into the included canvas storage bag\u2014fits under a bed or in a closet"
       ],
       "review_quote": "I use this 3 nights a week for 35 minutes after training. Sweats just like a real infrared cabin sauna.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E15",
       "stripe_price_id": "price_1UUb9VRut88O8nG2FHix8J5d",
       "product_url": "https://apexhybridco.com/products/far-infrared-portable-home-sauna-detox-blanket.html",
@@ -1802,7 +1892,7 @@
       "gross_margin_pct": 66.5,
       "rating": 4.9,
       "reviews": 264,
-      "image": "images/products/apc-e16-weighted-vest.jpg",
+      "image": "images/products/apc-e16-weighted-vest.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Best Seller",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1816,7 +1906,7 @@
         "Zero-chafe contoured shoulder yoke locks down load without restricting ribcage expansion"
       ],
       "review_quote": "Zero bounce during kilometer repeats and pull-ups. Best 20lb weighted training vest I've used for Murph prep.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E16",
       "stripe_price_id": "price_1UUbgGRut88O8nG2bh8wRHGc",
       "product_url": "https://apexhybridco.com/products/tactfit-20lb-plate-carrier-weighted-training-vest.html"
@@ -1835,7 +1925,7 @@
       "gross_margin_pct": 67.1,
       "rating": 4.8,
       "reviews": 192,
-      "image": "images/products/apc-e17-lung-trainer.jpg",
+      "image": "images/products/apc-e17-lung-trainer.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Top Rated",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1849,7 +1939,7 @@
         "Pocket-sized, fully washable design ideal for morning warmups and pre-race respiratory priming"
       ],
       "review_quote": "2 sets of 30 breaths morning and night noticeably reduced my breathing panic coming off the SkiErg and burpee broad jumps.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E17",
       "stripe_price_id": "price_1UUbgGRut88O8nG2aRzjBRW2",
       "product_url": "https://apexhybridco.com/products/aerolung-dual-valve-respiratory-breathing-lung-trainer.html"
@@ -1868,7 +1958,7 @@
       "gross_margin_pct": 66.7,
       "rating": 4.9,
       "reviews": 310,
-      "image": "images/products/apc-e18-cryo-knee-sleeve.jpg",
+      "image": "images/products/apc-e18-cryo-knee-sleeve.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Best Seller",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1882,7 +1972,7 @@
         "Zero-leak frostbite-free plush neoprene lining eliminates messy melting ice bags"
       ],
       "review_quote": "Stays ice cold for a full 25 minutes after long runs and the compression straps keep it snug right over the patellar tendon.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E18",
       "stripe_price_id": "price_1UUbgHRut88O8nG2UqDVoDKe",
       "product_url": "https://apexhybridco.com/products/cryosleeve-360-gel-knee-ice-pack-wrap-cold-compression.html"
@@ -1901,7 +1991,7 @@
       "gross_margin_pct": 66.4,
       "rating": 4.8,
       "reviews": 228,
-      "image": "images/products/apc-e19-electric-cupping.jpg",
+      "image": "images/products/apc-e19-electric-cupping.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Top Rated",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1915,7 +2005,7 @@
         "USB rechargeable 2,000mAh lithium battery delivers up to 8 full 20-minute recovery sessions per charge"
       ],
       "review_quote": "Releases tight upper traps, lats, and calves after heavy farmer carries and rowing better than any foam roller.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E19",
       "stripe_price_id": "price_1UUbgIRut88O8nG2Ic49CTj9",
       "product_url": "https://apexhybridco.com/products/thermocup-smart-electric-cupping-therapy-red-light-massager.html"
@@ -1934,7 +2024,7 @@
       "gross_margin_pct": 67.6,
       "rating": 4.9,
       "reviews": 342,
-      "image": "images/products/apc-e20-magnetic-phone-mount.jpg",
+      "image": "images/products/apc-e20-magnetic-phone-mount.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Best Seller",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1948,7 +2038,7 @@
         "Includes 2 ultra-thin magnetic adapter rings for non-MagSafe Android and iPhone cases"
       ],
       "review_quote": "Every hybrid athlete filming form checks or WOD qualifiers needs this. Clips onto the rig in one second and never slips.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E20",
       "stripe_price_id": "price_1UUbgJRut88O8nG2EXy6EqZH",
       "product_url": "https://apexhybridco.com/products/magtripod-neodymium-magnetic-gym-phone-mount-stand.html"
@@ -1967,7 +2057,7 @@
       "gross_margin_pct": 66.4,
       "rating": 4.9,
       "reviews": 284,
-      "image": "images/products/apc-e21-heart-rate-monitor.jpg",
+      "image": "images/products/apc-e21-heart-rate-monitor.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Best Seller",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -1981,7 +2071,7 @@
         "Soft anti-chafe adjustable woven electrode chest strap (fits 25\" to 48\" chest circumference)"
       ],
       "review_quote": "Connects instantly to my Garmin watch and the Concept2 SkiErg/RowErg PM5 at the same time. Essential for strict Zone 2.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E21",
       "stripe_price_id": "price_1UUbgKRut88O8nG2dsXFHFuR",
       "product_url": "https://apexhybridco.com/products/pulsetrack-ant-bluetooth-chest-strap-heart-rate-monitor.html"
@@ -2000,7 +2090,7 @@
       "gross_margin_pct": 66.7,
       "rating": 4.8,
       "reviews": 215,
-      "image": "images/products/apc-e22-ems-foot-mat.jpg",
+      "image": "images/products/apc-e22-ems-foot-mat.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "New Release",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -2014,7 +2104,7 @@
         "Detachable USB-rechargeable digital LCD controller with 15-minute auto-shutoff timer"
       ],
       "review_quote": "15 minutes bare-foot on this mat while working at my desk completely loosens up stiff arches and calves after track workouts.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E22",
       "stripe_price_id": "price_1UUbgjRut88O8nG22SHo4Gaj",
       "product_url": "https://apexhybridco.com/products/neurostep-ems-foot-massager-circulation-recovery-mat.html"
@@ -2033,7 +2123,7 @@
       "gross_margin_pct": 67.3,
       "rating": 4.9,
       "reviews": 376,
-      "image": "images/products/apc-e23-liquid-chalk.jpg",
+      "image": "images/products/apc-e23-liquid-chalk.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Best Seller",
       "ship_time": "FREE 2\u20134 Day US Delivery",
@@ -2047,7 +2137,7 @@
         "Clips directly onto your 8-Station Race Duffle or belt loop for instant mid-workout re-application"
       ],
       "review_quote": "Dries in seconds, stays on through 200m heavy kettlebell farmer carries, and washes off cleanly with soap and water.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E23",
       "stripe_price_id": "price_1UUbgkRut88O8nG2OTyiZtyA",
       "product_url": "https://apexhybridco.com/products/chalklock-2-pack-mess-free-liquid-lifting-gym-chalk.html"
@@ -2066,7 +2156,7 @@
       "gross_margin_pct": 66.7,
       "rating": 4.9,
       "reviews": 248,
-      "image": "images/products/apc-e24-red-light-panel.jpg",
+      "image": "images/products/apc-e24-red-light-panel.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Best Seller",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -2080,7 +2170,7 @@
         "Heavy-duty telescoping tabletop base tilts 360\u00b0 for targeted knee, shoulder, back, or evening facial circadian recovery"
       ],
       "review_quote": "Awesome irradiance output for a compact desktop panel. I run it for 15 minutes every evening while stretching.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E24",
       "stripe_price_id": "price_1UUbglRut88O8nG2ZAIFv5Hd",
       "product_url": "https://apexhybridco.com/products/lumired-660nm-850nm-clinical-red-light-therapy-panel.html"
@@ -2099,7 +2189,7 @@
       "gross_margin_pct": 66.3,
       "rating": 4.9,
       "reviews": 295,
-      "image": "images/products/apc-e25-collapsible-roller.jpg",
+      "image": "images/products/apc-e25-collapsible-roller.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Top Rated",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -2113,7 +2203,7 @@
         "Ultralight 1.6-lb bamboo-and-alloy internal slat construction built for destination races and marathon travel"
       ],
       "review_quote": "Flew to Chicago and Dallas races with this tucked flat in my carry-on backpack. Pops open in 2 seconds and is rock solid.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E25",
       "stripe_price_id": "price_1UUbgmRut88O8nG2nr2RGGHE",
       "product_url": "https://apexhybridco.com/products/morphroll-collapsible-foldable-travel-foam-roller.html"
@@ -2132,7 +2222,7 @@
       "gross_margin_pct": 66.3,
       "rating": 4.8,
       "reviews": 168,
-      "image": "images/products/apc-e26-shoe-case.jpg",
+      "image": "images/products/apc-e26-shoe-case.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "New Release",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -2146,7 +2236,7 @@
         "Reinforced top grab handle clips onto rolling luggage or duffle bags for race-weekend travel"
       ],
       "review_quote": "Keeps my carbon race shoes protected in my suitcase and prevents dirty turf outsoles from touching my clean clothes.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E26",
       "stripe_price_id": "price_1UUbgnRut88O8nG25uknIOS2",
       "product_url": "https://apexhybridco.com/products/solevault-ventilated-carbon-race-shoe-compartment-case.html"
@@ -2165,7 +2255,7 @@
       "gross_margin_pct": 66.7,
       "rating": 4.9,
       "reviews": 203,
-      "image": "images/products/apc-e27-grip-handles.jpg",
+      "image": "images/products/apc-e27-grip-handles.jpg?v=20261025v4",
       "alt_image": "",
       "badge": "Top Rated",
       "ship_time": "FREE 3\u20135 Day US Delivery",
@@ -2179,13 +2269,117 @@
         "Complete pair: includes 2 cylindrical grip handles, 2 heavy-duty nylon anchor straps, and 2 black steel carabiners"
       ],
       "review_quote": "Looping these onto kettlebells for farmer walks and hanging them from the pull-up bar took my grip endurance to another level.",
-      "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
+      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
       "stripe_product_id": "APC-E27",
       "stripe_price_id": "price_1UUbgnRut88O8nG2PIdBceh8",
       "product_url": "https://apexhybridco.com/products/deadhang-solid-beechwood-pull-up-farmer-carry-grip-handles.html"
     }
   ],
   "guides": [
+    {
+      "slug": "hyrox-warmup-routine-and-start-corral-gear-guide-2026",
+      "title": "The Complete Hybrid Race Warmup Routine & Start-Corral Layering Guide (2026/2027)",
+      "category": "Race Day Warmup & Layering",
+      "read_time": "7 min read",
+      "summary": "How to warm up in the 25-minute start corral window without spiking core temperature early\u2014featuring heart-rate priming, respiratory activation, and packable start-corral layering with the Apex AeroShell\u2122 Warmup Jacket.",
+      "recommended_skus": [
+        "APC-C42",
+        "APC-C43",
+        "APC-C44",
+        "APC-C45",
+        "APC-C36",
+        "APC-E14"
+      ],
+      "faqs": [
+        [
+          "What should I wear in the start corral before a HYROX or hybrid race?",
+          "Wear a lightweight, wind-resistant outer shell like the 4.2 oz Apex AeroShell\u2122 Lightweight Race Warmup Jacket (APC-C42, $64) over a laser-vented AeroMesh\u2122 4.0 Tech Shirt (APC-C36, $36). Heavy cotton hoodies trap excess moisture during warmup strides and cause early thermal drift on Run 1."
+        ],
+        [
+          "How long before my wave time should I start warming up?",
+          "Begin your progressive warmup 25 minutes before your wave horn: 8 minutes of easy Zone 2 jogging, 6 minutes of dynamic hip flexor and thoracic mobility, 4 minutes of inspiratory muscle activation using the AeroLung Trainer (APC-E14), and 3\u00d7100m strides at race pace before stripping your outer shell 90 seconds prior to launch."
+        ]
+      ],
+      "body_html": "\n        <h2>Why Most Athletes Lose 90 Seconds in Kilometer 1 Before the Horn Even Sounds</h2>\n        <p>Convention center race venues in Chicago (Navy Pier), Dallas (Kay Bailey Hutchison), Anaheim, and New York create a deceptive thermal trap: athlete check-in and warmup zones often sit between 54\u00b0F and 60\u00b0F, while the high-output race track quickly feels like 75\u00b0F+ once your heart rate crosses 170 BPM. Athletes who warm up in heavy 14 oz fleece hoodies soak their base layer in sweat before entering the start corral\u2014or worse, stand cold in a singlet for 20 minutes and hit the first 1,000m run with vasoconstricted quads and stiff ankles.</p>\n\n        <h3>Phase 1: T-Minus 25 Minutes \u2014 Aerobic Pulse Raiser &amp; Diaphragm Priming</h3>\n        <p>Start with 6\u20138 minutes of easy conversational jogging (125\u2013135 BPM) in your <a href=\"../products/apex-aeroshell-lightweight-race-warmup-jacket.html\">Apex AeroShell\u2122 Lightweight Race Warmup Jacket (APC-C42)</a> or <a href=\"../products/hybrid-8-station-windbreaker-track-jacket.html\">Hybrid 8-Station Windbreaker Track Jacket (APC-C43)</a>. Pair this with 2 sets of 15 breaths on the <a href=\"../products/aerolung-dual-valve-resistance-breathing-trainer.html\">AeroLung Dual-Valve Resistance Breathing Trainer (APC-E14)</a>. Pre-activating the diaphragm delays the inspiratory metaboreflex\u2014the physiological trigger that steals blood flow from your legs during Station 01 SkiErg and Station 02 Sled Push.</p>\n\n        <h3>Phase 2: T-Minus 15 Minutes \u2014 Station-Specific Dynamic Mobility</h3>\n        <ul>\n          <li><strong>Ankle &amp; Tibialis Prep (for Sled Push &amp; Wall Balls):</strong> 15 knee-to-wall dorsiflexion pulses per side so your heels stay planted during heavy sled drives and Station 08 squats.</li>\n          <li><strong>Thoracic &amp; Lat Openers (for SkiErg &amp; Wall Balls):</strong> 12 dynamic overhead reaches and worlds-greatest-stretch rotations inside your <a href=\"../products/pro-division-lightweight-quarter-zip-shell.html\">Pro Division Lightweight Quarter-Zip Shell (APC-C44)</a>.</li>\n          <li><strong>Hip Flexor Unloading (for Compromised Running):</strong> 10 alternating walking lunges with an overhead twist to open the anterior chain before 8\u00d71,000m of compromised running.</li>\n        </ul>\n\n        <h3>Phase 3: T-Minus 8 Minutes \u2014 Lactate Priming Strides &amp; Corral Shed</h3>\n        <p>Run three 20-second progressive strides at your target 1,000m race pace with 60 seconds of walking recovery. These short bursts upregulate oxidative enzymes so Kilometer 1 feels controlled rather than shocking. Keep your <a href=\"../products/26-27-world-series-lightweight-warmup-jacket.html\">26/27 World Series Lightweight Warmup Jacket (APC-C45)</a> zipped until 90 seconds before the corral countdown, then stow it in your drop bag and step to the line dry and thermoregulated in your <a href=\"../products/apex-aeromesh-4-0-laser-vented-race-tech-tee.html\">Apex AeroMesh\u2122 4.0 Laser-Vented Race Tech Tee (APC-C36)</a>.</p>\n        "
+    },
+    {
+      "slug": "compromised-running-pacing-calculator-and-1km-split-strategy",
+      "title": "Compromised Running Pacing Guide: How to Hold Your 1km Splits After Heavy Sleds",
+      "category": "Pacing & Split Strategy",
+      "read_time": "8 min read",
+      "summary": "A data-backed pacing calculator and biomechanical blueprint for all eight 1,000m runs\u2014how to survive Run 3 after the heavy sled push, lock cadence at 180 SPM, and eliminate Roxzone bleed.",
+      "recommended_skus": [
+        "APC-C36",
+        "APC-C37",
+        "APC-C39",
+        "APC-C02",
+        "APC-E18",
+        "APC-E14"
+      ],
+      "faqs": [
+        [
+          "What should my 1,000m compromised running pace be compared to my open 10K pace?",
+          "Your target compromised 1,000m split should be 8 to 15 seconds per kilometer slower than your standalone open 10K pace. Going out at open 5K pace on Run 1 spikes blood lactate above 6 mmol/L before the sleds and costs 3\u20135 minutes across Runs 5 through 8."
+        ],
+        [
+          "How do I stop my legs from locking up on the run immediately after Sled Push and Lunges?",
+          "For the first 200 meters leaving the Roxzone after Station 02 (Sled Push) and Station 07 (Sandbag Lunges), shorten your stride by 10\u201315% and spin a quick 180+ SPM cadence while keeping your torso stacked. Within 250 meters, venous return flushes local hydrogen ions and allows you to lengthen back to race stride."
+        ]
+      ],
+      "body_html": "\n        <h2>53% of Your Total Race Time Happens on the 1,000m Track</h2>\n        <p>In an 8-station hybrid race, the eight 1,000m runs account for more than half of your total clock time\u2014yet most athletes train stations in isolation and treat the runs as recovery jogs. When you exit Station 02 (50m Heavy Sled Push) and Station 03 (50m Sled Pull), intramuscular pressure and localized quad acidosis alter your ground-contact mechanics. Mastering <strong>compromised running</strong> is the fastest way to drop 4+ minutes off your personal best.</p>\n\n        <h3>The 8\u00d71,000m Split Pacing Matrix</h3>\n        <ul>\n          <li><strong>Run 01 (Pre-SkiErg):</strong> Run at Target Pace + 3 seconds. Stay capped below 86% max HR on your <a href=\"../products/pulsepro-ant-bluetooth-chest-strap-heart-rate-monitor.html\">PulsePro ANT+ &amp; Bluetooth Chest-Strap Heart Rate Monitor (APC-E18)</a>.</li>\n          <li><strong>Run 02 (Post-SkiErg):</strong> Settle directly into Target Pace. Upper-body lats and triceps are taxed, so relax your shoulders in the <a href=\"../products/dry-pace-1km-split-moisture-wicking-tech-tee.html\">Dry-Pace\u2122 1KM Split Moisture-Wicking Tech Tee (APC-C37)</a>.</li>\n          <li><strong>Run 03 &amp; Run 04 (Post-Sled Push &amp; Sled Pull):</strong> The danger zone. Use a short, high-cadence shuffle for the first 200m out of the Roxzone arch, then build back to Target Pace + 5 seconds.</li>\n          <li><strong>Run 05 (Post-80m Burpee Broad Jumps):</strong> Heart rate peaks here. Focus on nasal-assisted exhalations and ultra-light heat dissipation in the <a href=\"../products/featherweight-3-8-oz-sub-60-hybrid-race-tee.html\">Featherweight 3.8 oz Sub-60 Hybrid Race Tee (APC-C39)</a>.</li>\n          <li><strong>Run 06, 07 &amp; 08 (The Championship Back Half):</strong> Where races are won. Athletes wearing the <a href=\"../products/apex-aeromesh-4-0-laser-vented-race-tech-tee.html\">Apex AeroMesh\u2122 4.0 Laser-Vented Tech Tee (APC-C36)</a> or <a href=\"../products/compromised-running-club-oversized-pump-cover.html\">Compromised Running Club Tee (APC-C02)</a> train negative-split Brick intervals every Sunday so Run 08 is their fastest split of the day.</li>\n        </ul>\n\n        <h3>The 200-Meter Post-Sled Cadence Reset</h3>\n        <p>Never walk out of the Roxzone. Walking drops intramuscular muscle-pump action, leaving metabolites pooled in the vastus medialis. Instead, jog immediately at a compact 180 SPM cadence for 45 seconds until your stride opens up naturally.</p>\n        "
+    },
+    {
+      "slug": "wall-balls-station-8-unbroken-rep-strategy-and-mobility-prep",
+      "title": "Station 8 Wall Balls: How to Go Unbroken on Your Final 100 Reps",
+      "category": "Station 08 Strategy",
+      "read_time": "7 min read",
+      "summary": "How to conquer the final 100 wall balls after 8km of running and 100m of sandbag lunges\u2014covering squat depth mechanics, breathing cadence, ankle dorsiflexion prep, and rep-breaking schemes.",
+      "recommended_skus": [
+        "APC-C03",
+        "APC-C31",
+        "APC-C10",
+        "APC-E10",
+        "APC-E15",
+        "APC-E04"
+      ],
+      "faqs": [
+        [
+          "Should I try to do all 100 Wall Balls unbroken at Station 8?",
+          "Unless you have tested 75+ unbroken wall balls under 175 BPM fatigue in training, structured micro-sets (such as 30-20-15-15-10-10 with exactly 3 deep breaths between sets) beat going to failure at rep 45 and suffering 15 no-reps."
+        ],
+        [
+          "Why do judges call no-reps most often on Station 8 Wall Balls?",
+          "Two reasons: hip crease failing to break parallel (90\u00b0) when quads are cramped after Station 07 Sandbag Lunges, and the medicine ball grazing below the center of the 3.0m (men) / 2.7m (women) target. Improving ankle dorsiflexion with the Tibialis Trainer Bar (APC-E10) keeps your torso upright at full depth."
+        ]
+      ],
+      "body_html": "\n        <h2>Station 08 Is Where Podiums and Sub-65 Qualifiers Are Decided</h2>\n        <p>Arriving at the Station 08 Wall Ball rig after 8,000 meters of running and 100 meters of sandbag lunges is the ultimate test of neuromuscular efficiency. A single no-rep for shallow squat depth or a low target strike wastes precious energy when your anterior deltoids and quads are already redlined.</p>\n\n        <h3>1. Fix Your Squat Depth Before Race Week: Ankle Dorsiflexion &amp; Thoracic Extension</h3>\n        <p>When ankle dorsiflexion is restricted, your heels lift or your torso pitches forward at the bottom of the squat\u2014forcing your lower back and shoulders to heave the 6kg/9kg ball from a terrible angle. Spend 5 minutes before every lower-body session on the <a href=\"../products/tibialis-anterior-trainer-bar-shin-knee-bulletproofing.html\">Tibialis Anterior Trainer Bar (APC-E10)</a> and mobilize your upper back on the <a href=\"../products/viberoll-pro-4-speed-vibrating-foam-roller.html\">VibeRoll Pro 4-Speed Vibrating Foam Roller (APC-E04)</a> so you can catch the ball in a stacked front-rack position.</p>\n\n        <h3>2. Overhead Freedom: Eliminate Shoulder Pinch on Reps 60\u2013100</h3>\n        <p>Standard cotton sleeves bind across the wet deltoid after 60 minutes of sweating, adding subtle resistance on every overhead throw. That is why elite racers compete in the deep-cut <a href=\"../products/100-wall-balls-unbroken-sleeveless-muscle-tank.html\">100 Wall Balls Unbroken Sleeveless Muscle Tank (APC-C31)</a> or warm up in the <a href=\"../products/100-wall-balls-unbroken-hybrid-tee.html\">100 Wall Balls Unbroken* Heavyweight Tee (APC-C03)</a> and <a href=\"../products/wall-balls-and-bad-decisions-hoodie.html\">Wall Balls &amp; Bad Decisions Heavyweight Hoodie (APC-C10)</a>.</p>\n\n        <h3>3. The Championship 100-Rep Pacing Blueprint</h3>\n        <ul>\n          <li><strong>Pro / Sub-60 Division (2\u20133 Sets):</strong> 45 \u2013 30 \u2013 25 reps with a strict 5-second hands-on-rig breath reset.</li>\n          <li><strong>Competitive Open Division (5 Sets):</strong> 25 \u2013 20 \u2013 20 \u2013 20 \u2013 15 reps. Let your arms drop completely as the ball travels upward to flush shoulder capillaries between every catch.</li>\n          <li><strong>Post-Finisher Patellar Care:</strong> Immediately after crossing the finisher arch, wrap both knees in the <a href=\"../products/cryosleeve-360-gel-compression-knee-ice-wrap.html\">CryoSleeve 360\u00b0 Gel Compression Knee Ice Wrap (APC-E15)</a> to calm patellar tendon inflammation.</li>\n        </ul>\n        "
+    },
+    {
+      "slug": "48-hour-post-race-recovery-protocol-cold-plunge-compression-red-light",
+      "title": "The 48-Hour Post-Race Recovery Protocol: Cold Plunge, Compression Boots & Cupping Timing",
+      "category": "Post-Race Recovery Science",
+      "read_time": "8 min read",
+      "summary": "The exact hour-by-hour 48-hour post-race recovery sequence used by hybrid athletes to clear creatine kinase, flush lower-limb edema, and restore HRV after an 8-station race.",
+      "recommended_skus": [
+        "APC-E09",
+        "APC-E03",
+        "APC-E16",
+        "APC-E02",
+        "APC-E01",
+        "APC-C42"
+      ],
+      "faqs": [
+        [
+          "Should I cold plunge or use compression boots first after a hybrid race?",
+          "Use pneumatic compression boots (APC-E09 AirRecover Wireless Boots) first within 2\u20134 hours post-race while vessels are dilated to pump interstitial fluid and metabolic waste out of the calves and quads, then follow with an 8-minute 50\u00b0F cold plunge in the PolarPod Tub (APC-E03) to blunt secondary tissue inflammation."
+        ],
+        [
+          "When should I use red-light therapy and electric cupping after race day?",
+          "Wait until the evening of race day (Hours 8\u201312) and the following morning (Hours 20\u201336) to apply 660nm/850nm photobiomodulation (APC-E02 Red-Light Belt) and Dynamic Electric Red-Light Cupping (APC-E16) over tight lats, hip flexors, and calves."
+        ]
+      ],
+      "body_html": "\n        <h2>Why Random Recovery Leaves You Sore Until Thursday</h2>\n        <p>Completing 8,000m of compromised running plus 50m heavy sled pushes, 80m burpee broad jumps, 200m farmer carries, 100m sandbag lunges, and 100 wall balls produces massive eccentric micro-trauma and elevated serum creatine kinase (CK). Sequencing your recovery modalities in the right physiological order over the first 48 hours cuts soreness duration in half.</p>\n\n        <h3>Hours 0\u20132: Thermal Stabilization &amp; Glycogen/Sodium Repletion</h3>\n        <p>Within 10 minutes of exiting the finisher chute, change out of wet race gear and zip into your dry <a href=\"../products/apex-aeroshell-lightweight-race-warmup-jacket.html\">Apex AeroShell\u2122 Lightweight Race Warmup Jacket (APC-C42)</a> to prevent post-exertional chills. Consume 1,000mg sodium and 60g fast-acting carbohydrates, then walk lightly for 10 minutes.</p>\n\n        <h3>Hours 3\u20136: Pneumatic Lymphatic Flushing</h3>\n        <p>Before taking a long flight or car ride home, run a 30-minute sequential cycle at 120\u2013150 mmHg in the <a href=\"../products/airrecover-wireless-pneumatic-compression-recovery-boots.html\">AirRecover Wireless Pneumatic Compression Recovery Boots (APC-E09)</a>. Distal-to-proximal chamber inflation clears pooled venous blood and reduces lower-leg edema after 60\u201380 minutes of pounding convention-center concrete.</p>\n\n        <h3>Hours 6\u201312: Cold Water Immersion (50\u00b0F / 10\u00b0C for 8 Minutes)</h3>\n        <p>Unlike hypertrophy training blocks where immediate ice baths can mute muscle protein synthesis, post-race recovery is all about halting secondary inflammatory damage. Submerge up to the neck in the <a href=\"../products/polarpod-insulated-portable-cold-plunge-tub.html\">PolarPod Insulated Portable Cold Plunge Tub (APC-E03)</a> at 48\u00b0F\u201352\u00b0F for 8 minutes to rebound parasympathetic heart rate variability (HRV).</p>\n\n        <h3>Hours 18\u201348: Myofascial Decompression, 660nm/850nm Red Light &amp; Percussion</h3>\n        <p>On Day 2, target localized fascial adhesions on the quads, calves, and upper traps using the <a href=\"../products/dynamic-electric-red-light-cupping-therapy-set.html\">Dynamic Electric Red-Light Cupping Therapy Set (APC-E16)</a> and wrap the lumbar/hip chain in the <a href=\"../products/infrared-red-light-660nm-850nm-therapy-belt.html\">Infrared &amp; Red-Light 660nm/850nm Therapy Belt (APC-E02)</a> for 20 minutes. Finish with a light 2,000 RPM flush using the <a href=\"../products/apex-pro-carbon-deep-tissue-massage-gun.html\">Apex Pro Carbon Deep-Tissue Massage Gun (APC-E01)</a>.</p>\n        "
+    },
     {
       "slug": "matching-hyrox-doubles-team-shirts-2026",
       "title": "Matching HYROX Doubles Team Shirts 2026/2027 \u2014 Men's, Women's & Mixed Doubles Race Tops (15% Off 2-Shirt Bundle)",
@@ -2384,7 +2578,7 @@
         "APC-E01",
         "APC-E12"
       ],
-      "body_html": "\n        <p>Preparing for an 8-station functional endurance race requires training both your aerobic threshold and your compromised muscular stamina. Just as critical is the gear you wear across eight 1,000-meter runs and the recovery hardware you use in the 72 hours after crossing the finish line.</p>\n        <h4>1. Breathable Race Tees vs. Heavyweight Warmup Layers</h4>\n        <p>During a 60-to-90-minute indoor functional race, heat dissipation determines how well you hold your Zone 4 pace after heavy sled pushes and wall balls. Our <strong>Run. Station. Repeat. Functional Race Tee</strong> uses 4.2 oz Airlume combed ring-spun cotton that breathes through high-output stations without clinging, while our <strong>8.0 oz Fleece Warmup Hoodie</strong> keeps your core warm in the athlete corral before wave start.</p>\n        <h4>2. Compartment Organization in the Athlete Corral</h4>\n        <p>Nothing spikes pre-race stress faster than digging through a disorganized bag for electrolytes, chalk, or a spare pair of racing shoes. The <strong>8-Station Race Day 50L All-Weather Gym Duffle</strong> separates damp warmup gear from race essentials with a dedicated ventilated shoe tunnel.</p>\n        <h4>3. Post-Race Myofascial & Lymphatic Flushing</h4>\n        <p>Within two hours of finishing 100 wall balls and heavy sled pulls, eccentric micro-trauma peaks in the quads, calves, and lower back. Pairing a 12mm-amplitude <strong>ApexPulse Pro 3200 RPM Percussion Massager</strong> with 20 minutes in <strong>AirRecover Pneumatic Compression Boots</strong> accelerates venous return and cuts delayed-onset muscle soreness in half.</p>\n        \n<h4>Direct 1-Click Athlete Gear &amp; Recovery Checkout (Free 2\u20134 Day US Shipping)</h4>\n<div style=\"margin:16px 0;padding:16px 18px;background:#f8fafc;border:1.5px solid #cbd5e1;border-radius:10px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;\">\n          <div style=\"display:flex;align-items:center;gap:14px;flex:1;min-width:250px;\">\n            <a href=\"../products/run-station-repeat-performance-tee.html\" style=\"flex-shrink:0;\">\n              <img src=\"../images/streetwear/apc-c01-black.png\" alt=\"Run. Station. Repeat. Functional Race Tee\" style=\"width:76px;height:76px;object-fit:cover;border-radius:8px;border:1px solid #e2e8f0;\" loading=\"lazy\" />\n            </a>\n            <div>\n              <div style=\"font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:#ff4d1c;\">Best Seller \u00b7 SKU APC-C01 \u00b7 \u2605 4.9 (184)</div>\n              <a href=\"../products/run-station-repeat-performance-tee.html\" style=\"font-size:16px;font-weight:800;color:#0f172a;text-decoration:none;display:block;margin:2px 0;\">Run. Station. Repeat. Functional Race Tee</a>\n              <div style=\"font-size:13px;color:#0e8345;font-weight:700;\">$32.00 <span style=\"color:#64748b;text-decoration:line-through;font-weight:400;\">$38.00</span> \u00b7 \u2713 Free 2\u20134 Day US Shipping</div>\n            </div>\n          </div>\n          <div style=\"display:flex;gap:8px;flex-wrap:wrap;align-items:center;\">\n            <a href=\"../index.html?buy=APC-C01\" class=\"Btn Btn--BuyNow\" style=\"width:auto;padding:10px 16px;font-size:13px;font-weight:800;text-decoration:none;background:#ff4d1c;color:#fff;border-radius:7px;\">Buy Now \u2014 $32.00 (Free Shipping)</a>\n            <a href=\"../index.html?add=APC-C01\" class=\"Btn Btn--Cart\" style=\"width:auto;padding:10px 14px;font-size:13px;font-weight:700;text-decoration:none;background:#0f172a;color:#fff;border-radius:7px;\">+ Add to Bag</a>\n          </div>\n        </div>\n<div style=\"margin:16px 0;padding:16px 18px;background:#f8fafc;border:1.5px solid #cbd5e1;border-radius:10px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;\">\n          <div style=\"display:flex;align-items:center;gap:14px;flex:1;min-width:250px;\">\n            <a href=\"../products/apex-8-station-race-day-tactical-duffle.html\" style=\"flex-shrink:0;\">\n              <img src=\"../images/products/apc-c14-duffle.jpg\" alt=\"8-Station Race Day 50L All-Weather Gym &amp; Shoe Duffle Bag\" style=\"width:76px;height:76px;object-fit:cover;border-radius:8px;border:1px solid #e2e8f0;\" loading=\"lazy\" />\n            </a>\n            <div>\n              <div style=\"font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:#ff4d1c;\">Best Seller \u00b7 SKU APC-C14 \u00b7 \u2605 4.9 (208)</div>\n              <a href=\"../products/apex-8-station-race-day-tactical-duffle.html\" style=\"font-size:16px;font-weight:800;color:#0f172a;text-decoration:none;display:block;margin:2px 0;\">8-Station Race Day 50L All-Weather Gym &amp; Shoe Duffle Bag</a>\n              <div style=\"font-size:13px;color:#0e8345;font-weight:700;\">$64.00 <span style=\"color:#64748b;text-decoration:line-through;font-weight:400;\">$79.00</span> \u00b7 \u2713 Free 2\u20134 Day US Shipping</div>\n            </div>\n          </div>\n          <div style=\"display:flex;gap:8px;flex-wrap:wrap;align-items:center;\">\n            <a href=\"../index.html?buy=APC-C14\" class=\"Btn Btn--BuyNow\" style=\"width:auto;padding:10px 16px;font-size:13px;font-weight:800;text-decoration:none;background:#ff4d1c;color:#fff;border-radius:7px;\">Buy Now \u2014 $64.00 (Free Shipping)</a>\n            <a href=\"../index.html?add=APC-C14\" class=\"Btn Btn--Cart\" style=\"width:auto;padding:10px 14px;font-size:13px;font-weight:700;text-decoration:none;background:#0f172a;color:#fff;border-radius:7px;\">+ Add to Bag</a>\n          </div>\n        </div>\n<div style=\"overflow-x:auto;margin:18px 0 24px;\">\n          <table style=\"width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;border:1px solid #e4e6eb;border-radius:8px;overflow:hidden;\">\n            <thead>\n              <tr style=\"background:#0f172a;color:#fff;text-align:left;\">\n                <th style=\"padding:11px 10px;\">SKU</th>\n                <th style=\"padding:11px 10px;\">Product &amp; Verified Spec Page</th>\n                <th style=\"padding:11px 10px;\">Price</th>\n                <th style=\"padding:11px 10px;\">1-Click Express Checkout</th>\n              </tr>\n            </thead>\n            <tbody>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-C01</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/run-station-repeat-performance-tee.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">Run. Station. Repeat. Functional Race Tee</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.9 (184 reviews) \u00b7 FREE 2\u20134 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$32.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-C01\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $32.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-C01\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-C14</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/apex-8-station-race-day-tactical-duffle.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">8-Station Race Day 50L All-Weather Gym &amp; Shoe Duffle Bag</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.9 (208 reviews) \u00b7 FREE 2\u20134 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$64.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-C14\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $64.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-C14\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-E01</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/pro-3200rpm-brushless-percussion-massage-gun.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">ApexPulse Pro 3200 RPM Brushless Deep-Tissue Percussion Massager</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.9 (412 reviews) \u00b7 FREE 3\u20135 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$98.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-E01\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $98.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-E01\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-E12</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/rechargeable-pneumatic-calf-shin-compression-sleeves.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">AirRecover Full-Leg Sequential Leg Air Compression Recovery Boots</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.9 (389 reviews) \u00b7 FREE 3\u20135 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$139.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-E12\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $139.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-E12\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n            </tbody>\n          </table>\n        </div>"
+      "body_html": "\n        <p>Preparing for an 8-station functional endurance race requires training both your aerobic threshold and your compromised muscular stamina. Just as critical is the gear you wear across eight 1,000-meter runs and the recovery hardware you use in the 72 hours after crossing the finish line.</p>\n        <h4>1. Breathable Race Tees vs. Heavyweight Warmup Layers</h4>\n        <p>During a 60-to-90-minute indoor functional race, heat dissipation determines how well you hold your Zone 4 pace after heavy sled pushes and wall balls. Our <strong>Run. Station. Repeat. Functional Race Tee</strong> uses 6.1 oz Comfort Colors 1717 100% ring-spun garment-dyed heavyweight cotton that breathes through high-output stations without clinging, while our <strong>8.0 oz Fleece Warmup Hoodie</strong> keeps your core warm in the athlete corral before wave start.</p>\n        <h4>2. Compartment Organization in the Athlete Corral</h4>\n        <p>Nothing spikes pre-race stress faster than digging through a disorganized bag for electrolytes, chalk, or a spare pair of racing shoes. The <strong>8-Station Race Day 50L All-Weather Gym Duffle</strong> separates damp warmup gear from race essentials with a dedicated ventilated shoe tunnel.</p>\n        <h4>3. Post-Race Myofascial & Lymphatic Flushing</h4>\n        <p>Within two hours of finishing 100 wall balls and heavy sled pulls, eccentric micro-trauma peaks in the quads, calves, and lower back. Pairing a 12mm-amplitude <strong>ApexPulse Pro 3200 RPM Percussion Massager</strong> with 20 minutes in <strong>AirRecover Pneumatic Compression Boots</strong> accelerates venous return and cuts delayed-onset muscle soreness in half.</p>\n        \n<h4>Direct 1-Click Athlete Gear &amp; Recovery Checkout (Free 2\u20134 Day US Shipping)</h4>\n<div style=\"margin:16px 0;padding:16px 18px;background:#f8fafc;border:1.5px solid #cbd5e1;border-radius:10px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;\">\n          <div style=\"display:flex;align-items:center;gap:14px;flex:1;min-width:250px;\">\n            <a href=\"../products/run-station-repeat-performance-tee.html\" style=\"flex-shrink:0;\">\n              <img src=\"../images/streetwear/apc-c01-black.png\" alt=\"Run. Station. Repeat. Functional Race Tee\" style=\"width:76px;height:76px;object-fit:cover;border-radius:8px;border:1px solid #e2e8f0;\" loading=\"lazy\" />\n            </a>\n            <div>\n              <div style=\"font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:#ff4d1c;\">Best Seller \u00b7 SKU APC-C01 \u00b7 \u2605 4.9 (184)</div>\n              <a href=\"../products/run-station-repeat-performance-tee.html\" style=\"font-size:16px;font-weight:800;color:#0f172a;text-decoration:none;display:block;margin:2px 0;\">Run. Station. Repeat. Functional Race Tee</a>\n              <div style=\"font-size:13px;color:#0e8345;font-weight:700;\">$32.00 <span style=\"color:#64748b;text-decoration:line-through;font-weight:400;\">$38.00</span> \u00b7 \u2713 Free 2\u20134 Day US Shipping</div>\n            </div>\n          </div>\n          <div style=\"display:flex;gap:8px;flex-wrap:wrap;align-items:center;\">\n            <a href=\"../index.html?buy=APC-C01\" class=\"Btn Btn--BuyNow\" style=\"width:auto;padding:10px 16px;font-size:13px;font-weight:800;text-decoration:none;background:#ff4d1c;color:#fff;border-radius:7px;\">Buy Now \u2014 $32.00 (Free Shipping)</a>\n            <a href=\"../index.html?add=APC-C01\" class=\"Btn Btn--Cart\" style=\"width:auto;padding:10px 14px;font-size:13px;font-weight:700;text-decoration:none;background:#0f172a;color:#fff;border-radius:7px;\">+ Add to Bag</a>\n          </div>\n        </div>\n<div style=\"margin:16px 0;padding:16px 18px;background:#f8fafc;border:1.5px solid #cbd5e1;border-radius:10px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;\">\n          <div style=\"display:flex;align-items:center;gap:14px;flex:1;min-width:250px;\">\n            <a href=\"../products/apex-8-station-race-day-tactical-duffle.html\" style=\"flex-shrink:0;\">\n              <img src=\"../images/products/apc-c14-duffle.jpg\" alt=\"8-Station Race Day 50L All-Weather Gym &amp; Shoe Duffle Bag\" style=\"width:76px;height:76px;object-fit:cover;border-radius:8px;border:1px solid #e2e8f0;\" loading=\"lazy\" />\n            </a>\n            <div>\n              <div style=\"font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:#ff4d1c;\">Best Seller \u00b7 SKU APC-C14 \u00b7 \u2605 4.9 (208)</div>\n              <a href=\"../products/apex-8-station-race-day-tactical-duffle.html\" style=\"font-size:16px;font-weight:800;color:#0f172a;text-decoration:none;display:block;margin:2px 0;\">8-Station Race Day 50L All-Weather Gym &amp; Shoe Duffle Bag</a>\n              <div style=\"font-size:13px;color:#0e8345;font-weight:700;\">$64.00 <span style=\"color:#64748b;text-decoration:line-through;font-weight:400;\">$79.00</span> \u00b7 \u2713 Free 2\u20134 Day US Shipping</div>\n            </div>\n          </div>\n          <div style=\"display:flex;gap:8px;flex-wrap:wrap;align-items:center;\">\n            <a href=\"../index.html?buy=APC-C14\" class=\"Btn Btn--BuyNow\" style=\"width:auto;padding:10px 16px;font-size:13px;font-weight:800;text-decoration:none;background:#ff4d1c;color:#fff;border-radius:7px;\">Buy Now \u2014 $64.00 (Free Shipping)</a>\n            <a href=\"../index.html?add=APC-C14\" class=\"Btn Btn--Cart\" style=\"width:auto;padding:10px 14px;font-size:13px;font-weight:700;text-decoration:none;background:#0f172a;color:#fff;border-radius:7px;\">+ Add to Bag</a>\n          </div>\n        </div>\n<div style=\"overflow-x:auto;margin:18px 0 24px;\">\n          <table style=\"width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;border:1px solid #e4e6eb;border-radius:8px;overflow:hidden;\">\n            <thead>\n              <tr style=\"background:#0f172a;color:#fff;text-align:left;\">\n                <th style=\"padding:11px 10px;\">SKU</th>\n                <th style=\"padding:11px 10px;\">Product &amp; Verified Spec Page</th>\n                <th style=\"padding:11px 10px;\">Price</th>\n                <th style=\"padding:11px 10px;\">1-Click Express Checkout</th>\n              </tr>\n            </thead>\n            <tbody>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-C01</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/run-station-repeat-performance-tee.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">Run. Station. Repeat. Functional Race Tee</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.9 (184 reviews) \u00b7 FREE 2\u20134 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$32.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-C01\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $32.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-C01\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-C14</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/apex-8-station-race-day-tactical-duffle.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">8-Station Race Day 50L All-Weather Gym &amp; Shoe Duffle Bag</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.9 (208 reviews) \u00b7 FREE 2\u20134 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$64.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-C14\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $64.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-C14\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-E01</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/pro-3200rpm-brushless-percussion-massage-gun.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">ApexPulse Pro 3200 RPM Brushless Deep-Tissue Percussion Massager</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.9 (412 reviews) \u00b7 FREE 3\u20135 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$98.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-E01\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $98.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-E01\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-E12</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/rechargeable-pneumatic-calf-shin-compression-sleeves.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">AirRecover Full-Leg Sequential Leg Air Compression Recovery Boots</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.9 (389 reviews) \u00b7 FREE 3\u20135 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$139.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-E12\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $139.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-E12\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n            </tbody>\n          </table>\n        </div>"
     },
     {
       "slug": "cold-plunge-and-red-light-recovery-routine-for-endurance-runners",
@@ -2412,7 +2606,7 @@
         "APC-C08",
         "APC-C12"
       ],
-      "body_html": "\n        <p>Walk into any serious functional strength room from Southern California to Austin and you will notice a pattern: athletes warm up in structured, heavyweight cotton pump covers before stripping down to breathable race-weight tees once heart rates cross 160 BPM.</p>\n        <h4>1. What Makes a True Pump Cover?</h4>\n        <p>A proper warmup tee needs enough fabric weight (6.0 to 6.5 oz/yd\u00b2) to drape cleanly over the shoulders without clinging during barbell warmups. Our <strong>Wall Balls & Bad Decisions Heavyweight Pump Cover</strong> is cut with a relaxed drop-shoulder silhouette that holds its structure wash after wash.</p>\n        <h4>2. Breathable 4.2 oz Cotton for High-Output Stations</h4>\n        <p>Once you transition to 1,000-meter runs, burpee broad jumps, and erg intervals, fabric weight matters. Our <strong>Sled Push Enthusiast*</strong> and <strong>Sled Push Dept.</strong> tees use 4.2 oz Airlume combed ring-spun cotton printed with breathable water-based inks in the USA.</p>\n        \n<h4>Direct 1-Click Athlete Gear &amp; Recovery Checkout (Free 2\u20134 Day US Shipping)</h4>\n<div style=\"margin:16px 0;padding:16px 18px;background:#f8fafc;border:1.5px solid #cbd5e1;border-radius:10px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;\">\n          <div style=\"display:flex;align-items:center;gap:14px;flex:1;min-width:250px;\">\n            <a href=\"../products/wall-balls-bad-decisions-oversized-pump-cover.html\" style=\"flex-shrink:0;\">\n              <img src=\"../images/streetwear/apc-c02-black.png\" alt=\"Wall Balls &amp; Bad Decisions Heavyweight Pump Cover Tee\" style=\"width:76px;height:76px;object-fit:cover;border-radius:8px;border:1px solid #e2e8f0;\" loading=\"lazy\" />\n            </a>\n            <div>\n              <div style=\"font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:#ff4d1c;\">Best Seller \u00b7 SKU APC-C02 \u00b7 \u2605 4.9 (142)</div>\n              <a href=\"../products/wall-balls-bad-decisions-oversized-pump-cover.html\" style=\"font-size:16px;font-weight:800;color:#0f172a;text-decoration:none;display:block;margin:2px 0;\">Wall Balls &amp; Bad Decisions Heavyweight Pump Cover Tee</a>\n              <div style=\"font-size:13px;color:#0e8345;font-weight:700;\">$38.00 <span style=\"color:#64748b;text-decoration:line-through;font-weight:400;\">$44.00</span> \u00b7 \u2713 Free 2\u20134 Day US Shipping</div>\n            </div>\n          </div>\n          <div style=\"display:flex;gap:8px;flex-wrap:wrap;align-items:center;\">\n            <a href=\"../index.html?buy=APC-C02\" class=\"Btn Btn--BuyNow\" style=\"width:auto;padding:10px 16px;font-size:13px;font-weight:800;text-decoration:none;background:#ff4d1c;color:#fff;border-radius:7px;\">Buy Now \u2014 $38.00 (Free Shipping)</a>\n            <a href=\"../index.html?add=APC-C02\" class=\"Btn Btn--Cart\" style=\"width:auto;padding:10px 14px;font-size:13px;font-weight:700;text-decoration:none;background:#0f172a;color:#fff;border-radius:7px;\">+ Add to Bag</a>\n          </div>\n        </div>\n<div style=\"margin:16px 0;padding:16px 18px;background:#f8fafc;border:1.5px solid #cbd5e1;border-radius:10px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;\">\n          <div style=\"display:flex;align-items:center;gap:14px;flex:1;min-width:250px;\">\n            <a href=\"../products/sled-push-enthusiast-race-day-tee.html\" style=\"flex-shrink:0;\">\n              <img src=\"../images/streetwear/apc-c03-black.png\" alt=\"Sled Push Enthusiast* Athletic Crewneck Tee\" style=\"width:76px;height:76px;object-fit:cover;border-radius:8px;border:1px solid #e2e8f0;\" loading=\"lazy\" />\n            </a>\n            <div>\n              <div style=\"font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:#ff4d1c;\">Top Rated \u00b7 SKU APC-C03 \u00b7 \u2605 4.8 (97)</div>\n              <a href=\"../products/sled-push-enthusiast-race-day-tee.html\" style=\"font-size:16px;font-weight:800;color:#0f172a;text-decoration:none;display:block;margin:2px 0;\">Sled Push Enthusiast* Athletic Crewneck Tee</a>\n              <div style=\"font-size:13px;color:#0e8345;font-weight:700;\">$32.00 <span style=\"color:#64748b;text-decoration:line-through;font-weight:400;\">$36.00</span> \u00b7 \u2713 Free 2\u20134 Day US Shipping</div>\n            </div>\n          </div>\n          <div style=\"display:flex;gap:8px;flex-wrap:wrap;align-items:center;\">\n            <a href=\"../index.html?buy=APC-C03\" class=\"Btn Btn--BuyNow\" style=\"width:auto;padding:10px 16px;font-size:13px;font-weight:800;text-decoration:none;background:#ff4d1c;color:#fff;border-radius:7px;\">Buy Now \u2014 $32.00 (Free Shipping)</a>\n            <a href=\"../index.html?add=APC-C03\" class=\"Btn Btn--Cart\" style=\"width:auto;padding:10px 14px;font-size:13px;font-weight:700;text-decoration:none;background:#0f172a;color:#fff;border-radius:7px;\">+ Add to Bag</a>\n          </div>\n        </div>\n<div style=\"overflow-x:auto;margin:18px 0 24px;\">\n          <table style=\"width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;border:1px solid #e4e6eb;border-radius:8px;overflow:hidden;\">\n            <thead>\n              <tr style=\"background:#0f172a;color:#fff;text-align:left;\">\n                <th style=\"padding:11px 10px;\">SKU</th>\n                <th style=\"padding:11px 10px;\">Product &amp; Verified Spec Page</th>\n                <th style=\"padding:11px 10px;\">Price</th>\n                <th style=\"padding:11px 10px;\">1-Click Express Checkout</th>\n              </tr>\n            </thead>\n            <tbody>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-C02</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/wall-balls-bad-decisions-oversized-pump-cover.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">Wall Balls &amp; Bad Decisions Heavyweight Pump Cover Tee</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.9 (142 reviews) \u00b7 FREE 2\u20134 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$38.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-C02\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $38.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-C02\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-C03</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/sled-push-enthusiast-race-day-tee.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">Sled Push Enthusiast* Athletic Crewneck Tee</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.8 (97 reviews) \u00b7 FREE 2\u20134 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$32.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-C03\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $32.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-C03\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-C08</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/defend-my-sled-push-dept-tee.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">I Don&#x27;t Need To Defend My Sled Push \u2014 Sled Push Dept. Tee</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.9 (89 reviews) \u00b7 FREE 2\u20134 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$32.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-C08\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $32.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-C08\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-C12</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/defend-my-sled-push-fleece-hoodie.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">Sled Push Dept. \u2014 &#x27;The Footage Speaks&#x27; Pullover Hoodie</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.9 (82 reviews) \u00b7 FREE 2\u20134 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$56.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-C12\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $56.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-C12\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n            </tbody>\n          </table>\n        </div>"
+      "body_html": "\n        <p>Walk into any serious functional strength room from Southern California to Austin and you will notice a pattern: athletes warm up in structured, heavyweight cotton pump covers before stripping down to breathable race-weight tees once heart rates cross 160 BPM.</p>\n        <h4>1. What Makes a True Pump Cover?</h4>\n        <p>A proper warmup tee needs enough fabric weight (6.0 to 6.5 oz/yd\u00b2) to drape cleanly over the shoulders without clinging during barbell warmups. Our <strong>Wall Balls & Bad Decisions Heavyweight Pump Cover</strong> is cut with a relaxed drop-shoulder silhouette that holds its structure wash after wash.</p>\n        <h4>2. Breathable 4.2 oz Cotton for High-Output Stations</h4>\n        <p>Once you transition to 1,000-meter runs, burpee broad jumps, and erg intervals, fabric weight matters. Our <strong>Sled Push Enthusiast*</strong> and <strong>Sled Push Dept.</strong> tees use 6.1 oz Comfort Colors 1717 100% ring-spun garment-dyed heavyweight cotton printed with breathable water-based inks in the USA.</p>\n        \n<h4>Direct 1-Click Athlete Gear &amp; Recovery Checkout (Free 2\u20134 Day US Shipping)</h4>\n<div style=\"margin:16px 0;padding:16px 18px;background:#f8fafc;border:1.5px solid #cbd5e1;border-radius:10px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;\">\n          <div style=\"display:flex;align-items:center;gap:14px;flex:1;min-width:250px;\">\n            <a href=\"../products/wall-balls-bad-decisions-oversized-pump-cover.html\" style=\"flex-shrink:0;\">\n              <img src=\"../images/streetwear/apc-c02-black.png\" alt=\"Wall Balls &amp; Bad Decisions Heavyweight Pump Cover Tee\" style=\"width:76px;height:76px;object-fit:cover;border-radius:8px;border:1px solid #e2e8f0;\" loading=\"lazy\" />\n            </a>\n            <div>\n              <div style=\"font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:#ff4d1c;\">Best Seller \u00b7 SKU APC-C02 \u00b7 \u2605 4.9 (142)</div>\n              <a href=\"../products/wall-balls-bad-decisions-oversized-pump-cover.html\" style=\"font-size:16px;font-weight:800;color:#0f172a;text-decoration:none;display:block;margin:2px 0;\">Wall Balls &amp; Bad Decisions Heavyweight Pump Cover Tee</a>\n              <div style=\"font-size:13px;color:#0e8345;font-weight:700;\">$38.00 <span style=\"color:#64748b;text-decoration:line-through;font-weight:400;\">$44.00</span> \u00b7 \u2713 Free 2\u20134 Day US Shipping</div>\n            </div>\n          </div>\n          <div style=\"display:flex;gap:8px;flex-wrap:wrap;align-items:center;\">\n            <a href=\"../index.html?buy=APC-C02\" class=\"Btn Btn--BuyNow\" style=\"width:auto;padding:10px 16px;font-size:13px;font-weight:800;text-decoration:none;background:#ff4d1c;color:#fff;border-radius:7px;\">Buy Now \u2014 $38.00 (Free Shipping)</a>\n            <a href=\"../index.html?add=APC-C02\" class=\"Btn Btn--Cart\" style=\"width:auto;padding:10px 14px;font-size:13px;font-weight:700;text-decoration:none;background:#0f172a;color:#fff;border-radius:7px;\">+ Add to Bag</a>\n          </div>\n        </div>\n<div style=\"margin:16px 0;padding:16px 18px;background:#f8fafc;border:1.5px solid #cbd5e1;border-radius:10px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;\">\n          <div style=\"display:flex;align-items:center;gap:14px;flex:1;min-width:250px;\">\n            <a href=\"../products/sled-push-enthusiast-race-day-tee.html\" style=\"flex-shrink:0;\">\n              <img src=\"../images/streetwear/apc-c03-black.png\" alt=\"Sled Push Enthusiast* Athletic Crewneck Tee\" style=\"width:76px;height:76px;object-fit:cover;border-radius:8px;border:1px solid #e2e8f0;\" loading=\"lazy\" />\n            </a>\n            <div>\n              <div style=\"font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:#ff4d1c;\">Top Rated \u00b7 SKU APC-C03 \u00b7 \u2605 4.8 (97)</div>\n              <a href=\"../products/sled-push-enthusiast-race-day-tee.html\" style=\"font-size:16px;font-weight:800;color:#0f172a;text-decoration:none;display:block;margin:2px 0;\">Sled Push Enthusiast* Athletic Crewneck Tee</a>\n              <div style=\"font-size:13px;color:#0e8345;font-weight:700;\">$32.00 <span style=\"color:#64748b;text-decoration:line-through;font-weight:400;\">$36.00</span> \u00b7 \u2713 Free 2\u20134 Day US Shipping</div>\n            </div>\n          </div>\n          <div style=\"display:flex;gap:8px;flex-wrap:wrap;align-items:center;\">\n            <a href=\"../index.html?buy=APC-C03\" class=\"Btn Btn--BuyNow\" style=\"width:auto;padding:10px 16px;font-size:13px;font-weight:800;text-decoration:none;background:#ff4d1c;color:#fff;border-radius:7px;\">Buy Now \u2014 $32.00 (Free Shipping)</a>\n            <a href=\"../index.html?add=APC-C03\" class=\"Btn Btn--Cart\" style=\"width:auto;padding:10px 14px;font-size:13px;font-weight:700;text-decoration:none;background:#0f172a;color:#fff;border-radius:7px;\">+ Add to Bag</a>\n          </div>\n        </div>\n<div style=\"overflow-x:auto;margin:18px 0 24px;\">\n          <table style=\"width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;border:1px solid #e4e6eb;border-radius:8px;overflow:hidden;\">\n            <thead>\n              <tr style=\"background:#0f172a;color:#fff;text-align:left;\">\n                <th style=\"padding:11px 10px;\">SKU</th>\n                <th style=\"padding:11px 10px;\">Product &amp; Verified Spec Page</th>\n                <th style=\"padding:11px 10px;\">Price</th>\n                <th style=\"padding:11px 10px;\">1-Click Express Checkout</th>\n              </tr>\n            </thead>\n            <tbody>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-C02</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/wall-balls-bad-decisions-oversized-pump-cover.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">Wall Balls &amp; Bad Decisions Heavyweight Pump Cover Tee</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.9 (142 reviews) \u00b7 FREE 2\u20134 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$38.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-C02\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $38.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-C02\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-C03</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/sled-push-enthusiast-race-day-tee.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">Sled Push Enthusiast* Athletic Crewneck Tee</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.8 (97 reviews) \u00b7 FREE 2\u20134 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$32.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-C03\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $32.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-C03\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-C08</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/defend-my-sled-push-dept-tee.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">I Don&#x27;t Need To Defend My Sled Push \u2014 Sled Push Dept. Tee</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.9 (89 reviews) \u00b7 FREE 2\u20134 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$32.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-C08\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $32.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-C08\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n          <tr>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:700;\">APC-C12</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <a href=\"../products/defend-my-sled-push-fleece-hoodie.html\" style=\"color:#0052cc;font-weight:800;text-decoration:none;\">Sled Push Dept. \u2014 &#x27;The Footage Speaks&#x27; Pullover Hoodie</a>\n              <div style=\"font-size:12px;color:#475569;margin-top:2px;\">\u2605 4.9 (82 reviews) \u00b7 FREE 2\u20134 Day US Delivery</div>\n            </td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;font-weight:800;font-size:15px;color:#0f172a;\">$56.00</td>\n            <td style=\"padding:10px;border-bottom:1px solid #e4e6eb;\">\n              <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">\n                <a href=\"../index.html?buy=APC-C12\" style=\"background:#ff4d1c;color:#fff;padding:7px 12px;border-radius:6px;text-decoration:none;font-weight:800;font-size:12.5px;display:inline-block;\">Buy Now \u2014 $56.00 (Free Shipping)</a>\n                <a href=\"../index.html?add=APC-C12\" style=\"background:#0f172a;color:#fff;padding:7px 10px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px;display:inline-block;\">+ Bag</a>\n              </div>\n            </td>\n          </tr>\n            </tbody>\n          </table>\n        </div>"
     },
     {
       "slug": "bulletproof-knees-and-shins-for-compromised-running",

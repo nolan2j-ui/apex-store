@@ -675,7 +675,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeAll();
   });
-  fetch("catalog.json")
+  fetch("catalog.json?v=20261025v4")
     .then((res) => {
       if (!res.ok) throw new Error("catalog");
       return res.json();

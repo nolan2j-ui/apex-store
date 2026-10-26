@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HYROX Doubles 2-Packs, Boutique Gym Bulk Kits &amp; Coach Partner Program | Apex Hybrid Co.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <meta name="description" content="Official Apex Hybrid &amp; Recovery Co. Doubles 2-Packs, 2026/2027 Race City Pairs (Chicago, Dallas, Anaheim, Miami, Vegas, NYC), 5-Pack Relay Kits, 10-Pack Boutique Gym Drops, and our $0-Upfront HYROX Coach Partner Program ($25 bonus per 5 shirts + 15% recovery commission)." />
+  <link rel="canonical" href="https://www.apexhybridco.com/team_orders.html" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    :root {
+      --bg-dark: #0b0f17;
+      --bg-card: #121824;
+      --bg-card-hover: #172030;
+      --border-dark: rgba(255, 255, 255, 0.10);
+      --border-cyan: rgba(0, 240, 255, 0.40);
+      --text-main: #f4f6f9;
+      --text-dim: #9ba6b5;
+      --cobalt: #0066ff;
+      --cyan: #00f0ff;
+      --teal: #00d4b2;
+      --acid: #d6ff3f;
+    }
+    body.TeamDark {
+      background: var(--bg-dark);
+      color: var(--text-main);
+      font-family: "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .TeamDark .SiteHead {
+      background: rgba(11, 15, 23, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-dark);
+    }
+    .TeamDark .Wordmark strong { color: #ffffff; }
+    .TeamDark .Wordmark span { color: var(--text-dim); }
+    .TeamDark .SiteNav a { color: #d0d8e2; }
+    .TeamDark .SiteNav a:hover, .TeamDark .SiteNav a.is-active { color: var(--cyan); }
+
+    .TeamHero {
+      padding: 64px 0 48px;
+      border-bottom: 1px solid var(--border-dark);
+      background:
+        radial-gradient(900px 420px at 85% 10%, rgba(0, 102, 255, 0.22), transparent 65%),
+        radial-gradient(700px 360px at 12% 20%, rgba(0, 240, 255, 0.12), transparent 60%),
+        var(--bg-dark);
+    }
+    .TeamHero__grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 36px;
+      align-items: center;
+    }
+    @media (max-width: 960px) {
+      .TeamHero__grid { grid-template-columns: 1fr; }
+    }
+    .BadgeRow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .PillBadge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border: 1px solid var(--border-cyan);
+      color: var(--cyan);
+      background: rgba(0, 240, 255, 0.06);
+    }
+    .PillBadge--acid {
+      border-color: rgba(214, 255, 63, 0.45);
+      color: var(--acid);
+      background: rgba(214, 255, 63, 0.08);
+    }
+    .TeamHero h1 {
+      font-size: clamp(36px, 5vw, 62px);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+      margin-bottom: 18px;
+      color: #ffffff;
+    }
+    .TeamHero p.Lead {
+      font-size: 18px;
+      color: var(--text-dim);
+      max-width: 680px;
+      margin-bottom: 26px;
+      line-height: 1.55;
+    }
+    .HeroActions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .BtnDark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 24px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      transition: all 0.18s ease;
+      cursor: pointer;
+    }
+    .BtnDark--primary {
+      background: var(--cobalt);
+      color: #ffffff;
+    }
+    .BtnDark--primary:hover {
+      background: #1a75ff;
+      transform: translateY(-1px);
+    }
+    .BtnDark--cyan {
+      background: var(--cyan);
+      color: #0b0f17;
+    }
+    .BtnDark--cyan:hover {
+      background: #4df4ff;
+      transform: translateY(-1px);
+    }
+    .BtnDark--outline {
+      background: rgba(255, 255, 255, 0.04);
+      color: #ffffff;
+      border-color: var(--border-dark);
+    }
+    .BtnDark--outline:hover {
+      border-color: var(--cyan);
+      color: var(--cyan);
+    }
+
+    .CoachCalloutCard {
+      background: linear-gradient(155deg, #151e2e 0%, #0f1520 100%);
+      border: 1px solid var(--border-cyan);
+      padding: 28px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    }
+    .CoachCalloutCard h3 {
+      font-size: 21px;
+      margin: 8px 0 12px;
+      color: #ffffff;
+    }
+    .CoachCalloutCard ul {
+      margin: 0 0 20px;
+      padding-left: 18px;
+      color: #d0d8e2;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    .CoachCalloutCard li strong {
+      color: var(--acid);
+    }
+
+    .SectionDark {
+      padding: 64px 0;
+      border-bottom: 1px solid var(--border-dark);
+    }
+    .SectionHeader {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 20px;
+      margin-bottom: 36px;
+    }
+    .SectionHeader h2 {
+      font-size: clamp(28px, 3.6vw, 42px);
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+    .SectionHeader p {
+      color: var(--text-dim);
+      max-width: 620px;
+      font-size: 16px;
+    }
+
+    .FilterTabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .FilterTab {
+      padding: 9px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: var(--bg-card);
+      color: var(--text-dim);
+      border: 1px solid var(--border-dark);
+    }
+    .FilterTab.is-active, .FilterTab:hover {
+      color: #0b0f17;
+      background: var(--cyan);
+      border-color: var(--cyan);
+    }
+
+    .BundleGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 24px;
+    }
+    .BundleCard {
+      background: var(--bg-card);
+      border: 1px solid var(--border-dark);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    .BundleCard:hover {
+      border-color: var(--border-cyan);
+      transform: translateY(-3px);
+    }
+    .BundleCard__media {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      background: #0d121b;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-dark);
+    }
+    .BundleCard__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .BundleCard__badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(11, 15, 23, 0.88);
+      border: 1px solid var(--border-cyan);
+      color: var(--cyan);
+      padding: 5px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .BundleCard__save {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: var(--acid);
+      color: #0b0f17;
+      padding: 5px 10px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .BundleCard__body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1;
+    }
+    .BundleCard__cat {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--teal);
+      font-weight: 700;
+    }
+    .BundleCard__title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.25;
+    }
+    .BundleCard__sub {
+      font-size: 13.5px;
+      color: var(--text-dim);
+      line-height: 1.5;
+    }
+    .BundleCard__pricing {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      padding: 12px 0;
+      border-top: 1px solid var(--border-dark);
+      border-bottom: 1px solid var(--border-dark);
+      margin-top: auto;
+    }
+    .PriceNow {
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+    .PriceWas {
+      font-size: 15px;
+      color: var(--text-dim);
+      text-decoration: line-through;
+    }
+    .PricePer {
+      margin-left: auto;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .BundleConfig {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 6px;
+    }
+    .BundleConfig label {
+      font-size: 11px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .BundleConfig select {
+      background: #0b0f17;
+      color: #ffffff;
+      border: 1px solid var(--border-dark);
+      padding: 8px 10px;
+      font-size: 13px;
+    }
+    .BundleCard__actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .StripeIdTag {
+      font-size: 11px;
+      color: #6f7c8e;
+      font-family: monospace;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Interactive Calculator & Promo Bar */
+    .CalcGrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-dark);
+      padding: 32px;
+    }
+    @media (max-width: 900px) {
+      .CalcGrid { grid-template-columns: 1fr; }
+    }
+    .CalcInputGroup {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .CalcInputGroup label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+    .CalcInputGroup select, .CalcInputGroup input {
+      background: #0b0f17;
+      border: 1px solid var(--border-dark);
+      color: #ffffff;
+      padding: 12px 14px;
+      font-size: 15px;
+    }
+    .CalcSummary {
+      background: #0b0f17;
+      border: 1px solid var(--border-cyan);
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .CalcRow {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: var(--text-dim);
+    }
+    .CalcRow strong { color: #ffffff; }
+    .CalcRow--total {
+      font-size: 20px;
+      font-weight: 800;
+      color: #ffffff;
+      border-top: 1px solid var(--border-dark);
+      padding-top: 12px;
+    }
+
+    .TierGrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 960px) {
+      .TierGrid { grid-template-columns: 1fr; }
+    }
+    .TierCard {
+      background: var(--bg-card);
+      border: 1px solid var(--border-dark);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .TierCard--featured {
+      border-color: var(--cyan);
+      box-shadow: 0 20px 50px rgba(0, 240, 255, 0.08);
+    }
+    .TierCard h3 {
+      font-size: 22px;
+      color: #ffffff;
+    }
+    .TierStatRow {
+      display: flex;
+      gap: 16px;
+      padding: 12px 0;
+      border-top: 1px solid var(--border-dark);
+      border-bottom: 1px solid var(--border-dark);
+    }
+    .TierStat b {
+      display: block;
+      font-size: 24px;
+      color: var(--acid);
+    }
+    .TierStat span {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-dim);
+    }
+    .TierCard ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #d0d8e2;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+  </style>
+</head>
+<body class="TeamDark" id="top">
+  <div class="LabBar">
+    <div class="Wrap LabBar__inner">
+      <div class="LabBar__mark"><i></i> Team &amp; Gym Division</div>
+      <div class="LabBar__pills">
+        <a class="LabPill LabPill--articles" href="#bundles">Doubles 2-Packs (Save up to 21%)</a>
+        <a class="LabPill LabPill--calendar" href="#bulk-order">5-Pack &amp; 10-Pack Gym Kits</a>
+        <a class="LabPill LabPill--calculator" href="#coach-partner">Boutique Coach Partner ($25 / 5 Shirts + 15% Recovery)</a>
+      </div>
+      <a class="LabOpen" href="index.html">← Back to Full Storefront</a>
+    </div>
+  </div>
+
+  <header class="SiteHead">
+    <div class="Wrap SiteHead__row">
+      <a class="Wordmark" href="index.html"><strong>Apex</strong><span>Hybrid &amp; Recovery Co.</span></a>
+      <nav class="SiteNav" aria-label="Team Navigation">
+        <a href="#bundles" class="is-active">Doubles &amp; Team Packs</a>
+        <a href="#calculator">Team Checkout Calculator</a>
+        <a href="#coach-partner">Boutique Gym &amp; Coach Partner</a>
+        <a href="index.html#apparel">All 72 SKUs</a>
+        <a href="index.html#recovery">Recovery Lab</a>
+      </nav>
+      <div class="Tools">
+        <a class="BtnDark BtnDark--cyan" href="#coach-partner" style="padding:10px 16px;font-size:11px;">Claim Free Coach Shirt + Code</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="TeamHero">
+      <div class="Wrap TeamHero__grid">
+        <div>
+          <div class="BadgeRow">
+            <span class="PillBadge">2026 / 2027 Race Season</span>
+            <span class="PillBadge PillBadge--acid">Free 2–4 Day US Shipping</span>
+            <span class="PillBadge">Stripe Verified Checkout</span>
+          </div>
+          <h1>HYROX Doubles Packs &amp; Boutique Gym Team Kits.</h1>
+          <p class="Lead">
+            Outfitting HYROX Doubles pairs, Relay squads, and boutique hybrid training gyms in SoCal, Chicago, and Dallas/DFW. Mix &amp; match any sizes (S–2XL) and race cities with automatic bundle savings up to 25.6%.
+          </p>
+          <div class="HeroActions">
+            <a class="BtnDark BtnDark--primary" href="#bundles">Shop Doubles &amp; Gym Bundles</a>
+            <a class="BtnDark BtnDark--outline" href="#calculator">Open Bulk &amp; Promo Calculator</a>
+          </div>
+          <p style="font-size:13px;color:var(--text-dim);">
+            Active Stripe Promo Codes: <code style="color:var(--cyan);">DOUBLES10</code> · <code style="color:var(--cyan);">CLUB10</code> · <code style="color:var(--cyan);">HYROX10</code> (10% Off) | <code style="color:var(--acid);">TEAM15</code> (15% Off 5+) | <code style="color:var(--acid);">GYM20</code> (20% Off 10+)
+          </p>
+        </div>
+
+        <aside class="CoachCalloutCard" id="coach-seed-card">
+          <span class="PillBadge PillBadge--acid">Boutique HYROX Gyms &amp; Independent Coaches</span>
+          <h3>Get a Free Race Shirt or Warmup Piece — No Strings Attached</h3>
+          <p style="font-size:14px;color:var(--text-dim);margin-bottom:14px;">
+            Are you an independent HYROX coach or boutique hybrid gym owner? We want your honest feedback on our 4.0 oz AeroMesh™ Tech Tees and AeroShell™ Warmup Jackets.
+          </p>
+          <ul>
+            <li><strong>Free Coach Gear Sample:</strong> Pick any race shirt or warmup piece in your size—no strings attached, just want an honest take.</li>
+            <li><strong>Custom 10%-Off Athlete Code:</strong> Your members &amp; clients save 10% on every order.</li>
+            <li><strong>$25 Bonus per 5 Shirts Sold:</strong> Paid directly on top of your partner payouts.</li>
+            <li><strong>15%–20% Recovery Gear Commission:</strong> Earn on every CryoPod, AirRecover boot, and LumiRed panel.</li>
+          </ul>
+          <a class="BtnDark BtnDark--cyan" style="width:100%;" href="mailto:support@apexhybridco.com?subject=Boutique%20HYROX%20Coach%20Free%20Sample%20%2B%2010%25%20Code%20Request&body=Hey%20Nolan%2C%0A%0AI%20coach%20HYROX%20athletes%20at%20%5BGym%2FCoaching%20Name%5D%20in%20%5BCity%5D.%0A%0A1.%20Piece%20I'd%20like%20to%20test%20(and%20my%20size)%3A%20%0A2.%20Shipping%20address%3A%20%0A3.%20Preferred%2010%25-off%20athlete%20code%3A%20">
+            Request Your Free Coach Shirt &amp; Custom 10% Code →
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 8 VERIFIED BUNDLES -->
+    <section class="SectionDark" id="bundles">
+      <div class="Wrap">
+        <div class="SectionHeader">
+          <div>
+            <p class="Eyebrow" style="color:var(--cyan);margin-bottom:8px;">Verified Stripe Bundle Catalog (`acct_1UUaY9Rut88O8nG2`)</p>
+            <h2>Doubles 2-Packs, Relay 5-Packs &amp; Gym 10-Pack Drops</h2>
+            <p>Select your sizes and colorway/city edition below, then click to launch instant storefront checkout with your bundle price locked in.</p>
+          </div>
+          <div class="FilterTabs" role="tablist">
+            <button class="FilterTab is-active" type="button" data-filter="all">All 8 Bundles</button>
+            <button class="FilterTab" type="button" data-filter="Doubles 2-Pack">Doubles 2-Packs (5)</button>
+            <button class="FilterTab" type="button" data-filter="Team & Run-Club Bulk">5-Pack &amp; 10-Pack Bulk (2)</button>
+            <button class="FilterTab" type="button" data-filter="Gym Recovery Hardware">Gym Recovery Lab (1)</button>
+          </div>
+        </div>
+
+        <div class="BundleGrid" id="bundleGrid"></div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TEAM & PROMO CALCULATOR -->
+    <section class="SectionDark" id="calculator">
+      <div class="Wrap">
+        <div class="SectionHeader">
+          <div>
+            <p class="Eyebrow" style="color:var(--acid);margin-bottom:8px;">Instant Team Order &amp; Coach Payout Calculator</p>
+            <h2>Calculate Your Squad Price &amp; Coach Bonus</h2>
+            <p>Test any bundle or bulk quantity with an active coach/club promo code (`DOUBLES10`, `CLUB10`, `WESTGROVE10`, `KEVINKIM10`, `TAEJO10`, `FTX10`, `TEAM15`, `GYM20`).</p>
+          </div>
+        </div>
+
+        <div class="CalcGrid">
+          <div class="CalcInputGroup">
+            <div>
+              <label for="calcBundleSelect">1. Choose Team Bundle or Pack</label>
+              <select id="calcBundleSelect" style="width:100%;margin-top:6px;"></select>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+              <div>
+                <label for="calcQtyInput">2. Number of Packs</label>
+                <input id="calcQtyInput" type="number" min="1" max="50" value="1" style="width:100%;margin-top:6px;" />
+              </div>
+              <div>
+                <label for="calcPromoInput">3. Coach / Club Promo Code</label>
+                <input id="calcPromoInput" type="text" value="CLUB10" placeholder="e.g. CLUB10, FTX10, GYM20" style="width:100%;margin-top:6px;text-transform:uppercase;" />
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+              <div>
+                <label for="calcCitySelect">4. Race City / Primary Style</label>
+                <select id="calcCitySelect" style="width:100%;margin-top:6px;">
+                  <option value="APC-C36">AeroMesh™ 4.0 Laser-Vented Tech Tee (Black)</option>
+                  <option value="APC-C16">Chicago Navy Pier City Crest Tee</option>
+                  <option value="APC-C17">Dallas Lone Star Division City Tee</option>
+                  <option value="APC-C18">Anaheim SoCal Open Division City Tee</option>
+                  <option value="APC-C19">Miami Beach Heat Block City Tee</option>
+                  <option value="APC-C20">Las Vegas Championship Qualifier Tee</option>
+                  <option value="APC-C21">New York Hudson Pier City Tee</option>
+                  <option value="APC-C28">Run. Station. Repeat. Muscle Tank</option>
+                  <option value="APC-C42">AeroShell™ Lightweight Warmup Jacket</option>
+                </select>
+              </div>
+              <div>
+                <label for="calcSizeNotes">5. Athlete Size Breakdown</label>
+                <input id="calcSizeNotes" type="text" value="1x L, 1x M" placeholder="e.g. 2x M, 2x L, 1x XL" style="width:100%;margin-top:6px;" />
+              </div>
+            </div>
+          </div>
+
+          <div class="CalcSummary">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
+                <span class="PillBadge">Live Order Breakdown</span>
+                <span id="calcStripeBadge" style="font-family:monospace;font-size:12px;color:var(--cyan);"></span>
+              </div>
+              <div class="CalcRow" style="margin-bottom:8px;">
+                <span>Regular Retail Total:</span>
+                <strong id="calcRegularTotal">$72.00</strong>
+              </div>
+              <div class="CalcRow" style="margin-bottom:8px;">
+                <span>Bundle Pack Price:</span>
+                <strong id="calcBundleSubtotal">$62.00</strong>
+              </div>
+              <div class="CalcRow" style="margin-bottom:8px;color:var(--acid);">
+                <span id="calcPromoLabel">Coach / Member Code (10% Off):</span>
+                <strong id="calcPromoDiscount" style="color:var(--acid);">-$6.20</strong>
+              </div>
+              <div class="CalcRow" style="margin-bottom:8px;">
+                <span>2–4 Day US Tracked Shipping:</span>
+                <strong style="color:var(--teal);">FREE ($0.00)</strong>
+              </div>
+              <div class="CalcRow CalcRow--total">
+                <span>Net Team Checkout Total:</span>
+                <span id="calcFinalTotal" style="color:var(--cyan);">$55.80</span>
+              </div>
+              <div class="CalcRow" style="margin-top:8px;font-size:13px;">
+                <span>Effective Price Per Athlete:</span>
+                <strong id="calcPerAthlete">$27.90 / athlete</strong>
+              </div>
+            </div>
+
+            <div style="background:rgba(214,255,63,0.07);border:1px solid rgba(214,255,63,0.3);padding:12px 14px;font-size:13px;">
+              <strong style="color:var(--acid);display:block;margin-bottom:4px;">Coach / Gym Partner Earnings on This Order:</strong>
+              <span id="calcCoachEarnings" style="color:#e6edf5;">15% Affiliate Commission + Progress toward $25 per 5-shirt bonus</span>
+            </div>
+
+            <a id="calcCheckoutBtn" class="BtnDark BtnDark--primary" href="index.html?buy=APC-C36&qty=2&promo=CLUB10" style="width:100%;">
+              Launch Instant Storefront Checkout →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOUTIQUE GYM & COACH PARTNER TIERS -->
+    <section class="SectionDark" id="coach-partner">
+      <div class="Wrap">
+        <div class="SectionHeader">
+          <div>
+            <p class="Eyebrow" style="color:var(--cyan);margin-bottom:8px;">$0-Upfront Boutique HYROX Gym &amp; Independent Coach Program</p>
+            <h2>Built for Independent HYROX Coaches &amp; Boutique Boxes</h2>
+            <p>Zero inventory to buy, zero minimum quotas. We send you a free shirt or warmup piece to test, give your athletes 10% off, and pay you $25 for every 5 shirts sold + 15%–20% on recovery hardware.</p>
+          </div>
+        </div>
+
+        <div class="TierGrid">
+          <div class="TierCard">
+            <span class="PillBadge">Tier 01 · Independent Coach &amp; Doubles Lead</span>
+            <h3>Independent HYROX Coach</h3>
+            <p style="font-size:14px;color:var(--text-dim);">For independent HYROX-certified coaches, personal trainers, and Doubles pace leaders.</p>
+            <div class="TierStatRow">
+              <div class="TierStat"><b>10% OFF</b><span>Athlete Code</span></div>
+              <div class="TierStat"><b>$25</b><span>Per 5 Shirts Sold</span></div>
+              <div class="TierStat"><b>15%</b><span>Recovery Gear</span></div>
+            </div>
+            <ul>
+              <li><strong>Free Race Shirt or Warmup Piece</strong> shipped in your size—no strings attached, just want your honest take</li>
+              <li>Custom 10%-off athlete promo code (e.g. <code>AUSTINC10</code>, <code>VICTOR10</code>, <code>STRONGHOLD10</code>)</li>
+              <li>$25 cash bonus for every 5 shirts sold + 15% commission on all recovery hardware</li>
+              <li>Automatic bi-weekly payout after 14-day settlement window</li>
+            </ul>
+            <a class="BtnDark BtnDark--outline" style="margin-top:auto;" href="mailto:support@apexhybridco.com?subject=Independent%20HYROX%20Coach%20Code%20%2B%20Free%20Shirt%20Request">Activate Coach Code →</a>
+          </div>
+
+          <div class="TierCard TierCard--featured">
+            <span class="PillBadge PillBadge--acid">Tier 02 · Most Popular for Boutique Boxes</span>
+            <h3>Boutique HYROX Training Gym</h3>
+            <p style="font-size:14px;color:var(--text-dim);">For boutique HYROX affiliates, functional strength studios, and Saturday simulation hubs.</p>
+            <div class="TierStatRow">
+              <div class="TierStat"><b>10% OFF</b><span>Member Code</span></div>
+              <div class="TierStat"><b>$25 / 5</b><span>Shirt Bonus + 18%</span></div>
+              <div class="TierStat"><b>25.6%</b><span>Bulk Box Savings</span></div>
+            </div>
+            <ul>
+              <li><strong>Free Coach Sample Kit</strong> (AeroMesh™ Tech Shirt or AeroShell™ Warmup Jacket) for the head coach/owner</li>
+              <li>Custom gym code (e.g. <code>WESTGROVE10</code>, <code>KEVINKIM10</code>, <code>TAEJO10</code>, <code>HITW10</code>, <code>FTX10</code>)</li>
+              <li>$25 bonus per 5 shirts sold + up to 18% revenue share on crew bundles</li>
+              <li>Priority access to 2026/2027 Race City Tees (Chicago, Dallas, Anaheim/SoCal, Miami, Vegas, NYC)</li>
+            </ul>
+            <a class="BtnDark BtnDark--cyan" style="margin-top:auto;" href="mailto:support@apexhybridco.com?subject=Boutique%20HYROX%20Gym%20Partner%20%2B%20Free%20Coach%20Piece">Claim Free Gym Sample + Code →</a>
+          </div>
+
+          <div class="TierCard">
+            <span class="PillBadge">Tier 03 · Performance &amp; PT Lab</span>
+            <h3>Hybrid Gym + Recovery Lab</h3>
+            <p style="font-size:14px;color:var(--text-dim);">For HYROX gyms, sports PT clinics, and contrast-therapy studios outfitting a recovery corner.</p>
+            <div class="TierStatRow">
+              <div class="TierStat"><b>20%</b><span>Top Commission</span></div>
+              <div class="TierStat"><b>$319</b><span>3-Piece Gym Lab</span></div>
+              <div class="TierStat"><b>$67</b><span>Hardware Savings</span></div>
+            </div>
+            <ul>
+              <li>Wholesale access to the <strong>Gym Recovery Corner Bundle</strong> (ApexPulse Gun + CryoPod Tub + AirRecover Compression Boots for $319)</li>
+              <li>20% top-tier cash commission on all member recovery hardware &amp; apparel orders</li>
+              <li>Printable Locker-Room QR placard linking to your gym's co-branded portal</li>
+              <li>Direct Stripe Transfer or ACH payout</li>
+            </ul>
+            <a class="BtnDark BtnDark--outline" style="margin-top:auto;" href="?bundle=BUNDLE-GYM-RECOVERY-LAB#calculator">Order 3-Piece Gym Lab ($319) →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="padding:42px 0;background:#070a10;color:var(--text-dim);font-size:13px;">
+    <div class="Wrap" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center;">
+      <div>
+        <strong style="color:#ffffff;">Apex Hybrid &amp; Recovery Supply</strong> · 8420 Spectrum, Irvine, CA 92618 · <a href="mailto:support@apexhybridco.com" style="color:var(--cyan);">support@apexhybridco.com</a>
+      </div>
+      <div style="display:flex;gap:18px;">
+        <a href="index.html">Main Storefront</a>
+        <a href="#bundles">Doubles 2-Packs</a>
+        <a href="#calculator">Team Calculator</a>
+        <a href="#coach-partner">Coach Partner Program</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const BUNDLES = [{"bundle_id": "BUNDLE-DBL-TECH-2PK", "title": "HYROX Doubles Breathable Tech Tee 2-Pack", "subtitle": "2\u00d7 AeroMesh\u2122 4.0 or Dry-Pace\u2122 Perforated Race Tees (Mix & Match Sizes/Colors)", "badge": "Most Popular Doubles Kit", "pack_size": 2, "category": "Doubles 2-Pack", "eligible_skus": ["APC-C36", "APC-C37", "APC-C38", "APC-C39", "APC-C40", "APC-C41"], "default_sku": "APC-C36", "image": "images/streetwear/apc-c36-black.png", "alt_image": "images/streetwear/apc-c36-white.png", "regular_unit_price": 36.0, "regular_total_price": 72.0, "bundle_price": 62.0, "price_per_athlete": 31.0, "savings_usd": 10.0, "savings_pct": 13.9, "unit_economics": {"supplier": "Printful US DTG / Technical Sublimation (Combined 2-Unit Parcel)", "wholesale_blank_and_print_2_units": 28.5, "combined_us_shipping": 6.5, "total_landed_cost": 35.0, "stripe_processing_fee_est": 2.1, "net_profit_direct": 24.9, "net_margin_direct_pct": 40.2, "affiliate_commission_15pct": 9.3, "net_profit_after_affiliate": 15.6, "net_margin_after_affiliate_pct": 25.2}, "stripe_product_id": "BUNDLE-DBL-TECH-2PK", "stripe_price_id": "price_1UUdfgRut88O8nG2ishjYEpb", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-TECH-2PK", "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C36&qty=2&promo=DOUBLES10"}, {"bundle_id": "BUNDLE-DBL-CITY-2PK", "title": "HYROX Doubles Race City & Slogan Tee 2-Pack", "subtitle": "2\u00d7 Race City Tees (Chicago \u00b7 Dallas \u00b7 Anaheim \u00b7 Miami \u00b7 Vegas \u00b7 NYC) or 8-Station Graphic Tees", "badge": "Race City Match", "pack_size": 2, "category": "Doubles 2-Pack", "eligible_skus": ["APC-C16", "APC-C17", "APC-C18", "APC-C19", "APC-C20", "APC-C21", "APC-C01", "APC-C03", "APC-C04", "APC-C06", "APC-C08", "APC-C23", "APC-C24", "APC-C26", "APC-C27"], "default_sku": "APC-C16", "image": "images/streetwear/apc-c16-black.png", "alt_image": "images/streetwear/apc-c16-white.png", "regular_unit_price": 34.0, "regular_total_price": 68.0, "bundle_price": 58.0, "price_per_athlete": 29.0, "savings_usd": 10.0, "savings_pct": 14.7, "unit_economics": {"supplier": "Printful US DTG (Bella+Canvas 3001 Combined 2-Unit Parcel)", "wholesale_blank_and_print_2_units": 27.0, "combined_us_shipping": 6.75, "total_landed_cost": 33.75, "stripe_processing_fee_est": 1.98, "net_profit_direct": 22.27, "net_margin_direct_pct": 38.4, "affiliate_commission_15pct": 8.7, "net_profit_after_affiliate": 13.57, "net_margin_after_affiliate_pct": 23.4}, "stripe_product_id": "BUNDLE-DBL-CITY-2PK", "stripe_price_id": "price_1UUdfvRut88O8nG2XZcN82kc", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-CITY-2PK", "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C16&qty=2&promo=DOUBLES10"}, {"bundle_id": "BUNDLE-DBL-JACKET-2PK", "title": "Lightweight Race Warmup Jacket Doubles 2-Pack", "subtitle": "2\u00d7 AeroShell\u2122 Corral Jackets or 8-Station Ripstop Windbreaker Track Shells", "badge": "New Corral Shell", "pack_size": 2, "category": "Doubles 2-Pack", "eligible_skus": ["APC-C42", "APC-C43", "APC-C44", "APC-C45"], "default_sku": "APC-C42", "image": "images/streetwear/apc-c42-black.png", "alt_image": "images/streetwear/apc-c42-white.png", "regular_unit_price": 64.0, "regular_total_price": 128.0, "bundle_price": 108.0, "price_per_athlete": 54.0, "savings_usd": 20.0, "savings_pct": 15.6, "unit_economics": {"supplier": "Printful US Lightweight DWR Windbreaker Shell (Combined 2-Unit Parcel)", "wholesale_blank_and_print_2_units": 42.0, "combined_us_shipping": 7.5, "total_landed_cost": 49.5, "stripe_processing_fee_est": 3.43, "net_profit_direct": 55.07, "net_margin_direct_pct": 51.0, "affiliate_commission_15pct": 16.2, "net_profit_after_affiliate": 38.87, "net_margin_after_affiliate_pct": 36.0}, "stripe_product_id": "BUNDLE-DBL-JACKET-2PK", "stripe_price_id": "price_1UUdfiRut88O8nG2SM0REVAF", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-JACKET-2PK", "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C42&qty=2&promo=DOUBLES10"}, {"bundle_id": "BUNDLE-DBL-HOODIE-2PK", "title": "Heavyweight Corral Warmup Hoodie Doubles 2-Pack", "subtitle": "2\u00d7 8.0 oz Brushed Fleece Pullover Hoodies (Sub-60 Club, Sled Push Dept, World Series)", "badge": "Cold Morning Staging", "pack_size": 2, "category": "Doubles 2-Pack", "eligible_skus": ["APC-C09", "APC-C10", "APC-C11", "APC-C12", "APC-C32", "APC-C33", "APC-C34", "APC-C35"], "default_sku": "APC-C09", "image": "images/streetwear/apc-c09-black.png", "alt_image": "images/streetwear/apc-c09-white.png", "regular_unit_price": 56.0, "regular_total_price": 112.0, "bundle_price": 96.0, "price_per_athlete": 48.0, "savings_usd": 16.0, "savings_pct": 14.3, "unit_economics": {"supplier": "Printful US 8.0 oz Heavy Blend Hoodie (Combined 2-Unit Parcel)", "wholesale_blank_and_print_2_units": 43.0, "combined_us_shipping": 8.5, "total_landed_cost": 51.5, "stripe_processing_fee_est": 3.08, "net_profit_direct": 41.42, "net_margin_direct_pct": 43.1, "affiliate_commission_15pct": 14.4, "net_profit_after_affiliate": 27.02, "net_margin_after_affiliate_pct": 28.1}, "stripe_product_id": "BUNDLE-DBL-HOODIE-2PK", "stripe_price_id": "price_1UUdfwRut88O8nG2aofM0N7v", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-HOODIE-2PK", "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C09&qty=2&promo=DOUBLES10"}, {"bundle_id": "BUNDLE-DBL-PRO-KIT", "title": "Full Doubles Race-Day Kit (2 Tees + 2 Warmup Jackets + Chalk 2-Pack)", "subtitle": "2\u00d7 Breathable Tech Tees + 2\u00d7 AeroShell\u2122 Warmup Jackets + 1\u00d7 ChalkLock\u2122 Carabiner Liquid Chalk 2-Pack", "badge": "Best Value \u00b7 Save $48", "pack_size": 5, "category": "Complete Doubles Kit", "eligible_skus": ["APC-C36", "APC-C42", "APC-E23"], "default_sku": "APC-C36", "image": "images/streetwear/apc-c42-black.png", "alt_image": "images/streetwear/apc-c36-black.png", "regular_unit_price": 113.0, "regular_total_price": 226.0, "bundle_price": 178.0, "price_per_athlete": 89.0, "savings_usd": 48.0, "savings_pct": 21.2, "unit_economics": {"supplier": "Printful US (2 Tees + 2 Jackets) + US Warehouse (ChalkLock 2-Pack)", "wholesale_and_fulfillment_breakdown": "$35.00 (2 Tech Tees) + $49.50 (2 Warmup Shells) + $8.50 (ChalkLock 2-Pack)", "total_landed_cost": 93.0, "stripe_processing_fee_est": 5.46, "net_profit_direct": 79.54, "net_margin_direct_pct": 44.7, "affiliate_commission_15pct": 26.7, "net_profit_after_affiliate": 52.84, "net_margin_after_affiliate_pct": 29.7}, "stripe_product_id": "BUNDLE-DBL-PRO-KIT", "stripe_price_id": "price_1UUdfjRut88O8nG2lnnNjpvE", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-PRO-KIT", "storefront_buy_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-PRO-KIT"}, {"bundle_id": "BUNDLE-CLUB-5PK", "title": "Run-Club & HYROX Relay Squad 5-Pack Crew Kit", "subtitle": "5\u00d7 Performance, Race City, or Breathable Tech Tees (Mix & Match Any Sizes S\u20132XL & Colorways)", "badge": "Relay & Run-Club Tier", "pack_size": 5, "category": "Team & Run-Club Bulk", "eligible_skus": ["APC-C36", "APC-C37", "APC-C16", "APC-C17", "APC-C18", "APC-C19", "APC-C20", "APC-C21", "APC-C01", "APC-C04"], "default_sku": "APC-C04", "image": "images/streetwear/apc-c04-black.png", "alt_image": "images/streetwear/apc-c04-white.png", "regular_unit_price": 36.0, "regular_total_price": 180.0, "bundle_price": 145.0, "price_per_athlete": 29.0, "savings_usd": 35.0, "savings_pct": 19.4, "unit_economics": {"supplier": "Printful US DTG 5-Unit Combined Bulk Parcel", "wholesale_blank_and_print_5_units": 68.75, "combined_us_shipping": 11.25, "total_landed_cost": 80.0, "stripe_processing_fee_est": 4.51, "net_profit_direct": 60.49, "net_margin_direct_pct": 41.7, "affiliate_commission_15pct": 21.75, "net_profit_after_affiliate": 38.74, "net_margin_after_affiliate_pct": 26.7}, "stripe_product_id": "BUNDLE-CLUB-5PK", "stripe_price_id": "price_1UUdfkRut88O8nG2Or7Es5on", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-CLUB-5PK", "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C04&qty=5&promo=TEAM15"}, {"bundle_id": "BUNDLE-GYM-10PK", "title": "Hybrid Gym & Run-Club 10-Pack Box Drop", "subtitle": "10\u00d7 Performance or Tech Tees (Mix & Match Sizes S\u20132XL) + Custom 10% Club Code & 15% Affiliate Commission Activation", "badge": "Gym & Coach Wholesale", "pack_size": 10, "category": "Team & Run-Club Bulk", "eligible_skus": ["APC-C36", "APC-C37", "APC-C01", "APC-C03", "APC-C04", "APC-C08", "APC-C16", "APC-C17", "APC-C18", "APC-C19", "APC-C20", "APC-C21"], "default_sku": "APC-C01", "image": "images/streetwear/apc-c01-black.png", "alt_image": "images/streetwear/apc-c01-white.png", "regular_unit_price": 36.0, "regular_total_price": 360.0, "bundle_price": 268.0, "price_per_athlete": 26.8, "savings_usd": 92.0, "savings_pct": 25.6, "unit_economics": {"supplier": "Printful US DTG 10-Unit Combined Bulk Parcel", "wholesale_blank_and_print_10_units": 135.0, "combined_us_shipping": 18.0, "total_landed_cost": 153.0, "stripe_processing_fee_est": 8.07, "net_profit_direct": 106.93, "net_margin_direct_pct": 39.9, "affiliate_commission_15pct": 40.2, "net_profit_after_affiliate": 66.73, "net_margin_after_affiliate_pct": 24.9}, "stripe_product_id": "BUNDLE-GYM-10PK", "stripe_price_id": "price_1UUdfnRut88O8nG2NNOyfiqy", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-GYM-10PK", "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C01&qty=10&promo=GYM20"}, {"bundle_id": "BUNDLE-GYM-RECOVERY-LAB", "title": "Gym Recovery Corner Hardware Bundle (3-Piece Lab)", "subtitle": "1\u00d7 ApexPulse Pro Massage Gun (APC-E01) + 1\u00d7 CryoPod Cold Plunge Tub (APC-E03) + 1\u00d7 AirRecover Leg Compression Boots (APC-E12)", "badge": "55.9% Net Margin \u00b7 Gym Lab", "pack_size": 3, "category": "Gym Recovery Hardware", "eligible_skus": ["APC-E01", "APC-E03", "APC-E12"], "default_sku": "APC-E12", "image": "images/products/apc-e12-compression-boots.jpg", "alt_image": "images/products/apc-e03-cold-plunge.jpg", "regular_unit_price": 128.67, "regular_total_price": 386.0, "bundle_price": 319.0, "price_per_athlete": 106.33, "savings_usd": 67.0, "savings_pct": 17.4, "unit_economics": {"supplier": "US Warehouse Direct Fast-Ship (3-5 Business Days)", "wholesale_and_shipping_breakdown": "$35.00 (APC-E01) + $48.00 (APC-E03) + $48.00 (APC-E12)", "total_landed_cost": 131.0, "stripe_processing_fee_est": 9.55, "net_profit_direct": 178.45, "net_margin_direct_pct": 55.9, "affiliate_commission_15pct": 47.85, "net_profit_after_affiliate": 130.6, "net_margin_after_affiliate_pct": 40.9}, "stripe_product_id": "BUNDLE-GYM-RECOVERY-LAB", "stripe_price_id": "price_1UUdfxRut88O8nG2rAjgOMFt", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-GYM-RECOVERY-LAB", "storefront_buy_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-GYM-RECOVERY-LAB"}];
+    const SIZES = ["S", "M", "L", "XL", "2XL"];
+
+    function renderBundles(filterCat = "all") {
+      const grid = document.getElementById("bundleGrid");
+      const list = filterCat === "all" ? BUNDLES : BUNDLES.filter(b => b.category === filterCat);
+      grid.innerHTML = list.map((b, idx) => {
+        const buyHref = b.storefront_buy_url.replace("https://www.apexhybridco.com/", "index.html");
+        return `
+          <article class="BundleCard" data-category="${b.category}">
+            <div class="BundleCard__media">
+              <img src="${b.image}" alt="${b.title}" loading="lazy" />
+              <span class="BundleCard__badge">${b.badge}</span>
+              <span class="BundleCard__save">Save $${b.savings_usd.toFixed(0)} (${b.savings_pct}%)</span>
+            </div>
+            <div class="BundleCard__body">
+              <div class="BundleCard__cat">${b.category} · ${b.pack_size} Units</div>
+              <h3 class="BundleCard__title">${b.title}</h3>
+              <p class="BundleCard__sub">${b.subtitle}</p>
+
+              <div class="BundleConfig">
+                <label>Athlete 1 / Pack Size
+                  <select id="sizeA_${idx}">
+                    ${SIZES.map(s => `<option value="${s}" ${s === "L" ? "selected" : ""}>Size ${s}</option>`).join("")}
+                  </select>
+                </label>
+                <label>Athlete 2 / Mix Size
+                  <select id="sizeB_${idx}">
+                    ${SIZES.map(s => `<option value="${s}" ${s === "M" ? "selected" : ""}>Size ${s}</option>`).join("")}
+                  </select>
+                </label>
+              </div>
+
+              <div class="BundleCard__pricing">
+                <span class="PriceNow">$${b.bundle_price.toFixed(0)}</span>
+                <span class="PriceWas">$${b.regular_total_price.toFixed(0)}</span>
+                <span class="PricePer">$${b.price_per_athlete.toFixed(2)} / athlete</span>
+              </div>
+
+              <div class="BundleCard__actions">
+                <a class="BtnDark BtnDark--primary" href="${buyHref}">
+                  Buy ${b.pack_size}-Pack Now ($${b.bundle_price.toFixed(0)}) →
+                </a>
+                <button class="BtnDark BtnDark--outline" type="button" onclick="loadBundleIntoCalc('${b.bundle_id}')">
+                  Apply Coach 10% Code in Calculator
+                </button>
+              </div>
+              <div class="StripeIdTag">
+                <span>SKU: ${b.bundle_id}</span>
+                <span>Stripe: ${b.stripe_price_id}</span>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function initCalculator() {
+      const sel = document.getElementById("calcBundleSelect");
+      sel.innerHTML = BUNDLES.map(b => `<option value="${b.bundle_id}">${b.title} — $${b.bundle_price.toFixed(2)} (Reg $${b.regular_total_price.toFixed(0)})</option>`).join("");
+
+      const params = new URLSearchParams(window.location.search);
+      const preBundle = params.get("bundle");
+      const prePromo = params.get("promo") || params.get("ref");
+      if (preBundle && BUNDLES.some(b => b.bundle_id === preBundle)) {
+        sel.value = preBundle;
+      }
+      if (prePromo) {
+        document.getElementById("calcPromoInput").value = prePromo.toUpperCase();
+      }
+
+      ["calcBundleSelect", "calcQtyInput", "calcPromoInput", "calcCitySelect", "calcSizeNotes"].forEach(id => {
+        document.getElementById(id).addEventListener("input", updateCalculator);
+        document.getElementById(id).addEventListener("change", updateCalculator);
+      });
+      updateCalculator();
+    }
+
+    function loadBundleIntoCalc(bundleId) {
+      const sel = document.getElementById("calcBundleSelect");
+      sel.value = bundleId;
+      updateCalculator();
+      document.getElementById("calculator").scrollIntoView({ behavior: "smooth" });
+    }
+
+    function updateCalculator() {
+      const bundleId = document.getElementById("calcBundleSelect").value;
+      const b = BUNDLES.find(x => x.bundle_id === bundleId) || BUNDLES[0];
+      const qty = Math.max(1, parseInt(document.getElementById("calcQtyInput").value || "1", 10));
+      const promo = (document.getElementById("calcPromoInput").value || "").trim().toUpperCase();
+      const chosenSku = document.getElementById("calcCitySelect").value || b.default_sku;
+
+      let discountPct = 0;
+      if (promo === "GYM20") discountPct = 20;
+      else if (promo === "TEAM15") discountPct = 15;
+      else if (promo.length >= 3) discountPct = 10; // Any valid coach/club 10% code (CLUB10, DOUBLES10, WESTGROVE10, FTX10, etc.)
+
+      const regTotal = b.regular_total_price * qty;
+      const bundleSub = b.bundle_price * qty;
+      const discountAmt = bundleSub * (discountPct / 100);
+      const finalTotal = bundleSub - discountAmt;
+      const totalAthletes = b.pack_size * qty;
+      const perAthlete = finalTotal / totalAthletes;
+
+      document.getElementById("calcStripeBadge").textContent = b.stripe_price_id;
+      document.getElementById("calcRegularTotal").textContent = `$${regTotal.toFixed(2)}`;
+      document.getElementById("calcBundleSubtotal").textContent = `$${bundleSub.toFixed(2)}`;
+      document.getElementById("calcPromoLabel").textContent = discountPct > 0
+        ? `Promo Code ${promo} (${discountPct}% Off):`
+        : `No Promo Code Applied:`;
+      document.getElementById("calcPromoDiscount").textContent = `-$${discountAmt.toFixed(2)}`;
+      document.getElementById("calcFinalTotal").textContent = `$${finalTotal.toFixed(2)}`;
+      document.getElementById("calcPerAthlete").textContent = `$${perAthlete.toFixed(2)} / unit (${totalAthletes} total units)`;
+
+      const estCommission = finalTotal * 0.15;
+      const shirtUnits = b.category === "Gym Recovery Hardware" ? 0 : totalAthletes;
+      const fiveShirtBonuses = Math.floor(shirtUnits / 5) * 25;
+      document.getElementById("calcCoachEarnings").textContent =
+        `$${estCommission.toFixed(2)} (15% commission) + $${fiveShirtBonuses.toFixed(0)} ($25 per 5-shirt bonus) = $${(estCommission + fiveShirtBonuses).toFixed(2)} total partner payout`;
+
+      const checkoutHref = `index.html?buy=${encodeURIComponent(chosenSku)}&qty=${totalAthletes}&promo=${encodeURIComponent(promo || "DOUBLES10")}&bundle=${encodeURIComponent(b.bundle_id)}`;
+      const btn = document.getElementById("calcCheckoutBtn");
+      btn.href = checkoutHref;
+      btn.textContent = `Checkout ${qty}× ${b.title} ($${finalTotal.toFixed(2)}) →`;
+    }
+
+    document.querySelectorAll(".FilterTab").forEach(tab => {
+      tab.addEventListener("click", () => {
+        document.querySelectorAll(".FilterTab").forEach(t => t.classList.remove("is-active"));
+        tab.classList.add("is-active");
+        renderBundles(tab.dataset.filter);
+      });
+    });
+
+    renderBundles("all");
+    initCalculator();
+  </script>
+</body>
+</html>

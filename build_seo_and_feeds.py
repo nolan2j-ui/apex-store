@@ -38,6 +38,8 @@ def google_category_for(prod):
         return "Apparel & Accessories > Clothing > Shirts & Tops"
     if dept == "Hoodies":
         return "Apparel & Accessories > Clothing > Activewear > Sweatshirts & Hoodies"
+    if dept == "Lightweight Jackets":
+        return "Apparel & Accessories > Clothing > Outerwear > Coats & Jackets"
     if dept == "Training Gear":
         return "Sporting Goods > Exercise & Fitness"
     return "Health & Beauty > Health Care > Massage & Relaxation"
@@ -199,8 +201,18 @@ def generate_product_pages():
     </nav>
 
     <div class="ProdModalGrid" style="background:#fff; border:1px solid #e4e6eb; border-radius:12px; padding:28px;">
-      <div class="ProdModalMedia">
-        <img src="../{prod['image']}" alt="{html.escape(seo_title)}" />
+      <div class="ProdModalMedia" style="display:flex; flex-direction:column; gap:12px;">
+        <img id="staticMainProdImg" src="../{prod['image']}" alt="{html.escape(seo_title)}" style="width:100%; border-radius:10px; object-fit:contain; max-height:480px; background:#0b0f17;" />
+        {f'''<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+          <button type="button" onclick="document.getElementById('staticMainProdImg').src='../{prod['image']}'" style="cursor:pointer; border:2px solid #ff4d1c; border-radius:8px; padding:6px; background:#0f172a; color:#fff; display:flex; align-items:center; gap:8px; font-weight:700; font-size:12.5px;">
+            <img src="../{prod['image']}" alt="{html.escape(title)} — Primary View" style="width:48px; height:48px; object-fit:cover; border-radius:4px;" />
+            <span>1. Black Edition (Front Crest)</span>
+          </button>
+          <button type="button" onclick="document.getElementById('staticMainProdImg').src='../{prod['alt_image']}'" style="cursor:pointer; border:2px solid #cbd5e1; border-radius:8px; padding:6px; background:#f8fafc; color:#0f172a; display:flex; align-items:center; gap:8px; font-weight:700; font-size:12.5px;">
+            <img src="../{prod['alt_image']}" alt="{html.escape(title)} — Bone Edition View" style="width:48px; height:48px; object-fit:cover; border-radius:4px;" />
+            <span>2. Bone / White Edition</span>
+          </button>
+        </div>''' if prod.get("alt_image") else ""}
       </div>
       <div>
         <div style="font-size:11.5px; font-weight:800; color:#ff4d1c; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:6px;">
@@ -242,6 +254,19 @@ def generate_product_pages():
       <div class="ProductGrid">
         {related_html}
       </div>
+    </section>
+
+    <section style="margin-top:36px; background:#fff; border:1px solid #e4e6eb; border-radius:12px; padding:24px;">
+      <h2 style="font-size:18px; margin-bottom:12px;">Related HYROX® Training, Pacing &amp; Recovery Buyer Guides</h2>
+      <ul style="padding-left:20px; line-height:1.9; font-size:14px;">
+        {chr(10).join(
+            f'<li><a href="../articles/{g["slug"]}.html" style="color:#ff4d1c; font-weight:700;">{html.escape(g["title"])}</a> — <span style="color:#475569;">{html.escape(g["category"])} ({html.escape(g["read_time"])})</span></li>'
+            for g in (
+                [x for x in guides if prod["id"] in x.get("recommended_skus", [])]
+                + [x for x in guides if prod["id"] not in x.get("recommended_skus", [])]
+            )[:6]
+        )}
+      </ul>
     </section>
   </main>
 
@@ -482,6 +507,62 @@ def generate_article_pages():
         with open(os.path.join(BASE_DIR, "articles", f"{slug}.html"), "w", encoding="utf-8") as out:
             out.write(page_html)
 
+    # Also generate articles/index.html hub page
+    hub_cards = "\n".join(
+        f'''        <article class="GuideCard" style="background:#fff; border:1px solid #e4e6eb; border-radius:10px; padding:20px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div class="GuideCard__Cat" style="font-size:11.5px; font-weight:800; color:#ff4d1c; text-transform:uppercase; margin-bottom:6px;">{html.escape(g["category"])}</div>
+            <h2 style="font-size:17px; line-height:1.35; margin-bottom:8px;"><a href="{g["slug"]}.html" style="color:#0f172a; text-decoration:none;">{html.escape(g["title"])}</a></h2>
+            <p style="font-size:13.5px; color:#475569; line-height:1.55;">{html.escape(g["summary"])}</p>
+          </div>
+          <div style="margin-top:14px; display:flex; justify-content:space-between; align-items:center; padding-top:10px; border-top:1px solid #f1f5f9;">
+            <span style="font-size:12px; color:#64748b; font-weight:700;">{html.escape(g["read_time"])}</span>
+            <a href="{g["slug"]}.html" class="Btn Btn--QuickView" style="width:auto; padding:6px 14px; text-decoration:none;">Read Guide →</a>
+          </div>
+        </article>'''
+        for g in guides
+    )
+    hub_html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HYROX® Training, Pacing, Race-City &amp; Recovery Buyer Guides ({len(guides)} Guides) | Apex Hybrid Co.</title>
+  <meta name="description" content="Explore all {len(guides)} data-backed HYROX® &amp; hybrid athlete training protocols, start-corral warmup guides, 1km pacing strategies, 2026/2027 race-city guides, and recovery blueprints." />
+  <link rel="canonical" href="{SITE_URL}/articles/index.html" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="TopHeader">
+    <div class="TopHeader__Main">
+      <div class="Container TopHeader__Inner">
+        <a href="../index.html" class="BrandLogo">
+          <span class="BrandLogo__Mark">APEX</span>
+          <span class="BrandLogo__Sub">HYBRID &amp; RECOVERY CO.</span>
+        </a>
+        <div style="margin-left:auto; display:flex; gap:14px; align-items:center;">
+          <a href="../index.html" style="color:#fff; font-size:13px; font-weight:700;">← Back to Full 72-Product Storefront</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="Container" style="padding:32px 20px 64px;">
+    <h1 style="font-size:28px; margin-bottom:8px;">HYROX® &amp; Hybrid Athlete Training, Pacing &amp; Recovery Hub ({len(guides)} Guides)</h1>
+    <p style="font-size:15px; color:#475569; margin-bottom:24px;">Station-by-station pacing calculators, start-corral warmup protocols, 2026/2027 race-city gear checklists, and 48-hour post-race recovery blueprints.</p>
+    <div class="GuidesGrid">
+{hub_cards}
+    </div>
+  </main>
+  <footer class="SiteFooter">
+    <div class="Container">
+      <p><strong>Apex Hybrid &amp; Recovery Supply (NolCorp LLC)</strong> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
+    </div>
+  </footer>
+</body>
+</html>'''
+    with open(os.path.join(BASE_DIR, "articles", "index.html"), "w", encoding="utf-8") as out:
+        out.write(hub_html)
+
 
 def generate_google_shopping_feed():
     items_xml = []
@@ -530,6 +611,8 @@ def generate_google_shopping_feed():
 """
     with open(os.path.join(BASE_DIR, "google_shopping_feed.xml"), "w", encoding="utf-8") as f:
         f.write(rss_xml)
+    with open(os.path.join(BASE_DIR, "google_merchant_feed.xml"), "w", encoding="utf-8") as f:
+        f.write(rss_xml)
 
 
 def generate_pinterest_csv_feed():
@@ -573,6 +656,7 @@ def generate_pinterest_csv_feed():
 def generate_sitemap_and_robots():
     urls = [
         (f"{SITE_URL}/", "1.0", "daily"),
+        (f"{SITE_URL}/articles/index.html", "0.9", "daily"),
     ]
     for art in guides:
         urls.append((f"{SITE_URL}/articles/{art['slug']}.html", "0.9", "weekly"))
