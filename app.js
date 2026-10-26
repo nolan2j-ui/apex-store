@@ -1,3 +1,14 @@
+const BEACON_NS = "https://abacus.jasoncameron.dev/hit/apexhybridco.com";
+function trackHit(key) {
+  try {
+    if (!key) return;
+    if (/bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent || "")) return;
+    const clean = String(key).replace(/[^a-zA-Z0-9_-]/g, "_").slice(0, 62);
+    fetch(`${BEACON_NS}/${clean}`, { method: "GET", mode: "cors", keepalive: true, cache: "no-store" }).catch(() => {});
+  } catch (_) {}
+}
+window.apexTrackHit = trackHit;
+
 const APPAREL = new Set([
   "Breathable Tech Shirts",
   "Race City Editions",
@@ -246,6 +257,7 @@ function lineFrom(p, qty = 1) {
     fulfillment_partner: isFw ? "Fourthwall" : (p.fulfillment_partner || "US Warehouse Direct Wholesale"),
     fourthwall_blank: isFw ? (p.fourthwall_blank || "Athletic Blank") : "",
     fourthwall_handle: isFw ? (p.fourthwall_handle || p.handle || "") : "",
+    fourthwall_product_url: isFw ? (p.fourthwall_product_url || p.checkout_url || "") : "",
     stripe_price_id: p.stripe_price_id || "",
     stripe_product_id: p.stripe_product_id || "",
     stripe_account_id: p.stripe_account_id || "",
@@ -255,6 +267,8 @@ function lineFrom(p, qty = 1) {
 function addToCart(sku, openDrawer = true) {
   const p = findProduct(sku);
   if (!p) return;
+  trackHit("cart_add_total");
+  trackHit(`cart_add_${p.id}`);
   const line = lineFrom(p);
   const existing = cart.find((item) => item.key === line.key);
   if (existing) existing.qty += 1;
@@ -326,6 +340,8 @@ function closeAll() {
 function openProduct(sku) {
   const p = findProduct(sku);
   if (!p) return;
+  trackHit("product_views_total");
+  trackHit(`view_${p.id}`);
   const was = p.list_price && p.list_price > p.retail_price ? `<s>${money(p.list_price)}</s>` : "";
   const swatches = p.alt_image ? `
     <div class="Swatches" style="position:static;margin:12px 0">
@@ -359,7 +375,9 @@ function openProduct(sku) {
         ${stripe ? `<p class="StripeId">${esc(stripe)}</p>` : ""}
         <div class="Card__actions" style="margin-top:16px">
           <button class="Btn Btn--bone" type="button" data-add="${p.id}">Add to bag</button>
-          <button class="Btn Btn--cobalt" type="button" data-buy="${p.id}">${esc(buyBtnLabel)}</button>
+          ${isFw && p.fourthwall_product_url
+            ? `<a class="Btn Btn--cobalt" href="${esc(p.fourthwall_product_url)}" data-buy="${p.id}" style="text-align:center;text-decoration:none">${esc(buyBtnLabel)}</a>`
+            : `<button class="Btn Btn--cobalt" type="button" data-buy="${p.id}">${esc(buyBtnLabel)}</button>`}
         </div>
       </div>
     </div>`;
@@ -379,6 +397,12 @@ function openCheckout(lines) {
   }
   closeSheet("productModal");
   closeSheet("cartDrawer");
+  trackHit("checkout_clicks_total");
+  bag.forEach((item) => { if (item && item.id) trackHit(`checkout_${item.id}`); });
+  if (bag.length === 1 && bag[0].is_fourthwall && bag[0].fourthwall_product_url) {
+    window.location.href = bag[0].fourthwall_product_url;
+    return;
+  }
   const sub = bag.reduce((sum, item) => sum + item.price * item.qty, 0);
   const hasFw = bag.some((item) => item.is_fourthwall);
   const hasWs = bag.some((item) => !item.is_fourthwall);
@@ -401,7 +425,7 @@ function openCheckout(lines) {
     <div style="margin-bottom:14px">
       ${bag.map((item) => `
         <div class="Row"><span>${item.qty} × ${esc(item.title)} <span class="StripeId">${esc(item.variant)}</span></span><strong>${money(item.price * item.qty)}</strong></div>
-        <div class="StripeId">${esc(item.is_fourthwall ? `Fulfilled via Fourthwall (${item.fourthwall_blank})` : "Fulfilled via US Warehouse Direct Wholesale")} · ${esc([item.stripe_price_id, item.stripe_product_id, item.stripe_account_id].filter(Boolean).join(" · "))}</div>
+        <div class="StripeId">${esc(item.is_fourthwall ? `Fulfilled via Fourthwall (${item.fourthwall_blank})` : "Fulfilled via US Warehouse Direct Wholesale")} · ${item.is_fourthwall && item.fourthwall_product_url ? `<a href="${esc(item.fourthwall_product_url)}" target="_blank" rel="noopener" style="color:#2563eb;font-weight:700">Open Direct Fourthwall Checkout →</a> · ` : ""}${esc([item.stripe_price_id, item.stripe_product_id, item.stripe_account_id].filter(Boolean).join(" · "))}</div>
       `).join("")}
       <div class="Row" style="margin-top:8px"><span>US delivery</span><strong>Free</strong></div>
       <div class="Row"><span>Total</span><strong>${money(sub)}</strong></div>
@@ -426,6 +450,7 @@ function submitOrder(event) {
   const bag = checkoutLines();
   const sub = bag.reduce((sum, item) => sum + item.price * item.qty, 0);
   const orderId = `APX-${Math.floor(100000 + Math.random() * 900000)}`;
+  trackHit("order_submits_total");
   const name = String(data.get("name") || "").trim();
   const email = String(data.get("email") || "").trim();
   const street = String(data.get("street") || "").trim();
@@ -616,7 +641,16 @@ function onClick(event) {
   const buy = event.target.closest("[data-buy]");
   if (buy) {
     const p = findProduct(buy.dataset.buy);
-    if (p) openCheckout([lineFrom(p)]);
+    if (p) {
+      if (isFourthwallItem(p) && p.fourthwall_product_url) {
+        event.preventDefault();
+        trackHit("checkout_clicks_total");
+        trackHit(`checkout_${p.id}`);
+        window.location.href = p.fourthwall_product_url;
+        return;
+      }
+      openCheckout([lineFrom(p)]);
+    }
     return;
   }
   const add = event.target.closest("[data-add]");
@@ -680,11 +714,26 @@ function boot(data) {
   const params = new URLSearchParams(window.location.search);
   const buy = findProduct(params.get("buy") || "");
   const add = findProduct(params.get("add") || "");
-  if (buy) openCheckout([lineFrom(buy)]);
-  else if (add) addToCart(add.id, true);
+  if (buy) {
+    if (isFourthwallItem(buy) && buy.fourthwall_product_url) {
+      trackHit("checkout_clicks_total");
+      trackHit(`checkout_${buy.id}`);
+      window.location.replace(buy.fourthwall_product_url);
+      return;
+    }
+    openCheckout([lineFrom(buy)]);
+  } else if (add) addToCart(add.id, true);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  trackHit("pageviews_total");
+  trackHit("pageviews_home");
+  try {
+    if (!sessionStorage.getItem("apx_uv_tracked")) {
+      sessionStorage.setItem("apx_uv_tracked", "1");
+      trackHit("unique_sessions_total");
+    }
+  } catch (_) {}
   document.body.addEventListener("click", onClick);
   $("#searchForm").addEventListener("submit", (event) => {
     event.preventDefault();
@@ -707,7 +756,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeAll();
   });
-  fetch("catalog.json?v=20261025v5")
+  fetch("catalog.json?v=20261025v6")
     .then((res) => {
       if (!res.ok) throw new Error("catalog");
       return res.json();

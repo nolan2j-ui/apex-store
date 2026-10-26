@@ -290,5 +290,24 @@
       <p style="font-size:11.5px; color:#94a3b8; margin-top:8px;">Apex Hybrid &amp; Recovery Supply is an independent athletic &amp; recovery brand engineered for athletes competing in HYROX®, DEKA®, CrossFit®, and functional fitness events. Not affiliated with or endorsed by HYROX World GmbH.</p>
     </div>
   </footer>
+  <script>
+  (function(){
+    try {
+      if (/bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent || "")) return;
+      var ns = "https://abacus.jasoncameron.dev/hit/apexhybridco.com";
+      var hit = function(k){ fetch(ns + "/" + k, {method:"GET", mode:"cors", keepalive:true, cache:"no-store"}).catch(function(){}); };
+      hit("pageviews_total");
+      hit("product_views_total");
+      hit("view_APC-E22");
+      document.addEventListener("click", function(e){
+        var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+        if (!a) return;
+        var h = a.getAttribute("href") || "";
+        if (h.indexOf("buy=") !== -1 || h.indexOf("fourthwall.com") !== -1) { hit("checkout_clicks_total"); hit("checkout_APC-E22"); }
+        else if (h.indexOf("add=") !== -1) { hit("cart_add_total"); hit("cart_add_APC-E22"); }
+      });
+    } catch (_) {}
+  })();
+  </script>
 </body>
 </html>

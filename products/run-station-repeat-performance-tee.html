@@ -149,7 +149,7 @@
         </a>
         <div style="margin-left:auto; display:flex; gap:14px; align-items:center;">
           <a href="../index.html" style="color:#fff; font-size:13px; font-weight:700;">← Back to Full Catalog &amp; News Hub</a>
-          <a href="../index.html?buy=APC-C01&fulfillment=fourthwall" class="Btn Btn--BuyNow" style="width:auto; padding:8px 16px;">Buy via Fourthwall ($32.00)</a>
+          <a href="https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-run-station-repeat" class="Btn Btn--BuyNow" style="width:auto; padding:8px 16px;">Buy via Fourthwall ($32.00)</a>
         </div>
       </div>
     </div>
@@ -194,7 +194,7 @@
           <div style="font-size:13px; color:#0e8345; font-weight:700; margin-top:4px;">
             ✓ In Stock — Ships from US Facility · FREE 2–4 Day US Delivery
           </div>
-          <div style="font-size:12.5px; color:#0f172a; font-weight:700; margin-top:6px; background:#f1f5f9; padding:8px 10px; border-radius:6px; border-left:3px solid #2563eb;">✓ Fulfilled via Fourthwall US · Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall) · ID: price_1UUb6JRut88O8nG233VLxmCw</div>
+          <div style="font-size:12.5px; color:#0f172a; font-weight:700; margin-top:6px; background:#f1f5f9; padding:8px 10px; border-radius:6px; border-left:3px solid #2563eb;">✓ Fulfilled via Fourthwall US · Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall) · <a href="https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-run-station-repeat" style="color:#2563eb;text-decoration:underline;">Live Fourthwall Storefront</a></div>
         </div>
         <p style="font-size:14.5px; color:#222; line-height:1.6; margin-bottom:14px;">Heavyweight 6.1 oz Comfort Colors 1717 100% ring-spun garment-dyed cotton tee (relaxed athletic streetwear fit, fulfilled via Fourthwall) built for 8-station functional racing and compromised running intervals — engineered for HYROX® training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh™ or Combed Ring-Spun Cotton).</p>
         <h2 style="font-size:14px; text-transform:uppercase; letter-spacing:0.05em; color:#444; margin-bottom:6px;">Key Performance Specifications</h2>
@@ -210,7 +210,7 @@
         </div>
         <div style="display:flex; gap:10px; margin-top:16px; flex-wrap:wrap;">
           <a href="../index.html?add=APC-C01" class="Btn Btn--Cart" style="padding:13px 22px; font-size:14px; text-align:center;">Add to Bag — $32.00</a>
-          <a href="../index.html?buy=APC-C01&fulfillment=fourthwall" class="Btn Btn--BuyNow" style="padding:13px 22px; font-size:14px; text-align:center;">Buy Now · Fourthwall Checkout</a>
+          <a href="https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-run-station-repeat" class="Btn Btn--BuyNow" style="padding:13px 22px; font-size:14px; text-align:center;">Buy Now · Fourthwall Checkout</a>
         </div>
       </div>
     </div>
@@ -300,5 +300,24 @@
       <p style="font-size:11.5px; color:#94a3b8; margin-top:8px;">Apex Hybrid &amp; Recovery Supply is an independent athletic &amp; recovery brand engineered for athletes competing in HYROX®, DEKA®, CrossFit®, and functional fitness events. Not affiliated with or endorsed by HYROX World GmbH.</p>
     </div>
   </footer>
+  <script>
+  (function(){
+    try {
+      if (/bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent || "")) return;
+      var ns = "https://abacus.jasoncameron.dev/hit/apexhybridco.com";
+      var hit = function(k){ fetch(ns + "/" + k, {method:"GET", mode:"cors", keepalive:true, cache:"no-store"}).catch(function(){}); };
+      hit("pageviews_total");
+      hit("product_views_total");
+      hit("view_APC-C01");
+      document.addEventListener("click", function(e){
+        var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+        if (!a) return;
+        var h = a.getAttribute("href") || "";
+        if (h.indexOf("buy=") !== -1 || h.indexOf("fourthwall.com") !== -1) { hit("checkout_clicks_total"); hit("checkout_APC-C01"); }
+        else if (h.indexOf("add=") !== -1) { hit("cart_add_total"); hit("cart_add_APC-C01"); }
+      });
+    } catch (_) {}
+  })();
+  </script>
 </body>
 </html>

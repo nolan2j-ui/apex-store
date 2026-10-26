@@ -793,5 +793,23 @@
       <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#ff6a3d;">apexhybridco@gmail.com</a> · 24/7 AI Concierge: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Shop All 72 Products</a></p>
     </div>
   </footer>
+  <script>
+  (function(){
+    try {
+      if (/bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent || "")) return;
+      var ns = "https://abacus.jasoncameron.dev/hit/apexhybridco.com";
+      var hit = function(k){ fetch(ns + "/" + k, {method:"GET", mode:"cors", keepalive:true, cache:"no-store"}).catch(function(){}); };
+      hit("pageviews_total");
+      hit("article_views_total");
+      document.addEventListener("click", function(e){
+        var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+        if (!a) return;
+        var h = a.getAttribute("href") || "";
+        if (h.indexOf("buy=") !== -1 || h.indexOf("fourthwall.com") !== -1) hit("checkout_clicks_total");
+        else if (h.indexOf("add=") !== -1) hit("cart_add_total");
+      });
+    } catch (_) {}
+  })();
+  </script>
 </body>
 </html>

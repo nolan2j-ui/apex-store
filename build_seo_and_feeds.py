@@ -155,8 +155,9 @@ def generate_product_pages():
         is_fw = str(prod.get("id", "")).startswith("APC-C") or prod.get("fulfillment_partner") == "Fourthwall"
         if is_fw:
             fw_blank = html.escape(prod.get("fourthwall_blank") or "Premium Athletic Blank")
-            fulfillment_line = f'<div style="font-size:12.5px; color:#0f172a; font-weight:700; margin-top:6px; background:#f1f5f9; padding:8px 10px; border-radius:6px; border-left:3px solid #2563eb;">✓ Fulfilled via Fourthwall US · {fw_blank} · ID: {html.escape(prod.get("stripe_price_id") or "")}</div>'
-            buy_href = f"../index.html?buy={prod['id']}&fulfillment=fourthwall"
+            fw_url = prod.get("fourthwall_product_url") or prod.get("checkout_url") or f"../index.html?buy={prod['id']}&fulfillment=fourthwall"
+            fulfillment_line = f'<div style="font-size:12.5px; color:#0f172a; font-weight:700; margin-top:6px; background:#f1f5f9; padding:8px 10px; border-radius:6px; border-left:3px solid #2563eb;">✓ Fulfilled via Fourthwall US · {fw_blank} · <a href="{html.escape(fw_url)}" style="color:#2563eb;text-decoration:underline;">Live Fourthwall Storefront</a></div>'
+            buy_href = fw_url
             top_buy_label = f"Buy via Fourthwall (${price})"
             main_buy_label = "Buy Now · Fourthwall Checkout"
         else:
@@ -290,6 +291,25 @@ def generate_product_pages():
       <p style="font-size:11.5px; color:#94a3b8; margin-top:8px;">Apex Hybrid &amp; Recovery Supply is an independent athletic &amp; recovery brand engineered for athletes competing in HYROX®, DEKA®, CrossFit®, and functional fitness events. Not affiliated with or endorsed by HYROX World GmbH.</p>
     </div>
   </footer>
+  <script>
+  (function(){{
+    try {{
+      if (/bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent || "")) return;
+      var ns = "https://abacus.jasoncameron.dev/hit/apexhybridco.com";
+      var hit = function(k){{ fetch(ns + "/" + k, {{method:"GET", mode:"cors", keepalive:true, cache:"no-store"}}).catch(function(){{}}); }};
+      hit("pageviews_total");
+      hit("product_views_total");
+      hit("view_{prod['id']}");
+      document.addEventListener("click", function(e){{
+        var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+        if (!a) return;
+        var h = a.getAttribute("href") || "";
+        if (h.indexOf("buy=") !== -1 || h.indexOf("fourthwall.com") !== -1) {{ hit("checkout_clicks_total"); hit("checkout_{prod['id']}"); }}
+        else if (h.indexOf("add=") !== -1) {{ hit("cart_add_total"); hit("cart_add_{prod['id']}"); }}
+      }});
+    }} catch (_) {{}}
+  }})();
+  </script>
 </body>
 </html>
 """
@@ -515,6 +535,24 @@ def generate_article_pages():
       <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#ff6a3d;">apexhybridco@gmail.com</a> · 24/7 AI Concierge: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Shop All 72 Products</a></p>
     </div>
   </footer>
+  <script>
+  (function(){{
+    try {{
+      if (/bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent || "")) return;
+      var ns = "https://abacus.jasoncameron.dev/hit/apexhybridco.com";
+      var hit = function(k){{ fetch(ns + "/" + k, {{method:"GET", mode:"cors", keepalive:true, cache:"no-store"}}).catch(function(){{}}); }};
+      hit("pageviews_total");
+      hit("article_views_total");
+      document.addEventListener("click", function(e){{
+        var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+        if (!a) return;
+        var h = a.getAttribute("href") || "";
+        if (h.indexOf("buy=") !== -1 || h.indexOf("fourthwall.com") !== -1) hit("checkout_clicks_total");
+        else if (h.indexOf("add=") !== -1) hit("cart_add_total");
+      }});
+    }} catch (_) {{}}
+  }})();
+  </script>
 </body>
 </html>
 """
@@ -572,6 +610,16 @@ def generate_article_pages():
       <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
     </div>
   </footer>
+  <script>
+  (function(){{
+    try {{
+      if (/bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent || "")) return;
+      var ns = "https://abacus.jasoncameron.dev/hit/apexhybridco.com";
+      fetch(ns + "/pageviews_total", {{method:"GET", mode:"cors", keepalive:true, cache:"no-store"}}).catch(function(){{}});
+      fetch(ns + "/article_views_total", {{method:"GET", mode:"cors", keepalive:true, cache:"no-store"}}).catch(function(){{}});
+    }} catch (_) {{}}
+  }})();
+  </script>
 </body>
 </html>'''
     with open(os.path.join(BASE_DIR, "articles", "index.html"), "w", encoding="utf-8") as out:
