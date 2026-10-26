@@ -4,6 +4,7 @@ const APPAREL = new Set([
   "Muscle Tanks",
   "Tees & Pump Covers",
   "Hoodies",
+  "Lightweight Jackets",
 ]);
 
 const PILLS = [
@@ -13,6 +14,7 @@ const PILLS = [
   ["Muscle Tanks", "Muscle Tanks"],
   ["Tees & Pump Covers", "Race Tees & Pump Covers"],
   ["Hoodies", "Warmup Hoodies"],
+  ["Lightweight Jackets", "Lightweight Jackets"],
   ["Training Gear", "Training Gear"],
   ["Recovery Hardware", "Recovery Hardware"],
 ];
@@ -145,6 +147,10 @@ const SHORT = {
   "APC-C10": "Bad Decisions hoodie",
   "APC-C11": "Running Club hoodie",
   "APC-C12": "The Footage Speaks",
+  "APC-C42": "AeroShell™ Corral Jacket",
+  "APC-C43": "08-Station Track Shell",
+  "APC-C44": "Pro Quarter-Zip Shell",
+  "APC-C45": "World Series Shell",
 };
 
 function shortTitle(p) {
@@ -166,7 +172,7 @@ function renderProducts() {
   const list = visibleProducts();
   $("#collectionTitle").textContent = collectionName();
   const count = $("#collectionCount");
-  if (count) count.textContent = list.length === 1 ? "1 piece" : ``;
+  if (count) count.textContent = "";
   renderPills();
   if (!list.length) {
     grid.innerHTML = `<div class="Empty"><p>Nothing in this cut matches that search.</p><button class="Btn Btn--ghost" type="button" data-clear-search="1">Clear search</button></div>`;
@@ -179,7 +185,7 @@ function renderProducts() {
         <button class="Swatch Swatch--bone" type="button" aria-label="Bone colorway" data-color="white" data-sku="${p.id}" aria-pressed="${colorOf(p) === "white"}"></button>
       </div>` : "";
     const alt = p.alt_image && colorOf(p) === "black" ? p.alt_image : p.image;
-    const hover = p.alt_image ? `<img class="Card__img Card__img--b" src="${esc(alt)}" alt="" />` : "";
+    const hover = p.alt_image ? `<img class="Card__img Card__img--b" src="${esc(alt)}" alt="" loading="lazy" decoding="async" width="1000" height="1280" />` : "";
     const was = p.list_price && p.list_price > p.retail_price ? `<s>${money(p.list_price)}</s>` : "";
     const badge = p.badge ? `<span class="Badge">${esc(p.badge)}</span>` : "";
     const sizes = p.has_sizes
@@ -190,7 +196,7 @@ function renderProducts() {
         <div class="Card__media">
           ${badge}
           <button class="Card__hit" type="button" data-quick="${p.id}" aria-label="Quick view ${esc(p.title)}">
-            <img class="Card__img" src="${esc(photoOf(p))}" alt="${esc(p.seo_title || p.title)}" />
+            <img class="Card__img" src="${esc(photoOf(p))}" alt="${esc(p.seo_title || p.title)}" loading="lazy" decoding="async" width="1000" height="1280" />
             ${hover}
           </button>
           <div class="QuickAdd" aria-label="Add ${esc(shortTitle(p))} to bag">${sizes}</div>
