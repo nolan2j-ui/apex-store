@@ -360,7 +360,7 @@ def generate_article_pages():
                     "publisher": {
                         "@type": "Organization",
                         "name": "Apex Hybrid & Recovery Supply",
-                        "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/images/27_aeromesh_tech_tee_black.png"},
+                        "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/images/streetwear/apc-c36-black.png?v=20261025v9"},
                     },
                     "datePublished": "2026-10-20",
                     "dateModified": TODAY,
@@ -406,17 +406,22 @@ def generate_article_pages():
         }
 
         top_strip_pills = "\n".join(
-            f"""          <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#1e293b;padding:10px 14px;border-radius:8px;border:1px solid #334155;">
-            <div style="min-width:0;">
-              <a href="../products/{p['handle']}.html" style="color:#fff;font-weight:800;font-size:13.5px;text-decoration:none;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{html.escape(p['title'])}</a>
-              <span style="color:#94a3b8;font-size:12px;">SKU {p['id']} · ★ {p['rating']} · Free 2–4 Day US Shipping</span>
+            f"""          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;background:#1e293b;padding:10px 14px;border-radius:8px;border:1px solid #334155;flex-wrap:wrap;">
+            <div style="display:flex;align-items:center;gap:12px;min-width:220px;flex:1;">
+              <a href="../products/{p['handle']}.html" style="flex-shrink:0;">
+                <img src="../{p['image']}" alt="{html.escape(p['title'])}" style="width:52px;height:52px;object-fit:cover;border-radius:6px;border:1px solid #475569;" loading="eager" />
+              </a>
+              <div style="min-width:0;">
+                <a href="../products/{p['handle']}.html" style="color:#fff;font-weight:800;font-size:13.5px;text-decoration:none;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{html.escape(p['title'])}</a>
+                <span style="color:#94a3b8;font-size:12px;">SKU {p['id']} · ★ {p['rating']} ({p['reviews']} reviews) · <strong style="color:#4ade80;">${p['retail_price']:.2f}</strong> · Free 2–4 Day US Shipping</span>
+              </div>
             </div>
-            <div style="display:flex;gap:6px;flex-shrink:0;">
-              <a href="{p.get('fourthwall_product_url') or ('../index.html?buy=' + p['id'])}" class="Btn Btn--BuyNow" style="width:auto;padding:7px 12px;font-size:12.5px;font-weight:800;background:#ff4d1c;color:#fff;border-radius:6px;text-decoration:none;">Buy Now — ${p['retail_price']:.2f} (Free Shipping)</a>
-              <a href="../index.html?add={p['id']}" class="Btn Btn--Cart" style="width:auto;padding:7px 10px;font-size:12px;font-weight:700;background:#334155;color:#fff;border-radius:6px;text-decoration:none;">+ Add to Bag</a>
+            <div style="display:flex;gap:6px;flex-shrink:0;align-items:center;">
+              <a href="{p.get('fourthwall_product_url') or ('../index.html?buy=' + p['id'])}" class="Btn Btn--BuyNow" style="width:auto;padding:8px 14px;font-size:12.5px;font-weight:800;background:#ff4d1c;color:#fff;border-radius:6px;text-decoration:none;">Buy Now — ${p['retail_price']:.2f} (Free US Shipping)</a>
+              <a href="../index.html?add={p['id']}" class="Btn Btn--Cart" style="width:auto;padding:8px 10px;font-size:12px;font-weight:700;background:#334155;color:#fff;border-radius:6px;text-decoration:none;">+ Add to Bag</a>
             </div>
           </div>"""
-            for p in rec_products[:3]
+            for p in rec_products[:4]
         )
 
         rec_html = "\n".join(
@@ -730,7 +735,7 @@ def generate_editorial_rss_feeds():
   <channel>
     <title>Apex Hybrid Co. — HYROX® Race Streetwear, Breathable Tech Shirts, Buyer Guides &amp; Recovery Hardware</title>
     <link>{SITE_URL}/</link>
-    <description>Official RSS 2.0 &amp; WebSub feed for Apex Hybrid Co. ({SITE_URL}) — 30 data-backed HYROX® &amp; hybrid racing buyer guides, 2026/2027 race-city apparel (Chicago, Dallas, Anaheim, Las Vegas, Miami, NYC), and 72 performance &amp; recovery products.</description>
+    <description>Official RSS 2.0 &amp; WebSub feed for Apex Hybrid Co. ({SITE_URL}) — {len(guides)} data-backed HYROX® &amp; hybrid racing buyer guides, 2026/2027 race-city apparel (Chicago, Dallas, Anaheim, Las Vegas, Miami, NYC), and 72 performance &amp; recovery products.</description>
     <language>en-us</language>
     <lastBuildDate>{pub_rfc822}</lastBuildDate>
     <managingEditor>apexhybridco@gmail.com (Apex Hybrid Co.)</managingEditor>
@@ -970,7 +975,7 @@ def inject_static_seo_into_index():
                 "@id": f"{SITE_URL}/#organization",
                 "name": "Apex Hybrid & Recovery Supply",
                 "url": f"{SITE_URL}/",
-                "logo": f"{SITE_URL}/images/27_aeromesh_tech_tee_black.png",
+                "logo": f"{SITE_URL}/images/streetwear/apc-c36-black.png?v=20261025v9",
                 "description": "Breathable HYROX® race shirts, laser-vented AeroMesh™ tech tees, 2026/2027 race-city shirts (Chicago, Dallas, Anaheim, Miami, Vegas, NYC), sleeveless muscle tanks, and clinical recovery hardware.",
                 "telephone": "+1-949-805-4935",
                 "email": "apexhybridco@gmail.com",
