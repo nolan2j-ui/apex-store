@@ -608,6 +608,7 @@ def generate_article_pages():
           <span class="BrandLogo__Sub">HYBRID &amp; RECOVERY CO.</span>
         </a>
         <div style="margin-left:auto; display:flex; gap:14px; align-items:center;">
+          <a href="../team_orders.html" style="color:#38bdf8; font-size:13px; font-weight:700;">Doubles 2-Packs &amp; Coach Program →</a>
           <a href="../index.html" style="color:#fff; font-size:13px; font-weight:700;">← Back to Full 72-Product Storefront</a>
         </div>
       </div>
@@ -871,6 +872,7 @@ Sitemap: {SITE_URL}/sitemap.xml
         "- **Headquarters:** 8420 Spectrum, Irvine, CA 92618",
         "- **Support Email:** apexhybridco@gmail.com",
         f"- **Primary Website:** {SITE_URL}/",
+        f"- **Doubles 2-Packs, Boutique Gym Bulk Kits & $0-Upfront HYROX Coach Partner Portal:** {SITE_URL}/team_orders.html",
         f"- **XML Sitemap:** {SITE_URL}/sitemap.xml",
         f"- **RSS 2.0 & WebSub Editorial Feed:** {SITE_URL}/feed.xml",
         f"- **RSS 2.0 Mirror Feed:** {SITE_URL}/rss.xml",
@@ -879,6 +881,9 @@ Sitemap: {SITE_URL}/sitemap.xml
         "- **Shipping Policy:** Free US Ground Shipping ($0.00 USD), 0–1 business day handling, 2–5 business day transit from California, Texas, and East Coast US warehouses.",
         "- **Return Policy:** 30-day free returns & exchanges by mail (`https://schema.org/FreeReturn`).",
         "- **Checkout:** Instant PCI-DSS Level 1 Stripe Checkout (Visa, Mastercard, American Express, Discover, Apple Pay).",
+        "",
+        "## Doubles 2-Packs, Team Bulk Kits & $0-Upfront Boutique HYROX Coach Partner Program",
+        f"- [HYROX Doubles 2-Packs, Boutique Gym Bulk Kits & Coach Partner Portal]({SITE_URL}/team_orders.html): Mix-and-match Doubles 2-Packs (2x AeroMesh™ Breathable Tech Tees $62, 2x Race City Tees $58, 2x AeroShell™ Warmup Jackets $108, 2x Heavyweight Fleece Hoodies $96, Full Doubles Race-Day Kit $178), 5-Pack Relay Kits ($145), 10-Pack Boutique Gym Drops ($268), 3-Piece Gym Recovery Lab ($319), plus our $0-upfront Boutique HYROX Gym & Independent Coach Partner Program (complimentary coach sample piece + custom 10%-off athlete code + $25 bonus per 5 shirts sold + 15% commission on recovery hardware). Contact: apexhybridco@gmail.com.",
         "",
         f"## Complete Product Catalog ({len(products)} Verified In-Stock SKUs)",
         ""
