@@ -106,7 +106,7 @@ function renderProducts() {
           <div class="ProductCard__Stock">${p.stock_status}</div>
           <p class="ProductCard__Desc">${p.short_desc}</p>
           <div class="ProductCard__Actions">
-            <button class="Btn Btn--Cart" onclick="addToCart('${p.id}')">Add to Cart</button>
+            <button class="Btn Btn--Cart" onclick="addToCart('${p.id}')">Add to Bag</button>
             <button class="Btn Btn--QuickView" onclick="openProductModal('${p.id}')">Details</button>
           </div>
         </div>
@@ -174,7 +174,7 @@ function renderProductModalContent(p) {
           <strong>Verified Athlete Review:</strong> "${p.review_quote}"
         </div>
         <div style="display:flex;gap:10px;">
-          <button class="Btn Btn--Cart" style="padding:11px 18px;" onclick="addToCart('${p.id}', '${p.has_sizes ? selectedModalSize : ''}', '${p.alt_image ? selectedModalColor : ''}');closeProductModal();">Add to Cart</button>
+          <button class="Btn Btn--Cart" style="padding:11px 18px;" onclick="addToCart('${p.id}', '${p.has_sizes ? selectedModalSize : ''}', '${p.alt_image ? selectedModalColor : ''}');closeProductModal();">Add to Bag</button>
           <button class="Btn Btn--BuyNow" style="padding:11px 18px;flex:1;" onclick="addToCart('${p.id}', '${p.has_sizes ? selectedModalSize : ''}', '${p.alt_image ? selectedModalColor : ''}', false);closeProductModal();openCheckoutModal();">Buy Now with Card</button>
         </div>
       </div>
@@ -217,7 +217,7 @@ function openArticle(idx) {
       </div>
       <div>
         <span style="color:#0f1111;font-weight:700;font-size:14px;">$${p.retail_price.toFixed(2)}</span>
-        <button class="Btn Btn--Cart Btn--Full" style="margin-top:6px;padding:6px 10px;" onclick="addToCart('${p.id}');closeArticle();">Add to Cart</button>
+        <button class="Btn Btn--Cart Btn--Full" style="margin-top:6px;padding:6px 10px;" onclick="addToCart('${p.id}');closeArticle();">Add to Bag</button>
       </div>
     </div>
   `).join('');
@@ -329,7 +329,7 @@ function renderCheckoutForm() {
         </div>
         <div class="FormField full">
           <label>Street Address *</label>
-          <input type="text" id="chkStreet" required placeholder="17911 Von Karman Ave, Suite 300" />
+          <input type="text" id="chkStreet" required placeholder="8420 Spectrum" />
         </div>
         <div class="FormField">
           <label>City &amp; State *</label>
@@ -427,3 +427,55 @@ document.addEventListener('DOMContentLoaded', () => {
     addToCart(addSku, '', '', true);
   }
 });
+
+
+// Interactive 8-Station Hybrid Race Split & Pacing Calculator
+function updateRaceSplitCalculator() {
+  const finishSelect = document.getElementById('calcTargetFinish');
+  const divSelect = document.getElementById('calcDivision');
+  if (!finishSelect || !divSelect) return;
+
+  const totalMinutes = parseInt(finishSelect.value, 10) || 70;
+  const division = divSelect.value;
+
+  // Allocate time across 8km running (~52%), 8 stations (~41%), and Roxzone (~7%)
+  const roxSec = Math.round(totalMinutes * 60 * 0.068);
+  const runTotalSec = Math.round(totalMinutes * 60 * (division === 'pro' ? 0.50 : 0.53));
+  const stationTotalSec = (totalMinutes * 60) - runTotalSec - roxSec;
+
+  const perKmSec = Math.round(runTotalSec / 8);
+  const ergSec = Math.round(stationTotalSec * 0.145);
+  const sledSec = Math.round(stationTotalSec * 0.135);
+  const wallBallSec = Math.round(stationTotalSec * 0.16);
+
+  const fmt = (s) => {
+    const m = Math.floor(s / 60);
+    const rem = s % 60;
+    return `${m}:${rem < 10 ? '0' : ''}${rem}`;
+  };
+
+  const elRun = document.getElementById('splitRunKm');
+  const elErg = document.getElementById('splitErg');
+  const elSled = document.getElementById('splitSled');
+  const elRox = document.getElementById('splitRoxzone');
+  const elWb = document.getElementById('splitWallBalls');
+
+  if (elRun) elRun.textContent = `${fmt(perKmSec)} / km`;
+  if (elErg) elErg.textContent = `${fmt(ergSec)} / 1000m`;
+  if (elSled) elSled.textContent = `${fmt(sledSec)} / station`;
+  if (elRox) elRox.textContent = `${fmt(roxSec)} total`;
+  if (elWb) elWb.textContent = `${fmt(wallBallSec)} (100 reps)`;
+}
+
+function filterByCityOrTopic(queryText) {
+  state.dept = 'all';
+  state.search = queryText;
+  const searchInput = document.getElementById('searchInput');
+  if (searchInput) searchInput.value = queryText;
+  document.querySelectorAll('.FilterLink, .SubNav__Link').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.dept === 'all');
+  });
+  renderProducts();
+  const grid = document.getElementById('catalogSection');
+  if (grid) grid.scrollIntoView({ behavior: 'smooth' });
+}
