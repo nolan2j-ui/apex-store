@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nolan2j-ui.github.io/apex-store/sitemap.xml
+Sitemap: https://apexhybridco.com/sitemap.xml

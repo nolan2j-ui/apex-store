@@ -16,7 +16,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "etsy_url": "https://www.etsy.com/listing/4597840985",
       "short_desc": "Lightweight 4.2 oz Airlume combed ring-spun cotton tee built for 8-station functional racing and compromised running intervals.",
       "highlights": [
         "4.2 oz/yd\u00b2 100% Airlume combed and ring-spun cotton (Bella+Canvas 3001 athletic cut)",
@@ -27,7 +26,8 @@
       "review_quote": "Wore this for my last 8-station race simulation\u2014lightweight, zero chafing on the ski erg or wall balls.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C01",
-      "stripe_price_id": "price_1UUb6JRut88O8nG233VLxmCw"
+      "stripe_price_id": "price_1UUb6JRut88O8nG233VLxmCw",
+      "product_url": "https://apexhybridco.com/#run-station-repeat-performance-tee"
     },
     {
       "id": "APC-C02",
@@ -45,7 +45,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "etsy_url": "https://www.etsy.com/listing/4597824217",
       "short_desc": "100 reps, no regrets. Relaxed drop-shoulder 6.5 oz heavyweight carded cotton pump cover built for barbell warmups and strength blocks.",
       "highlights": [
         "Heavyweight 6.5 oz/yd\u00b2 100% carded cotton with structured boxy drape",
@@ -56,7 +55,8 @@
       "review_quote": "Thick collar, true heavyweight feel, and gets laughs at every Saturday morning partner workout.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C02",
-      "stripe_price_id": "price_1UUb8uRut88O8nG2VcelcVm6"
+      "stripe_price_id": "price_1UUb8uRut88O8nG2VcelcVm6",
+      "product_url": "https://apexhybridco.com/#wall-balls-bad-decisions-oversized-pump-cover"
     },
     {
       "id": "APC-C03",
@@ -74,7 +74,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "etsy_url": "https://www.etsy.com/listing/4597826071",
       "short_desc": "High-contrast off-white and safety-orange chest graphic ('*My legs have filed a complaint') on breathable pre-shrunk cotton.",
       "highlights": [
         "4.2 oz Airlume combed ring-spun cotton with tailored athletic fit through chest and arms",
@@ -85,7 +84,8 @@
       "review_quote": "Fit is spot-on around the shoulders and the print quality after five washes is still crisp.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C03",
-      "stripe_price_id": "price_1UUb8vRut88O8nG2M79HZkEh"
+      "stripe_price_id": "price_1UUb8vRut88O8nG2M79HZkEh",
+      "product_url": "https://apexhybridco.com/#sled-push-enthusiast-race-day-tee"
     },
     {
       "id": "APC-C04",
@@ -103,7 +103,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "etsy_url": "",
       "short_desc": "Built for the exact feeling of hitting kilometer one right after heavy sleds and walking lunges. Soft ring-spun athletic cotton.",
       "highlights": [
         "Featherlight 4.2 oz ring-spun cotton weave for warm-weather track and brick sessions",
@@ -114,7 +113,8 @@
       "review_quote": "Our whole Tuesday night brick-run group picked these up. Super soft right out of the package.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C04",
-      "stripe_price_id": "price_1UUb8vRut88O8nG2SOr9k0zf"
+      "stripe_price_id": "price_1UUb8vRut88O8nG2SOr9k0zf",
+      "product_url": "https://apexhybridco.com/#compromised-running-society-club-tee"
     },
     {
       "id": "APC-C05",
@@ -132,7 +132,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "etsy_url": "",
       "short_desc": "Bold athletic chest print with 'I have enough character, thanks' micro-caption for Station 4 conditioning days.",
       "highlights": [
         "4.2 oz 100% combed ring-spun cotton with stretch recovery",
@@ -143,7 +142,8 @@
       "review_quote": "Lightweight enough to actually train in and the subtle subtext cracks everyone up.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C05",
-      "stripe_price_id": "price_1UUb8xRut88O8nG2a53ew4iA"
+      "stripe_price_id": "price_1UUb8xRut88O8nG2a53ew4iA",
+      "product_url": "https://apexhybridco.com/#burpee-broad-jumps-build-character-tee"
     },
     {
       "id": "APC-C06",
@@ -161,7 +161,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "etsy_url": "https://www.etsy.com/listing/4597848056",
       "short_desc": "The digital monitor shows split times, not sympathy. Engineered for 1,000m SkiErg and RowErg threshold repeats.",
       "highlights": [
         "Athletic shoulder cut allows full lats extension on SkiErg and indoor rower pulls",
@@ -172,7 +171,8 @@
       "review_quote": "My go-to shirt for 5k row tests and threshold intervals. Fits great through the lats.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C06",
-      "stripe_price_id": "price_1UUb8yRut88O8nG2NxnEoKDG"
+      "stripe_price_id": "price_1UUb8yRut88O8nG2NxnEoKDG",
+      "product_url": "https://apexhybridco.com/#the-erg-doesnt-care-how-you-feel-tee"
     },
     {
       "id": "APC-C07",
@@ -190,7 +190,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "etsy_url": "",
       "short_desc": "Every race morning has two starts: the gun and the pit-stop line before wave call. Soft ring-spun warmup tee.",
       "highlights": [
         "Original race-morning graphic with custom icon and 'Go Before The Gun' crest",
@@ -201,7 +200,8 @@
       "review_quote": "Bought this as a gift for my marathon/hybrid training partner\u2014best race morning shirt ever.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C07",
-      "stripe_price_id": "price_1UUb8zRut88O8nG2c6hu9Ll3"
+      "stripe_price_id": "price_1UUb8zRut88O8nG2c6hu9Ll3",
+      "product_url": "https://apexhybridco.com/#porta-potty-line-pr-pre-race-tee"
     },
     {
       "id": "APC-C08",
@@ -219,7 +219,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "etsy_url": "",
       "short_desc": "'The Footage Speaks For Itself.' Custom sled emblem and chest typography for athletes who grind across the turf line.",
       "highlights": [
         "Features custom weighted prowler sled illustration and Sled Push Dept. insignia",
@@ -230,7 +229,8 @@
       "review_quote": "The sled graphic looks awesome in person. Great athletic fit that isn't boxy at the waist.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C08",
-      "stripe_price_id": "price_1UUb90Rut88O8nG2CRxsKVYJ"
+      "stripe_price_id": "price_1UUb90Rut88O8nG2CRxsKVYJ",
+      "product_url": "https://apexhybridco.com/#defend-my-sled-push-dept-tee"
     },
     {
       "id": "APC-C09",
@@ -248,7 +248,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "etsy_url": "https://www.etsy.com/listing/4597846840",
       "short_desc": "8.0 oz mid-heavyweight brushed fleece pullover hoodie with double-lined hood for early morning track intervals and post-race recovery.",
       "highlights": [
         "8.0 oz/yd\u00b2 50/50 ring-spun cotton and poly air-jet yarn for a pill-resistant plush finish",
@@ -259,7 +258,8 @@
       "review_quote": "Super warm without feeling stiff. I wear it to every 5:30 AM track warmup.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C09",
-      "stripe_price_id": "price_1UUb91Rut88O8nG2E5Q24Zi0"
+      "stripe_price_id": "price_1UUb91Rut88O8nG2E5Q24Zi0",
+      "product_url": "https://apexhybridco.com/#run-station-repeat-heavy-blend-hoodie"
     },
     {
       "id": "APC-C10",
@@ -277,7 +277,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "etsy_url": "",
       "short_desc": "Plush pre-shrunk 8.0 oz fleece hoodie engineered for cold garage gym warmups and post-event recovery.",
       "highlights": [
         "Soft brushed fleece interior traps heat during warmup sets",
@@ -288,7 +287,8 @@
       "review_quote": "Coziest gym hoodie I own. Size L fits nicely oversized for warming up on squat days.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C10",
-      "stripe_price_id": "price_1UUb93Rut88O8nG2nfdQBibQ"
+      "stripe_price_id": "price_1UUb93Rut88O8nG2nfdQBibQ",
+      "product_url": "https://apexhybridco.com/#wall-balls-bad-decisions-hoodie"
     },
     {
       "id": "APC-C11",
@@ -306,7 +306,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "etsy_url": "",
       "short_desc": "Soft brushed interior with ribbed cuffs and safety-orange 'Est. Kilometer One' chest print for cold morning run clubs.",
       "highlights": [
         "8.0 oz ring-spun fleece blend with zero-pill air-jet yarn",
@@ -317,7 +316,8 @@
       "review_quote": "Great weight for chilly morning miles before the sun comes up.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C11",
-      "stripe_price_id": "price_1UUb94Rut88O8nG2pxIIJTnx"
+      "stripe_price_id": "price_1UUb94Rut88O8nG2pxIIJTnx",
+      "product_url": "https://apexhybridco.com/#compromised-running-club-fleece-hoodie"
     },
     {
       "id": "APC-C12",
@@ -335,7 +335,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Facility",
       "has_sizes": true,
-      "etsy_url": "",
       "short_desc": "Heavy-duty 8.0 oz warmup hoodie featuring the Sled Push Dept. crest for strength and turf conditioning athletes.",
       "highlights": [
         "8.0 oz plush fleece with double-lined hood and matte drawstrings",
@@ -346,7 +345,8 @@
       "review_quote": "Love the graphic and the fleece is thick and warm. Holds up great in the wash.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C12",
-      "stripe_price_id": "price_1UUb95Rut88O8nG2lSgBQOlZ"
+      "stripe_price_id": "price_1UUb95Rut88O8nG2lSgBQOlZ",
+      "product_url": "https://apexhybridco.com/#defend-my-sled-push-fleece-hoodie"
     },
     {
       "id": "APC-C13",
@@ -364,7 +364,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "100% chino cotton twill unstructured low-profile cap with breathable stitched eyelets and adjustable antique brass buckle.",
       "highlights": [
         "100% bio-washed chino cotton twill (Yupoong 6245CM unstructured 6-panel cut)",
@@ -375,7 +374,8 @@
       "review_quote": "Fits low on the crown just like a broken-in running hat should. Doesn't trap heat on long runs.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C13",
-      "stripe_price_id": "price_1UUb96Rut88O8nG2xm8owDwY"
+      "stripe_price_id": "price_1UUb96Rut88O8nG2xm8owDwY",
+      "product_url": "https://apexhybridco.com/#zone-2-engine-builder-embroidered-dad-hat"
     },
     {
       "id": "APC-C14",
@@ -393,7 +393,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "Water-resistant 900D Oxford tactical gym duffle with ventilated shoe tunnel, wet-gear pocket, and convertible backpack straps.",
       "highlights": [
         "50-liter capacity with dedicated ventilated side compartment for racing shoes",
@@ -404,7 +403,8 @@
       "review_quote": "Fits my lifters, running shoes, belt, jump rope, and two shakers with room to spare.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C14",
-      "stripe_price_id": "price_1UUb97Rut88O8nG29muuJAnH"
+      "stripe_price_id": "price_1UUb97Rut88O8nG29muuJAnH",
+      "product_url": "https://apexhybridco.com/#apex-8-station-race-day-tactical-duffle"
     },
     {
       "id": "APC-C15",
@@ -422,7 +422,6 @@
       "ship_time": "FREE 2\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "Matte black 18/8 food-grade stainless steel shaker bottle with wire mixing whisk, leakproof flip cap, and 24-hour cold retention.",
       "highlights": [
         "Double-wall\u9285-lined vacuum insulation keeps electrolytes ice-cold for up to 24 hours",
@@ -433,7 +432,8 @@
       "review_quote": "Zero leaks in my gym bag and ice literally stays solid from morning training until evening.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C15",
-      "stripe_price_id": "price_1UUb97Rut88O8nG2wjHutbEN"
+      "stripe_price_id": "price_1UUb97Rut88O8nG2wjHutbEN",
+      "product_url": "https://apexhybridco.com/#electrolyte-pacing-insulated-shaker-bottle"
     },
     {
       "id": "APC-E01",
@@ -451,7 +451,6 @@
       "ship_time": "FREE 3\u20135 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from CA/NJ Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "12mm amplitude high-torque brushless motor (42 dB whisper quiet) with 20 speed levels, 6 orthopedic heads, and hard travel case.",
       "highlights": [
         "High-torque brushless motor delivers up to 3,200 percussions per minute with 45 lbs stall force",
@@ -462,7 +461,8 @@
       "review_quote": "Every bit as powerful as $300 massage guns I've used at physical therapy clinics, and way quieter.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E01",
-      "stripe_price_id": "price_1UUb9FRut88O8nG2cZwmHmCA"
+      "stripe_price_id": "price_1UUb9FRut88O8nG2cZwmHmCA",
+      "product_url": "https://apexhybridco.com/#pro-3200rpm-brushless-percussion-massage-gun"
     },
     {
       "id": "APC-E02",
@@ -480,7 +480,6 @@
       "ship_time": "FREE 3\u20134 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from Texas Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "Medical-grade triple-chip LEDs combining 660nm deep red and 850nm near-infrared wavelengths for targeted knee, back, and tendon recovery.",
       "highlights": [
         "Dual-spectrum photobiomodulation: 660nm visible red light + 850nm deep-penetrating near-infrared",
@@ -491,7 +490,8 @@
       "review_quote": "Game changer for patellar tendonitis during high-volume sled and running blocks.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E02",
-      "stripe_price_id": "price_1UUb9GRut88O8nG25GeYhLgG"
+      "stripe_price_id": "price_1UUb9GRut88O8nG25GeYhLgG",
+      "product_url": "https://apexhybridco.com/#dual-wavelength-660nm-850nm-red-light-recovery-wrap"
     },
     {
       "id": "APC-E03",
@@ -509,7 +509,6 @@
       "ship_time": "FREE 3\u20135 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from California Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "Rip-stop 5-layer thermal insulated cold plunge tub for athletes up to 6'7\", complete with all-weather thermal cover and quick-drain valve.",
       "highlights": [
         "5-layer thermal EPE pearl-foam and rip-stop PVC walls maintain cold water temperatures across days",
@@ -520,7 +519,8 @@
       "review_quote": "Set it up on my apartment balcony in 5 minutes. Holds temperature remarkably well with the lid on.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E03",
-      "stripe_price_id": "price_1UUb9HRut88O8nG2Oo0bZFPL"
+      "stripe_price_id": "price_1UUb9HRut88O8nG2Oo0bZFPL",
+      "product_url": "https://apexhybridco.com/#insulated-portable-cold-plunge-ice-pod-pro"
     },
     {
       "id": "APC-E04",
@@ -538,7 +538,6 @@
       "ship_time": "FREE 3\u20135 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "Instant-read IPX8 waterproof floating ice bath gauge with wireless indoor/outdoor temperature receiver and min/max memory.",
       "highlights": [
         "High-precision sensor reads water temperatures down to 14\u00b0F (-10\u00b0C) up to 140\u00b0F (60\u00b0C)",
@@ -549,7 +548,8 @@
       "review_quote": "Super accurate in 38\u00b0F ice water and love being able to check the temp from my kitchen.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E04",
-      "stripe_price_id": "price_1UUb9JRut88O8nG2nvv4vKMD"
+      "stripe_price_id": "price_1UUb9JRut88O8nG2nvv4vKMD",
+      "product_url": "https://apexhybridco.com/#floating-digital-cold-plunge-thermometer-timer"
     },
     {
       "id": "APC-E05",
@@ -567,7 +567,6 @@
       "ship_time": "FREE 3\u20135 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from NJ Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "Extra-wide 17-inch 3,700 RPM deep-oscillation vibrating roller with multi-zone EVA tread and carry bag for calves, quads, and thoracic spine.",
       "highlights": [
         "4-speed high-torque vibration frequencies (up to 3,700 RPM) numb pain receptors while releasing fascia",
@@ -578,7 +577,8 @@
       "review_quote": "Rolling tight calves and IT bands with vibration on level 3 takes half the time of a regular roller.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E05",
-      "stripe_price_id": "price_1UUb9KRut88O8nG2pDq2s88O"
+      "stripe_price_id": "price_1UUb9KRut88O8nG2pDq2s88O",
+      "product_url": "https://apexhybridco.com/#4-speed-vibrating-high-density-mobility-foam-roller"
     },
     {
       "id": "APC-E06",
@@ -596,7 +596,6 @@
       "ship_time": "FREE 3\u20135 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "800-lb rated steel adjuster buckle, thick EVA ankle comfort pad, and high-density door anchor that sets up a Nordic curl station in 10 seconds.",
       "highlights": [
         "Slides under any standard closed door in seconds without screws or wall damage",
@@ -607,7 +606,8 @@
       "review_quote": "Rock solid under the door and the foam padding doesn't dig into my Achilles at all.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E06",
-      "stripe_price_id": "price_1UUb9LRut88O8nG2Z4JWAEMy"
+      "stripe_price_id": "price_1UUb9LRut88O8nG2Z4JWAEMy",
+      "product_url": "https://apexhybridco.com/#nordic-hamstring-curl-door-anchor-strap-pro"
     },
     {
       "id": "APC-E07",
@@ -625,7 +625,6 @@
       "ship_time": "FREE 3\u20135 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from California Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "Industrial N52 neodymium magnets snap directly onto any steel squat rack or erg upright, keeping your 40oz bottle, phone, and keys off the gym floor.",
       "highlights": [
         "Built-in multi-magnet backplate holds up to 11 lbs vertically on any steel gym rig or machine",
@@ -636,7 +635,8 @@
       "review_quote": "Snaps right onto the squat rack upright and doesn't budge even with a full 40oz stainless bottle.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E07",
-      "stripe_price_id": "price_1UUb9MRut88O8nG2PQeJvmed"
+      "stripe_price_id": "price_1UUb9MRut88O8nG2PQeJvmed",
+      "product_url": "https://apexhybridco.com/#magnetic-gym-bag-bottle-phone-organizer-pouch"
     },
     {
       "id": "APC-E08",
@@ -654,7 +654,6 @@
       "ship_time": "FREE 3\u20135 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "Silicone-gripped weighted handles with removable iron mass cores, 360\u00b0 dual ball bearings, and 2 interchangeable cables.",
       "highlights": [
         "Removable handle weights let you switch between fast double-unders and heavy forearm/shoulder conditioning",
@@ -665,7 +664,8 @@
       "review_quote": "Smooth spin on the bearings and the removable handle weights torch your shoulders and grip.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E08",
-      "stripe_price_id": "price_1UUb9MRut88O8nG2QCNaTCDY"
+      "stripe_price_id": "price_1UUb9MRut88O8nG2QCNaTCDY",
+      "product_url": "https://apexhybridco.com/#ball-bearing-weighted-aluminium-speed-jump-rope"
     },
     {
       "id": "APC-E09",
@@ -683,7 +683,6 @@
       "ship_time": "FREE 3\u20135 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "High-precision strain-gauge LCD isometric grip dynamometer (up to 198 lbs / 90 kg) for tracking farmer-carry strength and daily CNS recovery.",
       "highlights": [
         "Measures isometric crush grip up to 198 lbs (90 kg) in 0.2 lb (0.1 kg) increments",
@@ -694,7 +693,8 @@
       "review_quote": "I test my grip every morning alongside HRV to gauge CNS fatigue before heavy deadlift and carry days.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E09",
-      "stripe_price_id": "price_1UUb9ORut88O8nG2VDroIEQX"
+      "stripe_price_id": "price_1UUb9ORut88O8nG2VDroIEQX",
+      "product_url": "https://apexhybridco.com/#digital-dynamometer-farmer-carry-grip-trainer-set"
     },
     {
       "id": "APC-E10",
@@ -712,7 +712,6 @@
       "ship_time": "FREE 3\u20135 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from California Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "7,900 hypoallergenic lotus acupressure points on 100% cotton backing with contoured neck pillow to stimulate dorsal blood flow and deep sleep.",
       "highlights": [
         "6,210 mat points + 1,782 neck pillow points stimulate endorphin release and local micro-circulation",
@@ -723,7 +722,8 @@
       "review_quote": "Lying on this for 12 minutes after a long run melts lower-back tightness and puts me right to sleep.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E10",
-      "stripe_price_id": "price_1UUb9PRut88O8nG2D6UO3UVA"
+      "stripe_price_id": "price_1UUb9PRut88O8nG2D6UO3UVA",
+      "product_url": "https://apexhybridco.com/#acupressure-myofascial-recovery-mat-pillow-set"
     },
     {
       "id": "APC-E11",
@@ -741,7 +741,6 @@
       "ship_time": "FREE 3\u20135 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "Double-wall vacuum 304 stainless flask with waterproof LED touch-cap thermometer and removable stainless strainer insert.",
       "highlights": [
         "Tap the waterproof OLED lid to view exact internal liquid temperature Instantly",
@@ -752,7 +751,8 @@
       "review_quote": "Sleek matte black finish and the temperature readout on the lid works every single tap.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E11",
-      "stripe_price_id": "price_1UUb9QRut88O8nG2IqonwkK4"
+      "stripe_price_id": "price_1UUb9QRut88O8nG2IqonwkK4",
+      "product_url": "https://apexhybridco.com/#smart-led-hydration-reminder-thermal-flask-32oz"
     },
     {
       "id": "APC-E12",
@@ -770,7 +770,6 @@
       "ship_time": "FREE 3\u20135 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from California Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "Full-leg sequential pneumatic air compression system (foot, calf, knee, thigh) with 3 massage modes, 3 intensity levels, and travel bag.",
       "highlights": [
         "Sequential distal-to-proximal inflation flushes metabolic waste from feet, calves, and quads",
@@ -781,7 +780,8 @@
       "review_quote": "20 minutes in these boots after a long Sunday run makes my legs feel brand new on Monday morning.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E12",
-      "stripe_price_id": "price_1UUb9SRut88O8nG2OFFmQccS"
+      "stripe_price_id": "price_1UUb9SRut88O8nG2OFFmQccS",
+      "product_url": "https://apexhybridco.com/#rechargeable-pneumatic-calf-shin-compression-sleeves"
     },
     {
       "id": "APC-E13",
@@ -799,7 +799,6 @@
       "ship_time": "FREE 3\u20135 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from US Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "Heavy-gauge powder-coated steel tibialis raise bar with thick cushioned instep foam rollers and quick-release Olympic collar clamp.",
       "highlights": [
         "Directly loads the tibialis anterior and ankle dorsiflexors to armor shins against high-impact running",
@@ -810,7 +809,8 @@
       "review_quote": "Completely cured my recurring shin splints within four weeks of doing 3 sets twice a week.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E13",
-      "stripe_price_id": "price_1UUb9TRut88O8nG2i33twvSM"
+      "stripe_price_id": "price_1UUb9TRut88O8nG2i33twvSM",
+      "product_url": "https://apexhybridco.com/#tibialis-anterior-shin-splint-trainer-bar"
     },
     {
       "id": "APC-E14",
@@ -828,7 +828,6 @@
       "ship_time": "FREE 3\u20135 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from California Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "Anodized matte-black aluminum 60-inch corner lamp with warm circadian amber mode, app + remote control, and weighted metal base.",
       "highlights": [
         "Space-saving 60-inch vertical profile tucks into any home gym or recovery room corner",
@@ -839,7 +838,8 @@
       "review_quote": "Gives our garage gym and sauna corner a high-end studio atmosphere. Very sturdy base.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E14",
-      "stripe_price_id": "price_1UUb9URut88O8nG2N90WBySl"
+      "stripe_price_id": "price_1UUb9URut88O8nG2N90WBySl",
+      "product_url": "https://apexhybridco.com/#minimalist-rgbic-ambient-home-gym-corner-floor-lamp"
     },
     {
       "id": "APC-E15",
@@ -857,7 +857,6 @@
       "ship_time": "FREE 3\u20135 Day US Delivery",
       "stock_status": "In Stock \u2014 Ships from CA/TX Warehouse",
       "has_sizes": false,
-      "etsy_url": "",
       "short_desc": "Waterproof Oxford PU far-infrared thermal recovery blanket (95\u00b0F\u2013176\u00b0F) with digital timer controller and carry bag for apartment heat acclimation.",
       "highlights": [
         "Low-EMF far-infrared carbon heating layers heat the body directly from 95\u00b0F up to 176\u00b0F (80\u00b0C)",
@@ -868,7 +867,8 @@
       "review_quote": "I use this 3 nights a week for 35 minutes after training. Sweats just like a real infrared cabin sauna.",
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E15",
-      "stripe_price_id": "price_1UUb9VRut88O8nG2FHix8J5d"
+      "stripe_price_id": "price_1UUb9VRut88O8nG2FHix8J5d",
+      "product_url": "https://apexhybridco.com/#far-infrared-portable-home-sauna-detox-blanket"
     }
   ],
   "guides": [
