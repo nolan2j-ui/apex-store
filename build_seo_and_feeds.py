@@ -387,7 +387,7 @@ def generate_article_pages():
                     "publisher": {
                         "@type": "Organization",
                         "name": "Apex Hybrid & Recovery Supply",
-                        "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/images/streetwear/apc-c36-black.png?v=20261025v9"},
+                        "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/images/streetwear/apc-c36-black.png?v=20261026v1"},
                     },
                     "datePublished": "2026-10-20",
                     "dateModified": TODAY,
@@ -1054,7 +1054,7 @@ def inject_static_seo_into_index():
                 "@id": f"{SITE_URL}/#organization",
                 "name": "Apex Hybrid & Recovery Supply",
                 "url": f"{SITE_URL}/",
-                "logo": f"{SITE_URL}/images/streetwear/apc-c36-black.png?v=20261025v9",
+                "logo": f"{SITE_URL}/images/streetwear/apc-c36-black.png?v=20261026v1",
                 "description": "Breathable HYROX® race shirts, laser-vented AeroMesh™ tech tees, 2026/2027 race-city shirts (Chicago, Dallas, Anaheim, Miami, Vegas, NYC), sleeveless muscle tanks, and clinical recovery hardware.",
                 "telephone": "+1-949-805-4935",
                 "email": "apexhybridco@gmail.com",
