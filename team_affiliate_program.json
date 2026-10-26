@@ -35,6 +35,13 @@
         "percent_off": 20.0,
         "duration": "forever",
         "status": "active_in_stripe_acct_1UUaY9Rut88O8nG2"
+      },
+      {
+        "coupon_id": "COACHSU10",
+        "name": "Coach Su & The Vault Fitness 10% Off",
+        "percent_off": 10.0,
+        "duration": "forever",
+        "status": "active_in_stripe_acct_1UUaY9Rut88O8nG2"
       }
     ],
     "active_storefront_promo_codes": [
@@ -77,6 +84,15 @@
         "min_order_usd": 250.0,
         "target_audience": "Hybrid Gym & Run-Club 10-Pack Box Drops & Coaching Staff Orders (10+ units)",
         "affiliate_commission_pct": 15
+      },
+      {
+        "code": "COACHSU10",
+        "coupon_id": "COACHSU10",
+        "discount_pct": 10,
+        "min_order_usd": 0.0,
+        "target_audience": "Coach Suzanna 'Su' Frazier (@strongerwithsu) & The Vault Fitness (Sacramento, CA) community & athletes",
+        "affiliate_commission_pct": 15,
+        "shirt_sales_bonus_usd": "$25 per 5 shirts sold"
       }
     ]
   },
@@ -480,7 +496,23 @@
       "shirt_sales_bonus": "$25 cash bonus for every 5 shirts sold using your coach/gym code",
       "recovery_hardware_commission": "15%\u201320% cash commission on all recovery hardware & Gym Recovery Lab bundles",
       "upfront_cost": "$0.00 (Zero inventory risk, zero minimum monthly quota)"
-    }
+    },
+    "active_coach_partners": [
+      {
+        "coach_name": "Suzanna 'Su' Frazier (@strongerwithsu)",
+        "gym_name": "The Vault Fitness (Official HYROX Training Club)",
+        "location": "2697 Florin Rd, Sacramento, CA 95822",
+        "email": "suzanna@strongerwithsu.com",
+        "promo_code": "COACHSU10",
+        "discount_pct": 10,
+        "shirt_bonus": "$25 per 5 shirts sold",
+        "recovery_commission_pct": 15,
+        "sample_shirt_sku": "APC-C02",
+        "sample_shirt_title": "Wall Balls & Bad Decisions Tee",
+        "sample_shirt_size": "M",
+        "status": "active"
+      }
+    ]
   },
   "catalog_stripe_audit": {
     "audit_timestamp": "2026-10-25T19:30:00-07:00",

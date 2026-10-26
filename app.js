@@ -50,6 +50,69 @@ const STATIONS = [
   ["08", "Wall Balls", "wall", 0.11, false],
 ];
 
+
+const PROMO_CODES = {
+  COACHSU10: { pct: 10, label: "Coach Su & The Vault Fitness (10% Off)" },
+  HYROX10: { pct: 10, label: "HYROX Athlete (10% Off)" },
+  CLUB10: { pct: 10, label: "HYROX Club & Coach (10% Off)" },
+  DOUBLES10: { pct: 10, label: "Doubles Partner (10% Off)" },
+  LUXESTRONG10: { pct: 10, label: "LuxeStrong (10% Off)" },
+  WESTGROX10: { pct: 10, label: "Westgrove HYROX (10% Off)" },
+  WESTGROVE10: { pct: 10, label: "Westgrove HYROX (10% Off)" },
+  KEVINKIM10: { pct: 10, label: "Coach Kevin Kim (10% Off)" },
+  TAEJO10: { pct: 10, label: "Coach TaeJo (10% Off)" },
+  FTX10: { pct: 10, label: "FTX Wellness (10% Off)" },
+  TEAM15: { pct: 15, label: "Relay Squad 5+ (15% Off)" },
+  GYM20: { pct: 20, label: "Affiliate Gym 10+ (20% Off)" },
+};
+
+let activePromo = "";
+try {
+  activePromo = (sessionStorage.getItem("apx_promo_code") || "").trim().toUpperCase();
+} catch (_) {}
+
+function resolvePromo(code) {
+  const c = String(code || "").trim().toUpperCase();
+  if (!c) return null;
+  if (PROMO_CODES[c]) return { code: c, pct: PROMO_CODES[c].pct, label: PROMO_CODES[c].label };
+  if (c.length >= 4 && c.endsWith("20")) return { code: c, pct: 20, label: `${c} Partner (20% Off)` };
+  if (c.length >= 4 && c.endsWith("15")) return { code: c, pct: 15, label: `${c} Partner (15% Off)` };
+  if (c.length >= 4 && c.endsWith("10")) return { code: c, pct: 10, label: `${c} Partner (10% Off)` };
+  return null;
+}
+
+function setPromoCode(rawCode, notify = true) {
+  const info = resolvePromo(rawCode);
+  if (!info) {
+    if (rawCode && notify) toast(`Promo code "${String(rawCode).toUpperCase()}" is not valid`);
+    return false;
+  }
+  activePromo = info.code;
+  try {
+    sessionStorage.setItem("apx_promo_code", activePromo);
+  } catch (_) {}
+  trackHit(`promo_${activePromo}`);
+  if (notify) toast(`Promo ${activePromo} (${info.pct}% off) applied!`);
+  renderCart();
+  return true;
+}
+
+function clearPromoCode() {
+  activePromo = "";
+  try {
+    sessionStorage.removeItem("apx_promo_code");
+  } catch (_) {}
+  renderCart();
+}
+
+function fourthwallUrlWithPromo(url) {
+  if (!url) return url;
+  const info = resolvePromo(activePromo);
+  if (!info) return url;
+  const sep = url.includes("?") ? "&" : "?";
+  return `${url}${sep}discount=${encodeURIComponent(info.code)}&promo=${encodeURIComponent(info.code)}`;
+}
+
 let PRODUCTS = [];
 let GUIDES = [];
 let dept = "apparel";
@@ -313,7 +376,22 @@ function renderCart() {
       </div>
     `).join("");
   }
-  $("#cartSubtotal").textContent = money(sub);
+  const promoInfo = resolvePromo(activePromo);
+  const discAmt = promoInfo ? sub * (promoInfo.pct / 100) : 0;
+  const finalSub = Math.max(0, sub - discAmt);
+  if (cart.length) {
+    box.insertAdjacentHTML(
+      "beforeend",
+      `<div style="margin-top:12px;padding-top:12px;border-top:1px solid #e5e7eb">
+        <div style="display:flex;gap:6px;align-items:center">
+          <input id="cartPromoInput" type="text" value="${esc(activePromo)}" placeholder="Promo code (e.g. COACHSU10)" style="flex:1;padding:7px 10px;border:1px solid #d1d5db;border-radius:6px;font-size:12px;text-transform:uppercase" />
+          <button type="button" class="Btn Btn--bone" data-apply-promo="cart" style="padding:7px 12px;font-size:12px">Apply</button>
+        </div>
+        ${promoInfo ? `<div style="display:flex;justify-content:space-between;font-size:12px;color:#059669;font-weight:700;margin-top:6px"><span>✓ ${esc(promoInfo.label)}</span><span>−${money(discAmt)}</span></div>` : ""}
+      </div>`
+    );
+  }
+  $("#cartSubtotal").textContent = promoInfo ? `${money(finalSub)} (${promoInfo.pct}% off)` : money(sub);
 }
 
 function openSheet(id) {
@@ -403,10 +481,13 @@ function openCheckout(lines) {
   trackHit("checkout_clicks_total");
   bag.forEach((item) => { if (item && item.id) trackHit(`checkout_${item.id}`); });
   if (bag.length === 1 && bag[0].is_fourthwall && bag[0].fourthwall_product_url) {
-    window.location.href = bag[0].fourthwall_product_url;
+    window.location.href = fourthwallUrlWithPromo(bag[0].fourthwall_product_url);
     return;
   }
-  const sub = bag.reduce((sum, item) => sum + item.price * item.qty, 0);
+  const rawSub = bag.reduce((sum, item) => sum + item.price * item.qty, 0);
+  const promoInfo = resolvePromo(activePromo);
+  const discAmt = promoInfo ? rawSub * (promoInfo.pct / 100) : 0;
+  const sub = Math.max(0, rawSub - discAmt);
   const hasFw = bag.some((item) => item.is_fourthwall);
   const hasWs = bag.some((item) => !item.is_fourthwall);
   const checkoutTitle = hasFw && !hasWs
@@ -430,6 +511,11 @@ function openCheckout(lines) {
         <div class="Row"><span>${item.qty} × ${esc(item.title)} <span class="StripeId">${esc(item.variant)}</span></span><strong>${money(item.price * item.qty)}</strong></div>
         <div class="StripeId">${esc(item.is_fourthwall ? `Fulfilled via Fourthwall (${item.fourthwall_blank})` : "Fulfilled via US Warehouse Direct Wholesale")} · ${item.is_fourthwall && item.fourthwall_product_url ? `<a href="${esc(item.fourthwall_product_url)}" target="_blank" rel="noopener" style="color:#2563eb;font-weight:700">Instant Fourthwall Checkout →</a> · ` : ""}${esc([item.stripe_price_id, item.stripe_product_id, item.stripe_account_id].filter(Boolean).join(" · "))}</div>
       `).join("")}
+      <div style="margin:10px 0;display:flex;gap:8px;align-items:center">
+        <input id="checkoutPromoInput" type="text" value="${esc(activePromo)}" placeholder="Promo code (e.g. COACHSU10)" style="flex:1;padding:8px 10px;border:1px solid #d1d5db;border-radius:6px;font-size:13px;text-transform:uppercase" />
+        <button type="button" class="Btn Btn--bone" data-apply-promo="checkout" style="padding:8px 14px;font-size:13px">Apply Code</button>
+      </div>
+      ${promoInfo ? `<div class="Row" style="color:#059669;font-weight:700"><span>Promo (${esc(promoInfo.code)} · ${promoInfo.pct}% off)</span><strong>−${money(discAmt)}</strong></div>` : ""}
       <div class="Row" style="margin-top:8px"><span>US delivery</span><strong>Free</strong></div>
       <div class="Row"><span>Total</span><strong>${money(sub)}</strong></div>
     </div>
@@ -451,7 +537,10 @@ function submitOrder(event) {
   event.preventDefault();
   const data = new FormData(event.target);
   const bag = checkoutLines();
-  const sub = bag.reduce((sum, item) => sum + item.price * item.qty, 0);
+  const rawSub = bag.reduce((sum, item) => sum + item.price * item.qty, 0);
+  const promoInfo = resolvePromo(activePromo);
+  const discAmt = promoInfo ? rawSub * (promoInfo.pct / 100) : 0;
+  const sub = Math.max(0, rawSub - discAmt);
   const orderId = `APX-${Math.floor(100000 + Math.random() * 900000)}`;
   trackHit("order_submits_total");
   const name = String(data.get("name") || "").trim();
@@ -466,7 +555,8 @@ function submitOrder(event) {
   }).join("\n");
   const hasFw = bag.some((item) => item.is_fourthwall);
   const subject = encodeURIComponent(`Order ${orderId} — ${hasFw ? "Fourthwall & Stripe" : "Stripe"} Checkout (${money(sub)})`);
-  const body = encodeURIComponent(`Order ID: ${orderId}\nCustomer: ${name} (${email})\nShip To: ${street}, ${city} ${zip}\nFulfillment: ${hasFw ? "Fourthwall US Apparel Production / Direct US Dispatch" : "US Warehouse Direct Wholesale"}\n\nItems:\n${lines}\n\nTotal: ${money(sub)} (Free US shipping)`);
+  const promoLine = promoInfo ? `\nPromo Code: ${promoInfo.code} (${promoInfo.pct}% Off, -${money(discAmt)})` : "";
+  const body = encodeURIComponent(`Order ID: ${orderId}\nCustomer: ${name} (${email})\nShip To: ${street}, ${city} ${zip}\nFulfillment: ${hasFw ? "Fourthwall US Apparel Production / Direct US Dispatch" : "US Warehouse Direct Wholesale"}${promoLine}\n\nItems:\n${lines}\n\nTotal: ${money(sub)} (Free US shipping)`);
   $("#checkoutModalContent").innerHTML = `
     <h2 style="letter-spacing:-0.04em;font-size:32px">Order ${esc(orderId)} is reserved</h2>
     <p style="margin:8px 0 14px">${esc(name)}, the kit is held for ${esc(city)} ${esc(zip)}. Finish payment on the Stripe link we send for these price IDs.</p>
@@ -649,7 +739,7 @@ function onClick(event) {
         event.preventDefault();
         trackHit("checkout_clicks_total");
         trackHit(`checkout_${p.id}`);
-        window.location.href = p.fourthwall_product_url;
+        window.location.href = fourthwallUrlWithPromo(p.fourthwall_product_url);
         return;
       }
       openCheckout([lineFrom(p)]);
@@ -673,6 +763,18 @@ function onClick(event) {
     if (city.dataset.sku && event.target.closest("#labCities")) {
       closeSheet("raceLab");
       openProduct(city.dataset.sku);
+    }
+    return;
+  }
+  const promoBtn = event.target.closest("[data-apply-promo]");
+  if (promoBtn) {
+    const mode = promoBtn.dataset.applyPromo;
+    const input = document.getElementById(mode === "checkout" ? "checkoutPromoInput" : "cartPromoInput");
+    if (input) {
+      const val = input.value.trim();
+      if (!val) clearPromoCode();
+      else setPromoCode(val, true);
+      if (mode === "checkout") openCheckout(express);
     }
     return;
   }
@@ -715,16 +817,21 @@ function boot(data) {
   renderArticles();
   updateRaceSplitCalculator();
   const params = new URLSearchParams(window.location.search);
+  const urlPromo = params.get("promo") || params.get("discount") || params.get("code") || params.get("ref") || "";
+  if (urlPromo) {
+    setPromoCode(urlPromo, true);
+  }
+  const reqQty = Math.max(1, parseInt(params.get("qty") || "1", 10) || 1);
   const buy = findProduct(params.get("buy") || "");
   const add = findProduct(params.get("add") || "");
   if (buy) {
-    if (isFourthwallItem(buy) && buy.fourthwall_product_url) {
+    if (isFourthwallItem(buy) && buy.fourthwall_product_url && reqQty === 1) {
       trackHit("checkout_clicks_total");
       trackHit(`checkout_${buy.id}`);
-      window.location.replace(buy.fourthwall_product_url);
+      window.location.replace(fourthwallUrlWithPromo(buy.fourthwall_product_url));
       return;
     }
-    openCheckout([lineFrom(buy)]);
+    openCheckout([lineFrom(buy, reqQty)]);
   } else if (add) addToCart(add.id, true);
 }
 
