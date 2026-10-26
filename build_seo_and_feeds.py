@@ -391,7 +391,7 @@ def generate_product_page(p, all_products):
         <p class="FooterAddress">
           <strong>Apex Hybrid &amp; Recovery Supply (NolCorp LLC)</strong><br />
           17911 Von Karman Ave, Suite 300, Irvine, CA 92614<br />
-          Official Storefront: <a href="{DOMAIN}">apexhybridco.com</a> · Support: <a href="mailto:nolcorpllc@gmail.com">nolcorpllc@gmail.com</a>
+          Official Storefront: <a href="../index.html">apexhybridco.com</a> · Support: <a href="mailto:nolcorpllc@gmail.com">nolcorpllc@gmail.com</a>
         </p>
       </div>
       <div>
@@ -666,6 +666,10 @@ def main():
             seo_directory_block + '\n\n  <!-- Footer -->'
         )
 
+    index_html = index_html.replace(
+        "Official Storefront: <a href=\"https://apexhybridco.com\">apexhybridco.com</a>",
+        "Official Storefront: <a href=\"index.html\">apexhybridco.com</a>"
+    )
     with open(index_path, "w", encoding="utf-8") as f:
         f.write(index_html)
 
