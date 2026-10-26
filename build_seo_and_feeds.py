@@ -267,6 +267,18 @@ def generate_product_pages():
           <a href="../index.html?add={prod['id']}" class="Btn Btn--Cart" style="padding:13px 22px; font-size:14px; text-align:center;">Add to Bag — ${price}</a>
           <a href="{buy_href}" class="Btn Btn--BuyNow" style="padding:13px 22px; font-size:14px; text-align:center;">{main_buy_label}</a>
         </div>
+        <div style="margin-top:16px;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:#f8fafc;border:1.5px solid #ff4d1c;border-radius:10px;padding:14px 16px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:6px;">
+            <span style="font-size:11px;font-weight:900;text-transform:uppercase;color:#ff6a3d;letter-spacing:0.06em;">⚡ 2026 Race-Week Express US Dispatch (Chicago · Dallas · Anaheim)</span>
+            <span style="font-size:11.5px;color:#4ade80;font-weight:800;">✓ 2–4 Day US Delivery</span>
+          </div>
+          <p style="font-size:12.5px;color:#cbd5e1;margin:0 0 10px;line-height:1.45;">Take <strong>10% OFF single items</strong> with code <code style="background:#334155;color:#38bdf8;padding:1px 6px;border-radius:4px;font-weight:900;">HYROX10</code> or <strong>15% OFF Doubles 2-Packs &amp; Relay 4-Packs</strong> with code <code style="background:#334155;color:#4ade80;padding:1px 6px;border-radius:4px;font-weight:900;">TEAM15</code>.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <a href="../team_orders.html" style="background:#ff4d1c;color:#fff;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:800;">Shop Doubles 2-Packs (15% Off) →</a>
+            <a href="../wristband.html" style="background:#0f172a;border:1px solid #475569;color:#fff;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:800;">⏱️ Free Printable Split Wristband</a>
+            <a href="../gyms/index.html" style="background:#0f172a;border:1px solid #475569;color:#38bdf8;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:800;">🏋️ HYROX Gym Finder (72 Hubs)</a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -296,6 +308,21 @@ def generate_product_pages():
       <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#ff6a3d;">apexhybridco@gmail.com</a> · 24/7 AI Concierge: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
       <p style="font-size:11.5px; color:#94a3b8; margin-top:8px;">Apex Hybrid &amp; Recovery Supply is an independent athletic &amp; recovery brand engineered for athletes competing in HYROX®, DEKA®, CrossFit®, and functional fitness events. Not affiliated with or endorsed by HYROX World GmbH.</p>
     </div>
+  <!-- Sticky HYROX10 + Free Printable Split Wristband + Gym Directory Conversion Bar -->
+  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:9990;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #ff4d1c;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
+    <div style="max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;font-size:12.5px;">
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <span style="background:#ff4d1c;color:#fff;font-weight:900;font-size:10.5px;padding:3px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.07em;">Race-Week Perks</span>
+        <span>Take <strong>10% OFF</strong> single items (<code style="background:#334155;color:#38bdf8;padding:2px 6px;border-radius:4px;font-weight:900;">HYROX10</code>) or <strong>15% OFF</strong> Doubles 2-Packs (<code style="background:#334155;color:#4ade80;padding:2px 6px;border-radius:4px;font-weight:900;">TEAM15</code>)</span>
+        <button type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('HYROX10');this.textContent='✓ Copied HYROX10!';this.style.background='#16a34a';" style="cursor:pointer;background:#38bdf8;color:#0f172a;border:none;border-radius:5px;padding:4px 10px;font-weight:900;font-size:11.5px;">Copy HYROX10</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <a href="../wristband.html" style="background:#ff4d1c;color:#fff;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:800;font-size:12px;">⏱️ Free Printable Split Wristband →</a>
+        <a href="../gyms/index.html" style="background:#1e293b;border:1px solid #475569;color:#e2e8f0;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:700;font-size:12px;">🏋️ HYROX Gym Directory (72 Hubs)</a>
+        <a href="../team_orders.html" style="color:#38bdf8;text-decoration:none;font-weight:800;font-size:12px;">Doubles 2-Packs →</a>
+      </div>
+    </div>
+  </div>
   </footer>
   <script>
   (function(){{
@@ -519,6 +546,18 @@ def generate_article_pages():
 {top_strip_pills}
         </div>
       </section>
+        <div style="margin-top:16px;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:#f8fafc;border:1.5px solid #ff4d1c;border-radius:10px;padding:14px 16px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:6px;">
+            <span style="font-size:11px;font-weight:900;text-transform:uppercase;color:#ff6a3d;letter-spacing:0.06em;">⚡ 2026 Race-Week Express US Dispatch (Chicago · Dallas · Anaheim)</span>
+            <span style="font-size:11.5px;color:#4ade80;font-weight:800;">✓ 2–4 Day US Delivery</span>
+          </div>
+          <p style="font-size:12.5px;color:#cbd5e1;margin:0 0 10px;line-height:1.45;">Take <strong>10% OFF single items</strong> with code <code style="background:#334155;color:#38bdf8;padding:1px 6px;border-radius:4px;font-weight:900;">HYROX10</code> or <strong>15% OFF Doubles 2-Packs &amp; Relay 4-Packs</strong> with code <code style="background:#334155;color:#4ade80;padding:1px 6px;border-radius:4px;font-weight:900;">TEAM15</code>.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <a href="../team_orders.html" style="background:#ff4d1c;color:#fff;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:800;">Shop Doubles 2-Packs (15% Off) →</a>
+            <a href="../wristband.html" style="background:#0f172a;border:1px solid #475569;color:#fff;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:800;">⏱️ Free Printable Split Wristband</a>
+            <a href="../gyms/index.html" style="background:#0f172a;border:1px solid #475569;color:#38bdf8;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:800;">🏋️ HYROX Gym Finder (72 Hubs)</a>
+          </div>
+        </div>
 
       <div class="Modal__ArticleBody" style="font-size:15px; line-height:1.7;">
         {art['body_html']}
@@ -545,6 +584,21 @@ def generate_article_pages():
     <div class="Container">
       <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#ff6a3d;">apexhybridco@gmail.com</a> · 24/7 AI Concierge: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Shop All 72 Products</a></p>
     </div>
+  <!-- Sticky HYROX10 + Free Printable Split Wristband + Gym Directory Conversion Bar -->
+  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:9990;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #ff4d1c;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
+    <div style="max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;font-size:12.5px;">
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <span style="background:#ff4d1c;color:#fff;font-weight:900;font-size:10.5px;padding:3px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.07em;">Race-Week Perks</span>
+        <span>Take <strong>10% OFF</strong> single items (<code style="background:#334155;color:#38bdf8;padding:2px 6px;border-radius:4px;font-weight:900;">HYROX10</code>) or <strong>15% OFF</strong> Doubles 2-Packs (<code style="background:#334155;color:#4ade80;padding:2px 6px;border-radius:4px;font-weight:900;">TEAM15</code>)</span>
+        <button type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('HYROX10');this.textContent='✓ Copied HYROX10!';this.style.background='#16a34a';" style="cursor:pointer;background:#38bdf8;color:#0f172a;border:none;border-radius:5px;padding:4px 10px;font-weight:900;font-size:11.5px;">Copy HYROX10</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <a href="../wristband.html" style="background:#ff4d1c;color:#fff;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:800;font-size:12px;">⏱️ Free Printable Split Wristband →</a>
+        <a href="../gyms/index.html" style="background:#1e293b;border:1px solid #475569;color:#e2e8f0;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:700;font-size:12px;">🏋️ HYROX Gym Directory (72 Hubs)</a>
+        <a href="../team_orders.html" style="color:#38bdf8;text-decoration:none;font-weight:800;font-size:12px;">Doubles 2-Packs →</a>
+      </div>
+    </div>
+  </div>
   </footer>
   <script>
   (function(){{
@@ -625,6 +679,21 @@ def generate_article_pages():
     <div class="Container">
       <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
     </div>
+  <!-- Sticky HYROX10 + Free Printable Split Wristband + Gym Directory Conversion Bar -->
+  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:9990;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #ff4d1c;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
+    <div style="max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;font-size:12.5px;">
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <span style="background:#ff4d1c;color:#fff;font-weight:900;font-size:10.5px;padding:3px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.07em;">Race-Week Perks</span>
+        <span>Take <strong>10% OFF</strong> single items (<code style="background:#334155;color:#38bdf8;padding:2px 6px;border-radius:4px;font-weight:900;">HYROX10</code>) or <strong>15% OFF</strong> Doubles 2-Packs (<code style="background:#334155;color:#4ade80;padding:2px 6px;border-radius:4px;font-weight:900;">TEAM15</code>)</span>
+        <button type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('HYROX10');this.textContent='✓ Copied HYROX10!';this.style.background='#16a34a';" style="cursor:pointer;background:#38bdf8;color:#0f172a;border:none;border-radius:5px;padding:4px 10px;font-weight:900;font-size:11.5px;">Copy HYROX10</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <a href="../wristband.html" style="background:#ff4d1c;color:#fff;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:800;font-size:12px;">⏱️ Free Printable Split Wristband →</a>
+        <a href="../gyms/index.html" style="background:#1e293b;border:1px solid #475569;color:#e2e8f0;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:700;font-size:12px;">🏋️ HYROX Gym Directory (72 Hubs)</a>
+        <a href="../team_orders.html" style="color:#38bdf8;text-decoration:none;font-weight:800;font-size:12px;">Doubles 2-Packs →</a>
+      </div>
+    </div>
+  </div>
   </footer>
   <script>
   (function(){{
@@ -794,6 +863,9 @@ def generate_sitemap_and_robots():
     urls = [
         (f"{SITE_URL}/", "1.0", "daily"),
         (f"{SITE_URL}/team_orders.html", "0.95", "daily"),
+        (f"{SITE_URL}/gyms/index.html", "0.95", "daily"),
+        (f"{SITE_URL}/directory.html", "0.95", "daily"),
+        (f"{SITE_URL}/wristband.html", "0.95", "daily"),
         (f"{SITE_URL}/articles/index.html", "0.9", "daily"),
     ]
     city_dir = os.path.join(BASE_DIR, "seo_city_pages")
@@ -873,6 +945,8 @@ Sitemap: {SITE_URL}/sitemap.xml
         "- **Support Email:** apexhybridco@gmail.com",
         f"- **Primary Website:** {SITE_URL}/",
         f"- **Doubles 2-Packs, Boutique Gym Bulk Kits & $0-Upfront HYROX Coach Partner Portal:** {SITE_URL}/team_orders.html",
+        f"- **HYROX Gym Finder & Certified Coach Directory (72 Verified North America Hubs):** {SITE_URL}/gyms/ (and {SITE_URL}/directory.html)",
+        f"- **Free Printable HYROX Race-Day Pace & 8-Station Split Wristband Generator (+ 10% Code HYROX10):** {SITE_URL}/wristband.html",
         f"- **XML Sitemap:** {SITE_URL}/sitemap.xml",
         f"- **RSS 2.0 & WebSub Editorial Feed:** {SITE_URL}/feed.xml",
         f"- **RSS 2.0 Mirror Feed:** {SITE_URL}/rss.xml",
