@@ -359,7 +359,7 @@ function renderCart() {
   $("#cartCount").textContent = String(count);
   const box = $("#cartItems");
   if (!cart.length) {
-    box.innerHTML = `<p class="Empty">The bag is empty. The apparel floor is the place to start.</p>`;
+    box.innerHTML = `<p class="Empty">Your bag is empty. Grab a race tee or warmup layer to get started.</p>`;
   } else {
     box.innerHTML = cart.map((item) => `
       <div class="Line">
@@ -436,10 +436,9 @@ function openProduct(sku) {
   `).join("")}</div>` : "";
   const isFw = isFourthwallItem(p);
   const fulfillmentLine = isFw
-    ? `✓ Fulfilled via Fourthwall US · ${p.fourthwall_blank || "Premium Athletic Blank"}`
-    : `✓ Direct US Warehouse Fulfillment (CA/TX/NJ) · Stripe Direct Checkout`;
-  const buyBtnLabel = isFw ? "Buy Now · Fourthwall Checkout" : "Checkout with Stripe";
-  const stripe = [p.stripe_price_id, p.stripe_product_id, p.stripe_account_id].filter(Boolean).join(" · ");
+    ? `✓ Ships in 2–4 business days from our US hubs · Free 30-day size exchanges`
+    : `✓ Ships free from our US warehouses (CA/TX/NJ) in 2–4 business days · 1-year warranty`;
+  const buyBtnLabel = isFw ? "Buy Now — Instant Checkout" : "Checkout with Stripe";
   $("#productModalContent").innerHTML = `
     <div class="ProductLayout">
       <div class="ProductLayout__photo"><img src="${esc(photoOf(p))}" alt="${esc(p.title)}" /></div>
@@ -454,7 +453,6 @@ function openProduct(sku) {
         <ul class="Highlights">${(p.highlights || []).map((h) => `<li>${esc(h)}</li>`).join("")}</ul>
         ${p.review_quote ? `<blockquote class="Quote">${esc(p.review_quote)}</blockquote>` : ""}
         <p>${esc(p.ship_time || "")}<br />${esc(p.stock_status || "")}</p>
-        ${stripe ? `<p class="StripeId">${esc(stripe)}</p>` : ""}
         <div class="Card__actions" style="margin-top:16px">
           <button class="Btn Btn--bone" type="button" data-add="${p.id}">Add to bag</button>
           ${isFw && p.fourthwall_product_url
@@ -491,26 +489,16 @@ function openCheckout(lines) {
   const sub = Math.max(0, rawSub - discAmt);
   const hasFw = bag.some((item) => item.is_fourthwall);
   const hasWs = bag.some((item) => !item.is_fourthwall);
-  const checkoutTitle = hasFw && !hasWs
-    ? "Fourthwall Apparel & Merch Checkout"
-    : !hasFw && hasWs
-    ? "Secure Stripe Checkout"
-    : "Fourthwall & Direct Gear Checkout";
-  const checkoutDesc = hasFw && !hasWs
-    ? "Custom apparel & merch (APC-C01–APC-C45) are produced and shipped on-demand in the USA via Fourthwall with encrypted Stripe checkout."
-    : !hasFw && hasWs
-    ? "Recovery & training gear (APC-E01–APC-E27) ship directly from US domestic wholesale warehouses via encrypted Stripe checkout."
-    : "Custom apparel ships via Fourthwall US production; recovery & training gear ships directly from US domestic wholesale warehouses.";
-  const submitLabel = hasFw && !hasWs
-    ? `Complete Fourthwall Order · ${money(sub)}`
-    : `Continue to Stripe · ${money(sub)}`;
+  const checkoutTitle = "Express Athlete Checkout";
+  const checkoutDesc = "All apparel and recovery hardware ships free from our US hubs in 2–4 business days with 30-day easy exchanges.";
+  const submitLabel = `Complete Order · ${money(sub)}`;
   $("#checkoutModalContent").innerHTML = `
     <h2 style="letter-spacing:-0.04em;font-size:32px">${esc(checkoutTitle)}</h2>
     <p style="color:#5e6672;margin:6px 0 14px">${esc(checkoutDesc)}</p>
     <div style="margin-bottom:14px">
       ${bag.map((item) => `
         <div class="Row"><span>${item.qty} × ${esc(item.title)} <span class="StripeId">${esc(item.variant)}</span></span><strong>${money(item.price * item.qty)}</strong></div>
-        <div class="StripeId">${esc(item.is_fourthwall ? `Fulfilled via Fourthwall (${item.fourthwall_blank})` : "Fulfilled via US Warehouse Direct Wholesale")} · ${item.is_fourthwall && item.fourthwall_product_url ? `<a href="${esc(item.fourthwall_product_url)}" target="_blank" rel="noopener" style="color:#2563eb;font-weight:700">Instant Fourthwall Checkout →</a> · ` : ""}${esc([item.stripe_price_id, item.stripe_product_id, item.stripe_account_id].filter(Boolean).join(" · "))}</div>
+        <div class="StripeId">Ships in 2–4 business days (US)${item.is_fourthwall && item.fourthwall_product_url ? ` · <a href="${esc(item.fourthwall_product_url)}" target="_blank" rel="noopener" style="color:#2563eb;font-weight:700">Instant 1-Click Checkout →</a>` : ""}</div>
       `).join("")}
       <div style="margin:10px 0;display:flex;gap:8px;align-items:center">
         <input id="checkoutPromoInput" type="text" value="${esc(activePromo)}" placeholder="Promo code (e.g. COACHSU10)" style="flex:1;padding:8px 10px;border:1px solid #d1d5db;border-radius:6px;font-size:13px;text-transform:uppercase" />
@@ -560,7 +548,7 @@ function submitOrder(event) {
   const body = encodeURIComponent(`Order ID: ${orderId}\nCustomer: ${name} (${email})\nShip To: ${street}, ${city} ${zip}\nFulfillment: ${hasFw ? "Fourthwall US Apparel Production / Direct US Dispatch" : "US Warehouse Direct Wholesale"}${promoLine}\n\nItems:\n${lines}\n\nTotal: ${money(sub)} (Free US shipping)`);
   $("#checkoutModalContent").innerHTML = `
     <h2 style="letter-spacing:-0.04em;font-size:32px">Order ${esc(orderId)} is reserved</h2>
-    <p style="margin:8px 0 14px">${esc(name)}, the kit is held for ${esc(city)} ${esc(zip)}. Finish payment on the Stripe link we send for these price IDs.</p>
+    <p style="margin:8px 0 14px">Thanks ${esc(name)} — your order is reserved for ${esc(city)} ${esc(zip)}. Click below to confirm your order and receive your instant payment and tracking link.</p>
     ${bag.map((item) => `<div class="Row"><span>${item.qty} × ${esc(item.title)}</span><strong>${money(item.price * item.qty)}</strong></div>`).join("")}
     <div class="Row"><span>Total</span><strong>${money(sub)}</strong></div>
     <a class="Btn Btn--cobalt Btn--full" style="margin-top:16px" href="mailto:apexhybridco@gmail.com?subject=${subject}&body=${body}">Email me the Stripe payment link</a>

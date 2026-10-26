@@ -156,12 +156,12 @@ def generate_product_pages():
         if is_fw:
             fw_blank = html.escape(prod.get("fourthwall_blank") or "Premium Athletic Blank")
             fw_url = prod.get("fourthwall_product_url") or prod.get("checkout_url") or f"../index.html?buy={prod['id']}&fulfillment=fourthwall"
-            fulfillment_line = f'<div style="font-size:12.5px; color:#0f172a; font-weight:700; margin-top:6px; background:#f1f5f9; padding:8px 10px; border-radius:6px; border-left:3px solid #2563eb;">✓ Fulfilled via Fourthwall US · {fw_blank} · <a href="{html.escape(fw_url)}" style="color:#2563eb;text-decoration:underline;">Instant Fourthwall Checkout →</a></div>'
+            fulfillment_line = f'<div style="font-size:12.5px; color:#0f172a; font-weight:700; margin-top:6px; background:#f1f5f9; padding:8px 10px; border-radius:6px; border-left:3px solid #2563eb;">✓ Ships in 2–4 business days from our US hubs · Free 30-day size exchanges · <a href="{html.escape(fw_url)}" style="color:#2563eb;text-decoration:underline;">Instant 1-Click Checkout →</a></div>'
             buy_href = fw_url
-            top_buy_label = f"Buy via Fourthwall (${price})"
-            main_buy_label = "Buy Now · Fourthwall Checkout"
+            top_buy_label = f"Instant Checkout (${price})"
+            main_buy_label = "Buy Now — Instant Checkout"
         else:
-            fulfillment_line = f'<div style="font-size:12.5px; color:#0f172a; font-weight:700; margin-top:6px; background:#f0fdf4; padding:8px 10px; border-radius:6px; border-left:3px solid #16a34a;">✓ US Warehouse Direct Wholesale (CA/TX/NJ) · Direct Stripe Checkout · ID: {html.escape(prod.get("stripe_price_id") or "")}</div>'
+            fulfillment_line = f'<div style="font-size:12.5px; color:#0f172a; font-weight:700; margin-top:6px; background:#f0fdf4; padding:8px 10px; border-radius:6px; border-left:3px solid #16a34a;">✓ Ships free from our US warehouses (CA/TX/NJ) in 2–4 business days · 1-year hardware warranty</div>'
             buy_href = f"../index.html?buy={prod['id']}"
             top_buy_label = f"Quick Checkout (${price})"
             main_buy_label = "Instant Stripe Checkout"
@@ -236,7 +236,7 @@ def generate_product_pages():
       </div>
       <div>
         <div style="font-size:11.5px; font-weight:800; color:#ff4d1c; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:6px;">
-          {html.escape(dept)} · {html.escape(prod['category'])} · SKU {prod['id']}
+          {html.escape(dept)} · {html.escape(prod['category'])}
         </div>
         <h1 style="font-size:24px; line-height:1.25; margin-bottom:10px;">{html.escape(title)}</h1>
         <div style="display:flex; align-items:center; gap:8px; font-size:13px; margin-bottom:12px;">
@@ -305,7 +305,7 @@ def generate_product_pages():
 
   <footer class="SiteFooter">
     <div class="Container">
-      <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#ff6a3d;">apexhybridco@gmail.com</a> · 24/7 AI Concierge: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
+      <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#ff6a3d;">apexhybridco@gmail.com</a> · Athlete Support: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
       <p style="font-size:11.5px; color:#94a3b8; margin-top:8px;">Apex Hybrid &amp; Recovery Supply is an independent athletic &amp; recovery brand engineered for athletes competing in HYROX®, DEKA®, CrossFit®, and functional fitness events. Not affiliated with or endorsed by HYROX World GmbH.</p>
     </div>
   <!-- Sticky HYROX10 + Free Printable Split Wristband + Gym Directory Conversion Bar -->
@@ -440,7 +440,7 @@ def generate_article_pages():
               </a>
               <div style="min-width:0;">
                 <a href="../products/{p['handle']}.html" style="color:#fff;font-weight:800;font-size:13.5px;text-decoration:none;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{html.escape(p['title'])}</a>
-                <span style="color:#94a3b8;font-size:12px;">SKU {p['id']} · ★ {p['rating']} ({p['reviews']} reviews) · <strong style="color:#4ade80;">${p['retail_price']:.2f}</strong> · Free 2–4 Day US Shipping</span>
+                <span style="color:#94a3b8;font-size:12px;">★ {p['rating']} ({p['reviews']} reviews) · <strong style="color:#4ade80;">${p['retail_price']:.2f}</strong> · Free 2–4 Day US Shipping</span>
               </div>
             </div>
             <div style="display:flex;gap:6px;flex-shrink:0;align-items:center;">
@@ -459,7 +459,7 @@ def generate_article_pages():
                   <img src="../{p['image']}" alt="{html.escape(p['title'])}" loading="lazy" />
                 </a>
                 <div class="ProductCard__Body">
-                  <div class="ProductCard__Category">{html.escape(p['category'])} · SKU {p['id']}</div>
+                  <div class="ProductCard__Category">{html.escape(p['category'])}</div>
                   <div class="ProductCard__Title" style="font-size:14.5px;font-weight:800;">
                     <a href="../products/{p['handle']}.html" style="color:inherit;text-decoration:none;">{html.escape(p['title'])}</a>
                   </div>
@@ -540,7 +540,7 @@ def generate_article_pages():
       <section aria-label="Express 1-Click Checkout" style="background:#0f172a;color:#fff;padding:16px 18px;border-radius:10px;margin-bottom:26px;">
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
           <span style="font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:0.08em;color:#ff6a3d;">⚡ Featured Gear In This Guide — Instant 1-Click Checkout</span>
-          <span style="font-size:12px;color:#cbd5e1;">Bundle 2+ Items: Use Code <strong style="color:#fff;">HURRY15</strong> for 15% Off + Free US Shipping</span>
+          <span style="font-size:12px;color:#cbd5e1;">Bundle 2+ Items: Use Code <strong style="color:#fff;">TEAM15</strong> for 15% Off + Free US Shipping</span>
         </div>
         <div style="display:grid;gap:8px;">
 {top_strip_pills}
@@ -582,7 +582,7 @@ def generate_article_pages():
 
   <footer class="SiteFooter">
     <div class="Container">
-      <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#ff6a3d;">apexhybridco@gmail.com</a> · 24/7 AI Concierge: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Shop All 72 Products</a></p>
+      <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#ff6a3d;">apexhybridco@gmail.com</a> · Athlete Support: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
     </div>
   <!-- Sticky HYROX10 + Free Printable Split Wristband + Gym Directory Conversion Bar -->
   <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:9990;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #ff4d1c;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
