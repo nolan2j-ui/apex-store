@@ -152,6 +152,19 @@ def generate_product_pages():
             for r in related
         )
 
+        is_fw = str(prod.get("id", "")).startswith("APC-C") or prod.get("fulfillment_partner") == "Fourthwall"
+        if is_fw:
+            fw_blank = html.escape(prod.get("fourthwall_blank") or "Premium Athletic Blank")
+            fulfillment_line = f'<div style="font-size:12.5px; color:#0f172a; font-weight:700; margin-top:6px; background:#f1f5f9; padding:8px 10px; border-radius:6px; border-left:3px solid #2563eb;">✓ Fulfilled via Fourthwall US · {fw_blank} · ID: {html.escape(prod.get("stripe_price_id") or "")}</div>'
+            buy_href = f"../index.html?buy={prod['id']}&fulfillment=fourthwall"
+            top_buy_label = f"Buy via Fourthwall (${price})"
+            main_buy_label = "Buy Now · Fourthwall Checkout"
+        else:
+            fulfillment_line = f'<div style="font-size:12.5px; color:#0f172a; font-weight:700; margin-top:6px; background:#f0fdf4; padding:8px 10px; border-radius:6px; border-left:3px solid #16a34a;">✓ US Warehouse Direct Wholesale (CA/TX/NJ) · Direct Stripe Checkout · ID: {html.escape(prod.get("stripe_price_id") or "")}</div>'
+            buy_href = f"../index.html?buy={prod['id']}"
+            top_buy_label = f"Quick Checkout (${price})"
+            main_buy_label = "Instant Stripe Checkout"
+
         page_html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -187,7 +200,7 @@ def generate_product_pages():
         </a>
         <div style="margin-left:auto; display:flex; gap:14px; align-items:center;">
           <a href="../index.html" style="color:#fff; font-size:13px; font-weight:700;">← Back to Full Catalog &amp; News Hub</a>
-          <a href="../index.html?buy={prod['id']}" class="Btn Btn--BuyNow" style="width:auto; padding:8px 16px;">Quick Checkout (${price})</a>
+          <a href="{buy_href}" class="Btn Btn--BuyNow" style="width:auto; padding:8px 16px;">{top_buy_label}</a>
         </div>
       </div>
     </div>
@@ -232,6 +245,7 @@ def generate_product_pages():
           <div style="font-size:13px; color:#0e8345; font-weight:700; margin-top:4px;">
             ✓ {html.escape(prod['stock_status'])} · {html.escape(prod['ship_time'])}
           </div>
+          {fulfillment_line}
         </div>
         <p style="font-size:14.5px; color:#222; line-height:1.6; margin-bottom:14px;">{html.escape(short_desc)}</p>
         <h2 style="font-size:14px; text-transform:uppercase; letter-spacing:0.05em; color:#444; margin-bottom:6px;">Key Performance Specifications</h2>
@@ -244,7 +258,7 @@ def generate_product_pages():
         </div>
         <div style="display:flex; gap:10px; margin-top:16px; flex-wrap:wrap;">
           <a href="../index.html?add={prod['id']}" class="Btn Btn--Cart" style="padding:13px 22px; font-size:14px; text-align:center;">Add to Bag — ${price}</a>
-          <a href="../index.html?buy={prod['id']}" class="Btn Btn--BuyNow" style="padding:13px 22px; font-size:14px; text-align:center;">Instant Stripe Checkout</a>
+          <a href="{buy_href}" class="Btn Btn--BuyNow" style="padding:13px 22px; font-size:14px; text-align:center;">{main_buy_label}</a>
         </div>
       </div>
     </div>

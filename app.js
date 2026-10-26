@@ -227,8 +227,13 @@ function variantLabel(p) {
   return [colorLabel(p), p.has_sizes ? `Size ${sizeOf(p)}` : ""].filter(Boolean).join(" · ");
 }
 
+function isFourthwallItem(p) {
+  return Boolean(p && (p.fulfillment_partner === "Fourthwall" || String(p.id || "").startsWith("APC-C")));
+}
+
 function lineFrom(p, qty = 1) {
   const variant = variantLabel(p);
+  const isFw = isFourthwallItem(p);
   return {
     key: `${p.id}__${variant}`,
     id: p.id,
@@ -237,6 +242,10 @@ function lineFrom(p, qty = 1) {
     price: p.retail_price,
     qty,
     variant,
+    is_fourthwall: isFw,
+    fulfillment_partner: isFw ? "Fourthwall" : (p.fulfillment_partner || "US Warehouse Direct Wholesale"),
+    fourthwall_blank: isFw ? (p.fourthwall_blank || "Athletic Blank") : "",
+    fourthwall_handle: isFw ? (p.fourthwall_handle || p.handle || "") : "",
     stripe_price_id: p.stripe_price_id || "",
     stripe_product_id: p.stripe_product_id || "",
     stripe_account_id: p.stripe_account_id || "",
@@ -327,6 +336,11 @@ function openProduct(sku) {
   const sizes = p.has_sizes ? `<div class="Sizes" style="margin:12px 0">${["S", "M", "L", "XL", "2XL"].map((sz) => `
     <button class="SizeBtn" type="button" data-size="${sz}" data-sku="${p.id}" aria-pressed="${sizeOf(p) === sz}">${sz}</button>
   `).join("")}</div>` : "";
+  const isFw = isFourthwallItem(p);
+  const fulfillmentLine = isFw
+    ? `✓ Fulfilled via Fourthwall US · ${p.fourthwall_blank || "Premium Athletic Blank"}`
+    : `✓ Direct US Warehouse Fulfillment (CA/TX/NJ) · Stripe Direct Checkout`;
+  const buyBtnLabel = isFw ? "Buy Now · Fourthwall Checkout" : "Checkout with Stripe";
   const stripe = [p.stripe_price_id, p.stripe_product_id, p.stripe_account_id].filter(Boolean).join(" · ");
   $("#productModalContent").innerHTML = `
     <div class="ProductLayout">
@@ -335,7 +349,8 @@ function openProduct(sku) {
         <div class="Card__dept">${esc(p.dept)} · ${esc(p.category || "")}</div>
         <h2>${esc(p.title)}</h2>
         <div class="Price"><span>${money(p.retail_price)}</span>${was}</div>
-        <p style="margin-top:12px">${esc(p.short_desc || "")}</p>
+        <p style="margin-top:10px;font-size:13px;font-weight:600;color:#0f172a">${esc(fulfillmentLine)}</p>
+        <p style="margin-top:10px">${esc(p.short_desc || "")}</p>
         ${swatches}
         ${sizes}
         <ul class="Highlights">${(p.highlights || []).map((h) => `<li>${esc(h)}</li>`).join("")}</ul>
@@ -344,7 +359,7 @@ function openProduct(sku) {
         ${stripe ? `<p class="StripeId">${esc(stripe)}</p>` : ""}
         <div class="Card__actions" style="margin-top:16px">
           <button class="Btn Btn--bone" type="button" data-add="${p.id}">Add to bag</button>
-          <button class="Btn Btn--cobalt" type="button" data-buy="${p.id}">Checkout with Stripe</button>
+          <button class="Btn Btn--cobalt" type="button" data-buy="${p.id}">${esc(buyBtnLabel)}</button>
         </div>
       </div>
     </div>`;
@@ -365,13 +380,28 @@ function openCheckout(lines) {
   closeSheet("productModal");
   closeSheet("cartDrawer");
   const sub = bag.reduce((sum, item) => sum + item.price * item.qty, 0);
+  const hasFw = bag.some((item) => item.is_fourthwall);
+  const hasWs = bag.some((item) => !item.is_fourthwall);
+  const checkoutTitle = hasFw && !hasWs
+    ? "Fourthwall Apparel & Merch Checkout"
+    : !hasFw && hasWs
+    ? "Secure Stripe Checkout"
+    : "Fourthwall & Direct Gear Checkout";
+  const checkoutDesc = hasFw && !hasWs
+    ? "Custom apparel & merch (APC-C01–APC-C45) are produced and shipped on-demand in the USA via Fourthwall with encrypted Stripe checkout."
+    : !hasFw && hasWs
+    ? "Recovery & training gear (APC-E01–APC-E27) ship directly from US domestic wholesale warehouses via encrypted Stripe checkout."
+    : "Custom apparel ships via Fourthwall US production; recovery & training gear ships directly from US domestic wholesale warehouses.";
+  const submitLabel = hasFw && !hasWs
+    ? `Complete Fourthwall Order · ${money(sub)}`
+    : `Continue to Stripe · ${money(sub)}`;
   $("#checkoutModalContent").innerHTML = `
-    <h2 style="letter-spacing:-0.04em;font-size:32px">Secure checkout</h2>
-    <p style="color:#5e6672;margin:6px 0 14px">Card numbers stay on Stripe. This order reserves the kit and requests the encrypted payment link for the price IDs below.</p>
+    <h2 style="letter-spacing:-0.04em;font-size:32px">${esc(checkoutTitle)}</h2>
+    <p style="color:#5e6672;margin:6px 0 14px">${esc(checkoutDesc)}</p>
     <div style="margin-bottom:14px">
       ${bag.map((item) => `
         <div class="Row"><span>${item.qty} × ${esc(item.title)} <span class="StripeId">${esc(item.variant)}</span></span><strong>${money(item.price * item.qty)}</strong></div>
-        <div class="StripeId">${esc([item.stripe_price_id, item.stripe_product_id, item.stripe_account_id].filter(Boolean).join(" · "))}</div>
+        <div class="StripeId">${esc(item.is_fourthwall ? `Fulfilled via Fourthwall (${item.fourthwall_blank})` : "Fulfilled via US Warehouse Direct Wholesale")} · ${esc([item.stripe_price_id, item.stripe_product_id, item.stripe_account_id].filter(Boolean).join(" · "))}</div>
       `).join("")}
       <div class="Row" style="margin-top:8px"><span>US delivery</span><strong>Free</strong></div>
       <div class="Row"><span>Total</span><strong>${money(sub)}</strong></div>
@@ -384,7 +414,7 @@ function openCheckout(lines) {
         <label class="Field">City and state<input name="city" required autocomplete="address-level2" /></label>
         <label class="Field">ZIP<input name="zip" required autocomplete="postal-code" /></label>
       </div>
-      <button class="Btn Btn--cobalt Btn--full" type="submit" style="margin-top:8px">Continue to Stripe · ${money(sub)}</button>
+      <button class="Btn Btn--cobalt Btn--full" type="submit" style="margin-top:8px">${esc(submitLabel)}</button>
     </form>`;
   openSheet("checkoutModal");
   $("#checkoutForm").addEventListener("submit", submitOrder);
@@ -403,10 +433,12 @@ function submitOrder(event) {
   const zip = String(data.get("zip") || "").trim();
   const lines = bag.map((item) => {
     const stripe = [item.stripe_price_id, item.stripe_product_id, item.stripe_account_id].filter(Boolean).join(" | ");
-    return `- ${item.qty}x ${item.title} (${item.variant}) ${money(item.price * item.qty)} [${stripe}]`;
+    const fulfill = item.is_fourthwall ? `Fourthwall (${item.fourthwall_blank})` : "US Warehouse Direct Wholesale";
+    return `- ${item.qty}x ${item.title} (${item.variant}) ${money(item.price * item.qty)} [Fulfillment: ${fulfill} | ${stripe}]`;
   }).join("\n");
-  const subject = encodeURIComponent(`Order ${orderId} — Stripe payment link (${money(sub)})`);
-  const body = encodeURIComponent(`Order ID: ${orderId}\nCustomer: ${name} (${email})\nShip To: ${street}, ${city} ${zip}\nPayment: Stripe Checkout for the price IDs below\n\nItems:\n${lines}\n\nTotal: ${money(sub)} (Free US shipping)`);
+  const hasFw = bag.some((item) => item.is_fourthwall);
+  const subject = encodeURIComponent(`Order ${orderId} — ${hasFw ? "Fourthwall & Stripe" : "Stripe"} Checkout (${money(sub)})`);
+  const body = encodeURIComponent(`Order ID: ${orderId}\nCustomer: ${name} (${email})\nShip To: ${street}, ${city} ${zip}\nFulfillment: ${hasFw ? "Fourthwall US Apparel Production / Direct US Dispatch" : "US Warehouse Direct Wholesale"}\n\nItems:\n${lines}\n\nTotal: ${money(sub)} (Free US shipping)`);
   $("#checkoutModalContent").innerHTML = `
     <h2 style="letter-spacing:-0.04em;font-size:32px">Order ${esc(orderId)} is reserved</h2>
     <p style="margin:8px 0 14px">${esc(name)}, the kit is held for ${esc(city)} ${esc(zip)}. Finish payment on the Stripe link we send for these price IDs.</p>
@@ -675,7 +707,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeAll();
   });
-  fetch("catalog.json?v=20261025v4")
+  fetch("catalog.json?v=20261025v5")
     .then((res) => {
       if (!res.ok) throw new Error("catalog");
       return res.json();
