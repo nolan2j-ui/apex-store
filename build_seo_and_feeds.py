@@ -267,39 +267,120 @@ def generate_article_pages():
         canonical = f"{SITE_URL}/articles/{slug}.html"
         rec_skus = art.get("recommended_skus", [])
         rec_products = [product_by_id[s] for s in rec_skus if s in product_by_id]
+        if not rec_products:
+            rec_products = [product_by_id[s] for s in ("APC-C36", "APC-C42", "APC-E01", "APC-E12") if s in product_by_id]
+
+        hero_prod = rec_products[0]
+        hero_img = f"{SITE_URL}/{hero_prod['image']}"
+        faqs = art.get("faqs", [
+            (
+                f"What is the top-rated gear for {cat}?",
+                f"Our highest-rated choices are {hero_prod['title']} (${hero_prod['retail_price']:.2f}, SKU {hero_prod['id']}) alongside our AeroMesh™ Laser-Vented Tech Shirt (APC-C36, $36) and Apex AeroShell™ Lightweight Warmup Jacket (APC-C42, $64)—all shipping free in 2–4 business days."
+            ),
+            (
+                "How do I get 15% off Doubles or multi-item race orders?",
+                "Add any 2 or more items to your bag at Apex Hybrid & Recovery Supply and apply code HURRY15 (or HYROX15) at checkout for 15% off plus Free 2–4 Day US Shipping and 30-Day Free Returns."
+            )
+        ])
 
         json_ld = {
             "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": title,
-            "description": summary,
-            "author": {"@type": "Organization", "name": "Apex Hybrid Performance Lab"},
-            "publisher": {
-                "@type": "Organization",
-                "name": "Apex Hybrid & Recovery Supply",
-                "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/images/27_aeromesh_tech_tee_black.png"},
-            },
-            "datePublished": "2026-10-20",
-            "dateModified": TODAY,
-            "mainEntityOfPage": canonical,
+            "@graph": [
+                {
+                    "@type": "Article",
+                    "headline": title,
+                    "description": summary,
+                    "image": hero_img,
+                    "author": {"@type": "Organization", "name": "Apex Hybrid Performance Lab"},
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Apex Hybrid & Recovery Supply",
+                        "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/images/27_aeromesh_tech_tee_black.png"},
+                    },
+                    "datePublished": "2026-10-20",
+                    "dateModified": TODAY,
+                    "mainEntityOfPage": canonical,
+                },
+                {
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": q,
+                            "acceptedAnswer": {"@type": "Answer", "text": a},
+                        }
+                        for q, a in faqs
+                    ],
+                },
+                {
+                    "@type": "ItemList",
+                    "name": f"Recommended Gear — {title}",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": idx + 1,
+                            "item": {
+                                "@type": "Product",
+                                "name": p["title"],
+                                "sku": p["id"],
+                                "image": f"{SITE_URL}/{p['image']}",
+                                "url": f"{SITE_URL}/products/{p['handle']}.html",
+                                "offers": {
+                                    "@type": "Offer",
+                                    "priceCurrency": "USD",
+                                    "price": f"{p['retail_price']:.2f}",
+                                    "availability": "https://schema.org/InStock",
+                                    "url": f"{SITE_URL}/?buy={p['id']}",
+                                },
+                            },
+                        }
+                        for idx, p in enumerate(rec_products)
+                    ],
+                },
+            ],
         }
+
+        top_strip_pills = "\n".join(
+            f"""          <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#1e293b;padding:10px 14px;border-radius:8px;border:1px solid #334155;">
+            <div style="min-width:0;">
+              <a href="../products/{p['handle']}.html" style="color:#fff;font-weight:800;font-size:13.5px;text-decoration:none;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{html.escape(p['title'])}</a>
+              <span style="color:#94a3b8;font-size:12px;">SKU {p['id']} · ★ {p['rating']} · Free 2–4 Day US Shipping</span>
+            </div>
+            <div style="display:flex;gap:6px;flex-shrink:0;">
+              <a href="../index.html?buy={p['id']}" class="Btn Btn--BuyNow" style="width:auto;padding:7px 12px;font-size:12.5px;font-weight:800;background:#ff4d1c;color:#fff;border-radius:6px;text-decoration:none;">Buy Now — ${p['retail_price']:.2f} (Free Shipping)</a>
+              <a href="../index.html?add={p['id']}" class="Btn Btn--Cart" style="width:auto;padding:7px 10px;font-size:12px;font-weight:700;background:#334155;color:#fff;border-radius:6px;text-decoration:none;">+ Add to Bag</a>
+            </div>
+          </div>"""
+            for p in rec_products[:3]
+        )
 
         rec_html = "\n".join(
             f"""
-            <a href="../products/{p['handle']}.html" class="ProductCard" style="text-decoration:none; color:inherit;">
-              <div class="ProductCard__Media" style="height:175px;">
-                <img src="../{p['image']}" alt="{html.escape(p['title'])}" loading="lazy" />
-              </div>
-              <div class="ProductCard__Body">
-                <div class="ProductCard__Category">{html.escape(p['category'])}</div>
-                <div class="ProductCard__Title" style="font-size:14px;">{html.escape(p['title'])}</div>
-                <div class="ProductCard__PriceRow">
-                  <span class="PriceWhole" style="font-size:18px;">${p['retail_price']:.2f}</span>
-                  <span class="PriceList">${(p.get('list_price') or p['retail_price']):.2f}</span>
+            <article class="ProductCard" style="display:flex;flex-direction:column;justify-content:space-between;">
+              <div>
+                <a href="../products/{p['handle']}.html" class="ProductCard__Media" style="height:185px;display:block;">
+                  <img src="../{p['image']}" alt="{html.escape(p['title'])}" loading="lazy" />
+                </a>
+                <div class="ProductCard__Body">
+                  <div class="ProductCard__Category">{html.escape(p['category'])} · SKU {p['id']}</div>
+                  <div class="ProductCard__Title" style="font-size:14.5px;font-weight:800;">
+                    <a href="../products/{p['handle']}.html" style="color:inherit;text-decoration:none;">{html.escape(p['title'])}</a>
+                  </div>
+                  <div class="ProductCard__PriceRow" style="margin:6px 0;">
+                    <span class="PriceWhole" style="font-size:19px;font-weight:900;">${p['retail_price']:.2f}</span>
+                    <span class="PriceList" style="color:#64748b;text-decoration:line-through;font-size:13px;">${(p.get('list_price') or p['retail_price']):.2f}</span>
+                  </div>
+                  <div style="font-size:12px;color:#0e8345;font-weight:700;margin-bottom:8px;">✓ In Stock · Free 2–4 Day US Shipping</div>
                 </div>
-                <span class="Btn Btn--Cart" style="margin-top:8px; text-align:center;">View Product →</span>
               </div>
-            </a>
+              <div style="padding:0 14px 14px;display:flex;flex-direction:column;gap:6px;">
+                <a href="../index.html?buy={p['id']}" class="Btn Btn--BuyNow" style="text-align:center;padding:10px 12px;font-weight:800;font-size:13px;background:#ff4d1c;color:#fff;border-radius:7px;text-decoration:none;">Buy Now — ${p['retail_price']:.2f} (Free Shipping)</a>
+                <div style="display:flex;gap:6px;">
+                  <a href="../index.html?add={p['id']}" class="Btn Btn--Cart" style="flex:1;text-align:center;padding:8px;font-size:12.5px;background:#0f172a;color:#fff;border-radius:6px;text-decoration:none;">+ Add to Bag</a>
+                  <a href="../products/{p['handle']}.html" class="Btn Btn--QuickView" style="padding:8px 10px;font-size:12.5px;border:1px solid #cbd5e1;border-radius:6px;text-decoration:none;color:#0f172a;font-weight:700;">Specs</a>
+                </div>
+              </div>
+            </article>
             """
             for p in rec_products
         )
@@ -317,13 +398,17 @@ def generate_article_pages():
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{html.escape(title)} | Apex Hybrid &amp; Recovery Supply</title>
   <meta name="description" content="{html.escape(summary)}" />
-  <meta name="keywords" content="hyrox shirts, breathable hyrox shirt, {html.escape(cat)}, hybrid athlete guide, functional race prep, cold plunge recovery" />
+  <meta name="keywords" content="hyrox shirts, breathable hyrox shirt, lightweight warmup jacket, {html.escape(cat)}, hybrid athlete guide, functional race prep, cold plunge recovery" />
   <link rel="canonical" href="{canonical}" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{html.escape(title)}" />
   <meta property="og:description" content="{html.escape(summary)}" />
   <meta property="og:url" content="{canonical}" />
-  <meta property="og:image" content="{SITE_URL}/images/27_aeromesh_tech_tee_black.png" />
+  <meta property="og:image" content="{hero_img}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{html.escape(title)}" />
+  <meta name="twitter:description" content="{html.escape(summary)}" />
+  <meta name="twitter:image" content="{hero_img}" />
   <link rel="stylesheet" href="../styles.css" />
   <script type="application/ld+json">
 {json.dumps(json_ld, indent=2)}
@@ -337,34 +422,48 @@ def generate_article_pages():
           <span class="BrandLogo__Mark">APEX</span>
           <span class="BrandLogo__Sub">HYBRID &amp; RECOVERY CO.</span>
         </a>
-        <div style="margin-left:auto; display:flex; gap:14px; align-items:center;">
-          <a href="../index.html#newsAndRaceHub" style="color:#fff; font-size:13px; font-weight:700;">← News &amp; Article Center</a>
-          <a href="../index.html#catalogSection" class="Btn Btn--BuyNow" style="width:auto; padding:8px 16px;">Shop All 68 Products</a>
+        <div style="margin-left:auto; display:flex; gap:14px; align-items:center; flex-wrap:wrap;">
+          <a href="../index.html#articles" style="color:#fff; font-size:13px; font-weight:700;">← All Buyer Guides</a>
+          <a href="tel:+19498054935" style="color:#cbd5e1; font-size:12.5px; font-weight:700; text-decoration:none;">24/7 Athlete Line: (949) 805-4935</a>
+          <a href="../index.html?buy={hero_prod['id']}" class="Btn Btn--BuyNow" style="width:auto; padding:8px 16px;">1-Click Buy Top Pick (${hero_prod['retail_price']:.2f})</a>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="Container" style="max-width:960px; padding:32px 20px 64px;">
+  <main class="Container" style="max-width:980px; padding:28px 20px 64px;">
     <article style="background:#fff; border:1px solid #e4e6eb; border-radius:12px; padding:32px;">
-      <div class="ArticleEyebrow">{html.escape(cat)} · {html.escape(art['read_time'])}</div>
+      <div class="ArticleEyebrow">{html.escape(cat)} · {html.escape(art['read_time'])} · Free 2–4 Day US Shipping</div>
       <h1 style="font-size:28px; line-height:1.22; margin:8px 0 14px;">{html.escape(title)}</h1>
-      <p style="font-size:16px; color:#444; border-left:3px solid #ff4d1c; padding-left:14px; margin-bottom:24px;">
+      <p style="font-size:16px; color:#444; border-left:3px solid #ff4d1c; padding-left:14px; margin-bottom:20px;">
         {html.escape(summary)}
       </p>
+
+      <!-- Top Quick-Buy Express Checkout Strip -->
+      <section aria-label="Express 1-Click Checkout" style="background:#0f172a;color:#fff;padding:16px 18px;border-radius:10px;margin-bottom:26px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+          <span style="font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:0.08em;color:#ff6a3d;">⚡ Featured Gear In This Guide — Instant 1-Click Checkout</span>
+          <span style="font-size:12px;color:#cbd5e1;">Bundle 2+ Items: Use Code <strong style="color:#fff;">HURRY15</strong> for 15% Off + Free US Shipping</span>
+        </div>
+        <div style="display:grid;gap:8px;">
+{top_strip_pills}
+        </div>
+      </section>
+
       <div class="Modal__ArticleBody" style="font-size:15px; line-height:1.7;">
         {art['body_html']}
       </div>
 
       <section style="margin-top:32px; padding-top:24px; border-top:1px solid #e4e6eb;">
-        <h2 style="font-size:19px; margin-bottom:14px;">Recommended HYROX® Race Apparel &amp; Recovery Hardware</h2>
+        <h2 style="font-size:20px; margin-bottom:6px;">Shop Featured HYROX® Race Apparel &amp; Recovery Hardware (1-Click Checkout)</h2>
+        <p style="font-size:13.5px; color:#475569; margin-bottom:16px;">Every order ships Free in 2–4 Business Days from our US warehouses (CA, TX, East Coast) with 30-Day Free Returns &amp; Exchanges.</p>
         <div class="ProductGrid">
           {rec_html}
         </div>
       </section>
 
       <section style="margin-top:32px; padding-top:20px; border-top:1px solid #e4e6eb;">
-        <h3 style="font-size:16px; margin-bottom:10px;">More Hybrid Training &amp; Recovery Guides</h3>
+        <h3 style="font-size:16px; margin-bottom:10px;">More Hybrid Training, Race-City &amp; Buyer Guides</h3>
         <ul style="padding-left:20px; line-height:1.8; font-size:14px;">
           {other_articles_html}
         </ul>
@@ -374,7 +473,7 @@ def generate_article_pages():
 
   <footer class="SiteFooter">
     <div class="Container">
-      <p><strong>Apex Hybrid &amp; Recovery Supply</strong> · 8420 Spectrum, Irvine, CA 92618 · <a href="../index.html" style="color:#ff6a3d;">Shop All Gear</a></p>
+      <p><strong>Apex Hybrid &amp; Recovery Supply (NolCorp LLC)</strong> · 17911 Von Karman Ave, Suite 300, Irvine, CA 92614 · 24/7 AI Concierge: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Shop All 72 Products</a></p>
     </div>
   </footer>
 </body>
