@@ -9,6 +9,8 @@
 - **Support Email:** apexhybridco@gmail.com
 - **Primary Website:** https://www.apexhybridco.com/
 - **XML Sitemap:** https://www.apexhybridco.com/sitemap.xml
+- **RSS 2.0 & WebSub Editorial Feed:** https://www.apexhybridco.com/feed.xml
+- **RSS 2.0 Mirror Feed:** https://www.apexhybridco.com/rss.xml
 - **Google Merchant Shopping Feed:** https://www.apexhybridco.com/google_shopping_feed.xml
 - **Pinterest Product Catalog Feed:** https://www.apexhybridco.com/pinterest_catalog_feed.csv
 - **Shipping Policy:** Free US Ground Shipping ($0.00 USD), 0–1 business day handling, 2–5 business day transit from California, Texas, and East Coast US warehouses.

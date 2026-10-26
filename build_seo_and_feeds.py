@@ -677,6 +677,65 @@ def generate_google_shopping_feed():
         f.write(rss_xml)
 
 
+
+def generate_editorial_rss_feeds():
+    """
+    Generates standards-compliant RSS 2.0 + Atom + WebSub hub feeds (feed.xml and rss.xml)
+    containing all 30 buyer guides and top product releases for RSS aggregators, WebSub hubs,
+    and search crawler feed discovery.
+    """
+    pub_rfc822 = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
+    for filename in ("feed.xml", "rss.xml"):
+        self_url = f"{SITE_URL}/{filename}"
+        items_xml = []
+        for art in guides:
+            art_url = f"{SITE_URL}/articles/{art['slug']}.html"
+            items_xml.append(
+                f"""    <item>
+      <title>{html.escape(art['title'])}</title>
+      <link>{art_url}</link>
+      <guid isPermaLink="true">{art_url}</guid>
+      <pubDate>{pub_rfc822}</pubDate>
+      <category>{html.escape(art.get('category', 'HYROX & Hybrid Racing Guide'))}</category>
+      <description>{html.escape(art.get('summary', ''))}</description>
+    </item>"""
+            )
+        for prod in products:
+            prod_url = f"{SITE_URL}/products/{prod['handle']}.html"
+            fw_url = prod.get("fourthwall_product_url") or prod.get("checkout_url") or f"{SITE_URL}/?buy={prod['id']}"
+            desc = f"{prod['short_desc']} — Price: ${prod['retail_price']:.2f} USD ({prod['ship_time']}). Direct Checkout: {fw_url}"
+            items_xml.append(
+                f"""    <item>
+      <title>{html.escape(prod.get('seo_title', prod['title']))} (${prod['retail_price']:.2f})</title>
+      <link>{prod_url}</link>
+      <guid isPermaLink="true">{prod_url}</guid>
+      <pubDate>{pub_rfc822}</pubDate>
+      <category>{html.escape(prod.get('dept', 'Hybrid Race Gear'))}</category>
+      <description>{html.escape(desc)}</description>
+    </item>"""
+            )
+
+        feed_doc = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Apex Hybrid Co. — HYROX® Race Streetwear, Breathable Tech Shirts, Buyer Guides &amp; Recovery Hardware</title>
+    <link>{SITE_URL}/</link>
+    <description>Official RSS 2.0 &amp; WebSub feed for Apex Hybrid Co. ({SITE_URL}) — 30 data-backed HYROX® &amp; hybrid racing buyer guides, 2026/2027 race-city apparel (Chicago, Dallas, Anaheim, Las Vegas, Miami, NYC), and 72 performance &amp; recovery products.</description>
+    <language>en-us</language>
+    <lastBuildDate>{pub_rfc822}</lastBuildDate>
+    <managingEditor>apexhybridco@gmail.com (Apex Hybrid Co.)</managingEditor>
+    <webMaster>apexhybridco@gmail.com (Apex Hybrid Co.)</webMaster>
+    <atom:link href="{self_url}" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+    <atom:link href="https://pubsubhubbub.superfeedr.com/" rel="hub" />
+{chr(10).join(items_xml)}
+  </channel>
+</rss>
+"""
+        with open(os.path.join(BASE_DIR, filename), "w", encoding="utf-8") as f:
+            f.write(feed_doc)
+
+
 def generate_pinterest_csv_feed():
     csv_path = os.path.join(BASE_DIR, "pinterest_catalog_feed.csv")
     fieldnames = [
@@ -798,6 +857,8 @@ Sitemap: {SITE_URL}/sitemap.xml
         "- **Support Email:** apexhybridco@gmail.com",
         f"- **Primary Website:** {SITE_URL}/",
         f"- **XML Sitemap:** {SITE_URL}/sitemap.xml",
+        f"- **RSS 2.0 & WebSub Editorial Feed:** {SITE_URL}/feed.xml",
+        f"- **RSS 2.0 Mirror Feed:** {SITE_URL}/rss.xml",
         f"- **Google Merchant Shopping Feed:** {SITE_URL}/google_shopping_feed.xml",
         f"- **Pinterest Product Catalog Feed:** {SITE_URL}/pinterest_catalog_feed.csv",
         "- **Shipping Policy:** Free US Ground Shipping ($0.00 USD), 0–1 business day handling, 2–5 business day transit from California, Texas, and East Coast US warehouses.",
@@ -991,6 +1052,7 @@ if __name__ == "__main__":
     generate_product_pages()
     generate_article_pages()
     generate_google_shopping_feed()
+    generate_editorial_rss_feeds()
     generate_pinterest_csv_feed()
     generate_sitemap_and_robots()
     inject_static_seo_into_index()
