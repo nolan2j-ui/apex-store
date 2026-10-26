@@ -145,11 +145,11 @@ const SHORT = {
   "APC-C01": "Run. Station. Repeat.",
   "APC-C02": "Wall Balls & Bad Decisions",
   "APC-C03": "Sled Push Enthusiast",
-  "APC-C04": "Kilometer One",
-  "APC-C05": "Broad Jumps",
+  "APC-C04": "Compromised Running Club",
+  "APC-C05": "Burpee Broad Jumps",
   "APC-C06": "The Erg Doesn't Care",
-  "APC-C07": "Wave Call",
-  "APC-C08": "Sled Push Dept.",
+  "APC-C07": "Porta-Potty Line PR",
+  "APC-C08": "Defend My Sled Push",
   "APC-C34": "World Series hoodie",
   "APC-C35": "8-Station Division",
   "APC-C32": "Build Character",
@@ -218,7 +218,10 @@ function renderProducts() {
             <div class="Price"><span>${money(p.retail_price)}</span>${was}</div>
           </div>
           ${ratingMarkup(p)}
-          ${swatches}
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px">
+            ${swatches}
+            <button class="Btn Btn--cobalt" type="button" data-buy="${p.id}" style="margin-left:auto;padding:7px 12px;font-size:12.5px;border-radius:6px">Buy Now →</button>
+          </div>
         </div>
       </article>`;
   }).join("");
@@ -756,7 +759,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeAll();
   });
-  fetch("catalog.json?v=20261025v7")
+  fetch("catalog.json?v=20261025v9")
     .then((res) => {
       if (!res.ok) throw new Error("catalog");
       return res.json();
