@@ -27,7 +27,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C01",
       "stripe_price_id": "price_1UUb6JRut88O8nG233VLxmCw",
-      "product_url": "https://apexhybridco.com/#run-station-repeat-performance-tee"
+      "product_url": "https://apexhybridco.com/products/run-station-repeat-performance-tee.html",
+      "seo_title": "Run. Station. Repeat. Functional Race Tee \u2014 Men's & Women's Hybrid Athlete Running Shirt"
     },
     {
       "id": "APC-C02",
@@ -56,7 +57,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C02",
       "stripe_price_id": "price_1UUb8uRut88O8nG2VcelcVm6",
-      "product_url": "https://apexhybridco.com/#wall-balls-bad-decisions-oversized-pump-cover"
+      "product_url": "https://apexhybridco.com/products/wall-balls-bad-decisions-oversized-pump-cover.html",
+      "seo_title": "Wall Balls & Bad Decisions Heavyweight Gym Pump Cover \u2014 6.5 oz Oversized Cotton Workout Tee"
     },
     {
       "id": "APC-C03",
@@ -85,7 +87,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C03",
       "stripe_price_id": "price_1UUb8vRut88O8nG2M79HZkEh",
-      "product_url": "https://apexhybridco.com/#sled-push-enthusiast-race-day-tee"
+      "product_url": "https://apexhybridco.com/products/sled-push-enthusiast-race-day-tee.html",
+      "seo_title": "Sled Push Enthusiast Athletic Crewneck Tee \u2014 Functional Fitness & Turf Conditioning Shirt"
     },
     {
       "id": "APC-C04",
@@ -114,7 +117,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C04",
       "stripe_price_id": "price_1UUb8vRut88O8nG2SOr9k0zf",
-      "product_url": "https://apexhybridco.com/#compromised-running-society-club-tee"
+      "product_url": "https://apexhybridco.com/products/compromised-running-society-club-tee.html",
+      "seo_title": "Compromised Running Club Performance Tee \u2014 Brick Workout & Endurance Running Shirt"
     },
     {
       "id": "APC-C05",
@@ -143,7 +147,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C05",
       "stripe_price_id": "price_1UUb8xRut88O8nG2a53ew4iA",
-      "product_url": "https://apexhybridco.com/#burpee-broad-jumps-build-character-tee"
+      "product_url": "https://apexhybridco.com/products/burpee-broad-jumps-build-character-tee.html",
+      "seo_title": "Burpee Broad Jumps Build Character Training Tee \u2014 Functional Conditioning Workout Shirt"
     },
     {
       "id": "APC-C06",
@@ -172,7 +177,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C06",
       "stripe_price_id": "price_1UUb8yRut88O8nG2NxnEoKDG",
-      "product_url": "https://apexhybridco.com/#the-erg-doesnt-care-how-you-feel-tee"
+      "product_url": "https://apexhybridco.com/products/the-erg-doesnt-care-how-you-feel-tee.html",
+      "seo_title": "The Erg Doesn't Care How You Feel Tee \u2014 Indoor Rowing & SkiErg Conditioning Shirt"
     },
     {
       "id": "APC-C07",
@@ -201,7 +207,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C07",
       "stripe_price_id": "price_1UUb8zRut88O8nG2c6hu9Ll3",
-      "product_url": "https://apexhybridco.com/#porta-potty-line-pr-pre-race-tee"
+      "product_url": "https://apexhybridco.com/products/porta-potty-line-pr-pre-race-tee.html",
+      "seo_title": "Pre-Race Porta-Potty Line PR Warmup Tee \u2014 Marathon & Hybrid Race Morning Running Shirt"
     },
     {
       "id": "APC-C08",
@@ -230,7 +237,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C08",
       "stripe_price_id": "price_1UUb90Rut88O8nG2CRxsKVYJ",
-      "product_url": "https://apexhybridco.com/#defend-my-sled-push-dept-tee"
+      "product_url": "https://apexhybridco.com/products/defend-my-sled-push-dept-tee.html",
+      "seo_title": "I Don't Need To Defend My Sled Push Tee \u2014 Sled Push Dept. Functional Strength Shirt"
     },
     {
       "id": "APC-C09",
@@ -259,7 +267,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C09",
       "stripe_price_id": "price_1UUb91Rut88O8nG2E5Q24Zi0",
-      "product_url": "https://apexhybridco.com/#run-station-repeat-heavy-blend-hoodie"
+      "product_url": "https://apexhybridco.com/products/run-station-repeat-heavy-blend-hoodie.html",
+      "seo_title": "Run. Station. Repeat. Heavyweight Fleece Warmup Hoodie \u2014 8.0 oz Athletic Pullover Sweatshirt"
     },
     {
       "id": "APC-C10",
@@ -288,7 +297,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C10",
       "stripe_price_id": "price_1UUb93Rut88O8nG2nfdQBibQ",
-      "product_url": "https://apexhybridco.com/#wall-balls-bad-decisions-hoodie"
+      "product_url": "https://apexhybridco.com/products/wall-balls-bad-decisions-hoodie.html",
+      "seo_title": "Wall Balls & Bad Decisions Brushed Fleece Pullover Hoodie \u2014 Heavyweight Gym Warmup Hoodie"
     },
     {
       "id": "APC-C11",
@@ -317,7 +327,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C11",
       "stripe_price_id": "price_1UUb94Rut88O8nG2pxIIJTnx",
-      "product_url": "https://apexhybridco.com/#compromised-running-club-fleece-hoodie"
+      "product_url": "https://apexhybridco.com/products/compromised-running-club-fleece-hoodie.html",
+      "seo_title": "Compromised Running Club Heavy Warmup Hoodie \u2014 Cold Morning Run Club Fleece Pullover"
     },
     {
       "id": "APC-C12",
@@ -346,7 +357,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C12",
       "stripe_price_id": "price_1UUb95Rut88O8nG2lSgBQOlZ",
-      "product_url": "https://apexhybridco.com/#defend-my-sled-push-fleece-hoodie"
+      "product_url": "https://apexhybridco.com/products/defend-my-sled-push-fleece-hoodie.html",
+      "seo_title": "Sled Push Dept. Heavyweight Pullover Hoodie \u2014 Functional Strength & Conditioning Fleece"
     },
     {
       "id": "APC-C13",
@@ -375,7 +387,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C13",
       "stripe_price_id": "price_1UUb96Rut88O8nG2xm8owDwY",
-      "product_url": "https://apexhybridco.com/#zone-2-engine-builder-embroidered-dad-hat"
+      "product_url": "https://apexhybridco.com/products/zone-2-engine-builder-embroidered-dad-hat.html",
+      "seo_title": "Zone 2 Engine Lab Low-Profile Cotton Twill Running Cap \u2014 Unstructured Athletic Dad Hat"
     },
     {
       "id": "APC-C14",
@@ -404,7 +417,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C14",
       "stripe_price_id": "price_1UUb97Rut88O8nG29muuJAnH",
-      "product_url": "https://apexhybridco.com/#apex-8-station-race-day-tactical-duffle"
+      "product_url": "https://apexhybridco.com/products/apex-8-station-race-day-tactical-duffle.html",
+      "seo_title": "50L Tactical Gym Duffle Bag with Ventilated Shoe Compartment \u2014 Race Day Backpack Duffle"
     },
     {
       "id": "APC-C15",
@@ -433,7 +447,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-C15",
       "stripe_price_id": "price_1UUb97Rut88O8nG2wjHutbEN",
-      "product_url": "https://apexhybridco.com/#electrolyte-pacing-insulated-shaker-bottle"
+      "product_url": "https://apexhybridco.com/products/electrolyte-pacing-insulated-shaker-bottle.html",
+      "seo_title": "24oz Double-Wall Vacuum Insulated Stainless Steel Protein Shaker Bottle with Wire Whisk"
     },
     {
       "id": "APC-E01",
@@ -462,7 +477,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E01",
       "stripe_price_id": "price_1UUb9FRut88O8nG2cZwmHmCA",
-      "product_url": "https://apexhybridco.com/#pro-3200rpm-brushless-percussion-massage-gun"
+      "product_url": "https://apexhybridco.com/products/pro-3200rpm-brushless-percussion-massage-gun.html",
+      "seo_title": "3200 RPM Deep Tissue Percussion Massage Gun \u2014 Brushless Quiet Muscle Recovery Massager (ApexPulse Pro)"
     },
     {
       "id": "APC-E02",
@@ -491,7 +507,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E02",
       "stripe_price_id": "price_1UUb9GRut88O8nG25GeYhLgG",
-      "product_url": "https://apexhybridco.com/#dual-wavelength-660nm-850nm-red-light-recovery-wrap"
+      "product_url": "https://apexhybridco.com/products/dual-wavelength-660nm-850nm-red-light-recovery-wrap.html",
+      "seo_title": "660nm & 850nm Red Light Therapy Belt Wrap \u2014 Near-Infrared Knee, Back & Joint Recovery Pad (InfraFlex)"
     },
     {
       "id": "APC-E03",
@@ -520,7 +537,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E03",
       "stripe_price_id": "price_1UUb9HRut88O8nG2Oo0bZFPL",
-      "product_url": "https://apexhybridco.com/#insulated-portable-cold-plunge-ice-pod-pro"
+      "product_url": "https://apexhybridco.com/products/insulated-portable-cold-plunge-ice-pod-pro.html",
+      "seo_title": "Portable Ice Bath Cold Plunge Tub with Insulated Lid \u2014 105-Gallon 5-Layer Cold Water Recovery Pod (CryoPod)"
     },
     {
       "id": "APC-E04",
@@ -549,7 +567,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E04",
       "stripe_price_id": "price_1UUb9JRut88O8nG2nvv4vKMD",
-      "product_url": "https://apexhybridco.com/#floating-digital-cold-plunge-thermometer-timer"
+      "product_url": "https://apexhybridco.com/products/floating-digital-cold-plunge-thermometer-timer.html",
+      "seo_title": "Floating Digital Cold Plunge Thermometer & Waterproof Ice Bath Timer with Wireless Display (SubZero)"
     },
     {
       "id": "APC-E05",
@@ -578,7 +597,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E05",
       "stripe_price_id": "price_1UUb9KRut88O8nG2pDq2s88O",
-      "product_url": "https://apexhybridco.com/#4-speed-vibrating-high-density-mobility-foam-roller"
+      "product_url": "https://apexhybridco.com/products/4-speed-vibrating-high-density-mobility-foam-roller.html",
+      "seo_title": "4-Speed Vibrating Foam Roller \u2014 17-Inch High-Density Deep Tissue Myofascial Mobility Roller (VibeRoll)"
     },
     {
       "id": "APC-E06",
@@ -607,7 +627,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E06",
       "stripe_price_id": "price_1UUb9LRut88O8nG2Z4JWAEMy",
-      "product_url": "https://apexhybridco.com/#nordic-hamstring-curl-door-anchor-strap-pro"
+      "product_url": "https://apexhybridco.com/products/nordic-hamstring-curl-door-anchor-strap-pro.html",
+      "seo_title": "Nordic Hamstring Curl Door Anchor Strap \u2014 800-Lb Knee Bulletproofing & Hamstring Trainer (NordicLock)"
     },
     {
       "id": "APC-E07",
@@ -636,7 +657,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E07",
       "stripe_price_id": "price_1UUb9MRut88O8nG2PQeJvmed",
-      "product_url": "https://apexhybridco.com/#magnetic-gym-bag-bottle-phone-organizer-pouch"
+      "product_url": "https://apexhybridco.com/products/magnetic-gym-bag-bottle-phone-organizer-pouch.html",
+      "seo_title": "Magnetic Gym Bag & Water Bottle Holder Pouch \u2014 Neodymium Squat Rack Phone & Key Organizer (MagSling)"
     },
     {
       "id": "APC-E08",
@@ -665,7 +687,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E08",
       "stripe_price_id": "price_1UUb9MRut88O8nG2QCNaTCDY",
-      "product_url": "https://apexhybridco.com/#ball-bearing-weighted-aluminium-speed-jump-rope"
+      "product_url": "https://apexhybridco.com/products/ball-bearing-weighted-aluminium-speed-jump-rope.html",
+      "seo_title": "Weighted 1-Lb Aluminum Handle Speed Jump Rope \u2014 Ball-Bearing Double-Under Conditioning Rope (AeroWhip)"
     },
     {
       "id": "APC-E09",
@@ -694,7 +717,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E09",
       "stripe_price_id": "price_1UUb9ORut88O8nG2VDroIEQX",
-      "product_url": "https://apexhybridco.com/#digital-dynamometer-farmer-carry-grip-trainer-set"
+      "product_url": "https://apexhybridco.com/products/digital-dynamometer-farmer-carry-grip-trainer-set.html",
+      "seo_title": "Digital Hand Grip Dynamometer (198 Lb / 90 Kg) \u2014 Isometric Crush Grip & CNS Readiness Meter (GripForge)"
     },
     {
       "id": "APC-E10",
@@ -723,7 +747,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E10",
       "stripe_price_id": "price_1UUb9PRut88O8nG2D6UO3UVA",
-      "product_url": "https://apexhybridco.com/#acupressure-myofascial-recovery-mat-pillow-set"
+      "product_url": "https://apexhybridco.com/products/acupressure-myofascial-recovery-mat-pillow-set.html",
+      "seo_title": "Acupressure Back Recovery Mat & Cervical Neck Pillow Set \u2014 Myofascial Trigger Point Mat (SpinalReset)"
     },
     {
       "id": "APC-E11",
@@ -752,7 +777,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E11",
       "stripe_price_id": "price_1UUb9QRut88O8nG2IqonwkK4",
-      "product_url": "https://apexhybridco.com/#smart-led-hydration-reminder-thermal-flask-32oz"
+      "product_url": "https://apexhybridco.com/products/smart-led-hydration-reminder-thermal-flask-32oz.html",
+      "seo_title": "Smart LED Temperature Display Insulated Stainless Steel Water Bottle (32oz Thermal Sports Flask)"
     },
     {
       "id": "APC-E12",
@@ -781,7 +807,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E12",
       "stripe_price_id": "price_1UUb9SRut88O8nG2OFFmQccS",
-      "product_url": "https://apexhybridco.com/#rechargeable-pneumatic-calf-shin-compression-sleeves"
+      "product_url": "https://apexhybridco.com/products/rechargeable-pneumatic-calf-shin-compression-sleeves.html",
+      "seo_title": "Sequential Air Compression Leg Recovery Boots \u2014 Full-Leg Pneumatic Circulation Massage Sleeves (AirRecover)"
     },
     {
       "id": "APC-E13",
@@ -810,7 +837,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E13",
       "stripe_price_id": "price_1UUb9TRut88O8nG2i33twvSM",
-      "product_url": "https://apexhybridco.com/#tibialis-anterior-shin-splint-trainer-bar"
+      "product_url": "https://apexhybridco.com/products/tibialis-anterior-shin-splint-trainer-bar.html",
+      "seo_title": "Tibialis Anterior Trainer Bar (Tib Bar) \u2014 Heavy-Duty Steel Shin Splint & Ankle Strengthener (TibBar Pro)"
     },
     {
       "id": "APC-E14",
@@ -839,7 +867,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E14",
       "stripe_price_id": "price_1UUb9URut88O8nG2N90WBySl",
-      "product_url": "https://apexhybridco.com/#minimalist-rgbic-ambient-home-gym-corner-floor-lamp"
+      "product_url": "https://apexhybridco.com/products/minimalist-rgbic-ambient-home-gym-corner-floor-lamp.html",
+      "seo_title": "60-Inch Warm-Sunset RGBICW Corner Floor Lamp \u2014 Circadian Home Gym & Recovery Room Ambient Light (LumaGym)"
     },
     {
       "id": "APC-E15",
@@ -868,7 +897,8 @@
       "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
       "stripe_product_id": "APC-E15",
       "stripe_price_id": "price_1UUb9VRut88O8nG2FHix8J5d",
-      "product_url": "https://apexhybridco.com/#far-infrared-portable-home-sauna-detox-blanket"
+      "product_url": "https://apexhybridco.com/products/far-infrared-portable-home-sauna-detox-blanket.html",
+      "seo_title": "Far-Infrared Portable Home Sauna Blanket \u2014 Low-EMF Thermal Detox & Heat Acclimation Wrap (ThermoCore)"
     }
   ],
   "guides": [

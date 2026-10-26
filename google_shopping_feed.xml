@@ -1,428 +1,796 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
   <channel>
-    <title>Apex Hybrid &amp; Recovery Supply — Official Product Feed</title>
+    <title>Apex Hybrid &amp; Recovery Supply — Official Google Merchant Center Product Feed</title>
     <link>https://apexhybridco.com/</link>
-    <description>Automated Google Merchant Center, Pinterest Shopping, and Shopify 30-Product Feed for NolCorp LLC.</description>
+    <description>Official Google Shopping &amp; Merchant Listing Feed for Apex Hybrid &amp; Recovery Supply (NolCorp LLC).</description>
     <item>
       <g:id>APC-C01</g:id>
-      <g:title><![CDATA[Run. Station. Repeat. Functional Race Tee]]></g:title>
-      <g:description><![CDATA[Lightweight 4.2 oz Airlume ring-spun cotton tee built for 8-station functional racing and compromised running intervals.]]></g:description>
-      <g:link>https://apexhybridco.com/#run-station-repeat-performance-tee</g:link>
+      <g:title><![CDATA[Run. Station. Repeat. Functional Race Tee — Men's & Women's Hybrid Athlete Running Shirt]]></g:title>
+      <g:description><![CDATA[Lightweight 4.2 oz Airlume combed ring-spun cotton tee built for 8-station functional racing and compromised running intervals. Features: 4.2 oz/yd² 100% Airlume combed and ring-spun cotton (Bella+Canvas 3001 athletic cut) | Pre-shrunk fabric with side-seamed construction and shoulder-to-shoulder taping | Breathable moisture-dispersing weave designed for high-heart-rate station transitions | Printed to order in the USA with soft-hand water-based ink that never cracks or peels]]></g:description>
+      <g:link>https://apexhybridco.com/products/run-station-repeat-performance-tee.html</g:link>
       <g:image_link>https://apexhybridco.com/images/01_run_station_repeat_mockup_black.png</g:image_link>
+      <g:additional_image_link>https://apexhybridco.com/images/01_run_station_repeat_mockup_white.png</g:additional_image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>32.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C01</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Apparel - Tees</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
+      <g:custom_label_1>Performance Tees</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-C02</g:id>
-      <g:title><![CDATA[Wall Balls & Poor Life Choices Heavyweight Pump Cover]]></g:title>
-      <g:description><![CDATA[100 reps, zero excuses. Relaxed drop-shoulder 6.5 oz heavyweight carded cotton pump cover for warmups and strength blocks.]]></g:description>
-      <g:link>https://apexhybridco.com/#wall-balls-bad-decisions-oversized-pump-cover</g:link>
+      <g:title><![CDATA[Wall Balls & Bad Decisions Heavyweight Gym Pump Cover — 6.5 oz Oversized Cotton Workout Tee]]></g:title>
+      <g:description><![CDATA[100 reps, no regrets. Relaxed drop-shoulder 6.5 oz heavyweight carded cotton pump cover built for barbell warmups and strength blocks. Features: Heavyweight 6.5 oz/yd² 100% carded cotton with structured boxy drape | Relaxed drop-shoulder silhouette with thick 1x1 ribbed crew neck collar | Holds its shape through heavy warmup sets and cold-morning garage sessions | High-contrast chest typography printed in California & Texas fulfillment hubs]]></g:description>
+      <g:link>https://apexhybridco.com/products/wall-balls-bad-decisions-oversized-pump-cover.html</g:link>
       <g:image_link>https://apexhybridco.com/images/02_wall_balls_bad_decisions_mockup_black.png</g:image_link>
+      <g:additional_image_link>https://apexhybridco.com/images/02_wall_balls_bad_decisions_mockup_white.png</g:additional_image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>38.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C02</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Apparel - Pump Covers</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Pump Covers</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
+      <g:custom_label_1>Pump Covers</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-C03</g:id>
-      <g:title><![CDATA[Sled Push Enthusiast* (*My Legs Filed A Complaint) Tee]]></g:title>
-      <g:description><![CDATA[High-contrast off-white and safety-orange chest graphic on pre-shrunk breathable cotton for heavy turf work.]]></g:description>
-      <g:link>https://apexhybridco.com/#sled-push-enthusiast-race-day-tee</g:link>
+      <g:title><![CDATA[Sled Push Enthusiast Athletic Crewneck Tee — Functional Fitness & Turf Conditioning Shirt]]></g:title>
+      <g:description><![CDATA[High-contrast off-white and safety-orange chest graphic ('*My legs have filed a complaint') on breathable pre-shrunk cotton. Features: 4.2 oz Airlume combed ring-spun cotton with tailored athletic fit through chest and arms | Soft-touch direct-to-garment print that breathes across turf sled pushes | Tear-away neck label for zero skin irritation during conditioning sets | Available in Vintage Black and Bone White (Sizes S–2XL)]]></g:description>
+      <g:link>https://apexhybridco.com/products/sled-push-enthusiast-race-day-tee.html</g:link>
       <g:image_link>https://apexhybridco.com/images/03_sled_push_enthusiast_mockup_black.png</g:image_link>
+      <g:additional_image_link>https://apexhybridco.com/images/03_sled_push_enthusiast_mockup_white.png</g:additional_image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>32.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C03</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Apparel - Tees</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
+      <g:custom_label_1>Performance Tees</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-C04</g:id>
-      <g:title><![CDATA[Compromised Running Society — Est. Kilometer One Tee]]></g:title>
-      <g:description><![CDATA[Designed for the exact feeling of hitting kilometer one right after heavy sleds and lunges.]]></g:description>
-      <g:link>https://apexhybridco.com/#compromised-running-society-club-tee</g:link>
+      <g:title><![CDATA[Compromised Running Club Performance Tee — Brick Workout & Endurance Running Shirt]]></g:title>
+      <g:description><![CDATA[Built for the exact feeling of hitting kilometer one right after heavy sleds and walking lunges. Soft ring-spun athletic cotton. Features: Featherlight 4.2 oz ring-spun cotton weave for warm-weather track and brick sessions | Pre-shrunk side-seamed body prevents twisting after machine washing | Clean track-club chest emblem in off-white and safety orange | Dispatched in 2–4 business days from US facilities]]></g:description>
+      <g:link>https://apexhybridco.com/products/compromised-running-society-club-tee.html</g:link>
       <g:image_link>https://apexhybridco.com/images/04_compromised_running_club_mockup_black.png</g:image_link>
+      <g:additional_image_link>https://apexhybridco.com/images/04_compromised_running_club_mockup_white.png</g:additional_image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>32.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C04</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Apparel - Tees</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
+      <g:custom_label_1>Performance Tees</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-C05</g:id>
-      <g:title><![CDATA[Burpee Broad Jumps Build Character Performance Tee]]></g:title>
-      <g:description><![CDATA[Subtle athletic typography with 'I have enough character, thanks' micro-print for conditioning days.]]></g:description>
-      <g:link>https://apexhybridco.com/#burpee-broad-jumps-build-character-tee</g:link>
+      <g:title><![CDATA[Burpee Broad Jumps Build Character Training Tee — Functional Conditioning Workout Shirt]]></g:title>
+      <g:description><![CDATA[Bold athletic chest print with 'I have enough character, thanks' micro-caption for Station 4 conditioning days. Features: 4.2 oz 100% combed ring-spun cotton with stretch recovery | No-chafe flatlock shoulder seams for overhead and floor transitions | Breathable zero-plastisol chest print | Machine wash cold, tumble dry low]]></g:description>
+      <g:link>https://apexhybridco.com/products/burpee-broad-jumps-build-character-tee.html</g:link>
       <g:image_link>https://apexhybridco.com/images/05_burpee_broad_jumps_mockup_black.png</g:image_link>
+      <g:additional_image_link>https://apexhybridco.com/images/05_burpee_broad_jumps_mockup_white.png</g:additional_image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>30.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C05</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Apparel - Tees</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
+      <g:custom_label_1>Performance Tees</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-C06</g:id>
-      <g:title><![CDATA[The Erg Doesn't Care How You Feel — Row / Ski / Repeat Tee]]></g:title>
-      <g:description><![CDATA[The digital monitor shows split times, not sympathy. Built for 1,000m ski and row threshold repeats.]]></g:description>
-      <g:link>https://apexhybridco.com/#the-erg-doesnt-care-how-you-feel-tee</g:link>
+      <g:title><![CDATA[The Erg Doesn't Care How You Feel Tee — Indoor Rowing & SkiErg Conditioning Shirt]]></g:title>
+      <g:description><![CDATA[The digital monitor shows split times, not sympathy. Engineered for 1,000m SkiErg and RowErg threshold repeats. Features: Athletic shoulder cut allows full lats extension on SkiErg and indoor rower pulls | 4.2 oz breathable combed cotton keeps core temperature regulated indoors | High-durability DTG print in crisp white and safety orange | Ships in 2–4 business days across the US]]></g:description>
+      <g:link>https://apexhybridco.com/products/the-erg-doesnt-care-how-you-feel-tee.html</g:link>
       <g:image_link>https://apexhybridco.com/images/06_erg_doesnt_care_mockup_black.png</g:image_link>
+      <g:additional_image_link>https://apexhybridco.com/images/06_erg_doesnt_care_mockup_white.png</g:additional_image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>32.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C06</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Apparel - Tees</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
+      <g:custom_label_1>Performance Tees</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-C07</g:id>
-      <g:title><![CDATA[Porta-Potty Line PR — Pre-Race Warmup Tee]]></g:title>
-      <g:description><![CDATA[Every race has two starts: the gun and the pit-stop line before wave call. USPTO-checked original slogan.]]></g:description>
-      <g:link>https://apexhybridco.com/#porta-potty-line-pr-pre-race-tee</g:link>
+      <g:title><![CDATA[Pre-Race Porta-Potty Line PR Warmup Tee — Marathon & Hybrid Race Morning Running Shirt]]></g:title>
+      <g:description><![CDATA[Every race morning has two starts: the gun and the pit-stop line before wave call. Soft ring-spun warmup tee. Features: Original race-morning graphic with custom icon and 'Go Before The Gun' crest | 4.2 oz combed ring-spun cotton for corral warmups and post-race travel | True-to-size unisex athletic sizing (S to 2XL) | Printed and shipped from US facilities]]></g:description>
+      <g:link>https://apexhybridco.com/products/porta-potty-line-pr-pre-race-tee.html</g:link>
       <g:image_link>https://apexhybridco.com/images/07_porta_potty_line_pr_mockup_black.png</g:image_link>
+      <g:additional_image_link>https://apexhybridco.com/images/07_porta_potty_line_pr_mockup_white.png</g:additional_image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>28.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C07</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Apparel - Tees</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
+      <g:custom_label_1>Performance Tees</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-C08</g:id>
-      <g:title><![CDATA[I Don't Need To Defend My Sled Push — Sled Push Dept. Tee]]></g:title>
-      <g:description><![CDATA['The Footage Speaks For Itself.' Bold chest crest for athletes who grind across the turf line at a 45-degree lean.]]></g:description>
-      <g:link>https://apexhybridco.com/#defend-my-sled-push-dept-tee</g:link>
+      <g:title><![CDATA[I Don't Need To Defend My Sled Push Tee — Sled Push Dept. Functional Strength Shirt]]></g:title>
+      <g:description><![CDATA['The Footage Speaks For Itself.' Custom sled emblem and chest typography for athletes who grind across the turf line. Features: Features custom weighted prowler sled illustration and Sled Push Dept. insignia | 4.2 oz Airlume ring-spun cotton—soft, breathable, and durable | Reinforced crew neck collar holds its shape after heavy training sessions | Available in Vintage Black and Bone White]]></g:description>
+      <g:link>https://apexhybridco.com/products/defend-my-sled-push-dept-tee.html</g:link>
       <g:image_link>https://apexhybridco.com/images/08_defend_my_sled_push_mockup_black.png</g:image_link>
+      <g:additional_image_link>https://apexhybridco.com/images/08_defend_my_sled_push_mockup_white.png</g:additional_image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>32.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C08</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Apparel - Tees</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
+      <g:custom_label_1>Performance Tees</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-C09</g:id>
-      <g:title><![CDATA[Run. Station. Repeat. Midweight Warmup Hoodie]]></g:title>
-      <g:description><![CDATA[8.0 oz 50/50 fleece pullover hoodie with double-lined hood for early morning track intervals and post-race recovery.]]></g:description>
-      <g:link>https://apexhybridco.com/#run-station-repeat-heavy-blend-hoodie</g:link>
+      <g:title><![CDATA[Run. Station. Repeat. Heavyweight Fleece Warmup Hoodie — 8.0 oz Athletic Pullover Sweatshirt]]></g:title>
+      <g:description><![CDATA[8.0 oz mid-heavyweight brushed fleece pullover hoodie with double-lined hood for early morning track intervals and post-race recovery. Features: 8.0 oz/yd² 50/50 ring-spun cotton and poly air-jet yarn for a pill-resistant plush finish | Double-lined hood with color-matched drawcord and front kangaroo pouch pocket | 1x1 athletic rib-knit cuffs and waistband with spandex for warmth retention | Double-needle stitching at waistband, armholes, and collar]]></g:description>
+      <g:link>https://apexhybridco.com/products/run-station-repeat-heavy-blend-hoodie.html</g:link>
       <g:image_link>https://apexhybridco.com/images/01_run_station_repeat_hoodie_mockup_black.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>54.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C09</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Apparel - Hoodies</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
+      <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Hoodies</g:custom_label_0>
+      <g:custom_label_1>Pullover Hoodies</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-C10</g:id>
-      <g:title><![CDATA[Wall Balls & Poor Life Choices Fleece Pullover Hoodie]]></g:title>
-      <g:description><![CDATA[Plush pre-shrunk fleece hoodie engineered for cold 5:30 AM garage sessions and post-event podium hangs.]]></g:description>
-      <g:link>https://apexhybridco.com/#wall-balls-bad-decisions-hoodie</g:link>
+      <g:title><![CDATA[Wall Balls & Bad Decisions Brushed Fleece Pullover Hoodie — Heavyweight Gym Warmup Hoodie]]></g:title>
+      <g:description><![CDATA[Plush pre-shrunk 8.0 oz fleece hoodie engineered for cold garage gym warmups and post-event recovery. Features: Soft brushed fleece interior traps heat during warmup sets | Spacious kangaroo pocket and athletic ribbed cuffs | High-opacity chest print that resists cracking | Ships in 2–5 business days from US hubs]]></g:description>
+      <g:link>https://apexhybridco.com/products/wall-balls-bad-decisions-hoodie.html</g:link>
       <g:image_link>https://apexhybridco.com/images/02_wall_balls_bad_decisions_hoodie_mockup_black.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>54.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C10</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Apparel - Hoodies</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
+      <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Hoodies</g:custom_label_0>
+      <g:custom_label_1>Pullover Hoodies</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-C11</g:id>
-      <g:title><![CDATA[Compromised Running Society Heavy Warmup Hoodie]]></g:title>
-      <g:description><![CDATA[Soft brushed interior with ribbed cuffs and safety-orange 'Est. Kilometer One' chest print.]]></g:description>
-      <g:link>https://apexhybridco.com/#compromised-running-club-fleece-hoodie</g:link>
+      <g:title><![CDATA[Compromised Running Club Heavy Warmup Hoodie — Cold Morning Run Club Fleece Pullover]]></g:title>
+      <g:description><![CDATA[Soft brushed interior with ribbed cuffs and safety-orange 'Est. Kilometer One' chest print for cold morning run clubs. Features: 8.0 oz ring-spun fleece blend with zero-pill air-jet yarn | Classic athletic pullover cut with reinforced seams | Ideal layer before stripping down to race-weight gear | Available in sizes S through 2XL]]></g:description>
+      <g:link>https://apexhybridco.com/products/compromised-running-club-fleece-hoodie.html</g:link>
       <g:image_link>https://apexhybridco.com/images/04_compromised_running_club_hoodie_mockup_black.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>54.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C11</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Apparel - Hoodies</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
+      <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Hoodies</g:custom_label_0>
+      <g:custom_label_1>Pullover Hoodies</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-C12</g:id>
-      <g:title><![CDATA[Sled Push Dept. — 'The Footage Speaks' Pullover Hoodie]]></g:title>
-      <g:description><![CDATA[Heavy-duty warmup hoodie for strength and turf athletes. Printed and shipped automatically from US Printful hubs.]]></g:description>
-      <g:link>https://apexhybridco.com/#defend-my-sled-push-fleece-hoodie</g:link>
+      <g:title><![CDATA[Sled Push Dept. Heavyweight Pullover Hoodie — Functional Strength & Conditioning Fleece]]></g:title>
+      <g:description><![CDATA[Heavy-duty 8.0 oz warmup hoodie featuring the Sled Push Dept. crest for strength and turf conditioning athletes. Features: 8.0 oz plush fleece with double-lined hood and matte drawstrings | Crisp multi-color chest graphic with custom sled icon | Athletic rib-knit hem stays in place during warmup movements | Fast 2–5 business day US shipping]]></g:description>
+      <g:link>https://apexhybridco.com/products/defend-my-sled-push-fleece-hoodie.html</g:link>
       <g:image_link>https://apexhybridco.com/images/08_defend_my_sled_push_hoodie_mockup_black.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>56.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C12</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Apparel - Hoodies</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
+      <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Hoodies</g:custom_label_0>
+      <g:custom_label_1>Pullover Hoodies</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-C13</g:id>
-      <g:title><![CDATA[Zone 2 Engine Builder Embroidered Unstructured Cap]]></g:title>
-      <g:description><![CDATA[100% chino cotton twill low-profile cap with raised stitched 'ZONE 2 ENGINE LAB' front emblem and antique brass buckle.]]></g:description>
-      <g:link>https://apexhybridco.com/#zone-2-engine-builder-embroidered-dad-hat</g:link>
+      <g:title><![CDATA[Zone 2 Engine Lab Low-Profile Cotton Twill Running Cap — Unstructured Athletic Dad Hat]]></g:title>
+      <g:description><![CDATA[100% chino cotton twill unstructured low-profile cap with breathable stitched eyelets and adjustable antique brass buckle. Features: 100% bio-washed chino cotton twill (Yupoong 6245CM unstructured 6-panel cut) | Pre-curved visor with sweat-absorbing internal cotton headband | Adjustable self-fabric strap with antique brass slide buckle (One Size Fits Most) | Lightweight, packable silhouette for long aerobic Zone 2 runs]]></g:description>
+      <g:link>https://apexhybridco.com/products/zone-2-engine-builder-embroidered-dad-hat.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-c13-cap.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>34.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C13</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Gear - Headwear</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing Accessories &gt; Hats</g:google_product_category>
+      <g:product_type>Training Gear &gt; Headwear</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Headwear</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-C14</g:id>
-      <g:title><![CDATA[8-Station Race Day All-Weather Gym Duffle Bag]]></g:title>
-      <g:description><![CDATA[Water-resistant 100% polyester canvas duffle with dual padded handles, ventilated shoe tunnel, and internal race-check pockets.]]></g:description>
-      <g:link>https://apexhybridco.com/#apex-8-station-race-day-tactical-duffle</g:link>
+      <g:title><![CDATA[50L Tactical Gym Duffle Bag with Ventilated Shoe Compartment — Race Day Backpack Duffle]]></g:title>
+      <g:description><![CDATA[Water-resistant 900D Oxford tactical gym duffle with ventilated shoe tunnel, wet-gear pocket, and convertible backpack straps. Features: 50-liter capacity with dedicated ventilated side compartment for racing shoes | Water-resistant 900D high-density Oxford fabric with heavy-duty SBS zippers | 3-in-1 carry system: padded haul handles, removable shoulder strap, and hideaway backpack straps | MOLLE exterior webbing plus internal waterproof pocket for post-workout clothes]]></g:description>
+      <g:link>https://apexhybridco.com/products/apex-8-station-race-day-tactical-duffle.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-c14-duffle.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>64.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C14</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Gear - Bags</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness &gt; Gym Storage &amp; Accessories</g:google_product_category>
+      <g:product_type>Training Gear &gt; Gym Bags</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Gym Bags</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-C15</g:id>
-      <g:title><![CDATA[Pacing & Electrolytes 24oz Double-Wall Insulated Shaker]]></g:title>
-      <g:description><![CDATA[Matte black 18/8 food-grade stainless bottle with silent mixing grate and engraved 1km-to-8km hydration markers.]]></g:description>
-      <g:link>https://apexhybridco.com/#electrolyte-pacing-insulated-shaker-bottle</g:link>
+      <g:title><![CDATA[24oz Double-Wall Vacuum Insulated Stainless Steel Protein Shaker Bottle with Wire Whisk]]></g:title>
+      <g:description><![CDATA[Matte black 18/8 food-grade stainless steel shaker bottle with wire mixing whisk, leakproof flip cap, and 24-hour cold retention. Features: Double-wall銅-lined vacuum insulation keeps electrolytes ice-cold for up to 24 hours | 18/8 medical-grade stainless steel prevents odor retention and plastic aftertaste | Includes surgical-grade stainless wire whisk ball and internal ounce/milliliter markings | Sweat-free matte black powder coat with heavy-duty carry loop]]></g:description>
+      <g:link>https://apexhybridco.com/products/electrolyte-pacing-insulated-shaker-bottle.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-c15-shaker.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>36.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C15</g:mpn>
-      <g:custom_label_0>Lane C: Hybrid Apparel (Printful POD)</g:custom_label_0>
-      <g:custom_label_1>Gear - Hydration</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Food &amp; Beverage Carriers &gt; Water Bottles</g:google_product_category>
+      <g:product_type>Training Gear &gt; Hydration</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Hydration</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E01</g:id>
-      <g:title><![CDATA[ApexPulse Pro 3200 RPM Brushless Deep-Tissue Percussion Massager]]></g:title>
-      <g:description><![CDATA[12mm amplitude high-torque brushless motor (42 dB whisper quiet) with 6 interchangeable orthopedic heads and travel case.]]></g:description>
-      <g:link>https://apexhybridco.com/#pro-3200rpm-brushless-percussion-massage-gun</g:link>
+      <g:title><![CDATA[3200 RPM Deep Tissue Percussion Massage Gun — Brushless Quiet Muscle Recovery Massager (ApexPulse Pro)]]></g:title>
+      <g:description><![CDATA[12mm amplitude high-torque brushless motor (42 dB whisper quiet) with 20 speed levels, 6 orthopedic heads, and hard travel case. Features: High-torque brushless motor delivers up to 3,200 percussions per minute with 45 lbs stall force | 12mm deep-tissue stroke amplitude flushes quads, calves, glutes, and upper back post-race | Whisper-quiet 42 dB acoustic engineering with smart LCD touch speed & battery display | Includes 6 specialized attachment heads, USB-C fast charging (6-hour battery), and zippered EVA case]]></g:description>
+      <g:link>https://apexhybridco.com/products/pro-3200rpm-brushless-percussion-massage-gun.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e01-massage-gun.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>98.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E01</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Recovery - Percussion</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Percussion &amp; Compression</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Percussion &amp; Compression</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E02</g:id>
-      <g:title><![CDATA[InfraFlex 660nm + 850nm Red & Near-Infrared Knee/Back Recovery Belt]]></g:title>
-      <g:description><![CDATA[120 medical-grade dual-chip LEDs combining 660nm red and 850nm near-infrared wavelengths for targeted joint & tendon recovery.]]></g:description>
-      <g:link>https://apexhybridco.com/#dual-wavelength-660nm-850nm-red-light-recovery-wrap</g:link>
+      <g:title><![CDATA[660nm & 850nm Red Light Therapy Belt Wrap — Near-Infrared Knee, Back & Joint Recovery Pad (InfraFlex)]]></g:title>
+      <g:description><![CDATA[Medical-grade triple-chip LEDs combining 660nm deep red and 850nm near-infrared wavelengths for targeted knee, back, and tendon recovery. Features: Dual-spectrum photobiomodulation: 660nm visible red light + 850nm deep-penetrating near-infrared | Flexible neoprene wrap contours around knees, lumbar spine, shoulders, or hamstrings | 5 adjustable intensity levels, pulse mode (10Hz/40Hz), and auto-shutoff 15–30 min timer | Can be powered via wall adapter or portable USB power bank while relaxing on the couch]]></g:description>
+      <g:link>https://apexhybridco.com/products/dual-wavelength-660nm-850nm-red-light-recovery-wrap.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e02-red-light-belt.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>119.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E02</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Recovery - Red Light</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Cold Plunge &amp; Thermal</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Cold Plunge &amp; Thermal</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E03</g:id>
-      <g:title><![CDATA[CryoPod 105-Gallon 5-Layer Insulated Portable Ice Bath Tub + Cover]]></g:title>
-      <g:description><![CDATA[Rip-stop 5-layer thermal PVC ice pod with all-weather thermal lid, floating digital thermometer, and quick-drain valve.]]></g:description>
-      <g:link>https://apexhybridco.com/#insulated-portable-cold-plunge-ice-pod-pro</g:link>
+      <g:title><![CDATA[Portable Ice Bath Cold Plunge Tub with Insulated Lid — 105-Gallon 5-Layer Cold Water Recovery Pod (CryoPod)]]></g:title>
+      <g:description><![CDATA[Rip-stop 5-layer thermal insulated cold plunge tub for athletes up to 6'7", complete with all-weather thermal cover and quick-drain valve. Features: 5-layer thermal EPE pearl-foam and rip-stop PVC walls maintain cold water temperatures across days | Upright 105-gallon ergonomic footprint fits balconies, patios, or garage gym corners (fits athletes up to 6'7") | Assembles in under 5 minutes with 6 reinforced support struts and inflatable neck ring | Includes insulated all-weather cover, drain hose with shutoff valve, and carry bag]]></g:description>
+      <g:link>https://apexhybridco.com/products/insulated-portable-cold-plunge-ice-pod-pro.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e03-cold-plunge-tub.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>149.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E03</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Recovery - Cold Plunge</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Physical Therapy Equipment</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Cold Plunge &amp; Thermal</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Cold Plunge &amp; Thermal</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E04</g:id>
-      <g:title><![CDATA[SubZero IPX8 Floating Cold Plunge Thermometer & Plunge Interval Timer]]></g:title>
-      <g:description><![CDATA[Instant-read waterproof LED temperature gauge (23°F–140°F) with built-in 3-minute cold exposure countdown alarm.]]></g:description>
-      <g:link>https://apexhybridco.com/#floating-digital-cold-plunge-thermometer-timer</g:link>
+      <g:title><![CDATA[Floating Digital Cold Plunge Thermometer & Waterproof Ice Bath Timer with Wireless Display (SubZero)]]></g:title>
+      <g:description><![CDATA[Instant-read IPX8 waterproof floating ice bath gauge with wireless indoor/outdoor temperature receiver and min/max memory. Features: High-precision sensor reads water temperatures down to 14°F (-10°C) up to 140°F (60°C) | IPX8 double-sealed waterproof floating transmitter + wireless tabletop display monitor | Check your plunge tub temperature from inside the house before stepping outside | Backlit high-contrast LCD screen with °F / °C toggle]]></g:description>
+      <g:link>https://apexhybridco.com/products/floating-digital-cold-plunge-thermometer-timer.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e04-plunge-thermometer.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>36.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E04</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Recovery - Cold Plunge</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Physical Therapy Equipment</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Cold Plunge &amp; Thermal</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Cold Plunge &amp; Thermal</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E05</g:id>
-      <g:title><![CDATA[VibeRoll 4-Speed Vibrating High-Density Myofascial Foam Roller]]></g:title>
-      <g:description><![CDATA[3,700 RPM deep-oscillation core wrapped in trigger-point EVA tread to release locked calves, quads, and thoracic spine.]]></g:description>
-      <g:link>https://apexhybridco.com/#4-speed-vibrating-high-density-mobility-foam-roller</g:link>
+      <g:title><![CDATA[4-Speed Vibrating Foam Roller — 17-Inch High-Density Deep Tissue Myofascial Mobility Roller (VibeRoll)]]></g:title>
+      <g:description><![CDATA[Extra-wide 17-inch 3,700 RPM deep-oscillation vibrating roller with multi-zone EVA tread and carry bag for calves, quads, and thoracic spine. Features: 4-speed high-torque vibration frequencies (up to 3,700 RPM) numb pain receptors while releasing fascia | Extra-long 17-inch width rolls both quads or the entire upper back simultaneously | 3D finger-ridge EVA foam surface replicates sports massage thumb pressure | USB-C rechargeable battery with drawcord mesh carry bag included]]></g:description>
+      <g:link>https://apexhybridco.com/products/4-speed-vibrating-high-density-mobility-foam-roller.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e05-foam-roller.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>78.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E05</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Recovery - Mobility</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Mobility &amp; Durability</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E06</g:id>
-      <g:title><![CDATA[NordicLock Heavy-Duty Hamstring Curl & Knee Bulletproofing Strap]]></g:title>
-      <g:description><![CDATA[800-lb rated steel buckle and high-density ankle foam pad that turns any standard door into a Nordic hamstring station.]]></g:description>
-      <g:link>https://apexhybridco.com/#nordic-hamstring-curl-door-anchor-strap-pro</g:link>
+      <g:title><![CDATA[Nordic Hamstring Curl Door Anchor Strap — 800-Lb Knee Bulletproofing & Hamstring Trainer (NordicLock)]]></g:title>
+      <g:description><![CDATA[800-lb rated steel adjuster buckle, thick EVA ankle comfort pad, and high-density door anchor that sets up a Nordic curl station in 10 seconds. Features: Slides under any standard closed door in seconds without screws or wall damage | Heavy-duty nylon webbing rated to 800 lbs with military-grade steel cam buckle | Thick contoured foam crossbar pads the ankles during eccentric Nordic hamstring lowers | Ideal for Nordic curls, Spanish squats, razor curls, and anchored core work]]></g:description>
+      <g:link>https://apexhybridco.com/products/nordic-hamstring-curl-door-anchor-strap-pro.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e06-nordic-strap.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>34.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E06</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Performance - Strength</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
+      <g:product_type>Training Gear &gt; Mobility &amp; Durability</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E07</g:id>
-      <g:title><![CDATA[MagSling Neodymium Magnetic Gym Caddy & Tripod Phone Mount Bag]]></g:title>
-      <g:description><![CDATA[6x N52 industrial magnets snap directly onto any squat rack or erg upright, keeping your 40oz bottle, keys, and phone off the floor.]]></g:description>
-      <g:link>https://apexhybridco.com/#magnetic-gym-bag-bottle-phone-organizer-pouch</g:link>
+      <g:title><![CDATA[Magnetic Gym Bag & Water Bottle Holder Pouch — Neodymium Squat Rack Phone & Key Organizer (MagSling)]]></g:title>
+      <g:description><![CDATA[Industrial N52 neodymium magnets snap directly onto any steel squat rack or erg upright, keeping your 40oz bottle, phone, and keys off the gym floor. Features: Built-in multi-magnet backplate holds up to 11 lbs vertically on any steel gym rig or machine | Stretch-lock main sleeve fits 20oz to 46oz bottles and shakers securely | Side phone pocket allows instant video form checks on sleds, squats, and ergs | Includes detachable crossbody shoulder strap, key clip, and lockable zippered wallet compartment]]></g:description>
+      <g:link>https://apexhybridco.com/products/magnetic-gym-bag-bottle-phone-organizer-pouch.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e07-magnetic-gym-bag.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>48.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E07</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Gear - Gym Organization</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness &gt; Gym Storage &amp; Accessories</g:google_product_category>
+      <g:product_type>Training Gear &gt; Gym Bags</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Gym Bags</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E08</g:id>
-      <g:title><![CDATA[AeroWhip Dual-Bearing Weighted Aluminum Speed & Conditioning Rope]]></g:title>
-      <g:description><![CDATA[Knurled aircraft-aluminum handles with removable 0.5 lb handle weights and tangle-free 3.5mm PVC + 2.5mm steel speed cables.]]></g:description>
-      <g:link>https://apexhybridco.com/#ball-bearing-weighted-aluminium-speed-jump-rope</g:link>
+      <g:title><![CDATA[Weighted 1-Lb Aluminum Handle Speed Jump Rope — Ball-Bearing Double-Under Conditioning Rope (AeroWhip)]]></g:title>
+      <g:description><![CDATA[Silicone-gripped weighted handles with removable iron mass cores, 360° dual ball bearings, and 2 interchangeable cables. Features: Removable handle weights let you switch between fast double-unders and heavy forearm/shoulder conditioning | Precision 360-degree steel ball-bearing swivel eliminates rope tangling at high RPM | Includes both a 9mm braided cotton rope and a 9mm solid PVC high-speed cable | Fully adjustable length up to 9.8 ft with zippered storage pouch]]></g:description>
+      <g:link>https://apexhybridco.com/products/ball-bearing-weighted-aluminium-speed-jump-rope.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e08-speed-jump-rope.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>36.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E08</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Performance - Conditioning</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
+      <g:product_type>Training Gear &gt; Mobility &amp; Durability</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E09</g:id>
-      <g:title><![CDATA[GripForge 200-Lb Digital Dynamometer & Farmer-Carry Forearm Kit]]></g:title>
-      <g:description><![CDATA[LCD isometric grip-strength meter (up to 198 lbs / 90 kg) paired with adjustable heavy-tension coil gripper and finger bands.]]></g:description>
-      <g:link>https://apexhybridco.com/#digital-dynamometer-farmer-carry-grip-trainer-set</g:link>
+      <g:title><![CDATA[Digital Hand Grip Dynamometer (198 Lb / 90 Kg) — Isometric Crush Grip & CNS Readiness Meter (GripForge)]]></g:title>
+      <g:description><![CDATA[High-precision strain-gauge LCD isometric grip dynamometer (up to 198 lbs / 90 kg) for tracking farmer-carry strength and daily CNS recovery. Features: Measures isometric crush grip up to 198 lbs (90 kg) in 0.2 lb (0.1 kg) increments | Stores up to 19 user profiles with automatic comparison to your last test reading | Adjustable handle span dial ensures repeatable ergonomics across hand sizes | Includes 2x AAA batteries—ready to test right out of the box]]></g:description>
+      <g:link>https://apexhybridco.com/products/digital-dynamometer-farmer-carry-grip-trainer-set.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e09-grip-dynamometer.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>42.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E09</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Performance - Grip</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
+      <g:product_type>Training Gear &gt; Mobility &amp; Durability</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E10</g:id>
-      <g:title><![CDATA[SpinalReset Linen Acupressure Mat & Cervical Neck Pillow Set]]></g:title>
-      <g:description><![CDATA[7,900 hypoallergenic ABS lotus spikes on organic cotton/coconut-fiber backing to boost dorsal blood flow and pre-sleep HRV.]]></g:description>
-      <g:link>https://apexhybridco.com/#acupressure-myofascial-recovery-mat-pillow-set</g:link>
+      <g:title><![CDATA[Acupressure Back Recovery Mat & Cervical Neck Pillow Set — Myofascial Trigger Point Mat (SpinalReset)]]></g:title>
+      <g:description><![CDATA[7,900 hypoallergenic lotus acupressure points on 100% cotton backing with contoured neck pillow to stimulate dorsal blood flow and deep sleep. Features: 6,210 mat points + 1,782 neck pillow points stimulate endorphin release and local micro-circulation | 100% thick cotton linen skin cover with removable high-density foam insert | 10–15 minutes before bed downregulates sympathetic nervous tone after evening workouts | Rolls up compactly for travel or storage]]></g:description>
+      <g:link>https://apexhybridco.com/products/acupressure-myofascial-recovery-mat-pillow-set.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e10-acupressure-mat.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>54.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E10</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Recovery - Sleep & CNS</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Mobility &amp; Durability</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E11</g:id>
-      <g:title><![CDATA[HydroMetric 32oz Smart LED Temperature & Hydration Cadence Flask]]></g:title>
-      <g:description><![CDATA[Touch-activated OLED lid displays real-time liquid temperature and flashes a subtle ring reminder every 60 minutes.]]></g:description>
-      <g:link>https://apexhybridco.com/#smart-led-hydration-reminder-thermal-flask-32oz</g:link>
+      <g:title><![CDATA[Smart LED Temperature Display Insulated Stainless Steel Water Bottle (32oz Thermal Sports Flask)]]></g:title>
+      <g:description><![CDATA[Double-wall vacuum 304 stainless flask with waterproof LED touch-cap thermometer and removable stainless strainer insert. Features: Tap the waterproof OLED lid to view exact internal liquid temperature Instantly | 304 food-grade double-wall stainless steel maintains cold or hot temps up to 24 hours | Includes removable fine-mesh stainless infuser for loose-leaf tea or fruit electrolytes | Long-life internal lithium cell requires zero charging cables]]></g:description>
+      <g:link>https://apexhybridco.com/products/smart-led-hydration-reminder-thermal-flask-32oz.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e11-smart-flask.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>44.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E11</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Gear - Hydration</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Food &amp; Beverage Carriers &gt; Water Bottles</g:google_product_category>
+      <g:product_type>Training Gear &gt; Hydration</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Hydration</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E12</g:id>
-      <g:title><![CDATA[AirRecover Cordless Pneumatic Leg & Calf Compression Recovery Boots]]></g:title>
-      <g:description><![CDATA[3-chamber sequential air compression (80–260 mmHg) with untethered rechargeable controllers to flush lactate after long runs.]]></g:description>
-      <g:link>https://apexhybridco.com/#rechargeable-pneumatic-calf-shin-compression-sleeves</g:link>
+      <g:title><![CDATA[Sequential Air Compression Leg Recovery Boots — Full-Leg Pneumatic Circulation Massage Sleeves (AirRecover)]]></g:title>
+      <g:description><![CDATA[Full-leg sequential pneumatic air compression system (foot, calf, knee, thigh) with 3 massage modes, 3 intensity levels, and travel bag. Features: Sequential distal-to-proximal inflation flushes metabolic waste from feet, calves, and quads | 3 customizable recovery modes (Sequence, Circulation, Whole) and 3 pressure intensities | Handheld digital LCD controller with 20-minute auto-shutoff safety timer | Rip-stop wipe-clean nylon sleeves with heavy-duty zippers and storage carry bag]]></g:description>
+      <g:link>https://apexhybridco.com/products/rechargeable-pneumatic-calf-shin-compression-sleeves.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e12-compression-boots.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>139.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E12</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Recovery - Compression</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Percussion &amp; Compression</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Percussion &amp; Compression</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E13</g:id>
-      <g:title><![CDATA[TibBar Pro Single-Foot & Dual-Foot Tibialis Anterior Strengthener]]></g:title>
-      <g:description><![CDATA[Heavy-gauge powder-coated steel tibialis raise bar with Olympic 2-inch collar clamp and cushioned instep rollers.]]></g:description>
-      <g:link>https://apexhybridco.com/#tibialis-anterior-shin-splint-trainer-bar</g:link>
+      <g:title><![CDATA[Tibialis Anterior Trainer Bar (Tib Bar) — Heavy-Duty Steel Shin Splint & Ankle Strengthener (TibBar Pro)]]></g:title>
+      <g:description><![CDATA[Heavy-gauge powder-coated steel tibialis raise bar with thick cushioned instep foam rollers and quick-release Olympic collar clamp. Features: Directly loads the tibialis anterior and ankle dorsiflexors to armor shins against high-impact running | Welded heavy-gauge steel frame holds up to 150 lbs of Olympic 2-inch weight plates | 4 thick tear-resistant foam pads keep bare feet or training shoes comfortable under load | Includes heavy-duty snap-lock barbell collar clamp and locking pin]]></g:description>
+      <g:link>https://apexhybridco.com/products/tibialis-anterior-shin-splint-trainer-bar.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e13-tib-bar.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>68.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E13</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Performance - Durability</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
+      <g:product_type>Training Gear &gt; Mobility &amp; Durability</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E14</g:id>
-      <g:title><![CDATA[LumaGym 60-Inch Minimalist RGBIC Warm-Sunset Home Gym Corner Lamp]]></g:title>
-      <g:description><![CDATA[Anodized matte-black aluminum 60-inch corner light with circadian warm-amber sauna mode and high-output interval timer sync.]]></g:description>
-      <g:link>https://apexhybridco.com/#minimalist-rgbic-ambient-home-gym-corner-floor-lamp</g:link>
+      <g:title><![CDATA[60-Inch Warm-Sunset RGBICW Corner Floor Lamp — Circadian Home Gym & Recovery Room Ambient Light (LumaGym)]]></g:title>
+      <g:description><![CDATA[Anodized matte-black aluminum 60-inch corner lamp with warm circadian amber mode, app + remote control, and weighted metal base. Features: Space-saving 60-inch vertical profile tucks into any home gym or recovery room corner | Dedicated 2200K warm-amber sunset mode supports evening melatonin and mobility wind-down | Includes both physical wireless remote and Bluetooth smartphone app control | Heavy-duty matte black aluminum housing with tool-free 5-minute assembly]]></g:description>
+      <g:link>https://apexhybridco.com/products/minimalist-rgbic-ambient-home-gym-corner-floor-lamp.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e14-corner-lamp.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>68.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E14</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Home - Gym Lighting</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Cold Plunge &amp; Thermal</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Cold Plunge &amp; Thermal</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E15</g:id>
-      <g:title><![CDATA[ThermoCore Low-EMF Far-Infrared Portable Home Recovery Sauna Blanket]]></g:title>
-      <g:description><![CDATA[Waterproof Oxford polyurethane far-infrared thermal wrap (95°F–176°F) for post-training heat shock protein activation in any apartment.]]></g:description>
-      <g:link>https://apexhybridco.com/#far-infrared-portable-home-sauna-detox-blanket</g:link>
+      <g:title><![CDATA[Far-Infrared Portable Home Sauna Blanket — Low-EMF Thermal Detox & Heat Acclimation Wrap (ThermoCore)]]></g:title>
+      <g:description><![CDATA[Waterproof Oxford PU far-infrared thermal recovery blanket (95°F–176°F) with digital timer controller and carry bag for apartment heat acclimation. Features: Low-EMF far-infrared carbon heating layers heat the body directly from 95°F up to 176°F (80°C) | Boosts post-run plasma volume, heat-shock proteins, and parasympathetic sleep quality | Waterproof wipe-clean polyurethane interior with dual-side heavy-duty breakaway zippers | Folds neatly into the included canvas storage bag—fits under a bed or in a closet]]></g:description>
+      <g:link>https://apexhybridco.com/products/far-infrared-portable-home-sauna-detox-blanket.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e15-sauna-blanket.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>149.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E15</g:mpn>
-      <g:custom_label_0>Lane E: US Recovery Dropship</g:custom_label_0>
-      <g:custom_label_1>Recovery - Infrared Sauna</g:custom_label_1>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Physical Therapy Equipment</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Cold Plunge &amp; Thermal</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>2</g:min_transit_time>
+        <g:max_transit_time>4</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Cold Plunge &amp; Thermal</g:custom_label_1>
     </item>
   </channel>
 </rss>
