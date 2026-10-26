@@ -412,7 +412,7 @@ function submitOrder(event) {
     <p style="margin:8px 0 14px">${esc(name)}, the kit is held for ${esc(city)} ${esc(zip)}. Finish payment on the Stripe link we send for these price IDs.</p>
     ${bag.map((item) => `<div class="Row"><span>${item.qty} × ${esc(item.title)}</span><strong>${money(item.price * item.qty)}</strong></div>`).join("")}
     <div class="Row"><span>Total</span><strong>${money(sub)}</strong></div>
-    <a class="Btn Btn--cobalt Btn--full" style="margin-top:16px" href="mailto:nolcorpllc@gmail.com?subject=${subject}&body=${body}">Email me the Stripe payment link</a>
+    <a class="Btn Btn--cobalt Btn--full" style="margin-top:16px" href="mailto:apexhybridco@gmail.com?subject=${subject}&body=${body}">Email me the Stripe payment link</a>
     <button class="Btn Btn--ghost Btn--full" type="button" style="margin-top:8px" data-close="checkoutModal">Done</button>`;
   if (!express) cart = [];
   express = null;

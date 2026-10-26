@@ -272,7 +272,7 @@ def generate_product_pages():
 
   <footer class="SiteFooter">
     <div class="Container">
-      <p><strong>Apex Hybrid &amp; Recovery Supply</strong> · 8420 Spectrum, Irvine, CA 92618 · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
+      <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#ff6a3d;">apexhybridco@gmail.com</a> · 24/7 AI Concierge: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
       <p style="font-size:11.5px; color:#94a3b8; margin-top:8px;">Apex Hybrid &amp; Recovery Supply is an independent athletic &amp; recovery brand engineered for athletes competing in HYROX®, DEKA®, CrossFit®, and functional fitness events. Not affiliated with or endorsed by HYROX World GmbH.</p>
     </div>
   </footer>
@@ -498,7 +498,7 @@ def generate_article_pages():
 
   <footer class="SiteFooter">
     <div class="Container">
-      <p><strong>Apex Hybrid &amp; Recovery Supply (NolCorp LLC)</strong> · 17911 Von Karman Ave, Suite 300, Irvine, CA 92614 · 24/7 AI Concierge: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Shop All 72 Products</a></p>
+      <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#ff6a3d;">apexhybridco@gmail.com</a> · 24/7 AI Concierge: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Shop All 72 Products</a></p>
     </div>
   </footer>
 </body>
@@ -555,7 +555,7 @@ def generate_article_pages():
   </main>
   <footer class="SiteFooter">
     <div class="Container">
-      <p><strong>Apex Hybrid &amp; Recovery Supply (NolCorp LLC)</strong> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
+      <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
     </div>
   </footer>
 </body>
@@ -656,8 +656,14 @@ def generate_pinterest_csv_feed():
 def generate_sitemap_and_robots():
     urls = [
         (f"{SITE_URL}/", "1.0", "daily"),
+        (f"{SITE_URL}/team_orders.html", "0.95", "daily"),
         (f"{SITE_URL}/articles/index.html", "0.9", "daily"),
     ]
+    city_dir = os.path.join(BASE_DIR, "seo_city_pages")
+    if os.path.isdir(city_dir):
+        for fn in sorted(os.listdir(city_dir)):
+            if fn.endswith(".html"):
+                urls.append((f"{SITE_URL}/seo_city_pages/{fn}", "0.9", "weekly"))
     for art in guides:
         urls.append((f"{SITE_URL}/articles/{art['slug']}.html", "0.9", "weekly"))
     for prod in products:
@@ -719,15 +725,15 @@ Sitemap: {SITE_URL}/sitemap.xml
 
     # Also generate llms.txt dynamically from products and guides
     llms_lines = [
-        "# Apex Hybrid & Recovery Supply (NolCorp LLC)",
+        "# Apex Hybrid & Recovery Supply (Apex Hybrid Co.)",
         "",
         f"> Official Storefront: {SITE_URL} (also accessible at https://apexhybridco.com and https://nolan2j-ui.github.io/apex-store/)",
         "> Breathable HYROX® race shirts, laser-vented AeroMesh™ tech tees, 2026/2027 race-city shirts (Chicago, Dallas, Anaheim, Miami, Las Vegas, NYC), sleeveless muscle tanks, heavyweight warmup hoodies, lightweight warmup jackets, and clinical-grade athlete recovery hardware with free 2–4 business day US shipping and 30-day free returns.",
         "",
         "## Brand & Merchant Overview",
-        "- **Business Name:** Apex Hybrid & Recovery Supply (operated by NolCorp LLC)",
-        "- **Headquarters:** 17911 Von Karman Ave, Suite 300, Irvine, CA 92614",
-        "- **Support Email:** nolcorpllc@gmail.com | support@apexhybridco.com",
+        "- **Business Name:** Apex Hybrid & Recovery Supply (Apex Hybrid Co.)",
+        "- **Headquarters:** 8420 Spectrum, Irvine, CA 92618",
+        "- **Support Email:** apexhybridco@gmail.com",
         f"- **Primary Website:** {SITE_URL}/",
         f"- **XML Sitemap:** {SITE_URL}/sitemap.xml",
         f"- **Google Merchant Shopping Feed:** {SITE_URL}/google_shopping_feed.xml",
@@ -833,8 +839,8 @@ def inject_static_seo_into_index():
                 "url": f"{SITE_URL}/",
                 "logo": f"{SITE_URL}/images/27_aeromesh_tech_tee_black.png",
                 "description": "Breathable HYROX® race shirts, laser-vented AeroMesh™ tech tees, 2026/2027 race-city shirts (Chicago, Dallas, Anaheim, Miami, Vegas, NYC), sleeveless muscle tanks, and clinical recovery hardware.",
-                "telephone": "+1-949-555-0194",
-                "email": "support@apexhybridco.com",
+                "telephone": "+1-949-805-4935",
+                "email": "apexhybridco@gmail.com",
                 "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "8420 Spectrum",

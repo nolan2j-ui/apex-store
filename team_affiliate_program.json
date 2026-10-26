@@ -5,13 +5,13 @@
   "team_orders_url": "https://www.apexhybridco.com/team_orders.html",
   "stripe_account_id": "acct_1UUaY9Rut88O8nG2",
   "stripe_mode": "sandbox_configured_ready_for_livemode",
-  "support_email": "support@apexhybridco.com",
-  "fulfillment_email": "nolcorpllc@gmail.com",
+  "support_email": "apexhybridco@gmail.com",
+  "fulfillment_email": "apexhybridco@gmail.com",
   "zero_upfront_spend_policy": {
     "upfront_cost_to_apex": 0.0,
     "upfront_cost_to_affiliate": 0.0,
     "commission_payout_trigger": "Commission is accrued and paid ONLY after a real customer checkout clears in Stripe and the 14-day return/chargeback window completes. Zero upfront retainer, zero free seed inventory required, zero ad spend.",
-    "fulfillment_workflow": "Customer pays via Stripe -> Stripe payout clears -> Printful US DTG / US Warehouse fulfills order on-demand -> Affiliate receives 15%-20% net commission payout via Stripe Transfer / Mercury ACH."
+    "fulfillment_workflow": "Customer pays via Stripe -> Stripe payout clears -> Fourthwall US / US Warehouse fulfills order on-demand -> Affiliate receives 15%-20% net commission payout via Stripe Transfer / Mercury ACH."
   },
   "stripe_coupons_and_promo_codes": {
     "coupons_created_in_stripe": [
@@ -106,7 +106,7 @@
       "savings_usd": 10.0,
       "savings_pct": 13.9,
       "unit_economics": {
-        "supplier": "Printful US DTG / Technical Sublimation (Combined 2-Unit Parcel)",
+        "supplier": "Fourthwall US DTG / Technical Sublimation (Comfort Colors 1717 / AeroMesh Combined 2-Unit Parcel)",
         "wholesale_blank_and_print_2_units": 28.5,
         "combined_us_shipping": 6.5,
         "total_landed_cost": 35.0,
@@ -156,7 +156,7 @@
       "savings_usd": 10.0,
       "savings_pct": 14.7,
       "unit_economics": {
-        "supplier": "Printful US DTG (Bella+Canvas 3001 Combined 2-Unit Parcel)",
+        "supplier": "Fourthwall US DTG (Comfort Colors 1717 6.1 oz Heavyweight Cotton Combined 2-Unit Parcel)",
         "wholesale_blank_and_print_2_units": 27.0,
         "combined_us_shipping": 6.75,
         "total_landed_cost": 33.75,
@@ -195,7 +195,7 @@
       "savings_usd": 20.0,
       "savings_pct": 15.6,
       "unit_economics": {
-        "supplier": "Printful US Lightweight DWR Windbreaker Shell (Combined 2-Unit Parcel)",
+        "supplier": "Fourthwall US (Champion CO200 Packable Quarter-Zip / Windbreaker Jacket Combined 2-Unit Parcel)",
         "wholesale_blank_and_print_2_units": 42.0,
         "combined_us_shipping": 7.5,
         "total_landed_cost": 49.5,
@@ -238,7 +238,7 @@
       "savings_usd": 16.0,
       "savings_pct": 14.3,
       "unit_economics": {
-        "supplier": "Printful US 8.0 oz Heavy Blend Hoodie (Combined 2-Unit Parcel)",
+        "supplier": "Fourthwall US (Independent Trading Co. PRM4500 9 oz Heavyweight Pigment-Dyed Fleece Hoodie Combined 2-Unit Parcel)",
         "wholesale_blank_and_print_2_units": 43.0,
         "combined_us_shipping": 8.5,
         "total_landed_cost": 51.5,
@@ -276,7 +276,7 @@
       "savings_usd": 48.0,
       "savings_pct": 21.2,
       "unit_economics": {
-        "supplier": "Printful US (2 Tees + 2 Jackets) + US Warehouse (ChalkLock 2-Pack)",
+        "supplier": "Fourthwall US (2 Comfort Colors 1717 / AeroMesh Tees + 2 Champion CO200 Jackets) + US Warehouse (ChalkLock 2-Pack)",
         "wholesale_and_fulfillment_breakdown": "$35.00 (2 Tech Tees) + $49.50 (2 Warmup Shells) + $8.50 (ChalkLock 2-Pack)",
         "total_landed_cost": 93.0,
         "stripe_processing_fee_est": 5.46,
@@ -320,7 +320,7 @@
       "savings_usd": 35.0,
       "savings_pct": 19.4,
       "unit_economics": {
-        "supplier": "Printful US DTG 5-Unit Combined Bulk Parcel",
+        "supplier": "Fourthwall US DTG 5-Unit Combined Bulk Parcel (Comfort Colors 1717 / AeroMesh)",
         "wholesale_blank_and_print_5_units": 68.75,
         "combined_us_shipping": 11.25,
         "total_landed_cost": 80.0,
@@ -367,7 +367,7 @@
       "savings_usd": 92.0,
       "savings_pct": 25.6,
       "unit_economics": {
-        "supplier": "Printful US DTG 10-Unit Combined Bulk Parcel",
+        "supplier": "Fourthwall US DTG 10-Unit Combined Bulk Parcel (Comfort Colors 1717 / AeroMesh)",
         "wholesale_blank_and_print_10_units": 135.0,
         "combined_us_shipping": 18.0,
         "total_landed_cost": 153.0,
