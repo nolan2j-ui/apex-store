@@ -26,6 +26,27 @@
       </g:shipping>
     </item>
     <item>
+      <g:id>APC-C22</g:id>
+      <g:title>8 Runs 8 Stations Zero Excuses HYROX Shirt — Winged Crest Hybrid Race Tee &amp; Pump Cover</g:title>
+      <g:description>Signature 8X8 Winged Apex Crest shirt (&#x27;8 RUNS. 8 STATIONS. ZERO EXCUSES. — EARN YOUR FINISH SPLIT&#x27;) engineered for HYROX® simulation days and strength warmups.</g:description>
+      <g:link>https://www.apexhybridco.com/products/8-runs-8-stations-zero-excuses-heavyweight-pump-cover-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/15_eight_runs_zero_excuses_mockup_black.png</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>44.00 USD</g:price>
+      <g:sale_price>36.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C22</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Pump Covers</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
       <g:id>APC-C16</g:id>
       <g:title>Chicago HYROX Race Shirt — Navy Pier 8x1000m Hybrid Racing &amp; Breathable Training Tee</g:title>
       <g:description>Custom winged Apex crest &#x27;CHICAGO // 8 STATIONS · 8KM — NAVY PIER RACE WEEKEND&#x27; shirt built for athletes racing Chicago HYROX® and Midwest 8-station endurance events. Available in Breathable AeroMesh™ or 4.2 oz Airlume Cotton.</g:description>
@@ -40,6 +61,27 @@
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
       <g:product_type>Race City Editions &gt; Race City Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C23</g:id>
+      <g:title>Roxzone Penalties Ruined My PR HYROX Shirt — Funny Hybrid Race Transition Running Tee</g:title>
+      <g:description>Featuring our &#x27;-03:00&#x27; Race Stopwatch Tachometer Crest and &#x27;ROXZONE PENALTIES RUINED MY PR — PACE THE TRANSITIONS&#x27; graphic for HYROX® athletes who learned the hard way.</g:description>
+      <g:link>https://www.apexhybridco.com/products/roxzone-penalties-ruined-my-pr-athletic-race-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/16_roxzone_penalties_mockup_black.png</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>38.00 USD</g:price>
+      <g:sale_price>32.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C23</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
       <g:shipping>
         <g:country>US</g:country>
         <g:service>Standard Ground</g:service>
@@ -131,6 +173,27 @@
       </g:shipping>
     </item>
     <item>
+      <g:id>APC-C24</g:id>
+      <g:title>200m Farmer Carry Survivors Club HYROX Shirt — Station 6 Heavy Carry &amp; Grip Strength Tee</g:title>
+      <g:description>Loaded barbell &amp; track-ring crest (&#x27;200M // FARMER CARRY SURVIVORS CLUB — GRIP GAVE OUT AT METER 150&#x27;) built for HYROX® Station 6 specialists.</g:description>
+      <g:link>https://www.apexhybridco.com/products/200m-farmer-carry-survivors-club-barbell-crest-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/17_farmer_carry_survivors_mockup_black.png</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>40.00 USD</g:price>
+      <g:sale_price>34.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C24</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
       <g:id>APC-C18</g:id>
       <g:title>Anaheim SoCal HYROX Race Shirt — Southern California 8-Station Hybrid Athlete Tee</g:title>
       <g:description>Designed in Orange County (&#x27;ANAHEIM // PACIFIC COAST SERIES · 8 RUNS · 8 STATIONS&#x27;) for athletes racing Anaheim &amp; Southern California HYROX® events.</g:description>
@@ -145,27 +208,6 @@
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
       <g:product_type>Race City Editions &gt; Race City Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C22</g:id>
-      <g:title>8 Runs 8 Stations Zero Excuses HYROX Shirt — Winged Crest Hybrid Race Tee &amp; Pump Cover</g:title>
-      <g:description>Signature 8X8 Winged Apex Crest shirt (&#x27;8 RUNS. 8 STATIONS. ZERO EXCUSES. — EARN YOUR FINISH SPLIT&#x27;) engineered for HYROX® simulation days and strength warmups.</g:description>
-      <g:link>https://www.apexhybridco.com/products/8-runs-8-stations-zero-excuses-heavyweight-pump-cover-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/15_eight_runs_zero_excuses_mockup_black.png</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>44.00 USD</g:price>
-      <g:sale_price>36.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C22</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Pump Covers</g:product_type>
       <g:shipping>
         <g:country>US</g:country>
         <g:service>Standard Ground</g:service>
@@ -397,48 +439,6 @@
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear &gt; Sweatshirts &amp; Hoodies</g:google_product_category>
       <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C23</g:id>
-      <g:title>Roxzone Penalties Ruined My PR HYROX Shirt — Funny Hybrid Race Transition Running Tee</g:title>
-      <g:description>Featuring our &#x27;-03:00&#x27; Race Stopwatch Tachometer Crest and &#x27;ROXZONE PENALTIES RUINED MY PR — PACE THE TRANSITIONS&#x27; graphic for HYROX® athletes who learned the hard way.</g:description>
-      <g:link>https://www.apexhybridco.com/products/roxzone-penalties-ruined-my-pr-athletic-race-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/16_roxzone_penalties_mockup_black.png</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>38.00 USD</g:price>
-      <g:sale_price>32.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C23</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C24</g:id>
-      <g:title>200m Farmer Carry Survivors Club HYROX Shirt — Station 6 Heavy Carry &amp; Grip Strength Tee</g:title>
-      <g:description>Loaded barbell &amp; track-ring crest (&#x27;200M // FARMER CARRY SURVIVORS CLUB — GRIP GAVE OUT AT METER 150&#x27;) built for HYROX® Station 6 specialists.</g:description>
-      <g:link>https://www.apexhybridco.com/products/200m-farmer-carry-survivors-club-barbell-crest-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/17_farmer_carry_survivors_mockup_black.png</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>40.00 USD</g:price>
-      <g:sale_price>34.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C24</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
       <g:shipping>
         <g:country>US</g:country>
         <g:service>Standard Ground</g:service>

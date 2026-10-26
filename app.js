@@ -479,3 +479,49 @@ function filterByCityOrTopic(queryText) {
   const grid = document.getElementById('catalogSection');
   if (grid) grid.scrollIntoView({ behavior: 'smooth' });
 }
+
+// Interactive Pop-Up Modal for News & Article Center + 2026/2027 Race Calendar
+function openHubPopupModal(activeTab = 'news') {
+  const modal = document.getElementById('hubPopupModal');
+  const content = document.getElementById('hubPopupModalContent');
+  if (!modal || !content) return;
+
+  const guidesHtml = CATALOG.guides.slice(0, 8).map(g => `
+    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px;display:flex;flex-direction:column;justify-content:space-between;">
+      <div>
+        <div style="font-size:10.5px;font-weight:700;text-transform:uppercase;color:#0284c7;margin-bottom:4px;">${g.category} · ${g.read_time}</div>
+        <h4 style="font-size:15px;font-weight:800;color:#0f172a;margin-bottom:6px;line-height:1.35;">${g.title}</h4>
+        <p style="font-size:12.5px;color:#475569;margin-bottom:12px;">${g.summary}</p>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <button class="Btn Btn--Cart" style="padding:7px 12px;font-size:12px;" onclick="closeHubPopupModal(); openArticleModal('${g.slug}');">Read Inside Modal</button>
+        <a href="articles/${g.slug}.html" class="Btn Btn--QuickView" style="padding:7px 12px;font-size:12px;">Full Page →</a>
+      </div>
+    </div>
+  `).join('');
+
+  content.innerHTML = `
+    <div style="border-bottom:1px solid #e2e8f0;padding-bottom:14px;margin-bottom:18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+      <div>
+        <span style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:#0284c7;">APEX 247 COMMAND HUB</span>
+        <h2 style="font-size:22px;font-weight:800;color:#0f172a;">Hybrid Racing News Center & 2026/2027 Race Calendar</h2>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <a href="#raceCalendarSection" onclick="closeHubPopupModal()" class="Btn Btn--QuickView" style="padding:7px 13px;font-size:12px;">Jump to Split Calculator ↓</a>
+        <a href="#guidesSection" onclick="closeHubPopupModal()" class="Btn Btn--BuyNow" style="padding:7px 13px;font-size:12px;">View All 16 Guides ↓</a>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;">
+      ${guidesHtml}
+    </div>
+  `;
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
+}
+
+function closeHubPopupModal() {
+  const modal = document.getElementById('hubPopupModal');
+  if (!modal) return;
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+}

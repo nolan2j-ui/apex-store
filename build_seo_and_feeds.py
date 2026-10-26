@@ -641,8 +641,8 @@ def inject_static_seo_into_index():
     }
 
     index_html = re.sub(
-        r'<div class="ProductGrid" id="productGrid">.*?</div>\s*</div>\s*</div>\s*</main>',
-        f'<div class="ProductGrid" id="productGrid">\n{chr(10).join(static_cards)}\n        </div>\n      </div>\n\n    </div>\n  </main>',
+        r'<div class="ProductGrid" id="productGrid">.*?</div>\s*</div>\s*</div>\s*</div>\s*</main>',
+        f'<div class="ProductGrid" id="productGrid">\n{chr(10).join(static_cards)}\n          </div>\n        </div>\n      </div>\n    </div>\n  </main>',
         index_html,
         flags=re.DOTALL,
     )
