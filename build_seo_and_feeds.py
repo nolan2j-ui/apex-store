@@ -156,7 +156,7 @@ def generate_product_pages():
         if is_fw:
             fw_blank = html.escape(prod.get("fourthwall_blank") or "Premium Athletic Blank")
             fw_url = prod.get("fourthwall_product_url") or prod.get("checkout_url") or f"../index.html?buy={prod['id']}&fulfillment=fourthwall"
-            fulfillment_line = f'<div style="font-size:12.5px; color:#0f172a; font-weight:700; margin-top:6px; background:#f1f5f9; padding:8px 10px; border-radius:6px; border-left:3px solid #2563eb;">✓ Fulfilled via Fourthwall US · {fw_blank} · <a href="{html.escape(fw_url)}" style="color:#2563eb;text-decoration:underline;">Live Fourthwall Storefront</a></div>'
+            fulfillment_line = f'<div style="font-size:12.5px; color:#0f172a; font-weight:700; margin-top:6px; background:#f1f5f9; padding:8px 10px; border-radius:6px; border-left:3px solid #2563eb;">✓ Fulfilled via Fourthwall US · {fw_blank} · <a href="{html.escape(fw_url)}" style="color:#2563eb;text-decoration:underline;">Instant Fourthwall Checkout →</a></div>'
             buy_href = fw_url
             top_buy_label = f"Buy via Fourthwall (${price})"
             main_buy_label = "Buy Now · Fourthwall Checkout"
@@ -180,8 +180,14 @@ def generate_product_pages():
   <meta property="og:description" content="{html.escape(short_desc)}" />
   <meta property="og:url" content="{canonical}" />
   <meta property="og:image" content="{img_url}" />
+  <meta property="og:site_name" content="Apex Hybrid Co." />
   <meta property="product:price:amount" content="{price}" />
   <meta property="product:price:currency" content="USD" />
+  <meta property="product:availability" content="in stock" />
+  <meta property="og:availability" content="instock" />
+  <meta property="product:condition" content="new" />
+  <meta property="product:brand" content="Apex Hybrid Co." />
+  <meta property="product:retailer_item_id" content="{prod['id']}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{html.escape(seo_title)}" />
   <meta name="twitter:description" content="{html.escape(short_desc)}" />
@@ -406,7 +412,7 @@ def generate_article_pages():
               <span style="color:#94a3b8;font-size:12px;">SKU {p['id']} · ★ {p['rating']} · Free 2–4 Day US Shipping</span>
             </div>
             <div style="display:flex;gap:6px;flex-shrink:0;">
-              <a href="../index.html?buy={p['id']}" class="Btn Btn--BuyNow" style="width:auto;padding:7px 12px;font-size:12.5px;font-weight:800;background:#ff4d1c;color:#fff;border-radius:6px;text-decoration:none;">Buy Now — ${p['retail_price']:.2f} (Free Shipping)</a>
+              <a href="{p.get('fourthwall_product_url') or ('../index.html?buy=' + p['id'])}" class="Btn Btn--BuyNow" style="width:auto;padding:7px 12px;font-size:12.5px;font-weight:800;background:#ff4d1c;color:#fff;border-radius:6px;text-decoration:none;">Buy Now — ${p['retail_price']:.2f} (Free Shipping)</a>
               <a href="../index.html?add={p['id']}" class="Btn Btn--Cart" style="width:auto;padding:7px 10px;font-size:12px;font-weight:700;background:#334155;color:#fff;border-radius:6px;text-decoration:none;">+ Add to Bag</a>
             </div>
           </div>"""
@@ -433,7 +439,7 @@ def generate_article_pages():
                 </div>
               </div>
               <div style="padding:0 14px 14px;display:flex;flex-direction:column;gap:6px;">
-                <a href="../index.html?buy={p['id']}" class="Btn Btn--BuyNow" style="text-align:center;padding:10px 12px;font-weight:800;font-size:13px;background:#ff4d1c;color:#fff;border-radius:7px;text-decoration:none;">Buy Now — ${p['retail_price']:.2f} (Free Shipping)</a>
+                <a href="{p.get('fourthwall_product_url') or ('../index.html?buy=' + p['id'])}" class="Btn Btn--BuyNow" style="text-align:center;padding:10px 12px;font-weight:800;font-size:13px;background:#ff4d1c;color:#fff;border-radius:7px;text-decoration:none;">Buy Now — ${p['retail_price']:.2f} (Free Shipping)</a>
                 <div style="display:flex;gap:6px;">
                   <a href="../index.html?add={p['id']}" class="Btn Btn--Cart" style="flex:1;text-align:center;padding:8px;font-size:12.5px;background:#0f172a;color:#fff;border-radius:6px;text-decoration:none;">+ Add to Bag</a>
                   <a href="../products/{p['handle']}.html" class="Btn Btn--QuickView" style="padding:8px 10px;font-size:12.5px;border:1px solid #cbd5e1;border-radius:6px;text-decoration:none;color:#0f172a;font-weight:700;">Specs</a>
@@ -484,7 +490,7 @@ def generate_article_pages():
         <div style="margin-left:auto; display:flex; gap:14px; align-items:center; flex-wrap:wrap;">
           <a href="../index.html#articles" style="color:#fff; font-size:13px; font-weight:700;">← All Buyer Guides</a>
           <a href="tel:+19498054935" style="color:#cbd5e1; font-size:12.5px; font-weight:700; text-decoration:none;">24/7 Athlete Line: (949) 805-4935</a>
-          <a href="../index.html?buy={hero_prod['id']}" class="Btn Btn--BuyNow" style="width:auto; padding:8px 16px;">1-Click Buy Top Pick (${hero_prod['retail_price']:.2f})</a>
+          <a href="{hero_prod.get('fourthwall_product_url') or ('../index.html?buy=' + hero_prod['id'])}" class="Btn Btn--BuyNow" style="width:auto; padding:8px 16px;">1-Click Buy Top Pick (${hero_prod['retail_price']:.2f})</a>
         </div>
       </div>
     </div>
@@ -558,6 +564,10 @@ def generate_article_pages():
 """
         with open(os.path.join(BASE_DIR, "articles", f"{slug}.html"), "w", encoding="utf-8") as out:
             out.write(page_html)
+        city_page_path = os.path.join(BASE_DIR, "seo_city_pages", f"{slug}.html")
+        if os.path.exists(city_page_path) or any(k in slug for k in ("chicago", "dallas", "anaheim", "las-vegas", "miami", "new-york", "nyc", "first-hyrox", "pump-cover", "compromised-running-shirt", "sled-push-enthusiast")):
+            with open(city_page_path, "w", encoding="utf-8") as out_city:
+                out_city.write(page_html)
 
     # Also generate articles/index.html hub page
     hub_cards = "\n".join(

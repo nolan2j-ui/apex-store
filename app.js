@@ -425,7 +425,7 @@ function openCheckout(lines) {
     <div style="margin-bottom:14px">
       ${bag.map((item) => `
         <div class="Row"><span>${item.qty} × ${esc(item.title)} <span class="StripeId">${esc(item.variant)}</span></span><strong>${money(item.price * item.qty)}</strong></div>
-        <div class="StripeId">${esc(item.is_fourthwall ? `Fulfilled via Fourthwall (${item.fourthwall_blank})` : "Fulfilled via US Warehouse Direct Wholesale")} · ${item.is_fourthwall && item.fourthwall_product_url ? `<a href="${esc(item.fourthwall_product_url)}" target="_blank" rel="noopener" style="color:#2563eb;font-weight:700">Open Direct Fourthwall Checkout →</a> · ` : ""}${esc([item.stripe_price_id, item.stripe_product_id, item.stripe_account_id].filter(Boolean).join(" · "))}</div>
+        <div class="StripeId">${esc(item.is_fourthwall ? `Fulfilled via Fourthwall (${item.fourthwall_blank})` : "Fulfilled via US Warehouse Direct Wholesale")} · ${item.is_fourthwall && item.fourthwall_product_url ? `<a href="${esc(item.fourthwall_product_url)}" target="_blank" rel="noopener" style="color:#2563eb;font-weight:700">Instant Fourthwall Checkout →</a> · ` : ""}${esc([item.stripe_price_id, item.stripe_product_id, item.stripe_account_id].filter(Boolean).join(" · "))}</div>
       `).join("")}
       <div class="Row" style="margin-top:8px"><span>US delivery</span><strong>Free</strong></div>
       <div class="Row"><span>Total</span><strong>${money(sub)}</strong></div>
@@ -756,7 +756,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeAll();
   });
-  fetch("catalog.json?v=20261025v6")
+  fetch("catalog.json?v=20261025v7")
     .then((res) => {
       if (!res.ok) throw new Error("catalog");
       return res.json();
