@@ -53,6 +53,7 @@ const STATIONS = [
 
 const PROMO_CODES = {
   COACHSU10: { pct: 10, label: "Coach Su & The Vault Fitness (10% Off)" },
+  DADBOD10: { pct: 10, label: "Hyrox DadBod (10% Off)" },
   HYROX10: { pct: 10, label: "HYROX Athlete (10% Off)" },
   CLUB10: { pct: 10, label: "HYROX Club & Coach (10% Off)" },
   DOUBLES10: { pct: 10, label: "Doubles Partner (10% Off)" },
