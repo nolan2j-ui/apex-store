@@ -33,8 +33,8 @@ SEO_SEARCH_TITLES = {
     "APC-C14": "50L Tactical Gym Duffle Bag with Ventilated Shoe Compartment — Race Day Backpack Duffle",
     "APC-C15": "24oz Double-Wall Vacuum Insulated Stainless Steel Protein Shaker Bottle with Wire Whisk",
     "APC-E01": "3200 RPM Deep Tissue Percussion Massage Gun — Brushless Quiet Muscle Recovery Massager (ApexPulse Pro)",
-    "APC-E02": "660nm & 850nm Red Light Therapy Belt Wrap — Near-Infrared Knee, Back & Joint Recovery Pad (InfraFlex)",
-    "APC-E03": "Portable Ice Bath Cold Plunge Tub with Insulated Lid — 105-Gallon 5-Layer Cold Water Recovery Pod (CryoPod)",
+    "APC-E02": "Red Light Therapy Belt 660nm 850nm — Near-Infrared Knee, Back & Joint Recovery Wrap (InfraFlex)",
+    "APC-E03": "Portable Ice Bath Tub Cold Plunge with Insulated Lid — 105-Gallon 5-Layer Cold Water Recovery Pod (CryoPod)",
     "APC-E04": "Floating Digital Cold Plunge Thermometer & Waterproof Ice Bath Timer with Wireless Display (SubZero)",
     "APC-E05": "4-Speed Vibrating Foam Roller — 17-Inch High-Density Deep Tissue Myofascial Mobility Roller (VibeRoll)",
     "APC-E06": "Nordic Hamstring Curl Door Anchor Strap — 800-Lb Knee Bulletproofing & Hamstring Trainer (NordicLock)",
@@ -43,10 +43,22 @@ SEO_SEARCH_TITLES = {
     "APC-E09": "Digital Hand Grip Dynamometer (198 Lb / 90 Kg) — Isometric Crush Grip & CNS Readiness Meter (GripForge)",
     "APC-E10": "Acupressure Back Recovery Mat & Cervical Neck Pillow Set — Myofascial Trigger Point Mat (SpinalReset)",
     "APC-E11": "Smart LED Temperature Display Insulated Stainless Steel Water Bottle (32oz Thermal Sports Flask)",
-    "APC-E12": "Sequential Air Compression Leg Recovery Boots — Full-Leg Pneumatic Circulation Massage Sleeves (AirRecover)",
+    "APC-E12": "Leg Air Compression Recovery Boots — Full-Leg Sequential Pneumatic Circulation Massage Sleeves (AirRecover)",
     "APC-E13": "Tibialis Anterior Trainer Bar (Tib Bar) — Heavy-Duty Steel Shin Splint & Ankle Strengthener (TibBar Pro)",
     "APC-E14": "60-Inch Warm-Sunset RGBICW Corner Floor Lamp — Circadian Home Gym & Recovery Room Ambient Light (LumaGym)",
     "APC-E15": "Far-Infrared Portable Home Sauna Blanket — Low-EMF Thermal Detox & Heat Acclimation Wrap (ThermoCore)",
+    "APC-E16": "Weighted Training Vest 20lb — Adjustable Tactical Plate-Carrier Murph & Rucking Vest (TactFit)",
+    "APC-E17": "Breathing Lung Trainer — Dual-Valve Inspiratory & Expiratory Respiratory Muscle Exerciser (AeroLung)",
+    "APC-E18": "Knee Ice Pack Wrap Cold Compression — 360° Gel Cold & Heat Knee/Ankle Recovery Sleeve (CryoSleeve)",
+    "APC-E19": "Electric Cupping Therapy Set — Smart Dynamic Suction, 650nm Red Light & Heat Massager (ThermoCup)",
+    "APC-E20": "Magnetic Gym Phone Mount — Dual-Ring N52 Neodymium Squat Rack & Tripod Filming Stand (MagTripod)",
+    "APC-E21": "Chest Strap Heart Rate Monitor — ECG-Accurate ANT+ & Bluetooth 5.0 Zone-2 Running Sensor (PulseTrack)",
+    "APC-E22": "EMS Foot Massager Circulation Mat — Bio-Electric Plantar Fascia & Calf Recovery Pad (NeuroStep)",
+    "APC-E23": "Liquid Lifting Chalk (2-Pack) — Mess-Free Magnesium Carbonate Gym & Farmer-Carry Grip Chalk (ChalkLock)",
+    "APC-E24": "Red Light Therapy Panel 660nm 850nm — High-Irradiance Clinical Desktop Near-Infrared Recovery Light (LumiRed)",
+    "APC-E25": "Collapsible Travel Foam Roller — Foldable Flat-Pack Deep Tissue Myofascial Mobility Roller (MorphRoll)",
+    "APC-E26": "Ventilated Running & Carbon-Plate Race Shoe Travel Bag — Crush-Resistant Athletic Shoe Case (SoleVault)",
+    "APC-E27": "Pull-Up & Farmer-Carry Grip Strengthener Handles — Hanging Forearm & Dead-Hang Trainers (DeadHang)",
 }
 
 def get_google_category(p):
@@ -89,8 +101,8 @@ def build_shipping_details():
             },
             "transitTime": {
                 "@type": "QuantitativeValue",
-                "minValue": 2,
-                "maxValue": 4,
+                "minValue": 3,
+                "maxValue": 5,
                 "unitCode": "DAY"
             }
         }
@@ -442,7 +454,7 @@ def generate_google_feed(products, base_domain):
       <g:price>{price_str}</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>{sku}</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>{g_cat}</g:google_product_category>
       <g:product_type>{p_type}</g:product_type>
       <g:shipping>
@@ -451,8 +463,8 @@ def generate_google_feed(products, base_domain):
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>{html.escape(p.get('dept', ''))}</g:custom_label_0>
       <g:custom_label_1>{html.escape(p.get('category', ''))}</g:custom_label_1>
@@ -498,6 +510,7 @@ def main():
         app_lines = f.readlines()
 
     app_lines[0] = f"const PRODUCTS = {json.dumps(products)};\n"
+    app_lines[1] = f"const GUIDES = {json.dumps(guides)};\n"
     app_js = "".join(app_lines)
 
     # Make product card title a crawlable <a> link while keeping modal quick-view on click
@@ -559,6 +572,17 @@ def main():
             f'Recovery Hardware <span>({dept_counts["Recovery Hardware"]})</span>',
             index_html
         )
+    if "Training Gear" in dept_counts:
+        index_html = re.sub(
+            r'Training &amp; Gym Gear <span>\(\d+\)</span>',
+            f'Training &amp; Gym Gear <span>({dept_counts["Training Gear"]})</span>',
+            index_html
+        )
+    index_html = re.sub(
+        r'of \d+ performance &amp; recovery items',
+        f'of {total_count} performance &amp; recovery items',
+        index_html
+    )
 
     store_and_itemlist_schema = {
         "@context": "https://schema.org",

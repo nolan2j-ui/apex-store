@@ -16,7 +16,7 @@
       <g:price>32.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C01</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
       <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
       <g:shipping>
@@ -25,8 +25,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
       <g:custom_label_1>Performance Tees</g:custom_label_1>
@@ -43,7 +43,7 @@
       <g:price>38.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C02</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
       <g:product_type>Tees &amp; Pump Covers &gt; Pump Covers</g:product_type>
       <g:shipping>
@@ -52,8 +52,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
       <g:custom_label_1>Pump Covers</g:custom_label_1>
@@ -70,7 +70,7 @@
       <g:price>32.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C03</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
       <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
       <g:shipping>
@@ -79,8 +79,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
       <g:custom_label_1>Performance Tees</g:custom_label_1>
@@ -97,7 +97,7 @@
       <g:price>32.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C04</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
       <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
       <g:shipping>
@@ -106,8 +106,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
       <g:custom_label_1>Performance Tees</g:custom_label_1>
@@ -124,7 +124,7 @@
       <g:price>30.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C05</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
       <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
       <g:shipping>
@@ -133,8 +133,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
       <g:custom_label_1>Performance Tees</g:custom_label_1>
@@ -151,7 +151,7 @@
       <g:price>32.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C06</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
       <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
       <g:shipping>
@@ -160,8 +160,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
       <g:custom_label_1>Performance Tees</g:custom_label_1>
@@ -178,7 +178,7 @@
       <g:price>28.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C07</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
       <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
       <g:shipping>
@@ -187,8 +187,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
       <g:custom_label_1>Performance Tees</g:custom_label_1>
@@ -205,7 +205,7 @@
       <g:price>32.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C08</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
       <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
       <g:shipping>
@@ -214,8 +214,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Tees &amp; Pump Covers</g:custom_label_0>
       <g:custom_label_1>Performance Tees</g:custom_label_1>
@@ -231,7 +231,7 @@
       <g:price>54.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C09</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
       <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
       <g:shipping>
@@ -240,8 +240,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Hoodies</g:custom_label_0>
       <g:custom_label_1>Pullover Hoodies</g:custom_label_1>
@@ -257,7 +257,7 @@
       <g:price>54.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C10</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
       <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
       <g:shipping>
@@ -266,8 +266,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Hoodies</g:custom_label_0>
       <g:custom_label_1>Pullover Hoodies</g:custom_label_1>
@@ -283,7 +283,7 @@
       <g:price>54.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C11</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
       <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
       <g:shipping>
@@ -292,8 +292,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Hoodies</g:custom_label_0>
       <g:custom_label_1>Pullover Hoodies</g:custom_label_1>
@@ -309,7 +309,7 @@
       <g:price>56.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C12</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear</g:google_product_category>
       <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
       <g:shipping>
@@ -318,8 +318,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Hoodies</g:custom_label_0>
       <g:custom_label_1>Pullover Hoodies</g:custom_label_1>
@@ -335,7 +335,7 @@
       <g:price>34.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C13</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing Accessories &gt; Hats</g:google_product_category>
       <g:product_type>Training Gear &gt; Headwear</g:product_type>
       <g:shipping>
@@ -344,8 +344,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Training Gear</g:custom_label_0>
       <g:custom_label_1>Headwear</g:custom_label_1>
@@ -361,7 +361,7 @@
       <g:price>64.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C14</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness &gt; Gym Storage &amp; Accessories</g:google_product_category>
       <g:product_type>Training Gear &gt; Gym Bags</g:product_type>
       <g:shipping>
@@ -370,8 +370,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Training Gear</g:custom_label_0>
       <g:custom_label_1>Gym Bags</g:custom_label_1>
@@ -387,7 +387,7 @@
       <g:price>36.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C15</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Food &amp; Beverage Carriers &gt; Water Bottles</g:google_product_category>
       <g:product_type>Training Gear &gt; Hydration</g:product_type>
       <g:shipping>
@@ -396,8 +396,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Training Gear</g:custom_label_0>
       <g:custom_label_1>Hydration</g:custom_label_1>
@@ -413,7 +413,7 @@
       <g:price>98.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E01</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
       <g:product_type>Recovery Hardware &gt; Percussion &amp; Compression</g:product_type>
       <g:shipping>
@@ -422,16 +422,16 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Recovery Hardware</g:custom_label_0>
       <g:custom_label_1>Percussion &amp; Compression</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E02</g:id>
-      <g:title><![CDATA[660nm & 850nm Red Light Therapy Belt Wrap — Near-Infrared Knee, Back & Joint Recovery Pad (InfraFlex)]]></g:title>
-      <g:description><![CDATA[Medical-grade triple-chip LEDs combining 660nm deep red and 850nm near-infrared wavelengths for targeted knee, back, and tendon recovery. Features: Dual-spectrum photobiomodulation: 660nm visible red light + 850nm deep-penetrating near-infrared | Flexible neoprene wrap contours around knees, lumbar spine, shoulders, or hamstrings | 5 adjustable intensity levels, pulse mode (10Hz/40Hz), and auto-shutoff 15–30 min timer | Can be powered via wall adapter or portable USB power bank while relaxing on the couch]]></g:description>
+      <g:title><![CDATA[Red Light Therapy Belt 660nm 850nm — Near-Infrared Knee, Back & Joint Recovery Wrap (InfraFlex)]]></g:title>
+      <g:description><![CDATA[Medical-grade Red Light Therapy Belt 660nm 850nm combining triple-chip deep red and near-infrared LEDs for targeted knee, lumbar back, shoulder, and tendon recovery. Features: Dual-spectrum photobiomodulation: 660nm visible red light + 850nm deep-penetrating near-infrared | Flexible neoprene wrap contours around knees, lumbar spine, shoulders, or hamstrings | 5 adjustable intensity levels, pulse mode (10Hz/40Hz), and auto-shutoff 15–30 min timer | Can be powered via wall adapter or portable USB power bank while relaxing on the couch]]></g:description>
       <g:link>https://apexhybridco.com/products/dual-wavelength-660nm-850nm-red-light-recovery-wrap.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e02-red-light-belt.jpg</g:image_link>
       <g:condition>new</g:condition>
@@ -439,33 +439,7 @@
       <g:price>119.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E02</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
-      <g:product_type>Recovery Hardware &gt; Cold Plunge &amp; Thermal</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Free Shipping</g:service>
-        <g:price>0.00 USD</g:price>
-        <g:min_handling_time>0</g:min_handling_time>
-        <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
-      </g:shipping>
-      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
-      <g:custom_label_1>Cold Plunge &amp; Thermal</g:custom_label_1>
-    </item>
-    <item>
-      <g:id>APC-E03</g:id>
-      <g:title><![CDATA[Portable Ice Bath Cold Plunge Tub with Insulated Lid — 105-Gallon 5-Layer Cold Water Recovery Pod (CryoPod)]]></g:title>
-      <g:description><![CDATA[Rip-stop 5-layer thermal insulated cold plunge tub for athletes up to 6'7", complete with all-weather thermal cover and quick-drain valve. Features: 5-layer thermal EPE pearl-foam and rip-stop PVC walls maintain cold water temperatures across days | Upright 105-gallon ergonomic footprint fits balconies, patios, or garage gym corners (fits athletes up to 6'7") | Assembles in under 5 minutes with 6 reinforced support struts and inflatable neck ring | Includes insulated all-weather cover, drain hose with shutoff valve, and carry bag]]></g:description>
-      <g:link>https://apexhybridco.com/products/insulated-portable-cold-plunge-ice-pod-pro.html</g:link>
-      <g:image_link>https://apexhybridco.com/images/products/apc-e03-cold-plunge-tub.jpg</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>149.00 USD</g:price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-E03</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Physical Therapy Equipment</g:google_product_category>
       <g:product_type>Recovery Hardware &gt; Cold Plunge &amp; Thermal</g:product_type>
       <g:shipping>
@@ -474,8 +448,34 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Cold Plunge &amp; Thermal</g:custom_label_1>
+    </item>
+    <item>
+      <g:id>APC-E03</g:id>
+      <g:title><![CDATA[Portable Ice Bath Tub Cold Plunge with Insulated Lid — 105-Gallon 5-Layer Cold Water Recovery Pod (CryoPod)]]></g:title>
+      <g:description><![CDATA[Rip-stop 5-layer thermal insulated Portable Ice Bath Tub Cold Plunge for athletes up to 6'7", complete with all-weather thermal cover and quick-drain valve. Features: 5-layer thermal EPE pearl-foam and rip-stop PVC walls maintain cold water temperatures across days | Upright 105-gallon ergonomic footprint fits balconies, patios, or garage gym corners (fits athletes up to 6'7") | Assembles in under 5 minutes with 6 reinforced support struts and inflatable neck ring | Includes insulated all-weather cover, drain hose with shutoff valve, and carry bag]]></g:description>
+      <g:link>https://apexhybridco.com/products/insulated-portable-cold-plunge-ice-pod-pro.html</g:link>
+      <g:image_link>https://apexhybridco.com/images/products/apc-e03-cold-plunge-tub.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>149.00 USD</g:price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-E03</g:mpn>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Physical Therapy Equipment</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Cold Plunge &amp; Thermal</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Recovery Hardware</g:custom_label_0>
       <g:custom_label_1>Cold Plunge &amp; Thermal</g:custom_label_1>
@@ -491,7 +491,7 @@
       <g:price>36.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E04</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Physical Therapy Equipment</g:google_product_category>
       <g:product_type>Recovery Hardware &gt; Cold Plunge &amp; Thermal</g:product_type>
       <g:shipping>
@@ -500,8 +500,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Recovery Hardware</g:custom_label_0>
       <g:custom_label_1>Cold Plunge &amp; Thermal</g:custom_label_1>
@@ -517,7 +517,7 @@
       <g:price>78.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E05</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
       <g:product_type>Recovery Hardware &gt; Mobility &amp; Durability</g:product_type>
       <g:shipping>
@@ -526,8 +526,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Recovery Hardware</g:custom_label_0>
       <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
@@ -543,7 +543,7 @@
       <g:price>34.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E06</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
       <g:product_type>Training Gear &gt; Mobility &amp; Durability</g:product_type>
       <g:shipping>
@@ -552,8 +552,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Training Gear</g:custom_label_0>
       <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
@@ -569,7 +569,7 @@
       <g:price>48.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E07</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness &gt; Gym Storage &amp; Accessories</g:google_product_category>
       <g:product_type>Training Gear &gt; Gym Bags</g:product_type>
       <g:shipping>
@@ -578,8 +578,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Training Gear</g:custom_label_0>
       <g:custom_label_1>Gym Bags</g:custom_label_1>
@@ -595,7 +595,7 @@
       <g:price>36.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E08</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
       <g:product_type>Training Gear &gt; Mobility &amp; Durability</g:product_type>
       <g:shipping>
@@ -604,8 +604,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Training Gear</g:custom_label_0>
       <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
@@ -621,7 +621,7 @@
       <g:price>42.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E09</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
       <g:product_type>Training Gear &gt; Mobility &amp; Durability</g:product_type>
       <g:shipping>
@@ -630,8 +630,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Training Gear</g:custom_label_0>
       <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
@@ -647,7 +647,7 @@
       <g:price>54.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E10</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
       <g:product_type>Recovery Hardware &gt; Mobility &amp; Durability</g:product_type>
       <g:shipping>
@@ -656,8 +656,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Recovery Hardware</g:custom_label_0>
       <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
@@ -673,7 +673,7 @@
       <g:price>44.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E11</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Food &amp; Beverage Carriers &gt; Water Bottles</g:google_product_category>
       <g:product_type>Training Gear &gt; Hydration</g:product_type>
       <g:shipping>
@@ -682,16 +682,16 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Training Gear</g:custom_label_0>
       <g:custom_label_1>Hydration</g:custom_label_1>
     </item>
     <item>
       <g:id>APC-E12</g:id>
-      <g:title><![CDATA[Sequential Air Compression Leg Recovery Boots — Full-Leg Pneumatic Circulation Massage Sleeves (AirRecover)]]></g:title>
-      <g:description><![CDATA[Full-leg sequential pneumatic air compression system (foot, calf, knee, thigh) with 3 massage modes, 3 intensity levels, and travel bag. Features: Sequential distal-to-proximal inflation flushes metabolic waste from feet, calves, and quads | 3 customizable recovery modes (Sequence, Circulation, Whole) and 3 pressure intensities | Handheld digital LCD controller with 20-minute auto-shutoff safety timer | Rip-stop wipe-clean nylon sleeves with heavy-duty zippers and storage carry bag]]></g:description>
+      <g:title><![CDATA[Leg Air Compression Recovery Boots — Full-Leg Sequential Pneumatic Circulation Massage Sleeves (AirRecover)]]></g:title>
+      <g:description><![CDATA[Full-leg sequential pneumatic Leg Air Compression Recovery Boots (foot, calf, knee, thigh) with 3 massage modes, 3 pressure intensity levels, and travel bag. Features: Sequential distal-to-proximal inflation flushes metabolic waste from feet, calves, and quads | 3 customizable recovery modes (Sequence, Circulation, Whole) and 3 pressure intensities | Handheld digital LCD controller with 20-minute auto-shutoff safety timer | Rip-stop wipe-clean nylon sleeves with heavy-duty zippers and storage carry bag]]></g:description>
       <g:link>https://apexhybridco.com/products/rechargeable-pneumatic-calf-shin-compression-sleeves.html</g:link>
       <g:image_link>https://apexhybridco.com/images/products/apc-e12-compression-boots.jpg</g:image_link>
       <g:condition>new</g:condition>
@@ -699,7 +699,7 @@
       <g:price>139.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E12</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
       <g:product_type>Recovery Hardware &gt; Percussion &amp; Compression</g:product_type>
       <g:shipping>
@@ -708,8 +708,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Recovery Hardware</g:custom_label_0>
       <g:custom_label_1>Percussion &amp; Compression</g:custom_label_1>
@@ -725,7 +725,7 @@
       <g:price>68.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E13</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
       <g:product_type>Training Gear &gt; Mobility &amp; Durability</g:product_type>
       <g:shipping>
@@ -734,8 +734,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Training Gear</g:custom_label_0>
       <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
@@ -751,7 +751,7 @@
       <g:price>68.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E14</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
       <g:product_type>Recovery Hardware &gt; Cold Plunge &amp; Thermal</g:product_type>
       <g:shipping>
@@ -760,8 +760,8 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Recovery Hardware</g:custom_label_0>
       <g:custom_label_1>Cold Plunge &amp; Thermal</g:custom_label_1>
@@ -777,7 +777,7 @@
       <g:price>149.00 USD</g:price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-E15</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Physical Therapy Equipment</g:google_product_category>
       <g:product_type>Recovery Hardware &gt; Cold Plunge &amp; Thermal</g:product_type>
       <g:shipping>
@@ -786,11 +786,323 @@
         <g:price>0.00 USD</g:price>
         <g:min_handling_time>0</g:min_handling_time>
         <g:max_handling_time>1</g:max_handling_time>
-        <g:min_transit_time>2</g:min_transit_time>
-        <g:max_transit_time>4</g:max_transit_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
       </g:shipping>
       <g:custom_label_0>Recovery Hardware</g:custom_label_0>
       <g:custom_label_1>Cold Plunge &amp; Thermal</g:custom_label_1>
+    </item>
+    <item>
+      <g:id>APC-E16</g:id>
+      <g:title><![CDATA[Weighted Training Vest 20lb — Adjustable Tactical Plate-Carrier Murph & Rucking Vest (TactFit)]]></g:title>
+      <g:description><![CDATA[Ergonomic 20-lb Weighted Training Vest 20lb built for Murph WODs, compromised running intervals, pull-ups, and Zone-2 rucking with zero shoulder bounce. Features: Balanced 20-lb weight distribution engineered for Murph workouts, hill sprints, and bodyweight calisthenics | Abrasion-resistant 1000D nylon & breathable neoprene padding with dual quick-release chest & waist buckles | Integrated front zippered phone/key storage pouch and high-visibility reflective night-running strips | Zero-chafe contoured shoulder yoke locks down load without restricting ribcage expansion]]></g:description>
+      <g:link>https://apexhybridco.com/products/tactfit-20lb-plate-carrier-weighted-training-vest.html</g:link>
+      <g:image_link>https://apexhybridco.com/images/products/apc-e16-weighted-vest.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>88.00 USD</g:price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-E16</g:mpn>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
+      <g:product_type>Training Gear &gt; Weighted Conditioning</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Weighted Conditioning</g:custom_label_1>
+    </item>
+    <item>
+      <g:id>APC-E17</g:id>
+      <g:title><![CDATA[Breathing Lung Trainer — Dual-Valve Inspiratory & Expiratory Respiratory Muscle Exerciser (AeroLung)]]></g:title>
+      <g:description><![CDATA[Medical-grade Breathing Lung Trainer with independent inspiratory and expiratory resistance valves to strengthen diaphragm stamina, VO2 max, and CO2 tolerance. Features: Trains both inhalation (diaphragm & external intercostals) and exhalation respiratory muscles in 5 minutes a day | Delays the metaboreflex during high-heart-rate Zone 4/5 station transitions so blood stays in working leg muscles | Medical-grade silicone mouthpiece with precision resistance chamber and stainless steel oscillation bearing | Pocket-sized, fully washable design ideal for morning warmups and pre-race respiratory priming]]></g:description>
+      <g:link>https://apexhybridco.com/products/aerolung-dual-valve-respiratory-breathing-lung-trainer.html</g:link>
+      <g:image_link>https://apexhybridco.com/images/products/apc-e17-lung-trainer.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>38.00 USD</g:price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-E17</g:mpn>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
+      <g:product_type>Training Gear &gt; Endurance &amp; VO2 Max</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Endurance &amp; VO2 Max</g:custom_label_1>
+    </item>
+    <item>
+      <g:id>APC-E18</g:id>
+      <g:title><![CDATA[Knee Ice Pack Wrap Cold Compression — 360° Gel Cold & Heat Knee/Ankle Recovery Sleeve (CryoSleeve)]]></g:title>
+      <g:description><![CDATA[360-degree medical-grade solid gel Knee Ice Pack Wrap Cold Compression and heat therapy sleeve for patellar tendonitis, runner's knee, and post-sled joint recovery. Features: Remains flexible down to -4°F (-20°C) for contour-hugging 360° cold compression around knees, elbows, calves, or ankles | Dual-therapy solid hydro-gel also microwaves in 45 seconds for pre-workout tendon heat activation | Twin elastic hook-and-loop compression straps lock the wrap in place while walking or elevating legs | Zero-leak frostbite-free plush neoprene lining eliminates messy melting ice bags]]></g:description>
+      <g:link>https://apexhybridco.com/products/cryosleeve-360-gel-knee-ice-pack-wrap-cold-compression.html</g:link>
+      <g:image_link>https://apexhybridco.com/images/products/apc-e18-cryo-knee-sleeve.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>42.00 USD</g:price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-E18</g:mpn>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Cold Plunge &amp; Thermal</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Cold Plunge &amp; Thermal</g:custom_label_1>
+    </item>
+    <item>
+      <g:id>APC-E19</g:id>
+      <g:title><![CDATA[Electric Cupping Therapy Set — Smart Dynamic Suction, 650nm Red Light & Heat Massager (ThermoCup)]]></g:title>
+      <g:description><![CDATA[Rechargeable 3-in-1 Electric Cupping Therapy Set combining rhythmic dynamic negative-pressure suction, 650nm red-light phototherapy, and 122°F thermal Gua Sha scraping. Features: 12 adjustable negative-pressure suction levels with rhythmic dynamic pulse mode to decompress tight fascia without bruising | Integrated 650nm red-light therapy ring and 100°F–122°F thermal heating accelerate local blood flow | One-touch instant pressure release valve prevents skin pinching when removing from lats, traps, calves, or IT bands | USB rechargeable 2,000mAh lithium battery delivers up to 8 full 20-minute recovery sessions per charge]]></g:description>
+      <g:link>https://apexhybridco.com/products/thermocup-smart-electric-cupping-therapy-red-light-massager.html</g:link>
+      <g:image_link>https://apexhybridco.com/images/products/apc-e19-electric-cupping.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>64.00 USD</g:price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-E19</g:mpn>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Percussion &amp; Compression</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Percussion &amp; Compression</g:custom_label_1>
+    </item>
+    <item>
+      <g:id>APC-E20</g:id>
+      <g:title><![CDATA[Magnetic Gym Phone Mount — Dual-Ring N52 Neodymium Squat Rack & Tripod Filming Stand (MagTripod)]]></g:title>
+      <g:description><![CDATA[CNC zinc-alloy dual-ring N52 neodymium Magnetic Gym Phone Mount and 360° articulating filming stand that snaps onto any steel squat rack, rig, or Concept2 erg. Features: Dual-sided N52 neodymium magnet array snaps directly to iPhone MagSafe cases on one side and steel gym uprights on the other | Dual 180° damped friction hinges + 360° rotation let you film low-angle squat depth, sled pushes, or interval timers | Folds flat to 0.24 inches on the back of your phone and doubles as a desktop kickstand | Includes 2 ultra-thin magnetic adapter rings for non-MagSafe Android and iPhone cases]]></g:description>
+      <g:link>https://apexhybridco.com/products/magtripod-neodymium-magnetic-gym-phone-mount-stand.html</g:link>
+      <g:image_link>https://apexhybridco.com/images/products/apc-e20-magnetic-phone-mount.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>34.00 USD</g:price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-E20</g:mpn>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
+      <g:product_type>Training Gear &gt; Gym Bags</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Gym Bags</g:custom_label_1>
+    </item>
+    <item>
+      <g:id>APC-E21</g:id>
+      <g:title><![CDATA[Chest Strap Heart Rate Monitor — ECG-Accurate ANT+ & Bluetooth 5.0 Zone-2 Running Sensor (PulseTrack)]]></g:title>
+      <g:description><![CDATA[ECG-accurate (±1 BPM) ANT+ and Bluetooth 5.0 Chest Strap Heart Rate Monitor for Zone-2 aerobic base building, HRV tracking, and Garmin, Strava, Whoop & Concept2 Erg sync. Features: Eliminates optical wrist-watch cadence lock during heavy kettlebell swings, rowing, SkiErg pulls, and cold-weather runs | Simultaneous dual-band Bluetooth 5.0 + ANT+ transmission pairs to your GPS watch, Concept2 PM5 monitor, and smartphone at once | IP67 sweatproof & waterproof detachable sensor pod with 300-hour replaceable CR2032 battery life | Soft anti-chafe adjustable woven electrode chest strap (fits 25" to 48" chest circumference)]]></g:description>
+      <g:link>https://apexhybridco.com/products/pulsetrack-ant-bluetooth-chest-strap-heart-rate-monitor.html</g:link>
+      <g:image_link>https://apexhybridco.com/images/products/apc-e21-heart-rate-monitor.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>58.00 USD</g:price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-E21</g:mpn>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
+      <g:product_type>Training Gear &gt; Endurance &amp; VO2 Max</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Endurance &amp; VO2 Max</g:custom_label_1>
+    </item>
+    <item>
+      <g:id>APC-E22</g:id>
+      <g:title><![CDATA[EMS Foot Massager Circulation Mat — Bio-Electric Plantar Fascia & Calf Recovery Pad (NeuroStep)]]></g:title>
+      <g:description><![CDATA[Foldable bio-electric EMS Foot Massager Circulation Mat with 8 pulse modes and 19 intensity levels to flush lower-leg venous pooling and relieve plantar fascia tightness. Features: Low-frequency Electrical Muscle Stimulation (EMS) activates intrinsic foot muscles and calf venous pump while you sit at your desk | 8 targeted recovery modes (Kneading, Acupressure, Cupping, Scraping, Pulse) with 19 digital intensity levels | Silver-ion conductive electrode footprint surface wipes clean in seconds and folds flat into a drawer or race bag | Detachable USB-rechargeable digital LCD controller with 15-minute auto-shutoff timer]]></g:description>
+      <g:link>https://apexhybridco.com/products/neurostep-ems-foot-massager-circulation-recovery-mat.html</g:link>
+      <g:image_link>https://apexhybridco.com/images/products/apc-e22-ems-foot-mat.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>48.00 USD</g:price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-E22</g:mpn>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Percussion &amp; Compression</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Percussion &amp; Compression</g:custom_label_1>
+    </item>
+    <item>
+      <g:id>APC-E23</g:id>
+      <g:title><![CDATA[Liquid Lifting Chalk (2-Pack) — Mess-Free Magnesium Carbonate Gym & Farmer-Carry Grip Chalk (ChalkLock)]]></g:title>
+      <g:description><![CDATA[Fast-drying, commercial-gym-approved Liquid Lifting Chalk (2x 50mL bottles with carabiner clips) for sweat-proof grip on heavy farmer carries, deadlifts, pull-ups, and sled rope pulls. Features: High-purity magnesium carbonate suspension dries in 10 seconds into a durable, sweat-resistant dry barrier | Zero airborne dust or floor mess—approved for commercial gyms that ban loose powder chalk blocks | Includes 2x 50mL (1.7 fl oz) travel-friendly squeeze bottles (~60 applications total) with black aluminum carabiners | Clips directly onto your 8-Station Race Duffle or belt loop for instant mid-workout re-application]]></g:description>
+      <g:link>https://apexhybridco.com/products/chalklock-2-pack-mess-free-liquid-lifting-gym-chalk.html</g:link>
+      <g:image_link>https://apexhybridco.com/images/products/apc-e23-liquid-chalk.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>26.00 USD</g:price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-E23</g:mpn>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Food &amp; Beverage Carriers &gt; Water Bottles</g:google_product_category>
+      <g:product_type>Training Gear &gt; Mobility &amp; Durability</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
+    </item>
+    <item>
+      <g:id>APC-E24</g:id>
+      <g:title><![CDATA[Red Light Therapy Panel 660nm 850nm — High-Irradiance Clinical Desktop Near-Infrared Recovery Light (LumiRed)]]></g:title>
+      <g:description><![CDATA[High-irradiance (>105 mW/cm²) clinical desktop Red Light Therapy Panel 660nm 850nm with 40 dual-chip medical LEDs and 360° adjustable stand for mitochondrial ATP recovery and sleep optimization. Features: 1:1 clinical ratio of 660nm deep red (skin & surface circulation) and 850nm near-infrared (deep muscle, joint & tendon photobiomodulation) | 60-degree optical lenses deliver >105 mW/cm² irradiance at 6 inches with zero flicker and low EMF output | Built-in digital touch timer (5–30 min) with independent Red, NIR, or Dual-Spectrum mode selection | Heavy-duty telescoping tabletop base tilts 360° for targeted knee, shoulder, back, or evening facial circadian recovery]]></g:description>
+      <g:link>https://apexhybridco.com/products/lumired-660nm-850nm-clinical-red-light-therapy-panel.html</g:link>
+      <g:image_link>https://apexhybridco.com/images/products/apc-e24-red-light-panel.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>129.00 USD</g:price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-E24</g:mpn>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Physical Therapy Equipment</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Cold Plunge &amp; Thermal</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Cold Plunge &amp; Thermal</g:custom_label_1>
+    </item>
+    <item>
+      <g:id>APC-E25</g:id>
+      <g:title><![CDATA[Collapsible Travel Foam Roller — Foldable Flat-Pack Deep Tissue Myofascial Mobility Roller (MorphRoll)]]></g:title>
+      <g:description><![CDATA[Patented flat-pack Collapsible Travel Foam Roller that folds down to 2 inches thick to slide into any laptop sleeve or race backpack, then locks into a 350-lb-rated 5.5" cylinder in 2 seconds. Features: Collapses completely flat (14.5" × 11.5" × 2") to fit inside carry-on luggage, backpacks, or gym lockers | Instant pull-ring locking plates expand into a rock-solid 5.5-inch diameter cylinder supporting up to 350 lbs | High-density EVA trigger-point nubs and longitudinal channels flush tight quads, calves, glutes, and thoracic spine | Ultralight 1.6-lb bamboo-and-alloy internal slat construction built for destination races and marathon travel]]></g:description>
+      <g:link>https://apexhybridco.com/products/morphroll-collapsible-foldable-travel-foam-roller.html</g:link>
+      <g:image_link>https://apexhybridco.com/images/products/apc-e25-collapsible-roller.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>46.00 USD</g:price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-E25</g:mpn>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Recovery Hardware &gt; Mobility &amp; Durability</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Recovery Hardware</g:custom_label_0>
+      <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
+    </item>
+    <item>
+      <g:id>APC-E26</g:id>
+      <g:title><![CDATA[Ventilated Running & Carbon-Plate Race Shoe Travel Bag — Crush-Resistant Athletic Shoe Case (SoleVault)]]></g:title>
+      <g:description><![CDATA[Semi-rigid water-resistant travel shoe case engineered to protect $250+ carbon-plated racing shoes up to Men's US 14, with dual mesh airflow vents and wet-sock pocket. Features: Structured ballistic nylon shell prevents PeBA super-foam midsoles and carbon plates from getting crushed in transit | Dual-sided breathable mesh ventilation panels air out post-race moisture and eliminate shoe odor | Wide U-zip main chamber fits racing flats, trail shoes, or weightlifting shoes up to Men's size 14 | Reinforced top grab handle clips onto rolling luggage or duffle bags for race-weekend travel]]></g:description>
+      <g:link>https://apexhybridco.com/products/solevault-ventilated-carbon-race-shoe-compartment-case.html</g:link>
+      <g:image_link>https://apexhybridco.com/images/products/apc-e26-shoe-case.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>52.00 USD</g:price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-E26</g:mpn>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
+      <g:product_type>Training Gear &gt; Gym Bags</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Gym Bags</g:custom_label_1>
+    </item>
+    <item>
+      <g:id>APC-E27</g:id>
+      <g:title><![CDATA[Pull-Up & Farmer-Carry Grip Strengthener Handles — Hanging Forearm & Dead-Hang Trainers (DeadHang)]]></g:title>
+      <g:description><![CDATA[Heavy-duty 2-inch diameter cylindrical pull-up and farmer-carry grip strengthener handles with 600-lb nylon webbing straps and steel carabiners for bulletproof forearm endurance. Features: Thick 2-inch (50mm) cylindrical grip diameter recruits 40% more flexor digitorum and forearm stabilizer fibers than standard bars | Loops over any pull-up rig, kettlebell handle, dumbbell, or cable machine in seconds via 600-lb webbing and steel carabiners | Natural ergonomic neutral-grip alignment eliminates wrist and elbow torque during heavy pull-ups, dead hangs, and farmer walks | Complete pair: includes 2 cylindrical grip handles, 2 heavy-duty nylon anchor straps, and 2 black steel carabiners]]></g:description>
+      <g:link>https://apexhybridco.com/products/deadhang-solid-beechwood-pull-up-farmer-carry-grip-handles.html</g:link>
+      <g:image_link>https://apexhybridco.com/images/products/apc-e27-grip-handles.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>39.00 USD</g:price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-E27</g:mpn>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
+      <g:product_type>Training Gear &gt; Mobility &amp; Durability</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Free Shipping</g:service>
+        <g:price>0.00 USD</g:price>
+        <g:min_handling_time>0</g:min_handling_time>
+        <g:max_handling_time>1</g:max_handling_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>5</g:max_transit_time>
+      </g:shipping>
+      <g:custom_label_0>Training Gear</g:custom_label_0>
+      <g:custom_label_1>Mobility &amp; Durability</g:custom_label_1>
     </item>
   </channel>
 </rss>
