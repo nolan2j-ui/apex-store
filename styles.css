@@ -221,7 +221,7 @@ h1, h2, h3, p { margin: 0; }
   grid-template-columns: minmax(320px, 0.78fr) 1.22fr;
   gap: 0;
   align-items: stretch;
-  min-height: calc(100vh - var(--nav-h));
+  min-height: min(780px, calc(100vh - var(--nav-h)));
   width: min(1560px, 100%);
   margin: 0 auto;
 }
