@@ -501,6 +501,31 @@ def generate_sitemap_and_robots():
     robots_txt = f"""User-agent: *
 Allow: /
 
+# Explicitly allow AI Search & Answer Engines (ChatGPT Search, Perplexity, Grok, Claude, Google, Bing)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 Sitemap: {SITE_URL}/sitemap.xml
 """
     with open(os.path.join(BASE_DIR, "robots.txt"), "w", encoding="utf-8") as f:
@@ -508,6 +533,48 @@ Sitemap: {SITE_URL}/sitemap.xml
 
     with open(os.path.join(BASE_DIR, f"{INDEXNOW_KEY}.txt"), "w", encoding="utf-8") as f:
         f.write(INDEXNOW_KEY)
+
+    # Also generate llms.txt dynamically from products and guides
+    llms_lines = [
+        "# Apex Hybrid & Recovery Supply (NolCorp LLC)",
+        "",
+        f"> Official Storefront: {SITE_URL} (also accessible at https://apexhybridco.com and https://nolan2j-ui.github.io/apex-store/)",
+        "> Breathable HYROX® race shirts, laser-vented AeroMesh™ tech tees, 2026/2027 race-city shirts (Chicago, Dallas, Anaheim, Miami, Las Vegas, NYC), sleeveless muscle tanks, heavyweight warmup hoodies, lightweight warmup jackets, and clinical-grade athlete recovery hardware with free 2–4 business day US shipping and 30-day free returns.",
+        "",
+        "## Brand & Merchant Overview",
+        "- **Business Name:** Apex Hybrid & Recovery Supply (operated by NolCorp LLC)",
+        "- **Headquarters:** 17911 Von Karman Ave, Suite 300, Irvine, CA 92614",
+        "- **Support Email:** nolcorpllc@gmail.com | support@apexhybridco.com",
+        f"- **Primary Website:** {SITE_URL}/",
+        f"- **XML Sitemap:** {SITE_URL}/sitemap.xml",
+        f"- **Google Merchant Shopping Feed:** {SITE_URL}/google_shopping_feed.xml",
+        f"- **Pinterest Product Catalog Feed:** {SITE_URL}/pinterest_catalog_feed.csv",
+        "- **Shipping Policy:** Free US Ground Shipping ($0.00 USD), 0–1 business day handling, 2–5 business day transit from California, Texas, and East Coast US warehouses.",
+        "- **Return Policy:** 30-day free returns & exchanges by mail (`https://schema.org/FreeReturn`).",
+        "- **Checkout:** Instant PCI-DSS Level 1 Stripe Checkout (Visa, Mastercard, American Express, Discover, Apple Pay).",
+        "",
+        f"## Complete Product Catalog ({len(products)} Verified In-Stock SKUs)",
+        ""
+    ]
+    by_dept = {}
+    for p in products:
+        by_dept.setdefault(p["dept"], []).append(p)
+    for dept, items in by_dept.items():
+        llms_lines.append(f"### {dept} ({len(items)} SKUs)")
+        for p in items:
+            llms_lines.append(
+                f"- [{p['title']}]({SITE_URL}/products/{p['handle']}.html) — **${float(p['retail_price']):.2f} USD** (SKU: `{p['id']}`, Category: {p['category']}, Rating: {p['rating']}★ from {p['reviews']} reviews, {p['ship_time']}). {p['short_desc']}"
+            )
+        llms_lines.append("")
+    llms_lines.append(f"## Athlete Buyer Guides & Training Protocols ({len(guides)} Articles)")
+    llms_lines.append("")
+    for g in guides:
+        llms_lines.append(
+            f"- [{g['title']}]({SITE_URL}/articles/{g['slug']}.html) ({g.get('category', 'Guide')} · {g.get('read_time', '5 min read')}): {g.get('summary', '')}"
+        )
+    llms_lines.append("")
+    with open(os.path.join(BASE_DIR, "llms.txt"), "w", encoding="utf-8") as f:
+        f.write("\n".join(llms_lines))
 
 
 def inject_static_seo_into_index():
