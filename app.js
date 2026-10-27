@@ -876,20 +876,46 @@
     updateCartUI();
 
     try {
-      const res = await fetch('catalog.json?v=20261026v3', { cache: 'no-store' });
+      const res = await fetch('catalog.json?v=20261027v1', { cache: 'no-store' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       state.catalog = data;
       state.products = Array.isArray(data.products) ? data.products : [];
       state.byId = new Map(state.products.map(p => [p.id, p]));
 
+      const params = new URLSearchParams(window.location.search);
+      const deptParam = (params.get('dept') || '').toLowerCase();
+      if (deptParam) {
+        if (deptParam.includes('city') || deptParam.includes('race')) {
+          state.activePill = 'cities';
+        } else if (deptParam.includes('hoodie') || deptParam.includes('tank')) {
+          state.activePill = 'hoodies-tanks';
+        } else if (deptParam.includes('tee') || deptParam.includes('pump')) {
+          state.activePill = 'tees';
+        } else {
+          state.activePill = 'apparel';
+        }
+      }
+
       renderPills('apparelPills', state.activePill);
       renderApparelGrid();
 
-      const params = new URLSearchParams(window.location.search);
+      if (deptParam) {
+        const sec = document.getElementById('apparel');
+        if (sec) sec.scrollIntoView({ behavior: 'smooth' });
+      }
+
       const urlPromo = params.get('promo') || params.get('discount') || params.get('code');
       if (urlPromo) {
         applyPromoCode(urlPromo);
+      }
+      const addSku = params.get('add');
+      if (addSku && state.byId.has(addSku.toUpperCase())) {
+        const sku = addSku.toUpperCase();
+        const prod = state.byId.get(sku);
+        const defaultSize = prod && prod.has_sizes === false ? 'One Size' : 'L';
+        addToCart(sku, defaultSize, 1, 'Black');
+        openCartDrawer();
       }
       const buySku = params.get('buy') || params.get('sku');
       if (buySku && state.byId.has(buySku.toUpperCase())) {
