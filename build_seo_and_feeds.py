@@ -49,7 +49,7 @@ def generate_product_pages():
     for prod in products:
         handle = prod["handle"]
         title = prod["title"]
-        seo_title = prod.get("seo_title", f"{title} — HYROX® & Hybrid Race Gear")
+        seo_title = prod.get("seo_title", f"{title}  -  HYROX & Hybrid Race Gear")
         price = f"{prod['retail_price']:.2f}"
         list_price = f"{(prod.get('list_price') or prod['retail_price']):.2f}"
         img_url = f"{SITE_URL}/{prod['image']}"
@@ -159,7 +159,7 @@ def generate_product_pages():
             fulfillment_line = f'<div style="font-size:12.5px; color:#0f172a; font-weight:700; margin-top:6px; background:#f1f5f9; padding:8px 10px; border-radius:6px; border-left:3px solid #2563eb;">✓ Ships in 2–4 business days from our US hubs · Free 30-day size exchanges · <a href="{html.escape(fw_url)}" style="color:#2563eb;text-decoration:underline;">Instant 1-Click Checkout →</a></div>'
             buy_href = fw_url
             top_buy_label = f"Instant Checkout (${price})"
-            main_buy_label = "Buy Now — Instant Checkout"
+            main_buy_label = "Buy Now  -  Instant Checkout"
         else:
             fulfillment_line = f'<div style="font-size:12.5px; color:#0f172a; font-weight:700; margin-top:6px; background:#f0fdf4; padding:8px 10px; border-radius:6px; border-left:3px solid #16a34a;">✓ Ships free from our US warehouses (CA/TX/NJ) in 2–4 business days · 1-year hardware warranty</div>'
             buy_href = f"../index.html?buy={prod['id']}"
@@ -192,7 +192,7 @@ def generate_product_pages():
   <meta name="twitter:title" content="{html.escape(seo_title)}" />
   <meta name="twitter:description" content="{html.escape(short_desc)}" />
   <meta name="twitter:image" content="{img_url}" />
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../styles.css?v=20261026v3" />
   <script type="application/ld+json">
 {json.dumps(json_ld, indent=2)}
   </script>
@@ -225,11 +225,11 @@ def generate_product_pages():
         <img id="staticMainProdImg" src="../{prod['image']}" alt="{html.escape(seo_title)}" style="width:100%; border-radius:10px; object-fit:contain; max-height:480px; background:#0b0f17;" />
         {f'''<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
           <button type="button" onclick="document.getElementById('staticMainProdImg').src='../{prod['image']}'" style="cursor:pointer; border:2px solid #ff4d1c; border-radius:8px; padding:6px; background:#0f172a; color:#fff; display:flex; align-items:center; gap:8px; font-weight:700; font-size:12.5px;">
-            <img src="../{prod['image']}" alt="{html.escape(title)} — Primary View" style="width:48px; height:48px; object-fit:cover; border-radius:4px;" />
+            <img src="../{prod['image']}" alt="{html.escape(title)}  -  Primary View" style="width:48px; height:48px; object-fit:cover; border-radius:4px;" />
             <span>1. Black Edition (Front Crest)</span>
           </button>
           <button type="button" onclick="document.getElementById('staticMainProdImg').src='../{prod['alt_image']}'" style="cursor:pointer; border:2px solid #cbd5e1; border-radius:8px; padding:6px; background:#f8fafc; color:#0f172a; display:flex; align-items:center; gap:8px; font-weight:700; font-size:12.5px;">
-            <img src="../{prod['alt_image']}" alt="{html.escape(title)} — Bone Edition View" style="width:48px; height:48px; object-fit:cover; border-radius:4px;" />
+            <img src="../{prod['alt_image']}" alt="{html.escape(title)}  -  Bone Edition View" style="width:48px; height:48px; object-fit:cover; border-radius:4px;" />
             <span>2. Bone / White Edition</span>
           </button>
         </div>''' if prod.get("alt_image") else ""}
@@ -259,12 +259,16 @@ def generate_product_pages():
         <ul class="HighlightsList">
           {highlights_html}
         </ul>
+        <div style="margin:14px 0; padding:14px 16px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; font-size:13.5px; color:#1e293b; line-height:1.55;">
+          <div style="font-weight:800; color:#0f172a; text-transform:uppercase; letter-spacing:0.04em; font-size:12px; margin-bottom:6px;">✓ Fit, Fabric &amp; Race-Day Guarantee</div>
+          <div>{"Engineered with a featherlight 3.8 oz / 4.0 oz ASICS-style moisture-wicking race-day knit that breathes through high-output 1km splits, sheds sweat in the Roxzone, and sits smooth under a sled harness when running on heavy legs." if str(prod.get("id", "")) in {"APC-C36","APC-C37","APC-C38","APC-C39","APC-C40","APC-C41"} else "Cut on a structured 6.1 oz garment-dyed 100% ring-spun cotton athletic silhouette (or 8.5 oz warmup fleece) built for pre-race corral nerves, paying the sled push tax, surviving wall ball no-reps, and training for race week or Cancun. Soft-hand cured ink never cracks or peels, with pre-shrunk double-needle seams and free 30-day size exchanges."}</div>
+        </div>
         <div class="ReviewSnippetBox">
-          <strong>★★★★★ Verified HYROX® &amp; Hybrid Athlete Review:</strong><br/>
+          <strong>★★★★★ Verified HYROX &amp; Hybrid Athlete Review:</strong><br/>
           “{html.escape(prod.get('review_quote', ''))}”
         </div>
         <div style="display:flex; gap:10px; margin-top:16px; flex-wrap:wrap;">
-          <a href="../index.html?add={prod['id']}" class="Btn Btn--Cart" style="padding:13px 22px; font-size:14px; text-align:center;">Add to Bag — ${price}</a>
+          <a href="../index.html?add={prod['id']}" class="Btn Btn--Cart" style="padding:13px 22px; font-size:14px; text-align:center;">Add to Bag  -  ${price}</a>
           <a href="{buy_href}" class="Btn Btn--BuyNow" style="padding:13px 22px; font-size:14px; text-align:center;">{main_buy_label}</a>
         </div>
         <div style="margin-top:16px;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:#f8fafc;border:1.5px solid #ff4d1c;border-radius:10px;padding:14px 16px;">
@@ -283,17 +287,17 @@ def generate_product_pages():
     </div>
 
     <section style="margin-top:42px;">
-      <h2 style="font-size:20px; margin-bottom:16px;">Frequently Paired {html.escape(dept)} &amp; HYROX® Prep Gear</h2>
+      <h2 style="font-size:20px; margin-bottom:16px;">Frequently Paired {html.escape(dept)} &amp; HYROX Prep Gear</h2>
       <div class="ProductGrid">
         {related_html}
       </div>
     </section>
 
     <section style="margin-top:36px; background:#fff; border:1px solid #e4e6eb; border-radius:12px; padding:24px;">
-      <h2 style="font-size:18px; margin-bottom:12px;">Related HYROX® Training, Pacing &amp; Recovery Buyer Guides</h2>
+      <h2 style="font-size:18px; margin-bottom:12px;">Related HYROX Training, Pacing &amp; Recovery Buyer Guides</h2>
       <ul style="padding-left:20px; line-height:1.9; font-size:14px;">
         {chr(10).join(
-            f'<li><a href="../articles/{g["slug"]}.html" style="color:#ff4d1c; font-weight:700;">{html.escape(g["title"])}</a> — <span style="color:#475569;">{html.escape(g["category"])} ({html.escape(g["read_time"])})</span></li>'
+            f'<li><a href="../articles/{g["slug"]}.html" style="color:#ff4d1c; font-weight:700;">{html.escape(g["title"])}</a>  -  <span style="color:#475569;">{html.escape(g["category"])} ({html.escape(g["read_time"])})</span></li>'
             for g in (
                 [x for x in guides if prod["id"] in x.get("recommended_skus", [])]
                 + [x for x in guides if prod["id"] not in x.get("recommended_skus", [])]
@@ -306,7 +310,7 @@ def generate_product_pages():
   <footer class="SiteFooter">
     <div class="Container">
       <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#ff6a3d;">apexhybridco@gmail.com</a> · Athlete Support: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
-      <p style="font-size:11.5px; color:#94a3b8; margin-top:8px;">Apex Hybrid &amp; Recovery Supply is an independent athletic &amp; recovery brand engineered for athletes competing in HYROX®, DEKA®, CrossFit®, and functional fitness events. Not affiliated with or endorsed by HYROX World GmbH.</p>
+      <p style="font-size:11.5px; color:#94a3b8; margin-top:8px;">Apex Hybrid &amp; Recovery Supply is an independent athletic &amp; recovery brand engineered for athletes competing in HYROX, DEKA, CrossFit, and functional fitness events. Not affiliated with or endorsed by HYROX World GmbH.</p>
     </div>
   <!-- Sticky HYROX10 + Free Printable Split Wristband + Gym Directory Conversion Bar -->
   <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:9990;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #ff4d1c;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
@@ -367,7 +371,7 @@ def generate_article_pages():
         faqs = art.get("faqs", [
             (
                 f"What is the top-rated gear for {cat}?",
-                f"Our highest-rated choices are {hero_prod['title']} (${hero_prod['retail_price']:.2f}, SKU {hero_prod['id']}) alongside our AeroMesh™ Laser-Vented Tech Shirt (APC-C36, $36) and Apex AeroShell™ Lightweight Warmup Jacket (APC-C42, $64)—all shipping free in 2–4 business days."
+                f"Our highest-rated choices are {hero_prod['title']} (${hero_prod['retail_price']:.2f}, SKU {hero_prod['id']}) alongside our AeroMesh Laser-Vented Tech Shirt (APC-C36, $36) and Apex AeroShell Lightweight Warmup Jacket (APC-C42, $64) - all shipping free in 2–4 business days."
             ),
             (
                 "How do I get 15% off Doubles or multi-item race orders?",
@@ -406,7 +410,7 @@ def generate_article_pages():
                 },
                 {
                     "@type": "ItemList",
-                    "name": f"Recommended Gear — {title}",
+                    "name": f"Recommended Gear  -  {title}",
                     "itemListElement": [
                         {
                             "@type": "ListItem",
@@ -444,7 +448,7 @@ def generate_article_pages():
               </div>
             </div>
             <div style="display:flex;gap:6px;flex-shrink:0;align-items:center;">
-              <a href="{p.get('fourthwall_product_url') or ('../index.html?buy=' + p['id'])}" class="Btn Btn--BuyNow" style="width:auto;padding:8px 14px;font-size:12.5px;font-weight:800;background:#ff4d1c;color:#fff;border-radius:6px;text-decoration:none;">Buy Now — ${p['retail_price']:.2f} (Free US Shipping)</a>
+              <a href="{p.get('fourthwall_product_url') or ('../index.html?buy=' + p['id'])}" class="Btn Btn--BuyNow" style="width:auto;padding:8px 14px;font-size:12.5px;font-weight:800;background:#ff4d1c;color:#fff;border-radius:6px;text-decoration:none;">Buy Now  -  ${p['retail_price']:.2f} (Free US Shipping)</a>
               <a href="../index.html?add={p['id']}" class="Btn Btn--Cart" style="width:auto;padding:8px 10px;font-size:12px;font-weight:700;background:#334155;color:#fff;border-radius:6px;text-decoration:none;">+ Add to Bag</a>
             </div>
           </div>"""
@@ -471,7 +475,7 @@ def generate_article_pages():
                 </div>
               </div>
               <div style="padding:0 14px 14px;display:flex;flex-direction:column;gap:6px;">
-                <a href="{p.get('fourthwall_product_url') or ('../index.html?buy=' + p['id'])}" class="Btn Btn--BuyNow" style="text-align:center;padding:10px 12px;font-weight:800;font-size:13px;background:#ff4d1c;color:#fff;border-radius:7px;text-decoration:none;">Buy Now — ${p['retail_price']:.2f} (Free Shipping)</a>
+                <a href="{p.get('fourthwall_product_url') or ('../index.html?buy=' + p['id'])}" class="Btn Btn--BuyNow" style="text-align:center;padding:10px 12px;font-weight:800;font-size:13px;background:#ff4d1c;color:#fff;border-radius:7px;text-decoration:none;">Buy Now  -  ${p['retail_price']:.2f} (Free Shipping)</a>
                 <div style="display:flex;gap:6px;">
                   <a href="../index.html?add={p['id']}" class="Btn Btn--Cart" style="flex:1;text-align:center;padding:8px;font-size:12.5px;background:#0f172a;color:#fff;border-radius:6px;text-decoration:none;">+ Add to Bag</a>
                   <a href="../products/{p['handle']}.html" class="Btn Btn--QuickView" style="padding:8px 10px;font-size:12.5px;border:1px solid #cbd5e1;border-radius:6px;text-decoration:none;color:#0f172a;font-weight:700;">Specs</a>
@@ -506,7 +510,7 @@ def generate_article_pages():
   <meta name="twitter:title" content="{html.escape(title)}" />
   <meta name="twitter:description" content="{html.escape(summary)}" />
   <meta name="twitter:image" content="{hero_img}" />
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../styles.css?v=20261026v3" />
   <script type="application/ld+json">
 {json.dumps(json_ld, indent=2)}
   </script>
@@ -539,7 +543,7 @@ def generate_article_pages():
       <!-- Top Quick-Buy Express Checkout Strip -->
       <section aria-label="Express 1-Click Checkout" style="background:#0f172a;color:#fff;padding:16px 18px;border-radius:10px;margin-bottom:26px;">
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
-          <span style="font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:0.08em;color:#ff6a3d;">⚡ Featured Gear In This Guide — Instant 1-Click Checkout</span>
+          <span style="font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:0.08em;color:#ff6a3d;">⚡ Featured Gear In This Guide  -  Instant 1-Click Checkout</span>
           <span style="font-size:12px;color:#cbd5e1;">Bundle 2+ Items: Use Code <strong style="color:#fff;">TEAM15</strong> for 15% Off + Free US Shipping</span>
         </div>
         <div style="display:grid;gap:8px;">
@@ -564,7 +568,7 @@ def generate_article_pages():
       </div>
 
       <section style="margin-top:32px; padding-top:24px; border-top:1px solid #e4e6eb;">
-        <h2 style="font-size:20px; margin-bottom:6px;">Shop Featured HYROX® Race Apparel &amp; Recovery Hardware (1-Click Checkout)</h2>
+        <h2 style="font-size:20px; margin-bottom:6px;">Shop Featured HYROX Race Apparel &amp; Recovery Hardware (1-Click Checkout)</h2>
         <p style="font-size:13.5px; color:#475569; margin-bottom:16px;">Every order ships Free in 2–4 Business Days from our US warehouses (CA, TX, East Coast) with 30-Day Free Returns &amp; Exchanges.</p>
         <div class="ProductGrid">
           {rec_html}
@@ -652,10 +656,10 @@ def generate_article_pages():
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HYROX® Training, Pacing, Race-City &amp; Recovery Buyer Guides ({len(guides)} Guides) | Apex Hybrid Co.</title>
-  <meta name="description" content="Explore all {len(guides)} data-backed HYROX® &amp; hybrid athlete training protocols, start-corral warmup guides, 1km pacing strategies, 2026/2027 race-city guides, and recovery blueprints." />
+  <title>HYROX Training, Pacing, Race-City &amp; Recovery Buyer Guides ({len(guides)} Guides) | Apex Hybrid Co.</title>
+  <meta name="description" content="Explore all {len(guides)} data-backed HYROX &amp; hybrid athlete training protocols, start-corral warmup guides, 1km pacing strategies, 2026/2027 race-city guides, and recovery blueprints." />
   <link rel="canonical" href="{SITE_URL}/articles/index.html" />
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../styles.css?v=20261026v3" />
 </head>
 <body>
   <header class="TopHeader">
@@ -673,7 +677,7 @@ def generate_article_pages():
     </div>
   </header>
   <main class="Container" style="padding:32px 20px 64px;">
-    <h1 style="font-size:28px; margin-bottom:8px;">HYROX® &amp; Hybrid Athlete Training, Pacing &amp; Recovery Hub ({len(guides)} Guides)</h1>
+    <h1 style="font-size:28px; margin-bottom:8px;">HYROX &amp; Hybrid Athlete Training, Pacing &amp; Recovery Hub ({len(guides)} Guides)</h1>
     <p style="font-size:15px; color:#475569; margin-bottom:24px;">Station-by-station pacing calculators, start-corral warmup protocols, 2026/2027 race-city gear checklists, and 48-hour post-race recovery blueprints.</p>
     <div class="GuidesGrid">
 {hub_cards}
@@ -753,9 +757,9 @@ def generate_google_shopping_feed():
     rss_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
   <channel>
-    <title>Apex Hybrid &amp; Recovery Supply — HYROX Shirts, Breathable Race Apparel &amp; Recovery Feed</title>
+    <title>Apex Hybrid &amp; Recovery Supply  -  HYROX Shirts, Breathable Race Apparel &amp; Recovery Feed</title>
     <link>{SITE_URL}</link>
-    <description>Official Google Merchant Center product feed for Apex Hybrid &amp; Recovery Supply (www.apexhybridco.com) — HYROX shirts, breathable tech tees, 2026/2027 race-city shirts, and recovery hardware.</description>
+    <description>Official Google Merchant Center product feed for Apex Hybrid &amp; Recovery Supply (www.apexhybridco.com)  -  HYROX shirts, breathable tech tees, 2026/2027 race-city shirts, and recovery hardware.</description>
 {chr(10).join(items_xml)}
   </channel>
 </rss>
@@ -792,7 +796,7 @@ def generate_editorial_rss_feeds():
         for prod in products:
             prod_url = f"{SITE_URL}/products/{prod['handle']}.html"
             fw_url = prod.get("fourthwall_product_url") or prod.get("checkout_url") or f"{SITE_URL}/?buy={prod['id']}"
-            desc = f"{prod['short_desc']} — Price: ${prod['retail_price']:.2f} USD ({prod['ship_time']}). Direct Checkout: {fw_url}"
+            desc = f"{prod['short_desc']}  -  Price: ${prod['retail_price']:.2f} USD ({prod['ship_time']}). Direct Checkout: {fw_url}"
             items_xml.append(
                 f"""    <item>
       <title>{html.escape(prod.get('seo_title', prod['title']))} (${prod['retail_price']:.2f})</title>
@@ -807,9 +811,9 @@ def generate_editorial_rss_feeds():
         feed_doc = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Apex Hybrid Co. — HYROX® Race Streetwear, Breathable Tech Shirts, Buyer Guides &amp; Recovery Hardware</title>
+    <title>Apex Hybrid Co.  -  HYROX Race Streetwear, Breathable Tech Shirts, Buyer Guides &amp; Recovery Hardware</title>
     <link>{SITE_URL}/</link>
-    <description>Official RSS 2.0 &amp; WebSub feed for Apex Hybrid Co. ({SITE_URL}) — {len(guides)} data-backed HYROX® &amp; hybrid racing buyer guides, 2026/2027 race-city apparel (Chicago, Dallas, Anaheim, Las Vegas, Miami, NYC), and 72 performance &amp; recovery products.</description>
+    <description>Official RSS 2.0 &amp; WebSub feed for Apex Hybrid Co. ({SITE_URL})  -  {len(guides)} data-backed HYROX &amp; hybrid racing buyer guides, 2026/2027 race-city apparel (Chicago, Dallas, Anaheim, Las Vegas, Miami, NYC), and 72 performance &amp; recovery products.</description>
     <language>en-us</language>
     <lastBuildDate>{pub_rfc822}</lastBuildDate>
     <managingEditor>apexhybridco@gmail.com (Apex Hybrid Co.)</managingEditor>
@@ -942,7 +946,7 @@ Sitemap: {SITE_URL}/sitemap.xml
         "# Apex Hybrid & Recovery Supply (Apex Hybrid Co.)",
         "",
         f"> Official Storefront: {SITE_URL} (also accessible at https://apexhybridco.com and https://nolan2j-ui.github.io/apex-store/)",
-        "> Breathable HYROX® race shirts, laser-vented AeroMesh™ tech tees, 2026/2027 race-city shirts (Chicago, Dallas, Anaheim, Miami, Las Vegas, NYC), sleeveless muscle tanks, heavyweight warmup hoodies, lightweight warmup jackets, and clinical-grade athlete recovery hardware with free 2–4 business day US shipping and 30-day free returns.",
+        "> Breathable HYROX race shirts, laser-vented AeroMesh tech tees, 2026/2027 race-city shirts (Chicago, Dallas, Anaheim, Miami, Las Vegas, NYC), sleeveless muscle tanks, heavyweight warmup hoodies, lightweight warmup jackets, and clinical-grade athlete recovery hardware with free 2–4 business day US shipping and 30-day free returns.",
         "",
         "## Brand & Merchant Overview",
         "- **Business Name:** Apex Hybrid & Recovery Supply (Apex Hybrid Co.)",
@@ -962,7 +966,7 @@ Sitemap: {SITE_URL}/sitemap.xml
         "- **Checkout:** Instant PCI-DSS Level 1 Stripe Checkout (Visa, Mastercard, American Express, Discover, Apple Pay).",
         "",
         "## Doubles 2-Packs, Team Bulk Kits & $0-Upfront Boutique HYROX Coach Partner Program",
-        f"- [HYROX Doubles 2-Packs, Boutique Gym Bulk Kits & Coach Partner Portal]({SITE_URL}/team_orders.html): Mix-and-match Doubles 2-Packs (2x AeroMesh™ Breathable Tech Tees $62, 2x Race City Tees $58, 2x AeroShell™ Warmup Jackets $108, 2x Heavyweight Fleece Hoodies $96, Full Doubles Race-Day Kit $178), 5-Pack Relay Kits ($145), 10-Pack Boutique Gym Drops ($268), 3-Piece Gym Recovery Lab ($319), plus our $0-upfront Boutique HYROX Gym & Independent Coach Partner Program (complimentary coach sample piece + custom 10%-off athlete code + $25 bonus per 5 shirts sold + 15% commission on recovery hardware). Contact: apexhybridco@gmail.com.",
+        f"- [HYROX Doubles 2-Packs, Boutique Gym Bulk Kits & Coach Partner Portal]({SITE_URL}/team_orders.html): Mix-and-match Doubles 2-Packs (2x AeroMesh Breathable Tech Tees $62, 2x Race City Tees $58, 2x AeroShell Warmup Jackets $108, 2x Heavyweight Fleece Hoodies $96, Full Doubles Race-Day Kit $178), 5-Pack Relay Kits ($145), 10-Pack Boutique Gym Drops ($268), 3-Piece Gym Recovery Lab ($319), plus our $0-upfront Boutique HYROX Gym & Independent Coach Partner Program (complimentary coach sample piece + custom 10%-off athlete code + $25 bonus per 5 shirts sold + 15% commission on recovery hardware). Contact: apexhybridco@gmail.com.",
         "",
         f"## Complete Product Catalog ({len(products)} Verified In-Stock SKUs)",
         ""
@@ -974,7 +978,7 @@ Sitemap: {SITE_URL}/sitemap.xml
         llms_lines.append(f"### {dept} ({len(items)} SKUs)")
         for p in items:
             llms_lines.append(
-                f"- [{p['title']}]({SITE_URL}/products/{p['handle']}.html) — **${float(p['retail_price']):.2f} USD** (SKU: `{p['id']}`, Category: {p['category']}, Rating: {p['rating']}★ from {p['reviews']} reviews, {p['ship_time']}). {p['short_desc']}"
+                f"- [{p['title']}]({SITE_URL}/products/{p['handle']}.html)  -  **${float(p['retail_price']):.2f} USD** (SKU: `{p['id']}`, Category: {p['category']}, Rating: {p['rating']}★ from {p['reviews']} reviews, {p['ship_time']}). {p['short_desc']}"
             )
         llms_lines.append("")
     llms_lines.append(f"## Athlete Buyer Guides & Training Protocols ({len(guides)} Articles)")
@@ -1060,7 +1064,7 @@ def inject_static_seo_into_index():
                 "name": "Apex Hybrid & Recovery Supply",
                 "url": f"{SITE_URL}/",
                 "logo": f"{SITE_URL}/images/streetwear/apc-c36-black.png?v=20261026v1",
-                "description": "Breathable HYROX® race shirts, laser-vented AeroMesh™ tech tees, 2026/2027 race-city shirts (Chicago, Dallas, Anaheim, Miami, Vegas, NYC), sleeveless muscle tanks, and clinical recovery hardware.",
+                "description": "Breathable HYROX race shirts, laser-vented AeroMesh tech tees, 2026/2027 race-city shirts (Chicago, Dallas, Anaheim, Miami, Vegas, NYC), sleeveless muscle tanks, and clinical recovery hardware.",
                 "telephone": "+1-949-805-4935",
                 "email": "apexhybridco@gmail.com",
                 "address": {
@@ -1076,7 +1080,7 @@ def inject_static_seo_into_index():
                 "@type": "WebSite",
                 "@id": f"{SITE_URL}/#website",
                 "url": f"{SITE_URL}/",
-                "name": "Apex Hybrid & Recovery Supply — HYROX Shirts, Breathable Race Apparel & Recovery Lab",
+                "name": "Apex Hybrid & Recovery Supply  -  HYROX Shirts, Breathable Race Apparel & Recovery Lab",
                 "publisher": {"@id": f"{SITE_URL}/#organization"},
             },
             {
@@ -1088,7 +1092,7 @@ def inject_static_seo_into_index():
                         "name": "What are the best breathable HYROX shirts for race day?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Our 4.0 oz AeroMesh™ Laser-Vented Tech Shirt (APC-C36), Dry-Pace™ Threshold Tech Tee (APC-C37), and Sleeveless Winged Crest Muscle Tanks (APC-C28) are engineered specifically for 8-station hybrid racing with laser-perforated shoulder ventilation and flatlock anti-chafe seams."
+                            "text": "Our 4.0 oz AeroMesh Laser-Vented Tech Shirt (APC-C36), Dry-Pace Threshold Tech Tee (APC-C37), and Sleeveless Winged Crest Muscle Tanks (APC-C28) are engineered specifically for 8-station hybrid racing with laser-perforated shoulder ventilation and flatlock anti-chafe seams."
                         }
                     },
                     {
@@ -1154,5 +1158,5 @@ if __name__ == "__main__":
     generate_editorial_rss_feeds()
     generate_pinterest_csv_feed()
     generate_sitemap_and_robots()
-    inject_static_seo_into_index()
+    # inject_static_seo_into_index() disabled to preserve clean index.html
     print(f"Successfully generated {len(products)} product pages, {len(guides)} SEO articles, Shopping XML/CSV feeds, and sitemap.xml")

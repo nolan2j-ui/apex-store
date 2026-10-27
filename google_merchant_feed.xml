@@ -1,45 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
   <channel>
-    <title>Apex Hybrid &amp; Recovery Supply — HYROX Shirts, Breathable Race Apparel &amp; Recovery Feed</title>
+    <title>Apex Hybrid &amp; Recovery Supply  -  HYROX Shirts, Breathable Race Apparel &amp; Recovery Feed</title>
     <link>https://www.apexhybridco.com</link>
-    <description>Official Google Merchant Center product feed for Apex Hybrid &amp; Recovery Supply (www.apexhybridco.com) — HYROX shirts, breathable tech tees, 2026/2027 race-city shirts, and recovery hardware.</description>
-    <item>
-      <g:id>APC-C01</g:id>
-      <g:title>Run. Station. Repeat. Functional Race Tee — Men&#x27;s &amp; Women&#x27;s Hybrid Athlete Running Shirt</g:title>
-      <g:description>Heavyweight 6.1 oz garment-dyed cotton tee with our signature winged barbell crest and &quot;Run. Station. Repeat.&quot; back print. Relaxed, boxy fit built for heavy gym sessions, warmup corrals, and post-race recovery.</g:description>
-      <g:link>https://www.apexhybridco.com/products/run-station-repeat-performance-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c01-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>38.00 USD</g:price>
-      <g:sale_price>32.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C01</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
+    <description>Official Google Merchant Center product feed for Apex Hybrid &amp; Recovery Supply (www.apexhybridco.com)  -  HYROX shirts, breathable tech tees, 2026/2027 race-city shirts, and recovery hardware.</description>
     <item>
       <g:id>APC-C02</g:id>
-      <g:title>Wall Balls &amp; Bad Decisions Heavyweight Gym Pump Cover — 6.5 oz Oversized Cotton Workout Tee</g:title>
-      <g:description>Oversized 6.1 oz garment-dyed cotton pump cover celebrating everyone&#x27;s favorite final station: 100 wall balls on tired legs. Soft-washed ring-spun cotton that drapes cleanly over a wet race singlet or training tank.</g:description>
+      <g:title>Wall Balls &amp; Bad Decisions Heavyweight Gym Pump Cover  -  6.5 oz Oversized Cotton Workout Tee</g:title>
+      <g:description>Station 8 on dead legs is a spiritual experience. Built on a 6.1 oz garment-dyed 100% ring-spun cotton blank that drapes clean as a warmup pump cover, comes off at Station 2, and goes right back on for finish-line photos. Soft-hand cured ink never feels plastic or traps sweat.</g:description>
       <g:link>https://www.apexhybridco.com/products/wall-balls-bad-decisions-oversized-pump-cover.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c02-black.png?v=20261026v2</g:image_link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c02-black.png?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>44.00 USD</g:price>
+      <g:price>54.00 USD</g:price>
       <g:sale_price>38.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C02</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Pump Covers</g:product_type>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
       <g:shipping>
         <g:country>US</g:country>
         <g:service>Standard Ground</g:service>
@@ -47,62 +26,20 @@
       </g:shipping>
     </item>
     <item>
-      <g:id>APC-C07</g:id>
-      <g:title>Pre-Race Porta-Potty Line PR Warmup Tee — Marathon &amp; Hybrid Race Morning Running Shirt</g:title>
-      <g:description>Every racer knows the real pre-race warmup happens in the nervous corral bathroom line. Printed on a soft 6.1 oz garment-dyed cotton tee, it&#x27;s the ultimate icebreaker for travel day, packet pickup, and post-race beers.</g:description>
-      <g:link>https://www.apexhybridco.com/products/porta-potty-line-pr-pre-race-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c07-black.png?v=20261026v2</g:image_link>
+      <g:id>APC-C01</g:id>
+      <g:title>Run. Station. Repeat. Functional Race Tee  -  Men&#x27;s &amp; Women&#x27;s Hybrid Athlete Running Shirt</g:title>
+      <g:description>Eight 1,000m runs. Eight stations. Zero shortcuts. Our signature winged barbell crest tee gives you a structured 6.1 oz garment-dyed cotton drape for dark morning erg sessions, race-day warmups, and post-heat coffee runs without shrinking or twisting in the wash. Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/run-station-repeat-performance-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c01-black.png?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>32.00 USD</g:price>
-      <g:sale_price>28.00 USD</g:sale_price>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C07</g:mpn>
+      <g:mpn>APC-C01</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C03</g:id>
-      <g:title>Sled Push Enthusiast Athletic Crewneck Tee — Functional Fitness &amp; Turf Conditioning Shirt</g:title>
-      <g:description>Heavyweight 6.1 oz ring-spun cotton crewneck tee built for heavy turf mornings. Features a clean chest mark and bold &quot;Sled Push Enthusiast* (*Until Meter 35)&quot; back graphic in high-contrast ink.</g:description>
-      <g:link>https://www.apexhybridco.com/products/sled-push-enthusiast-race-day-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c03-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>36.00 USD</g:price>
-      <g:sale_price>32.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C03</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C04</g:id>
-      <g:title>Compromised Running Club Performance Tee — Brick Workout &amp; Endurance Running Shirt</g:title>
-      <g:description>Vintage-washed 6.1 oz heavyweight cotton tee for athletes who know the real race starts when you leave the Roxzone on heavy legs. Soft garment-dyed finish with distressed &quot;Compromised Running Club — Est. Kilometer One&quot; typography.</g:description>
-      <g:link>https://www.apexhybridco.com/products/compromised-running-society-club-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c04-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>32.00 USD</g:price>
-      <g:sale_price>32.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C04</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
       <g:shipping>
         <g:country>US</g:country>
         <g:service>Standard Ground</g:service>
@@ -111,19 +48,103 @@
     </item>
     <item>
       <g:id>APC-C05</g:id>
-      <g:title>Burpee Broad Jumps Build Character Training Tee — Functional Conditioning Workout Shirt</g:title>
-      <g:description>Heavyweight 6.1 oz ring-spun cotton crew tee honoring Station 4 — 80 meters of burpee broad jumps when your heart rate is already redlined. Relaxed athletic drape that holds its structure wash after wash.</g:description>
+      <g:title>Burpee Broad Jumps Build Character Training Tee  -  Functional Conditioning Workout Shirt</g:title>
+      <g:description>80 meters of pure character development when your heart rate is already pinned at 180 BPM. Printed with breathable soft-hand cured ink on pre-shrunk 6.1 oz ring-spun cotton that holds its shape through turf burn, sweat, and weekly wash cycles. Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
       <g:link>https://www.apexhybridco.com/products/burpee-broad-jumps-build-character-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c05-black.png?v=20261026v2</g:image_link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c05-black.png?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>35.00 USD</g:price>
-      <g:sale_price>30.00 USD</g:sale_price>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C05</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C18</g:id>
+      <g:title>Anaheim SoCal HYROX Race Shirt  -  Southern California 8-Station Hybrid Athlete Tee</g:title>
+      <g:description>Rep your race venue from the warmup corral to the finish line. Precision-centered city crest printed with breathable soft-hand cured ink on 6.1 oz 100% ring-spun garment-dyed US cotton (plus lightweight ASICS-style 3.8 oz breathable workout tee option for team heats). Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/anaheim-socal-open-division-pacific-coast-race-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c18-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C18</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Race City Editions &gt; City Editions</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C03</g:id>
+      <g:title>Sled Push Enthusiast Athletic Crewneck Tee  -  Functional Fitness &amp; Turf Conditioning Shirt</g:title>
+      <g:description>For the athlete who actually looks forward to 50 meters of heavy carpet resistance. Heavyweight 6.1 oz ring-spun cotton holds its boxy athletic structure without clinging when you are drenched after Station 2.</g:description>
+      <g:link>https://www.apexhybridco.com/products/sled-push-enthusiast-race-day-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c03-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C03</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C04</g:id>
+      <g:title>Compromised Running Club Performance Tee  -  Brick Workout &amp; Endurance Running Shirt</g:title>
+      <g:description>Anyone can run a fresh 5K. Running 1,000m right after heavy sleds and lunges is a different sport. Built for the Compromised Running Club with a broken-in 6.1 oz garment-dyed feel and breathable soft-hand cured print. Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/compromised-running-society-club-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c04-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C04</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C07</g:id>
+      <g:title>Pre-Race Porta-Potty Line PR Warmup Tee  -  Marathon &amp; Hybrid Race Morning Running Shirt</g:title>
+      <g:description>Every racer knows the fastest sprint of the day happens 12 minutes before your wave starts. The ultimate race-morning corral icebreaker, printed on our 6.1 oz garment-dyed warmup tee with durable soft-hand ink. Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/porta-potty-line-pr-pre-race-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c07-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C07</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
       <g:shipping>
         <g:country>US</g:country>
         <g:service>Standard Ground</g:service>
@@ -132,19 +153,19 @@
     </item>
     <item>
       <g:id>APC-C08</g:id>
-      <g:title>I Don&#x27;t Need To Defend My Sled Push Tee — Sled Push Dept. Functional Strength Shirt</g:title>
-      <g:description>Heavyweight 6.1 oz garment-dyed cotton tee for athletes who let the turf tape do the talking. Clean front chest crest with &quot;I Don&#x27;t Need To Defend My Sled Push — Sled Push Dept.&quot; printed across the shoulders.</g:description>
+      <g:title>I Don&#x27;t Need To Defend My Sled Push Tee  -  Sled Push Dept. Functional Strength Shirt</g:title>
+      <g:description>The race photos and split times speak for themselves. Center-aligned Sled Push Dept. graphic printed on heavyweight 6.1 oz garment-dyed cotton that won&#x27;t thin out, twist, or fade. Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
       <g:link>https://www.apexhybridco.com/products/defend-my-sled-push-dept-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c08-black.png?v=20261026v2</g:image_link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c08-black.png?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>36.00 USD</g:price>
-      <g:sale_price>32.00 USD</g:sale_price>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C08</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
       <g:shipping>
         <g:country>US</g:country>
         <g:service>Standard Ground</g:service>
@@ -153,19 +174,19 @@
     </item>
     <item>
       <g:id>APC-C06</g:id>
-      <g:title>The Erg Doesn&#x27;t Care How You Feel Tee — Indoor Rowing &amp; SkiErg Conditioning Shirt</g:title>
-      <g:description>Heavyweight 6.1 oz garment-dyed cotton tee built for dark morning garage erg blocks. Features a minimalist chest emblem and &quot;The Erg Doesn&#x27;t Care How You Feel — Row · Ski · Repeat&quot; across the back.</g:description>
+      <g:title>The Erg Doesn&#x27;t Care How You Feel Tee  -  Indoor Rowing &amp; SkiErg Conditioning Shirt</g:title>
+      <g:description>1,000m on the SkiErg and 1,000m on the RowErg: the monitor never lies. Built for dark garage conditioning sessions on 6.1 oz pre-shrunk ring-spun cotton with breathable soft-hand print. Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
       <g:link>https://www.apexhybridco.com/products/the-erg-doesnt-care-how-you-feel-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c06-black.png?v=20261026v2</g:image_link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c06-black.png?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>36.00 USD</g:price>
-      <g:sale_price>32.00 USD</g:sale_price>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C06</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
       <g:shipping>
         <g:country>US</g:country>
         <g:service>Standard Ground</g:service>
@@ -174,19 +195,124 @@
     </item>
     <item>
       <g:id>APC-C36</g:id>
-      <g:title>AeroMesh Breathable HYROX Shirt — Laser-Vented Moisture-Wicking Hybrid Race Tech Tee</g:title>
-      <g:description>Featherlight 4.0 oz (140 GSM) AeroMesh™ technical race shirt with laser-perforated back ventilation, 4-way stretch mobility gussets, and flatlock anti-chafe seams. Engineered to dump heat during compromised 1km runs and heavy sled pushes.</g:description>
+      <g:title>AeroMesh Breathable HYROX Shirt  -  Laser-Vented Moisture-Wicking Hybrid Race Tech Tee</g:title>
+      <g:description>Built for athletes who run hot during compromised 1,000m intervals and sled pushes. Designed around a lightweight, ASICS-inspired breathable athletic fit alongside our 6.1 oz ring-spun turf tee, using zero-feel soft-hand cured ink that lets your chest breathe instead of trapping sweat under a cheap plastic transfer. Engineered with a featherlight ASICS-style breathable moisture-wicking workout feel so you never overheat in the Roxzone or fight wet-fabric drag when running on heavy legs.</g:description>
       <g:link>https://www.apexhybridco.com/products/aeromesh-laser-vented-breathable-hyrox-race-tech-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c36-black.png?v=20261026v2</g:image_link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c36-black.png?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>45.00 USD</g:price>
-      <g:sale_price>36.00 USD</g:sale_price>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C36</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Breathable Tech Shirts &gt; Breathable Tech Tees</g:product_type>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C37</g:id>
+      <g:title>Dry-Pace Moisture-Wicking HYROX Shirt  -  Breathable 1km Split Hybrid Running Tech Tee</g:title>
+      <g:description>Built for athletes who run hot during compromised 1,000m intervals and sled pushes. Designed around a lightweight, ASICS-inspired breathable athletic fit alongside our 6.1 oz ring-spun turf tee, using zero-feel soft-hand cured ink that lets your chest breathe instead of trapping sweat under a cheap plastic transfer. Engineered with a featherlight ASICS-style breathable moisture-wicking workout feel so you never overheat in the Roxzone or fight wet-fabric drag when running on heavy legs.</g:description>
+      <g:link>https://www.apexhybridco.com/products/dry-pace-moisture-wicking-threshold-hyrox-tech-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c37-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C37</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C38</g:id>
+      <g:title>VentTech Perforated HYROX Tech Shirt  -  Breathable Zone 4/5 Endurance Fitness Top</g:title>
+      <g:description>Built for athletes who run hot during compromised 1,000m intervals and sled pushes. Designed around a lightweight, ASICS-inspired breathable athletic fit alongside our 6.1 oz ring-spun turf tee, using zero-feel soft-hand cured ink that lets your chest breathe instead of trapping sweat under a cheap plastic transfer. Engineered with a featherlight ASICS-style breathable moisture-wicking workout feel so you never overheat in the Roxzone or fight wet-fabric drag when running on heavy legs.</g:description>
+      <g:link>https://www.apexhybridco.com/products/venttech-perforated-zone4-zone5-hybrid-training-shirt.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c38-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C38</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C39</g:id>
+      <g:title>Featherweight 3.8oz Breathable HYROX Shirt  -  Sub-60 Zero Drag Hybrid Race Top</g:title>
+      <g:description>Built for athletes who run hot during compromised 1,000m intervals and sled pushes. Designed around a lightweight, ASICS-inspired breathable athletic fit alongside our 6.1 oz ring-spun turf tee, using zero-feel soft-hand cured ink that lets your chest breathe instead of trapping sweat under a cheap plastic transfer. Engineered with a featherlight ASICS-style breathable moisture-wicking workout feel so you never overheat in the Roxzone or fight wet-fabric drag when running on heavy legs.</g:description>
+      <g:link>https://www.apexhybridco.com/products/featherweight-tri-blend-zero-drag-sub60-race-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c39-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C39</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C40</g:id>
+      <g:title>CoolCore Breathable HYROX Sled &amp; Turf Shirt  -  Anti-Chafe Moisture-Wicking Gym Tee</g:title>
+      <g:description>Built for athletes who run hot during compromised 1,000m intervals and sled pushes. Designed around a lightweight, ASICS-inspired breathable athletic fit alongside our 6.1 oz ring-spun turf tee, using zero-feel soft-hand cured ink that lets your chest breathe instead of trapping sweat under a cheap plastic transfer. Engineered with a featherlight ASICS-style breathable moisture-wicking workout feel so you never overheat in the Roxzone or fight wet-fabric drag when running on heavy legs.</g:description>
+      <g:link>https://www.apexhybridco.com/products/coolcore-anti-chafe-turf-and-sled-breathable-tech-shirt.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c40-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C40</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C41</g:id>
+      <g:title>HyperBreathe Seamless HYROX Shirt  -  Breathable Roxzone Speed Dept Fitness Tech Top</g:title>
+      <g:description>Built for athletes who run hot during compromised 1,000m intervals and sled pushes. Designed around a lightweight, ASICS-inspired breathable athletic fit alongside our 6.1 oz ring-spun turf tee, using zero-feel soft-hand cured ink that lets your chest breathe instead of trapping sweat under a cheap plastic transfer. Engineered with a featherlight ASICS-style breathable moisture-wicking workout feel so you never overheat in the Roxzone or fight wet-fabric drag when running on heavy legs.</g:description>
+      <g:link>https://www.apexhybridco.com/products/hyperbreathe-seamless-roxzone-speed-dept-tech-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c41-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C41</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
       <g:shipping>
         <g:country>US</g:country>
         <g:service>Standard Ground</g:service>
@@ -195,19 +321,229 @@
     </item>
     <item>
       <g:id>APC-C16</g:id>
-      <g:title>Chicago HYROX Race Shirt — Navy Pier 8x1000m Hybrid Racing &amp; Breathable Training Tee</g:title>
-      <g:description>Heavyweight 6.1 oz garment-dyed cotton tee built for Chicago race weekend at Navy Pier. Features our winged CHI·08 crest up front and &quot;Chicago // 8 Stations · 8km&quot; across the back — made for packet pickup, lakefront shakeout runs, and post-race deep dish.</g:description>
+      <g:title>Chicago HYROX Race Shirt  -  Navy Pier 8x1000m Hybrid Racing &amp; Breathable Training Tee</g:title>
+      <g:description>Rep your race venue from the warmup corral to the finish line. Precision-centered city crest printed with breathable soft-hand cured ink on 6.1 oz 100% ring-spun garment-dyed US cotton (plus lightweight ASICS-style 3.8 oz breathable workout tee option for team heats). Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
       <g:link>https://www.apexhybridco.com/products/chicago-championship-division-navy-pier-hybrid-race-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c16-black.png?v=20261026v2</g:image_link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c16-black.png?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>42.00 USD</g:price>
-      <g:sale_price>34.00 USD</g:sale_price>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C16</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Race City Editions &gt; Race City Tees</g:product_type>
+      <g:product_type>Race City Editions &gt; City Editions</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C17</g:id>
+      <g:title>Dallas HYROX Race Shirt  -  Lone Star Division 8-Station Functional Fitness &amp; Running Tee</g:title>
+      <g:description>Rep your race venue from the warmup corral to the finish line. Precision-centered city crest printed with breathable soft-hand cured ink on 6.1 oz 100% ring-spun garment-dyed US cotton (plus lightweight ASICS-style 3.8 oz breathable workout tee option for team heats). Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/dallas-lone-star-division-turf-threshold-hybrid-race-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c17-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C17</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Race City Editions &gt; City Editions</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C19</g:id>
+      <g:title>Miami HYROX Race Shirt  -  South Beach Breathable Humidity &amp; Endurance Racing Tee</g:title>
+      <g:description>Rep your race venue from the warmup corral to the finish line. Precision-centered city crest printed with breathable soft-hand cured ink on 6.1 oz 100% ring-spun garment-dyed US cotton (plus lightweight ASICS-style 3.8 oz breathable workout tee option for team heats). Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/miami-beach-heat-block-south-florida-endurance-race-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c19-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C19</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Race City Editions &gt; City Editions</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C20</g:id>
+      <g:title>Las Vegas HYROX Race Shirt  -  Sin City Championship Qualifier Hybrid Athlete Tee</g:title>
+      <g:description>Rep your race venue from the warmup corral to the finish line. Precision-centered city crest printed with breathable soft-hand cured ink on 6.1 oz 100% ring-spun garment-dyed US cotton (plus lightweight ASICS-style 3.8 oz breathable workout tee option for team heats). Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/las-vegas-championship-qualifier-sin-city-turf-club-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c20-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C20</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Race City Editions &gt; City Editions</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C21</g:id>
+      <g:title>New York NYC HYROX Race Shirt  -  Hudson Pier Sub-60 Hybrid Racing &amp; Running Tee</g:title>
+      <g:description>Rep your race venue from the warmup corral to the finish line. Precision-centered city crest printed with breathable soft-hand cured ink on 6.1 oz 100% ring-spun garment-dyed US cotton (plus lightweight ASICS-style 3.8 oz breathable workout tee option for team heats). Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/new-york-hudson-pier-metro-endurance-dept-race-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c21-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C21</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Race City Editions &gt; City Editions</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C22</g:id>
+      <g:title>8 Runs 8 Stations Zero Excuses HYROX Shirt  -  Winged Crest Hybrid Race Tee &amp; Pump Cover</g:title>
+      <g:description>Built for the athletes grinding through dark morning threshold blocks before work. Heavyweight 6.1 oz 100% ring-spun garment-dyed cotton holds its relaxed athletic structure without clinging, paired with breathable soft-hand cured ink that never cracks. Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/8-runs-8-stations-zero-excuses-heavyweight-pump-cover-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c22-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C22</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C23</g:id>
+      <g:title>Roxzone Penalties Ruined My PR HYROX Shirt  -  Funny Hybrid Race Transition Running Tee</g:title>
+      <g:description>Built for the athletes grinding through dark morning threshold blocks before work. Heavyweight 6.1 oz 100% ring-spun garment-dyed cotton holds its relaxed athletic structure without clinging, paired with breathable soft-hand cured ink that never cracks. Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/roxzone-penalties-ruined-my-pr-athletic-race-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c23-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C23</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C24</g:id>
+      <g:title>200m Farmer Carry Survivors Club HYROX Shirt  -  Station 6 Heavy Carry &amp; Grip Strength Tee</g:title>
+      <g:description>Built for the athletes grinding through dark morning threshold blocks before work. Heavyweight 6.1 oz 100% ring-spun garment-dyed cotton holds its relaxed athletic structure without clinging, paired with breathable soft-hand cured ink that never cracks. Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/200m-farmer-carry-survivors-club-barbell-crest-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c24-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C24</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C25</g:id>
+      <g:title>Sandbag Lunges Are A Personal Attack HYROX Shirt  -  Station 7 Oversized Gym Pump Cover Tee</g:title>
+      <g:description>Built for the athletes grinding through dark morning threshold blocks before work. Heavyweight 6.1 oz 100% ring-spun garment-dyed cotton holds its relaxed athletic structure without clinging, paired with breathable soft-hand cured ink that never cracks. Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/sandbag-lunges-are-a-personal-attack-oversized-pump-cover.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c25-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C25</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C26</g:id>
+      <g:title>Zone 2 All Week Redline Weekend HYROX Shirt  -  Hybrid Runner &amp; Endurance Training Tee</g:title>
+      <g:description>Built for the athletes grinding through dark morning threshold blocks before work. Heavyweight 6.1 oz 100% ring-spun garment-dyed cotton holds its relaxed athletic structure without clinging, paired with breathable soft-hand cured ink that never cracks. Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/zone-2-all-week-redline-all-weekend-performance-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c26-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C26</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C27</g:id>
+      <g:title>Sub-65 Club Pace Pull Push HYROX Shirt  -  Pro &amp; Open Division Hybrid Racing Tee</g:title>
+      <g:description>Built for the athletes grinding through dark morning threshold blocks before work. Heavyweight 6.1 oz 100% ring-spun garment-dyed cotton holds its relaxed athletic structure without clinging, paired with breathable soft-hand cured ink that never cracks. Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/sub-65-club-pace-pull-push-elite-division-tee.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c27-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 USD</g:price>
+      <g:sale_price>38.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C27</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
+      <g:product_type>Tees &amp; Pump Covers &gt; Workout &amp; Turf Tees</g:product_type>
       <g:shipping>
         <g:country>US</g:country>
         <g:service>Standard Ground</g:service>
@@ -216,19 +552,250 @@
     </item>
     <item>
       <g:id>APC-C28</g:id>
-      <g:title>Run Station Repeat HYROX Muscle Tank — Breathable Sleeveless Hybrid Race Day Top</g:title>
-      <g:description>Sleeveless athletic muscle tank with deep ergonomic armholes so nothing catches on your shoulders during 100 wall balls or heavy SkiErg pulls. Features our winged &quot;Run. Station. Repeat.&quot; crest.</g:description>
+      <g:title>Run Station Repeat HYROX Muscle Tank  -  Breathable Sleeveless Hybrid Race Day Top</g:title>
+      <g:description>Maximum shoulder mobility when the gym humidity spikes and you have 100 wall balls left. Cut from soft, pre-shrunk combed ring-spun cotton with deep athletic armholes and a zero-feel soft-hand cured crest print.</g:description>
       <g:link>https://www.apexhybridco.com/products/run-station-repeat-sleeveless-race-day-muscle-tank.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c28-black.png?v=20261026v2</g:image_link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c28-black.png?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>36.00 USD</g:price>
-      <g:sale_price>30.00 USD</g:sale_price>
+      <g:price>48.00 USD</g:price>
+      <g:sale_price>32.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C28</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Muscle Tanks &gt; Sleeveless Muscle Tanks</g:product_type>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Hoodies &amp; Tanks &gt; Hoodies &amp; Layers</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C29</g:id>
+      <g:title>Sled Push Dept HYROX Muscle Tank  -  Sleeveless Functional Turf &amp; Strength Top</g:title>
+      <g:description>Maximum shoulder mobility when the gym humidity spikes and you have 100 wall balls left. Cut from soft, pre-shrunk combed ring-spun cotton with deep athletic armholes and a zero-feel soft-hand cured crest print.</g:description>
+      <g:link>https://www.apexhybridco.com/products/sled-push-dept-raw-armhole-conditioning-muscle-tank.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c29-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>48.00 USD</g:price>
+      <g:sale_price>32.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C29</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Hoodies &amp; Tanks &gt; Hoodies &amp; Layers</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C30</g:id>
+      <g:title>Compromised Running Club HYROX Muscle Tank  -  Breathable 1000m Split Running Singlet</g:title>
+      <g:description>Maximum shoulder mobility when the gym humidity spikes and you have 100 wall balls left. Cut from soft, pre-shrunk combed ring-spun cotton with deep athletic armholes and a zero-feel soft-hand cured crest print.</g:description>
+      <g:link>https://www.apexhybridco.com/products/compromised-running-club-breathable-race-tank.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c30-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>48.00 USD</g:price>
+      <g:sale_price>32.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C30</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Hoodies &amp; Tanks &gt; Hoodies &amp; Layers</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C31</g:id>
+      <g:title>100 Wall Balls Unbroken HYROX Muscle Tank  -  Station 8 Finisher Sleeveless Gym Top</g:title>
+      <g:description>Maximum shoulder mobility when the gym humidity spikes and you have 100 wall balls left. Cut from soft, pre-shrunk combed ring-spun cotton with deep athletic armholes and a zero-feel soft-hand cured crest print.</g:description>
+      <g:link>https://www.apexhybridco.com/products/100-wall-balls-unbroken-sleeveless-muscle-tank.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c31-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>48.00 USD</g:price>
+      <g:sale_price>32.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C31</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Hoodies &amp; Tanks &gt; Hoodies &amp; Layers</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C35</g:id>
+      <g:title>8-Station Race Division HYROX Hoodie  -  Winged Crest Oversized Heavyweight Gym Sweatshirt</g:title>
+      <g:description>Your 5:30 AM garage warmup and post-race recovery layer. Cut from heavyweight ring-spun fleece with a soft brushed interior, double-lined hood, and durable soft-hand cured graphics that hold up season after season. Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
+      <g:link>https://www.apexhybridco.com/products/8-station-functional-race-division-oversized-stealth-hoodie.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c35-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>84.00 USD</g:price>
+      <g:sale_price>68.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C35</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Hoodies &amp; Tanks &gt; Hoodies &amp; Layers</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C10</g:id>
+      <g:title>Wall Balls &amp; Bad Decisions Brushed Fleece Pullover Hoodie  -  Heavyweight Gym Warmup Hoodie</g:title>
+      <g:description>Your 5:30 AM garage warmup and post-race recovery layer. Cut from heavyweight ring-spun fleece with a soft brushed interior, double-lined hood, and durable soft-hand cured graphics that hold up season after season.</g:description>
+      <g:link>https://www.apexhybridco.com/products/wall-balls-bad-decisions-hoodie.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c10-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>74.00 USD</g:price>
+      <g:sale_price>58.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C10</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Hoodies &amp; Tanks &gt; Hoodies &amp; Layers</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C09</g:id>
+      <g:title>Run. Station. Repeat. Heavyweight Fleece Warmup Hoodie  -  8.0 oz Athletic Pullover Sweatshirt</g:title>
+      <g:description>Your 5:30 AM garage warmup and post-race recovery layer. Cut from heavyweight ring-spun fleece with a soft brushed interior, double-lined hood, and durable soft-hand cured graphics that hold up season after season.</g:description>
+      <g:link>https://www.apexhybridco.com/products/run-station-repeat-heavy-blend-hoodie.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c09-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>74.00 USD</g:price>
+      <g:sale_price>58.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C09</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Hoodies &amp; Tanks &gt; Hoodies &amp; Layers</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C11</g:id>
+      <g:title>Compromised Running Club Heavy Warmup Hoodie  -  Cold Morning Run Club Fleece Pullover</g:title>
+      <g:description>Your 5:30 AM garage warmup and post-race recovery layer. Cut from heavyweight ring-spun fleece with a soft brushed interior, double-lined hood, and durable soft-hand cured graphics that hold up season after season.</g:description>
+      <g:link>https://www.apexhybridco.com/products/compromised-running-club-fleece-hoodie.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c11-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>74.00 USD</g:price>
+      <g:sale_price>58.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C11</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Hoodies &amp; Tanks &gt; Hoodies &amp; Layers</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C12</g:id>
+      <g:title>Sled Push Dept. Heavyweight Pullover Hoodie  -  Functional Strength &amp; Conditioning Fleece</g:title>
+      <g:description>Your 5:30 AM garage warmup and post-race recovery layer. Cut from heavyweight ring-spun fleece with a soft brushed interior, double-lined hood, and durable soft-hand cured graphics that hold up season after season.</g:description>
+      <g:link>https://www.apexhybridco.com/products/defend-my-sled-push-fleece-hoodie.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c12-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>74.00 USD</g:price>
+      <g:sale_price>58.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C12</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Hoodies &amp; Tanks &gt; Hoodies &amp; Layers</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C32</g:id>
+      <g:title>Burpee Broad Jumps Build Character HYROX Hoodie  -  8.0 oz Heavyweight Fleece Warmup Sweatshirt</g:title>
+      <g:description>Your 5:30 AM garage warmup and post-race recovery layer. Cut from heavyweight ring-spun fleece with a soft brushed interior, double-lined hood, and durable soft-hand cured graphics that hold up season after season.</g:description>
+      <g:link>https://www.apexhybridco.com/products/burpee-broad-jumps-build-character-warmup-hoodie.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c32-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>74.00 USD</g:price>
+      <g:sale_price>58.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C32</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Hoodies &amp; Tanks &gt; Hoodies &amp; Layers</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C33</g:id>
+      <g:title>The Erg Doesn&#x27;t Care How You Feel HYROX Hoodie  -  SkiErg &amp; RowErg Heavyweight Warmup Sweatshirt</g:title>
+      <g:description>Your 5:30 AM garage warmup and post-race recovery layer. Cut from heavyweight ring-spun fleece with a soft brushed interior, double-lined hood, and durable soft-hand cured graphics that hold up season after season.</g:description>
+      <g:link>https://www.apexhybridco.com/products/the-erg-doesnt-care-how-you-feel-heavyweight-fleece-hoodie.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c33-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>74.00 USD</g:price>
+      <g:sale_price>58.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C33</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Hoodies &amp; Tanks &gt; Hoodies &amp; Layers</g:product_type>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>APC-C34</g:id>
+      <g:title>2026/2027 HYROX World Series Prep Hoodie  -  Chicago Dallas Anaheim Heavyweight Warmup Pullover</g:title>
+      <g:description>Your 5:30 AM garage warmup and post-race recovery layer. Cut from heavyweight ring-spun fleece with a soft brushed interior, double-lined hood, and durable soft-hand cured graphics that hold up season after season.</g:description>
+      <g:link>https://www.apexhybridco.com/products/chicago-dallas-socal-world-series-prep-heavyweight-hoodie.html</g:link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c34-black.png?v=20261026v3</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>74.00 USD</g:price>
+      <g:sale_price>58.00 USD</g:sale_price>
+      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:mpn>APC-C34</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
+      <g:product_type>Hoodies &amp; Tanks &gt; Hoodies &amp; Layers</g:product_type>
       <g:shipping>
         <g:country>US</g:country>
         <g:service>Standard Ground</g:service>
@@ -237,14 +804,14 @@
     </item>
     <item>
       <g:id>APC-C42</g:id>
-      <g:title>Apex AeroShell Lightweight Hybrid Race Warmup Jacket — Wind &amp; Water Resistant 8x1000m Track Shell</g:title>
+      <g:title>Apex AeroShell Lightweight Hybrid Race Warmup Jacket  -  Wind &amp; Water Resistant 8x1000m Track Shell</g:title>
       <g:description>Featherlight, water-resistant quarter-zip windbreaker built for cold morning race corrals and breezy outdoor track warmups. Packs down into its own front pouch so you can toss it in your drop bag 10 minutes before your wave starts.</g:description>
       <g:link>https://www.apexhybridco.com/products/apex-aeroshell-lightweight-race-warmup-jacket.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c42-black.png?v=20261026v2</g:image_link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c42-black.png?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>84.00 USD</g:price>
-      <g:sale_price>64.00 USD</g:sale_price>
+      <g:sale_price>68.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C42</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
@@ -257,582 +824,15 @@
       </g:shipping>
     </item>
     <item>
-      <g:id>APC-C34</g:id>
-      <g:title>2026/2027 HYROX World Series Prep Hoodie — Chicago Dallas Anaheim Heavyweight Warmup Pullover</g:title>
-      <g:description>Commemorative 2026/2027 North American Tour 9.0 oz heavyweight fleece hoodie honoring Chicago, Dallas, Anaheim, Las Vegas, Miami, and New York. Built for chilly airport mornings and race-weekend check-in.</g:description>
-      <g:link>https://www.apexhybridco.com/products/chicago-dallas-socal-world-series-prep-heavyweight-hoodie.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c34-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>68.00 USD</g:price>
-      <g:sale_price>58.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C34</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear &gt; Sweatshirts &amp; Hoodies</g:google_product_category>
-      <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C37</g:id>
-      <g:title>Dry-Pace Moisture-Wicking HYROX Shirt — Breathable 1km Split Hybrid Running Tech Tee</g:title>
-      <g:description>Ultra-light 4.0 oz Dry-Pace™ moisture-wicking race shirt built for threshold brick workouts and race day. Sweeps sweat off your skin in seconds and won&#x27;t cling to your chest on the SkiErg or rower.</g:description>
-      <g:link>https://www.apexhybridco.com/products/dry-pace-moisture-wicking-threshold-hyrox-tech-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c37-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>44.00 USD</g:price>
-      <g:sale_price>36.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C37</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Breathable Tech Shirts &gt; Breathable Tech Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C17</g:id>
-      <g:title>Dallas HYROX Race Shirt — Lone Star Division 8-Station Functional Fitness &amp; Running Tee</g:title>
-      <g:description>Heavyweight 6.1 oz ring-spun cotton tee celebrating Dallas race weekend. Built with a relaxed athletic fit and bold &quot;Dallas // Lone Star Division — Heavy Sleds &amp; Fast Splits&quot; back print for convention-center walk-ins and Texas turf sessions.</g:description>
-      <g:link>https://www.apexhybridco.com/products/dallas-lone-star-division-turf-threshold-hybrid-race-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c17-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>42.00 USD</g:price>
-      <g:sale_price>34.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C17</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Race City Editions &gt; Race City Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C18</g:id>
-      <g:title>Anaheim SoCal HYROX Race Shirt — Southern California 8-Station Hybrid Athlete Tee</g:title>
-      <g:description>Designed right here in Orange County for our home race weekend in Anaheim. Printed on a soft-washed 6.1 oz heavyweight cotton tee with the winged ANA·08 Pacific Coast crest and &quot;8 Runs · 8 Stations&quot; back graphic.</g:description>
-      <g:link>https://www.apexhybridco.com/products/anaheim-socal-open-division-pacific-coast-race-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c18-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>42.00 USD</g:price>
-      <g:sale_price>34.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C18</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Race City Editions &gt; Race City Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C22</g:id>
-      <g:title>8 Runs 8 Stations Zero Excuses HYROX Shirt — Winged Crest Hybrid Race Tee &amp; Pump Cover</g:title>
-      <g:description>Heavyweight 6.1 oz garment-dyed training tee featuring our 8x8 winged shield crest and &quot;8 Runs. 8 Stations. Zero Excuses.&quot; back print. Built for Saturday full-course simulations and heavy strength blocks.</g:description>
-      <g:link>https://www.apexhybridco.com/products/8-runs-8-stations-zero-excuses-heavyweight-pump-cover-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c22-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>44.00 USD</g:price>
-      <g:sale_price>36.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C22</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Pump Covers</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C38</g:id>
-      <g:title>VentTech Perforated HYROX Tech Shirt — Breathable Zone 4/5 Endurance Fitness Top</g:title>
-      <g:description>Breathable 4.0 oz VentTech™ perforated training shirt engineered for Zone 4 and Zone 5 indoor turf intervals. High-flow micro-mesh fabric keeps air moving under hot convention-center lights.</g:description>
-      <g:link>https://www.apexhybridco.com/products/venttech-perforated-zone4-zone5-hybrid-training-shirt.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c38-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>46.00 USD</g:price>
-      <g:sale_price>38.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C38</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Breathable Tech Shirts &gt; Breathable Tech Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C29</g:id>
-      <g:title>Sled Push Dept HYROX Muscle Tank — Sleeveless Functional Turf &amp; Strength Top</g:title>
-      <g:description>Sleeveless turf training tank cut for maximum shoulder mobility on heavy sled pushes and rope pulls. Soft, breathable athletic knit with our &quot;Sled Push Department — Low Handle · Drive The Turf&quot; back graphic.</g:description>
-      <g:link>https://www.apexhybridco.com/products/sled-push-dept-raw-armhole-conditioning-muscle-tank.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c29-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>36.00 USD</g:price>
-      <g:sale_price>30.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C29</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Muscle Tanks &gt; Sleeveless Muscle Tanks</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C19</g:id>
-      <g:title>Miami HYROX Race Shirt — South Beach Breathable Humidity &amp; Endurance Racing Tee</g:title>
-      <g:description>Built for Miami Beach race weekend and South Florida humidity. Soft 6.1 oz garment-dyed cotton tee with the winged MIA·08 crest and &quot;Miami Beach // Humidity · Threshold · 100 Reps&quot; back graphic.</g:description>
-      <g:link>https://www.apexhybridco.com/products/miami-beach-heat-block-south-florida-endurance-race-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c19-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>42.00 USD</g:price>
-      <g:sale_price>34.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C19</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Race City Editions &gt; Race City Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C20</g:id>
-      <g:title>Las Vegas HYROX Race Shirt — Sin City Championship Qualifier Hybrid Athlete Tee</g:title>
-      <g:description>Heavyweight 6.1 oz garment-dyed cotton tee for Las Vegas qualifier weekend. Features our winged LV·08 Sin City crest and &quot;All In On Station Eight&quot; back print — perfect for travel day and walking the Strip after your heat.</g:description>
-      <g:link>https://www.apexhybridco.com/products/las-vegas-championship-qualifier-sin-city-turf-club-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c20-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>42.00 USD</g:price>
-      <g:sale_price>34.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C20</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Race City Editions &gt; Race City Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C21</g:id>
-      <g:title>New York NYC HYROX Race Shirt — Hudson Pier Sub-60 Hybrid Racing &amp; Running Tee</g:title>
-      <g:description>Heavyweight 6.1 oz ring-spun cotton tee honoring New York race weekend on the Hudson. Features the winged NYC·08 Metro Endurance crest and &quot;Sub-60 Pace Or Die Trying&quot; back print.</g:description>
-      <g:link>https://www.apexhybridco.com/products/new-york-hudson-pier-metro-endurance-dept-race-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c21-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>42.00 USD</g:price>
-      <g:sale_price>34.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C21</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Race City Editions &gt; Race City Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C40</g:id>
-      <g:title>CoolCore Breathable HYROX Sled &amp; Turf Shirt — Anti-Chafe Moisture-Wicking Gym Tee</g:title>
-      <g:description>Sweat-wicking 4.0 oz CoolCore™ race shirt built for heavy sled lanes and fast transition runs. Flatlock anti-chafe seams and quick-dry fabric stay light even in humid late-wave heats.</g:description>
-      <g:link>https://www.apexhybridco.com/products/coolcore-anti-chafe-turf-and-sled-breathable-tech-shirt.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c40-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>46.00 USD</g:price>
-      <g:sale_price>38.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C40</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Breathable Tech Shirts &gt; Breathable Tech Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C41</g:id>
-      <g:title>HyperBreathe Seamless HYROX Shirt — Breathable Roxzone Speed Dept Fitness Tech Top</g:title>
-      <g:description>Seamless-feel 4.0 oz HyperBreathe™ conditioning tee designed for fast Roxzone transitions and high-cadence 1km splits. Breathable micro-knit construction prevents chest and underarm chafing.</g:description>
-      <g:link>https://www.apexhybridco.com/products/hyperbreathe-seamless-roxzone-speed-dept-tech-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c41-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>46.00 USD</g:price>
-      <g:sale_price>38.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C41</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Breathable Tech Shirts &gt; Breathable Tech Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C39</g:id>
-      <g:title>Featherweight 3.8oz Breathable HYROX Shirt — Sub-60 Zero Drag Hybrid Race Top</g:title>
-      <g:description>Featherweight 3.8 oz competition race tee built for athletes chasing a sub-60 finish. Split-hem athletic cut and zero-drag raglan shoulders move cleanly from the first 1,000m run through the final wall ball.</g:description>
-      <g:link>https://www.apexhybridco.com/products/featherweight-tri-blend-zero-drag-sub60-race-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c39-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>42.00 USD</g:price>
-      <g:sale_price>34.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C39</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Breathable Tech Shirts &gt; Breathable Tech Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C30</g:id>
-      <g:title>Compromised Running Club HYROX Muscle Tank — Breathable 1000m Split Running Singlet</g:title>
-      <g:description>Featherlight sleeveless muscle tank built for sweaty brick sessions and summer track intervals. Features the 1000m stopwatch crest and &quot;Compromised Running Club — Est. Kilometer One&quot; back print.</g:description>
-      <g:link>https://www.apexhybridco.com/products/compromised-running-club-breathable-race-tank.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c30-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>36.00 USD</g:price>
-      <g:sale_price>30.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C30</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Muscle Tanks &gt; Sleeveless Muscle Tanks</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C31</g:id>
-      <g:title>100 Wall Balls Unbroken HYROX Muscle Tank — Station 8 Finisher Sleeveless Gym Top</g:title>
-      <g:description>Sleeveless race-day muscle tank built for overhead freedom at Station 8. Deep-cut armholes and breathable athletic fabric with &quot;100 Wall Balls Unbroken* (*In My Head Before Set Four)&quot; on the back.</g:description>
-      <g:link>https://www.apexhybridco.com/products/100-wall-balls-unbroken-sleeveless-muscle-tank.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c31-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>38.00 USD</g:price>
-      <g:sale_price>32.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C31</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Muscle Tanks &gt; Sleeveless Muscle Tanks</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C35</g:id>
-      <g:title>8-Station Race Division HYROX Hoodie — Winged Crest Oversized Heavyweight Gym Sweatshirt</g:title>
-      <g:description>Matte-black 9.0 oz heavyweight pigment-dyed pullover hoodie with tonal &quot;8-Station Race Division — Endurance · Strength · Recovery&quot; back print. Clean, understated streetwear fit you can wear from the gym floor to dinner.</g:description>
-      <g:link>https://www.apexhybridco.com/products/8-station-functional-race-division-oversized-stealth-hoodie.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c35-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>68.00 USD</g:price>
-      <g:sale_price>58.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C35</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear &gt; Sweatshirts &amp; Hoodies</g:google_product_category>
-      <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C23</g:id>
-      <g:title>Roxzone Penalties Ruined My PR HYROX Shirt — Funny Hybrid Race Transition Running Tee</g:title>
-      <g:description>If you&#x27;ve ever taken a wrong turn in the Roxzone or miscounted your laps and watched a 3-minute penalty wreck your PR, this 6.1 oz heavyweight cotton tee is for you. Features our &quot;-03:00&quot; stopwatch crest and &quot;Roxzone Penalties Ruined My PR&quot; back print.</g:description>
-      <g:link>https://www.apexhybridco.com/products/roxzone-penalties-ruined-my-pr-athletic-race-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c23-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>38.00 USD</g:price>
-      <g:sale_price>32.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C23</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C24</g:id>
-      <g:title>200m Farmer Carry Survivors Club HYROX Shirt — Station 6 Heavy Carry &amp; Grip Strength Tee</g:title>
-      <g:description>Heavyweight 6.1 oz garment-dyed cotton tee dedicated to the final 50 meters of Station 6 when your forearms are on fire. Features a loaded barbell crest and &quot;200m Farmer Carry Survivors Club — Grip Gave Out At Meter 150&quot; back print.</g:description>
-      <g:link>https://www.apexhybridco.com/products/200m-farmer-carry-survivors-club-barbell-crest-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c24-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>40.00 USD</g:price>
-      <g:sale_price>34.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C24</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C25</g:id>
-      <g:title>Sandbag Lunges Are A Personal Attack HYROX Shirt — Station 7 Oversized Gym Pump Cover Tee</g:title>
-      <g:description>Heavyweight 6.1 oz ring-spun cotton tee for everyone who takes Station 7 personally. Relaxed boxy fit with a bold &quot;100m Sandbag Lunges — Personal Attack · Station 07 Survivor&quot; back print.</g:description>
-      <g:link>https://www.apexhybridco.com/products/sandbag-lunges-are-a-personal-attack-oversized-pump-cover.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c25-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>44.00 USD</g:price>
-      <g:sale_price>36.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C25</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Pump Covers</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C26</g:id>
-      <g:title>Zone 2 All Week Redline Weekend HYROX Shirt — Hybrid Runner &amp; Endurance Training Tee</g:title>
-      <g:description>Heavyweight 6.1 oz garment-dyed cotton tee built for polarized training blocks — easy Zone 2 mileage Monday through Friday, full redline on Saturday. Features our 185 BPM tachometer crest on the chest and back.</g:description>
-      <g:link>https://www.apexhybridco.com/products/zone-2-all-week-redline-all-weekend-performance-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c26-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>38.00 USD</g:price>
-      <g:sale_price>32.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C26</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C27</g:id>
-      <g:title>Sub-65 Club Pace Pull Push HYROX Shirt — Pro &amp; Open Division Hybrid Racing Tee</g:title>
-      <g:description>Heavyweight 6.1 oz garment-dyed cotton tee for Open, Pro, and Doubles racers hunting a sub-65 finish time. Features the winged &quot;Sub-65 // Pro Pacing Club&quot; crest and clean typographic back print.</g:description>
-      <g:link>https://www.apexhybridco.com/products/sub-65-club-pace-pull-push-elite-division-tee.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c27-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>42.00 USD</g:price>
-      <g:sale_price>34.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C27</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
-      <g:product_type>Tees &amp; Pump Covers &gt; Performance Tees</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C32</g:id>
-      <g:title>Burpee Broad Jumps Build Character HYROX Hoodie — 8.0 oz Heavyweight Fleece Warmup Sweatshirt</g:title>
-      <g:description>Plush 9.0 oz pigment-dyed fleece pullover hoodie made for freezing 6 AM warmup corrals and post-training coffee runs. Features a double-lined hood and &quot;Burpee Broad Jumps Build Character — I Have Enough Character, Thanks&quot; across the back.</g:description>
-      <g:link>https://www.apexhybridco.com/products/burpee-broad-jumps-build-character-warmup-hoodie.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c32-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>64.00 USD</g:price>
-      <g:sale_price>54.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C32</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear &gt; Sweatshirts &amp; Hoodies</g:google_product_category>
-      <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C33</g:id>
-      <g:title>The Erg Doesn&#x27;t Care How You Feel HYROX Hoodie — SkiErg &amp; RowErg Heavyweight Warmup Sweatshirt</g:title>
-      <g:description>Heavyweight 9.0 oz pigment-dyed fleece warmup hoodie built for winter garage erg sessions and early-morning track warmups. Soft brushed interior with &quot;The Erg Doesn&#x27;t Care How You Feel — Row · Ski · Repeat&quot; on the back.</g:description>
-      <g:link>https://www.apexhybridco.com/products/the-erg-doesnt-care-how-you-feel-heavyweight-fleece-hoodie.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c33-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>66.00 USD</g:price>
-      <g:sale_price>56.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C33</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear &gt; Sweatshirts &amp; Hoodies</g:google_product_category>
-      <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C09</g:id>
-      <g:title>Run. Station. Repeat. Heavyweight Fleece Warmup Hoodie — 8.0 oz Athletic Pullover Sweatshirt</g:title>
-      <g:description>Mid-heavyweight 9.0 oz brushed fleece hoodie built for cold 5 AM warmup corrals and post-race travel. Soft ring-spun cotton blend with a double-lined hood and &quot;Run. Station. Repeat.&quot; back print.</g:description>
-      <g:link>https://www.apexhybridco.com/products/run-station-repeat-heavy-blend-hoodie.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c09-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>64.00 USD</g:price>
-      <g:sale_price>54.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C09</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear &gt; Sweatshirts &amp; Hoodies</g:google_product_category>
-      <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C10</g:id>
-      <g:title>Wall Balls &amp; Bad Decisions Brushed Fleece Pullover Hoodie — Heavyweight Gym Warmup Hoodie</g:title>
-      <g:description>Plush 9.0 oz fleece pullover hoodie made for throwing on right after you cross the finish line and hit the recovery tent. Relaxed boxy fit with &quot;Wall Balls &amp; Bad Decisions&quot; back typography.</g:description>
-      <g:link>https://www.apexhybridco.com/products/wall-balls-bad-decisions-hoodie.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c10-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>64.00 USD</g:price>
-      <g:sale_price>54.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C10</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear &gt; Sweatshirts &amp; Hoodies</g:google_product_category>
-      <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C11</g:id>
-      <g:title>Compromised Running Club Heavy Warmup Hoodie — Cold Morning Run Club Fleece Pullover</g:title>
-      <g:description>Heavyweight 9.0 oz fleece warmup hoodie featuring the &quot;Compromised Running Club&quot; crest on the chest and across the shoulders. Keeps your core warm during early-morning track workouts and chilly venue walk-ins.</g:description>
-      <g:link>https://www.apexhybridco.com/products/compromised-running-club-fleece-hoodie.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c11-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>62.00 USD</g:price>
-      <g:sale_price>54.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C11</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear &gt; Sweatshirts &amp; Hoodies</g:google_product_category>
-      <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>APC-C12</g:id>
-      <g:title>Sled Push Dept. Heavyweight Pullover Hoodie — Functional Strength &amp; Conditioning Fleece</g:title>
-      <g:description>Heavyweight 9.0 oz brushed fleece pullover hoodie honoring Station 2 turf purists. Features our Sled Push Dept. chest mark and &quot;The Footage Speaks&quot; back print with a roomy kangaroo pocket.</g:description>
-      <g:link>https://www.apexhybridco.com/products/defend-my-sled-push-fleece-hoodie.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c12-black.png?v=20261026v2</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>65.00 USD</g:price>
-      <g:sale_price>56.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
-      <g:mpn>APC-C12</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Activewear &gt; Sweatshirts &amp; Hoodies</g:google_product_category>
-      <g:product_type>Hoodies &gt; Pullover Hoodies</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
       <g:id>APC-C43</g:id>
-      <g:title>Hybrid 8-Station Windbreaker Track Jacket — Lightweight Athletic Warmup Shell</g:title>
+      <g:title>Hybrid 8-Station Windbreaker Track Jacket  -  Lightweight Athletic Warmup Shell</g:title>
       <g:description>Articulated raglan warmup track jacket with a breathable mesh lining, elastic no-snag cuffs, and our 01–08 station grid down the back. Keeps your shoulders and core warm between corral check-in and the starting horn.</g:description>
       <g:link>https://www.apexhybridco.com/products/hybrid-8-station-windbreaker-track-jacket.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c43-black.png?v=20261026v2</g:image_link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c43-black.png?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>86.00 USD</g:price>
-      <g:sale_price>66.00 USD</g:sale_price>
+      <g:price>84.00 USD</g:price>
+      <g:sale_price>68.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C43</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
@@ -846,14 +846,14 @@
     </item>
     <item>
       <g:id>APC-C44</g:id>
-      <g:title>Pro Division Lightweight Quarter-Zip Hybrid Race Shell — Sub-65 Athletic Track Top</g:title>
+      <g:title>Pro Division Lightweight Quarter-Zip Hybrid Race Shell  -  Sub-65 Athletic Track Top</g:title>
       <g:description>Streamlined quarter-zip warmup shell built for tempo runs, wet morning commutes to the gym, and early-wave check-in. Blocks chilly wind without trapping sweat while you get your heart rate primed.</g:description>
       <g:link>https://www.apexhybridco.com/products/pro-division-lightweight-quarter-zip-race-shell.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c44-black.png?v=20261026v2</g:image_link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c44-black.png?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>82.00 USD</g:price>
-      <g:sale_price>64.00 USD</g:sale_price>
+      <g:price>84.00 USD</g:price>
+      <g:sale_price>68.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C44</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
@@ -867,13 +867,13 @@
     </item>
     <item>
       <g:id>APC-C45</g:id>
-      <g:title>2026/2027 World Series Lightweight Hybrid Race Warmup Jacket — Championship Tour Shell</g:title>
+      <g:title>2026/2027 World Series Lightweight Hybrid Race Warmup Jacket  -  Championship Tour Shell</g:title>
       <g:description>Commemorative 2026/2027 North American Tour packable warmup jacket featuring all six major race cities. Lightweight water-resistant shell with an embroidered chest crest and zippered front pocket.</g:description>
       <g:link>https://www.apexhybridco.com/products/26-27-world-series-lightweight-warmup-jacket.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c45-black.png?v=20261026v2</g:image_link>
+      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c45-black.png?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>88.00 USD</g:price>
+      <g:price>84.00 USD</g:price>
       <g:sale_price>68.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C45</g:mpn>
@@ -888,13 +888,13 @@
     </item>
     <item>
       <g:id>APC-C13</g:id>
-      <g:title>Zone 2 Engine Lab Low-Profile Cotton Twill Running Cap — Unstructured Athletic Dad Hat</g:title>
+      <g:title>Zone 2 Engine Lab Low-Profile Cotton Twill Running Cap  -  Unstructured Athletic Dad Hat</g:title>
       <g:description>Low-profile unstructured cotton twill dad hat with raised 3D &quot;Zone 2 Engine Lab&quot; embroidery and an internal moisture-wicking sweatband. Finished with an adjustable antique brass buckle for sunny track intervals and Sunday long runs.</g:description>
       <g:link>https://www.apexhybridco.com/products/zone-2-engine-builder-embroidered-dad-hat.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/products/apc-c13-cap.jpg?v=20261026v2</g:image_link>
+      <g:image_link>https://www.apexhybridco.com/images/products/apc-c13-cap.jpg?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>40.00 USD</g:price>
+      <g:price>50.00 USD</g:price>
       <g:sale_price>34.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C13</g:mpn>
@@ -909,13 +909,13 @@
     </item>
     <item>
       <g:id>APC-C14</g:id>
-      <g:title>50L Tactical Gym Duffle Bag with Ventilated Shoe Compartment — Race Day Backpack Duffle</g:title>
+      <g:title>50L Tactical Gym Duffle Bag with Ventilated Shoe Compartment  -  Race Day Backpack Duffle</g:title>
       <g:description>Rugged 50L water-resistant race duffle with a dedicated ventilated shoe tunnel for carbon racers and turf trainers, wet/dry laundry pocket, and padded backpack straps for destination race weekends.</g:description>
       <g:link>https://www.apexhybridco.com/products/apex-8-station-race-day-tactical-duffle.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/products/apc-c14-duffle.jpg?v=20261026v2</g:image_link>
+      <g:image_link>https://www.apexhybridco.com/images/products/apc-c14-duffle.jpg?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>92.00 USD</g:price>
+      <g:price>90.00 USD</g:price>
       <g:sale_price>74.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C14</g:mpn>
@@ -933,10 +933,10 @@
       <g:title>24oz Double-Wall Vacuum Insulated Stainless Steel Protein Shaker Bottle with Wire Whisk</g:title>
       <g:description>Double-wall copper-lined 24 oz stainless steel shaker bottle with station split markers etched up the side, an internal wire whisk ball, and a leak-proof carry loop for the gym floor.</g:description>
       <g:link>https://www.apexhybridco.com/products/electrolyte-pacing-insulated-shaker-bottle.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/products/apc-c15-shaker.jpg?v=20261026v2</g:image_link>
+      <g:image_link>https://www.apexhybridco.com/images/products/apc-c15-shaker.jpg?v=20261026v3</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>42.00 USD</g:price>
+      <g:price>52.00 USD</g:price>
       <g:sale_price>36.00 USD</g:sale_price>
       <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
       <g:mpn>APC-C15</g:mpn>

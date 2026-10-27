@@ -456,15 +456,77 @@
       line-height: 1.65;
     }
   </style>
+    .CoachFormCard {
+      margin-top: 32px;
+      background: #101521;
+      border: 1px solid rgba(56, 224, 255, 0.35);
+      padding: 28px;
+    }
+    .CoachFormGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 16px;
+    }
+    @media (max-width: 720px) {
+      .CoachFormGrid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .CoachFormGrid label {
+      display: block;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 6px;
+    }
+    .CoachFormGrid input,
+    .CoachFormGrid select {
+      width: 100%;
+      background: #0a0e16;
+      color: #ffffff;
+      border: 1px solid var(--line-strong);
+      padding: 10px 12px;
+      font: inherit;
+      font-size: 13px;
+    }
+    .CoachConfirmBox {
+      margin-top: 18px;
+      padding: 16px;
+      background: rgba(52, 219, 150, 0.1);
+      border: 1px solid rgba(52, 219, 150, 0.45);
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .CheckoutToast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      background: #101521;
+      border: 1px solid var(--acid);
+      color: #ffffff;
+      padding: 14px 18px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
+      font-size: 13px;
+      max-width: 380px;
+      display: none;
+    }
+  </style>
 </head>
 <body class="TeamDark" id="top">
   <div class="LabBar">
     <div class="Wrap LabBar__inner">
       <div class="LabBar__mark"><i></i> Team &amp; Gym Division</div>
       <div class="LabBar__pills">
-        <a class="LabPill LabPill--articles" href="#bundles">Doubles 2-Packs (Save up to 21%)</a>
-        <a class="LabPill LabPill--calendar" href="#bulk-order">5-Pack &amp; 10-Pack Gym Kits</a>
-        <a class="LabPill LabPill--calculator" href="#coach-partner">Boutique Coach Partner ($25 / 5 Shirts + 15% Recovery)</a>
+        <a class="LabPill LabPill--articles" href="#bundles">Doubles 2-Packs (10% Off Code: COACHSU10)</a>
+        <a class="LabPill LabPill--calendar" href="#calculator">Multi-Size Team Cart Builder</a>
+        <a class="LabPill LabPill--calculator" href="#coach-request-form">Boutique Coach Partner ($25 / 5 Shirts + Free Sample)</a>
       </div>
       <a class="LabOpen" href="index.html">← Back to Full Storefront</a>
     </div>
@@ -472,46 +534,45 @@
 
   <header class="SiteHead">
     <div class="Wrap SiteHead__row">
-      <a class="Wordmark" href="index.html"><strong>Apex</strong><span>Hybrid &amp; Recovery Co.</span></a>
+      <a class="Wordmark" href="index.html"><strong>Apex</strong><span>Hybrid &amp; Performance Co.</span></a>
       <nav class="SiteNav" aria-label="Team Navigation">
         <a href="#bundles" class="is-active">Doubles &amp; Team Packs</a>
         <a href="#calculator">Team Checkout Calculator</a>
         <a href="#coach-partner">Boutique Gym &amp; Coach Partner</a>
         <a href="index.html#apparel">Shop Apparel</a>
-        <a href="index.html#recovery">Recovery Lab</a>
+        <a href="gyms/index.html">HYROX Gym Directory</a>
       </nav>
       <div class="Tools">
-        <a class="BtnDark BtnDark--cyan" href="#coach-partner" style="padding:10px 16px;font-size:11px;">Claim Free Coach Shirt + Code</a>
+        <a class="BtnDark BtnDark--cyan" href="#coach-request-form" style="padding:10px 16px;font-size:11px;">Claim Free Coach Shirt + Code</a>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
     <section class="TeamHero">
       <div class="Wrap TeamHero__grid">
         <div>
           <div class="BadgeRow">
             <span class="PillBadge">2026 / 2027 Race Season</span>
             <span class="PillBadge PillBadge--acid">Free 2–4 Day US Shipping</span>
-            <span class="PillBadge">Stripe Verified Checkout</span>
+            <span class="PillBadge">Instant Multi-Size Cart Checkout</span>
           </div>
           <h1>HYROX Doubles Packs &amp; Boutique Gym Team Kits.</h1>
           <p class="Lead">
-            Outfitting HYROX Doubles pairs, Relay squads, and boutique hybrid training gyms in SoCal, Chicago, and Dallas/DFW. Mix &amp; match any sizes (S–2XL) and race cities with automatic bundle savings up to 25.6%.
+            Outfitting HYROX Doubles pairs, Relay squads, and boutique hybrid training gyms in SoCal, Chicago, Dallas/DFW, Miami, Vegas, and NYC. Select Partner A &amp; Partner B sizes (S–2XL) below and add both shirts directly to your live Fourthwall cart in one click.
           </p>
           <div class="HeroActions">
             <a class="BtnDark BtnDark--primary" href="#bundles">Shop Doubles &amp; Gym Bundles</a>
-            <a class="BtnDark BtnDark--outline" href="#calculator">Open Bulk &amp; Promo Calculator</a>
+            <a class="BtnDark BtnDark--outline" href="#calculator">Open Multi-Size Cart Calculator</a>
           </div>
           <p style="font-size:13px;color:var(--text-dim);">
-            Active Stripe Promo Codes: <code style="color:var(--cyan);">COACHSU10</code> · <code style="color:var(--cyan);">DOUBLES10</code> · <code style="color:var(--cyan);">CLUB10</code> · <code style="color:var(--cyan);">HYROX10</code> (10% Off) | <code style="color:var(--acid);">TEAM15</code> (15% Off 5+) | <code style="color:var(--acid);">GYM20</code> (20% Off 10+)
+            Active Live Checkout Promo Codes (10% Off Entire Order): <code style="color:var(--cyan);">COACHSU10</code> · <code style="color:var(--acid);">DADBOD10</code>
           </p>
         </div>
 
         <aside class="CoachCalloutCard" id="coach-seed-card">
           <span class="PillBadge PillBadge--acid">Boutique HYROX Gyms &amp; Independent Coaches</span>
-          <h3>Get a Free Race Shirt or Warmup Piece  -  No Strings Attached</h3>
+          <h3>Get a Free Race Shirt or Warmup Piece - No Strings Attached</h3>
           <p style="font-size:14px;color:var(--text-dim);margin-bottom:14px;">
             Are you an independent HYROX coach or boutique hybrid gym owner? We want your honest feedback on our 4.0 oz AeroMesh Tech Tees and AeroShell Warmup Jackets.
           </p>
@@ -519,29 +580,28 @@
             <li><strong>Free Coach Gear Sample:</strong> Pick any race shirt or warmup piece in your size - no strings attached, just want an honest take.</li>
             <li><strong>Custom 10%-Off Athlete Code:</strong> Your members &amp; clients save 10% on every order.</li>
             <li><strong>$25 Bonus per 5 Shirts Sold:</strong> Paid directly on top of your partner payouts.</li>
-            <li><strong>15%–20% Recovery Gear Commission:</strong> Earn on every CryoPod, AirRecover boot, and LumiRed panel.</li>
+            <li><strong>15%–20% Partner Commission:</strong> Earn on every verified team pack and apparel checkout.</li>
           </ul>
-          <a class="BtnDark BtnDark--cyan" style="width:100%;" href="mailto:apexhybridco@gmail.com?subject=Boutique%20HYROX%20Coach%20Free%20Sample%20%2B%2010%25%20Code%20Request&body=Hey%20Apex%20Team%2C%0A%0AI%20coach%20HYROX%20athletes%20at%20%5BGym%2FCoaching%20Name%5D%20in%20%5BCity%5D.%0A%0A1.%20Piece%20I'd%20like%20to%20test%20(and%20my%20size)%3A%20%0A2.%20Shipping%20address%3A%20%0A3.%20Preferred%2010%25-off%20athlete%20code%3A%20">
+          <a class="BtnDark BtnDark--cyan" style="width:100%;" href="#coach-request-form" onclick="selectCoachTier('Independent HYROX Coach')">
             Request Your Free Coach Shirt &amp; Custom 10% Code →
           </a>
         </aside>
       </div>
     </section>
 
-    <!-- 8 VERIFIED BUNDLES -->
     <section class="SectionDark" id="bundles">
       <div class="Wrap">
         <div class="SectionHeader">
           <div>
             <p class="Eyebrow" style="color:var(--cyan);margin-bottom:8px;">Official Team, Doubles &amp; Run-Club Bundles</p>
             <h2>Doubles 2-Packs, Relay 5-Packs &amp; Gym 10-Pack Drops</h2>
-            <p>Select your sizes and colorway/city edition below, then click to launch instant storefront checkout with your bundle price locked in.</p>
+            <p>Select Partner A size, Partner B size, and your preferred race city/style below. Clicking <strong>Buy Pack Now</strong> adds both selected sizes directly into your live Fourthwall cart and copies your 10% code (<code>COACHSU10</code>).</p>
           </div>
           <div class="FilterTabs" role="tablist">
             <button class="FilterTab is-active" type="button" data-filter="all">All 8 Bundles</button>
-            <button class="FilterTab" type="button" data-filter="Doubles 2-Pack">Doubles 2-Packs (5)</button>
+            <button class="FilterTab" type="button" data-filter="Doubles 2-Pack">Doubles 2-Packs (4)</button>
             <button class="FilterTab" type="button" data-filter="Team & Run-Club Bulk">5-Pack &amp; 10-Pack Bulk (2)</button>
-            <button class="FilterTab" type="button" data-filter="Gym Recovery Hardware">Gym Recovery Lab (1)</button>
+            <button class="FilterTab" type="button" data-filter="Complete Doubles Kit">Complete Race Kits (2)</button>
           </div>
         </div>
 
@@ -549,14 +609,13 @@
       </div>
     </section>
 
-    <!-- INTERACTIVE TEAM & PROMO CALCULATOR -->
     <section class="SectionDark" id="calculator">
       <div class="Wrap">
         <div class="SectionHeader">
           <div>
-            <p class="Eyebrow" style="color:var(--acid);margin-bottom:8px;">Instant Team Order &amp; Coach Payout Calculator</p>
-            <h2>Calculate Your Squad Price &amp; Coach Bonus</h2>
-            <p>Test any bundle or bulk quantity with an active coach/club promo code (`COACHSU10`, `DOUBLES10`, `CLUB10`, `WESTGROVE10`, `KEVINKIM10`, `TAEJO10`, `FTX10`, `TEAM15`, `GYM20`).</p>
+            <p class="Eyebrow" style="color:var(--acid);margin-bottom:8px;">Instant Multi-Size Cart &amp; Coach Payout Calculator</p>
+            <h2>Configure Your Squad Sizes &amp; Launch Checkout</h2>
+            <p>Choose your pack, Race City or Tech style, Partner A size, Partner B size, and number of packs. Clicking checkout adds the exact size quantities straight to your Fourthwall cart.</p>
           </div>
         </div>
 
@@ -568,33 +627,39 @@
             </div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
               <div>
-                <label for="calcQtyInput">2. Number of Packs</label>
-                <input id="calcQtyInput" type="number" min="1" max="50" value="1" style="width:100%;margin-top:6px;" />
+                <label for="calcCitySelect">2. Race City / Primary Style</label>
+                <select id="calcCitySelect" style="width:100%;margin-top:6px;"></select>
               </div>
               <div>
-                <label for="calcPromoInput">3. Coach / Club Promo Code</label>
-                <input id="calcPromoInput" type="text" value="CLUB10" placeholder="e.g. COACHSU10, CLUB10, FTX10, GYM20" style="width:100%;margin-top:6px;text-transform:uppercase;" />
+                <label for="calcQtyInput">3. Number of Packs</label>
+                <input id="calcQtyInput" type="number" min="1" max="25" value="1" style="width:100%;margin-top:6px;" />
               </div>
             </div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
               <div>
-                <label for="calcCitySelect">4. Race City / Primary Style</label>
-                <select id="calcCitySelect" style="width:100%;margin-top:6px;">
-                  <option value="APC-C36">AeroMesh 4.0 Laser-Vented Tech Tee (Black)</option>
-                  <option value="APC-C16">Chicago Navy Pier City Crest Tee</option>
-                  <option value="APC-C17">Dallas Lone Star Division City Tee</option>
-                  <option value="APC-C18">Anaheim SoCal Open Division City Tee</option>
-                  <option value="APC-C19">Miami Beach Heat Block City Tee</option>
-                  <option value="APC-C20">Las Vegas Championship Qualifier Tee</option>
-                  <option value="APC-C21">New York Hudson Pier City Tee</option>
-                  <option value="APC-C28">Run. Station. Repeat. Muscle Tank</option>
-                  <option value="APC-C42">AeroShell Lightweight Warmup Jacket</option>
+                <label for="calcSizeA">4. Partner A / Primary Size</label>
+                <select id="calcSizeA" style="width:100%;margin-top:6px;">
+                  <option value="S">Size S</option>
+                  <option value="M">Size M</option>
+                  <option value="L" selected>Size L</option>
+                  <option value="XL">Size XL</option>
+                  <option value="2XL">Size 2XL (+$2)</option>
                 </select>
               </div>
               <div>
-                <label for="calcSizeNotes">5. Athlete Size Breakdown</label>
-                <input id="calcSizeNotes" type="text" value="1x L, 1x M" placeholder="e.g. 2x M, 2x L, 1x XL" style="width:100%;margin-top:6px;" />
+                <label for="calcSizeB">5. Partner B / Secondary Size</label>
+                <select id="calcSizeB" style="width:100%;margin-top:6px;">
+                  <option value="S">Size S</option>
+                  <option value="M" selected>Size M</option>
+                  <option value="L">Size L</option>
+                  <option value="XL">Size XL</option>
+                  <option value="2XL">Size 2XL (+$2)</option>
+                </select>
               </div>
+            </div>
+            <div>
+              <label for="calcPromoInput">6. Active Partner Promo Code (10% Off at Checkout)</label>
+              <input id="calcPromoInput" type="text" value="COACHSU10" placeholder="COACHSU10 or DADBOD10" style="width:100%;margin-top:6px;text-transform:uppercase;" />
             </div>
           </div>
 
@@ -602,31 +667,31 @@
             <div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
                 <span class="PillBadge">Live Order Breakdown</span>
-                <span id="calcStripeBadge" style="font-family:monospace;font-size:12px;color:var(--cyan);"></span>
+                <span id="calcStripeBadge" style="font-family:monospace;font-size:12px;color:var(--cyan);">✓ Free 2–4 Day US Shipping</span>
               </div>
               <div class="CalcRow" style="margin-bottom:8px;">
-                <span>Regular Retail Total:</span>
-                <strong id="calcRegularTotal">$72.00</strong>
+                <span>Cart Items &amp; Sizes:</span>
+                <strong id="calcItemsBreakdown">1× L + 1× M</strong>
               </div>
               <div class="CalcRow" style="margin-bottom:8px;">
-                <span>Bundle Pack Price:</span>
-                <strong id="calcBundleSubtotal">$62.00</strong>
+                <span>Fourthwall Cart Subtotal:</span>
+                <strong id="calcRegularTotal">$76.00</strong>
               </div>
               <div class="CalcRow" style="margin-bottom:8px;color:var(--acid);">
-                <span id="calcPromoLabel">Coach / Member Code (10% Off):</span>
-                <strong id="calcPromoDiscount" style="color:var(--acid);">-$6.20</strong>
+                <span id="calcPromoLabel">Promo Code COACHSU10 (10% Off):</span>
+                <strong id="calcPromoDiscount" style="color:var(--acid);">-$7.60</strong>
               </div>
               <div class="CalcRow" style="margin-bottom:8px;">
                 <span>2–4 Day US Tracked Shipping:</span>
                 <strong style="color:var(--teal);">FREE ($0.00)</strong>
               </div>
               <div class="CalcRow CalcRow--total">
-                <span>Net Team Checkout Total:</span>
-                <span id="calcFinalTotal" style="color:var(--cyan);">$55.80</span>
+                <span>Total After 10% Code:</span>
+                <span id="calcFinalTotal" style="color:var(--cyan);">$68.40</span>
               </div>
               <div class="CalcRow" style="margin-top:8px;font-size:13px;">
-                <span>Effective Price Per Athlete:</span>
-                <strong id="calcPerAthlete">$27.90 / athlete</strong>
+                <span>Effective Price Per Unit:</span>
+                <strong id="calcPerAthlete">$34.20 / unit</strong>
               </div>
             </div>
 
@@ -635,22 +700,21 @@
               <span id="calcCoachEarnings" style="color:#e6edf5;">15% Affiliate Commission + Progress toward $25 per 5-shirt bonus</span>
             </div>
 
-            <a id="calcCheckoutBtn" class="BtnDark BtnDark--primary" href="index.html?buy=APC-C36&qty=2&promo=CLUB10" style="width:100%;">
-              Launch Instant Storefront Checkout →
-            </a>
+            <button id="calcCheckoutBtn" type="button" class="BtnDark BtnDark--primary" style="width:100%;" onclick="submitCalculatorCheckout()">
+              Add All Selected Sizes to Cart &amp; Checkout →
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- BOUTIQUE GYM & COACH PARTNER TIERS -->
     <section class="SectionDark" id="coach-partner">
       <div class="Wrap">
         <div class="SectionHeader">
           <div>
             <p class="Eyebrow" style="color:var(--cyan);margin-bottom:8px;">$0-Upfront Boutique HYROX Gym &amp; Independent Coach Program</p>
             <h2>Built for Independent HYROX Coaches &amp; Boutique Boxes</h2>
-            <p>Zero inventory to buy, zero minimum quotas. We send you a free shirt or warmup piece to test, give your athletes 10% off, and pay you $25 for every 5 shirts sold + 15%–20% on recovery hardware.</p>
+            <p>Zero inventory to buy, zero minimum quotas. We send you a free shirt or warmup piece to test, give your athletes 10% off, and pay you $25 for every 5 shirts sold + 15%–20% partner commission.</p>
           </div>
         </div>
 
@@ -662,15 +726,15 @@
             <div class="TierStatRow">
               <div class="TierStat"><b>10% OFF</b><span>Athlete Code</span></div>
               <div class="TierStat"><b>$25</b><span>Per 5 Shirts Sold</span></div>
-              <div class="TierStat"><b>15%</b><span>Recovery Gear</span></div>
+              <div class="TierStat"><b>15%</b><span>Partner Share</span></div>
             </div>
             <ul>
               <li><strong>Free Race Shirt or Warmup Piece</strong> shipped in your size - no strings attached, just want your honest take</li>
-              <li>Custom 10%-off athlete promo code (e.g. <code>AUSTINC10</code>, <code>VICTOR10</code>, <code>STRONGHOLD10</code>)</li>
-              <li>$25 cash bonus for every 5 shirts sold + 15% commission on all recovery hardware</li>
+              <li>Custom 10%-off athlete promo code (e.g. <code>COACHSU10</code>, <code>DADBOD10</code>)</li>
+              <li>$25 cash bonus for every 5 shirts sold + 15% partner commission</li>
               <li>Automatic bi-weekly payout after 14-day settlement window</li>
             </ul>
-            <a class="BtnDark BtnDark--outline" style="margin-top:auto;" href="mailto:apexhybridco@gmail.com?subject=Independent%20HYROX%20Coach%20Code%20%2B%20Free%20Shirt%20Request">Activate Coach Code →</a>
+            <a class="BtnDark BtnDark--outline" style="margin-top:auto;" href="#coach-request-form" onclick="selectCoachTier('Independent HYROX Coach')">Activate Coach Code →</a>
           </div>
 
           <div class="TierCard TierCard--featured">
@@ -679,34 +743,108 @@
             <p style="font-size:14px;color:var(--text-dim);">For boutique HYROX affiliates, functional strength studios, and Saturday simulation hubs.</p>
             <div class="TierStatRow">
               <div class="TierStat"><b>10% OFF</b><span>Member Code</span></div>
-              <div class="TierStat"><b>$25 / 5</b><span>Shirt Bonus + 18%</span></div>
-              <div class="TierStat"><b>25.6%</b><span>Bulk Box Savings</span></div>
+              <div class="TierStat"><b>$25 / 5</b><span>Shirt Bonus + 20%</span></div>
+              <div class="TierStat"><b>$0</b><span>Upfront Cost</span></div>
             </div>
             <ul>
               <li><strong>Free Coach Sample Kit</strong> (AeroMesh Tech Shirt or AeroShell Warmup Jacket) for the head coach/owner</li>
-              <li>Custom gym code (e.g. <code>WESTGROVE10</code>, <code>KEVINKIM10</code>, <code>TAEJO10</code>, <code>HITW10</code>, <code>FTX10</code>)</li>
-              <li>$25 bonus per 5 shirts sold + up to 18% revenue share on crew bundles</li>
+              <li>Custom gym 10%-off member code + dedicated partner referral URL</li>
+              <li>$25 bonus per 5 shirts sold + up to 20% revenue share on crew bundles</li>
               <li>Priority access to 2026/2027 Race City Tees (Chicago, Dallas, Anaheim/SoCal, Miami, Vegas, NYC)</li>
             </ul>
-            <a class="BtnDark BtnDark--cyan" style="margin-top:auto;" href="mailto:apexhybridco@gmail.com?subject=Boutique%20HYROX%20Gym%20Partner%20%2B%20Free%20Coach%20Piece">Claim Free Gym Sample + Code →</a>
+            <a class="BtnDark BtnDark--cyan" style="margin-top:auto;" href="#coach-request-form" onclick="selectCoachTier('Boutique Hybrid Gym / Run Club')">Claim Free Gym Sample + Code →</a>
           </div>
 
           <div class="TierCard">
-            <span class="PillBadge">Tier 03 · Performance &amp; PT Lab</span>
-            <h3>Hybrid Gym + Recovery Lab</h3>
-            <p style="font-size:14px;color:var(--text-dim);">For HYROX gyms, sports PT clinics, and contrast-therapy studios outfitting a recovery corner.</p>
+            <span class="PillBadge">Tier 03 · Complete Race-Day Kit</span>
+            <h3>Doubles &amp; Run-Club Crew Portal</h3>
+            <p style="font-size:14px;color:var(--text-dim);">For city run clubs, Saturday track crews, and HYROX Doubles pairs outfitting for race weekend.</p>
             <div class="TierStatRow">
-              <div class="TierStat"><b>20%</b><span>Top Commission</span></div>
-              <div class="TierStat"><b>$319</b><span>3-Piece Gym Lab</span></div>
-              <div class="TierStat"><b>$67</b><span>Hardware Savings</span></div>
+              <div class="TierStat"><b>10% OFF</b><span>Crew Code</span></div>
+              <div class="TierStat"><b>15%</b><span>Cash Commission</span></div>
+              <div class="TierStat"><b>S–2XL</b><span>Mix &amp; Match</span></div>
             </div>
             <ul>
-              <li>Wholesale access to the <strong>Gym Recovery Corner Bundle</strong> (ApexPulse Gun + CryoPod Tub + AirRecover Compression Boots for $319)</li>
-              <li>20% top-tier cash commission on all member recovery hardware &amp; apparel orders</li>
-              <li>Printable Locker-Room QR placard linking to your gym's co-branded portal</li>
-              <li>Direct Stripe Transfer or ACH payout</li>
+              <li>Instant custom referral URL (<code>?ref=YOURCLUB&amp;promo=COACHSU10</code>)</li>
+              <li>Mix &amp; match sizes across Tech Tees, Race City Tees, Hoodies &amp; Warmup Jackets</li>
+              <li>3-Piece Race Travel Kit (50L Duffle Bag + Insulated Shaker + Zone 2 Cap)</li>
+              <li>Direct bi-weekly partner payout</li>
             </ul>
-            <a class="BtnDark BtnDark--outline" style="margin-top:auto;" href="?bundle=BUNDLE-GYM-RECOVERY-LAB#calculator">Order 3-Piece Gym Lab ($319) →</a>
+            <a class="BtnDark BtnDark--outline" style="margin-top:auto;" href="#bundles" onclick="loadBundleIntoCalc('BUNDLE-DBL-PRO-KIT')">Configure Complete Doubles Kit →</a>
+          </div>
+        </div>
+
+        <div class="CoachFormCard" id="coach-request-form">
+          <span class="PillBadge PillBadge--acid">Instant In-Page Application · No Email App Required</span>
+          <h3 style="font-family:var(--font-display);font-size:24px;text-transform:uppercase;margin:8px 0 6px;">Claim Your Free Coach Sample Shirt &amp; Custom 10% Partner Code</h3>
+          <p style="font-size:14px;color:var(--text-dim);margin:0;">
+            Works directly inside Instagram, TikTok, and mobile browsers. Submit your coaching or gym details below to log your free sample request and activate your instant referral link.
+          </p>
+          <form id="coachPartnerForm" onsubmit="submitCoachRequest(event)">
+            <div class="CoachFormGrid">
+              <div>
+                <label for="cpName">Coach or Gym Owner Name *</label>
+                <input id="cpName" type="text" required placeholder="e.g. Coach Alex Rivera" />
+              </div>
+              <div>
+                <label for="cpGym">Gym / Run Club Name &amp; IG Handle *</label>
+                <input id="cpGym" type="text" required placeholder="e.g. Iron Pace Hybrid (@ironpacehybrid)" />
+              </div>
+              <div>
+                <label for="cpEmail">Best Email for Sample Tracking &amp; Payouts *</label>
+                <input id="cpEmail" type="email" required placeholder="coach@yourgym.com" />
+              </div>
+              <div>
+                <label for="cpTier">Partner Tier</label>
+                <select id="cpTier">
+                  <option value="Independent HYROX Coach">Independent HYROX Coach ($25/5 Shirts + 15% Share)</option>
+                  <option value="Boutique Hybrid Gym / Run Club">Boutique Hybrid Gym / Run Club ($25/5 Shirts + 20% Share)</option>
+                  <option value="Run-Club Captain / Doubles Pair">Run-Club Captain / Doubles Pair (15% Share)</option>
+                </select>
+              </div>
+              <div>
+                <label for="cpSampleSku">Free Sample Gear Selection *</label>
+                <select id="cpSampleSku">
+                  <option value="APC-C36">AeroMesh 4.0 Laser-Vented Tech Shirt (Black)</option>
+                  <option value="APC-C42">AeroShell Lightweight Race Warmup Jacket (Black)</option>
+                  <option value="APC-C01">Run. Station. Repeat. Functional Race Tee</option>
+                  <option value="APC-C02">Wall Balls &amp; Bad Decisions Heavyweight Tee</option>
+                  <option value="APC-C16">Chicago Championship Division City Tee</option>
+                  <option value="APC-C17">Dallas Turf &amp; Threshold City Tee</option>
+                  <option value="APC-C18">Anaheim SoCal Open Division City Tee</option>
+                  <option value="APC-C21">New York Hudson Pier Race City Tee</option>
+                </select>
+              </div>
+              <div>
+                <label for="cpSize">Your Apparel Size &amp; Desired 10% Code *</label>
+                <div style="display:grid;grid-template-columns:110px 1fr;gap:8px;">
+                  <select id="cpSize">
+                    <option value="S">Size S</option>
+                    <option value="M">Size M</option>
+                    <option value="L" selected>Size L</option>
+                    <option value="XL">Size XL</option>
+                    <option value="2XL">Size 2XL</option>
+                  </select>
+                  <input id="cpCode" type="text" required placeholder="Desired Code (e.g. IRONPACE10)" />
+                </div>
+              </div>
+            </div>
+            <div style="margin-top:14px;">
+              <label for="cpAddress" style="display:block;font-size:11px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-dim);margin-bottom:6px;">Gym or Shipping City &amp; State (For Sample Delivery) *</label>
+              <input id="cpAddress" type="text" required placeholder="e.g. Irvine, CA (we confirm street address by email before dispatch)" style="width:100%;background:#0a0e16;color:#ffffff;border:1px solid var(--line-strong);padding:10px 12px;font:inherit;font-size:13px;" />
+            </div>
+            <div style="margin-top:16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
+              <button class="BtnDark BtnDark--cyan" type="submit">Submit Sample Request &amp; Activate Partner Link →</button>
+              <span style="font-size:12px;color:var(--text-dim);">✓ $0 Upfront · No Credit Card Required · Instant Referral Link</span>
+            </div>
+          </form>
+          <div class="CoachConfirmBox" id="coachFormOutput">
+            <div>
+              <strong style="display:block;color:var(--acid);font-size:15px;margin-bottom:4px;" id="coachConfirmHeadline">Sample Request Logged!</strong>
+              <span style="font-size:13px;color:#d6dde8;display:block;margin-bottom:6px;" id="coachConfirmDetails"></span>
+              <code id="coachConfirmUrl" style="color:var(--cyan);font-size:13px;word-break:break-all;">https://www.apexhybridco.com/?ref=COACH10&amp;promo=COACHSU10</code>
+            </div>
+            <button class="BtnDark BtnDark--outline" type="button" onclick="copyGeneratedCoachLink(this)">Copy Partner Link</button>
           </div>
         </div>
       </div>
@@ -716,32 +854,124 @@
   <footer style="padding:42px 0;background:#070a10;color:var(--text-dim);font-size:13px;">
     <div class="Wrap" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center;">
       <div>
-        <strong style="color:#ffffff;">Apex Hybrid &amp; Recovery Supply</strong> · 8420 Spectrum, Irvine, CA 92618 · <a href="mailto:apexhybridco@gmail.com" style="color:var(--cyan);">apexhybridco@gmail.com</a>
+        <strong style="color:#ffffff;">Apex Hybrid &amp; Performance Co.</strong> · 8420 Spectrum, Irvine, CA 92618 · <a href="#coach-request-form" style="color:var(--cyan);">Partner &amp; Sample Desk</a>
       </div>
       <div style="display:flex;gap:18px;">
         <a href="index.html">Main Storefront</a>
         <a href="#bundles">Doubles 2-Packs</a>
         <a href="#calculator">Team Calculator</a>
-        <a href="#coach-partner">Coach Partner Program</a>
+        <a href="#coach-request-form">Coach Sample Request</a>
       </div>
     </div>
   </footer>
 
+  <div id="checkoutToast" class="CheckoutToast" role="status" aria-live="polite"></div>
+  <form id="fwCartForm" method="post" action="https://apex-hybrid-co-shop.fourthwall.com/cart/add" style="display:none;"></form>
+
   <script>
-    const BUNDLES = [{"bundle_id": "BUNDLE-DBL-TECH-2PK", "title": "HYROX Doubles Breathable Tech Tee 2-Pack", "subtitle": "2\u00d7 AeroMesh\u2122 4.0 or Dry-Pace\u2122 Perforated Race Tees (Mix & Match Sizes/Colors)", "badge": "Most Popular Doubles Kit", "pack_size": 2, "category": "Doubles 2-Pack", "eligible_skus": ["APC-C36", "APC-C37", "APC-C38", "APC-C39", "APC-C40", "APC-C41"], "default_sku": "APC-C36", "image": "images/streetwear/apc-c36-black.png", "alt_image": "images/streetwear/apc-c36-white.png", "regular_unit_price": 36.0, "regular_total_price": 72.0, "bundle_price": 62.0, "price_per_athlete": 31.0, "savings_usd": 10.0, "savings_pct": 13.9,  "stripe_product_id": "BUNDLE-DBL-TECH-2PK", "stripe_price_id": "price_1UUdfgRut88O8nG2ishjYEpb", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-TECH-2PK", "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C36&qty=2&promo=DOUBLES10"}, {"bundle_id": "BUNDLE-DBL-CITY-2PK", "title": "HYROX Doubles Race City & Slogan Tee 2-Pack", "subtitle": "2\u00d7 Race City Tees (Chicago \u00b7 Dallas \u00b7 Anaheim \u00b7 Miami \u00b7 Vegas \u00b7 NYC) or 8-Station Graphic Tees", "badge": "Race City Match", "pack_size": 2, "category": "Doubles 2-Pack", "eligible_skus": ["APC-C16", "APC-C17", "APC-C18", "APC-C19", "APC-C20", "APC-C21", "APC-C01", "APC-C03", "APC-C04", "APC-C06", "APC-C08", "APC-C23", "APC-C24", "APC-C26", "APC-C27"], "default_sku": "APC-C16", "image": "images/streetwear/apc-c16-black.png", "alt_image": "images/streetwear/apc-c16-white.png", "regular_unit_price": 34.0, "regular_total_price": 68.0, "bundle_price": 58.0, "price_per_athlete": 29.0, "savings_usd": 10.0, "savings_pct": 14.7,  "stripe_product_id": "BUNDLE-DBL-CITY-2PK", "stripe_price_id": "price_1UUdfvRut88O8nG2XZcN82kc", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-CITY-2PK", "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C16&qty=2&promo=DOUBLES10"}, {"bundle_id": "BUNDLE-DBL-JACKET-2PK", "title": "Lightweight Race Warmup Jacket Doubles 2-Pack", "subtitle": "2\u00d7 AeroShell\u2122 Corral Jackets or 8-Station Ripstop Windbreaker Track Shells", "badge": "New Corral Shell", "pack_size": 2, "category": "Doubles 2-Pack", "eligible_skus": ["APC-C42", "APC-C43", "APC-C44", "APC-C45"], "default_sku": "APC-C42", "image": "images/streetwear/apc-c42-black.png", "alt_image": "images/streetwear/apc-c42-white.png", "regular_unit_price": 64.0, "regular_total_price": 128.0, "bundle_price": 108.0, "price_per_athlete": 54.0, "savings_usd": 20.0, "savings_pct": 15.6,  "stripe_product_id": "BUNDLE-DBL-JACKET-2PK", "stripe_price_id": "price_1UUdfiRut88O8nG2SM0REVAF", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-JACKET-2PK", "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C42&qty=2&promo=DOUBLES10"}, {"bundle_id": "BUNDLE-DBL-HOODIE-2PK", "title": "Heavyweight Corral Warmup Hoodie Doubles 2-Pack", "subtitle": "2\u00d7 8.0 oz Brushed Fleece Pullover Hoodies (Sub-60 Club, Sled Push Dept, World Series)", "badge": "Cold Morning Staging", "pack_size": 2, "category": "Doubles 2-Pack", "eligible_skus": ["APC-C09", "APC-C10", "APC-C11", "APC-C12", "APC-C32", "APC-C33", "APC-C34", "APC-C35"], "default_sku": "APC-C09", "image": "images/streetwear/apc-c09-black.png", "alt_image": "images/streetwear/apc-c09-white.png", "regular_unit_price": 56.0, "regular_total_price": 112.0, "bundle_price": 96.0, "price_per_athlete": 48.0, "savings_usd": 16.0, "savings_pct": 14.3,  "stripe_product_id": "BUNDLE-DBL-HOODIE-2PK", "stripe_price_id": "price_1UUdfwRut88O8nG2aofM0N7v", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-HOODIE-2PK", "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C09&qty=2&promo=DOUBLES10"}, {"bundle_id": "BUNDLE-DBL-PRO-KIT", "title": "Full Doubles Race-Day Kit (2 Tees + 2 Warmup Jackets + Chalk 2-Pack)", "subtitle": "2\u00d7 Breathable Tech Tees + 2\u00d7 AeroShell\u2122 Warmup Jackets + 1\u00d7 ChalkLock\u2122 Carabiner Liquid Chalk 2-Pack", "badge": "Best Value \u00b7 Save $48", "pack_size": 5, "category": "Complete Doubles Kit", "eligible_skus": ["APC-C36", "APC-C42", "APC-C40"], "default_sku": "APC-C36", "image": "images/streetwear/apc-c42-black.png", "alt_image": "images/streetwear/apc-c36-black.png", "regular_unit_price": 113.0, "regular_total_price": 226.0, "bundle_price": 178.0, "price_per_athlete": 89.0, "savings_usd": 48.0, "savings_pct": 21.2,  "stripe_product_id": "BUNDLE-DBL-PRO-KIT", "stripe_price_id": "price_1UUdfjRut88O8nG2lnnNjpvE", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-PRO-KIT", "storefront_buy_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-DBL-PRO-KIT"}, {"bundle_id": "BUNDLE-CLUB-5PK", "title": "Run-Club & HYROX Relay Squad 5-Pack Crew Kit", "subtitle": "5\u00d7 Performance, Race City, or Breathable Tech Tees (Mix & Match Any Sizes S\u20132XL & Colorways)", "badge": "Relay & Run-Club Tier", "pack_size": 5, "category": "Team & Run-Club Bulk", "eligible_skus": ["APC-C36", "APC-C37", "APC-C16", "APC-C17", "APC-C18", "APC-C19", "APC-C20", "APC-C21", "APC-C01", "APC-C04"], "default_sku": "APC-C04", "image": "images/streetwear/apc-c04-black.png", "alt_image": "images/streetwear/apc-c04-white.png", "regular_unit_price": 36.0, "regular_total_price": 180.0, "bundle_price": 145.0, "price_per_athlete": 29.0, "savings_usd": 35.0, "savings_pct": 19.4,  "stripe_product_id": "BUNDLE-CLUB-5PK", "stripe_price_id": "price_1UUdfkRut88O8nG2Or7Es5on", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-CLUB-5PK", "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C04&qty=5&promo=TEAM15"}, {"bundle_id": "BUNDLE-GYM-10PK", "title": "Hybrid Gym & Run-Club 10-Pack Box Drop", "subtitle": "10\u00d7 Performance or Tech Tees (Mix & Match Sizes S\u20132XL) + Custom 10% Club Code & 15% Affiliate Commission Activation", "badge": "Gym & Run-Club 10-Pack", "pack_size": 10, "category": "Team & Run-Club Bulk", "eligible_skus": ["APC-C36", "APC-C37", "APC-C01", "APC-C03", "APC-C04", "APC-C08", "APC-C16", "APC-C17", "APC-C18", "APC-C19", "APC-C20", "APC-C21"], "default_sku": "APC-C01", "image": "images/streetwear/apc-c01-black.png", "alt_image": "images/streetwear/apc-c01-white.png", "regular_unit_price": 36.0, "regular_total_price": 360.0, "bundle_price": 268.0, "price_per_athlete": 26.8, "savings_usd": 92.0, "savings_pct": 25.6,  "stripe_product_id": "BUNDLE-GYM-10PK", "stripe_price_id": "price_1UUdfnRut88O8nG2NNOyfiqy", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-GYM-10PK", "storefront_buy_url": "https://www.apexhybridco.com/?buy=APC-C01&qty=10&promo=GYM20"}, {"bundle_id": "BUNDLE-GYM-RECOVERY-LAB", "title": "Gym Recovery Corner Hardware Bundle (3-Piece Lab)", "subtitle": "1\u00d7 ApexPulse Pro Massage Gun + 1\u00d7 CryoPod Cold Plunge Tub + 1\u00d7 AirRecover Leg Compression Boots", "badge": "Complete 3-Piece Gym Lab \u00b7 Save $67", "pack_size": 3, "category": "Gym Recovery Hardware", "eligible_skus": ["APC-C01", "APC-C07", "APC-C42"], "default_sku": "APC-C42", "image": "images/products/apc-e12-compression-boots.jpg", "alt_image": "images/products/apc-e03-cold-plunge.jpg", "regular_unit_price": 128.67, "regular_total_price": 386.0, "bundle_price": 319.0, "price_per_athlete": 106.33, "savings_usd": 67.0, "savings_pct": 17.4,  "stripe_product_id": "BUNDLE-GYM-RECOVERY-LAB", "stripe_price_id": "price_1UUdfxRut88O8nG2rAjgOMFt", "checkout_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-GYM-RECOVERY-LAB", "storefront_buy_url": "https://www.apexhybridco.com/team_orders.html?bundle=BUNDLE-GYM-RECOVERY-LAB"}];
+    const BUNDLES = [{"bundle_id": "BUNDLE-DBL-TECH-2PK", "title": "HYROX Doubles Breathable Tech Tee 2-Pack", "subtitle": "2x AeroMesh 4.0 or Dry-Pace Perforated Race Tees (Mix & Match Partner A & B Sizes)", "badge": "Most Popular Doubles Kit", "pack_size": 2, "category": "Doubles 2-Pack", "eligible_skus": ["APC-C36", "APC-C37", "APC-C38", "APC-C39", "APC-C40", "APC-C41"], "default_sku": "APC-C36", "image": "images/streetwear/apc-c36-black.png", "alt_image": "images/streetwear/apc-c36-white.png", "regular_unit_price": 38.0, "regular_total_price": 76.0, "bundle_price": 68.4, "price_per_athlete": 34.2, "savings_usd": 7.6, "savings_pct": 10.0, "recommended_promo": "COACHSU10", "checkout_mode": "pair_sku", "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/aeromesh-laser-vented-breathable-tech-shirt-built-for-compromised-running"}, {"bundle_id": "BUNDLE-DBL-CITY-2PK", "title": "HYROX Doubles Race City & Slogan Tee 2-Pack", "subtitle": "2x Race City Tees (Chicago \u00b7 Dallas \u00b7 Anaheim \u00b7 Miami \u00b7 Vegas \u00b7 NYC) or 8-Station Graphic Tees", "badge": "Race City Match", "pack_size": 2, "category": "Doubles 2-Pack", "eligible_skus": ["APC-C16", "APC-C17", "APC-C18", "APC-C19", "APC-C20", "APC-C21", "APC-C01", "APC-C02", "APC-C03", "APC-C04", "APC-C06", "APC-C08", "APC-C22", "APC-C23", "APC-C24", "APC-C26", "APC-C27"], "default_sku": "APC-C16", "image": "images/streetwear/apc-c16-black.png", "alt_image": "images/streetwear/apc-c16-white.png", "regular_unit_price": 38.0, "regular_total_price": 76.0, "bundle_price": 68.4, "price_per_athlete": 34.2, "savings_usd": 7.6, "savings_pct": 10.0, "recommended_promo": "COACHSU10", "checkout_mode": "pair_sku", "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/chicago-championship-division-tee-navy-pier-8x1000m-club"}, {"bundle_id": "BUNDLE-DBL-JACKET-2PK", "title": "Lightweight Race Warmup Jacket Doubles 2-Pack", "subtitle": "2x AeroShell Corral Jackets or 8-Station Ripstop Windbreaker Track Shells", "badge": "New Corral Shell", "pack_size": 2, "category": "Doubles 2-Pack", "eligible_skus": ["APC-C42", "APC-C43", "APC-C44", "APC-C45"], "default_sku": "APC-C42", "image": "images/streetwear/apc-c42-black.png", "alt_image": "images/streetwear/apc-c42-white.png", "regular_unit_price": 68.0, "regular_total_price": 136.0, "bundle_price": 122.4, "price_per_athlete": 61.2, "savings_usd": 13.6, "savings_pct": 10.0, "recommended_promo": "COACHSU10", "checkout_mode": "pair_sku", "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-aeroshell-lightweight-race-warmup-jacket-8-1000m-corral-shell"}, {"bundle_id": "BUNDLE-DBL-HOODIE-2PK", "title": "Heavyweight Corral Warmup Hoodie Doubles 2-Pack", "subtitle": "2x 8.0 oz Brushed Fleece Pullover Hoodies (Run Station Repeat, Sled Push Dept, World Series)", "badge": "Cold Morning Staging", "pack_size": 2, "category": "Doubles 2-Pack", "eligible_skus": ["APC-C09", "APC-C10", "APC-C11", "APC-C12", "APC-C32", "APC-C33", "APC-C34"], "default_sku": "APC-C09", "image": "images/streetwear/apc-c09-black.png", "alt_image": "images/streetwear/apc-c09-white.png", "regular_unit_price": 58.0, "regular_total_price": 116.0, "bundle_price": 104.4, "price_per_athlete": 52.2, "savings_usd": 11.6, "savings_pct": 10.0, "recommended_promo": "COACHSU10", "checkout_mode": "pair_sku", "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-fleece-warmup-hoodie-run-station-repeat"}, {"bundle_id": "BUNDLE-DBL-PRO-KIT", "title": "Complete Doubles Race-Day Kit (2 Tech Tees + 2 Warmup Jackets)", "subtitle": "2x Breathable Tech Tees + 2x AeroShell Lightweight Warmup Jackets (Partner A & B Full Kit)", "badge": "Complete 4-Piece Doubles Kit", "pack_size": 4, "category": "Complete Doubles Kit", "eligible_skus": ["APC-C36", "APC-C37", "APC-C38", "APC-C39", "APC-C40", "APC-C41"], "secondary_sku": "APC-C42", "default_sku": "APC-C36", "image": "images/streetwear/apc-c42-black.png", "alt_image": "images/streetwear/apc-c36-black.png", "regular_unit_price": 53.0, "regular_total_price": 212.0, "bundle_price": 190.8, "price_per_athlete": 95.4, "savings_usd": 21.2, "savings_pct": 10.0, "recommended_promo": "COACHSU10", "checkout_mode": "doubles_pro_kit", "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-aeroshell-lightweight-race-warmup-jacket-8-1000m-corral-shell"}, {"bundle_id": "BUNDLE-CLUB-5PK", "title": "Run-Club & HYROX Relay Squad 5-Pack Crew Kit", "subtitle": "5x Performance, Race City, or Breathable Tech Tees (Mix & Match Sizes S\u20132XL)", "badge": "Relay & Run-Club Tier", "pack_size": 5, "category": "Team & Run-Club Bulk", "eligible_skus": ["APC-C04", "APC-C36", "APC-C37", "APC-C16", "APC-C17", "APC-C18", "APC-C19", "APC-C20", "APC-C21", "APC-C01"], "default_sku": "APC-C04", "image": "images/streetwear/apc-c04-black.png", "alt_image": "images/streetwear/apc-c04-white.png", "regular_unit_price": 38.0, "regular_total_price": 190.0, "bundle_price": 171.0, "price_per_athlete": 34.2, "savings_usd": 19.0, "savings_pct": 10.0, "recommended_promo": "COACHSU10", "checkout_mode": "bulk_5pk", "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-compromised-running-club"}, {"bundle_id": "BUNDLE-GYM-10PK", "title": "Hybrid Gym & Run-Club 10-Pack Box Drop", "subtitle": "10x Performance or Tech Tees (Mix & Match Sizes S\u20132XL) + Custom 10% Club Code Activation", "badge": "Gym & Run-Club 10-Pack", "pack_size": 10, "category": "Team & Run-Club Bulk", "eligible_skus": ["APC-C01", "APC-C36", "APC-C37", "APC-C03", "APC-C04", "APC-C08", "APC-C16", "APC-C17", "APC-C18", "APC-C19", "APC-C20", "APC-C21"], "default_sku": "APC-C01", "image": "images/streetwear/apc-c01-black.png", "alt_image": "images/streetwear/apc-c01-white.png", "regular_unit_price": 38.0, "regular_total_price": 380.0, "bundle_price": 342.0, "price_per_athlete": 34.2, "savings_usd": 38.0, "savings_pct": 10.0, "recommended_promo": "COACHSU10", "checkout_mode": "bulk_10pk", "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-run-station-repeat"}, {"bundle_id": "BUNDLE-RACE-TRAVEL-KIT", "title": "Complete Race-Day Travel & Corral Kit (Duffle + Shaker + Cap)", "subtitle": "1x 50L All-Weather Gym Duffle Bag + 1x Insulated Steel Shaker + 1x Zone 2 Engine Twill Cap", "badge": "3-Piece Race Travel Kit", "pack_size": 3, "category": "Complete Doubles Kit", "eligible_skus": ["APC-C14", "APC-C15", "APC-C13"], "default_sku": "APC-C14", "image": "images/streetwear/apc-c14-black.png", "alt_image": "images/streetwear/apc-c13-black.png", "regular_unit_price": 48.0, "regular_total_price": 144.0, "bundle_price": 129.6, "price_per_athlete": 43.2, "savings_usd": 14.4, "savings_pct": 10.0, "recommended_promo": "COACHSU10", "checkout_mode": "travel_kit_3pc", "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/8-station-race-day-50l-all-weather-gym-shoe-duffle-bag"}];
+    const FW_VARIANTS = {"APC-C01": {"sku": "APC-C01", "title": "Run. Station. Repeat. Heavyweight Hybrid Race Tee", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-run-station-repeat", "price": 38.0, "image": "images/streetwear/apc-c01-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c01-white.png?v=20261026v3", "variants": {"S": {"id": "c7204aca-5bc1-4903-921c-4103e7b7bcd0", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-run-station-repeat?variant=c7204aca-5bc1-4903-921c-4103e7b7bcd0"}, "M": {"id": "c68ce394-fabe-4b4b-a61a-1e62e02ee237", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-run-station-repeat?variant=c68ce394-fabe-4b4b-a61a-1e62e02ee237"}, "L": {"id": "c72c77ef-f0ad-4d13-b3fd-0df02dfe5a63", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-run-station-repeat?variant=c72c77ef-f0ad-4d13-b3fd-0df02dfe5a63"}, "XL": {"id": "83622d4b-c74d-4062-bb05-6a828368330b", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-run-station-repeat?variant=83622d4b-c74d-4062-bb05-6a828368330b"}, "2XL": {"id": "b14e7097-2d16-4828-a929-5d112665caf7", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-run-station-repeat?variant=b14e7097-2d16-4828-a929-5d112665caf7"}, "3XL": {"id": "4e5706e1-a2b6-4211-a8de-274857fb3a56", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-run-station-repeat?variant=4e5706e1-a2b6-4211-a8de-274857fb3a56"}, "4XL": {"id": "f711f9fc-e68d-476c-b656-4a815af373b5", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-run-station-repeat?variant=f711f9fc-e68d-476c-b656-4a815af373b5"}}}, "APC-C02": {"sku": "APC-C02", "title": "Wall Balls & Bad Decisions Heavyweight Pump Cover Tee", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-wall-balls-bad-decisions", "price": 38.0, "image": "images/streetwear/apc-c02-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c02-white.png?v=20261026v3", "variants": {"S": {"id": "c5c3892a-360f-47e8-8983-65326e233e93", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-wall-balls-bad-decisions?variant=c5c3892a-360f-47e8-8983-65326e233e93"}, "M": {"id": "ae373f8e-e8e2-4460-9ff1-6d9f3eaddd05", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-wall-balls-bad-decisions?variant=ae373f8e-e8e2-4460-9ff1-6d9f3eaddd05"}, "L": {"id": "8ef10583-5990-4906-a210-71e5c2907158", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-wall-balls-bad-decisions?variant=8ef10583-5990-4906-a210-71e5c2907158"}, "XL": {"id": "3471d1e9-2d95-4fbe-a82b-02cc4ff0680e", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-wall-balls-bad-decisions?variant=3471d1e9-2d95-4fbe-a82b-02cc4ff0680e"}, "2XL": {"id": "0a4ee0a0-dd49-4fcc-891f-57d1ab8af263", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-wall-balls-bad-decisions?variant=0a4ee0a0-dd49-4fcc-891f-57d1ab8af263"}, "3XL": {"id": "e19cbab1-5e95-4f2c-a98e-34da7fe9001d", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-wall-balls-bad-decisions?variant=e19cbab1-5e95-4f2c-a98e-34da7fe9001d"}, "4XL": {"id": "bcfd497a-2f33-46fb-81df-1e900ea95250", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-wall-balls-bad-decisions?variant=bcfd497a-2f33-46fb-81df-1e900ea95250"}}}, "APC-C03": {"sku": "APC-C03", "title": "Sled Push Enthusiast Athletic Crewneck Tee", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-sled-push-enthusiast", "price": 38.0, "image": "images/streetwear/apc-c03-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c03-white.png?v=20261026v3", "variants": {"S": {"id": "7face9ce-5c7b-4629-9a16-c7793eaf4d44", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-sled-push-enthusiast?variant=7face9ce-5c7b-4629-9a16-c7793eaf4d44"}, "M": {"id": "3e967b7d-6ad8-4eb0-b56d-d23daa10872d", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-sled-push-enthusiast?variant=3e967b7d-6ad8-4eb0-b56d-d23daa10872d"}, "L": {"id": "2eb357f2-3d6d-4494-86b6-154e37b4f718", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-sled-push-enthusiast?variant=2eb357f2-3d6d-4494-86b6-154e37b4f718"}, "XL": {"id": "5667ffbd-8464-4382-b64b-f15928758377", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-sled-push-enthusiast?variant=5667ffbd-8464-4382-b64b-f15928758377"}, "2XL": {"id": "9e27edf7-51bf-407c-a457-3eb55b0ed5b1", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-sled-push-enthusiast?variant=9e27edf7-51bf-407c-a457-3eb55b0ed5b1"}, "3XL": {"id": "e94dae93-849d-4494-b186-c4f65d377dea", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-sled-push-enthusiast?variant=e94dae93-849d-4494-b186-c4f65d377dea"}, "4XL": {"id": "661f6129-62ca-4308-bb44-a16e322906bc", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-sled-push-enthusiast?variant=661f6129-62ca-4308-bb44-a16e322906bc"}}}, "APC-C04": {"sku": "APC-C04", "title": "Compromised Running Club - Est. Kilometer One Tee", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-compromised-running-club", "price": 38.0, "image": "images/streetwear/apc-c04-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c04-white.png?v=20261026v3", "variants": {"S": {"id": "00b46abe-f4bb-4dc0-82de-e7fe669f0579", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-compromised-running-club?variant=00b46abe-f4bb-4dc0-82de-e7fe669f0579"}, "M": {"id": "367c120b-affe-4f5c-b343-652c3ddcbdfb", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-compromised-running-club?variant=367c120b-affe-4f5c-b343-652c3ddcbdfb"}, "L": {"id": "8d3cf41a-8f43-4e7c-8686-f6023d613ffd", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-compromised-running-club?variant=8d3cf41a-8f43-4e7c-8686-f6023d613ffd"}, "XL": {"id": "f3676722-c952-43be-b761-ea6aac9cd420", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-compromised-running-club?variant=f3676722-c952-43be-b761-ea6aac9cd420"}, "2XL": {"id": "92067371-2226-4722-8303-8d30cba26c78", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-compromised-running-club?variant=92067371-2226-4722-8303-8d30cba26c78"}, "3XL": {"id": "387f6b07-7cea-4c56-a748-4421ff3831ca", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-compromised-running-club?variant=387f6b07-7cea-4c56-a748-4421ff3831ca"}, "4XL": {"id": "641c3210-09a8-4879-8462-a5996e6493fc", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-compromised-running-club?variant=641c3210-09a8-4879-8462-a5996e6493fc"}}}, "APC-C05": {"sku": "APC-C05", "title": "Burpee Broad Jumps Build Character Training Tee", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-burpee-broad-jumps", "price": 38.0, "image": "images/streetwear/apc-c05-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c05-white.png?v=20261026v3", "variants": {"S": {"id": "6edd799d-2122-465e-8fea-6e0498803987", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-burpee-broad-jumps?variant=6edd799d-2122-465e-8fea-6e0498803987"}, "M": {"id": "14375fcf-1cac-438f-990f-805f2a1b75fb", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-burpee-broad-jumps?variant=14375fcf-1cac-438f-990f-805f2a1b75fb"}, "L": {"id": "90c529f7-eb33-4220-b462-957d5e6abedd", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-burpee-broad-jumps?variant=90c529f7-eb33-4220-b462-957d5e6abedd"}, "XL": {"id": "20dd1fc9-0ec0-4dc7-a31c-3132a282a88e", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-burpee-broad-jumps?variant=20dd1fc9-0ec0-4dc7-a31c-3132a282a88e"}, "2XL": {"id": "6c886af4-09f2-413b-9a2f-72e0ad01e04e", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-burpee-broad-jumps?variant=6c886af4-09f2-413b-9a2f-72e0ad01e04e"}, "3XL": {"id": "2e19d790-d2f8-402e-afbb-4718dbdc9981", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-burpee-broad-jumps?variant=2e19d790-d2f8-402e-afbb-4718dbdc9981"}, "4XL": {"id": "243f1f60-a43d-4acf-acdc-cdef5a83fe12", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-burpee-broad-jumps?variant=243f1f60-a43d-4acf-acdc-cdef5a83fe12"}}}, "APC-C06": {"sku": "APC-C06", "title": "The Erg Doesn't Care How You Feel - Row \u00b7 Ski \u00b7 Repeat Tee", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-the-erg-doesnt-care-how-you-feel", "price": 38.0, "image": "images/streetwear/apc-c06-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c06-white.png?v=20261026v3", "variants": {"S": {"id": "68df6817-246b-4007-ac95-bb9bfbbb8cae", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-the-erg-doesnt-care-how-you-feel?variant=68df6817-246b-4007-ac95-bb9bfbbb8cae"}, "M": {"id": "43dcbb25-5c49-4135-afc1-bff30abf0580", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-the-erg-doesnt-care-how-you-feel?variant=43dcbb25-5c49-4135-afc1-bff30abf0580"}, "L": {"id": "52e493a7-23ca-4525-ba8c-232e984a1cf9", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-the-erg-doesnt-care-how-you-feel?variant=52e493a7-23ca-4525-ba8c-232e984a1cf9"}, "XL": {"id": "a488c09e-550f-4c49-820c-138ea5ab0994", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-the-erg-doesnt-care-how-you-feel?variant=a488c09e-550f-4c49-820c-138ea5ab0994"}, "2XL": {"id": "5943682b-132f-4ee2-b305-9f41dfa56ab0", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-the-erg-doesnt-care-how-you-feel?variant=5943682b-132f-4ee2-b305-9f41dfa56ab0"}, "3XL": {"id": "675a00fc-4bac-4aba-9f33-905064045487", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-the-erg-doesnt-care-how-you-feel?variant=675a00fc-4bac-4aba-9f33-905064045487"}, "4XL": {"id": "ae16ee4d-62df-4650-9cb8-53c1a8aead52", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-the-erg-doesnt-care-how-you-feel?variant=ae16ee4d-62df-4650-9cb8-53c1a8aead52"}}}, "APC-C07": {"sku": "APC-C07", "title": "Pre-Race Porta-Potty Line PR Warmup Tee", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-porta-potty-line-pr", "price": 38.0, "image": "images/streetwear/apc-c07-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c07-white.png?v=20261026v3", "variants": {"S": {"id": "7c92c0e4-d216-4164-8ab8-92d2fb3b3300", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-porta-potty-line-pr?variant=7c92c0e4-d216-4164-8ab8-92d2fb3b3300"}, "M": {"id": "70ec0502-727e-4e16-bd22-103ea7b95d79", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-porta-potty-line-pr?variant=70ec0502-727e-4e16-bd22-103ea7b95d79"}, "L": {"id": "bdffa63c-fa65-442d-a2e9-b58a3e0fba30", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-porta-potty-line-pr?variant=bdffa63c-fa65-442d-a2e9-b58a3e0fba30"}, "XL": {"id": "4cc2c891-e2d8-4927-86d7-f548ade47457", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-porta-potty-line-pr?variant=4cc2c891-e2d8-4927-86d7-f548ade47457"}, "2XL": {"id": "5d3c008f-8d94-4d20-864c-d68ba7b69840", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-porta-potty-line-pr?variant=5d3c008f-8d94-4d20-864c-d68ba7b69840"}, "3XL": {"id": "cdf279c3-3d72-47fc-ba30-8e212e51c922", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-porta-potty-line-pr?variant=cdf279c3-3d72-47fc-ba30-8e212e51c922"}, "4XL": {"id": "cf96ba81-d8bf-4a3d-bd36-46e35f5601ef", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-porta-potty-line-pr?variant=cf96ba81-d8bf-4a3d-bd36-46e35f5601ef"}}}, "APC-C08": {"sku": "APC-C08", "title": "I Don't Need To Defend My Sled Push - Sled Push Dept. Tee", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-i-dont-need-to-defend-my-sled-push", "price": 38.0, "image": "images/streetwear/apc-c08-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c08-white.png?v=20261026v3", "variants": {"S": {"id": "312b10cb-f4d0-4e18-9d72-368d38c2c150", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-i-dont-need-to-defend-my-sled-push?variant=312b10cb-f4d0-4e18-9d72-368d38c2c150"}, "M": {"id": "fc74fbe2-0473-4436-a214-c66327fa123d", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-i-dont-need-to-defend-my-sled-push?variant=fc74fbe2-0473-4436-a214-c66327fa123d"}, "L": {"id": "b488851a-657d-4348-b7e7-3652ea44d216", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-i-dont-need-to-defend-my-sled-push?variant=b488851a-657d-4348-b7e7-3652ea44d216"}, "XL": {"id": "b5a5cb27-ae1b-4ac5-965b-af5ebe7dcc96", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-i-dont-need-to-defend-my-sled-push?variant=b5a5cb27-ae1b-4ac5-965b-af5ebe7dcc96"}, "2XL": {"id": "04c4c580-4d6d-4511-b742-90575a2f811b", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-i-dont-need-to-defend-my-sled-push?variant=04c4c580-4d6d-4511-b742-90575a2f811b"}, "3XL": {"id": "0a0b3b8b-8aab-4096-b24c-84d5efa2cd7d", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-i-dont-need-to-defend-my-sled-push?variant=0a0b3b8b-8aab-4096-b24c-84d5efa2cd7d"}, "4XL": {"id": "ae3fc74e-39ad-4dda-9a3e-5622ab5e7100", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-i-dont-need-to-defend-my-sled-push?variant=ae3fc74e-39ad-4dda-9a3e-5622ab5e7100"}}}, "APC-C09": {"sku": "APC-C09", "title": "Run. Station. Repeat. Heavyweight Fleece Warmup Hoodie", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/run-station-repeat-heavyweight-fleece-warmup-hoodie", "price": 58.0, "image": "images/streetwear/apc-c09-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c09-white.png?v=20261026v3", "variants": {"XS": {"id": "7d1b0e76-e17e-493c-8a79-23d4a9129316", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/run-station-repeat-heavyweight-fleece-warmup-hoodie?variant=7d1b0e76-e17e-493c-8a79-23d4a9129316"}, "S": {"id": "8dae9001-7052-4aba-ad20-57680b7e7508", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/run-station-repeat-heavyweight-fleece-warmup-hoodie?variant=8dae9001-7052-4aba-ad20-57680b7e7508"}, "M": {"id": "6caec690-8afd-44bb-8566-e232270d856b", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/run-station-repeat-heavyweight-fleece-warmup-hoodie?variant=6caec690-8afd-44bb-8566-e232270d856b"}, "L": {"id": "5e0986ef-ebc2-48d2-801b-1727d6e5e66b", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/run-station-repeat-heavyweight-fleece-warmup-hoodie?variant=5e0986ef-ebc2-48d2-801b-1727d6e5e66b"}, "XL": {"id": "176d4371-37a1-4eb4-bab0-c971b0ecdb51", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/run-station-repeat-heavyweight-fleece-warmup-hoodie?variant=176d4371-37a1-4eb4-bab0-c971b0ecdb51"}, "2XL": {"id": "6254dadd-73ae-4777-9da1-29b60660b3ef", "price": 62.01, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/run-station-repeat-heavyweight-fleece-warmup-hoodie?variant=6254dadd-73ae-4777-9da1-29b60660b3ef"}, "3XL": {"id": "29defe28-d413-4fdd-9e2f-84ee97266dfd", "price": 62.37, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/run-station-repeat-heavyweight-fleece-warmup-hoodie?variant=29defe28-d413-4fdd-9e2f-84ee97266dfd"}}}, "APC-C10": {"sku": "APC-C10", "title": "Wall Balls & Bad Decisions Brushed Fleece Pullover Hoodie", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/wall-balls-bad-decisions-brushed-fleece-pullover-hoodie", "price": 58.0, "image": "images/streetwear/apc-c10-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c10-white.png?v=20261026v3", "variants": {"XS": {"id": "9dcb8fc2-40f2-44e8-a248-6e966b632807", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/wall-balls-bad-decisions-brushed-fleece-pullover-hoodie?variant=9dcb8fc2-40f2-44e8-a248-6e966b632807"}, "S": {"id": "7545a9f0-3169-4918-8107-c6caa0aa559b", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/wall-balls-bad-decisions-brushed-fleece-pullover-hoodie?variant=7545a9f0-3169-4918-8107-c6caa0aa559b"}, "M": {"id": "4b60582b-d219-4491-a543-b42fb2b7e40d", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/wall-balls-bad-decisions-brushed-fleece-pullover-hoodie?variant=4b60582b-d219-4491-a543-b42fb2b7e40d"}, "L": {"id": "06660872-edb1-47b0-9ade-6b3d31fa98f8", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/wall-balls-bad-decisions-brushed-fleece-pullover-hoodie?variant=06660872-edb1-47b0-9ade-6b3d31fa98f8"}, "XL": {"id": "12e17539-d1e3-48d9-80a9-41c16a6a7c60", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/wall-balls-bad-decisions-brushed-fleece-pullover-hoodie?variant=12e17539-d1e3-48d9-80a9-41c16a6a7c60"}, "2XL": {"id": "7b8e7c6a-d1f8-4d21-af73-8d7e193330de", "price": 62.01, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/wall-balls-bad-decisions-brushed-fleece-pullover-hoodie?variant=7b8e7c6a-d1f8-4d21-af73-8d7e193330de"}, "3XL": {"id": "87f73a63-de61-4270-b9ac-c1af04661b8c", "price": 62.37, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/wall-balls-bad-decisions-brushed-fleece-pullover-hoodie?variant=87f73a63-de61-4270-b9ac-c1af04661b8c"}}}, "APC-C11": {"sku": "APC-C11", "title": "Compromised Running Club Heavy Warmup Hoodie", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/compromised-running-club-heavy-warmup-hoodie", "price": 58.0, "image": "images/streetwear/apc-c11-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c11-white.png?v=20261026v3", "variants": {"XS": {"id": "09ebf420-ca29-435e-8884-c4ed99a23200", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/compromised-running-club-heavy-warmup-hoodie?variant=09ebf420-ca29-435e-8884-c4ed99a23200"}, "S": {"id": "f5a4f975-06b7-4e38-9002-a8908588995a", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/compromised-running-club-heavy-warmup-hoodie?variant=f5a4f975-06b7-4e38-9002-a8908588995a"}, "M": {"id": "e686cf02-2840-4545-afa0-0a5c13741a31", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/compromised-running-club-heavy-warmup-hoodie?variant=e686cf02-2840-4545-afa0-0a5c13741a31"}, "L": {"id": "e7bc46ab-f42f-45c6-aebb-ed1bad633116", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/compromised-running-club-heavy-warmup-hoodie?variant=e7bc46ab-f42f-45c6-aebb-ed1bad633116"}, "XL": {"id": "f4da2641-2534-4816-89f8-29bea7337b66", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/compromised-running-club-heavy-warmup-hoodie?variant=f4da2641-2534-4816-89f8-29bea7337b66"}, "2XL": {"id": "2b1d8377-4021-418a-84f0-cc84b5cba47b", "price": 62.01, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/compromised-running-club-heavy-warmup-hoodie?variant=2b1d8377-4021-418a-84f0-cc84b5cba47b"}, "3XL": {"id": "21f9f457-4512-4f1a-89b5-fcd74e21d98a", "price": 62.37, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/compromised-running-club-heavy-warmup-hoodie?variant=21f9f457-4512-4f1a-89b5-fcd74e21d98a"}}}, "APC-C12": {"sku": "APC-C12", "title": "Sled Push Dept.  -  'The Footage Speaks' Pullover Hoodie", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sled-push-dept-the-footage-speaks-pullover-hoodie", "price": 58.0, "image": "images/streetwear/apc-c12-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c12-white.png?v=20261026v3", "variants": {"XS": {"id": "c2c4b556-38b3-45fe-8671-f7c3098d9877", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sled-push-dept-the-footage-speaks-pullover-hoodie?variant=c2c4b556-38b3-45fe-8671-f7c3098d9877"}, "S": {"id": "b368c389-dad2-4166-8bdf-ec6c646b0e16", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sled-push-dept-the-footage-speaks-pullover-hoodie?variant=b368c389-dad2-4166-8bdf-ec6c646b0e16"}, "M": {"id": "7c04c499-643c-4f2c-8b59-995d4b9060e9", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sled-push-dept-the-footage-speaks-pullover-hoodie?variant=7c04c499-643c-4f2c-8b59-995d4b9060e9"}, "L": {"id": "b46ab63e-edcf-4be1-9821-a6b73dcc8a8c", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sled-push-dept-the-footage-speaks-pullover-hoodie?variant=b46ab63e-edcf-4be1-9821-a6b73dcc8a8c"}, "XL": {"id": "6e3a13c8-8982-4062-ada8-8589c122ae7e", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sled-push-dept-the-footage-speaks-pullover-hoodie?variant=6e3a13c8-8982-4062-ada8-8589c122ae7e"}, "2XL": {"id": "efaff547-a0ba-4879-bfb5-c956e32895e4", "price": 62.01, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sled-push-dept-the-footage-speaks-pullover-hoodie?variant=efaff547-a0ba-4879-bfb5-c956e32895e4"}, "3XL": {"id": "7cc96662-1bc1-4a72-ada2-8e6a350b1425", "price": 62.37, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sled-push-dept-the-footage-speaks-pullover-hoodie?variant=7cc96662-1bc1-4a72-ada2-8e6a350b1425"}}}, "APC-C13": {"sku": "APC-C13", "title": "Zone 2 Engine Lab Low-Profile Cotton Twill Cap", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/zone-2-engine-lab-low-profile-cotton-twill-cap", "price": 34.0, "image": "images/streetwear/apc-c13-black.png", "alt_image": "images/streetwear/apc-c13-white.png", "variants": {"One size": {"id": "9b519b62-0e55-4531-8069-143fd4d145bb", "price": 34.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/zone-2-engine-lab-low-profile-cotton-twill-cap?variant=9b519b62-0e55-4531-8069-143fd4d145bb"}}}, "APC-C14": {"sku": "APC-C14", "title": "8-Station Race Day 50L All-Weather Gym & Shoe Duffle Bag", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/8-station-race-day-50l-all-weather-gym-shoe-bag", "price": 74.0, "image": "images/streetwear/apc-c14-black.png", "alt_image": "images/streetwear/apc-c14-white.png", "variants": {"One size": {"id": "a1c2426f-97bb-4493-b715-852ee8e840a5", "price": 74.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/8-station-race-day-50l-all-weather-gym-shoe-bag?variant=a1c2426f-97bb-4493-b715-852ee8e840a5"}}}, "APC-C15": {"sku": "APC-C15", "title": "24oz Double-Wall Vacuum Insulated Stainless Steel Shaker Bottle", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/24oz-double-wall-vacuum-insulated-stainless-steel-shaker-bottle", "price": 36.0, "image": "images/streetwear/apc-c15-black.png", "alt_image": "images/streetwear/apc-c15-white.png", "variants": {"17oz": {"id": "8fd5562c-358b-4ea7-aa8d-61a8cdfeb9bd", "price": 36.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/24oz-double-wall-vacuum-insulated-stainless-steel-shaker-bottle?variant=8fd5562c-358b-4ea7-aa8d-61a8cdfeb9bd"}}}, "APC-C16": {"sku": "APC-C16", "title": "Chicago Championship Division Tee  -  Navy Pier 8x1000m Club", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-chicago-championship-division", "price": 38.0, "image": "images/streetwear/apc-c16-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c16-white.png?v=20261026v3", "variants": {"S": {"id": "c16f2888-d87c-4c3f-87d9-e2bd83dc0100", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-chicago-championship-division?variant=c16f2888-d87c-4c3f-87d9-e2bd83dc0100"}, "M": {"id": "08e0595f-274a-40ec-8785-c9ea0f5de0cd", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-chicago-championship-division?variant=08e0595f-274a-40ec-8785-c9ea0f5de0cd"}, "L": {"id": "fcb679ba-d57a-43d9-a0be-2b2cbcdc383c", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-chicago-championship-division?variant=fcb679ba-d57a-43d9-a0be-2b2cbcdc383c"}, "XL": {"id": "faa26a24-2e4b-4c5c-b74e-6467f3e121ab", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-chicago-championship-division?variant=faa26a24-2e4b-4c5c-b74e-6467f3e121ab"}, "2XL": {"id": "ee60d9cb-bc4f-4d18-b48f-02a28c447acc", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-chicago-championship-division?variant=ee60d9cb-bc4f-4d18-b48f-02a28c447acc"}, "3XL": {"id": "1bfd9e68-dfcd-4711-9e20-85d32e25b5b1", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-chicago-championship-division?variant=1bfd9e68-dfcd-4711-9e20-85d32e25b5b1"}, "4XL": {"id": "84a3ff32-39eb-4fe1-8671-31b1944c796c", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-chicago-championship-division?variant=84a3ff32-39eb-4fe1-8671-31b1944c796c"}}}, "APC-C17": {"sku": "APC-C17", "title": "Dallas Turf & Threshold Tee  -  Lone Star 8-Station Classic", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-dallas-turf-threshold", "price": 38.0, "image": "images/streetwear/apc-c17-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c17-white.png?v=20261026v3", "variants": {"S": {"id": "29d09b15-c469-4480-93ef-46fc56630660", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-dallas-turf-threshold?variant=29d09b15-c469-4480-93ef-46fc56630660"}, "M": {"id": "f904e25f-d52b-46d7-985e-bad081971aaa", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-dallas-turf-threshold?variant=f904e25f-d52b-46d7-985e-bad081971aaa"}, "L": {"id": "168c443a-0b9c-42d1-9d45-0b7895383e8b", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-dallas-turf-threshold?variant=168c443a-0b9c-42d1-9d45-0b7895383e8b"}, "XL": {"id": "204b8d9c-a8de-4233-8ae5-f72050073c66", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-dallas-turf-threshold?variant=204b8d9c-a8de-4233-8ae5-f72050073c66"}, "2XL": {"id": "b27dba7d-d08d-4112-bec6-8e77e12cbff3", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-dallas-turf-threshold?variant=b27dba7d-d08d-4112-bec6-8e77e12cbff3"}, "3XL": {"id": "0ef6640a-89cc-4582-8908-39af2ff1725b", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-dallas-turf-threshold?variant=0ef6640a-89cc-4582-8908-39af2ff1725b"}, "4XL": {"id": "4901ae29-4874-41c5-a0aa-4c3b4fdcfa57", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-dallas-turf-threshold?variant=4901ae29-4874-41c5-a0aa-4c3b4fdcfa57"}}}, "APC-C18": {"sku": "APC-C18", "title": "Anaheim SoCal Open Division Tee  -  Pacific Coast Race Series", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-anaheim-socal-open-division", "price": 38.0, "image": "images/streetwear/apc-c18-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c18-white.png?v=20261026v3", "variants": {"S": {"id": "5b4995a6-f354-4919-874f-bc293c0015cd", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-anaheim-socal-open-division?variant=5b4995a6-f354-4919-874f-bc293c0015cd"}, "M": {"id": "12168372-2f3b-4ce2-88df-258fd652cb78", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-anaheim-socal-open-division?variant=12168372-2f3b-4ce2-88df-258fd652cb78"}, "L": {"id": "a2cf7e4e-5cdf-40fe-a1b7-141fdc023187", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-anaheim-socal-open-division?variant=a2cf7e4e-5cdf-40fe-a1b7-141fdc023187"}, "XL": {"id": "c62d440a-181a-4c58-b5e0-c8d605957801", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-anaheim-socal-open-division?variant=c62d440a-181a-4c58-b5e0-c8d605957801"}, "2XL": {"id": "773832b9-b959-4606-a608-1a093ff09318", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-anaheim-socal-open-division?variant=773832b9-b959-4606-a608-1a093ff09318"}, "3XL": {"id": "4795338c-29bd-4c89-a3ca-b341b1fd77a5", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-anaheim-socal-open-division?variant=4795338c-29bd-4c89-a3ca-b341b1fd77a5"}, "4XL": {"id": "7ebaf79b-e154-4880-8895-64f872e0b30c", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-anaheim-socal-open-division?variant=7ebaf79b-e154-4880-8895-64f872e0b30c"}}}, "APC-C19": {"sku": "APC-C19", "title": "Miami Beach Heat-Block Race Tee  -  South Florida Endurance Club", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-miami-beach-endurance-club", "price": 38.0, "image": "images/streetwear/apc-c19-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c19-white.png?v=20261026v3", "variants": {"S": {"id": "e13d66d2-84ab-42bd-a811-62287e0e96ca", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-miami-beach-endurance-club?variant=e13d66d2-84ab-42bd-a811-62287e0e96ca"}, "M": {"id": "69e54c97-73d3-42f5-b618-64566649d017", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-miami-beach-endurance-club?variant=69e54c97-73d3-42f5-b618-64566649d017"}, "L": {"id": "189a0ffd-7329-47d5-87a5-fb52cce4b135", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-miami-beach-endurance-club?variant=189a0ffd-7329-47d5-87a5-fb52cce4b135"}, "XL": {"id": "a47a8156-007c-4ec9-a90e-7939f4510227", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-miami-beach-endurance-club?variant=a47a8156-007c-4ec9-a90e-7939f4510227"}, "2XL": {"id": "3027f3ce-41b5-4bc6-a4a2-989396817490", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-miami-beach-endurance-club?variant=3027f3ce-41b5-4bc6-a4a2-989396817490"}, "3XL": {"id": "463543de-4d7f-4bd6-ab30-a271d2e1bdc4", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-miami-beach-endurance-club?variant=463543de-4d7f-4bd6-ab30-a271d2e1bdc4"}, "4XL": {"id": "cba57d43-625d-48ad-a62f-9ae321f2d5a6", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-miami-beach-endurance-club?variant=cba57d43-625d-48ad-a62f-9ae321f2d5a6"}}}, "APC-C20": {"sku": "APC-C20", "title": "Las Vegas Championship Qualifier Tee  -  Sin City Turf Club", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-las-vegas-championship-qualifier", "price": 38.0, "image": "images/streetwear/apc-c20-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c20-white.png?v=20261026v3", "variants": {"S": {"id": "e95737cc-3b02-4b71-865c-cda9659fac93", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-las-vegas-championship-qualifier?variant=e95737cc-3b02-4b71-865c-cda9659fac93"}, "M": {"id": "990391a8-3d50-4411-9b7c-2e1d7065a4e7", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-las-vegas-championship-qualifier?variant=990391a8-3d50-4411-9b7c-2e1d7065a4e7"}, "L": {"id": "a92d8fe2-33a0-4cf5-8fb9-00e0b6edbf08", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-las-vegas-championship-qualifier?variant=a92d8fe2-33a0-4cf5-8fb9-00e0b6edbf08"}, "XL": {"id": "54d568ee-0b1f-4a77-9211-2b8b9409a4d8", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-las-vegas-championship-qualifier?variant=54d568ee-0b1f-4a77-9211-2b8b9409a4d8"}, "2XL": {"id": "4fc194b5-a765-4f71-b8ec-6c87a248bf9c", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-las-vegas-championship-qualifier?variant=4fc194b5-a765-4f71-b8ec-6c87a248bf9c"}, "3XL": {"id": "75a34551-e6c6-49b9-968d-ff5579272d03", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-las-vegas-championship-qualifier?variant=75a34551-e6c6-49b9-968d-ff5579272d03"}, "4XL": {"id": "c4e65319-d65c-44ea-b346-1d1895d0247d", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-las-vegas-championship-qualifier?variant=c4e65319-d65c-44ea-b346-1d1895d0247d"}}}, "APC-C21": {"sku": "APC-C21", "title": "New York Hudson Pier Race Tee  -  NYC Metro Endurance Dept.", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-new-york-hudson-pier-division", "price": 38.0, "image": "images/streetwear/apc-c21-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c21-white.png?v=20261026v3", "variants": {"S": {"id": "6603a7ea-bddd-4224-9c82-f5a2b4f40a16", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-new-york-hudson-pier-division?variant=6603a7ea-bddd-4224-9c82-f5a2b4f40a16"}, "M": {"id": "2bb9a1de-99ae-48c3-838a-88310372249e", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-new-york-hudson-pier-division?variant=2bb9a1de-99ae-48c3-838a-88310372249e"}, "L": {"id": "a825800a-126f-462a-9e3a-36be4e31ca49", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-new-york-hudson-pier-division?variant=a825800a-126f-462a-9e3a-36be4e31ca49"}, "XL": {"id": "8548abd2-f4e2-40f8-9923-26ad15121428", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-new-york-hudson-pier-division?variant=8548abd2-f4e2-40f8-9923-26ad15121428"}, "2XL": {"id": "6be04a0b-846e-4e0b-8657-ecdd20341fc0", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-new-york-hudson-pier-division?variant=6be04a0b-846e-4e0b-8657-ecdd20341fc0"}, "3XL": {"id": "a40b3f16-3d26-49a1-9980-fe9727f63769", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-new-york-hudson-pier-division?variant=a40b3f16-3d26-49a1-9980-fe9727f63769"}, "4XL": {"id": "8e7a9ea4-b1c0-4d8c-8652-a218ed3c1637", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-race-city-heavyweight-tee-new-york-hudson-pier-division?variant=8e7a9ea4-b1c0-4d8c-8652-a218ed3c1637"}}}, "APC-C22": {"sku": "APC-C22", "title": "8 Runs. 8 Stations. Zero Excuses. Winged Crest Race & Pump Cover Tee", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-8-runs-8-stations-zero-excuses", "price": 38.0, "image": "images/streetwear/apc-c22-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c22-white.png?v=20261026v3", "variants": {"S": {"id": "4de0836a-116b-441f-a440-c8a408de6d56", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-8-runs-8-stations-zero-excuses?variant=4de0836a-116b-441f-a440-c8a408de6d56"}, "M": {"id": "07d55661-2904-4347-ad01-b1b72abe6c7b", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-8-runs-8-stations-zero-excuses?variant=07d55661-2904-4347-ad01-b1b72abe6c7b"}, "L": {"id": "55158248-39c7-409a-afff-216a2ee73cdd", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-8-runs-8-stations-zero-excuses?variant=55158248-39c7-409a-afff-216a2ee73cdd"}, "XL": {"id": "d61e5407-2ee3-4f5f-a09b-d0dd892a7773", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-8-runs-8-stations-zero-excuses?variant=d61e5407-2ee3-4f5f-a09b-d0dd892a7773"}, "2XL": {"id": "e08f0fa7-47d3-40c1-b889-69ace767a27c", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-8-runs-8-stations-zero-excuses?variant=e08f0fa7-47d3-40c1-b889-69ace767a27c"}, "3XL": {"id": "a5edfbca-e9b3-4e3c-ad33-47f5d8b76a1a", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-8-runs-8-stations-zero-excuses?variant=a5edfbca-e9b3-4e3c-ad33-47f5d8b76a1a"}, "4XL": {"id": "33d7cd8e-7e13-42ed-94f1-5bb6c18e8994", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-8-runs-8-stations-zero-excuses?variant=33d7cd8e-7e13-42ed-94f1-5bb6c18e8994"}}}, "APC-C23": {"sku": "APC-C23", "title": "Roxzone Penalties Ruined My PR Stopwatch Crest Athletic Race Tee", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/roxzone-penalties-ruined-my-pr-stopwatch-crest-athletic-race-tee", "price": 38.0, "image": "images/streetwear/apc-c23-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c23-white.png?v=20261026v3", "variants": {"S": {"id": "8c697c2c-a31c-4960-b3aa-adcd5611045b", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/roxzone-penalties-ruined-my-pr-stopwatch-crest-athletic-race-tee?variant=8c697c2c-a31c-4960-b3aa-adcd5611045b"}, "M": {"id": "0b1c3e9f-1d91-4a38-8661-b33493b49a99", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/roxzone-penalties-ruined-my-pr-stopwatch-crest-athletic-race-tee?variant=0b1c3e9f-1d91-4a38-8661-b33493b49a99"}, "L": {"id": "4ff60af6-a733-41c8-9960-aa99c086e533", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/roxzone-penalties-ruined-my-pr-stopwatch-crest-athletic-race-tee?variant=4ff60af6-a733-41c8-9960-aa99c086e533"}, "XL": {"id": "8c103b35-a87b-4be1-8515-bd33bfd43b86", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/roxzone-penalties-ruined-my-pr-stopwatch-crest-athletic-race-tee?variant=8c103b35-a87b-4be1-8515-bd33bfd43b86"}, "2XL": {"id": "8ee2abac-27f5-4ecb-ba1b-e308caa180b5", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/roxzone-penalties-ruined-my-pr-stopwatch-crest-athletic-race-tee?variant=8ee2abac-27f5-4ecb-ba1b-e308caa180b5"}, "3XL": {"id": "8a00447d-76e2-4678-bc14-3e738a856073", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/roxzone-penalties-ruined-my-pr-stopwatch-crest-athletic-race-tee?variant=8a00447d-76e2-4678-bc14-3e738a856073"}, "4XL": {"id": "f5bc854f-41a0-40e8-b907-913c0819daaa", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/roxzone-penalties-ruined-my-pr-stopwatch-crest-athletic-race-tee?variant=f5bc854f-41a0-40e8-b907-913c0819daaa"}}}, "APC-C24": {"sku": "APC-C24", "title": "200m Farmer Carry Survivors Club Barbell Insignia Race Tee", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/200m-farmer-carry-survivors-club-barbell-insignia-race-tee", "price": 38.0, "image": "images/streetwear/apc-c24-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c24-white.png?v=20261026v3", "variants": {"S": {"id": "5e454b8c-b481-4821-9f22-88e70ee0e37f", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/200m-farmer-carry-survivors-club-barbell-insignia-race-tee?variant=5e454b8c-b481-4821-9f22-88e70ee0e37f"}, "M": {"id": "346d6534-51f6-43b0-9423-c9a0ceb91b3c", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/200m-farmer-carry-survivors-club-barbell-insignia-race-tee?variant=346d6534-51f6-43b0-9423-c9a0ceb91b3c"}, "L": {"id": "8f93bfcd-cf45-4dad-a03d-fbd48a365c1b", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/200m-farmer-carry-survivors-club-barbell-insignia-race-tee?variant=8f93bfcd-cf45-4dad-a03d-fbd48a365c1b"}, "XL": {"id": "b0757e15-591d-44ab-9a9d-684f5a010565", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/200m-farmer-carry-survivors-club-barbell-insignia-race-tee?variant=b0757e15-591d-44ab-9a9d-684f5a010565"}, "2XL": {"id": "5860c552-42fe-4a51-9a4b-27e4b52bfd98", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/200m-farmer-carry-survivors-club-barbell-insignia-race-tee?variant=5860c552-42fe-4a51-9a4b-27e4b52bfd98"}, "3XL": {"id": "eda3446b-3318-420b-8da1-c562399abdb7", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/200m-farmer-carry-survivors-club-barbell-insignia-race-tee?variant=eda3446b-3318-420b-8da1-c562399abdb7"}, "4XL": {"id": "bb038cea-8ef0-4088-99c9-d150f194673d", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/200m-farmer-carry-survivors-club-barbell-insignia-race-tee?variant=bb038cea-8ef0-4088-99c9-d150f194673d"}}}, "APC-C25": {"sku": "APC-C25", "title": "Sandbag Lunges Are A Personal Attack Station 07 Crest Pump Cover", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sandbag-lunges-are-a-personal-attack-station-07-crest-pump-cover", "price": 38.0, "image": "images/streetwear/apc-c25-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c25-white.png?v=20261026v3", "variants": {"S": {"id": "7eae10b8-0f3f-40a7-b3da-e342cd1937ca", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sandbag-lunges-are-a-personal-attack-station-07-crest-pump-cover?variant=7eae10b8-0f3f-40a7-b3da-e342cd1937ca"}, "M": {"id": "facf1e6b-1d8a-48b3-9593-1d236ab723df", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sandbag-lunges-are-a-personal-attack-station-07-crest-pump-cover?variant=facf1e6b-1d8a-48b3-9593-1d236ab723df"}, "L": {"id": "7d58e13b-ce6f-4cb0-8b9c-5e2480b03daf", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sandbag-lunges-are-a-personal-attack-station-07-crest-pump-cover?variant=7d58e13b-ce6f-4cb0-8b9c-5e2480b03daf"}, "XL": {"id": "6f5d8760-e6f2-495c-86c0-62f140531581", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sandbag-lunges-are-a-personal-attack-station-07-crest-pump-cover?variant=6f5d8760-e6f2-495c-86c0-62f140531581"}, "2XL": {"id": "5c444c93-ebf5-4934-9db2-1cd0c8d6ab12", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sandbag-lunges-are-a-personal-attack-station-07-crest-pump-cover?variant=5c444c93-ebf5-4934-9db2-1cd0c8d6ab12"}, "3XL": {"id": "f1954b8d-a4b5-4c89-8a5f-a18629db6416", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sandbag-lunges-are-a-personal-attack-station-07-crest-pump-cover?variant=f1954b8d-a4b5-4c89-8a5f-a18629db6416"}, "4XL": {"id": "b6897f4b-7530-4e1d-bc2d-6ab4a55ae546", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sandbag-lunges-are-a-personal-attack-station-07-crest-pump-cover?variant=b6897f4b-7530-4e1d-bc2d-6ab4a55ae546"}}}, "APC-C26": {"sku": "APC-C26", "title": "Zone 2 All Week, Redline Weekend 185 BPM Tachometer Race Tee", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/zone-2-all-week-redline-weekend-185-bpm-tachometer-race-tee", "price": 38.0, "image": "images/streetwear/apc-c26-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c26-white.png?v=20261026v3", "variants": {"S": {"id": "781a4baf-ad06-401a-8fea-aa497d25feca", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/zone-2-all-week-redline-weekend-185-bpm-tachometer-race-tee?variant=781a4baf-ad06-401a-8fea-aa497d25feca"}, "M": {"id": "7702e84f-51af-42fa-ae93-d3aafa4a19db", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/zone-2-all-week-redline-weekend-185-bpm-tachometer-race-tee?variant=7702e84f-51af-42fa-ae93-d3aafa4a19db"}, "L": {"id": "fcdd1763-5033-46d8-88df-e622d4052b8c", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/zone-2-all-week-redline-weekend-185-bpm-tachometer-race-tee?variant=fcdd1763-5033-46d8-88df-e622d4052b8c"}, "XL": {"id": "da08747c-0607-41c2-8eac-806bd9b72301", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/zone-2-all-week-redline-weekend-185-bpm-tachometer-race-tee?variant=da08747c-0607-41c2-8eac-806bd9b72301"}, "2XL": {"id": "e3c6baef-ecf3-42ea-bd69-c994ad4e9ef5", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/zone-2-all-week-redline-weekend-185-bpm-tachometer-race-tee?variant=e3c6baef-ecf3-42ea-bd69-c994ad4e9ef5"}, "3XL": {"id": "dc0ab909-65e9-4631-8049-6e07a3d0866d", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/zone-2-all-week-redline-weekend-185-bpm-tachometer-race-tee?variant=dc0ab909-65e9-4631-8049-6e07a3d0866d"}, "4XL": {"id": "1b1e3fc8-0e1f-42e4-a1d7-5bf38dde465c", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/zone-2-all-week-redline-weekend-185-bpm-tachometer-race-tee?variant=1b1e3fc8-0e1f-42e4-a1d7-5bf38dde465c"}}}, "APC-C27": {"sku": "APC-C27", "title": "Sub-65 Club \u00b7 Pace \u00b7 Pull \u00b7 Push Winged Crest Elite Division Tee", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sub-65-club-pace-pull-push-winged-crest-elite-division-tee", "price": 38.0, "image": "images/streetwear/apc-c27-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c27-white.png?v=20261026v3", "variants": {"S": {"id": "9247cf41-03c0-4965-9840-c74f7e6f2477", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sub-65-club-pace-pull-push-winged-crest-elite-division-tee?variant=9247cf41-03c0-4965-9840-c74f7e6f2477"}, "M": {"id": "efe2144c-edf8-4552-8c44-13e4ecc70542", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sub-65-club-pace-pull-push-winged-crest-elite-division-tee?variant=efe2144c-edf8-4552-8c44-13e4ecc70542"}, "L": {"id": "f7a31684-947f-4f19-8141-0478221d8912", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sub-65-club-pace-pull-push-winged-crest-elite-division-tee?variant=f7a31684-947f-4f19-8141-0478221d8912"}, "XL": {"id": "a329e609-ca20-42fa-adcb-7575cd392eb1", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sub-65-club-pace-pull-push-winged-crest-elite-division-tee?variant=a329e609-ca20-42fa-adcb-7575cd392eb1"}, "2XL": {"id": "d1ca19dc-485a-4b5f-bae2-8ada2404d0a6", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sub-65-club-pace-pull-push-winged-crest-elite-division-tee?variant=d1ca19dc-485a-4b5f-bae2-8ada2404d0a6"}, "3XL": {"id": "932cc039-5e0d-4525-9beb-34bedc704b60", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sub-65-club-pace-pull-push-winged-crest-elite-division-tee?variant=932cc039-5e0d-4525-9beb-34bedc704b60"}, "4XL": {"id": "04e7c5ec-b9cb-448c-bd2f-346ffbdda5ae", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sub-65-club-pace-pull-push-winged-crest-elite-division-tee?variant=04e7c5ec-b9cb-448c-bd2f-346ffbdda5ae"}}}, "APC-C28": {"sku": "APC-C28", "title": "Run. Station. Repeat. Winged Crest Sleeveless Race Day Muscle Tank", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/run-station-repeat-winged-crest-sleeveless-race-day-muscle-tank", "price": 32.0, "image": "images/streetwear/apc-c28-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c28-white.png?v=20261026v3", "variants": {"S": {"id": "8d35fac0-ea9c-4f3e-853e-6cb60b543b65", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/run-station-repeat-winged-crest-sleeveless-race-day-muscle-tank?variant=8d35fac0-ea9c-4f3e-853e-6cb60b543b65"}, "M": {"id": "c72dfd45-144e-4306-a028-711c15a6d658", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/run-station-repeat-winged-crest-sleeveless-race-day-muscle-tank?variant=c72dfd45-144e-4306-a028-711c15a6d658"}, "L": {"id": "08fe4705-4241-4508-9174-75b4dd6acc79", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/run-station-repeat-winged-crest-sleeveless-race-day-muscle-tank?variant=08fe4705-4241-4508-9174-75b4dd6acc79"}, "XL": {"id": "1328feb2-532a-4aa8-b755-bb1ff2adcc11", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/run-station-repeat-winged-crest-sleeveless-race-day-muscle-tank?variant=1328feb2-532a-4aa8-b755-bb1ff2adcc11"}, "2XL": {"id": "0a21bff6-d727-4993-8de3-5d4f867f3e5b", "price": 34.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/run-station-repeat-winged-crest-sleeveless-race-day-muscle-tank?variant=0a21bff6-d727-4993-8de3-5d4f867f3e5b"}}}, "APC-C29": {"sku": "APC-C29", "title": "Sled Push Dept. Barbell Crest Conditioning Muscle Tank", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sled-push-dept-barbell-crest-conditioning-muscle-tank", "price": 32.0, "image": "images/streetwear/apc-c29-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c29-white.png?v=20261026v3", "variants": {"S": {"id": "ee532b28-050d-492d-a447-a975262ddb30", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sled-push-dept-barbell-crest-conditioning-muscle-tank?variant=ee532b28-050d-492d-a447-a975262ddb30"}, "M": {"id": "0bc45bdd-8132-47b6-9ffc-38abf9fcbe44", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sled-push-dept-barbell-crest-conditioning-muscle-tank?variant=0bc45bdd-8132-47b6-9ffc-38abf9fcbe44"}, "L": {"id": "b85f66f4-2430-4f02-999d-65ad2f518719", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sled-push-dept-barbell-crest-conditioning-muscle-tank?variant=b85f66f4-2430-4f02-999d-65ad2f518719"}, "XL": {"id": "0d70fd17-0281-4ab6-b549-563ffce47384", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sled-push-dept-barbell-crest-conditioning-muscle-tank?variant=0d70fd17-0281-4ab6-b549-563ffce47384"}, "2XL": {"id": "88cbcb33-18d2-4437-93c0-cff4dd7e61ba", "price": 34.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/sled-push-dept-barbell-crest-conditioning-muscle-tank?variant=88cbcb33-18d2-4437-93c0-cff4dd7e61ba"}}}, "APC-C30": {"sku": "APC-C30", "title": "Compromised Running Club 1000m Stopwatch Breathable Race Tank", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/compromised-running-club-1000m-stopwatch-breathable-race-tank", "price": 32.0, "image": "images/streetwear/apc-c30-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c30-white.png?v=20261026v3", "variants": {"S": {"id": "d17716f7-8c5d-459a-b9e2-7f329ad10947", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/compromised-running-club-1000m-stopwatch-breathable-race-tank?variant=d17716f7-8c5d-459a-b9e2-7f329ad10947"}, "M": {"id": "df92d051-96b0-43d1-886d-1505adfaf0c7", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/compromised-running-club-1000m-stopwatch-breathable-race-tank?variant=df92d051-96b0-43d1-886d-1505adfaf0c7"}, "L": {"id": "8e4c7692-deba-4f50-9025-e9d1ca50009c", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/compromised-running-club-1000m-stopwatch-breathable-race-tank?variant=8e4c7692-deba-4f50-9025-e9d1ca50009c"}, "XL": {"id": "94c992b8-21ca-4868-8425-d88a9fa23a8b", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/compromised-running-club-1000m-stopwatch-breathable-race-tank?variant=94c992b8-21ca-4868-8425-d88a9fa23a8b"}, "2XL": {"id": "2dadc3d8-c268-4319-a7f7-5dbd997f5d80", "price": 34.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/compromised-running-club-1000m-stopwatch-breathable-race-tank?variant=2dadc3d8-c268-4319-a7f7-5dbd997f5d80"}}}, "APC-C31": {"sku": "APC-C31", "title": "100 Wall Balls Unbroken* Winged Crest Sleeveless Muscle Tank", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/100-wall-balls-unbroken-winged-crest-sleeveless-muscle-tank", "price": 32.0, "image": "images/streetwear/apc-c31-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c31-white.png?v=20261026v3", "variants": {"S": {"id": "aac13db6-e423-4ac8-87ba-9eb29c3e176f", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/100-wall-balls-unbroken-winged-crest-sleeveless-muscle-tank?variant=aac13db6-e423-4ac8-87ba-9eb29c3e176f"}, "M": {"id": "5c87cfc4-8080-419a-a2a7-ccb082977f3b", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/100-wall-balls-unbroken-winged-crest-sleeveless-muscle-tank?variant=5c87cfc4-8080-419a-a2a7-ccb082977f3b"}, "L": {"id": "bfa0bf6e-e45a-49cf-a742-85b62074ec4a", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/100-wall-balls-unbroken-winged-crest-sleeveless-muscle-tank?variant=bfa0bf6e-e45a-49cf-a742-85b62074ec4a"}, "XL": {"id": "889c5b4b-8425-4f0d-bf2e-50f4594ab213", "price": 32.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/100-wall-balls-unbroken-winged-crest-sleeveless-muscle-tank?variant=889c5b4b-8425-4f0d-bf2e-50f4594ab213"}, "2XL": {"id": "d652b52d-7f9a-4f15-9153-9061a611fc18", "price": 34.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/100-wall-balls-unbroken-winged-crest-sleeveless-muscle-tank?variant=d652b52d-7f9a-4f15-9153-9061a611fc18"}}}, "APC-C32": {"sku": "APC-C32", "title": "Burpee Broad Jumps Build Character 8.0 oz Warmup Hoodie", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/burpee-broad-jumps-build-character-8-0-oz-warmup-hoodie", "price": 58.0, "image": "images/streetwear/apc-c32-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c32-white.png?v=20261026v3", "variants": {"XS": {"id": "5add8ab6-c9a0-4c43-8bfe-1771842a5461", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/burpee-broad-jumps-build-character-8-0-oz-warmup-hoodie?variant=5add8ab6-c9a0-4c43-8bfe-1771842a5461"}, "S": {"id": "6193f3d6-fccc-481d-b493-8c06b68d4d9d", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/burpee-broad-jumps-build-character-8-0-oz-warmup-hoodie?variant=6193f3d6-fccc-481d-b493-8c06b68d4d9d"}, "M": {"id": "151176d5-13a0-4afb-81a4-3edf6f740222", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/burpee-broad-jumps-build-character-8-0-oz-warmup-hoodie?variant=151176d5-13a0-4afb-81a4-3edf6f740222"}, "L": {"id": "ed173816-a15c-43e1-b1fa-0630825c49bb", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/burpee-broad-jumps-build-character-8-0-oz-warmup-hoodie?variant=ed173816-a15c-43e1-b1fa-0630825c49bb"}, "XL": {"id": "1df12133-b013-4342-a712-6cc249ba527b", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/burpee-broad-jumps-build-character-8-0-oz-warmup-hoodie?variant=1df12133-b013-4342-a712-6cc249ba527b"}, "2XL": {"id": "d55b3a2a-323c-4007-8cf3-e0463b9e34ee", "price": 62.01, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/burpee-broad-jumps-build-character-8-0-oz-warmup-hoodie?variant=d55b3a2a-323c-4007-8cf3-e0463b9e34ee"}, "3XL": {"id": "1c0ca70a-8ef9-4d9f-9d69-4ea136a3bb45", "price": 62.37, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/burpee-broad-jumps-build-character-8-0-oz-warmup-hoodie?variant=1c0ca70a-8ef9-4d9f-9d69-4ea136a3bb45"}}}, "APC-C33": {"sku": "APC-C33", "title": "The Erg Doesn't Care How You Feel Heavyweight Fleece Hoodie", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/the-erg-doesnt-care-how-you-feel-heavyweight-fleece-hoodie", "price": 58.0, "image": "images/streetwear/apc-c33-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c33-white.png?v=20261026v3", "variants": {"XS": {"id": "2313798a-5651-4821-91d0-81ed4775ed72", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/the-erg-doesnt-care-how-you-feel-heavyweight-fleece-hoodie?variant=2313798a-5651-4821-91d0-81ed4775ed72"}, "S": {"id": "10959ca1-dbff-4df4-8713-ffbbcd6df723", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/the-erg-doesnt-care-how-you-feel-heavyweight-fleece-hoodie?variant=10959ca1-dbff-4df4-8713-ffbbcd6df723"}, "M": {"id": "ff7ea849-58da-42fb-b9b2-033bcfb6efdc", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/the-erg-doesnt-care-how-you-feel-heavyweight-fleece-hoodie?variant=ff7ea849-58da-42fb-b9b2-033bcfb6efdc"}, "L": {"id": "78f1465a-6d25-45ed-b287-548e93135679", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/the-erg-doesnt-care-how-you-feel-heavyweight-fleece-hoodie?variant=78f1465a-6d25-45ed-b287-548e93135679"}, "XL": {"id": "6230fc26-5a17-4be0-aae0-6722a5b29b72", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/the-erg-doesnt-care-how-you-feel-heavyweight-fleece-hoodie?variant=6230fc26-5a17-4be0-aae0-6722a5b29b72"}, "2XL": {"id": "cd66966a-a461-48a6-96c1-33beb5bfa28a", "price": 62.01, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/the-erg-doesnt-care-how-you-feel-heavyweight-fleece-hoodie?variant=cd66966a-a461-48a6-96c1-33beb5bfa28a"}, "3XL": {"id": "281e8326-b981-41e2-9869-642ce8f84a20", "price": 62.37, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/the-erg-doesnt-care-how-you-feel-heavyweight-fleece-hoodie?variant=281e8326-b981-41e2-9869-642ce8f84a20"}}}, "APC-C34": {"sku": "APC-C34", "title": "Chicago \u00b7 Dallas \u00b7 SoCal 2026/2027 World Series Prep Winged Hoodie", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/chicago-dallas-socal-2026-2027-world-series-prep-winged-hoodie", "price": 58.0, "image": "images/streetwear/apc-c34-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c34-white.png?v=20261026v3", "variants": {"XS": {"id": "85bb4f83-bff1-4998-9f68-b8a23b08dfb0", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/chicago-dallas-socal-2026-2027-world-series-prep-winged-hoodie?variant=85bb4f83-bff1-4998-9f68-b8a23b08dfb0"}, "S": {"id": "dc53f607-5617-474d-abff-3eac666aee20", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/chicago-dallas-socal-2026-2027-world-series-prep-winged-hoodie?variant=dc53f607-5617-474d-abff-3eac666aee20"}, "M": {"id": "9a69d869-5c34-440a-b058-fe89ca39a209", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/chicago-dallas-socal-2026-2027-world-series-prep-winged-hoodie?variant=9a69d869-5c34-440a-b058-fe89ca39a209"}, "L": {"id": "b7d4593e-9ba1-4f1d-8d17-b09f3a69f59b", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/chicago-dallas-socal-2026-2027-world-series-prep-winged-hoodie?variant=b7d4593e-9ba1-4f1d-8d17-b09f3a69f59b"}, "XL": {"id": "4811b656-fb01-4fc0-89aa-4cc71c7dc1c9", "price": 58.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/chicago-dallas-socal-2026-2027-world-series-prep-winged-hoodie?variant=4811b656-fb01-4fc0-89aa-4cc71c7dc1c9"}, "2XL": {"id": "136ea0e4-c417-4e9f-9b52-00ca6ca399e6", "price": 62.01, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/chicago-dallas-socal-2026-2027-world-series-prep-winged-hoodie?variant=136ea0e4-c417-4e9f-9b52-00ca6ca399e6"}, "3XL": {"id": "31b5b1e2-256e-48cb-b2d3-fb8eadbba363", "price": 62.37, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/chicago-dallas-socal-2026-2027-world-series-prep-winged-hoodie?variant=31b5b1e2-256e-48cb-b2d3-fb8eadbba363"}}}, "APC-C35": {"sku": "APC-C35", "title": "8-Station Race Division Winged Crest Oversized Stealth Hoodie", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-recovery-hoodie-built-for-the-8-stations", "price": 68.0, "image": "images/streetwear/apc-c35-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c35-white.png?v=20261026v3", "variants": {"XS": {"id": "53bfa640-177d-49d0-aded-dae4af96baba", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-recovery-hoodie-built-for-the-8-stations?variant=53bfa640-177d-49d0-aded-dae4af96baba"}, "S": {"id": "e59206ce-4687-43b1-b5d3-ede760347a8b", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-recovery-hoodie-built-for-the-8-stations?variant=e59206ce-4687-43b1-b5d3-ede760347a8b"}, "M": {"id": "bad9bd32-e0b6-4aac-b2ef-b166c3dbb9d1", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-recovery-hoodie-built-for-the-8-stations?variant=bad9bd32-e0b6-4aac-b2ef-b166c3dbb9d1"}, "L": {"id": "a6299d99-0dbe-4342-a8ae-7dc86ba649e5", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-recovery-hoodie-built-for-the-8-stations?variant=a6299d99-0dbe-4342-a8ae-7dc86ba649e5"}, "XL": {"id": "17774e46-713e-4e7d-a9a5-fa7fc448112d", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-recovery-hoodie-built-for-the-8-stations?variant=17774e46-713e-4e7d-a9a5-fa7fc448112d"}, "2XL": {"id": "30d519fe-2887-45fa-97c4-538ac2a3e12f", "price": 72.01, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-recovery-hoodie-built-for-the-8-stations?variant=30d519fe-2887-45fa-97c4-538ac2a3e12f"}, "3XL": {"id": "204314cd-c931-4819-bd3c-4e7d2045096d", "price": 72.37, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-recovery-hoodie-built-for-the-8-stations?variant=204314cd-c931-4819-bd3c-4e7d2045096d"}}}, "APC-C36": {"sku": "APC-C36", "title": "AeroMesh Lightweight Breathable Workout & Turf Tee  -  \"Built For Compromised Running\"", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/aeromeshtm-laser-vented-breathable-tech-shirt-built-for-compromised-running", "price": 38.0, "image": "images/streetwear/apc-c36-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c36-white.png?v=20261026v3", "variants": {"S": {"id": "20a671fa-a629-4b1a-83d7-52f3b44b1c48", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/aeromeshtm-laser-vented-breathable-tech-shirt-built-for-compromised-running?variant=20a671fa-a629-4b1a-83d7-52f3b44b1c48"}, "M": {"id": "db9752e0-3cb3-4a43-b134-955028adc222", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/aeromeshtm-laser-vented-breathable-tech-shirt-built-for-compromised-running?variant=db9752e0-3cb3-4a43-b134-955028adc222"}, "L": {"id": "ea1df055-96ab-44b8-8ed6-25357a1a2323", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/aeromeshtm-laser-vented-breathable-tech-shirt-built-for-compromised-running?variant=ea1df055-96ab-44b8-8ed6-25357a1a2323"}, "XL": {"id": "663e3316-511a-4372-aa92-497018ec0045", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/aeromeshtm-laser-vented-breathable-tech-shirt-built-for-compromised-running?variant=663e3316-511a-4372-aa92-497018ec0045"}, "2XL": {"id": "7c5b1f8f-4190-4378-912b-f73f07175d2c", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/aeromeshtm-laser-vented-breathable-tech-shirt-built-for-compromised-running?variant=7c5b1f8f-4190-4378-912b-f73f07175d2c"}, "3XL": {"id": "10d223af-9e57-4bb4-8be5-745a2d5ff422", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/aeromeshtm-laser-vented-breathable-tech-shirt-built-for-compromised-running?variant=10d223af-9e57-4bb4-8be5-745a2d5ff422"}, "4XL": {"id": "612196b3-a43d-4644-bd12-4b8fc5cde9fb", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/aeromeshtm-laser-vented-breathable-tech-shirt-built-for-compromised-running?variant=612196b3-a43d-4644-bd12-4b8fc5cde9fb"}}}, "APC-C37": {"sku": "APC-C37", "title": "Dry-Pace Lightweight Threshold Workout & Turf Tee  -  \"1km Split. Station. Repeat.\"", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/dry-pacetm-moisture-wicking-threshold-tech-tee-1km-split-station-repeat", "price": 38.0, "image": "images/streetwear/apc-c37-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c37-white.png?v=20261026v3", "variants": {"S": {"id": "583681fa-9dc6-4a20-8070-9621ce729ed2", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/dry-pacetm-moisture-wicking-threshold-tech-tee-1km-split-station-repeat?variant=583681fa-9dc6-4a20-8070-9621ce729ed2"}, "M": {"id": "33b52cc0-84b1-47cf-93d9-b1e62f3af5f0", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/dry-pacetm-moisture-wicking-threshold-tech-tee-1km-split-station-repeat?variant=33b52cc0-84b1-47cf-93d9-b1e62f3af5f0"}, "L": {"id": "0d6c5852-0b4e-4904-acef-9782ddec3eed", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/dry-pacetm-moisture-wicking-threshold-tech-tee-1km-split-station-repeat?variant=0d6c5852-0b4e-4904-acef-9782ddec3eed"}, "XL": {"id": "88c75bfc-e9a6-4740-8a92-b7b126d09a2d", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/dry-pacetm-moisture-wicking-threshold-tech-tee-1km-split-station-repeat?variant=88c75bfc-e9a6-4740-8a92-b7b126d09a2d"}, "2XL": {"id": "17e6911c-b121-4e28-8fcc-88e401162d02", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/dry-pacetm-moisture-wicking-threshold-tech-tee-1km-split-station-repeat?variant=17e6911c-b121-4e28-8fcc-88e401162d02"}, "3XL": {"id": "4a62b4e5-b94b-4176-b61d-b104f25325f3", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/dry-pacetm-moisture-wicking-threshold-tech-tee-1km-split-station-repeat?variant=4a62b4e5-b94b-4176-b61d-b104f25325f3"}, "4XL": {"id": "a6520576-18bf-4b1e-86ae-3c207f1047b9", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/dry-pacetm-moisture-wicking-threshold-tech-tee-1km-split-station-repeat?variant=a6520576-18bf-4b1e-86ae-3c207f1047b9"}}}, "APC-C38": {"sku": "APC-C38", "title": "VentTech Breathable Hybrid Conditioning Tee  -  \"Zone 4 / Zone 5 Engine\"", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/venttechtm-perforated-hybrid-training-shirt-zone-4-zone-5-engine", "price": 38.0, "image": "images/streetwear/apc-c38-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c38-white.png?v=20261026v3", "variants": {"S": {"id": "277fd44c-15db-49a9-92a5-bd88aa4d3fa2", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/venttechtm-perforated-hybrid-training-shirt-zone-4-zone-5-engine?variant=277fd44c-15db-49a9-92a5-bd88aa4d3fa2"}, "M": {"id": "a0432be5-8f80-4db0-9b82-8664c48d7b23", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/venttechtm-perforated-hybrid-training-shirt-zone-4-zone-5-engine?variant=a0432be5-8f80-4db0-9b82-8664c48d7b23"}, "L": {"id": "3b1a3d13-ac15-4188-9c51-85e084b72db0", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/venttechtm-perforated-hybrid-training-shirt-zone-4-zone-5-engine?variant=3b1a3d13-ac15-4188-9c51-85e084b72db0"}, "XL": {"id": "3a58907b-1f88-4088-9c75-335044b0040e", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/venttechtm-perforated-hybrid-training-shirt-zone-4-zone-5-engine?variant=3a58907b-1f88-4088-9c75-335044b0040e"}, "2XL": {"id": "65e5d909-b61a-43ac-833f-a6b4204a0725", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/venttechtm-perforated-hybrid-training-shirt-zone-4-zone-5-engine?variant=65e5d909-b61a-43ac-833f-a6b4204a0725"}, "3XL": {"id": "ee21708f-d305-4ba3-94a2-61c85799ef98", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/venttechtm-perforated-hybrid-training-shirt-zone-4-zone-5-engine?variant=ee21708f-d305-4ba3-94a2-61c85799ef98"}, "4XL": {"id": "6dd520bf-8f9a-49fd-8422-7442c8932293", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/venttechtm-perforated-hybrid-training-shirt-zone-4-zone-5-engine?variant=6dd520bf-8f9a-49fd-8422-7442c8932293"}}}, "APC-C39": {"sku": "APC-C39", "title": "Featherweight 3.8 oz Breathable Race Tee  -  \"Zero Drag \u00b7 8 Stations \u00b7 Sub-60\"", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/featherweight-3-8-oz-breathable-race-tee-zero-drag-8-stations-sub-60", "price": 38.0, "image": "images/streetwear/apc-c39-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c39-white.png?v=20261026v3", "variants": {"S": {"id": "85f497c2-9b5a-417a-acaa-e74c7f8fa2f4", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/featherweight-3-8-oz-breathable-race-tee-zero-drag-8-stations-sub-60?variant=85f497c2-9b5a-417a-acaa-e74c7f8fa2f4"}, "M": {"id": "2f1684cb-4a8c-47fa-ab71-86b0ad63874e", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/featherweight-3-8-oz-breathable-race-tee-zero-drag-8-stations-sub-60?variant=2f1684cb-4a8c-47fa-ab71-86b0ad63874e"}, "L": {"id": "8a385777-34dc-4e54-88c3-4a4ab783ca97", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/featherweight-3-8-oz-breathable-race-tee-zero-drag-8-stations-sub-60?variant=8a385777-34dc-4e54-88c3-4a4ab783ca97"}, "XL": {"id": "b396e81b-a59b-4855-9d80-204b5da7d8e5", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/featherweight-3-8-oz-breathable-race-tee-zero-drag-8-stations-sub-60?variant=b396e81b-a59b-4855-9d80-204b5da7d8e5"}, "2XL": {"id": "0100472c-3efa-4624-9efd-adfdc6696920", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/featherweight-3-8-oz-breathable-race-tee-zero-drag-8-stations-sub-60?variant=0100472c-3efa-4624-9efd-adfdc6696920"}, "3XL": {"id": "5509dc19-fcaf-4561-be29-ac6f60f356c1", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/featherweight-3-8-oz-breathable-race-tee-zero-drag-8-stations-sub-60?variant=5509dc19-fcaf-4561-be29-ac6f60f356c1"}, "4XL": {"id": "53ac2cc0-1cf9-4ab4-8105-c5d69fd0f8e9", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/featherweight-3-8-oz-breathable-race-tee-zero-drag-8-stations-sub-60?variant=53ac2cc0-1cf9-4ab4-8105-c5d69fd0f8e9"}}}, "APC-C40": {"sku": "APC-C40", "title": "CoolCore Breathable Turf & Sled Conditioning Tee  -  \"Push Heavy. Run Fast.\"", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/coolcoretm-anti-chafe-turf-sled-tech-shirt-push-heavy-run-fast", "price": 38.0, "image": "images/streetwear/apc-c40-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c40-white.png?v=20261026v3", "variants": {"S": {"id": "7448050c-3c2d-4e56-bbf8-c52c338e61a1", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/coolcoretm-anti-chafe-turf-sled-tech-shirt-push-heavy-run-fast?variant=7448050c-3c2d-4e56-bbf8-c52c338e61a1"}, "M": {"id": "fce65b02-47b6-438b-9d20-103498d70f21", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/coolcoretm-anti-chafe-turf-sled-tech-shirt-push-heavy-run-fast?variant=fce65b02-47b6-438b-9d20-103498d70f21"}, "L": {"id": "57e27a95-8741-4b00-8fc7-670a7c91b6a0", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/coolcoretm-anti-chafe-turf-sled-tech-shirt-push-heavy-run-fast?variant=57e27a95-8741-4b00-8fc7-670a7c91b6a0"}, "XL": {"id": "d92261de-1f9d-421e-aaf6-ec27f4d7ce9f", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/coolcoretm-anti-chafe-turf-sled-tech-shirt-push-heavy-run-fast?variant=d92261de-1f9d-421e-aaf6-ec27f4d7ce9f"}, "2XL": {"id": "aa6d646a-5495-47ef-816b-834d5eb2ef5a", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/coolcoretm-anti-chafe-turf-sled-tech-shirt-push-heavy-run-fast?variant=aa6d646a-5495-47ef-816b-834d5eb2ef5a"}, "3XL": {"id": "b16d2ed1-b884-4cdb-a969-bccd1bbb850f", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/coolcoretm-anti-chafe-turf-sled-tech-shirt-push-heavy-run-fast?variant=b16d2ed1-b884-4cdb-a969-bccd1bbb850f"}, "4XL": {"id": "54a99075-2070-42fe-92ad-3269aae5a44f", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/coolcoretm-anti-chafe-turf-sled-tech-shirt-push-heavy-run-fast?variant=54a99075-2070-42fe-92ad-3269aae5a44f"}}}, "APC-C41": {"sku": "APC-C41", "title": "HyperBreathe Breathable Roxzone Conditioning Tee  -  \"Roxzone Speed Dept.\"", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/hyperbreathetm-seamless-conditioning-tee-roxzone-speed-dept", "price": 38.0, "image": "images/streetwear/apc-c41-black.png?v=20261026v3", "alt_image": "images/streetwear/apc-c41-white.png?v=20261026v3", "variants": {"S": {"id": "94a27f9d-b273-4cce-bc32-0d04ed95ff8d", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/hyperbreathetm-seamless-conditioning-tee-roxzone-speed-dept?variant=94a27f9d-b273-4cce-bc32-0d04ed95ff8d"}, "M": {"id": "cd4cb1fc-9eef-46cd-a60d-8853b35c8b8e", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/hyperbreathetm-seamless-conditioning-tee-roxzone-speed-dept?variant=cd4cb1fc-9eef-46cd-a60d-8853b35c8b8e"}, "L": {"id": "643813da-c3c4-45b3-99e0-31cd4df4cd04", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/hyperbreathetm-seamless-conditioning-tee-roxzone-speed-dept?variant=643813da-c3c4-45b3-99e0-31cd4df4cd04"}, "XL": {"id": "99bfce11-d0d2-44c5-8f72-5b69f20f0f40", "price": 38.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/hyperbreathetm-seamless-conditioning-tee-roxzone-speed-dept?variant=99bfce11-d0d2-44c5-8f72-5b69f20f0f40"}, "2XL": {"id": "a04c4874-fff1-4699-88c3-69dd9350ba3a", "price": 40.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/hyperbreathetm-seamless-conditioning-tee-roxzone-speed-dept?variant=a04c4874-fff1-4699-88c3-69dd9350ba3a"}, "3XL": {"id": "7e74959a-29bb-4220-83d8-0c2770f0e7f4", "price": 42.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/hyperbreathetm-seamless-conditioning-tee-roxzone-speed-dept?variant=7e74959a-29bb-4220-83d8-0c2770f0e7f4"}, "4XL": {"id": "791fed22-3303-4de9-8020-130c94f3c8a4", "price": 44.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/hyperbreathetm-seamless-conditioning-tee-roxzone-speed-dept?variant=791fed22-3303-4de9-8020-130c94f3c8a4"}}}, "APC-C42": {"sku": "APC-C42", "title": "Apex AeroShell Lightweight Race Warmup Jacket \u2014 \"8\u00d71000M Corral Shell\"", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-lightweight-race-warmup-jacket-hybrid-division", "price": 68.0, "image": "images/streetwear/apc-c42-black.png", "alt_image": "images/streetwear/apc-c42-white.png", "variants": {"S": {"id": "1d4a10ad-8725-4c1c-af43-7b4a2e71df95", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-lightweight-race-warmup-jacket-hybrid-division?variant=1d4a10ad-8725-4c1c-af43-7b4a2e71df95"}, "M": {"id": "c48fde75-2fe3-4149-b445-d1be28665ad3", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-lightweight-race-warmup-jacket-hybrid-division?variant=c48fde75-2fe3-4149-b445-d1be28665ad3"}, "L": {"id": "05d3d05b-848a-4432-9c1e-0e7a9e1af7b5", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-lightweight-race-warmup-jacket-hybrid-division?variant=05d3d05b-848a-4432-9c1e-0e7a9e1af7b5"}, "XL": {"id": "ca8c2f5b-0134-4ac1-be71-0dcc205d3129", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-lightweight-race-warmup-jacket-hybrid-division?variant=ca8c2f5b-0134-4ac1-be71-0dcc205d3129"}, "2XL": {"id": "6d02c957-c50c-4bf7-847e-5ebf4fb5adfb", "price": 70.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-lightweight-race-warmup-jacket-hybrid-division?variant=6d02c957-c50c-4bf7-847e-5ebf4fb5adfb"}}}, "APC-C43": {"sku": "APC-C43", "title": "Hybrid 8-Station Windbreaker Track Jacket \u2014 \"01 SkiErg to 08 Wall Balls\"", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/hybrid-8-station-windbreaker-track-jacket-01-skierg-to-08-wall-balls", "price": 68.0, "image": "images/streetwear/apc-c43-black.png", "alt_image": "images/streetwear/apc-c43-white.png", "variants": {"S": {"id": "b984aded-2e52-44f9-8090-a1ba479c1569", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/hybrid-8-station-windbreaker-track-jacket-01-skierg-to-08-wall-balls?variant=b984aded-2e52-44f9-8090-a1ba479c1569"}, "M": {"id": "7af66ca4-8176-4c5d-9925-ca7b0ee85d3f", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/hybrid-8-station-windbreaker-track-jacket-01-skierg-to-08-wall-balls?variant=7af66ca4-8176-4c5d-9925-ca7b0ee85d3f"}, "L": {"id": "586a1a3e-cdc7-4b76-b2a9-61b2ef7b7519", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/hybrid-8-station-windbreaker-track-jacket-01-skierg-to-08-wall-balls?variant=586a1a3e-cdc7-4b76-b2a9-61b2ef7b7519"}, "XL": {"id": "7d00e825-5ce2-451d-8344-35674f532034", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/hybrid-8-station-windbreaker-track-jacket-01-skierg-to-08-wall-balls?variant=7d00e825-5ce2-451d-8344-35674f532034"}, "2XL": {"id": "0d56b749-acbb-4258-b3ad-ef382e503de8", "price": 70.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/hybrid-8-station-windbreaker-track-jacket-01-skierg-to-08-wall-balls?variant=0d56b749-acbb-4258-b3ad-ef382e503de8"}}}, "APC-C44": {"sku": "APC-C44", "title": "Pro Division Lightweight Quarter-Zip Shell \u2014 \"Sub-65 Warmup Track Top\"", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/pro-division-lightweight-quarter-zip-shell-sub-65-warmup-track-top", "price": 68.0, "image": "images/streetwear/apc-c44-black.png", "alt_image": "images/streetwear/apc-c44-white.png", "variants": {"S": {"id": "8c2368cd-b62d-4cd3-8a9a-e30ab0fe503b", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/pro-division-lightweight-quarter-zip-shell-sub-65-warmup-track-top?variant=8c2368cd-b62d-4cd3-8a9a-e30ab0fe503b"}, "M": {"id": "0f043a40-8885-434d-a9f0-a53012bdc10f", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/pro-division-lightweight-quarter-zip-shell-sub-65-warmup-track-top?variant=0f043a40-8885-434d-a9f0-a53012bdc10f"}, "L": {"id": "14cb80b7-74b4-43c9-839d-37b663f9de74", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/pro-division-lightweight-quarter-zip-shell-sub-65-warmup-track-top?variant=14cb80b7-74b4-43c9-839d-37b663f9de74"}, "XL": {"id": "3082fab9-42be-414f-a898-2c59c739fc38", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/pro-division-lightweight-quarter-zip-shell-sub-65-warmup-track-top?variant=3082fab9-42be-414f-a898-2c59c739fc38"}, "2XL": {"id": "937d9dda-1dc2-4164-9bab-47644a7650d6", "price": 70.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/pro-division-lightweight-quarter-zip-shell-sub-65-warmup-track-top?variant=937d9dda-1dc2-4164-9bab-47644a7650d6"}}}, "APC-C45": {"sku": "APC-C45", "title": "26/27 World Series Lightweight Warmup Jacket \u2014 \"Chicago \u00b7 Dallas \u00b7 SoCal \u00b7 NYC\"", "url": "https://apex-hybrid-co-shop.fourthwall.com/products/26-27-world-series-lightweight-warmup-jacket-chicago-dallas-socal-nyc", "price": 68.0, "image": "images/streetwear/apc-c45-black.png", "alt_image": "images/streetwear/apc-c45-white.png", "variants": {"S": {"id": "989cee7a-0737-4bfc-a693-9696f1ead10d", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/26-27-world-series-lightweight-warmup-jacket-chicago-dallas-socal-nyc?variant=989cee7a-0737-4bfc-a693-9696f1ead10d"}, "M": {"id": "9d933c04-3aef-4602-a7c9-df0429339bce", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/26-27-world-series-lightweight-warmup-jacket-chicago-dallas-socal-nyc?variant=9d933c04-3aef-4602-a7c9-df0429339bce"}, "L": {"id": "ec91cc61-cfae-4341-9766-97859144e369", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/26-27-world-series-lightweight-warmup-jacket-chicago-dallas-socal-nyc?variant=ec91cc61-cfae-4341-9766-97859144e369"}, "XL": {"id": "b6d8f181-3098-4d49-b582-b0b83ff1c97a", "price": 68.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/26-27-world-series-lightweight-warmup-jacket-chicago-dallas-socal-nyc?variant=b6d8f181-3098-4d49-b582-b0b83ff1c97a"}, "2XL": {"id": "7704d039-9dc8-4215-814a-d036480726bd", "price": 70.0, "url": "https://apex-hybrid-co-shop.fourthwall.com/products/26-27-world-series-lightweight-warmup-jacket-chicago-dallas-socal-nyc?variant=7704d039-9dc8-4215-814a-d036480726bd"}}}};
     const SIZES = ["S", "M", "L", "XL", "2XL"];
+
+    function getSkuInfo(sku) {
+      return FW_VARIANTS[sku] || FW_VARIANTS["APC-C36"];
+    }
+
+    function getVariantForSize(sku, size) {
+      const info = getSkuInfo(sku);
+      const variants = info.variants || {};
+      if (variants[size]) return variants[size];
+      if (variants["One size"]) return variants["One size"];
+      if (variants["17oz"]) return variants["17oz"];
+      if (variants["L"]) return variants["L"];
+      const keys = Object.keys(variants);
+      return keys.length ? variants[keys[0]] : null;
+    }
+
+    function computeBundleCartItems(bundle, primarySku, sizeA, sizeB, packMultiplier) {
+      const mult = Math.max(1, parseInt(packMultiplier, 10) || 1);
+      const rawItems = [];
+
+      if (bundle.checkout_mode === "travel_kit_3pc") {
+        ["APC-C14", "APC-C15", "APC-C13"].forEach(sku => {
+          const v = getVariantForSize(sku, "One size");
+          if (v) rawItems.push({ sku, size: "One size", variant_id: v.id, price: v.price, qty: 1 * mult });
+        });
+      } else if (bundle.checkout_mode === "doubles_pro_kit") {
+        const teeSku = primarySku || bundle.default_sku || "APC-C36";
+        const jacketSku = bundle.secondary_sku || "APC-C42";
+        const vTeeA = getVariantForSize(teeSku, sizeA);
+        const vTeeB = getVariantForSize(teeSku, sizeB);
+        const vJacA = getVariantForSize(jacketSku, sizeA);
+        const vJacB = getVariantForSize(jacketSku, sizeB);
+        if (vTeeA) rawItems.push({ sku: teeSku, size: sizeA, variant_id: vTeeA.id, price: vTeeA.price, qty: 1 * mult });
+        if (vTeeB) rawItems.push({ sku: teeSku, size: sizeB, variant_id: vTeeB.id, price: vTeeB.price, qty: 1 * mult });
+        if (vJacA) rawItems.push({ sku: jacketSku, size: sizeA, variant_id: vJacA.id, price: vJacA.price, qty: 1 * mult });
+        if (vJacB) rawItems.push({ sku: jacketSku, size: sizeB, variant_id: vJacB.id, price: vJacB.price, qty: 1 * mult });
+      } else if (bundle.checkout_mode === "bulk_5pk") {
+        const sku = primarySku || bundle.default_sku;
+        const vA = getVariantForSize(sku, sizeA);
+        const vB = getVariantForSize(sku, sizeB);
+        if (vA) rawItems.push({ sku, size: sizeA, variant_id: vA.id, price: vA.price, qty: 3 * mult });
+        if (vB) rawItems.push({ sku, size: sizeB, variant_id: vB.id, price: vB.price, qty: 2 * mult });
+      } else if (bundle.checkout_mode === "bulk_10pk") {
+        const sku = primarySku || bundle.default_sku;
+        const vA = getVariantForSize(sku, sizeA);
+        const vB = getVariantForSize(sku, sizeB);
+        if (vA) rawItems.push({ sku, size: sizeA, variant_id: vA.id, price: vA.price, qty: 5 * mult });
+        if (vB) rawItems.push({ sku, size: sizeB, variant_id: vB.id, price: vB.price, qty: 5 * mult });
+      } else {
+        const sku = primarySku || bundle.default_sku;
+        const vA = getVariantForSize(sku, sizeA);
+        const vB = getVariantForSize(sku, sizeB);
+        if (vA) rawItems.push({ sku, size: sizeA, variant_id: vA.id, price: vA.price, qty: 1 * mult });
+        if (vB) rawItems.push({ sku, size: sizeB, variant_id: vB.id, price: vB.price, qty: 1 * mult });
+      }
+
+      const mergedMap = new Map();
+      rawItems.forEach(item => {
+        if (mergedMap.has(item.variant_id)) {
+          mergedMap.get(item.variant_id).qty += item.qty;
+        } else {
+          mergedMap.set(item.variant_id, { ...item });
+        }
+      });
+      return Array.from(mergedMap.values());
+    }
+
+    function showToast(msg) {
+      const el = document.getElementById("checkoutToast");
+      if (!el) return;
+      el.textContent = msg;
+      el.style.display = "block";
+      setTimeout(() => {
+        el.style.display = "none";
+      }, 4000);
+    }
 
     function renderBundles(filterCat = "all") {
       const grid = document.getElementById("bundleGrid");
       const list = filterCat === "all" ? BUNDLES : BUNDLES.filter(b => b.category === filterCat);
-      grid.innerHTML = list.map((b, idx) => {
-        const buyHref = b.storefront_buy_url.replace("https://www.apexhybridco.com/", "index.html");
+      grid.innerHTML = list.map(b => {
+        const isTravelKit = b.checkout_mode === "travel_kit_3pc";
+        const sizeOptionsA = isTravelKit
+          ? `<option value="One size" selected>One Size / Standard</option>`
+          : SIZES.map(s => `<option value="${s}" ${s === "L" ? "selected" : ""}>Size ${s}${s === "2XL" ? " (+$2)" : ""}</option>`).join("");
+        const sizeOptionsB = isTravelKit
+          ? `<option value="One size" selected>Included in 3-Piece Kit</option>`
+          : SIZES.map(s => `<option value="${s}" ${s === "M" ? "selected" : ""}>Size ${s}${s === "2XL" ? " (+$2)" : ""}</option>`).join("");
+
+        const skuOptions = b.eligible_skus.map(sku => {
+          const info = getSkuInfo(sku);
+          return `<option value="${sku}" ${sku === b.default_sku ? "selected" : ""}>${info.title} ($${info.price.toFixed(0)})</option>`;
+        }).join("");
+
         return `
-          <article class="BundleCard" data-category="${b.category}">
+          <article class="BundleCard" data-category="${b.category}" id="card-${b.bundle_id}">
             <div class="BundleCard__media">
-              <img src="${b.image}" alt="${b.title}" loading="lazy" />
+              <img id="img-${b.bundle_id}" src="${b.image}" alt="${b.title}" loading="lazy" onerror="this.src=\x27${b.alt_image}\x27" />
               <span class="BundleCard__badge">${b.badge}</span>
-              <span class="BundleCard__save">Save $${b.savings_usd.toFixed(0)} (${b.savings_pct}%)</span>
+              <span class="BundleCard__save" id="save-${b.bundle_id}">Save $${b.savings_usd.toFixed(2)} w/ COACHSU10</span>
             </div>
             <div class="BundleCard__body">
               <div class="BundleCard__cat">${b.category} · ${b.pack_size} Units</div>
@@ -749,35 +979,34 @@
               <p class="BundleCard__sub">${b.subtitle}</p>
 
               <div class="BundleConfig">
-                <label>Athlete 1 / Pack Size
-                  <select id="sizeA_${idx}">
-                    ${SIZES.map(s => `<option value="${s}" ${s === "L" ? "selected" : ""}>Size ${s}</option>`).join("")}
-                  </select>
+                <label>${b.pack_size === 5 ? "Athlete Group A (3 Units)" : (b.pack_size === 10 ? "Athlete Group A (5 Units)" : "Partner A Size")}
+                  <select id="sizeA-${b.bundle_id}" onchange="onCardConfigChange(\x27${b.bundle_id}\x27)">${sizeOptionsA}</select>
                 </label>
-                <label>Athlete 2 / Mix Size
-                  <select id="sizeB_${idx}">
-                    ${SIZES.map(s => `<option value="${s}" ${s === "M" ? "selected" : ""}>Size ${s}</option>`).join("")}
-                  </select>
+                <label>${b.pack_size === 5 ? "Athlete Group B (2 Units)" : (b.pack_size === 10 ? "Athlete Group B (5 Units)" : "Partner B Size")}
+                  <select id="sizeB-${b.bundle_id}" onchange="onCardConfigChange(\x27${b.bundle_id}\x27)">${sizeOptionsB}</select>
+                </label>
+                <label style="grid-column: span 2;">Race City / Style Edition
+                  <select id="sku-${b.bundle_id}" onchange="onCardConfigChange(\x27${b.bundle_id}\x27)">${skuOptions}</select>
                 </label>
               </div>
 
               <div class="BundleCard__pricing">
-                <span class="PriceNow">$${b.bundle_price.toFixed(0)}</span>
-                <span class="PriceWas">$${b.regular_total_price.toFixed(0)}</span>
-                <span class="PricePer">$${b.price_per_athlete.toFixed(2)} / athlete</span>
+                <span class="PriceNow" id="now-${b.bundle_id}">$${b.bundle_price.toFixed(2)}</span>
+                <span class="PriceWas" id="was-${b.bundle_id}">$${b.regular_total_price.toFixed(2)}</span>
+                <span class="PricePer" id="per-${b.bundle_id}">$${b.price_per_athlete.toFixed(2)} / unit</span>
               </div>
 
               <div class="BundleCard__actions">
-                <a class="BtnDark BtnDark--primary" href="${buyHref}">
-                  Buy ${b.pack_size}-Pack Now ($${b.bundle_price.toFixed(0)}) →
-                </a>
-                <button class="BtnDark BtnDark--outline" type="button" onclick="loadBundleIntoCalc('${b.bundle_id}')">
-                  Apply Coach 10% Code in Calculator
+                <button class="BtnDark BtnDark--primary" type="button" id="btn-${b.bundle_id}" onclick="launchFourthwallBundleCheckout(\x27${b.bundle_id}\x27)">
+                  Buy ${b.pack_size}-Pack Now ($${b.bundle_price.toFixed(2)}) →
+                </button>
+                <button class="BtnDark BtnDark--outline" type="button" onclick="loadBundleIntoCalc(\x27${b.bundle_id}\x27)">
+                  Customize Pack Quantity &amp; Promo in Calculator
                 </button>
               </div>
               <div class="StripeIdTag">
-                <span>✓ Free 2–4 Day US Shipping</span>
-                <span>✓ 30-Day Easy Size Exchanges</span>
+                <span>✓ Adds Partner A &amp; B Sizes to Cart</span>
+                <span>✓ 10% Off Code: COACHSU10</span>
               </div>
             </div>
           </article>
@@ -785,9 +1014,98 @@
       }).join("");
     }
 
+    function onCardConfigChange(bundleId) {
+      const b = BUNDLES.find(x => x.bundle_id === bundleId);
+      if (!b) return;
+      const skuEl = document.getElementById(`sku-${bundleId}`);
+      const sizeAEl = document.getElementById(`sizeA-${bundleId}`);
+      const sizeBEl = document.getElementById(`sizeB-${bundleId}`);
+      const selectedSku = skuEl ? skuEl.value : b.default_sku;
+      const sizeA = sizeAEl ? sizeAEl.value : "L";
+      const sizeB = sizeBEl ? sizeBEl.value : "M";
+
+      const skuInfo = getSkuInfo(selectedSku);
+      const imgEl = document.getElementById(`img-${bundleId}`);
+      if (imgEl && skuInfo && skuInfo.image && b.checkout_mode !== "doubles_pro_kit") {
+        imgEl.src = skuInfo.image;
+      }
+
+      const items = computeBundleCartItems(b, selectedSku, sizeA, sizeB, 1);
+      const regTotal = items.reduce((sum, it) => sum + it.price * it.qty, 0);
+      const discounted = regTotal * 0.9;
+      const savings = regTotal - discounted;
+      const totalUnits = items.reduce((sum, it) => sum + it.qty, 0) || b.pack_size;
+      const perUnit = discounted / totalUnits;
+
+      const nowEl = document.getElementById(`now-${bundleId}`);
+      const wasEl = document.getElementById(`was-${bundleId}`);
+      const perEl = document.getElementById(`per-${bundleId}`);
+      const saveEl = document.getElementById(`save-${bundleId}`);
+      const btnEl = document.getElementById(`btn-${bundleId}`);
+      if (nowEl) nowEl.textContent = `$${discounted.toFixed(2)}`;
+      if (wasEl) wasEl.textContent = `$${regTotal.toFixed(2)}`;
+      if (perEl) perEl.textContent = `$${perUnit.toFixed(2)} / unit`;
+      if (saveEl) saveEl.textContent = `Save $${savings.toFixed(2)} w/ COACHSU10`;
+      if (btnEl) btnEl.textContent = `Buy ${b.pack_size}-Pack Now ($${discounted.toFixed(2)}) →`;
+    }
+
+    function submitItemsToFourthwallCart(items, promoCode, label) {
+      if (!items || !items.length) return;
+      const cleanPromo = (promoCode || "COACHSU10").trim().toUpperCase();
+      if (navigator.clipboard && cleanPromo) {
+        navigator.clipboard.writeText(cleanPromo).catch(() => {});
+      }
+      showToast(`Adding ${label} to your live cart  -  Promo code ${cleanPromo} copied for 10% off at checkout!`);
+
+      try {
+        fetch("https://api.counterapi.dev/v1/apexhybridco/team_bundle_checkout/up", { mode: "no-cors", keepalive: true }).catch(() => {});
+      } catch (e) {}
+
+      const form = document.getElementById("fwCartForm");
+      form.innerHTML = "";
+      items.forEach(it => {
+        const idInput = document.createElement("input");
+        idInput.type = "hidden";
+        idInput.name = "items[][id]";
+        idInput.value = it.variant_id;
+        form.appendChild(idInput);
+
+        const qtyInput = document.createElement("input");
+        qtyInput.type = "hidden";
+        qtyInput.name = "items[][quantity]";
+        qtyInput.value = String(it.qty);
+        form.appendChild(qtyInput);
+      });
+      form.submit();
+    }
+
+    function launchFourthwallBundleCheckout(bundleId) {
+      const b = BUNDLES.find(x => x.bundle_id === bundleId);
+      if (!b) return;
+      const skuEl = document.getElementById(`sku-${bundleId}`);
+      const sizeAEl = document.getElementById(`sizeA-${bundleId}`);
+      const sizeBEl = document.getElementById(`sizeB-${bundleId}`);
+      const selectedSku = skuEl ? skuEl.value : b.default_sku;
+      const sizeA = sizeAEl ? sizeAEl.value : "L";
+      const sizeB = sizeBEl ? sizeBEl.value : "M";
+
+      const items = computeBundleCartItems(b, selectedSku, sizeA, sizeB, 1);
+      submitItemsToFourthwallCart(items, "COACHSU10", `${b.title} (${sizeA} + ${sizeB})`);
+    }
+
+    function populateCalcStyleOptions(bundle, preferredSku) {
+      const citySel = document.getElementById("calcCitySelect");
+      if (!citySel || !bundle) return;
+      const targetSku = preferredSku && bundle.eligible_skus.includes(preferredSku) ? preferredSku : bundle.default_sku;
+      citySel.innerHTML = bundle.eligible_skus.map(sku => {
+        const info = getSkuInfo(sku);
+        return `<option value="${sku}" ${sku === targetSku ? "selected" : ""}>${info.title} ($${info.price.toFixed(0)})</option>`;
+      }).join("");
+    }
+
     function initCalculator() {
       const sel = document.getElementById("calcBundleSelect");
-      sel.innerHTML = BUNDLES.map(b => `<option value="${b.bundle_id}">${b.title}  -  $${b.bundle_price.toFixed(2)} (Reg $${b.regular_total_price.toFixed(0)})</option>`).join("");
+      sel.innerHTML = BUNDLES.map(b => `<option value="${b.bundle_id}">${b.title} - $${b.bundle_price.toFixed(2)} w/ 10% Code (Reg $${b.regular_total_price.toFixed(0)})</option>`).join("");
 
       const params = new URLSearchParams(window.location.search);
       const preBundle = params.get("bundle");
@@ -796,19 +1114,47 @@
         sel.value = preBundle;
       }
       if (prePromo) {
-        document.getElementById("calcPromoInput").value = prePromo.toUpperCase();
+        const up = prePromo.toUpperCase();
+        document.getElementById("calcPromoInput").value = (up === "DADBOD10" || up === "COACHSU10") ? up : "COACHSU10";
       }
 
-      ["calcBundleSelect", "calcQtyInput", "calcPromoInput", "calcCitySelect", "calcSizeNotes"].forEach(id => {
-        document.getElementById(id).addEventListener("input", updateCalculator);
-        document.getElementById(id).addEventListener("change", updateCalculator);
+      const initialBundle = BUNDLES.find(x => x.bundle_id === sel.value) || BUNDLES[0];
+      populateCalcStyleOptions(initialBundle, initialBundle.default_sku);
+
+      sel.addEventListener("change", () => {
+        const b = BUNDLES.find(x => x.bundle_id === sel.value) || BUNDLES[0];
+        populateCalcStyleOptions(b, b.default_sku);
+        updateCalculator();
+      });
+
+      ["calcQtyInput", "calcPromoInput", "calcCitySelect", "calcSizeA", "calcSizeB"].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.addEventListener("input", updateCalculator);
+          el.addEventListener("change", updateCalculator);
+        }
       });
       updateCalculator();
     }
 
     function loadBundleIntoCalc(bundleId) {
       const sel = document.getElementById("calcBundleSelect");
+      const b = BUNDLES.find(x => x.bundle_id === bundleId);
+      if (!b) return;
       sel.value = bundleId;
+
+      const cardSkuEl = document.getElementById(`sku-${bundleId}`);
+      const cardSizeAEl = document.getElementById(`sizeA-${bundleId}`);
+      const cardSizeBEl = document.getElementById(`sizeB-${bundleId}`);
+      populateCalcStyleOptions(b, cardSkuEl ? cardSkuEl.value : b.default_sku);
+
+      if (cardSizeAEl && SIZES.includes(cardSizeAEl.value)) {
+        document.getElementById("calcSizeA").value = cardSizeAEl.value;
+      }
+      if (cardSizeBEl && SIZES.includes(cardSizeBEl.value)) {
+        document.getElementById("calcSizeB").value = cardSizeBEl.value;
+      }
+
       updateCalculator();
       document.getElementById("calculator").scrollIntoView({ behavior: "smooth" });
     }
@@ -819,39 +1165,94 @@
       const qty = Math.max(1, parseInt(document.getElementById("calcQtyInput").value || "1", 10));
       const promo = (document.getElementById("calcPromoInput").value || "").trim().toUpperCase();
       const chosenSku = document.getElementById("calcCitySelect").value || b.default_sku;
+      const sizeA = document.getElementById("calcSizeA").value || "L";
+      const sizeB = document.getElementById("calcSizeB").value || "M";
 
-      let discountPct = 0;
-      if (promo === "GYM20") discountPct = 20;
-      else if (promo === "TEAM15") discountPct = 15;
-      else if (promo.length >= 3) discountPct = 10; // Any valid coach/club 10% code (CLUB10, DOUBLES10, WESTGROVE10, FTX10, etc.)
+      const discountPct = promo.length >= 3 ? 10 : 0;
+      const items = computeBundleCartItems(b, chosenSku, sizeA, sizeB, qty);
+      const regTotal = items.reduce((sum, it) => sum + it.price * it.qty, 0);
+      const totalUnits = items.reduce((sum, it) => sum + it.qty, 0) || (b.pack_size * qty);
+      const discountAmt = regTotal * (discountPct / 100);
+      const finalTotal = regTotal - discountAmt;
+      const perAthlete = finalTotal / totalUnits;
 
-      const regTotal = b.regular_total_price * qty;
-      const bundleSub = b.bundle_price * qty;
-      const discountAmt = bundleSub * (discountPct / 100);
-      const finalTotal = bundleSub - discountAmt;
-      const totalAthletes = b.pack_size * qty;
-      const perAthlete = finalTotal / totalAthletes;
-
+      const breakdownStr = items.map(it => `${it.qty}× ${it.sku} (${it.size})`).join(" + ");
+      document.getElementById("calcItemsBreakdown").textContent = breakdownStr;
       document.getElementById("calcStripeBadge").textContent = "✓ Free 2–4 Day US Shipping";
       document.getElementById("calcRegularTotal").textContent = `$${regTotal.toFixed(2)}`;
-      document.getElementById("calcBundleSubtotal").textContent = `$${bundleSub.toFixed(2)}`;
       document.getElementById("calcPromoLabel").textContent = discountPct > 0
         ? `Promo Code ${promo} (${discountPct}% Off):`
-        : `No Promo Code Applied:`;
+        : `Enter Code COACHSU10 or DADBOD10:`;
       document.getElementById("calcPromoDiscount").textContent = `-$${discountAmt.toFixed(2)}`;
       document.getElementById("calcFinalTotal").textContent = `$${finalTotal.toFixed(2)}`;
-      document.getElementById("calcPerAthlete").textContent = `$${perAthlete.toFixed(2)} / unit (${totalAthletes} total units)`;
+      document.getElementById("calcPerAthlete").textContent = `$${perAthlete.toFixed(2)} / unit (${totalUnits} total units)`;
 
       const estCommission = finalTotal * 0.15;
-      const shirtUnits = b.category === "Gym Recovery Hardware" ? 0 : totalAthletes;
-      const fiveShirtBonuses = Math.floor(shirtUnits / 5) * 25;
+      const fiveShirtBonuses = Math.floor(totalUnits / 5) * 25;
       document.getElementById("calcCoachEarnings").textContent =
         `$${estCommission.toFixed(2)} (15% commission) + $${fiveShirtBonuses.toFixed(0)} ($25 per 5-shirt bonus) = $${(estCommission + fiveShirtBonuses).toFixed(2)} total partner payout`;
 
-      const checkoutHref = `index.html?buy=${encodeURIComponent(chosenSku)}&qty=${totalAthletes}&promo=${encodeURIComponent(promo || "DOUBLES10")}&bundle=${encodeURIComponent(b.bundle_id)}`;
       const btn = document.getElementById("calcCheckoutBtn");
-      btn.href = checkoutHref;
-      btn.textContent = `Checkout ${qty}× ${b.title} ($${finalTotal.toFixed(2)}) →`;
+      btn.textContent = `Add ${totalUnits} Units to Cart & Checkout ($${finalTotal.toFixed(2)}) →`;
+    }
+
+    function submitCalculatorCheckout() {
+      const bundleId = document.getElementById("calcBundleSelect").value;
+      const b = BUNDLES.find(x => x.bundle_id === bundleId) || BUNDLES[0];
+      const qty = Math.max(1, parseInt(document.getElementById("calcQtyInput").value || "1", 10));
+      const promo = (document.getElementById("calcPromoInput").value || "COACHSU10").trim().toUpperCase();
+      const chosenSku = document.getElementById("calcCitySelect").value || b.default_sku;
+      const sizeA = document.getElementById("calcSizeA").value || "L";
+      const sizeB = document.getElementById("calcSizeB").value || "M";
+
+      const items = computeBundleCartItems(b, chosenSku, sizeA, sizeB, qty);
+      const checkoutPromo = (promo === "DADBOD10" || promo === "COACHSU10") ? promo : "COACHSU10";
+      submitItemsToFourthwallCart(items, checkoutPromo, `${qty}× ${b.title} (${sizeA} & ${sizeB})`);
+    }
+
+    function selectCoachTier(tierName) {
+      const tierSel = document.getElementById("cpTier");
+      if (tierSel) tierSel.value = tierName;
+    }
+
+    function submitCoachRequest(e) {
+      e.preventDefault();
+      const name = document.getElementById("cpName").value.trim();
+      const gym = document.getElementById("cpGym").value.trim();
+      const email = document.getElementById("cpEmail").value.trim();
+      const tier = document.getElementById("cpTier").value;
+      const sampleSku = document.getElementById("cpSampleSku").value;
+      const size = document.getElementById("cpSize").value;
+      const rawCode = document.getElementById("cpCode").value.trim().toUpperCase().replace(/[^A-Z0-9_-]/g, "") || "COACH10";
+      const address = document.getElementById("cpAddress").value.trim();
+
+      const sampleInfo = getSkuInfo(sampleSku);
+      const partnerUrl = `https://www.apexhybridco.com/?ref=${encodeURIComponent(rawCode)}&promo=COACHSU10`;
+
+      try {
+        const saved = JSON.parse(localStorage.getItem("apex_coach_requests") || "[]");
+        saved.push({ name, gym, email, tier, sampleSku, size, desiredCode: rawCode, address, ts: new Date().toISOString() });
+        localStorage.setItem("apex_coach_requests", JSON.stringify(saved));
+      } catch (err) {}
+
+      try {
+        fetch("https://api.counterapi.dev/v1/apexhybridco/coach_sample_request/up", { mode: "no-cors", keepalive: true }).catch(() => {});
+      } catch (err) {}
+
+      document.getElementById("coachConfirmHeadline").textContent = `✓ Sample Request Logged for ${name} (${gym})`;
+      document.getElementById("coachConfirmDetails").textContent = `Selected Sample: ${sampleInfo.title} (Size ${size}) · Requested Code: ${rawCode} · Confirmation sent to ${email}. Your active referral link is ready below:`;
+      document.getElementById("coachConfirmUrl").textContent = partnerUrl;
+      document.getElementById("coachFormOutput").style.display = "flex";
+    }
+
+    function copyGeneratedCoachLink(btn) {
+      const url = document.getElementById("coachConfirmUrl").textContent;
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).catch(() => {});
+      }
+      const old = btn.textContent;
+      btn.textContent = "Copied Link!";
+      setTimeout(() => (btn.textContent = old), 1600);
     }
 
     document.querySelectorAll(".FilterTab").forEach(tab => {

@@ -150,8 +150,8 @@
   function cleanDisplayTitle(p) {
     return String(p.title || '')
       .replace(/^"|"$/g, '')
-      .replace(/™/g, '')
-      .replace(/—/g, ' - ')
+      .replace(/\u2122/g, '')
+      .replace(/\u2014/g, ' - ')
       .trim();
   }
 
