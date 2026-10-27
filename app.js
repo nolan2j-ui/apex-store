@@ -1,877 +1,872 @@
-const BEACON_NS = "https://abacus.jasoncameron.dev/hit/apexhybridco.com";
-function trackHit(key) {
-  try {
-    if (!key) return;
-    if (/bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent || "")) return;
-    const clean = String(key).replace(/[^a-zA-Z0-9_-]/g, "_").slice(0, 62);
-    fetch(`${BEACON_NS}/${clean}`, { method: "GET", mode: "cors", keepalive: true, cache: "no-store" }).catch(() => {});
-  } catch (_) {}
-}
-window.apexTrackHit = trackHit;
+/* ==========================================================================
+   Apex Hybrid Co. - Storefront Application
+   Irvine, Orange County, CA · Built for the 8th Station & 8th Kilometer
+   ========================================================================== */
 
-const APPAREL = new Set([
-  "Breathable Tech Shirts",
-  "Race City Editions",
-  "Muscle Tanks",
-  "Tees & Pump Covers",
-  "Hoodies",
-  "Lightweight Jackets",
-]);
+(() => {
+  'use strict';
 
-const PILLS = [
-  ["apparel", "All apparel"],
-  ["Breathable Tech Shirts", "Breathable Tech Shirts"],
-  ["Race City Editions", "Race City Editions"],
-  ["Muscle Tanks", "Muscle Tanks"],
-  ["Tees & Pump Covers", "Race Tees & Pump Covers"],
-  ["Hoodies", "Warmup Hoodies"],
-  ["Lightweight Jackets", "Lightweight Jackets"],
-  ["Training Gear", "Training Gear"],
-  ["Recovery Hardware", "Recovery Hardware"],
-];
+  const STORAGE_KEY_CART = 'apex_cart_v3';
+  const STORAGE_KEY_PROMO = 'apex_promo_v3';
 
-const CITIES = [
-  { sku: "APC-C16", code: "CHI", name: "Chicago", venue: "Navy Pier", when: "November 2026", note: "Fast three-lap hall. Protect run one, then stay tall on the sled carpet.", run: 0.98, sled: 1.02 },
-  { sku: "APC-C17", code: "DAL", name: "Dallas", venue: "Kay Bailey Hutchison", when: "November 2026", note: "High-grip sled carpet. Budget extra seconds on the push and the pull.", run: 0.99, sled: 1.1 },
-  { sku: "APC-C18", code: "SOC", name: "Anaheim", venue: "SoCal Open", when: "December 2026", note: "Dry indoor air. This is the PR window if the first run stays honest.", run: 0.97, sled: 1 },
-  { sku: "APC-C20", code: "LAS", name: "Las Vegas", venue: "Championship turf", when: "February 2027", note: "Qualifier weekend. Even effort beats a hot first station.", run: 1, sled: 1.03 },
-  { sku: "APC-C19", code: "MIA", name: "Miami", venue: "Beach convention hall", when: "March 2027", note: "Humidity shows up before station four. Open the run and wear the mesh.", run: 1.05, sled: 1.02 },
-  { sku: "APC-C21", code: "NYC", name: "New York", venue: "Hudson Pier", when: "May 2027", note: "Metro lap, tight transitions. The Roxzone is where the clock leaks.", run: 0.99, sled: 1.01 },
-];
-
-const STATIONS = [
-  ["01", "SkiErg", "skierg", 0.15, false],
-  ["02", "Sled Push", "sledPush", 0.12, true],
-  ["03", "Sled Pull", "sledPull", 0.12, true],
-  ["04", "Burpee Broad Jump", "burpee", 0.13, false],
-  ["05", "Row", "row", 0.14, false],
-  ["06", "Farmer Carry", "farmer", 0.11, false],
-  ["07", "Sandbag Lunges", "lunges", 0.12, false],
-  ["08", "Wall Balls", "wall", 0.11, false],
-];
-
-
-const PROMO_CODES = {
-  COACHSU10: { pct: 10, label: "Coach Su & The Vault Fitness (10% Off)" },
-  DADBOD10: { pct: 10, label: "Hyrox DadBod (10% Off)" },
-  HYROX10: { pct: 10, label: "HYROX Athlete (10% Off)" },
-  CLUB10: { pct: 10, label: "HYROX Club & Coach (10% Off)" },
-  DOUBLES10: { pct: 10, label: "Doubles Partner (10% Off)" },
-  LUXESTRONG10: { pct: 10, label: "LuxeStrong (10% Off)" },
-  WESTGROX10: { pct: 10, label: "Westgrove HYROX (10% Off)" },
-  WESTGROVE10: { pct: 10, label: "Westgrove HYROX (10% Off)" },
-  KEVINKIM10: { pct: 10, label: "Coach Kevin Kim (10% Off)" },
-  TAEJO10: { pct: 10, label: "Coach TaeJo (10% Off)" },
-  FTX10: { pct: 10, label: "FTX Wellness (10% Off)" },
-  TEAM15: { pct: 15, label: "Relay Squad 5+ (15% Off)" },
-  GYM20: { pct: 20, label: "Affiliate Gym 10+ (20% Off)" },
-};
-
-let activePromo = "";
-try {
-  activePromo = (sessionStorage.getItem("apx_promo_code") || "").trim().toUpperCase();
-} catch (_) {}
-
-function resolvePromo(code) {
-  const c = String(code || "").trim().toUpperCase();
-  if (!c) return null;
-  if (PROMO_CODES[c]) return { code: c, pct: PROMO_CODES[c].pct, label: PROMO_CODES[c].label };
-  if (c.length >= 4 && c.endsWith("20")) return { code: c, pct: 20, label: `${c} Partner (20% Off)` };
-  if (c.length >= 4 && c.endsWith("15")) return { code: c, pct: 15, label: `${c} Partner (15% Off)` };
-  if (c.length >= 4 && c.endsWith("10")) return { code: c, pct: 10, label: `${c} Partner (10% Off)` };
-  return null;
-}
-
-function setPromoCode(rawCode, notify = true) {
-  const info = resolvePromo(rawCode);
-  if (!info) {
-    if (rawCode && notify) toast(`Promo code "${String(rawCode).toUpperCase()}" is not valid`);
-    return false;
+  /* Lightweight First-Party Funnel Telemetry (Abacus Counter API + Referrer Tracking) */
+  function trackEvent(eventName) {
+    try {
+      const clean = String(eventName || '').replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 60);
+      if (!clean) return;
+      fetch(`https://abacus.jasoncameron.dev/hit/apexhybridco.com/${clean}`, {
+        method: 'GET',
+        mode: 'cors',
+        keepalive: true
+      }).catch(() => {});
+    } catch (_) {}
   }
-  activePromo = info.code;
-  try {
-    sessionStorage.setItem("apx_promo_code", activePromo);
-  } catch (_) {}
-  trackHit(`promo_${activePromo}`);
-  if (notify) toast(`Promo ${activePromo} (${info.pct}% off) applied!`);
-  renderCart();
-  return true;
-}
+  window.apexTrack = trackEvent;
 
-function clearPromoCode() {
-  activePromo = "";
-  try {
-    sessionStorage.removeItem("apx_promo_code");
-  } catch (_) {}
-  renderCart();
-}
-
-function fourthwallUrlWithPromo(url) {
-  if (!url) return url;
-  const info = resolvePromo(activePromo);
-  if (!info) return url;
-  const sep = url.includes("?") ? "&" : "?";
-  return `${url}${sep}discount=${encodeURIComponent(info.code)}&promo=${encodeURIComponent(info.code)}`;
-}
-
-let PRODUCTS = [];
-let GUIDES = [];
-let dept = "apparel";
-let sort = "featured";
-let query = "";
-let cart = [];
-let express = null;
-const sizeChoice = {};
-const colorChoice = {};
-let labTab = "calculator";
-let activeArticle = null;
-let toastTimer = 0;
-
-const $ = (sel) => document.querySelector(sel);
-const money = (n) => Number(n).toLocaleString("en-US", { style: "currency", currency: "USD" });
-const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-
-function sizeOf(p) {
-  return sizeChoice[p.id] || (p.has_sizes ? "L" : "");
-}
-function colorOf(p) {
-  return colorChoice[p.id] || "black";
-}
-function photoOf(p) {
-  if (colorOf(p) === "white" && p.alt_image) return p.alt_image;
-  return p.image;
-}
-function findProduct(sku) {
-  return PRODUCTS.find((p) => p.id === sku);
-}
-function colorLabel(p) {
-  if (!p.alt_image) return "";
-  return colorOf(p) === "white" ? "Bone" : "Black";
-}
-
-function matchesDept(p) {
-  if (dept === "apparel") return APPAREL.has(p.dept);
-  if (dept === "all") return true;
-  return p.dept === dept;
-}
-
-function visibleProducts() {
-  const q = query.trim().toLowerCase();
-  let list = PRODUCTS.filter((p) => {
-    if (!q && !matchesDept(p)) return false;
-    if (q) {
-      const hay = `${p.title} ${p.seo_title || ""} ${p.short_desc || ""} ${p.dept} ${p.category}`.toLowerCase();
-      if (!hay.includes(q)) return false;
-    }
-    return true;
-  });
-  if (sort === "price-asc") list.sort((a, b) => a.retail_price - b.retail_price);
-  else if (sort === "price-desc") list.sort((a, b) => b.retail_price - a.retail_price);
-  else if (sort === "rating") list.sort((a, b) => b.rating - a.rating || b.reviews - a.reviews);
-  return list;
-}
-
-function collectionName() {
-  if (query.trim()) return "Search";
-  const hit = PILLS.find(([id]) => id === dept);
-  return hit ? hit[1] : "Apparel";
-}
-
-function renderPills() {
-  $("#deptPills").innerHTML = PILLS.map(([id, label]) => `
-    <button class="Pill" type="button" data-dept="${esc(id)}" aria-pressed="${dept === id && !query ? "true" : "false"}">${esc(label)}</button>
-  `).join("");
-}
-
-const SHORT = {
-  "APC-C36": "AeroMesh™ 4.0",
-  "APC-C37": "Dry-Pace™ 1km",
-  "APC-C38": "VentTech™ Z4",
-  "APC-C39": "Featherweight 3.8",
-  "APC-C40": "CoolCore™ Turf",
-  "APC-C41": "HyperBreathe™ RX",
-  "APC-C16": "Chicago crest",
-  "APC-C17": "Dallas turf",
-  "APC-C18": "Anaheim open",
-  "APC-C19": "Miami heat-block",
-  "APC-C20": "Las Vegas qualifier",
-  "APC-C21": "New York pier",
-  "APC-C28": "Run. Station. Repeat.",
-  "APC-C29": "Sled Push Dept.",
-  "APC-C30": "1000 Meter Club",
-  "APC-C31": "100 Wall Balls",
-  "APC-C22": "Zero Excuses",
-  "APC-C23": "Roxzone ruined my PR",
-  "APC-C24": "Farmer Carry Club",
-  "APC-C25": "Sandbag Lunges",
-  "APC-C26": "Redline Weekend",
-  "APC-C27": "Sub-65 Club",
-  "APC-C01": "Run. Station. Repeat.",
-  "APC-C02": "Wall Balls & Bad Decisions",
-  "APC-C03": "Sled Push Enthusiast",
-  "APC-C04": "Compromised Running Club",
-  "APC-C05": "Burpee Broad Jumps",
-  "APC-C06": "The Erg Doesn't Care",
-  "APC-C07": "Porta-Potty Line PR",
-  "APC-C08": "Defend My Sled Push",
-  "APC-C34": "World Series hoodie",
-  "APC-C35": "8-Station Division",
-  "APC-C32": "Build Character",
-  "APC-C33": "The Erg Doesn't Care",
-  "APC-C09": "Warmup fleece",
-  "APC-C10": "Bad Decisions hoodie",
-  "APC-C11": "Running Club hoodie",
-  "APC-C12": "The Footage Speaks",
-  "APC-C42": "AeroShell™ Corral Jacket",
-  "APC-C43": "08-Station Track Shell",
-  "APC-C44": "Pro Quarter-Zip Shell",
-  "APC-C45": "World Series Shell",
-};
-
-function shortTitle(p) {
-  if (SHORT[p.id]) return SHORT[p.id];
-  return p.title.split("—")[0].replace(/^["“]|["”]$/g, "").trim();
-}
-
-function ratingMarkup(p) {
-  const score = Number(p.rating || 0);
-  if (!score) return "";
-  const full = Math.max(0, Math.min(5, Math.round(score)));
-  const stars = `${"★".repeat(full)}${"☆".repeat(5 - full)}`;
-  const reviews = p.reviews ? ` · ${p.reviews}` : "";
-  return `<p class="Rating"><span class="Stars" aria-hidden="true">${stars}</span><span>${score.toFixed(1)}${reviews}</span></p>`;
-}
-
-function renderProducts() {
-  const grid = $("#productGrid");
-  const list = visibleProducts();
-  $("#collectionTitle").textContent = collectionName();
-  const count = $("#collectionCount");
-  if (count) count.textContent = "";
-  renderPills();
-  if (!list.length) {
-    grid.innerHTML = `<div class="Empty"><p>Nothing in this cut matches that search.</p><button class="Btn Btn--ghost" type="button" data-clear-search="1">Clear search</button></div>`;
-    return;
+  function trackReferrerOnce() {
+    try {
+      if (sessionStorage.getItem('apex_ref_tracked')) return;
+      sessionStorage.setItem('apex_ref_tracked', '1');
+      const params = new URLSearchParams(window.location.search);
+      const utm = (params.get('utm_source') || params.get('ref') || '').toLowerCase();
+      const ref = (document.referrer || '').toLowerCase();
+      const combined = `${utm} ${ref}`;
+      if (combined.includes('tiktok')) trackEvent('ref_tiktok');
+      else if (combined.includes('pinterest') || combined.includes('pinimg')) trackEvent('ref_pinterest');
+      else if (combined.includes('instagram') || combined.includes('ig')) trackEvent('ref_ig');
+      else if (combined.includes('google') || combined.includes('bing')) trackEvent('ref_google');
+      else trackEvent('ref_direct');
+    } catch (_) {}
   }
-  grid.innerHTML = list.map((p) => {
-    const swatches = p.alt_image ? `
-      <div class="Swatches Swatches--row">
-        <button class="Swatch Swatch--black" type="button" aria-label="Black colorway" data-color="black" data-sku="${p.id}" aria-pressed="${colorOf(p) === "black"}"></button>
-        <button class="Swatch Swatch--bone" type="button" aria-label="Bone colorway" data-color="white" data-sku="${p.id}" aria-pressed="${colorOf(p) === "white"}"></button>
-      </div>` : "";
-    const alt = p.alt_image && colorOf(p) === "black" ? p.alt_image : p.image;
-    const hover = p.alt_image ? `<img class="Card__img Card__img--b" src="${esc(alt)}" alt="" loading="lazy" decoding="async" width="1000" height="1280" />` : "";
-    const was = p.list_price && p.list_price > p.retail_price ? `<s>${money(p.list_price)}</s>` : "";
-    const badge = p.badge ? `<span class="Badge">${esc(p.badge)}</span>` : "";
-    const sizes = p.has_sizes
-      ? ["S", "M", "L", "XL", "2XL"].map((sz) => `<button type="button" data-quick-add="${p.id}" data-size="${sz}" aria-label="Add size ${sz}">${sz}</button>`).join("")
-      : `<button type="button" data-quick-add="${p.id}">Add</button>`;
-    return `
-      <article class="Card">
-        <div class="Card__media">
-          ${badge}
-          <button class="Card__hit" type="button" data-quick="${p.id}" aria-label="Quick view ${esc(p.title)}">
-            <img class="Card__img" src="${esc(photoOf(p))}" alt="${esc(p.seo_title || p.title)}" loading="lazy" decoding="async" width="1000" height="1280" />
-            ${hover}
-          </button>
-          <div class="QuickAdd" aria-label="Add ${esc(shortTitle(p))} to bag">${sizes}</div>
-        </div>
-        <div class="Card__body">
-          <div class="Card__top">
-            <h3><button type="button" data-quick="${p.id}">${esc(shortTitle(p))}</button></h3>
-            <div class="Price"><span>${money(p.retail_price)}</span>${was}</div>
-          </div>
-          ${ratingMarkup(p)}
-          <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px">
-            ${swatches}
-            <button class="Btn Btn--cobalt" type="button" data-buy="${p.id}" style="margin-left:auto;padding:7px 12px;font-size:12.5px;border-radius:6px">Buy Now →</button>
-          </div>
-        </div>
-      </article>`;
-  }).join("");
-}
 
-function setDept(next) {
-  dept = next;
-  query = "";
-  const input = $("#searchInput");
-  if (input) input.value = "";
-  renderProducts();
-  const shop = $("#apparel");
-  if (shop) shop.scrollIntoView({ behavior: "smooth", block: "start" });
-}
-
-function variantLabel(p) {
-  return [colorLabel(p), p.has_sizes ? `Size ${sizeOf(p)}` : ""].filter(Boolean).join(" · ");
-}
-
-function isFourthwallItem(p) {
-  return Boolean(p && (p.fulfillment_partner === "Fourthwall" || String(p.id || "").startsWith("APC-C")));
-}
-
-function lineFrom(p, qty = 1) {
-  const variant = variantLabel(p);
-  const isFw = isFourthwallItem(p);
-  return {
-    key: `${p.id}__${variant}`,
-    id: p.id,
-    title: p.title,
-    image: photoOf(p),
-    price: p.retail_price,
-    qty,
-    variant,
-    is_fourthwall: isFw,
-    fulfillment_partner: isFw ? "Fourthwall" : (p.fulfillment_partner || "US Warehouse Direct Wholesale"),
-    fourthwall_blank: isFw ? (p.fourthwall_blank || "Athletic Blank") : "",
-    fourthwall_handle: isFw ? (p.fourthwall_handle || p.handle || "") : "",
-    fourthwall_product_url: isFw ? (p.fourthwall_product_url || p.checkout_url || "") : "",
-    stripe_price_id: p.stripe_price_id || "",
-    stripe_product_id: p.stripe_product_id || "",
-    stripe_account_id: p.stripe_account_id || "",
+  const PROMO_CODES = {
+    HYROX10:    { code: 'HYROX10',    pct: 10, label: '10% Athlete Welcome Discount' },
+    APEX10:     { code: 'APEX10',     pct: 10, label: '10% Welcome Discount' },
+    DADBOD10:   { code: 'DADBOD10',   pct: 10, label: '10% Everyday Athlete Discount' },
+    COACHSU10:  { code: 'COACHSU10',  pct: 10, label: '10% Coach Suzanna Partner Code' },
+    ROXZONE10:  { code: 'ROXZONE10',  pct: 10, label: '10% Race Prep Discount' },
+    CANCUN15:   { code: 'CANCUN15',   pct: 15, label: '15% Cancun Race Block Discount' },
+    TEAM15:     { code: 'TEAM15',     pct: 15, label: '15% Doubles & Team Pack Discount' },
+    DOUBLES15:  { code: 'DOUBLES15',  pct: 15, label: '15% Doubles Partner Pack' },
+    SQUAD20:    { code: 'SQUAD20',    pct: 20, label: '20% Affiliate Box / 5+ Shirt Squad Rate' }
   };
-}
 
-function addToCart(sku, openDrawer = true) {
-  const p = findProduct(sku);
-  if (!p) return;
-  trackHit("cart_add_total");
-  trackHit(`cart_add_${p.id}`);
-  const line = lineFrom(p);
-  const existing = cart.find((item) => item.key === line.key);
-  if (existing) existing.qty += 1;
-  else cart.push(line);
-  renderCart();
-  toast(`${shortTitle(p)} added${variantLabel(p) ? ` · ${variantLabel(p)}` : ""}`);
-  if (openDrawer) openSheet("cartDrawer");
-}
+  const APPAREL_DEPTS = new Set([
+    'Tees & Pump Covers',
+    'Race City Editions',
+    'Hoodies & Tanks'
+  ]);
 
-function changeQty(key, delta) {
-  const item = cart.find((entry) => entry.key === key);
-  if (!item) return;
-  item.qty += delta;
-  if (item.qty <= 0) cart = cart.filter((entry) => entry.key !== key);
-  renderCart();
-}
+  const PILLS = [
+    { key: 'apparel',       label: 'All Apparel',          match: p => APPAREL_DEPTS.has(p.dept) },
+    { key: 'tees',          label: 'Workout & Turf Tees',  match: p => p.dept === 'Tees & Pump Covers' },
+    { key: 'cities',        label: 'City Editions',        match: p => p.dept === 'Race City Editions' },
+    { key: 'hoodies-tanks', label: 'Hoodies & Tanks',      match: p => p.dept === 'Hoodies & Tanks' }
+  ];
 
-function renderCart() {
-  const count = cart.reduce((sum, item) => sum + item.qty, 0);
-  const sub = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
-  $("#cartCount").textContent = String(count);
-  const box = $("#cartItems");
-  if (!cart.length) {
-    box.innerHTML = `<p class="Empty">Your bag is empty. Grab a race tee or warmup layer to get started.</p>`;
-  } else {
-    box.innerHTML = cart.map((item) => `
-      <div class="Line">
-        <img src="${esc(item.image)}" alt="" />
-        <div>
-          <strong>${esc(item.title)}</strong>
-          <div class="StripeId">${esc(item.variant)}</div>
-          <div class="Qty">
-            <button type="button" data-qty="-1" data-key="${esc(item.key)}" aria-label="Decrease quantity">−</button>
-            <span>${item.qty}</span>
-            <button type="button" data-qty="1" data-key="${esc(item.key)}" aria-label="Increase quantity">+</button>
-            <strong style="margin-left:auto">${money(item.price * item.qty)}</strong>
+  const SIZES = ['S', 'M', 'L', 'XL', '2XL'];
+
+  const state = {
+    catalog: null,
+    products: [],
+    byId: new Map(),
+    activePill: 'apparel',
+    searchQuery: '',
+    sortBy: 'featured',
+    cart: loadCart(),
+    promo: loadPromo(),
+    activeModalProduct: null,
+    activeModalSize: 'L',
+    activeModalColor: 'Black',
+    activeModalBlank: '6.1 oz Heavyweight Cotton'
+  };
+
+  function loadCart() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY_CART);
+      const parsed = raw ? JSON.parse(raw) : [];
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (_) {
+      return [];
+    }
+  }
+
+  function saveCart() {
+    try {
+      localStorage.setItem(STORAGE_KEY_CART, JSON.stringify(state.cart));
+    } catch (_) {}
+  }
+
+  function loadPromo() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY_PROMO);
+      if (!raw) return null;
+      const code = String(raw).trim().toUpperCase();
+      return PROMO_CODES[code] || null;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function savePromo(promoObj) {
+    state.promo = promoObj || null;
+    try {
+      if (state.promo) localStorage.setItem(STORAGE_KEY_PROMO, state.promo.code);
+      else localStorage.removeItem(STORAGE_KEY_PROMO);
+    } catch (_) {}
+  }
+
+  function applyPromoCode(rawCode) {
+    const clean = String(rawCode || '').trim().toUpperCase();
+    if (!clean) {
+      savePromo(null);
+      updateCartUI();
+      return { ok: false, msg: 'Promo code cleared.' };
+    }
+    const found = PROMO_CODES[clean];
+    if (!found) {
+      return { ok: false, msg: `Code "${clean}" not recognized. Try HYROX10 (10% off) or TEAM15 (15% off 2+ items).` };
+    }
+    savePromo(found);
+    updateCartUI();
+    trackEvent('promo_applied');
+    trackEvent(`promo_${found.code}`);
+    return { ok: true, promo: found, msg: `${found.code} applied: ${found.label}!` };
+  }
+
+  const fmtPrice = n => {
+    const num = Number(n) || 0;
+    return Number.isInteger(num) ? `$${num}` : `$${num.toFixed(2)}`;
+  };
+
+  const escapeHtml = str =>
+    String(str ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+
+  function cleanDisplayTitle(p) {
+    return String(p.title || '')
+      .replace(/^"|"$/g, '')
+      .replace(/™/g, '')
+      .replace(/—/g, ' - ')
+      .trim();
+  }
+
+  function shortTagFor(p) {
+    const idNum = parseInt(String(p.id || '').replace('APC-C', ''), 10) || 0;
+    if (idNum >= 36 && idNum <= 41) return 'Lightweight 3.8 oz Workout Knit / 6.1 oz Turf Option';
+    if (idNum >= 16 && idNum <= 21) return 'Race City Edition · 6.1 oz Ring-Spun Cotton';
+    if (idNum >= 28 && idNum <= 31) return 'Sleeveless Turf Muscle Tank';
+    if ([9, 10, 11, 12, 32, 33, 34, 35].includes(idNum)) return 'Heavyweight Warmup Fleece Hoodie';
+    return '6.1 oz Heavyweight Cotton + Lightweight Option';
+  }
+
+  function buildFourthwallUrl(p) {
+    let targetUrl = p.fourthwall_checkout_url || p.fourthwall_product_url || p.checkout_url || 'https://apex-hybrid-co-shop.fourthwall.com';
+    if (state.promo) {
+      const sep = targetUrl.includes('?') ? '&' : '?';
+      targetUrl = `${targetUrl}${sep}discount=${encodeURIComponent(state.promo.code)}&promo=${encodeURIComponent(state.promo.code)}`;
+    }
+    return targetUrl;
+  }
+
+  function renderPills(containerId, activeKey) {
+    const el = document.getElementById(containerId);
+    if (!el) return;
+
+    el.innerHTML = PILLS.map(pill => {
+      const count = state.products.filter(pill.match).length;
+      const isActive = pill.key === activeKey;
+      return `
+        <button
+          type="button"
+          class="Pill ${isActive ? 'is-active' : ''}"
+          data-pill="${pill.key}"
+          aria-pressed="${isActive ? 'true' : 'false'}"
+        >
+          ${escapeHtml(pill.label)}<span class="Pill__count">${count}</span>
+        </button>
+      `;
+    }).join('');
+
+    el.querySelectorAll('[data-pill]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const key = btn.getAttribute('data-pill');
+        state.activePill = key;
+        renderPills('apparelPills', state.activePill);
+        renderApparelGrid();
+      });
+    });
+  }
+
+  function productCardMarkup(p) {
+    const price = Number(p.retail_price) || 38;
+    const tag = shortTagFor(p);
+    const title = cleanDisplayTitle(p);
+    const hasSizes = Boolean(p.has_sizes);
+    const hasColors = Boolean(p.has_colorways && p.alt_image);
+    const defaultSize = 'L';
+    const isHoodie = [9, 10, 11, 12, 32, 33, 34, 35].includes(parseInt(String(p.id || '').replace('APC-C', ''), 10));
+    const whiteName = isHoodie ? 'Bone' : 'White';
+
+    const badgeHtml = p.badge
+      ? `<span class="Product__badge ${p.badge.toLowerCase().includes('new') || p.badge.toLowerCase().includes('pro') || p.badge.toLowerCase().includes('2026') ? 'Product__badge--lime' : ''}">${escapeHtml(p.badge)}</span>`
+      : '';
+
+    const swatchesHtml = hasColors
+      ? `
+        <div class="Product__swatches" role="group" aria-label="Colorway">
+          <button type="button" class="Swatch Swatch--black is-active" data-swatch-color="Black" data-swatch-src="${escapeHtml(p.image)}" title="Stealth Black" aria-label="Stealth Black"></button>
+          <button type="button" class="Swatch Swatch--white" data-swatch-color="${whiteName}" data-swatch-src="${escapeHtml(p.alt_image)}" title="${whiteName}" aria-label="${whiteName}"></button>
+        </div>
+      `
+      : '';
+
+    const sizesHtml = hasSizes
+      ? `
+        <div class="Product__sizes" role="group" aria-label="Select size">
+          ${SIZES.map(sz => `
+            <button
+              type="button"
+              class="SizeBtn ${sz === defaultSize ? 'is-active' : ''}"
+              data-size="${sz}"
+            >${sz}</button>
+          `).join('')}
+        </div>
+      `
+      : '';
+
+    const fwUrl = buildFourthwallUrl(p);
+
+    return `
+      <article class="Product" data-product-id="${escapeHtml(p.id)}" data-selected-size="${hasSizes ? defaultSize : ''}" data-selected-color="Black">
+        <div class="Product__media" data-open-modal="${escapeHtml(p.id)}">
+          ${badgeHtml}
+          <img
+            class="Product__img"
+            src="${escapeHtml(p.image)}"
+            alt="${escapeHtml(title)}"
+            loading="lazy"
+            decoding="async"
+          />
+          ${swatchesHtml}
+          <span class="Product__quick">Quick View &amp; Fabric Specs</span>
+        </div>
+
+        <div class="Product__body">
+          <div class="Product__meta">
+            <span class="Product__cat">${escapeHtml(tag)}</span>
+            <span class="Product__sku" style="font-family:var(--font-mono);font-size:11px;color:var(--ink-4);">${escapeHtml(p.id)}</span>
+          </div>
+
+          <h3 class="Product__title" data-open-modal="${escapeHtml(p.id)}">${escapeHtml(title)}</h3>
+
+          <p class="Product__desc">${escapeHtml(p.short_desc || '')}</p>
+
+          <div class="Product__foot">
+            <div class="Product__priceRow">
+              <div class="Product__price">
+                <span class="Product__priceNow">${fmtPrice(price)}</span>
+              </div>
+              <span class="Product__ship">Ships in 2-5 Days · Soft-Hand Cured Print</span>
+            </div>
+
+            ${sizesHtml}
+
+            <div class="Product__actions" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+              <button type="button" class="Product__add" data-add-to-cart="${escapeHtml(p.id)}">
+                <span>Add to Bag</span>
+                <span aria-hidden="true">+</span>
+              </button>
+              <a
+                href="${escapeHtml(fwUrl)}"
+                class="Product__buyNow"
+                data-direct-buy="${escapeHtml(p.id)}"
+                style="display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 12px;border-radius:4px;background:var(--lime);color:#090A0C;font-family:var(--font-mono);font-size:11.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;transition:opacity 0.15s;"
+              >
+                <span>Buy Now</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    `).join("");
+      </article>
+    `;
   }
-  const promoInfo = resolvePromo(activePromo);
-  const discAmt = promoInfo ? sub * (promoInfo.pct / 100) : 0;
-  const finalSub = Math.max(0, sub - discAmt);
-  if (cart.length) {
-    box.insertAdjacentHTML(
-      "beforeend",
-      `<div style="margin-top:12px;padding-top:12px;border-top:1px solid #e5e7eb">
-        <div style="display:flex;gap:6px;align-items:center">
-          <input id="cartPromoInput" type="text" value="${esc(activePromo)}" placeholder="Promo code (e.g. COACHSU10)" style="flex:1;padding:7px 10px;border:1px solid #d1d5db;border-radius:6px;font-size:12px;text-transform:uppercase" />
-          <button type="button" class="Btn Btn--bone" data-apply-promo="cart" style="padding:7px 12px;font-size:12px">Apply</button>
+
+  function filterAndSort(list) {
+    const q = state.searchQuery.trim().toLowerCase();
+    let out = list;
+
+    if (q) {
+      out = out.filter(p => {
+        const hay = `${p.id} ${p.title} ${p.category} ${p.dept} ${p.short_desc || ''}`.toLowerCase();
+        return hay.includes(q);
+      });
+    }
+
+    switch (state.sortBy) {
+      case 'price-asc':
+        out = [...out].sort((a, b) => (Number(a.retail_price) || 0) - (Number(b.retail_price) || 0));
+        break;
+      case 'price-desc':
+        out = [...out].sort((a, b) => (Number(b.retail_price) || 0) - (Number(a.retail_price) || 0));
+        break;
+      default:
+        break;
+    }
+
+    return out;
+  }
+
+  function renderApparelGrid() {
+    const grid = document.getElementById('apparelGrid');
+    const countEl = document.getElementById('apparelCount');
+    if (!grid) return;
+
+    const pill = PILLS.find(p => p.key === state.activePill) || PILLS[0];
+    const base = state.products.filter(pill.match);
+    const items = filterAndSort(base);
+
+    if (countEl) {
+      countEl.textContent = `${items.length} ${items.length === 1 ? 'piece' : 'pieces'}`;
+    }
+
+    if (items.length === 0) {
+      grid.innerHTML = `
+        <div class="EmptyState">
+          <p class="EmptyState__title">No matching pieces found.</p>
+          <p class="EmptyState__sub">Try clearing your search filter or viewing All Apparel.</p>
         </div>
-        ${promoInfo ? `<div style="display:flex;justify-content:space-between;font-size:12px;color:#059669;font-weight:700;margin-top:6px"><span>✓ ${esc(promoInfo.label)}</span><span>−${money(discAmt)}</span></div>` : ""}
-      </div>`
-    );
-  }
-  $("#cartSubtotal").textContent = promoInfo ? `${money(finalSub)} (${promoInfo.pct}% off)` : money(sub);
-}
-
-function openSheet(id) {
-  const sheet = document.getElementById(id);
-  if (!sheet) return;
-  sheet.classList.add("is-open");
-  sheet.setAttribute("aria-hidden", "false");
-  sheet.removeAttribute("inert");
-  document.body.classList.add("is-locked");
-  const close = sheet.querySelector(".IconBtn");
-  if (close) close.focus();
-}
-function closeSheet(id) {
-  const sheet = document.getElementById(id);
-  if (!sheet) return;
-  sheet.classList.remove("is-open");
-  sheet.setAttribute("aria-hidden", "true");
-  sheet.setAttribute("inert", "");
-  if (![...document.querySelectorAll(".Sheet.is-open")].length) {
-    document.body.classList.remove("is-locked");
-  }
-}
-function closeAll() {
-  document.querySelectorAll(".Sheet.is-open").forEach((sheet) => closeSheet(sheet.id));
-}
-
-function openProduct(sku) {
-  const p = findProduct(sku);
-  if (!p) return;
-  trackHit("product_views_total");
-  trackHit(`view_${p.id}`);
-  const was = p.list_price && p.list_price > p.retail_price ? `<s>${money(p.list_price)}</s>` : "";
-  const swatches = p.alt_image ? `
-    <div class="Swatches" style="position:static;margin:12px 0">
-      <button class="Swatch Swatch--black" type="button" data-color="black" data-sku="${p.id}" aria-label="Black" aria-pressed="${colorOf(p) === "black"}"></button>
-      <button class="Swatch Swatch--bone" type="button" data-color="white" data-sku="${p.id}" aria-label="Bone" aria-pressed="${colorOf(p) === "white"}"></button>
-      <span>${esc(colorLabel(p))}</span>
-    </div>` : "";
-  const sizes = p.has_sizes ? `<div class="Sizes" style="margin:12px 0">${["S", "M", "L", "XL", "2XL"].map((sz) => `
-    <button class="SizeBtn" type="button" data-size="${sz}" data-sku="${p.id}" aria-pressed="${sizeOf(p) === sz}">${sz}</button>
-  `).join("")}</div>` : "";
-  const isFw = isFourthwallItem(p);
-  const fulfillmentLine = isFw
-    ? `✓ Ships in 2–4 business days from our US hubs · Free 30-day size exchanges`
-    : `✓ Ships free from our US warehouses (CA/TX/NJ) in 2–4 business days · 1-year warranty`;
-  const buyBtnLabel = isFw ? "Buy Now — Instant Checkout" : "Checkout with Stripe";
-  $("#productModalContent").innerHTML = `
-    <div class="ProductLayout">
-      <div class="ProductLayout__photo"><img src="${esc(photoOf(p))}" alt="${esc(p.title)}" /></div>
-      <div class="ProductLayout__copy">
-        <div class="Card__dept">${esc(p.dept)} · ${esc(p.category || "")}</div>
-        <h2>${esc(p.title)}</h2>
-        <div class="Price"><span>${money(p.retail_price)}</span>${was}</div>
-        <p style="margin-top:10px;font-size:13px;font-weight:600;color:#0f172a">${esc(fulfillmentLine)}</p>
-        <p style="margin-top:10px">${esc(p.short_desc || "")}</p>
-        ${swatches}
-        ${sizes}
-        <ul class="Highlights">${(p.highlights || []).map((h) => `<li>${esc(h)}</li>`).join("")}</ul>
-        ${p.review_quote ? `<blockquote class="Quote">${esc(p.review_quote)}</blockquote>` : ""}
-        <p>${esc(p.ship_time || "")}<br />${esc(p.stock_status || "")}</p>
-        <div class="Card__actions" style="margin-top:16px">
-          <button class="Btn Btn--bone" type="button" data-add="${p.id}">Add to bag</button>
-          ${isFw && p.fourthwall_product_url
-            ? `<a class="Btn Btn--cobalt" href="${esc(p.fourthwall_product_url)}" data-buy="${p.id}" style="text-align:center;text-decoration:none">${esc(buyBtnLabel)}</a>`
-            : `<button class="Btn Btn--cobalt" type="button" data-buy="${p.id}">${esc(buyBtnLabel)}</button>`}
-        </div>
-      </div>
-    </div>`;
-  openSheet("productModal");
-}
-
-function checkoutLines() {
-  return express || cart;
-}
-
-function openCheckout(lines) {
-  express = lines;
-  const bag = checkoutLines();
-  if (!bag.length) {
-    toast("Add a piece before checkout");
-    return;
-  }
-  closeSheet("productModal");
-  closeSheet("cartDrawer");
-  trackHit("checkout_clicks_total");
-  bag.forEach((item) => { if (item && item.id) trackHit(`checkout_${item.id}`); });
-  if (bag.length === 1 && bag[0].is_fourthwall && bag[0].fourthwall_product_url) {
-    window.location.href = fourthwallUrlWithPromo(bag[0].fourthwall_product_url);
-    return;
-  }
-  const rawSub = bag.reduce((sum, item) => sum + item.price * item.qty, 0);
-  const promoInfo = resolvePromo(activePromo);
-  const discAmt = promoInfo ? rawSub * (promoInfo.pct / 100) : 0;
-  const sub = Math.max(0, rawSub - discAmt);
-  const hasFw = bag.some((item) => item.is_fourthwall);
-  const hasWs = bag.some((item) => !item.is_fourthwall);
-  const checkoutTitle = "Express Athlete Checkout";
-  const checkoutDesc = "All apparel and recovery hardware ships free from our US hubs in 2–4 business days with 30-day easy exchanges.";
-  const submitLabel = `Complete Order · ${money(sub)}`;
-  $("#checkoutModalContent").innerHTML = `
-    <h2 style="letter-spacing:-0.04em;font-size:32px">${esc(checkoutTitle)}</h2>
-    <p style="color:#5e6672;margin:6px 0 14px">${esc(checkoutDesc)}</p>
-    <div style="margin-bottom:14px">
-      ${bag.map((item) => `
-        <div class="Row"><span>${item.qty} × ${esc(item.title)} <span class="StripeId">${esc(item.variant)}</span></span><strong>${money(item.price * item.qty)}</strong></div>
-        <div class="StripeId">Ships in 2–4 business days (US)${item.is_fourthwall && item.fourthwall_product_url ? ` · <a href="${esc(item.fourthwall_product_url)}" target="_blank" rel="noopener" style="color:#2563eb;font-weight:700">Instant 1-Click Checkout →</a>` : ""}</div>
-      `).join("")}
-      <div style="margin:10px 0;display:flex;gap:8px;align-items:center">
-        <input id="checkoutPromoInput" type="text" value="${esc(activePromo)}" placeholder="Promo code (e.g. COACHSU10)" style="flex:1;padding:8px 10px;border:1px solid #d1d5db;border-radius:6px;font-size:13px;text-transform:uppercase" />
-        <button type="button" class="Btn Btn--bone" data-apply-promo="checkout" style="padding:8px 14px;font-size:13px">Apply Code</button>
-      </div>
-      ${promoInfo ? `<div class="Row" style="color:#059669;font-weight:700"><span>Promo (${esc(promoInfo.code)} · ${promoInfo.pct}% off)</span><strong>−${money(discAmt)}</strong></div>` : ""}
-      <div class="Row" style="margin-top:8px"><span>US delivery</span><strong>Free</strong></div>
-      <div class="Row"><span>Total</span><strong>${money(sub)}</strong></div>
-    </div>
-    <form class="CheckoutForm" id="checkoutForm">
-      <div class="CheckoutGrid">
-        <label class="Field">Full name<input name="name" required autocomplete="name" /></label>
-        <label class="Field">Email<input name="email" type="email" required autocomplete="email" /></label>
-        <label class="Field full">Street<input name="street" required autocomplete="address-line1" /></label>
-        <label class="Field">City and state<input name="city" required autocomplete="address-level2" /></label>
-        <label class="Field">ZIP<input name="zip" required autocomplete="postal-code" /></label>
-      </div>
-      <button class="Btn Btn--cobalt Btn--full" type="submit" style="margin-top:8px">${esc(submitLabel)}</button>
-    </form>`;
-  openSheet("checkoutModal");
-  $("#checkoutForm").addEventListener("submit", submitOrder);
-}
-
-function submitOrder(event) {
-  event.preventDefault();
-  const data = new FormData(event.target);
-  const bag = checkoutLines();
-  const rawSub = bag.reduce((sum, item) => sum + item.price * item.qty, 0);
-  const promoInfo = resolvePromo(activePromo);
-  const discAmt = promoInfo ? rawSub * (promoInfo.pct / 100) : 0;
-  const sub = Math.max(0, rawSub - discAmt);
-  const orderId = `APX-${Math.floor(100000 + Math.random() * 900000)}`;
-  trackHit("order_submits_total");
-  const name = String(data.get("name") || "").trim();
-  const email = String(data.get("email") || "").trim();
-  const street = String(data.get("street") || "").trim();
-  const city = String(data.get("city") || "").trim();
-  const zip = String(data.get("zip") || "").trim();
-  const lines = bag.map((item) => {
-    const stripe = [item.stripe_price_id, item.stripe_product_id, item.stripe_account_id].filter(Boolean).join(" | ");
-    const fulfill = item.is_fourthwall ? `Fourthwall (${item.fourthwall_blank})` : "US Warehouse Direct Wholesale";
-    return `- ${item.qty}x ${item.title} (${item.variant}) ${money(item.price * item.qty)} [Fulfillment: ${fulfill} | ${stripe}]`;
-  }).join("\n");
-  const hasFw = bag.some((item) => item.is_fourthwall);
-  const subject = encodeURIComponent(`Order ${orderId} — ${hasFw ? "Fourthwall & Stripe" : "Stripe"} Checkout (${money(sub)})`);
-  const promoLine = promoInfo ? `\nPromo Code: ${promoInfo.code} (${promoInfo.pct}% Off, -${money(discAmt)})` : "";
-  const body = encodeURIComponent(`Order ID: ${orderId}\nCustomer: ${name} (${email})\nShip To: ${street}, ${city} ${zip}\nFulfillment: ${hasFw ? "Fourthwall US Apparel Production / Direct US Dispatch" : "US Warehouse Direct Wholesale"}${promoLine}\n\nItems:\n${lines}\n\nTotal: ${money(sub)} (Free US shipping)`);
-  $("#checkoutModalContent").innerHTML = `
-    <h2 style="letter-spacing:-0.04em;font-size:32px">Order ${esc(orderId)} is reserved</h2>
-    <p style="margin:8px 0 14px">Thanks ${esc(name)} — your order is reserved for ${esc(city)} ${esc(zip)}. Click below to confirm your order and receive your instant payment and tracking link.</p>
-    ${bag.map((item) => `<div class="Row"><span>${item.qty} × ${esc(item.title)}</span><strong>${money(item.price * item.qty)}</strong></div>`).join("")}
-    <div class="Row"><span>Total</span><strong>${money(sub)}</strong></div>
-    <a class="Btn Btn--cobalt Btn--full" style="margin-top:16px" href="mailto:apexhybridco@gmail.com?subject=${subject}&body=${body}">Email me the Stripe payment link</a>
-    <button class="Btn Btn--ghost Btn--full" type="button" style="margin-top:8px" data-close="checkoutModal">Done</button>`;
-  if (!express) cart = [];
-  express = null;
-  renderCart();
-}
-
-function fmt(totalSeconds) {
-  const s = Math.max(0, Math.round(totalSeconds));
-  const m = Math.floor(s / 60);
-  const rem = s % 60;
-  return `${m}:${String(rem).padStart(2, "0")}`;
-}
-
-function currentCity() {
-  const id = $("#calcCity") ? $("#calcCity").value : "CHI";
-  return CITIES.find((city) => city.code === id) || CITIES[0];
-}
-
-function updateRaceSplitCalculator() {
-  const finishEl = $("#calcTargetFinish");
-  const divEl = $("#calcDivision");
-  const table = $("#splitTable");
-  if (!finishEl || !divEl || !table) return;
-  const target = (parseInt(finishEl.value, 10) || 70) * 60;
-  const division = divEl.value;
-  const city = currentCity();
-  let runShare = division === "pro" ? 0.5 : division === "doubles" ? 0.56 : 0.53;
-  const roxShare = 0.068;
-  let stationShare = 1 - runShare - roxShare;
-  if (division === "doubles") stationShare *= 0.72;
-  let run = target * runShare * city.run;
-  const rox = target * roxShare;
-  const pool = target * stationShare;
-  const stationTimes = STATIONS.map(([, , , weight, sled]) => pool * weight * (sled ? city.sled : 1));
-  const raw = run + rox + stationTimes.reduce((sum, n) => sum + n, 0);
-  const scale = target / raw;
-  run *= scale;
-  const stations = stationTimes.map((n) => n * scale);
-  const roxScaled = rox * scale;
-  const perKm = run / 8;
-  const rows = [
-    ["Run 1–8", `${fmt(perKm)} / km`, fmt(run)],
-    ...STATIONS.map(([, name], i) => [`${STATIONS[i][0]}  ${name}`, "Station", fmt(stations[i])]),
-    ["Roxzone", "All transitions", fmt(roxScaled)],
-  ];
-  const total = run + stations.reduce((s, n) => s + n, 0) + roxScaled;
-  table.innerHTML = `
-    <thead><tr><th>Piece</th><th>Read</th><th>Time</th></tr></thead>
-    <tbody>
-      ${rows.map(([a, b, c]) => `<tr><td>${esc(a)}</td><td>${esc(b)}</td><td>${esc(c)}</td></tr>`).join("")}
-      <tr class="total"><td>Finish</td><td>${esc(city.name)}</td><td>${fmt(total)}</td></tr>
-    </tbody>`;
-  const note = $("#calcNote");
-  if (note) {
-    const divNote = division === "pro" ? "Pro sleds take a larger share of the clock." : division === "doubles" ? "Doubles share the stations. The run is still yours." : "Open division pacing, even from the first kilometer.";
-    note.textContent = `${city.name} · ${city.venue}, ${city.when}. ${city.note} ${divNote}`;
-  }
-}
-
-function renderLabCities() {
-  $("#labCities").innerHTML = CITIES.map((city) => `
-    <button class="CityPick" type="button" data-city="${city.code}" data-sku="${city.sku}">
-      <span>${esc(city.when)}</span>
-      <strong>${esc(city.name)}</strong>
-      <p>${esc(city.venue)}. ${esc(city.note)}</p>
-    </button>
-  `).join("");
-}
-
-function renderArticles() {
-  const list = $("#articleList");
-  if (!list) return;
-  if (!activeArticle && GUIDES[0]) activeArticle = GUIDES[0].slug;
-  list.innerHTML = GUIDES.map((guide) => `
-    <button type="button" data-article="${esc(guide.slug)}" aria-current="${guide.slug === activeArticle}">${esc(guide.title)}</button>
-  `).join("");
-  const guide = GUIDES.find((item) => item.slug === activeArticle) || GUIDES[0];
-  const reader = $("#articleReader");
-  if (!guide || !reader) return;
-  const recs = (guide.recommended_skus || []).map((sku) => findProduct(sku)).filter(Boolean);
-  reader.innerHTML = `
-    <p class="Card__dept" style="color:#00f0ff">${esc(guide.category)} · ${esc(guide.read_time)}</p>
-    <h3>${esc(guide.title)}</h3>
-    <div class="Prose">${guide.body_html || ""}</div>
-    <div class="Recs">
-      ${recs.map((p) => `
-        <div class="Rec">
-          <img src="${esc(p.image)}" alt="" />
-          <strong>${esc(p.title)}</strong>
-          <div>${money(p.retail_price)}</div>
-          <button class="Btn Btn--bone Btn--full" type="button" data-add="${p.id}" style="margin-top:6px">Add</button>
-        </div>`).join("")}
-    </div>`;
-}
-
-function openLab(tab, slug) {
-  labTab = tab || "calculator";
-  if (slug) activeArticle = slug;
-  document.querySelectorAll("[data-tab]").forEach((button) => {
-    button.setAttribute("aria-pressed", button.dataset.tab === labTab ? "true" : "false");
-  });
-  document.querySelectorAll(".LabPane").forEach((pane) => {
-    pane.hidden = pane.dataset.pane !== labTab;
-  });
-  renderArticles();
-  updateRaceSplitCalculator();
-  openSheet("raceLab");
-}
-
-function toast(message) {
-  const node = $("#toast");
-  node.textContent = message;
-  node.classList.add("is-on");
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => node.classList.remove("is-on"), 2200);
-}
-
-function onClick(event) {
-  const deptBtn = event.target.closest("[data-dept]");
-  if (deptBtn && deptBtn.dataset.dept) {
-    event.preventDefault();
-    setDept(deptBtn.dataset.dept);
-    $("#siteNav").classList.remove("is-open");
-    return;
-  }
-  const lab = event.target.closest("[data-lab]");
-  if (lab) {
-    openLab(lab.dataset.lab, lab.dataset.article || null);
-    return;
-  }
-  const tab = event.target.closest("[data-tab]");
-  if (tab) {
-    openLab(tab.dataset.tab);
-    return;
-  }
-  const article = event.target.closest("[data-article]");
-  if (article) {
-    activeArticle = article.dataset.article;
-    renderArticles();
-    if (!$("#raceLab").classList.contains("is-open")) openLab("articles", activeArticle);
-    return;
-  }
-  const quickAdd = event.target.closest("[data-quick-add]");
-  if (quickAdd) {
-    const sku = quickAdd.dataset.quickAdd;
-    if (quickAdd.dataset.size) sizeChoice[sku] = quickAdd.dataset.size;
-    addToCart(sku, false);
-    return;
-  }
-  const color = event.target.closest("[data-color]");
-  if (color) {
-    colorChoice[color.dataset.sku] = color.dataset.color;
-    renderProducts();
-    if ($("#productModal").classList.contains("is-open")) openProduct(color.dataset.sku);
-    return;
-  }
-  const size = event.target.closest("[data-size]");
-  if (size) {
-    sizeChoice[size.dataset.sku] = size.dataset.size;
-    renderProducts();
-    if ($("#productModal").classList.contains("is-open")) openProduct(size.dataset.sku);
-    return;
-  }
-  const quick = event.target.closest("[data-quick]");
-  if (quick) {
-    openProduct(quick.dataset.quick);
-    return;
-  }
-  const buy = event.target.closest("[data-buy]");
-  if (buy) {
-    const p = findProduct(buy.dataset.buy);
-    if (p) {
-      if (isFourthwallItem(p) && p.fourthwall_product_url) {
-        event.preventDefault();
-        trackHit("checkout_clicks_total");
-        trackHit(`checkout_${p.id}`);
-        window.location.href = fourthwallUrlWithPromo(p.fourthwall_product_url);
-        return;
-      }
-      openCheckout([lineFrom(p)]);
-    }
-    return;
-  }
-  const add = event.target.closest("[data-add]");
-  if (add) {
-    addToCart(add.dataset.add, true);
-    return;
-  }
-  const qty = event.target.closest("[data-qty]");
-  if (qty) {
-    changeQty(qty.dataset.key, Number(qty.dataset.qty));
-    return;
-  }
-  const city = event.target.closest("[data-city]");
-  if (city && $("#calcCity")) {
-    $("#calcCity").value = city.dataset.city;
-    updateRaceSplitCalculator();
-    if (city.dataset.sku && event.target.closest("#labCities")) {
-      closeSheet("raceLab");
-      openProduct(city.dataset.sku);
-    }
-    return;
-  }
-  const promoBtn = event.target.closest("[data-apply-promo]");
-  if (promoBtn) {
-    const mode = promoBtn.dataset.applyPromo;
-    const input = document.getElementById(mode === "checkout" ? "checkoutPromoInput" : "cartPromoInput");
-    if (input) {
-      const val = input.value.trim();
-      if (!val) clearPromoCode();
-      else setPromoCode(val, true);
-      if (mode === "checkout") openCheckout(express);
-    }
-    return;
-  }
-  if (event.target.closest("[data-bag]")) {
-    openSheet("cartDrawer");
-    return;
-  }
-  if (event.target.closest("[data-checkout-cart]")) {
-    express = null;
-    openCheckout(null);
-    return;
-  }
-  if (event.target.closest("[data-clear-search]")) {
-    query = "";
-    $("#searchInput").value = "";
-    renderProducts();
-    return;
-  }
-  if (event.target.closest("[data-clear-cart]")) cart = [];
-  const closer = event.target.closest("[data-close]");
-  if (closer) {
-    closeSheet(closer.dataset.close);
-    renderCart();
-    return;
-  }
-  const menu = event.target.closest("#menuBtn");
-  if (menu) {
-    const nav = $("#siteNav");
-    const open = nav.classList.toggle("is-open");
-    menu.setAttribute("aria-expanded", open ? "true" : "false");
-  }
-}
-
-function boot(data) {
-  PRODUCTS = data.products || [];
-  GUIDES = data.guides || [];
-  renderLabCities();
-  renderProducts();
-  renderCart();
-  renderArticles();
-  updateRaceSplitCalculator();
-  const params = new URLSearchParams(window.location.search);
-  const urlPromo = params.get("promo") || params.get("discount") || params.get("code") || params.get("ref") || "";
-  if (urlPromo) {
-    setPromoCode(urlPromo, true);
-  }
-  const reqQty = Math.max(1, parseInt(params.get("qty") || "1", 10) || 1);
-  const buy = findProduct(params.get("buy") || "");
-  const add = findProduct(params.get("add") || "");
-  if (buy) {
-    if (isFourthwallItem(buy) && buy.fourthwall_product_url && reqQty === 1) {
-      trackHit("checkout_clicks_total");
-      trackHit(`checkout_${buy.id}`);
-      window.location.replace(fourthwallUrlWithPromo(buy.fourthwall_product_url));
+      `;
       return;
     }
-    openCheckout([lineFrom(buy, reqQty)]);
-  } else if (add) addToCart(add.id, true);
-}
 
-document.addEventListener("DOMContentLoaded", () => {
-  trackHit("pageviews_total");
-  trackHit("pageviews_home");
-  try {
-    if (!sessionStorage.getItem("apx_uv_tracked")) {
-      sessionStorage.setItem("apx_uv_tracked", "1");
-      trackHit("unique_sessions_total");
-    }
-  } catch (_) {}
-  document.body.addEventListener("click", onClick);
-  $("#searchForm").addEventListener("submit", (event) => {
-    event.preventDefault();
-    query = $("#searchInput").value;
-    renderProducts();
-    $("#apparel").scrollIntoView({ behavior: "smooth" });
-  });
-  $("#searchInput").addEventListener("input", (event) => {
-    query = event.target.value;
-    renderProducts();
-  });
-  $("#sortSelect").addEventListener("change", (event) => {
-    sort = event.target.value;
-    renderProducts();
-  });
-  ["calcTargetFinish", "calcDivision", "calcCity"].forEach((id) => {
-    const node = document.getElementById(id);
-    if (node) node.addEventListener("change", updateRaceSplitCalculator);
-  });
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeAll();
-  });
-  fetch("catalog.json?v=20261026v2")
-    .then((res) => {
-      if (!res.ok) throw new Error("catalog");
-      return res.json();
-    })
-    .then(boot)
-    .catch(() => {
-      $("#productGrid").innerHTML = `<div class="Error"><p>The catalog didn’t load. Refresh the page.</p></div>`;
+    grid.innerHTML = items.map(productCardMarkup).join('');
+    bindCardEvents(grid);
+  }
+
+  function bindCardEvents(root) {
+    root.querySelectorAll('.Product__swatches .Swatch').forEach(sw => {
+      sw.addEventListener('click', e => {
+        e.stopPropagation();
+        const card = sw.closest('.Product');
+        if (!card) return;
+        card.querySelectorAll('.Swatch').forEach(b => b.classList.remove('is-active'));
+        sw.classList.add('is-active');
+        const newColor = sw.getAttribute('data-swatch-color') || 'Black';
+        const newSrc = sw.getAttribute('data-swatch-src');
+        card.setAttribute('data-selected-color', newColor);
+        const img = card.querySelector('.Product__img');
+        if (img && newSrc) img.src = newSrc;
+      });
     });
-});
 
-window.openProductModal = openProduct;
-window.closeProductModal = () => closeSheet("productModal");
-window.addToCart = addToCart;
-window.openCheckoutModal = () => { express = null; openCheckout(null); };
-window.closeCheckoutModal = () => closeSheet("checkoutModal");
-window.updateRaceSplitCalculator = updateRaceSplitCalculator;
-window.filterByDepartment = setDept;
-window.toggleCartDrawer = (open) => (open ? openSheet("cartDrawer") : closeSheet("cartDrawer"));
-window.openRaceLab = openLab;
+    root.querySelectorAll('.Product__sizes .SizeBtn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const card = btn.closest('.Product');
+        if (!card) return;
+        card.querySelectorAll('.SizeBtn').forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        card.setAttribute('data-selected-size', btn.getAttribute('data-size') || 'L');
+      });
+    });
+
+    root.querySelectorAll('[data-add-to-cart]').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const id = btn.getAttribute('data-add-to-cart');
+        const card = btn.closest('.Product');
+        const size = card ? card.getAttribute('data-selected-size') || 'L' : 'L';
+        const color = card ? card.getAttribute('data-selected-color') || 'Black' : 'Black';
+        addToCart(id, size, 1, color);
+
+        const orig = btn.innerHTML;
+        btn.innerHTML = '<span>Added to Bag</span><span>&#10003;</span>';
+        setTimeout(() => {
+          btn.innerHTML = orig;
+        }, 900);
+      });
+    });
+
+    root.querySelectorAll('[data-direct-buy]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.stopPropagation();
+        const id = link.getAttribute('data-direct-buy');
+        const p = state.byId.get(id);
+        trackEvent('fourthwall_redirect');
+        trackEvent(`fw_${id}`);
+        if (p) {
+          link.href = buildFourthwallUrl(p);
+        }
+      });
+    });
+
+    root.querySelectorAll('[data-open-modal]').forEach(el => {
+      el.addEventListener('click', () => {
+        const id = el.getAttribute('data-open-modal');
+        openProductModal(id);
+      });
+    });
+  }
+
+  function openProductModal(productId) {
+    const p = state.byId.get(productId);
+    const modal = document.getElementById('productModal');
+    const body = document.getElementById('productModalBody');
+    if (!p || !modal || !body) return;
+
+    trackEvent('product_view');
+    trackEvent(`view_${p.id}`);
+
+    state.activeModalProduct = p;
+    state.activeModalSize = 'L';
+    state.activeModalColor = 'Black';
+    state.activeModalBlank = '6.1 oz Heavyweight Cotton';
+
+    const price = Number(p.retail_price) || 38;
+    const title = cleanDisplayTitle(p);
+    const tag = shortTagFor(p);
+    const highlights = Array.isArray(p.highlights) ? p.highlights : [];
+    const hasColors = Boolean(p.has_colorways && p.alt_image);
+    const idNum = parseInt(String(p.id || '').replace('APC-C', ''), 10) || 0;
+    const isHoodie = [9, 10, 11, 12, 32, 33, 34, 35].includes(idNum);
+    const isTank = idNum >= 28 && idNum <= 31;
+    const whiteName = isHoodie ? 'Bone' : 'White';
+    const fwUrl = buildFourthwallUrl(p);
+
+    const colorPickerHtml = hasColors
+      ? `
+        <div>
+          <div class="Modal__optionLabel">Colorway · <span id="modalColorLabel">Stealth Black</span></div>
+          <div class="Modal__sizes" id="modalColors">
+            <button type="button" class="SizeBtn is-active" data-modal-color="Black" data-modal-img="${escapeHtml(p.image)}" style="padding:0 14px;width:auto;">Stealth Black</button>
+            <button type="button" class="SizeBtn" data-modal-color="${whiteName}" data-modal-img="${escapeHtml(p.alt_image)}" style="padding:0 14px;width:auto;">${whiteName}</button>
+          </div>
+        </div>
+      `
+      : '';
+
+    const blankPickerHtml = (!isHoodie && !isTank)
+      ? `
+        <div>
+          <div class="Modal__optionLabel">Blank Weight · <span id="modalBlankLabel">6.1 oz Heavyweight Pump Cover (100% Ring-Spun Cotton)</span></div>
+          <div class="Modal__sizes" id="modalBlanks" style="display:flex;flex-wrap:wrap;gap:8px;">
+            <button type="button" class="SizeBtn is-active" data-modal-blank="6.1 oz Heavyweight Cotton" style="padding:0 12px;width:auto;">6.1 oz Heavyweight Pump Cover</button>
+            <button type="button" class="SizeBtn" data-modal-blank="3.8 oz Lightweight Workout Knit" style="padding:0 12px;width:auto;">3.8 oz ASICS-Style Breathable Workout Fit</button>
+          </div>
+        </div>
+      `
+      : '';
+
+    body.innerHTML = `
+      <div class="Modal__media">
+        <img id="modalProductImg" src="${escapeHtml(p.image)}" alt="${escapeHtml(title)}" />
+      </div>
+      <div class="Modal__info">
+        <span class="Modal__eyebrow">${escapeHtml(tag)} · ${escapeHtml(p.id)}</span>
+        <h2 class="Modal__title">${escapeHtml(title)}</h2>
+
+        <div class="Modal__priceRow">
+          <span class="Modal__priceNow">${fmtPrice(price)}</span>
+          <span style="font-family:var(--font-mono);font-size:11px;color:var(--lime);">Exact Checkout Price · No Hidden Markup</span>
+        </div>
+
+        <p class="Modal__desc">${escapeHtml(p.short_desc || '')}</p>
+
+        ${highlights.length ? `
+          <ul class="Modal__highlights">
+            ${highlights.map(h => `<li>${escapeHtml(h)}</li>`).join('')}
+          </ul>
+        ` : ''}
+
+        ${colorPickerHtml}
+        ${blankPickerHtml}
+
+        ${p.has_sizes ? `
+          <div>
+            <div class="Modal__optionLabel">Select Size (Unisex Athletic Fit · True to Size or Size Up for Oversized Pump Cover)</div>
+            <div class="Modal__sizes" id="modalSizes">
+              ${SIZES.map(sz => `
+                <button
+                  type="button"
+                  class="SizeBtn ${sz === state.activeModalSize ? 'is-active' : ''}"
+                  data-modal-size="${sz}"
+                >${sz}</button>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
+
+        <div class="Modal__actions">
+          <a
+            href="${escapeHtml(fwUrl)}"
+            class="Btn Btn--lime Btn--full"
+            id="modalBuyNowBtn"
+            style="text-align:center;justify-content:center;"
+          >
+            Instant Checkout on Fourthwall &middot; ${fmtPrice(price)} &rarr;
+          </a>
+          <button type="button" class="Btn Btn--ghost Btn--full" id="modalAddBtn">
+            Add to Multi-Item Bag
+          </button>
+        </div>
+
+        <p class="Modal__ship">
+          <strong>Fast US Fulfillment · Ships in 2-5 Business Days · 100% Quality Guarantee</strong> · Breathable soft-hand cured ink that never cracks or feels like plastic. Questions? Text/call Irvine HQ at <a href="tel:+19498054935" style="color:var(--lime);">(949) 805-4935</a>.
+        </p>
+      </div>
+    `;
+
+    body.querySelectorAll('[data-modal-color]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        body.querySelectorAll('[data-modal-color]').forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        state.activeModalColor = btn.getAttribute('data-modal-color') || 'Black';
+        const imgUrl = btn.getAttribute('data-modal-img');
+        const imgEl = document.getElementById('modalProductImg');
+        const lblEl = document.getElementById('modalColorLabel');
+        if (imgEl && imgUrl) imgEl.src = imgUrl;
+        if (lblEl) lblEl.textContent = btn.textContent;
+      });
+    });
+
+    body.querySelectorAll('[data-modal-blank]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        body.querySelectorAll('[data-modal-blank]').forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        state.activeModalBlank = btn.getAttribute('data-modal-blank') || '6.1 oz Heavyweight Cotton';
+        const lblEl = document.getElementById('modalBlankLabel');
+        if (lblEl) lblEl.textContent = btn.textContent;
+      });
+    });
+
+    body.querySelectorAll('[data-modal-size]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        body.querySelectorAll('[data-modal-size]').forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        state.activeModalSize = btn.getAttribute('data-modal-size') || 'L';
+      });
+    });
+
+    const addBtn = document.getElementById('modalAddBtn');
+    if (addBtn) {
+      addBtn.addEventListener('click', () => {
+        addToCart(p.id, p.has_sizes ? state.activeModalSize : '', 1, state.activeModalColor);
+        closeProductModal();
+        openCartDrawer();
+      });
+    }
+
+    const buyBtn = document.getElementById('modalBuyNowBtn');
+    if (buyBtn) {
+      buyBtn.addEventListener('click', () => {
+        trackEvent('fourthwall_redirect');
+        trackEvent(`fw_${p.id}`);
+      });
+    }
+
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeProductModal() {
+    const modal = document.getElementById('productModal');
+    if (!modal) return;
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+
+  function addToCart(productId, size = 'L', qty = 1, color = 'Black') {
+    const p = state.byId.get(productId);
+    if (!p) return;
+
+    trackEvent('add_to_cart');
+    trackEvent(`cart_${p.id}`);
+
+    const cleanSize = p.has_sizes ? (size || 'L') : '';
+    const cleanColor = p.has_colorways ? (color || 'Black') : '';
+    const key = `${p.id}__${cleanSize}__${cleanColor}`;
+    const existing = state.cart.find(item => item.key === key);
+
+    if (existing) {
+      existing.qty += qty;
+    } else {
+      state.cart.push({
+        key,
+        id: p.id,
+        title: cleanDisplayTitle(p),
+        price: Number(p.retail_price) || 38,
+        image: cleanColor && cleanColor !== 'Black' && p.alt_image ? p.alt_image : p.image,
+        size: cleanSize,
+        color: cleanColor,
+        qty,
+        fourthwall_url: p.fourthwall_checkout_url || p.fourthwall_product_url || p.checkout_url || 'https://apex-hybrid-co-shop.fourthwall.com'
+      });
+    }
+
+    // Automatically apply TEAM15 (15% off) when adding 2+ items if no promo is active yet
+    const totalQty = state.cart.reduce((sum, item) => sum + item.qty, 0);
+    if (totalQty >= 2 && !state.promo) {
+      savePromo(PROMO_CODES.TEAM15);
+    }
+
+    saveCart();
+    updateCartUI();
+  }
+
+  function updateItemQty(key, delta) {
+    const idx = state.cart.findIndex(item => item.key === key);
+    if (idx === -1) return;
+    state.cart[idx].qty += delta;
+    if (state.cart[idx].qty <= 0) {
+      state.cart.splice(idx, 1);
+    }
+    saveCart();
+    updateCartUI();
+  }
+
+  function cartTotals() {
+    const count = state.cart.reduce((sum, item) => sum + item.qty, 0);
+    const subtotal = state.cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+    const discountPct = state.promo ? state.promo.pct : 0;
+    const discountAmount = Math.round(subtotal * (discountPct / 100) * 100) / 100;
+    const total = Math.max(0, Math.round((subtotal - discountAmount) * 100) / 100);
+    return { count, subtotal, discountPct, discountAmount, total };
+  }
+
+  function updateCartUI() {
+    const { count, subtotal, discountPct, discountAmount, total } = cartTotals();
+
+    const countEl = document.getElementById('bagCount');
+    if (countEl) countEl.textContent = String(count);
+
+    const subEl = document.getElementById('cartSubtotal');
+    if (subEl) {
+      if (discountAmount > 0 && state.promo) {
+        subEl.innerHTML = `<span style="text-decoration:line-through;color:var(--ink-3);font-size:14px;margin-right:6px;">${fmtPrice(subtotal)}</span> ${fmtPrice(total)} <span style="display:block;font-size:11px;color:var(--lime);font-weight:500;">${escapeHtml(state.promo.code)} (-${discountPct}% / -${fmtPrice(discountAmount)})</span>`;
+      } else {
+        subEl.textContent = fmtPrice(subtotal);
+      }
+    }
+
+    const promoStatusEl = document.getElementById('cartPromoStatus');
+    const promoInputEl = document.getElementById('cartPromoInput');
+    if (promoStatusEl) {
+      if (state.promo) {
+        promoStatusEl.innerHTML = `<span style="color:var(--lime);">&#10003; ${escapeHtml(state.promo.code)} active (${escapeHtml(state.promo.label)})</span>`;
+        if (promoInputEl && !promoInputEl.value) promoInputEl.value = state.promo.code;
+      } else {
+        promoStatusEl.innerHTML = `<span style="color:var(--ink-3);">Use code <strong>HYROX10</strong> (10% off) or <strong>TEAM15</strong> (15% off 2+ shirts)</span>`;
+      }
+    }
+
+    const listEl = document.getElementById('cartItems');
+    if (!listEl) return;
+
+    if (state.cart.length === 0) {
+      listEl.innerHTML = `
+        <div class="Drawer__empty">
+          <p>Your bag is empty.</p>
+          <p style="margin-top:6px;font-size:12px;">Select a 6.1 oz Heavyweight Pump Cover or 3.8 oz Breathable Workout Tee to get started.</p>
+        </div>
+      `;
+      return;
+    }
+
+    listEl.innerHTML = state.cart.map(item => {
+      const p = state.byId.get(item.id);
+      const itemFwUrl = p ? buildFourthwallUrl(p) : (item.fourthwall_url || 'https://apex-hybrid-co-shop.fourthwall.com');
+      return `
+        <div class="CartItem">
+          <img class="CartItem__img" src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}" />
+          <div>
+            <div class="CartItem__title">${escapeHtml(item.title)}</div>
+            <div class="CartItem__meta">
+              ${item.color ? `Color: ${escapeHtml(item.color)} · ` : ''}${item.size ? `Size ${escapeHtml(item.size)} · ` : ''}${fmtPrice(item.price)}
+            </div>
+            <div class="CartItem__qty">
+              <button type="button" data-qty-delta="-1" data-qty-key="${escapeHtml(item.key)}" aria-label="Decrease quantity">&minus;</button>
+              <span>${item.qty}</span>
+              <button type="button" data-qty-delta="1" data-qty-key="${escapeHtml(item.key)}" aria-label="Increase quantity">+</button>
+              <a href="${escapeHtml(itemFwUrl)}" style="margin-left:8px;font-family:var(--font-mono);font-size:10.5px;color:var(--lime);text-decoration:underline;">Checkout Item &rarr;</a>
+            </div>
+          </div>
+          <div class="CartItem__price">${fmtPrice(item.price * item.qty)}</div>
+        </div>
+      `;
+    }).join('');
+
+    listEl.querySelectorAll('[data-qty-key]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const key = btn.getAttribute('data-qty-key');
+        const delta = Number(btn.getAttribute('data-qty-delta')) || 0;
+        updateItemQty(key, delta);
+      });
+    });
+  }
+
+  function openCartDrawer() {
+    const d = document.getElementById('cartDrawer');
+    if (!d) return;
+    d.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeCartDrawer() {
+    const d = document.getElementById('cartDrawer');
+    if (!d) return;
+    d.hidden = true;
+    document.body.style.overflow = '';
+  }
+
+  /* Direct Fourthwall Checkout (No mailto form!) */
+  function proceedToFourthwallCheckout() {
+    if (state.cart.length === 0) return;
+    trackEvent('checkout_click');
+    trackEvent('fourthwall_redirect');
+
+    if (state.promo && navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(state.promo.code).catch(() => {});
+    }
+
+    const firstItem = state.cart[0];
+    const p = state.byId.get(firstItem.id);
+    const targetUrl = p ? buildFourthwallUrl(p) : (firstItem.fourthwall_url || 'https://apex-hybrid-co-shop.fourthwall.com');
+    window.location.href = targetUrl;
+  }
+
+  function bindGlobalEvents() {
+    document.querySelectorAll('[data-open-Modal]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-open-Modal');
+        openProductModal(id);
+      });
+    });
+
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+      searchInput.addEventListener('input', e => {
+        state.searchQuery = e.target.value || '';
+        renderApparelGrid();
+      });
+    }
+
+    const sortSelect = document.getElementById('apparelSort');
+    if (sortSelect) {
+      sortSelect.addEventListener('change', e => {
+        state.sortBy = e.target.value || 'featured';
+        renderApparelGrid();
+      });
+    }
+
+    document.querySelectorAll('[data-filter-Select]').forEach(link => {
+      link.addEventListener('click', () => {
+        const key = link.getAttribute('data-filter-Select');
+        if (!key) return;
+        state.activePill = key;
+        renderPills('apparelPills', state.activePill);
+        renderApparelGrid();
+      });
+    });
+
+    document.querySelectorAll('[data-city-Select]').forEach(card => {
+      card.addEventListener('click', () => {
+        const id = card.getAttribute('data-city-Select');
+        trackEvent('city_click');
+        if (id) trackEvent(`city_${id}`);
+        if (id && state.byId.has(id)) {
+          openProductModal(id);
+        }
+      });
+    });
+
+    const openBagBtn = document.getElementById('openBagBtn');
+    if (openBagBtn) openBagBtn.addEventListener('click', openCartDrawer);
+
+    document.querySelectorAll('[data-close-drawer]').forEach(el => {
+      el.addEventListener('click', closeCartDrawer);
+    });
+
+    document.querySelectorAll('[data-close-modal]').forEach(el => {
+      el.addEventListener('click', closeProductModal);
+    });
+
+    const checkoutBtn = document.getElementById('checkoutBtn');
+    if (checkoutBtn) checkoutBtn.addEventListener('click', proceedToFourthwallCheckout);
+
+    const promoApplyBtn = document.getElementById('cartPromoApplyBtn');
+    const promoInputEl = document.getElementById('cartPromoInput');
+    if (promoApplyBtn && promoInputEl) {
+      promoApplyBtn.addEventListener('click', () => {
+        const res = applyPromoCode(promoInputEl.value);
+        const statusEl = document.getElementById('cartPromoStatus');
+        if (statusEl) {
+          statusEl.innerHTML = res.ok
+            ? `<span style="color:var(--lime);">&#10003; ${escapeHtml(res.msg)}</span>`
+            : `<span style="color:#ff6b6b;">${escapeHtml(res.msg)}</span>`;
+        }
+      });
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        closeProductModal();
+        closeCartDrawer();
+      }
+    });
+  }
+
+  async function init() {
+    trackEvent('pageview_total');
+    trackEvent('pageview_home');
+    trackReferrerOnce();
+
+    bindGlobalEvents();
+    updateCartUI();
+
+    try {
+      const res = await fetch('catalog.json?v=20261026v3', { cache: 'no-store' });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      state.catalog = data;
+      state.products = Array.isArray(data.products) ? data.products : [];
+      state.byId = new Map(state.products.map(p => [p.id, p]));
+
+      renderPills('apparelPills', state.activePill);
+      renderApparelGrid();
+
+      const params = new URLSearchParams(window.location.search);
+      const urlPromo = params.get('promo') || params.get('discount') || params.get('code');
+      if (urlPromo) {
+        applyPromoCode(urlPromo);
+      }
+      const buySku = params.get('buy') || params.get('sku');
+      if (buySku && state.byId.has(buySku.toUpperCase())) {
+        const sku = buySku.toUpperCase();
+        openProductModal(sku);
+      }
+    } catch (err) {
+      console.error('Failed to load catalog.json:', err);
+      const grid = document.getElementById('apparelGrid');
+      if (grid) {
+        grid.innerHTML = `
+          <div class="EmptyState">
+            <p class="EmptyState__title">Unable to load catalog right now.</p>
+            <p class="EmptyState__sub">Please refresh the page or visit our <a href="https://apex-hybrid-co-shop.fourthwall.com" style="color:var(--lime);">Official Fourthwall Storefront</a>.</p>
+          </div>
+        `;
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();

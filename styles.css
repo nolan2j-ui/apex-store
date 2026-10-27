@@ -1148,3 +1148,115 @@ h1, h2, h3, p { margin: 0; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+
+/* === SUBPAGE & SHARED COMPONENT COMPATIBILITY CLASSES === */
+.TopHeader, .TopHeader__Main {
+  background: #0A0B0E !important;
+  color: #F4F5F7 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  position: sticky;
+  top: 0;
+  z-index: 60;
+}
+.TopHeader__Inner, .Container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 14px 24px;
+}
+.TopHeader__Inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.BrandLogo {
+  font-family: var(--font-display, 'Space Grotesk', sans-serif);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #F4F5F7 !important;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.BrandLogo span {
+  color: #E4FF1A;
+}
+.ProdModalGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  align-items: start;
+}
+.ProductGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+.ProductCard {
+  background: #111318;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 16px;
+  color: #F4F5F7;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Btn--BuyNow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #E4FF1A !important;
+  color: #090A0C !important;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.Btn--Cart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #171A21 !important;
+  color: #F4F5F7 !important;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.PriceWhole {
+  font-family: var(--font-mono, monospace);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #E4FF1A;
+}
+.PriceList {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.95rem;
+  color: #8E95A5;
+  text-decoration: line-through;
+}
+.HighlightsList {
+  list-style: disc;
+  padding-left: 20px;
+  color: #C7CDD8;
+  line-height: 1.6;
+}
+.ReviewSnippetBox {
+  background: #141821;
+  border-left: 3px solid #E4FF1A;
+  padding: 12px 16px;
+  border-radius: 6px;
+  color: #C7CDD8;
+  font-size: 0.92rem;
+}
