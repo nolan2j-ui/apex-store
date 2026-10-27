@@ -19,12 +19,12 @@ from datetime import datetime, timezone
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 SITE_URL = "https://www.apexhybridco.com"
 TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-INDEXNOW_KEY = "a8f9d2e4c7b14f6093e5d8c2a1b4e7f0"
+INDEXNOW_KEY = "b7e3c9a4d2f841069c5e1a8f3b2d6e40"
 
 with open(os.path.join(BASE_DIR, "catalog.json"), "r", encoding="utf-8") as f:
     catalog = json.load(f)
 
-products = catalog["products"]
+products = [p for p in catalog["products"] if str(p.get("id", "")).startswith("APC-C")]
 guides = catalog["guides"]
 product_by_id = {p["id"]: p for p in products}
 
@@ -135,7 +135,7 @@ def generate_product_pages():
         highlights_html = "\n".join(f"<li>{html.escape(h)}</li>" for h in highlights)
         related_html = "\n".join(
             f"""
-            <a href="/products/{r['handle']}.html" class="ProductCard" style="text-decoration:none; color:inherit;">
+            <a href="{r['handle']}.html" class="ProductCard" style="text-decoration:none; color:inherit;">
               <div class="ProductCard__Media" style="height:180px;">
                 <img src="../{r['image']}" alt="{html.escape(r['title'])}" loading="lazy" />
               </div>
@@ -625,8 +625,12 @@ def generate_article_pages():
             out.write(page_html)
         city_page_path = os.path.join(BASE_DIR, "seo_city_pages", f"{slug}.html")
         if os.path.exists(city_page_path) or any(k in slug for k in ("chicago", "dallas", "anaheim", "las-vegas", "miami", "new-york", "nyc", "first-hyrox", "pump-cover", "compromised-running-shirt", "sled-push-enthusiast")):
+            city_html = page_html.replace(f"/articles/{slug}.html", f"/seo_city_pages/{slug}.html")
+            for g_other in guides:
+                oslug = g_other["slug"]
+                city_html = city_html.replace(f'href="{oslug}.html"', f'href="../articles/{oslug}.html"')
             with open(city_page_path, "w", encoding="utf-8") as out_city:
-                out_city.write(page_html)
+                out_city.write(city_html)
 
     # Also generate articles/index.html hub page
     hub_cards = "\n".join(
@@ -929,8 +933,9 @@ Sitemap: {SITE_URL}/sitemap.xml
     with open(os.path.join(BASE_DIR, "robots.txt"), "w", encoding="utf-8") as f:
         f.write(robots_txt)
 
-    with open(os.path.join(BASE_DIR, f"{INDEXNOW_KEY}.txt"), "w", encoding="utf-8") as f:
-        f.write(INDEXNOW_KEY)
+    for k_str in (INDEXNOW_KEY, "a8f9d2e4c7b14f6093e5d8c2a1b4e7f0", "a4b8c9d0e1f234567890abcdef123456", "a8f4c2e9d1b740639c5e2a1f8b3d7e90"):
+        with open(os.path.join(BASE_DIR, f"{k_str}.txt"), "w", encoding="utf-8") as f:
+            f.write(k_str)
 
     # Also generate llms.txt dynamically from products and guides
     llms_lines = [
