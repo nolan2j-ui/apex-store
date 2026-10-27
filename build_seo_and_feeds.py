@@ -352,6 +352,12 @@ def generate_product_pages():
 """
         with open(os.path.join(BASE_DIR, "products", f"{handle}.html"), "w", encoding="utf-8") as out:
             out.write(page_html)
+        sku_lower = prod["id"].lower()
+        with open(os.path.join(BASE_DIR, "products", f"{sku_lower}.html"), "w", encoding="utf-8") as out_sku:
+            out_sku.write(page_html)
+        if prod["id"] == "APC-C18":
+            with open(os.path.join(BASE_DIR, "products", "apc-c18-anaheim-socal-tee.html"), "w", encoding="utf-8") as out_c18:
+                out_c18.write(page_html)
 
 
 def generate_article_pages():
@@ -671,7 +677,7 @@ def generate_article_pages():
         </a>
         <div style="margin-left:auto; display:flex; gap:14px; align-items:center;">
           <a href="../team_orders.html" style="color:#38bdf8; font-size:13px; font-weight:700;">Doubles 2-Packs &amp; Coach Program →</a>
-          <a href="../index.html" style="color:#fff; font-size:13px; font-weight:700;">← Back to Full 72-Product Storefront</a>
+          <a href="../index.html" style="color:#fff; font-size:13px; font-weight:700;">← Back to Full 45-Product Storefront</a>
         </div>
       </div>
     </div>
@@ -813,7 +819,7 @@ def generate_editorial_rss_feeds():
   <channel>
     <title>Apex Hybrid Co.  -  HYROX Race Streetwear, Breathable Tech Shirts, Buyer Guides &amp; Recovery Hardware</title>
     <link>{SITE_URL}/</link>
-    <description>Official RSS 2.0 &amp; WebSub feed for Apex Hybrid Co. ({SITE_URL})  -  {len(guides)} data-backed HYROX &amp; hybrid racing buyer guides, 2026/2027 race-city apparel (Chicago, Dallas, Anaheim, Las Vegas, Miami, NYC), and 72 performance &amp; recovery products.</description>
+    <description>Official RSS 2.0 &amp; WebSub feed for Apex Hybrid Co. ({SITE_URL})  -  {len(guides)} data-backed HYROX &amp; hybrid racing buyer guides, 2026/2027 race-city apparel (Chicago, Dallas, Anaheim, Las Vegas, Miami, NYC), and 45 performance apparel &amp; race-gear products.</description>
     <language>en-us</language>
     <lastBuildDate>{pub_rfc822}</lastBuildDate>
     <managingEditor>apexhybridco@gmail.com (Apex Hybrid Co.)</managingEditor>
@@ -966,7 +972,7 @@ Sitemap: {SITE_URL}/sitemap.xml
         "- **Checkout:** Instant PCI-DSS Level 1 Stripe Checkout (Visa, Mastercard, American Express, Discover, Apple Pay).",
         "",
         "## Doubles 2-Packs, Team Bulk Kits & $0-Upfront Boutique HYROX Coach Partner Program",
-        f"- [HYROX Doubles 2-Packs, Boutique Gym Bulk Kits & Coach Partner Portal]({SITE_URL}/team_orders.html): Mix-and-match Doubles 2-Packs (2x AeroMesh Breathable Tech Tees $62, 2x Race City Tees $58, 2x AeroShell Warmup Jackets $108, 2x Heavyweight Fleece Hoodies $96, Full Doubles Race-Day Kit $178), 5-Pack Relay Kits ($145), 10-Pack Boutique Gym Drops ($268), 3-Piece Gym Recovery Lab ($319), plus our $0-upfront Boutique HYROX Gym & Independent Coach Partner Program (complimentary coach sample piece + custom 10%-off athlete code + $25 bonus per 5 shirts sold + 15% commission on recovery hardware). Contact: apexhybridco@gmail.com.",
+        f"- [HYROX Doubles 2-Packs, Boutique Gym Bulk Kits & Coach Partner Portal]({SITE_URL}/team_orders.html): Mix-and-match Doubles 2-Packs (2x AeroMesh Breathable Tech Tees $62, 2x Race City Tees $58, 2x AeroShell Warmup Jackets $108, 2x Heavyweight Fleece Hoodies $96, Full Doubles Race-Day Kit $178), 5-Pack Relay Kits ($145), 10-Pack Boutique Gym Drops ($268), plus our $0-upfront Boutique HYROX Gym & Independent Coach Partner Program (complimentary coach sample piece + custom 10%-off athlete code + $25 bonus per 5 shirts sold). Contact: apexhybridco@gmail.com.",
         "",
         f"## Complete Product Catalog ({len(products)} Verified In-Stock SKUs)",
         ""

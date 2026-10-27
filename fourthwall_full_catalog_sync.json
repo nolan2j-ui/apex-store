@@ -5,7 +5,7 @@
   "phone": "(949) 805-4935",
   "address": "8420 Spectrum, Irvine, CA 92618",
   "fulfillment_partner": "Fourthwall",
-  "note": "All 45 custom apparel & merch items (APC-C01 through APC-C45) are fulfilled via Fourthwall US production & fulfillment. The 27 recovery & training gear dropship items (APC-E01 through APC-E27) remain on direct Stripe checkout and US domestic wholesale supplier fulfillment.",
+  "note": "All 45 custom apparel & merch items (APC-C01 through APC-C45) are fulfilled via Fourthwall US production & fulfillment. The 27 recovery & training gear dropship items remain on direct Stripe checkout and US domestic wholesale supplier fulfillment.",
   "total_fourthwall_products": 45,
   "products": [
     {
