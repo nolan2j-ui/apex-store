@@ -1153,8 +1153,15 @@ h1, h2, h3, p { margin: 0; }
 /* --- Apex Logo Mark & Uncropped Shirt Framing & Click-Modal Blank Selector --- */
 .Wordmark {
   display: inline-flex;
+  flex-direction: row;
   align-items: center;
   gap: 10px;
+}
+.Wordmark__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  letter-spacing: -0.04em;
 }
 .Wordmark__logo {
   display: inline-flex;

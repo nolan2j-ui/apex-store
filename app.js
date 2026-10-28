@@ -104,6 +104,15 @@ async function checkoutViaFourthwallApi(items, fallbackUrl) {
     if (!chkRes.ok) throw new Error("checkout_create_failed");
     const chkData = await chkRes.json();
     if (chkData && chkData.id) {
+      const promoInfo = resolvePromo(activePromo);
+      if (promoInfo) {
+        const fwCode = promoInfo.code === "DADBOD10" ? "DADBOD10" : "COACHSU10";
+        await fetch(`https://apex-hybrid-co-shop.fourthwall.com/api/v2/checkout/${encodeURIComponent(chkData.id)}/code`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ code: fwCode }),
+        }).catch(() => {});
+      }
       const checkoutUrl = `https://apex-hybrid-co-shop.fourthwall.com/checkout/${encodeURIComponent(chkData.id)}`;
       window.location.href = fourthwallUrlWithPromo(checkoutUrl);
       return;
