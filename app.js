@@ -382,7 +382,7 @@ function variantLabel(p) {
 }
 
 function isFourthwallItem(p) {
-  return Boolean(p && (p.fulfillment_partner === "Fourthwall" || String(p.id || "").startsWith("APC-C")));
+  return Boolean(p && (FW_VARIANTS[p.id] || p.fulfillment_partner === "Fourthwall" || String(p.id || "").startsWith("APC-C") || p.fourthwall_product_url));
 }
 
 function lineFrom(p, qty = 1) {
@@ -699,6 +699,16 @@ function updateRaceSplitCalculator() {
     const divNote = division === "pro" ? "Pro sleds take a larger share of the clock." : division === "doubles" ? "Doubles share the stations. The run is still yours." : "Open division pacing, even from the first kilometer.";
     note.textContent = `${city.name} · ${city.venue}, ${city.when}. ${city.note} ${divNote}`;
   }
+  const calcCta = $("#calcCheckoutBar");
+  if (calcCta) {
+    const cityProd = findProduct(city.sku);
+    const cityPrice = cityProd ? money(cityProd.retail_price) : "$38";
+    calcCta.innerHTML = `
+      <button class="Btn Btn--cobalt" type="button" data-buy="${esc(city.sku)}" style="font-weight:800">Buy ${esc(city.name)} Race Tee (${cityPrice}) — Instant Checkout →</button>
+      <button class="Btn Btn--bone" type="button" data-buy="APC-C36">Buy AeroMesh Tech Shirt ($42) →</button>
+      <a class="Btn Btn--ghost" href="team_orders.html" style="text-decoration:none">Doubles 2-Pack Bundles (15% Off) →</a>
+    `;
+  }
 }
 
 function renderLabCities() {
@@ -732,7 +742,10 @@ function renderArticles() {
           <img src="${esc(p.image)}" alt="" />
           <strong>${esc(p.title)}</strong>
           <div>${money(p.retail_price)}</div>
-          <button class="Btn Btn--bone Btn--full" type="button" data-add="${p.id}" style="margin-top:6px">Add</button>
+          <div style="display:flex;gap:6px;margin-top:6px">
+            <button class="Btn Btn--cobalt" type="button" data-buy="${p.id}" style="flex:1;padding:7px 10px;font-size:12px">Buy Now →</button>
+            <button class="Btn Btn--bone" type="button" data-add="${p.id}" style="padding:7px 10px;font-size:12px">+ Bag</button>
+          </div>
         </div>`).join("")}
     </div>`;
 }
