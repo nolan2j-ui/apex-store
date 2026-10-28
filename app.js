@@ -72,6 +72,7 @@ const FW_VARIANTS = {"APC-C01": {"sku": "APC-C01", "title": "Run. Station. Repea
 
 async function checkoutViaFourthwallApi(items, fallbackUrl) {
   try {
+    toast("Opening secure checkout…");
     const cartItems = [];
     for (const item of items) {
       const entry = FW_VARIANTS[item.id];
@@ -566,9 +567,10 @@ function openCheckout(lines) {
   closeSheet("cartDrawer");
   trackHit("checkout_clicks_total");
   bag.forEach((item) => { if (item && item.id) trackHit(`checkout_${item.id}`); });
-  if (bag.every((item) => item.is_fourthwall)) {
-    const fallback = bag[0] ? bag[0].fourthwall_product_url : "https://apex-hybrid-co-shop.fourthwall.com";
-    checkoutViaFourthwallApi(bag, fallback);
+  const fwBag = bag.filter((item) => item.is_fourthwall);
+  if (fwBag.length) {
+    const fallback = fwBag[0] ? fwBag[0].fourthwall_product_url : "https://apex-hybrid-co-shop.fourthwall.com";
+    checkoutViaFourthwallApi(fwBag, fallback);
     return;
   }
   const rawSub = bag.reduce((sum, item) => sum + item.price * item.qty, 0);
@@ -814,6 +816,20 @@ function onClick(event) {
     openProduct(quick.dataset.quick);
     return;
   }
+  const fwLink = event.target.closest('a[href*="apex-hybrid-co-shop.fourthwall.com/products/"]');
+  if (fwLink) {
+    const href = fwLink.getAttribute("href") || "";
+    const slug = href.split("?")[0].replace(/\/+$/, "").split("/").pop();
+    const matchedSku = Object.keys(FW_VARIANTS).find((k) => (FW_VARIANTS[k].url || "").endsWith("/" + slug));
+    if (matchedSku) {
+      event.preventDefault();
+      trackHit("checkout_clicks_total");
+      trackHit(`checkout_${matchedSku}`);
+      const p = findProduct(matchedSku) || { id: matchedSku, fourthwall_product_url: href };
+      checkoutViaFourthwallApi([{ id: matchedSku, size: sizeChoice[matchedSku] || "L", qty: 1 }], p.fourthwall_product_url || href);
+      return;
+    }
+  }
   const buy = event.target.closest("[data-buy]");
   if (buy) {
     const p = findProduct(buy.dataset.buy);
@@ -909,14 +925,22 @@ function boot(data) {
   const buy = findProduct(params.get("buy") || "");
   const add = findProduct(params.get("add") || "");
   if (buy) {
-    if (isFourthwallItem(buy) && buy.fourthwall_product_url && reqQty === 1) {
+    if (isFourthwallItem(buy)) {
       trackHit("checkout_clicks_total");
       trackHit(`checkout_${buy.id}`);
-      window.location.replace(fourthwallUrlWithPromo(buy.fourthwall_product_url));
+      checkoutViaFourthwallApi([lineFrom(buy, reqQty)], buy.fourthwall_product_url);
       return;
     }
     openCheckout([lineFrom(buy, reqQty)]);
-  } else if (add) addToCart(add.id, true);
+  } else if (add) {
+    if (params.get("checkout") === "1" && isFourthwallItem(add)) {
+      trackHit("checkout_clicks_total");
+      trackHit(`checkout_${add.id}`);
+      checkoutViaFourthwallApi([lineFrom(add, reqQty)], add.fourthwall_product_url);
+      return;
+    }
+    addToCart(add.id, true);
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
