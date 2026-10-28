@@ -946,9 +946,9 @@ function boot(data) {
   const add = findProduct(params.get("add") || "");
   const targetProd = buy || add;
   if (targetProd) {
-    if (params.get("size")) selectedSizes[targetProd.id] = params.get("size");
-    if (params.get("color")) selectedColors[targetProd.id] = params.get("color");
-    if (params.get("blank")) selectedBlanks[targetProd.id] = params.get("blank");
+    if (params.get("size")) sizeChoice[targetProd.id] = params.get("size");
+    if (params.get("color")) colorChoice[targetProd.id] = String(params.get("color")).toLowerCase().includes("white") ? "white" : "black";
+    if (params.get("blank")) blankChoice[targetProd.id] = String(params.get("blank")).toLowerCase().includes("3.8") || String(params.get("blank")).toLowerCase().includes("light") ? "light" : "heavy";
   }
   if (buy) {
     if (isFourthwallItem(buy)) {
