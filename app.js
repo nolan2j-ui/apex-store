@@ -944,6 +944,12 @@ function boot(data) {
   const reqQty = Math.max(1, parseInt(params.get("qty") || "1", 10) || 1);
   const buy = findProduct(params.get("buy") || "");
   const add = findProduct(params.get("add") || "");
+  const targetProd = buy || add;
+  if (targetProd) {
+    if (params.get("size")) selectedSizes[targetProd.id] = params.get("size");
+    if (params.get("color")) selectedColors[targetProd.id] = params.get("color");
+    if (params.get("blank")) selectedBlanks[targetProd.id] = params.get("blank");
+  }
   if (buy) {
     if (isFourthwallItem(buy)) {
       trackHit("checkout_clicks_total");

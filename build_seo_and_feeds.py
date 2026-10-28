@@ -27,6 +27,14 @@ with open(os.path.join(BASE_DIR, "catalog.json"), "r", encoding="utf-8") as f:
 products = [p for p in catalog["products"] if str(p.get("id", "")).startswith("APC-C")]
 guides = catalog["guides"]
 product_by_id = {p["id"]: p for p in products}
+fw_slugs_map = {}
+for _p in products:
+    _u = _p.get("fourthwall_product_url") or ""
+    _vid = _p.get("fourthwall_default_variant_id") or ""
+    if _u and _vid:
+        _slug = _u.split("?")[0].rstrip("/").split("/")[-1]
+        fw_slugs_map[_slug] = _vid
+
 
 os.makedirs(os.path.join(BASE_DIR, "products"), exist_ok=True)
 os.makedirs(os.path.join(BASE_DIR, "articles"), exist_ok=True)
@@ -244,7 +252,7 @@ def generate_product_pages():
           <strong>{prod['rating']} out of 5</strong>
           <span style="color:#525866;">({prod['reviews']} verified athlete reviews)</span>
         </div>
-        <div style="padding:12px 0; border-top:1px solid #eee; border-bottom:1px solid #eee; margin-bottom:16px;">
+        <div style="padding:12px 0; border-top:1px solid #eee; border-bottom:1px solid #eee; margin-bottom:14px;">
           <div style="display:flex; align-items:baseline; gap:10px;">
             <span style="font-size:28px; font-weight:900;">${price}</span>
             <span style="font-size:14px; color:#525866; text-decoration:line-through;">List: ${list_price}</span>
@@ -253,6 +261,42 @@ def generate_product_pages():
             ✓ {html.escape(prod['stock_status'])} · {html.escape(prod['ship_time'])}
           </div>
           {fulfillment_line}
+        </div>
+        <div id="staticVariantBox" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:14px 16px; margin-bottom:16px;">
+          {f"""<div style="margin-bottom:12px;">
+            <div style="font-size:11.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#0f172a; margin-bottom:6px;">1. Select Colorway: <span id="staticColorLabel" style="color:#ff4d1c;">Black</span></div>
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              <button type="button" class="StaticColorBtn" data-color="Black" onclick="window.selectStaticColor('Black','../{prod['image']}',this)" style="cursor:pointer; padding:7px 14px; border-radius:6px; border:2px solid #0f172a; background:#0f172a; color:#fff; font-weight:800; font-size:12.5px;">Black</button>
+              <button type="button" class="StaticColorBtn" data-color="White" onclick="window.selectStaticColor('White','../{prod.get('alt_image') or prod['image']}',this)" style="cursor:pointer; padding:7px 14px; border-radius:6px; border:1.5px solid #cbd5e1; background:#fff; color:#0f172a; font-weight:700; font-size:12.5px;">Bone / White</button>
+            </div>
+          </div>""" if prod.get("alt_image") else ""}
+          {f"""<div style="margin-bottom:12px;">
+            <div style="font-size:11.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#0f172a; margin-bottom:6px;">2. Select Shirt Blank / Material: <span id="staticBlankLabel" style="color:#ff4d1c;">{"3.8 oz Breathable Workout Tee" if dept == "Breathable Tech Shirts" else "6.1 oz Heavyweight Cotton"}</span></div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:8px;">
+              <button type="button" class="StaticBlankBtn" data-blank="6.1 oz Heavyweight Cotton" onclick="window.selectStaticBlank('6.1 oz Heavyweight Cotton',this)" style="cursor:pointer; text-align:left; padding:9px 12px; border-radius:8px; border:{'1.5px solid #cbd5e1' if dept == 'Breathable Tech Shirts' else '2px solid #0f172a'}; background:{'#fff' if dept == 'Breathable Tech Shirts' else '#0f172a'}; color:{'#0f172a' if dept == 'Breathable Tech Shirts' else '#fff'};">
+                <div style="font-weight:800; font-size:12.5px;">6.1 oz Heavyweight Cotton</div>
+                <div style="font-size:11px; opacity:0.82;">Structured garment-dyed street &amp; pump cover drape</div>
+              </button>
+              <button type="button" class="StaticBlankBtn" data-blank="3.8 oz Breathable Workout Tee" onclick="window.selectStaticBlank('3.8 oz Breathable Workout Tee',this)" style="cursor:pointer; text-align:left; padding:9px 12px; border-radius:8px; border:{'2px solid #0f172a' if dept == 'Breathable Tech Shirts' else '1.5px solid #cbd5e1'}; background:{'#0f172a' if dept == 'Breathable Tech Shirts' else '#fff'}; color:{'#fff' if dept == 'Breathable Tech Shirts' else '#0f172a'};">
+                <div style="font-weight:800; font-size:12.5px;">3.8 oz Breathable Workout Tee</div>
+                <div style="font-size:11px; opacity:0.82;">Sweat-wicking race &amp; turf training technical knit</div>
+              </button>
+            </div>
+          </div>""" if dept in ("Tees & Pump Covers", "Race City Editions", "Breathable Tech Shirts") else ""}
+          {f"""<div style="margin-bottom:14px;">
+            <div style="font-size:11.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#0f172a; margin-bottom:6px;">Select Size (Unisex Athletic Fit): <span id="staticSizeLabel" style="color:#ff4d1c;">L</span></div>
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              <button type="button" class="StaticSizeBtn" data-size="S" onclick="window.selectStaticSize('S',this)" style="cursor:pointer; min-width:44px; padding:8px 12px; border-radius:6px; border:1.5px solid #cbd5e1; background:#fff; color:#0f172a; font-weight:800; font-size:13px;">S</button>
+              <button type="button" class="StaticSizeBtn" data-size="M" onclick="window.selectStaticSize('M',this)" style="cursor:pointer; min-width:44px; padding:8px 12px; border-radius:6px; border:1.5px solid #cbd5e1; background:#fff; color:#0f172a; font-weight:800; font-size:13px;">M</button>
+              <button type="button" class="StaticSizeBtn" data-size="L" onclick="window.selectStaticSize('L',this)" style="cursor:pointer; min-width:44px; padding:8px 12px; border-radius:6px; border:2px solid #0f172a; background:#0f172a; color:#fff; font-weight:800; font-size:13px;">L</button>
+              <button type="button" class="StaticSizeBtn" data-size="XL" onclick="window.selectStaticSize('XL',this)" style="cursor:pointer; min-width:44px; padding:8px 12px; border-radius:6px; border:1.5px solid #cbd5e1; background:#fff; color:#0f172a; font-weight:800; font-size:13px;">XL</button>
+              <button type="button" class="StaticSizeBtn" data-size="2XL" onclick="window.selectStaticSize('2XL',this)" style="cursor:pointer; min-width:44px; padding:8px 12px; border-radius:6px; border:1.5px solid #cbd5e1; background:#fff; color:#0f172a; font-weight:800; font-size:13px;">2XL</button>
+            </div>
+          </div>""" if prod.get("has_sizes") else ""}
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <button type="button" id="staticBuyNowBtn" data-buy="{prod['id']}" onclick="window.launchStaticCheckout(this)" class="Btn Btn--BuyNow" style="flex:1.4; min-width:220px; padding:14px 20px; font-size:14.5px; font-weight:900; text-align:center; cursor:pointer; border:none;">Buy Now - Instant Checkout · ${price} →</button>
+            <a id="staticAddBagLink" href="../index.html?add={prod['id']}&size=L&color=Black" class="Btn Btn--Cart" style="flex:1; min-width:150px; padding:14px 18px; font-size:14px; font-weight:800; text-align:center;">Add to Bag · ${price}</a>
+          </div>
         </div>
         <p style="font-size:14.5px; color:#222; line-height:1.6; margin-bottom:14px;">{html.escape(short_desc)}</p>
         <h2 style="font-size:14px; text-transform:uppercase; letter-spacing:0.05em; color:#444; margin-bottom:6px;">Key Performance Specifications</h2>
@@ -313,7 +357,7 @@ def generate_product_pages():
       <p style="font-size:11.5px; color:#94a3b8; margin-top:8px;">Apex Hybrid &amp; Recovery Supply is an independent athletic &amp; recovery brand engineered for athletes competing in HYROX, DEKA, CrossFit, and functional fitness events. Not affiliated with or endorsed by HYROX World GmbH.</p>
     </div>
   <!-- Sticky HYROX10 + Free Printable Split Wristband + Gym Directory Conversion Bar -->
-  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:9990;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #ff4d1c;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
+  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:90;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #ff4d1c;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
     <div style="max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;font-size:12.5px;">
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
         <span style="background:#ff4d1c;color:#fff;font-weight:900;font-size:10.5px;padding:3px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.07em;">Race-Week Perks</span>
@@ -330,6 +374,116 @@ def generate_product_pages():
   </footer>
   <script>
   (function(){{
+    var prodId = {json.dumps(prod['id'])};
+    var prodVariants = {json.dumps(prod.get('fourthwall_variants', {}))};
+    var defaultVid = {json.dumps(prod.get('fourthwall_default_variant_id', ''))};
+    var fallbackUrl = {json.dumps(buy_href)};
+    var fwSlugs = {json.dumps(fw_slugs_map)};
+    var state = {{
+      color: "Black",
+      size: {json.dumps("L" if prod.get("has_sizes") else "One Size")},
+      blank: {json.dumps("3.8 oz Breathable Workout Tee" if dept == "Breathable Tech Shirts" else "6.1 oz Heavyweight Cotton")}
+    }};
+    function syncAddLink() {{
+      var addEl = document.getElementById("staticAddBagLink");
+      if (addEl) {{
+        addEl.setAttribute("href", "../index.html?add=" + encodeURIComponent(prodId) + "&size=" + encodeURIComponent(state.size) + "&color=" + encodeURIComponent(state.color) + "&blank=" + encodeURIComponent(state.blank));
+      }}
+    }}
+    window.selectStaticColor = function(c, imgSrc, btn) {{
+      state.color = c;
+      var img = document.getElementById("staticMainProdImg");
+      if (img && imgSrc) img.src = imgSrc;
+      var lbl = document.getElementById("staticColorLabel");
+      if (lbl) lbl.textContent = (c === "White" ? "Bone / White" : "Black");
+      var btns = document.querySelectorAll(".StaticColorBtn");
+      for (var i = 0; i < btns.length; i++) {{
+        var active = btns[i].getAttribute("data-color") === c;
+        btns[i].style.background = active ? "#0f172a" : "#fff";
+        btns[i].style.color = active ? "#fff" : "#0f172a";
+        btns[i].style.border = active ? "2px solid #0f172a" : "1.5px solid #cbd5e1";
+      }}
+      syncAddLink();
+    }};
+    window.selectStaticBlank = function(b, btn) {{
+      state.blank = b;
+      var lbl = document.getElementById("staticBlankLabel");
+      if (lbl) lbl.textContent = b;
+      var btns = document.querySelectorAll(".StaticBlankBtn");
+      for (var i = 0; i < btns.length; i++) {{
+        var active = btns[i].getAttribute("data-blank") === b;
+        btns[i].style.background = active ? "#0f172a" : "#fff";
+        btns[i].style.color = active ? "#fff" : "#0f172a";
+        btns[i].style.border = active ? "2px solid #0f172a" : "1.5px solid #cbd5e1";
+      }}
+      syncAddLink();
+    }};
+    window.selectStaticSize = function(s, btn) {{
+      state.size = s;
+      var lbl = document.getElementById("staticSizeLabel");
+      if (lbl) lbl.textContent = s;
+      var btns = document.querySelectorAll(".StaticSizeBtn");
+      for (var i = 0; i < btns.length; i++) {{
+        var active = btns[i].getAttribute("data-size") === s;
+        btns[i].style.background = active ? "#0f172a" : "#fff";
+        btns[i].style.color = active ? "#fff" : "#0f172a";
+        btns[i].style.border = active ? "2px solid #0f172a" : "1.5px solid #cbd5e1";
+      }}
+      syncAddLink();
+    }};
+    function getSelectedVariantId() {{
+      var byColor = prodVariants[state.color] || prodVariants["Black"] || prodVariants["Default"] || {{}};
+      return byColor[state.size] || byColor["L"] || byColor["One Size"] || defaultVid;
+    }}
+    function redirectFourthwallVariant(vid, triggerEl, fbHref) {{
+      if (!vid) {{
+        window.location.href = fbHref || fallbackUrl;
+        return;
+      }}
+      var prevText = triggerEl ? triggerEl.textContent : "";
+      if (triggerEl) {{
+        triggerEl.style.opacity = "0.75";
+        triggerEl.textContent = "Opening Secure Checkout…";
+      }}
+      fetch("https://apex-hybrid-co-shop.fourthwall.com/cart/add.js", {{
+        method: "POST",
+        headers: {{ "Content-Type": "application/json" }},
+        body: JSON.stringify({{ items: [{{ id: vid, quantity: 1 }}] }})
+      }}).then(function(r){{ return r.json(); }}).then(function(d){{
+        var cid = d && d.cart && d.cart.id;
+        if (!cid) throw new Error("no_cart");
+        return fetch("https://apex-hybrid-co-shop.fourthwall.com/api/v2/checkout/cart", {{
+          method: "POST",
+          headers: {{ "Content-Type": "application/json" }},
+          body: JSON.stringify({{ cartId: cid, cartCurrency: "USD" }})
+        }});
+      }}).then(function(r){{ return r.json(); }}).then(function(chk){{
+        if (chk && chk.id) {{
+          window.location.href = "https://apex-hybrid-co-shop.fourthwall.com/checkout/" + encodeURIComponent(chk.id);
+        }} else {{
+          window.location.href = fbHref || fallbackUrl;
+        }}
+      }}).catch(function(){{
+        if (triggerEl) {{
+          triggerEl.textContent = prevText;
+          triggerEl.style.opacity = "1";
+        }}
+        window.location.href = fbHref || fallbackUrl;
+      }});
+    }}
+    window.launchStaticCheckout = function(btn) {{
+      redirectFourthwallVariant(getSelectedVariantId(), btn, fallbackUrl);
+    }};
+    document.addEventListener("click", function(ev){{
+      var link = ev.target && ev.target.closest ? ev.target.closest('a[href*="apex-hybrid-co-shop.fourthwall.com/products/"]') : null;
+      if (!link) return;
+      var href = link.getAttribute("href") || "";
+      var slug = href.split("?")[0].replace(/\/+$/, "").split("/").pop();
+      var vid = getSelectedVariantId() || fwSlugs[slug];
+      if (!vid) return;
+      ev.preventDefault();
+      redirectFourthwallVariant(vid, link, href);
+    }});
     try {{
       var isBot = /bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent || "");
       var ns = "https://abacus.jasoncameron.dev/hit/apexhybridco.com";
@@ -337,13 +491,6 @@ def generate_product_pages():
       hit("pageviews_total");
       hit("product_views_total");
       hit("view_{prod['id']}");
-      document.addEventListener("click", function(e){{
-        var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
-        if (!a) return;
-        var h = a.getAttribute("href") || "";
-        if (h.indexOf("buy=") !== -1 || h.indexOf("fourthwall.com") !== -1) {{ hit("checkout_clicks_total"); hit("checkout_{prod['id']}"); }}
-        else if (h.indexOf("add=") !== -1) {{ hit("cart_add_total"); hit("cart_add_{prod['id']}"); }}
-      }});
     }} catch (_) {{}}
   }})();
   </script>
@@ -595,7 +742,7 @@ def generate_article_pages():
       <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#ff6a3d;">apexhybridco@gmail.com</a> · Athlete Support: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
     </div>
   <!-- Sticky HYROX10 + Free Printable Split Wristband + Gym Directory Conversion Bar -->
-  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:9990;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #ff4d1c;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
+  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:90;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #ff4d1c;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
     <div style="max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;font-size:12.5px;">
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
         <span style="background:#ff4d1c;color:#fff;font-weight:900;font-size:10.5px;padding:3px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.07em;">Race-Week Perks</span>
@@ -612,19 +759,48 @@ def generate_article_pages():
   </footer>
   <script>
   (function(){{
+    var fwSlugs = {json.dumps(fw_slugs_map)};
+    document.addEventListener("click", function(ev){{
+      var link = ev.target && ev.target.closest ? ev.target.closest('a[href*="apex-hybrid-co-shop.fourthwall.com/products/"]') : null;
+      if (!link) return;
+      var href = link.getAttribute("href") || "";
+      var slug = href.split("?")[0].replace(/\/+$/, "").split("/").pop();
+      var vid = fwSlugs[slug];
+      if (!vid) return;
+      ev.preventDefault();
+      var prevText = link.textContent;
+      link.style.opacity = "0.75";
+      link.textContent = "Opening Secure Checkout…";
+      fetch("https://apex-hybrid-co-shop.fourthwall.com/cart/add.js", {{
+        method: "POST",
+        headers: {{ "Content-Type": "application/json" }},
+        body: JSON.stringify({{ items: [{{ id: vid, quantity: 1 }}] }})
+      }}).then(function(r){{ return r.json(); }}).then(function(d){{
+        var cid = d && d.cart && d.cart.id;
+        if (!cid) throw new Error("no_cart");
+        return fetch("https://apex-hybrid-co-shop.fourthwall.com/api/v2/checkout/cart", {{
+          method: "POST",
+          headers: {{ "Content-Type": "application/json" }},
+          body: JSON.stringify({{ cartId: cid, cartCurrency: "USD" }})
+        }});
+      }}).then(function(r){{ return r.json(); }}).then(function(chk){{
+        if (chk && chk.id) {{
+          window.location.href = "https://apex-hybrid-co-shop.fourthwall.com/checkout/" + encodeURIComponent(chk.id);
+        }} else {{
+          window.location.href = href;
+        }}
+      }}).catch(function(){{
+        link.textContent = prevText;
+        link.style.opacity = "1";
+        window.location.href = href;
+      }});
+    }});
     try {{
       var isBot = /bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent || "");
       var ns = "https://abacus.jasoncameron.dev/hit/apexhybridco.com";
       var hit = function(k){{ if (!isBot) fetch(ns + "/" + k, {{method:"GET", mode:"cors", keepalive:true, cache:"no-store"}}).catch(function(){{}}); }};
       hit("pageviews_total");
       hit("article_views_total");
-      document.addEventListener("click", function(e){{
-        var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
-        if (!a) return;
-        var h = a.getAttribute("href") || "";
-        if (h.indexOf("buy=") !== -1 || h.indexOf("fourthwall.com") !== -1) hit("checkout_clicks_total");
-        else if (h.indexOf("add=") !== -1) hit("cart_add_total");
-      }});
     }} catch (_) {{}}
   }})();
   </script>
@@ -694,7 +870,7 @@ def generate_article_pages():
       <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
     </div>
   <!-- Sticky HYROX10 + Free Printable Split Wristband + Gym Directory Conversion Bar -->
-  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:9990;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #ff4d1c;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
+  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:90;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #ff4d1c;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
     <div style="max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;font-size:12.5px;">
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
         <span style="background:#ff4d1c;color:#fff;font-weight:900;font-size:10.5px;padding:3px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.07em;">Race-Week Perks</span>
