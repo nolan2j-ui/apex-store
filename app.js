@@ -540,13 +540,13 @@ function openProduct(sku) {
         ${blankSelector}
         ${swatches}
         ${sizes}
+        <div class="Card__actions" style="margin-top:14px;margin-bottom:14px">
+          <button class="Btn Btn--cobalt" type="button" data-buy="${p.id}" style="font-weight:800">${esc(buyBtnLabel)} · ${money(p.retail_price)} →</button>
+          <button class="Btn Btn--bone" type="button" data-add="${p.id}">Add to bag</button>
+        </div>
         <p style="margin-top:10px">${esc(p.short_desc || "")}</p>
         <ul class="Highlights">${(p.highlights || []).map((h) => `<li>${esc(h)}</li>`).join("")}</ul>
         ${p.review_quote ? `<blockquote class="Quote">${esc(p.review_quote)}</blockquote>` : ""}
-        <div class="Card__actions" style="margin-top:16px">
-          <button class="Btn Btn--bone" type="button" data-add="${p.id}">Add to bag</button>
-          <button class="Btn Btn--cobalt" type="button" data-buy="${p.id}">${esc(buyBtnLabel)}</button>
-        </div>
       </div>
     </div>`;
   openSheet("productModal");
