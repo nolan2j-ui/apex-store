@@ -340,9 +340,9 @@
   <script>
   (function(){
     try {
-      if (/bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent || "")) return;
+      var isBot = /bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent || "");
       var ns = "https://abacus.jasoncameron.dev/hit/apexhybridco.com";
-      var hit = function(k){ fetch(ns + "/" + k, {method:"GET", mode:"cors", keepalive:true, cache:"no-store"}).catch(function(){}); };
+      var hit = function(k){ if (!isBot) fetch(ns + "/" + k, {method:"GET", mode:"cors", keepalive:true, cache:"no-store"}).catch(function(){}); };
       hit("pageviews_total");
       hit("product_views_total");
       hit("view_APC-C28");
