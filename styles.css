@@ -1420,3 +1420,15 @@ body.is-locked #apexStickyPromoBar {
   pointer-events: none;
   opacity: 0.25;
 }
+
+@media (max-width: 760px) {
+  #apexStickyPromoBar { padding: 6px 10px !important; }
+  #apexStickyPromoBar > div { gap: 4px 8px !important; font-size: 11px !important; }
+  #apexStickyPromoBar > div > div:nth-child(2) { display: none !important; }
+  .Hero__copy { padding: 26px 18px 22px !important; gap: 14px !important; }
+  .Hero__season { font-size: 54px !important; }
+  .Hero h1 { font-size: 36px !important; line-height: 0.96 !important; }
+  .Hero .Dek { margin-top: 12px !important; font-size: 14.5px !important; }
+  .Hero__cta { margin-top: 16px !important; }
+  .Hero__notes { margin-top: 14px !important; font-size: 12px !important; gap: 10px !important; }
+}
