@@ -1172,13 +1172,13 @@ h1, h2, h3, p { margin: 0; }
   border-radius: 8px;
   background: #0d1017;
   color: #ffffff;
-  border: 1.5px solid #ff4d1c;
+  border: 1.5px solid #0066ff;
   box-shadow: 0 2px 8px rgba(13, 16, 23, 0.14);
   flex-shrink: 0;
 }
 .SiteFooter .Wordmark__logo {
   background: #151b26;
-  border-color: #ff4d1c;
+  border-color: #0066ff;
 }
 .Hero .Shot {
   aspect-ratio: 4 / 5;
@@ -1320,7 +1320,7 @@ h1, h2, h3, p { margin: 0; }
   gap: 8px;
 }
 .BrandLogo__Mark {
-  background: #ff4d1c;
+  background: #0066ff;
   color: #ffffff !important;
   padding: 3px 8px;
   border-radius: 4px;
@@ -1356,7 +1356,7 @@ h1, h2, h3, p { margin: 0; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #ff4d1c !important;
+  background: #0066ff !important;
   color: #ffffff !important;
   font-weight: 800;
   padding: 12px 20px;
@@ -1400,7 +1400,7 @@ h1, h2, h3, p { margin: 0; }
 }
 .ReviewSnippetBox {
   background: #f8fafc;
-  border-left: 4px solid #ff4d1c;
+  border-left: 4px solid #0066ff;
   padding: 12px 16px;
   border-radius: 8px;
   color: #1e293b;

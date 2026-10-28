@@ -223,8 +223,8 @@ def generate_product_pages():
 
   <main class="Container" style="padding:28px 20px 60px;">
     <nav aria-label="Breadcrumb" style="font-size:12.5px; color:#555; margin-bottom:18px;">
-      <a href="../index.html" style="color:#ff4d1c; font-weight:700;">Home</a> ›
-      <a href="../index.html?dept={html.escape(dept)}" style="color:#ff4d1c; font-weight:700;">{html.escape(dept)}</a> ›
+      <a href="../index.html" style="color:#0066ff; font-weight:700;">Home</a> ›
+      <a href="../index.html?dept={html.escape(dept)}" style="color:#0066ff; font-weight:700;">{html.escape(dept)}</a> ›
       <span>{html.escape(title)}</span>
     </nav>
 
@@ -232,7 +232,7 @@ def generate_product_pages():
       <div class="ProdModalMedia" style="display:flex; flex-direction:column; gap:12px;">
         <img id="staticMainProdImg" src="../{prod['image']}" alt="{html.escape(seo_title)}" style="width:100%; border-radius:10px; object-fit:contain; max-height:480px; background:#0b0f17;" />
         {f'''<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-          <button type="button" onclick="document.getElementById('staticMainProdImg').src='../{prod['image']}'" style="cursor:pointer; border:2px solid #ff4d1c; border-radius:8px; padding:6px; background:#0f172a; color:#fff; display:flex; align-items:center; gap:8px; font-weight:700; font-size:12.5px;">
+          <button type="button" onclick="document.getElementById('staticMainProdImg').src='../{prod['image']}'" style="cursor:pointer; border:2px solid #0066ff; border-radius:8px; padding:6px; background:#0f172a; color:#fff; display:flex; align-items:center; gap:8px; font-weight:700; font-size:12.5px;">
             <img src="../{prod['image']}" alt="{html.escape(title)}  -  Primary View" style="width:48px; height:48px; object-fit:cover; border-radius:4px;" />
             <span>1. Black Edition (Front Crest)</span>
           </button>
@@ -243,7 +243,7 @@ def generate_product_pages():
         </div>''' if prod.get("alt_image") else ""}
       </div>
       <div>
-        <div style="font-size:11.5px; font-weight:800; color:#ff4d1c; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:6px;">
+        <div style="font-size:11.5px; font-weight:800; color:#0066ff; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:6px;">
           {html.escape(dept)} · {html.escape(prod['category'])}
         </div>
         <h1 style="font-size:24px; line-height:1.25; margin-bottom:10px;">{html.escape(title)}</h1>
@@ -264,14 +264,14 @@ def generate_product_pages():
         </div>
         <div id="staticVariantBox" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:14px 16px; margin-bottom:16px;">
           {f"""<div style="margin-bottom:12px;">
-            <div style="font-size:11.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#0f172a; margin-bottom:6px;">1. Select Colorway: <span id="staticColorLabel" style="color:#ff4d1c;">Black</span></div>
+            <div style="font-size:11.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#0f172a; margin-bottom:6px;">1. Select Colorway: <span id="staticColorLabel" style="color:#0066ff;">Black</span></div>
             <div style="display:flex; gap:8px; flex-wrap:wrap;">
               <button type="button" class="StaticColorBtn" data-color="Black" onclick="window.selectStaticColor('Black','../{prod['image']}',this)" style="cursor:pointer; padding:7px 14px; border-radius:6px; border:2px solid #0f172a; background:#0f172a; color:#fff; font-weight:800; font-size:12.5px;">Black</button>
               <button type="button" class="StaticColorBtn" data-color="White" onclick="window.selectStaticColor('White','../{prod.get('alt_image') or prod['image']}',this)" style="cursor:pointer; padding:7px 14px; border-radius:6px; border:1.5px solid #cbd5e1; background:#fff; color:#0f172a; font-weight:700; font-size:12.5px;">Bone / White</button>
             </div>
           </div>""" if prod.get("alt_image") else ""}
           {f"""<div style="margin-bottom:12px;">
-            <div style="font-size:11.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#0f172a; margin-bottom:6px;">2. Select Shirt Blank / Material: <span id="staticBlankLabel" style="color:#ff4d1c;">{"3.8 oz Breathable Workout Tee" if dept == "Breathable Tech Shirts" else "6.1 oz Heavyweight Cotton"}</span></div>
+            <div style="font-size:11.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#0f172a; margin-bottom:6px;">2. Select Shirt Blank / Material: <span id="staticBlankLabel" style="color:#0066ff;">{"3.8 oz Breathable Workout Tee" if dept == "Breathable Tech Shirts" else "6.1 oz Heavyweight Cotton"}</span></div>
             <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:8px;">
               <button type="button" class="StaticBlankBtn" data-blank="6.1 oz Heavyweight Cotton" onclick="window.selectStaticBlank('6.1 oz Heavyweight Cotton',this)" style="cursor:pointer; text-align:left; padding:9px 12px; border-radius:8px; border:{'1.5px solid #cbd5e1' if dept == 'Breathable Tech Shirts' else '2px solid #0f172a'}; background:{'#fff' if dept == 'Breathable Tech Shirts' else '#0f172a'}; color:{'#0f172a' if dept == 'Breathable Tech Shirts' else '#fff'};">
                 <div style="font-weight:800; font-size:12.5px;">6.1 oz Heavyweight Cotton</div>
@@ -284,7 +284,7 @@ def generate_product_pages():
             </div>
           </div>""" if dept in ("Tees & Pump Covers", "Race City Editions", "Breathable Tech Shirts") else ""}
           {f"""<div style="margin-bottom:14px;">
-            <div style="font-size:11.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#0f172a; margin-bottom:6px;">Select Size (Unisex Athletic Fit): <span id="staticSizeLabel" style="color:#ff4d1c;">L</span></div>
+            <div style="font-size:11.5px; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:#0f172a; margin-bottom:6px;">Select Size (Unisex Athletic Fit): <span id="staticSizeLabel" style="color:#0066ff;">L</span></div>
             <div style="display:flex; gap:8px; flex-wrap:wrap;">
               <button type="button" class="StaticSizeBtn" data-size="S" onclick="window.selectStaticSize('S',this)" style="cursor:pointer; min-width:44px; padding:8px 12px; border-radius:6px; border:1.5px solid #cbd5e1; background:#fff; color:#0f172a; font-weight:800; font-size:13px;">S</button>
               <button type="button" class="StaticSizeBtn" data-size="M" onclick="window.selectStaticSize('M',this)" style="cursor:pointer; min-width:44px; padding:8px 12px; border-radius:6px; border:1.5px solid #cbd5e1; background:#fff; color:#0f172a; font-weight:800; font-size:13px;">M</button>
@@ -315,14 +315,14 @@ def generate_product_pages():
           <a href="../index.html?add={prod['id']}" class="Btn Btn--Cart" style="padding:13px 22px; font-size:14px; text-align:center;">Add to Bag  -  ${price}</a>
           <a href="{buy_href}" class="Btn Btn--BuyNow" style="padding:13px 22px; font-size:14px; text-align:center;">{main_buy_label}</a>
         </div>
-        <div style="margin-top:16px;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:#f8fafc;border:1.5px solid #ff4d1c;border-radius:10px;padding:14px 16px;">
+        <div style="margin-top:16px;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:#f8fafc;border:1.5px solid #0066ff;border-radius:10px;padding:14px 16px;">
           <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:6px;">
-            <span style="font-size:11px;font-weight:900;text-transform:uppercase;color:#ff6a3d;letter-spacing:0.06em;">⚡ 2026 Race-Week Express US Dispatch (Chicago · Dallas · Anaheim)</span>
+            <span style="font-size:11px;font-weight:900;text-transform:uppercase;color:#38bdf8;letter-spacing:0.06em;">⚡ 2026 Race-Week Express US Dispatch (Chicago · Dallas · Anaheim)</span>
             <span style="font-size:11.5px;color:#4ade80;font-weight:800;">✓ 2–4 Day US Delivery</span>
           </div>
           <p style="font-size:12.5px;color:#cbd5e1;margin:0 0 10px;line-height:1.45;">Take <strong>10% OFF single items</strong> with code <code style="background:#334155;color:#38bdf8;padding:1px 6px;border-radius:4px;font-weight:900;">HYROX10</code> or <strong>15% OFF Doubles 2-Packs &amp; Relay 4-Packs</strong> with code <code style="background:#334155;color:#4ade80;padding:1px 6px;border-radius:4px;font-weight:900;">TEAM15</code>.</p>
           <div style="display:flex;gap:8px;flex-wrap:wrap;">
-            <a href="../team_orders.html" style="background:#ff4d1c;color:#fff;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:800;">Shop Doubles 2-Packs (15% Off) →</a>
+            <a href="../team_orders.html" style="background:#0066ff;color:#fff;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:800;">Shop Doubles 2-Packs (15% Off) →</a>
             <a href="../wristband.html" style="background:#0f172a;border:1px solid #475569;color:#fff;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:800;">⏱️ Free Printable Split Wristband</a>
             <a href="../gyms/index.html" style="background:#0f172a;border:1px solid #475569;color:#38bdf8;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:800;">🏋️ HYROX Gym Finder (72 Hubs)</a>
           </div>
@@ -341,7 +341,7 @@ def generate_product_pages():
       <h2 style="font-size:18px; margin-bottom:12px;">Related HYROX Training, Pacing &amp; Recovery Buyer Guides</h2>
       <ul style="padding-left:20px; line-height:1.9; font-size:14px;">
         {chr(10).join(
-            f'<li><a href="../articles/{g["slug"]}.html" style="color:#ff4d1c; font-weight:700;">{html.escape(g["title"])}</a>  -  <span style="color:#475569;">{html.escape(g["category"])} ({html.escape(g["read_time"])})</span></li>'
+            f'<li><a href="../articles/{g["slug"]}.html" style="color:#0066ff; font-weight:700;">{html.escape(g["title"])}</a>  -  <span style="color:#475569;">{html.escape(g["category"])} ({html.escape(g["read_time"])})</span></li>'
             for g in (
                 [x for x in guides if prod["id"] in x.get("recommended_skus", [])]
                 + [x for x in guides if prod["id"] not in x.get("recommended_skus", [])]
@@ -353,19 +353,19 @@ def generate_product_pages():
 
   <footer class="SiteFooter">
     <div class="Container">
-      <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#ff6a3d;">apexhybridco@gmail.com</a> · Athlete Support: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
+      <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#38bdf8;">apexhybridco@gmail.com</a> · Athlete Support: <a href="tel:+19498054935" style="color:#38bdf8;">(949) 805-4935</a> · <a href="../index.html" style="color:#38bdf8;">Return to Storefront</a></p>
       <p style="font-size:11.5px; color:#94a3b8; margin-top:8px;">Apex Hybrid &amp; Recovery Supply is an independent athletic &amp; recovery brand engineered for athletes competing in HYROX, DEKA, CrossFit, and functional fitness events. Not affiliated with or endorsed by HYROX World GmbH.</p>
     </div>
   <!-- Sticky HYROX10 + Free Printable Split Wristband + Gym Directory Conversion Bar -->
-  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:90;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #ff4d1c;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
+  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:90;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #0066ff;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
     <div style="max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;font-size:12.5px;">
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-        <span style="background:#ff4d1c;color:#fff;font-weight:900;font-size:10.5px;padding:3px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.07em;">Race-Week Perks</span>
+        <span style="background:#0066ff;color:#fff;font-weight:900;font-size:10.5px;padding:3px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.07em;">Race-Week Perks</span>
         <span>Take <strong>10% OFF</strong> single items (<code style="background:#334155;color:#38bdf8;padding:2px 6px;border-radius:4px;font-weight:900;">HYROX10</code>) or <strong>15% OFF</strong> Doubles 2-Packs (<code style="background:#334155;color:#4ade80;padding:2px 6px;border-radius:4px;font-weight:900;">TEAM15</code>)</span>
         <button type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('HYROX10');this.textContent='✓ Copied HYROX10!';this.style.background='#16a34a';" style="cursor:pointer;background:#38bdf8;color:#0f172a;border:none;border-radius:5px;padding:4px 10px;font-weight:900;font-size:11.5px;">Copy HYROX10</button>
       </div>
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-        <a href="../wristband.html" style="background:#ff4d1c;color:#fff;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:800;font-size:12px;">⏱️ Free Printable Split Wristband →</a>
+        <a href="../wristband.html" style="background:#0066ff;color:#fff;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:800;font-size:12px;">⏱️ Free Printable Split Wristband →</a>
         <a href="../gyms/index.html" style="background:#1e293b;border:1px solid #475569;color:#e2e8f0;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:700;font-size:12px;">🏋️ HYROX Gym Directory (72 Hubs)</a>
         <a href="../team_orders.html" style="color:#38bdf8;text-decoration:none;font-weight:800;font-size:12px;">Doubles 2-Packs →</a>
       </div>
@@ -601,7 +601,7 @@ def generate_article_pages():
               </div>
             </div>
             <div style="display:flex;gap:6px;flex-shrink:0;align-items:center;">
-              <a href="{p.get('fourthwall_product_url') or ('../index.html?buy=' + p['id'])}" class="Btn Btn--BuyNow" style="width:auto;padding:8px 14px;font-size:12.5px;font-weight:800;background:#ff4d1c;color:#fff;border-radius:6px;text-decoration:none;">Buy Now  -  ${p['retail_price']:.2f} (Free US Shipping)</a>
+              <a href="{p.get('fourthwall_product_url') or ('../index.html?buy=' + p['id'])}" class="Btn Btn--BuyNow" style="width:auto;padding:8px 14px;font-size:12.5px;font-weight:800;background:#0066ff;color:#fff;border-radius:6px;text-decoration:none;">Buy Now  -  ${p['retail_price']:.2f} (Free US Shipping)</a>
               <a href="../index.html?add={p['id']}" class="Btn Btn--Cart" style="width:auto;padding:8px 10px;font-size:12px;font-weight:700;background:#334155;color:#fff;border-radius:6px;text-decoration:none;">+ Add to Bag</a>
             </div>
           </div>"""
@@ -628,7 +628,7 @@ def generate_article_pages():
                 </div>
               </div>
               <div style="padding:0 14px 14px;display:flex;flex-direction:column;gap:6px;">
-                <a href="{p.get('fourthwall_product_url') or ('../index.html?buy=' + p['id'])}" class="Btn Btn--BuyNow" style="text-align:center;padding:10px 12px;font-weight:800;font-size:13px;background:#ff4d1c;color:#fff;border-radius:7px;text-decoration:none;">Buy Now  -  ${p['retail_price']:.2f} (Free Shipping)</a>
+                <a href="{p.get('fourthwall_product_url') or ('../index.html?buy=' + p['id'])}" class="Btn Btn--BuyNow" style="text-align:center;padding:10px 12px;font-weight:800;font-size:13px;background:#0066ff;color:#fff;border-radius:7px;text-decoration:none;">Buy Now  -  ${p['retail_price']:.2f} (Free Shipping)</a>
                 <div style="display:flex;gap:6px;">
                   <a href="../index.html?add={p['id']}" class="Btn Btn--Cart" style="flex:1;text-align:center;padding:8px;font-size:12.5px;background:#0f172a;color:#fff;border-radius:6px;text-decoration:none;">+ Add to Bag</a>
                   <a href="../products/{p['handle']}.html" class="Btn Btn--QuickView" style="padding:8px 10px;font-size:12.5px;border:1px solid #cbd5e1;border-radius:6px;text-decoration:none;color:#0f172a;font-weight:700;">Specs</a>
@@ -640,7 +640,7 @@ def generate_article_pages():
         )
 
         other_articles_html = "\n".join(
-            f'<li><a href="{a["slug"]}.html" style="color:#ff4d1c; font-weight:700;">{html.escape(a["title"])}</a> <span style="color:#666;">({a["read_time"]})</span></li>'
+            f'<li><a href="{a["slug"]}.html" style="color:#0066ff; font-weight:700;">{html.escape(a["title"])}</a> <span style="color:#666;">({a["read_time"]})</span></li>'
             for a in guides
             if a["slug"] != slug
         )
@@ -689,28 +689,28 @@ def generate_article_pages():
     <article style="background:#fff; border:1px solid #e4e6eb; border-radius:12px; padding:32px;">
       <div class="ArticleEyebrow">{html.escape(cat)} · {html.escape(art['read_time'])} · Free 2–4 Day US Shipping</div>
       <h1 style="font-size:28px; line-height:1.22; margin:8px 0 14px;">{html.escape(title)}</h1>
-      <p style="font-size:16px; color:#444; border-left:3px solid #ff4d1c; padding-left:14px; margin-bottom:20px;">
+      <p style="font-size:16px; color:#444; border-left:3px solid #0066ff; padding-left:14px; margin-bottom:20px;">
         {html.escape(summary)}
       </p>
 
       <!-- Top Quick-Buy Express Checkout Strip -->
       <section aria-label="Express 1-Click Checkout" style="background:#0f172a;color:#fff;padding:16px 18px;border-radius:10px;margin-bottom:26px;">
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
-          <span style="font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:0.08em;color:#ff6a3d;">⚡ Featured Gear In This Guide  -  Instant 1-Click Checkout</span>
+          <span style="font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:0.08em;color:#38bdf8;">⚡ Featured Gear In This Guide  -  Instant 1-Click Checkout</span>
           <span style="font-size:12px;color:#cbd5e1;">Bundle 2+ Items: Use Code <strong style="color:#fff;">TEAM15</strong> for 15% Off + Free US Shipping</span>
         </div>
         <div style="display:grid;gap:8px;">
 {top_strip_pills}
         </div>
       </section>
-        <div style="margin-top:16px;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:#f8fafc;border:1.5px solid #ff4d1c;border-radius:10px;padding:14px 16px;">
+        <div style="margin-top:16px;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:#f8fafc;border:1.5px solid #0066ff;border-radius:10px;padding:14px 16px;">
           <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:6px;">
-            <span style="font-size:11px;font-weight:900;text-transform:uppercase;color:#ff6a3d;letter-spacing:0.06em;">⚡ 2026 Race-Week Express US Dispatch (Chicago · Dallas · Anaheim)</span>
+            <span style="font-size:11px;font-weight:900;text-transform:uppercase;color:#38bdf8;letter-spacing:0.06em;">⚡ 2026 Race-Week Express US Dispatch (Chicago · Dallas · Anaheim)</span>
             <span style="font-size:11.5px;color:#4ade80;font-weight:800;">✓ 2–4 Day US Delivery</span>
           </div>
           <p style="font-size:12.5px;color:#cbd5e1;margin:0 0 10px;line-height:1.45;">Take <strong>10% OFF single items</strong> with code <code style="background:#334155;color:#38bdf8;padding:1px 6px;border-radius:4px;font-weight:900;">HYROX10</code> or <strong>15% OFF Doubles 2-Packs &amp; Relay 4-Packs</strong> with code <code style="background:#334155;color:#4ade80;padding:1px 6px;border-radius:4px;font-weight:900;">TEAM15</code>.</p>
           <div style="display:flex;gap:8px;flex-wrap:wrap;">
-            <a href="../team_orders.html" style="background:#ff4d1c;color:#fff;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:800;">Shop Doubles 2-Packs (15% Off) →</a>
+            <a href="../team_orders.html" style="background:#0066ff;color:#fff;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:800;">Shop Doubles 2-Packs (15% Off) →</a>
             <a href="../wristband.html" style="background:#0f172a;border:1px solid #475569;color:#fff;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:800;">⏱️ Free Printable Split Wristband</a>
             <a href="../gyms/index.html" style="background:#0f172a;border:1px solid #475569;color:#38bdf8;text-decoration:none;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:800;">🏋️ HYROX Gym Finder (72 Hubs)</a>
           </div>
@@ -739,18 +739,18 @@ def generate_article_pages():
 
   <footer class="SiteFooter">
     <div class="Container">
-      <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#ff6a3d;">apexhybridco@gmail.com</a> · Athlete Support: <a href="tel:+19498054935" style="color:#ff6a3d;">(949) 805-4935</a> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
+      <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · 8420 Spectrum, Irvine, CA 92618 · Support: <a href="mailto:apexhybridco@gmail.com" style="color:#38bdf8;">apexhybridco@gmail.com</a> · Athlete Support: <a href="tel:+19498054935" style="color:#38bdf8;">(949) 805-4935</a> · <a href="../index.html" style="color:#38bdf8;">Return to Storefront</a></p>
     </div>
   <!-- Sticky HYROX10 + Free Printable Split Wristband + Gym Directory Conversion Bar -->
-  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:90;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #ff4d1c;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
+  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:90;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #0066ff;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
     <div style="max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;font-size:12.5px;">
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-        <span style="background:#ff4d1c;color:#fff;font-weight:900;font-size:10.5px;padding:3px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.07em;">Race-Week Perks</span>
+        <span style="background:#0066ff;color:#fff;font-weight:900;font-size:10.5px;padding:3px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.07em;">Race-Week Perks</span>
         <span>Take <strong>10% OFF</strong> single items (<code style="background:#334155;color:#38bdf8;padding:2px 6px;border-radius:4px;font-weight:900;">HYROX10</code>) or <strong>15% OFF</strong> Doubles 2-Packs (<code style="background:#334155;color:#4ade80;padding:2px 6px;border-radius:4px;font-weight:900;">TEAM15</code>)</span>
         <button type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('HYROX10');this.textContent='✓ Copied HYROX10!';this.style.background='#16a34a';" style="cursor:pointer;background:#38bdf8;color:#0f172a;border:none;border-radius:5px;padding:4px 10px;font-weight:900;font-size:11.5px;">Copy HYROX10</button>
       </div>
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-        <a href="../wristband.html" style="background:#ff4d1c;color:#fff;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:800;font-size:12px;">⏱️ Free Printable Split Wristband →</a>
+        <a href="../wristband.html" style="background:#0066ff;color:#fff;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:800;font-size:12px;">⏱️ Free Printable Split Wristband →</a>
         <a href="../gyms/index.html" style="background:#1e293b;border:1px solid #475569;color:#e2e8f0;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:700;font-size:12px;">🏋️ HYROX Gym Directory (72 Hubs)</a>
         <a href="../team_orders.html" style="color:#38bdf8;text-decoration:none;font-weight:800;font-size:12px;">Doubles 2-Packs →</a>
       </div>
@@ -822,7 +822,7 @@ def generate_article_pages():
     hub_cards = "\n".join(
         f'''        <article class="GuideCard" style="background:#fff; border:1px solid #e4e6eb; border-radius:10px; padding:20px; display:flex; flex-direction:column; justify-content:space-between;">
           <div>
-            <div class="GuideCard__Cat" style="font-size:11.5px; font-weight:800; color:#ff4d1c; text-transform:uppercase; margin-bottom:6px;">{html.escape(g["category"])}</div>
+            <div class="GuideCard__Cat" style="font-size:11.5px; font-weight:800; color:#0066ff; text-transform:uppercase; margin-bottom:6px;">{html.escape(g["category"])}</div>
             <h2 style="font-size:17px; line-height:1.35; margin-bottom:8px;"><a href="{g["slug"]}.html" style="color:#0f172a; text-decoration:none;">{html.escape(g["title"])}</a></h2>
             <p style="font-size:13.5px; color:#475569; line-height:1.55;">{html.escape(g["summary"])}</p>
           </div>
@@ -867,18 +867,18 @@ def generate_article_pages():
   </main>
   <footer class="SiteFooter">
     <div class="Container">
-      <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · <a href="../index.html" style="color:#ff6a3d;">Return to Storefront</a></p>
+      <p><strong>Apex Hybrid &amp; Recovery Supply (Apex Hybrid Co.)</strong> · <a href="../index.html" style="color:#38bdf8;">Return to Storefront</a></p>
     </div>
   <!-- Sticky HYROX10 + Free Printable Split Wristband + Gym Directory Conversion Bar -->
-  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:90;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #ff4d1c;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
+  <div id="apexStickyPromoBar" style="position:fixed;bottom:0;left:0;right:0;z-index:90;background:linear-gradient(90deg,#0f172a 0%,#1e293b 55%,#0f172a 100%);color:#f8fafc;border-top:2px solid #0066ff;padding:9px 14px;box-shadow:0 -6px 24px rgba(0,0,0,0.38);font-family:system-ui,-apple-system,sans-serif;">
     <div style="max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;font-size:12.5px;">
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-        <span style="background:#ff4d1c;color:#fff;font-weight:900;font-size:10.5px;padding:3px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.07em;">Race-Week Perks</span>
+        <span style="background:#0066ff;color:#fff;font-weight:900;font-size:10.5px;padding:3px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:0.07em;">Race-Week Perks</span>
         <span>Take <strong>10% OFF</strong> single items (<code style="background:#334155;color:#38bdf8;padding:2px 6px;border-radius:4px;font-weight:900;">HYROX10</code>) or <strong>15% OFF</strong> Doubles 2-Packs (<code style="background:#334155;color:#4ade80;padding:2px 6px;border-radius:4px;font-weight:900;">TEAM15</code>)</span>
         <button type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('HYROX10');this.textContent='✓ Copied HYROX10!';this.style.background='#16a34a';" style="cursor:pointer;background:#38bdf8;color:#0f172a;border:none;border-radius:5px;padding:4px 10px;font-weight:900;font-size:11.5px;">Copy HYROX10</button>
       </div>
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-        <a href="../wristband.html" style="background:#ff4d1c;color:#fff;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:800;font-size:12px;">⏱️ Free Printable Split Wristband →</a>
+        <a href="../wristband.html" style="background:#0066ff;color:#fff;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:800;font-size:12px;">⏱️ Free Printable Split Wristband →</a>
         <a href="../gyms/index.html" style="background:#1e293b;border:1px solid #475569;color:#e2e8f0;text-decoration:none;padding:5px 11px;border-radius:6px;font-weight:700;font-size:12px;">🏋️ HYROX Gym Directory (72 Hubs)</a>
         <a href="../team_orders.html" style="color:#38bdf8;text-decoration:none;font-weight:800;font-size:12px;">Doubles 2-Packs →</a>
       </div>
