@@ -474,6 +474,13 @@ function renderCart() {
 }
 
 function openSheet(id) {
+  document.querySelectorAll(".Sheet.is-open").forEach((el) => {
+    if (el.id !== id) {
+      el.classList.remove("is-open");
+      el.setAttribute("aria-hidden", "true");
+      el.setAttribute("inert", "");
+    }
+  });
   const sheet = document.getElementById(id);
   if (!sheet) return;
   sheet.classList.add("is-open");
