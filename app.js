@@ -924,7 +924,8 @@ function onClick(event) {
 }
 
 function boot(data) {
-  PRODUCTS = data.products || [];
+  const RETIRED_SKUS = new Set(["APC-C04", "APC-C39"]); // retired logos, never show in grid or quick view
+  PRODUCTS = (data.products || []).filter((p) => !RETIRED_SKUS.has(p.id));
   GUIDES = data.guides || [];
   renderLabCities();
   renderProducts();
@@ -1000,7 +1001,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeAll();
   });
-  fetch("catalog.json?v=20261028v1")
+  fetch("catalog.json?v=20261029a")
     .then((res) => {
       if (!res.ok) throw new Error("catalog");
       return res.json();
