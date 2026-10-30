@@ -459,18 +459,6 @@
           window.location.href = href;
         });
       });
-    }).then(function(r){ return r.json(); }).then(function(chk){
-      if (chk && chk.id) {
-        window.location.href = "https://apex-hybrid-co-shop.fourthwall.com/checkout/" + encodeURIComponent(chk.id);
-      } else {
-        window.location.href = href;
-      }
-    }).catch(function(){
-      link.textContent = prevText;
-      link.style.opacity = "1";
-      window.location.href = href;
-    });
-  });
 })();
 </script>
 </body>
