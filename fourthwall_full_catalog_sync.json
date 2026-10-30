@@ -132,47 +132,6 @@
       "stripe_product_id": "APC-C03"
     },
     {
-      "sku": "APC-C04",
-      "title": "Compromised Running Club  -  Est. Kilometer One Tee",
-      "handle": "compromised-running-society-club-tee",
-      "fourthwall_handle": "apex-heavyweight-hybrid-tee-compromised-running-club",
-      "division": "Apparel",
-      "category": "Performance Tees",
-      "retail_price_usd": 38.0,
-      "compare_at_price_usd": 48.0,
-      "unit_cost_usd": 12.0,
-      "gross_profit_usd": 20.0,
-      "margin_pct": 60.0,
-      "fulfillment_partner": "Fourthwall",
-      "fourthwall_status": "PUBLIC_LIVE",
-      "fourthwall_blank": "Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall)",
-      "fourthwall_product_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-compromised-running-club",
-      "fourthwall_checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-compromised-running-club",
-      "product_page_url": "https://www.apexhybridco.com/products/compromised-running-society-club-tee.html",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
-      "colors": [
-        "Carbon Black",
-        "Warm Bone"
-      ],
-      "short_desc": "Built for the exact feeling of hitting kilometer one right after heavy sleds and walking lunges. Soft ring-spun athletic cotton  -  engineered for HYROX\u00ae training, 8-station functional racing, and compromised running intervals (available in Breathable AeroMesh or Combed Ring-Spun Cotton)  -  printed on Comfort Colors 1717 (6.1 oz 100% ring-spun garment-dyed heavyweight cotton, relaxed athletic streetwear fit, fulfilled via Fourthwall).",
-      "highlights": [
-        "Heavyweight 6.1 oz Comfort Colors 1717 ring-spun garment-dyed cotton weave for warm-weather track and brick sessions",
-        "Pre-shrunk side-seamed body prevents twisting after machine washing",
-        "Clean track-club chest emblem in off-white and safety orange",
-        "Dispatched in 2\u20134 business days from US facilities"
-      ],
-      "image_url": "https://www.apexhybridco.com/images/streetwear/apc-c04-black.png?v=20261026v3",
-      "design_svg": "https://www.apexhybridco.com/images/streetwear/apc-c04-black.png?v=20261026v3",
-      "stripe_price_id": "price_1UUb8vRut88O8nG2SOr9k0zf",
-      "stripe_product_id": "APC-C04"
-    },
-    {
       "sku": "APC-C05",
       "title": "Burpee Broad Jumps Build Character Training Tee",
       "handle": "burpee-broad-jumps-build-character-tee",
@@ -1550,47 +1509,6 @@
       "design_svg": "https://www.apexhybridco.com/images/streetwear/apc-c38-black.png?v=20261026v3",
       "stripe_price_id": "price_1UUfVrRut88O8nG2JAeO1NbV",
       "stripe_product_id": "APC-C38"
-    },
-    {
-      "sku": "APC-C39",
-      "title": "Featherweight 3.8 oz Breathable Race Tee  -  \"Zero Drag \u00b7 8 Stations \u00b7 Sub-60\"",
-      "handle": "featherweight-tri-blend-zero-drag-sub60-race-tee",
-      "fourthwall_handle": "featherweight-3-8-oz-breathable-race-tee-zero-drag-8-stations-sub-60",
-      "division": "Apparel",
-      "category": "Breathable Tech Tees",
-      "retail_price_usd": 38.0,
-      "compare_at_price_usd": 48.0,
-      "unit_cost_usd": 12.0,
-      "gross_profit_usd": 22.0,
-      "margin_pct": 60.0,
-      "fulfillment_partner": "Fourthwall",
-      "fourthwall_status": "PUBLIC_LIVE",
-      "fourthwall_blank": "Fourthwall AeroMesh Tech Tee / Comfort Colors 1717 Heavyweight Option (fulfilled via Fourthwall)",
-      "fourthwall_product_url": "https://apex-hybrid-co-shop.fourthwall.com/products/featherweight-3-8-oz-breathable-race-tee-zero-drag-8-stations-sub-60",
-      "fourthwall_checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/featherweight-3-8-oz-breathable-race-tee-zero-drag-8-stations-sub-60",
-      "product_page_url": "https://www.apexhybridco.com/products/featherweight-tri-blend-zero-drag-sub60-race-tee.html",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
-      "colors": [
-        "Carbon Black",
-        "Warm Bone"
-      ],
-      "short_desc": "Ultralight 3.8 oz breathable tri-blend performance race shirt with SUB60 Stopwatch Crest ('ZERO DRAG \u00b7 8 STATIONS \u00b7 SUB-60') for speed-focused HYROX\u00ae athletes  -  fulfilled via Fourthwall US athletic production hubs (also available in Comfort Colors 1717 heavyweight cotton or Independent Trading Co. PRM4500 warmup layer).",
-      "highlights": [
-        "Featherweight 3.8 oz moisture-wicking poly/cotton/rayon tri-blend with laser-vented shoulders",
-        "SUB60 Tachometer Dial chest logo + flatlock orange contrast seams",
-        "Feels weightless on the back half of an 8-kilometer functional race",
-        "Available in Tactical Slate-Olive and Arctic White (S\u20132XL)  -  fulfilled on-demand via Fourthwall US hubs"
-      ],
-      "image_url": "https://www.apexhybridco.com/images/streetwear/apc-c39-black.png?v=20261026v3",
-      "design_svg": "https://www.apexhybridco.com/images/streetwear/apc-c39-black.png?v=20261026v3",
-      "stripe_price_id": "price_1UUfVtRut88O8nG2geqsiORZ",
-      "stripe_product_id": "APC-C39"
     },
     {
       "sku": "APC-C40",

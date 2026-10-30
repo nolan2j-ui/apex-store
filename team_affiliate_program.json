@@ -30,7 +30,6 @@
         "APC-C36",
         "APC-C37",
         "APC-C38",
-        "APC-C39",
         "APC-C40",
         "APC-C41"
       ],
@@ -64,7 +63,6 @@
         "APC-C01",
         "APC-C02",
         "APC-C03",
-        "APC-C04",
         "APC-C06",
         "APC-C08",
         "APC-C22",
@@ -152,7 +150,6 @@
         "APC-C36",
         "APC-C37",
         "APC-C38",
-        "APC-C39",
         "APC-C40",
         "APC-C41"
       ],
@@ -178,7 +175,6 @@
       "pack_size": 5,
       "category": "Team & Run-Club Bulk",
       "eligible_skus": [
-        "APC-C04",
         "APC-C36",
         "APC-C37",
         "APC-C16",
@@ -189,9 +185,9 @@
         "APC-C21",
         "APC-C01"
       ],
-      "default_sku": "APC-C04",
-      "image": "images/streetwear/apc-c04-black.png",
-      "alt_image": "images/streetwear/apc-c04-white.png",
+      "default_sku": "APC-C01",
+      "image": "images/streetwear/apc-c01-black.png",
+      "alt_image": "images/streetwear/apc-c01-white.png",
       "regular_unit_price": 38.0,
       "regular_total_price": 190.0,
       "bundle_price": 171.0,
@@ -200,7 +196,7 @@
       "savings_pct": 10.0,
       "recommended_promo": "COACHSU10",
       "checkout_mode": "bulk_5pk",
-      "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-compromised-running-club"
+      "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-hybrid-tee-run-station-repeat"
     },
     {
       "bundle_id": "BUNDLE-GYM-10PK",
@@ -214,7 +210,6 @@
         "APC-C36",
         "APC-C37",
         "APC-C03",
-        "APC-C04",
         "APC-C08",
         "APC-C16",
         "APC-C17",

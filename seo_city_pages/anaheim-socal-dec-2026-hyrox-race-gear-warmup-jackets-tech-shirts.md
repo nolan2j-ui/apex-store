@@ -27,4 +27,4 @@ December mornings in Orange County start around 50°F outside the plaza before w
 Because Apex Hybrid & Recovery Supply is headquartered in Irvine, CA (Orange County) with California warehouse dispatch, Anaheim and SoCal orders arrive in 1–3 business days with free shipping.
 
 ### Q: What shirt prevents overheating during Anaheim's fast 1,000m laps?
-The VentTech™ Perforated Hybrid Training Shirt (APC-C38) and Featherweight 3.8 oz Sub-60 Tee (APC-C39) dump heat across the upper thoracic spine during Zone 4/5 running laps.
+The VentTech™ Perforated Hybrid Training Shirt (APC-C38) dumps heat across the upper thoracic spine during Zone 4/5 running laps.
