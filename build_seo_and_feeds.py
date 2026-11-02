@@ -1336,6 +1336,41 @@ def inject_static_seo_into_index():
         f.write(index_html)
 
 
+
+DELISTED_NOINDEX_HANDLES = ["apc-c04", "apc-c39"]
+
+def enforce_delisted_noindex():
+    """Delisted SKUs: robots noindex,nofollow, no Product JSON-LD, never in sitemap."""
+    import re as _re, json as _json
+    for h in DELISTED_NOINDEX_HANDLES:
+        fp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "products", f"{h}.html")
+        if not os.path.exists(fp):
+            continue
+        s = open(fp, encoding="utf-8").read()
+        s = _re.sub(r'\s*<meta name="robots"[^>]*>', "", s)
+        s = s.replace("<head>", '<head>\n  <meta name="robots" content="noindex,nofollow" />', 1)
+        def _strip(m):
+            try:
+                d = _json.loads(m.group(1))
+            except Exception:
+                return m.group(0)
+            if isinstance(d, dict) and "@graph" in d:
+                d["@graph"] = [g for g in d["@graph"] if g.get("@type") != "Product"]
+                if not d["@graph"]:
+                    return ""
+                return '<script type="application/ld+json">\n' + _json.dumps(d, indent=2) + '\n</script>'
+            if isinstance(d, dict) and d.get("@type") == "Product":
+                return ""
+            return m.group(0)
+        s = _re.sub(r'<script type="application/ld\+json"[^>]*>(.*?)</script>', _strip, s, flags=_re.S)
+        open(fp, "w", encoding="utf-8").write(s)
+    sm = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sitemap.xml")
+    if os.path.exists(sm):
+        x = open(sm, encoding="utf-8").read()
+        for h in DELISTED_NOINDEX_HANDLES:
+            x = _re.sub(r'\s*<url>\s*<loc>[^<]*/products/' + h + r'\.html</loc>.*?</url>', "", x, flags=_re.S)
+        open(sm, "w", encoding="utf-8").write(x)
+
 if __name__ == "__main__":
     generate_product_pages()
     generate_article_pages()
@@ -1343,5 +1378,6 @@ if __name__ == "__main__":
     generate_editorial_rss_feeds()
     generate_pinterest_csv_feed()
     generate_sitemap_and_robots()
+    enforce_delisted_noindex()
     # inject_static_seo_into_index() disabled to preserve clean index.html
     print(f"Successfully generated {len(products)} product pages, {len(guides)} SEO articles, Shopping XML/CSV feeds, and sitemap.xml")
