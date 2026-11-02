@@ -494,6 +494,7 @@ def generate_product_pages():
     }} catch (_) {{}}
   }})();
   </script>
+<script data-goatcounter="https://apexhybridco.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
 """
@@ -804,6 +805,7 @@ def generate_article_pages():
     }} catch (_) {{}}
   }})();
   </script>
+<script data-goatcounter="https://apexhybridco.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
 """
@@ -895,6 +897,7 @@ def generate_article_pages():
     }} catch (_) {{}}
   }})();
   </script>
+<script data-goatcounter="https://apexhybridco.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>'''
     with open(os.path.join(BASE_DIR, "articles", "index.html"), "w", encoding="utf-8") as out:
