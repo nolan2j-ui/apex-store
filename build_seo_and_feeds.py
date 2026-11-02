@@ -1052,6 +1052,54 @@ def generate_pinterest_csv_feed():
             )
 
 
+
+def generate_returns_page():
+    """Return & exchange policy page for Google Merchant Center (matches Offer JSON-LD)."""
+    page = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Returns, Exchanges &amp; Shipping | Apex Hybrid Co.</title>
+  <meta name="description" content="Free 30-day returns and size exchanges by mail, and free shipping on every US order from Apex Hybrid Co." />
+  <link rel="canonical" href="https://www.apexhybridco.com/returns.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>.Policy{max-width:760px;margin:0 auto;padding:56px 20px 80px;line-height:1.65}.Policy h1{font-size:34px;margin-bottom:8px}.Policy h2{font-size:21px;margin:34px 0 8px}.Policy ul{padding-left:20px}.Policy a{color:#0066ff;font-weight:600}</style>
+</head>
+<body>
+  <header class="SiteHead"><div class="Wrap" style="padding:16px 20px"><a class="Wordmark" href="index.html"><span class="Wordmark__text"><strong>Apex</strong><span>Hybrid Co.</span></span></a></div></header>
+  <main class="Policy">
+    <h1>Returns, exchanges &amp; shipping</h1>
+    <p>Wrong size? Changed your mind? We keep this simple.</p>
+    <h2>30 days, no cost to you</h2>
+    <ul>
+      <li>You have 30 days from the day your order arrives to send it back.</li>
+      <li>Size exchanges are free. So are returns: we send you a prepaid return label, and there is no restocking fee.</li>
+      <li>Items should be unworn and unwashed, with tags on.</li>
+      <li>Returns are by mail and this policy covers orders shipped within the United States.</li>
+    </ul>
+    <h2>How to start a return or exchange</h2>
+    <ol>
+      <li>Email <a href="mailto:apexhybridco@gmail.com">apexhybridco@gmail.com</a> with your order number, the item, and the size you want (or say you want a refund).</li>
+      <li>We reply with a prepaid label, usually within one business day.</li>
+      <li>Drop the package off. We ship your new size as soon as the return is scanned, or refund your original payment method once it reaches us.</li>
+    </ol>
+    <h2>Shipping</h2>
+    <p>Shipping is free on every US order. Orders are made and shipped from our US fulfillment partners, and you get a tracking link by email as soon as your order leaves.</p>
+    <h2>Questions</h2>
+    <p>Email <a href="mailto:apexhybridco@gmail.com">apexhybridco@gmail.com</a> or call <a href="tel:+19498054935">(949) 805-4935</a>. Apex Hybrid Co., 8420 Spectrum, Irvine, CA 92618.</p>
+    <p><a href="index.html">&larr; Back to the shop</a></p>
+  </main>
+<script data-goatcounter="https://apexhybridco.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
+"""
+    with open(os.path.join(BASE_DIR, "returns.html"), "w", encoding="utf-8") as f:
+        f.write(page)
+
 def generate_sitemap_and_robots():
     urls = [
         (f"{SITE_URL}/", "1.0", "daily"),
@@ -1060,6 +1108,7 @@ def generate_sitemap_and_robots():
         (f"{SITE_URL}/directory.html", "0.95", "daily"),
         (f"{SITE_URL}/wristband.html", "0.95", "daily"),
         (f"{SITE_URL}/articles/index.html", "0.9", "daily"),
+        (f"{SITE_URL}/returns.html", "0.6", "monthly"),
     ]
     city_dir = os.path.join(BASE_DIR, "seo_city_pages")
     if os.path.isdir(city_dir):
@@ -1377,6 +1426,7 @@ if __name__ == "__main__":
     generate_google_shopping_feed()
     generate_editorial_rss_feeds()
     generate_pinterest_csv_feed()
+    generate_returns_page()
     generate_sitemap_and_robots()
     enforce_delisted_noindex()
     # inject_static_seo_into_index() disabled to preserve clean index.html
