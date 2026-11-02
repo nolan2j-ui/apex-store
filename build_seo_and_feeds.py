@@ -90,7 +90,7 @@ def generate_product_pages():
                     "image": [img_url] + ([f"{SITE_URL}/{prod['alt_image']}"] if prod.get("alt_image") else []),
                     "description": short_desc + " " + " ".join(highlights),
                     "keywords": f"HYROX shirts, breathable HYROX race shirt, {title}, {dept}, hybrid athlete apparel, 8-station functional fitness gear",
-                    "brand": {"@type": "Brand", "name": "Apex Hybrid & Recovery Supply"},
+                    "brand": {"@type": "Brand", "name": "Apex Hybrid Co"},
                     "category": dept,
                     "aggregateRating": {
                         "@type": "AggregateRating",
@@ -926,7 +926,7 @@ def generate_google_shopping_feed():
       <g:availability>in_stock</g:availability>
       <g:price>{list_price}</g:price>
       <g:sale_price>{sale_price}</g:sale_price>
-      <g:brand>Apex Hybrid &amp; Recovery Supply</g:brand>
+      <g:brand>Apex Hybrid Co</g:brand>
       <g:mpn>{html.escape(prod['id'])}</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>{html.escape(g_cat)}</g:google_product_category>
