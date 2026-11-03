@@ -52,6 +52,7 @@ const STATIONS = [
 
 
 const PROMO_CODES = {
+  DALLAS10: { pct: 10, label: "Dallas Race Week (10% Off Everything)" },
   COACHSU10: { pct: 10, label: "Coach Su & The Vault Fitness (10% Off)" },
   DADBOD10: { pct: 10, label: "Hyrox DadBod (10% Off)" },
   HYROX10: { pct: 10, label: "HYROX Athlete (10% Off)" },
@@ -107,7 +108,7 @@ async function checkoutViaFourthwallApi(items, fallbackUrl) {
     if (chkData && chkData.id) {
       const promoInfo = resolvePromo(activePromo);
       if (promoInfo) {
-        const fwCode = promoInfo.code === "DADBOD10" ? "DADBOD10" : "COACHSU10";
+        const fwCode = ["DADBOD10", "DALLAS10"].includes(promoInfo.code) ? promoInfo.code : "COACHSU10";
         await fetch(`https://apex-hybrid-co-shop.fourthwall.com/api/v2/checkout/${encodeURIComponent(chkData.id)}/code`, {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -156,6 +157,8 @@ function setPromoCode(rawCode, notify = true) {
   renderCart();
   return true;
 }
+
+window.apexSetPromo = (c) => setPromoCode(c, true);
 
 function clearPromoCode() {
   activePromo = "";
