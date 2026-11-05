@@ -53,14 +53,14 @@
 .rdMain{aspect-ratio:4/5;background:#0b0f17;border-radius:10px;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .rdMain img{width:100%;height:100%;object-fit:contain;display:block}
 .rdThumbs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.rdThumb{position:relative;padding:0;border:2px solid #e4e6eb;border-radius:8px;overflow:hidden;background:#0b0f17;cursor:pointer;aspect-ratio:3/2}
+.rdThumb{position:relative;padding:0;border:2px solid #e4e6eb;border-radius:8px;overflow:hidden;background:#0b0f17;cursor:pointer;aspect-ratio:4/5}
 .rdThumb img{width:100%;height:100%;object-fit:contain;display:block}
 .rdThumb span{position:absolute;left:8px;bottom:6px;font-size:11px;font-weight:800;color:#fff;text-transform:uppercase;letter-spacing:.06em;text-shadow:0 1px 3px #000}
 .rdThumb[aria-pressed=true]{border-color:#0b0f17}
 #cityToggle button{padding:8px 16px;border-radius:999px;border:1.5px solid #0b0f17;background:#fff;font-weight:800;font-size:13px;cursor:pointer}
 #cityToggle button[aria-selected=true]{color:#0b0f17;border-color:transparent}
 #buyBtn{border-radius:8px}
-@media(max-width:700px){.rdMain{aspect-ratio:1/1}}
+@media(max-width:700px){.rdMain{aspect-ratio:4/5}}
 </style>
 <script>
 const CITIES={
