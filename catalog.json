@@ -40,29 +40,33 @@
       "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-dallas-race-day",
       "product_page_url": "https://www.apexhybridco.com/products/dallas-race-day.html",
       "fourthwall_variants": {
-        "Black": {
-          "S": "1d4a10ad-8725-4c1c-af43-7b4a2e71df95",
-          "M": "c48fde75-2fe3-4149-b445-d1be28665ad3",
-          "L": "05d3d05b-848a-4432-9c1e-0e7a9e1af7b5",
-          "XL": "ca8c2f5b-0134-4ac1-be71-0dcc205d3129",
-          "2XL": "6d02c957-c50c-4bf7-847e-5ebf4fb5adfb"
+        "S": {
+          "id": "8bf68146-4fcf-4c1e-81a0-d9678d1c8cc4",
+          "price": 68.0,
+          "sku": "XR77-5LM200S"
         },
-        "White": {
-          "S": "1d4a10ad-8725-4c1c-af43-7b4a2e71df95",
-          "M": "c48fde75-2fe3-4149-b445-d1be28665ad3",
-          "L": "05d3d05b-848a-4432-9c1e-0e7a9e1af7b5",
-          "XL": "ca8c2f5b-0134-4ac1-be71-0dcc205d3129",
-          "2XL": "6d02c957-c50c-4bf7-847e-5ebf4fb5adfb"
+        "M": {
+          "id": "8d08060f-60a4-4346-b824-af238bb5739b",
+          "price": 68.0,
+          "sku": "XR77-HN5200M"
         },
-        "Default": {
-          "S": "1d4a10ad-8725-4c1c-af43-7b4a2e71df95",
-          "M": "c48fde75-2fe3-4149-b445-d1be28665ad3",
-          "L": "05d3d05b-848a-4432-9c1e-0e7a9e1af7b5",
-          "XL": "ca8c2f5b-0134-4ac1-be71-0dcc205d3129",
-          "2XL": "6d02c957-c50c-4bf7-847e-5ebf4fb5adfb"
+        "L": {
+          "id": "df0cdaa7-038a-4a5f-a2fc-0fcdd42bd3d8",
+          "price": 68.0,
+          "sku": "XR77-N8W200L"
+        },
+        "XL": {
+          "id": "0d3fd155-509c-459a-9f56-dc3069af0b8e",
+          "price": 68.0,
+          "sku": "XR77-HL020XL"
+        },
+        "2XL": {
+          "id": "c34b65cd-b538-410d-a9e1-391b55793798",
+          "price": 70.0,
+          "sku": "XR77-HSX202X"
         }
       },
-      "fourthwall_default_variant_id": "05d3d05b-848a-4432-9c1e-0e7a9e1af7b5",
+      "fourthwall_default_variant_id": "8d08060f-60a4-4346-b824-af238bb5739b",
       "product_url": "https://www.apexhybridco.com/products/dallas-race-day.html"
     },
     {
