@@ -532,42 +532,6 @@
       "stripe_product_id": "APC-C14"
     },
     {
-      "sku": "APC-C15",
-      "title": "24oz Double-Wall Vacuum Insulated Stainless Steel Shaker Bottle",
-      "handle": "electrolyte-pacing-insulated-shaker-bottle",
-      "fourthwall_handle": "24oz-double-wall-vacuum-insulated-stainless-steel-shaker-bottle",
-      "division": "Apparel",
-      "category": "Hydration",
-      "retail_price_usd": 36.0,
-      "compare_at_price_usd": 46.0,
-      "unit_cost_usd": 12.0,
-      "gross_profit_usd": 24.0,
-      "margin_pct": 60.0,
-      "fulfillment_partner": "Fourthwall",
-      "fourthwall_status": "PUBLIC_LIVE",
-      "fourthwall_blank": "Fourthwall Custom Athletic Gear & Embroidery (fulfilled via Fourthwall US)",
-      "fourthwall_product_url": "https://apex-hybrid-co-shop.fourthwall.com/products/24oz-double-wall-vacuum-insulated-stainless-steel-shaker-bottle",
-      "fourthwall_checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/24oz-double-wall-vacuum-insulated-stainless-steel-shaker-bottle",
-      "product_page_url": "https://www.apexhybridco.com/products/electrolyte-pacing-insulated-shaker-bottle.html",
-      "sizes": [
-        "One Size"
-      ],
-      "colors": [
-        "Carbon Black"
-      ],
-      "short_desc": "Matte black 18/8 food-grade stainless steel shaker bottle with wire mixing whisk, leakproof flip cap, and 24-hour cold retention Essential durability & conditioning gear for HYROX\u00ae, DEKA\u00ae, and hybrid endurance athletes  -  fulfilled via Fourthwall US.",
-      "highlights": [
-        "Double-wall\u9285-lined vacuum insulation keeps electrolytes ice-cold for up to 24 hours",
-        "18/8 medical-grade stainless steel prevents odor retention and plastic aftertaste",
-        "Includes surgical-grade stainless wire whisk ball and internal ounce/milliliter markings",
-        "Sweat-free matte black powder coat with heavy-duty carry loop"
-      ],
-      "image_url": "https://www.apexhybridco.com/images/streetwear/apc-c15-black.png?v=20261026v3",
-      "design_svg": "https://www.apexhybridco.com/images/streetwear/apc-c15-black.png?v=20261026v3",
-      "stripe_price_id": "price_1UUb97Rut88O8nG2wjHutbEN",
-      "stripe_product_id": "APC-C15"
-    },
-    {
       "sku": "APC-C16",
       "title": "Chicago Championship Division - Navy Pier 8x1000m Club",
       "handle": "chicago-championship-division-navy-pier-hybrid-race-tee",
@@ -1345,47 +1309,6 @@
       "design_svg": "https://www.apexhybridco.com/images/streetwear/apc-c34-black.png?v=20261026v3",
       "stripe_price_id": "price_1UUfVpRut88O8nG2Okm19aJP",
       "stripe_product_id": "APC-C34"
-    },
-    {
-      "sku": "APC-C35",
-      "title": "8-Station Race Division Winged Crest Stealth",
-      "handle": "8-station-functional-race-division-oversized-stealth-hoodie",
-      "fourthwall_handle": "apex-heavyweight-recovery-hoodie-built-for-the-8-stations",
-      "division": "Apparel",
-      "category": "Pullover Hoodies",
-      "retail_price_usd": 68.0,
-      "compare_at_price_usd": 78.0,
-      "unit_cost_usd": 12.0,
-      "gross_profit_usd": 46.0,
-      "margin_pct": 60.0,
-      "fulfillment_partner": "Fourthwall",
-      "fourthwall_status": "PUBLIC_LIVE",
-      "fourthwall_blank": "Independent Trading Co. PRM4500 (9 oz heavyweight pigment-dyed fleece hoodie, fulfilled via Fourthwall)",
-      "fourthwall_product_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-recovery-hoodie-built-for-the-8-stations",
-      "fourthwall_checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-recovery-hoodie-built-for-the-8-stations",
-      "product_page_url": "https://www.apexhybridco.com/products/8-station-functional-race-division-oversized-stealth-hoodie.html",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
-      "colors": [
-        "Carbon Black",
-        "Warm Bone"
-      ],
-      "short_desc": "Matte-obsidian 9.0 oz Independent Trading Co. PRM4500 heavyweight pigment-dyed pullover hoodie (fulfilled via Fourthwall) featuring our Winged APEX Stealth Division emblem ('8-STATION RACE DIVISION  -  ENDURANCE \u00b7 STRENGTH \u00b7 RECOVERY').",
-      "highlights": [
-        "Independent Trading Co. PRM4500 (9.0 oz/yd\u00b2 heavyweight pigment-dyed ring-spun fleece hoodie, fulfilled via Fourthwall)",
-        "Relaxed drop-shoulder athletic cut layers effortlessly over breathable race tees",
-        "Zero-pill air-jet fleece interior with spandex-reinforced ribbed cuffs",
-        "Available in Sizes S\u20132XL with free US ground shipping"
-      ],
-      "image_url": "https://www.apexhybridco.com/images/streetwear/apc-c35-black.png?v=20261026v3",
-      "design_svg": "https://www.apexhybridco.com/images/streetwear/apc-c35-black.png?v=20261026v3",
-      "stripe_price_id": "price_1UUfVqRut88O8nG2qYnmvXtN",
-      "stripe_product_id": "APC-C35"
     },
     {
       "sku": "APC-C36",

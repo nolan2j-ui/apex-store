@@ -593,27 +593,6 @@
       </g:shipping>
     </item>
     <item>
-      <g:id>APC-C35</g:id>
-      <g:title>8-Station Race Division Winged Crest Stealth</g:title>
-      <g:description>Your 5:30 AM garage warmup and post-race recovery layer. Cut from heavyweight ring-spun fleece with a soft brushed interior, double-lined hood, and durable soft-hand cured graphics that hold up season after season. Built on 6.1 oz garment-dyed 100% ring-spun cotton for pre-race corral nerves, paying the sled push tax, running on heavy legs, and post-race recovery photos.</g:description>
-      <g:link>https://www.apexhybridco.com/products/8-station-functional-race-division-oversized-stealth-hoodie.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/streetwear/apc-c35-black.png?v=20261026v3</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>84.00 USD</g:price>
-      <g:sale_price>68.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid Co</g:brand>
-      <g:mpn>APC-C35</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Health &amp; Beauty &gt; Health Care &gt; Massage &amp; Relaxation</g:google_product_category>
-      <g:product_type>Hoodies &amp; Tanks &gt; Hoodies &amp; Layers</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
       <g:id>APC-C10</g:id>
       <g:title>Wall Balls &amp; Bad Decisions</g:title>
       <g:description>Your 5:30 AM garage warmup and post-race recovery layer. Cut from heavyweight ring-spun fleece with a soft brushed interior, double-lined hood, and durable soft-hand cured graphics that hold up season after season.</g:description>
@@ -1663,26 +1642,5 @@
         <g:price>0.00 USD</g:price>
       </g:shipping>
     </item>
-    <item>
-      <g:id>APC-C15</g:id>
-      <g:title>24oz Double-Wall Vacuum Insulated Stainless Steel Protein Shaker Bottle with Wire Whisk</g:title>
-      <g:description>Double-wall copper-lined 24 oz stainless steel shaker bottle with station split markers etched up the side, an internal wire whisk ball, and a leak-proof carry loop for the gym floor.</g:description>
-      <g:link>https://www.apexhybridco.com/products/electrolyte-pacing-insulated-shaker-bottle.html</g:link>
-      <g:image_link>https://www.apexhybridco.com/images/products/apc-c15-shaker.jpg?v=20261026v3</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>52.00 USD</g:price>
-      <g:sale_price>36.00 USD</g:sale_price>
-      <g:brand>Apex Hybrid Co</g:brand>
-      <g:mpn>APC-C15</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
-      <g:product_type>Training Gear &gt; Hydration</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-  </channel>
+    </channel>
 </rss>

@@ -2147,76 +2147,6 @@
       "fourthwall_default_variant_id": "bfa0bf6e-e45a-49cf-a742-85b62074ec4a"
     },
     {
-      "id": "APC-C35",
-      "handle": "8-station-functional-race-division-oversized-stealth-hoodie",
-      "title": "8-Station Race Division Winged Crest Stealth",
-      "seo_title": "8-Station Race Division Winged Crest Stealth",
-      "dept": "Hoodies",
-      "category": "Hoodies & Layers",
-      "retail_price": 68.0,
-      "list_price": 68.0,
-      "rating": 4.9,
-      "reviews": 145,
-      "image": "images/streetwear/apc-c35-black.png?v=20261028v1",
-      "alt_image": "images/streetwear/apc-c35-white.png?v=20261028v1",
-      "badge": "New Release",
-      "ship_time": "Fast US Fulfillment \u00b7 Ships in 2-5 Business Days \u00b7 100% Quality Guarantee",
-      "stock_status": "In Stock \u00b7 Printed & Shipped from US Facility",
-      "has_sizes": true,
-      "short_desc": "Your 5:30 AM garage warmup and post-race recovery layer. Cut from heavyweight ring-spun fleece with a soft brushed interior, double-lined hood, and durable soft-hand cured graphics that hold up season after season.",
-      "highlights": [
-        "Blank Quality: Heavyweight ring-spun cotton/poly brushed warmup fleece with ribbed cuffs and waistband",
-        "Fit & Sizing: Structured athletic hoodie fit that layers cleanly over your race tee or singlet",
-        "Durable Cured Print: Soft-hand graphic ink that never cracks or flakes in the dryer",
-        "Fulfillment: Fast US Fulfillment \u00b7 Ships in 2-5 Business Days \u00b7 100% Quality Guarantee"
-      ],
-      "review_quote": "The winged stealth crest makes this the cleanest hoodie in my closet. Super thick and comfortable.",
-      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
-      "stripe_product_id": "APC-C35",
-      "has_colorways": true,
-      "fulfillment_partner": "Fourthwall",
-      "fourthwall_blank": "Independent Trading Co. PRM4500 (9 oz heavyweight pigment-dyed fleece hoodie, fulfilled via Fourthwall)",
-      "stripe_price_id": "price_1UUfVqRut88O8nG2qYnmvXtN",
-      "fulfillment_method": "Fourthwall US Production & Direct Fulfillment",
-      "checkout_provider": "Fourthwall + Stripe Express Checkout",
-      "fourthwall_status": "PUBLIC_LIVE",
-      "fourthwall_handle": "apex-heavyweight-recovery-hoodie-built-for-the-8-stations",
-      "fourthwall_product_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-recovery-hoodie-built-for-the-8-stations",
-      "fourthwall_checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-recovery-hoodie-built-for-the-8-stations",
-      "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-heavyweight-recovery-hoodie-built-for-the-8-stations",
-      "product_page_url": "https://www.apexhybridco.com/products/8-station-functional-race-division-oversized-stealth-hoodie.html",
-      "fourthwall_variants": {
-        "Black": {
-          "S": "53bfa640-177d-49d0-aded-dae4af96baba",
-          "M": "e59206ce-4687-43b1-b5d3-ede760347a8b",
-          "L": "bad9bd32-e0b6-4aac-b2ef-b166c3dbb9d1",
-          "XL": "a6299d99-0dbe-4342-a8ae-7dc86ba649e5",
-          "2XL": "17774e46-713e-4e7d-a9a5-fa7fc448112d",
-          "3XL": "30d519fe-2887-45fa-97c4-538ac2a3e12f",
-          "4XL": "204314cd-c931-4819-bd3c-4e7d2045096d"
-        },
-        "White": {
-          "S": "53bfa640-177d-49d0-aded-dae4af96baba",
-          "M": "e59206ce-4687-43b1-b5d3-ede760347a8b",
-          "L": "bad9bd32-e0b6-4aac-b2ef-b166c3dbb9d1",
-          "XL": "a6299d99-0dbe-4342-a8ae-7dc86ba649e5",
-          "2XL": "17774e46-713e-4e7d-a9a5-fa7fc448112d",
-          "3XL": "30d519fe-2887-45fa-97c4-538ac2a3e12f",
-          "4XL": "204314cd-c931-4819-bd3c-4e7d2045096d"
-        },
-        "Default": {
-          "S": "53bfa640-177d-49d0-aded-dae4af96baba",
-          "M": "e59206ce-4687-43b1-b5d3-ede760347a8b",
-          "L": "bad9bd32-e0b6-4aac-b2ef-b166c3dbb9d1",
-          "XL": "a6299d99-0dbe-4342-a8ae-7dc86ba649e5",
-          "2XL": "17774e46-713e-4e7d-a9a5-fa7fc448112d",
-          "3XL": "30d519fe-2887-45fa-97c4-538ac2a3e12f",
-          "4XL": "204314cd-c931-4819-bd3c-4e7d2045096d"
-        }
-      },
-      "fourthwall_default_variant_id": "bad9bd32-e0b6-4aac-b2ef-b166c3dbb9d1"
-    },
-    {
       "id": "APC-C32",
       "handle": "burpee-broad-jumps-build-character-warmup-hoodie",
       "title": "Burpee Broad Jumps Build Character",
@@ -2936,58 +2866,6 @@
         }
       },
       "fourthwall_default_variant_id": "a1c2426f-97bb-4493-b715-852ee8e840a5"
-    },
-    {
-      "id": "APC-C15",
-      "handle": "electrolyte-pacing-insulated-shaker-bottle",
-      "title": "24oz Double-Wall Vacuum Insulated Stainless Steel Shaker Bottle",
-      "dept": "Training Gear",
-      "category": "Hydration",
-      "retail_price": 36.0,
-      "list_price": 52.0,
-      "rating": 4.8,
-      "reviews": 165,
-      "image": "images/streetwear/apc-c15-black.png?v=20261028v1",
-      "alt_image": "images/streetwear/apc-c15-white.png?v=20261028v1",
-      "badge": "",
-      "ship_time": "FREE 2\u20134 Day US Delivery",
-      "stock_status": "In Stock  -  Ships from US Warehouse",
-      "has_sizes": false,
-      "short_desc": "Double-wall copper-lined 24 oz stainless steel shaker bottle with station split markers etched up the side, an internal wire whisk ball, and a leak-proof carry loop for the gym floor.",
-      "highlights": [
-        "Double-wall copper-lined vacuum insulation keeps electrolytes ice-cold for up to 24 hours",
-        "18/8 medical-grade stainless steel prevents odor retention and plastic aftertaste",
-        "Includes surgical-grade stainless wire whisk ball and internal ounce/milliliter markings",
-        "Sweat-free matte black powder coat with heavy-duty carry loop"
-      ],
-      "review_quote": "Zero leaks in my gym bag and ice literally stays solid from morning training until evening.",
-      "stripe_account_id": "acct_1UUawuRsZaeIoAJJ",
-      "stripe_product_id": "APC-C15",
-      "stripe_price_id": "price_1UUb97Rut88O8nG2wjHutbEN",
-      "product_url": "https://apexhybridco.com/products/electrolyte-pacing-insulated-shaker-bottle.html",
-      "seo_title": "24oz Double-Wall Vacuum Insulated Stainless Steel Protein Shaker Bottle with Wire Whisk",
-      "fulfillment_partner": "Fourthwall",
-      "fourthwall_blank": "Fourthwall Custom Athletic Gear & Embroidery (fulfilled via Fourthwall US)",
-      "fulfillment_method": "Fourthwall US Production & Direct Fulfillment",
-      "checkout_provider": "Fourthwall + Stripe Express Checkout",
-      "fourthwall_status": "PUBLIC_LIVE",
-      "fourthwall_handle": "24oz-double-wall-vacuum-insulated-stainless-steel-shaker-bottle",
-      "fourthwall_product_url": "https://apex-hybrid-co-shop.fourthwall.com/products/24oz-double-wall-vacuum-insulated-stainless-steel-shaker-bottle",
-      "fourthwall_checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/24oz-double-wall-vacuum-insulated-stainless-steel-shaker-bottle",
-      "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/24oz-double-wall-vacuum-insulated-stainless-steel-shaker-bottle",
-      "product_page_url": "https://www.apexhybridco.com/products/electrolyte-pacing-insulated-shaker-bottle.html",
-      "fourthwall_variants": {
-        "Black": {
-          "17oz": "8fd5562c-358b-4ea7-aa8d-61a8cdfeb9bd"
-        },
-        "White": {
-          "17oz": "8fd5562c-358b-4ea7-aa8d-61a8cdfeb9bd"
-        },
-        "Default": {
-          "17oz": "8fd5562c-358b-4ea7-aa8d-61a8cdfeb9bd"
-        }
-      },
-      "fourthwall_default_variant_id": "8fd5562c-358b-4ea7-aa8d-61a8cdfeb9bd"
     }
   ],
   "guides": [
