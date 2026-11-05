@@ -3275,7 +3275,7 @@ Shipping Address: " style="flex:1;text-align:center;background:#0066ff;color:#ff
           });
         }).then(function(r){ return r.json(); }).then(function(chk){
           if (chk && chk.id) {
-            window.location.href = "https://apex-hybrid-co-shop.fourthwall.com/checkout/" + encodeURIComponent(chk.id);
+            window.location.href = (window.apexUtmUrl||String)("https://apex-hybrid-co-shop.fourthwall.com/checkout/" + encodeURIComponent(chk.id));
           } else {
             window.location.href = href;
           }
@@ -3287,6 +3287,7 @@ Shipping Address: " style="flex:1;text-align:center;background:#0066ff;color:#ff
       });
 })();
 </script>
+<script src="/utm.js"></script>
 <script data-goatcounter="https://apexhybridco.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

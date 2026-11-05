@@ -116,7 +116,7 @@ async function checkoutViaFourthwallApi(items, fallbackUrl) {
         }).catch(() => {});
       }
       const checkoutUrl = `https://apex-hybrid-co-shop.fourthwall.com/checkout/${encodeURIComponent(chkData.id)}`;
-      window.location.href = fourthwallUrlWithPromo(checkoutUrl);
+      window.location.href = (window.apexUtmUrl||String)(fourthwallUrlWithPromo(checkoutUrl));
       return;
     }
     throw new Error("no_checkout_id");
