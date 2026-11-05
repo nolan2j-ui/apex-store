@@ -217,15 +217,22 @@ function colorOf(p) {
   return colorChoice[p.id] || "black";
 }
 function photoOf(p) {
-  if (colorOf(p) === "white" && p.alt_image) return p.alt_image;
+  // Black-only storefront: never swap to a white colorway.
   return p.image;
 }
 function findProduct(sku) {
   return PRODUCTS.find((p) => p.id === sku);
 }
 function colorLabel(p) {
-  if (!p.alt_image) return "";
-  return colorOf(p) === "white" ? "Bone" : "Black";
+  return p.image ? "Black" : "";
+}
+function hoverPhotoOf(p) {
+  // Prefer a distinct black back/alt; never a white colorway.
+  const alt = p.alt_image || "";
+  if (!alt) return "";
+  if (/-white/i.test(alt) || /white\.png/i.test(alt)) return "";
+  if (alt.split("?")[0] === (p.image || "").split("?")[0]) return "";
+  return alt;
 }
 
 function matchesDept(p) {
@@ -303,6 +310,11 @@ const SHORT = {
   "APC-C43": "08-Station Track Shell",
   "APC-C44": "Pro Quarter-Zip Shell",
   "APC-C45": "World Series Shell",
+  "APC-C46": "Dallas Race Day",
+  "APC-C47": "Denver Race Day",
+  "APC-C48": "Anaheim Race Day",
+  "APC-C49": "Nashville Race Day",
+  "APC-C50": "Vancouver Race Day",
 };
 
 function shortTitle(p) {
@@ -331,13 +343,9 @@ function renderProducts() {
     return;
   }
   grid.innerHTML = list.map((p) => {
-    const swatches = p.alt_image ? `
-      <div class="Swatches Swatches--row">
-        <button class="Swatch Swatch--black" type="button" aria-label="Black colorway" data-color="black" data-sku="${p.id}" aria-pressed="${colorOf(p) === "black"}"></button>
-        <button class="Swatch Swatch--bone" type="button" aria-label="Bone colorway" data-color="white" data-sku="${p.id}" aria-pressed="${colorOf(p) === "white"}"></button>
-      </div>` : "";
-    const alt = p.alt_image && colorOf(p) === "black" ? p.alt_image : p.image;
-    const hover = p.alt_image ? `<img class="Card__img Card__img--b" src="${esc(alt)}" alt="" loading="lazy" decoding="async" width="1000" height="1280" />` : "";
+    const swatches = ""; // black-only — no color toggle
+    const hoverSrc = hoverPhotoOf(p);
+    const hover = hoverSrc ? `<img class="Card__img Card__img--b" src="${esc(hoverSrc)}" alt="" loading="lazy" decoding="async" width="1000" height="1250" />` : "";
     const was = p.list_price && p.list_price > p.retail_price ? `<s>${money(p.list_price)}</s>` : "";
     const badge = p.badge ? `<span class="Badge">${esc(p.badge)}</span>` : "";
     const sizes = p.has_sizes
@@ -348,7 +356,7 @@ function renderProducts() {
         <div class="Card__media">
           ${badge}
           <button class="Card__hit" type="button" data-quick="${p.id}" aria-label="Quick view ${esc(p.title)}">
-            <img class="Card__img" src="${esc(photoOf(p))}" alt="${esc(p.seo_title || p.title)}" loading="lazy" decoding="async" width="1000" height="1280" />
+            <img class="Card__img" src="${esc(photoOf(p))}" alt="${esc(p.seo_title || p.title)}" loading="lazy" decoding="async" width="1000" height="1250" />
             ${hover}
           </button>
           <div class="QuickAdd" aria-label="Add ${esc(shortTitle(p))} to bag">${sizes}</div>
@@ -511,12 +519,11 @@ function openProduct(sku) {
   trackHit("product_views_total");
   trackHit(`view_${p.id}`);
   const was = p.list_price && p.list_price > p.retail_price ? `<s>${money(p.list_price)}</s>` : "";
-  const swatches = p.alt_image ? `
+  const swatches = `
     <div class="Swatches" style="position:static;margin:12px 0">
-      <button class="Swatch Swatch--black" type="button" data-color="black" data-sku="${p.id}" aria-label="Black" aria-pressed="${colorOf(p) === "black"}"></button>
-      <button class="Swatch Swatch--bone" type="button" data-color="white" data-sku="${p.id}" aria-label="Bone" aria-pressed="${colorOf(p) === "white"}"></button>
-      <span>Color: <strong>${esc(colorLabel(p))}</strong></span>
-    </div>` : "";
+      <button class="Swatch Swatch--black" type="button" data-color="black" data-sku="${p.id}" aria-label="Black" aria-pressed="true" disabled></button>
+      <span>Color: <strong>Black</strong></span>
+    </div>`;
   const blankSelector = hasBlankChoice(p) ? `
     <div class="BlankPicker">
       <span class="BlankPicker__label">Select Shirt Blank &amp; Material</span>
@@ -814,7 +821,8 @@ function onClick(event) {
   }
   const color = event.target.closest("[data-color]");
   if (color) {
-    colorChoice[color.dataset.sku] = color.dataset.color;
+    // Black-only storefront — ignore white/bone selections.
+    colorChoice[color.dataset.sku] = "black";
     renderProducts();
     if ($("#productModal").classList.contains("is-open")) openProduct(color.dataset.sku);
     return;
@@ -834,6 +842,12 @@ function onClick(event) {
   }
   const quick = event.target.closest("[data-quick]");
   if (quick) {
+    const p = findProduct(quick.dataset.quick);
+    const page = p && (p.product_url || p.product_page_url || "");
+    if (page && /dallas-race-day\.html/i.test(page)) {
+      window.location.href = page.replace(/^https?:\/\/[^/]+/, "") || page;
+      return;
+    }
     openProduct(quick.dataset.quick);
     return;
   }
@@ -949,7 +963,7 @@ function boot(data) {
   const targetProd = buy || add;
   if (targetProd) {
     if (params.get("size")) sizeChoice[targetProd.id] = params.get("size");
-    if (params.get("color")) colorChoice[targetProd.id] = String(params.get("color")).toLowerCase().includes("white") ? "white" : "black";
+    if (params.get("color")) colorChoice[targetProd.id] = "black";
     if (params.get("blank")) blankChoice[targetProd.id] = String(params.get("blank")).toLowerCase().includes("3.8") || String(params.get("blank")).toLowerCase().includes("light") ? "light" : "heavy";
   }
   if (buy) {

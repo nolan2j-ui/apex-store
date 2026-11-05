@@ -18,10 +18,10 @@
     <nav aria-label="Breadcrumb" style="font-size:12.5px;color:#555;margin-bottom:18px;"><a href="../index.html" style="color:#0066ff;font-weight:700;">Home</a> › <a href="../index.html?dept=Lightweight Jackets" style="color:#0066ff;font-weight:700;">Lightweight Jackets</a> › <span id="crumb">Apex "Dallas Race Day"</span></nav>
     <div class="ProdModalGrid" style="background:#fff;border:1px solid #e4e6eb;border-radius:12px;padding:28px;">
       <div class="rdGallery">
-        <div class="rdMain"><img id="mainImg" src="../images/streetwear/dallas-race-day/mock_front.jpg?v=20261105b" alt='Apex "Dallas Race Day" front' /></div>
+        <div class="rdMain"><img id="mainImg" src="../images/streetwear/dallas-race-day/mock_front.jpg?v=20261105c" alt='Apex "Dallas Race Day" front' /></div>
         <div id="thumbs" class="rdThumbs">
-          <button type="button" class="rdThumb" data-v="front" aria-label="Front view"><img id="thFront" src="../images/streetwear/dallas-race-day/mock_front.jpg?v=20261105b" alt="Front" /><span>Front</span></button>
-          <button type="button" class="rdThumb" data-v="back" aria-label="Back view"><img id="thBack" src="../images/streetwear/dallas-race-day/mock_back.jpg?v=20261105b" alt="Back" /><span>Back</span></button>
+          <button type="button" class="rdThumb" data-v="front" aria-label="Front view"><img id="thFront" src="../images/streetwear/dallas-race-day/mock_front.jpg?v=20261105c" alt="Front" /><span>Front</span></button>
+          <button type="button" class="rdThumb" data-v="back" aria-label="Back view"><img id="thBack" src="../images/streetwear/dallas-race-day/mock_back.jpg?v=20261105c" alt="Back" /><span>Back</span></button>
         </div>
       </div>
       <div>
@@ -64,11 +64,11 @@
 </style>
 <script>
 const CITIES={
-dallas:{n:"Dallas",d:"Nov 18–22, 2026",v:"Kay Bailey Center",a:"#74dd94",b:"#eaed78",f:"../images/streetwear/dallas-race-day/mock_front.jpg?v=20261105b",bk:"../images/streetwear/dallas-race-day/mock_back.jpg?v=20261105b",buy:"https://apex-hybrid-co-shop.fourthwall.com/products/apex-dallas-race-day-printable"},
-denver:{n:"Denver",d:"Nov 12–15, 2026",v:"Stockyards Event Ctr",a:"#5B8DEF",b:"#E8EEF7",f:"../images/streetwear/denver-race-day/mock_front.jpg?v=20261105b",bk:"../images/streetwear/denver-race-day/mock_back.jpg?v=20261105b",buy:"https://apex-hybrid-co-shop.fourthwall.com/products/apex-denver-race-day"},
-anaheim:{n:"Anaheim",d:"Dec 3–6, 2026",v:"Anaheim Conv Center",a:"#F47A38",b:"#C4A35A",f:"../images/streetwear/anaheim-race-day/mock_front.jpg?v=20261105b",bk:"../images/streetwear/anaheim-race-day/mock_back.jpg?v=20261105b",buy:"https://apex-hybrid-co-shop.fourthwall.com/products/apex-anaheim-race-day"},
-nashville:{n:"Nashville",d:"Dec 9–13, 2026",v:"Music City Center",a:"#E8B923",b:"#FF4FA3",f:"../images/streetwear/nashville-race-day/mock_front.jpg?v=20261105b",bk:"../images/streetwear/nashville-race-day/mock_back.jpg?v=20261105b",buy:"https://apex-hybrid-co-shop.fourthwall.com/products/apex-nashville-race-day"},
-vancouver:{n:"Vancouver",d:"Dec 17–20, 2026",v:"Vancouver Conv Centre",a:"#1F6F5B",b:"#7EC8C4",f:"../images/streetwear/vancouver-race-day/mock_front.jpg?v=20261105b",bk:"../images/streetwear/vancouver-race-day/mock_back.jpg?v=20261105b",buy:"https://apex-hybrid-co-shop.fourthwall.com/products/apex-vancouver-race-day"}};
+dallas:{n:"Dallas",d:"Nov 18–22, 2026",v:"Kay Bailey Center",a:"#74dd94",b:"#eaed78",f:"../images/streetwear/dallas-race-day/mock_front.jpg?v=20261105c",bk:"../images/streetwear/dallas-race-day/mock_back.jpg?v=20261105c",buy:"https://apex-hybrid-co-shop.fourthwall.com/products/apex-dallas-race-day-printable"},
+denver:{n:"Denver",d:"Nov 12–15, 2026",v:"Stockyards Event Ctr",a:"#5B8DEF",b:"#E8EEF7",f:"../images/streetwear/denver-race-day/mock_front.jpg?v=20261105c",bk:"../images/streetwear/denver-race-day/mock_back.jpg?v=20261105c",buy:"https://apex-hybrid-co-shop.fourthwall.com/products/apex-denver-race-day"},
+anaheim:{n:"Anaheim",d:"Dec 3–6, 2026",v:"Anaheim Conv Center",a:"#F47A38",b:"#C4A35A",f:"../images/streetwear/anaheim-race-day/mock_front.jpg?v=20261105c",bk:"../images/streetwear/anaheim-race-day/mock_back.jpg?v=20261105c",buy:"https://apex-hybrid-co-shop.fourthwall.com/products/apex-anaheim-race-day"},
+nashville:{n:"Nashville",d:"Dec 9–13, 2026",v:"Music City Center",a:"#E8B923",b:"#FF4FA3",f:"../images/streetwear/nashville-race-day/mock_front.jpg?v=20261105c",bk:"../images/streetwear/nashville-race-day/mock_back.jpg?v=20261105c",buy:"https://apex-hybrid-co-shop.fourthwall.com/products/apex-nashville-race-day"},
+vancouver:{n:"Vancouver",d:"Dec 17–20, 2026",v:"Vancouver Conv Centre",a:"#1F6F5B",b:"#7EC8C4",f:"../images/streetwear/vancouver-race-day/mock_front.jpg?v=20261105c",bk:"../images/streetwear/vancouver-race-day/mock_back.jpg?v=20261105c",buy:"https://apex-hybrid-co-shop.fourthwall.com/products/apex-vancouver-race-day"}};
 function showView(v){window._v=v;const c=window._c;if(!c)return;mainImg.src=v==="back"?c.bk:c.f;mainImg.alt='Apex "'+c.n+' Race Day" '+v;
 document.querySelectorAll(".rdThumb").forEach(t=>t.setAttribute("aria-pressed",t.dataset.v===v));}
 document.querySelectorAll(".rdThumb").forEach(t=>t.onclick=()=>showView(t.dataset.v));
