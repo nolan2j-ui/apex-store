@@ -421,7 +421,7 @@
       .Pin{background:linear-gradient(180deg,#0b0f17 0%,#111827 100%);color:#f8fafc;padding:22px 0 30px}
       .Pin__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center}
       .Pin__img{display:block;width:100%;background:#0f141d;border:1px solid #1f2937;border-radius:14px;padding:0;cursor:pointer;overflow:hidden}
-      .Pin__img img{display:block;width:100%;height:auto;max-height:540px;object-fit:cover;object-position:center 45%}
+      .Pin__img img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center center;background:#0f141d}
       .Pin__eyebrow{font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#38bdf8;margin:0 0 8px}
       .Pin h2{font-size:clamp(28px,4vw,44px);line-height:1.02;letter-spacing:-0.04em;margin:0 0 10px;color:#fff}
       .Pin__price{font-size:22px;font-weight:900;margin:0 0 4px;color:#fff}
@@ -435,7 +435,7 @@
       .Pin__cta .Btn{flex:1 1 160px;justify-content:center;text-align:center;font-weight:900;min-height:50px}
       .Pin__trust{list-style:none;display:flex;flex-wrap:wrap;gap:6px 16px;padding:0;margin:14px 0 0;font-size:12.5px;color:#94a3b8}
       .Pin__trust li::before{content:"✓ ";color:#38bdf8;font-weight:900}
-      @media (max-width:760px){.Pin__grid{grid-template-columns:1fr;gap:16px}.Pin__img img{max-height:330px}.Pin h2{font-size:30px}.Pin{padding:14px 0 24px}.RW__link{width:100%;text-align:center}}
+      @media (max-width:760px){.Pin__grid{grid-template-columns:1fr;gap:16px}.Pin__img img{max-height:none}.Pin h2{font-size:30px}.Pin{padding:14px 0 24px}.RW__link{width:100%;text-align:center}}
     </style>
     <section class="RW" aria-label="HYROX Dallas race week">
       <div class="Wrap RW__bar">
@@ -446,7 +446,7 @@
     <section class="Pin" aria-label="Featured: Apex Race Day jacket">
       <div class="Wrap Pin__grid">
         <a class="Pin__img" href="products/dallas-race-day.html#denver" data-goatcounter-click="click-pinned-raceday-image" aria-label="View Apex Denver Race Day jacket">
-          <img src="images/streetwear/denver-race-day/mock_back.jpg?v=20261105c" alt="Apex Denver Race Day jacket, back design" fetchpriority="high" decoding="async" style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:10px" />
+          <img src="images/streetwear/denver-race-day/mock_back.jpg?v=20261106frame" alt="Apex Denver Race Day jacket, back design" fetchpriority="high" decoding="async" style="width:100%;height:auto;max-height:none;object-fit:contain;object-position:center center;background:#0f141d;border-radius:10px" />
         </a>
         <div>
           <p class="Pin__eyebrow">New · Next race Nov 12–15 · Denver</p>
