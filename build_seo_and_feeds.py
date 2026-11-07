@@ -42,6 +42,11 @@ os.makedirs(os.path.join(BASE_DIR, "articles"), exist_ok=True)
 
 def google_category_for(prod):
     dept = prod.get("dept", "")
+    category = prod.get("category", "")
+    # Headwear is a clothing accessory. Do not bury it under the Training Gear
+    # department's Sporting Goods bucket. Gym bags stay non-apparel.
+    if category == "Headwear":
+        return "Apparel & Accessories > Clothing Accessories > Hats"
     if dept in ("Tees & Pump Covers", "Breathable Tech Shirts", "Race City Editions", "Muscle Tanks"):
         return "Apparel & Accessories > Clothing > Shirts & Tops"
     if dept == "Hoodies":
@@ -909,12 +914,32 @@ def is_apparel_product(prod):
     return google_category_for(prod).startswith("Apparel & Accessories")
 
 
+# Delisted artwork. Never emit these even if they reappear in the catalog.
+BANNED_FEED_IDS = {"APC-C04", "APC-C39"}
+
+
+def sold_color(prod):
+    """Return black only with a source other than a duplicated White variant map.
+
+    White/Default maps often repeat the Black variant id and do not prove a
+    second color is sold. A black image filename, or an explicit black-only
+    description on a product with no colorways, does.
+    """
+    image = (prod.get("image") or "").lower()
+    if "-black." in image or "-black?" in image:
+        return "black"
+    if prod.get("has_colorways") is False:
+        blob = f"{prod.get('short_desc') or ''} {prod.get('title') or ''}".lower()
+        if "black" in blob:
+            return "black"
+    return None
+
+
 def catalog_size_variant_ids(prod):
     """Sold size -> Fourthwall variant id from catalog.json.
 
-    Apparel entries are stored under the Black colorway (White repeats the same
-    ids and is not a separate sold colorway). Dallas Race Day stores a flat
-    size map. Empty or color-only maps return nothing.
+    Read the Black map or a flat size map. Ignore White and Default keys:
+    those copies reuse the same variant ids and are not evidence of color.
     """
     fv = prod.get("fourthwall_variants") or {}
     if not isinstance(fv, dict) or not fv:
@@ -1007,13 +1032,13 @@ def merchant_item_xml(prod, *, item_id, title, price, sale_price, apparel=None):
         "      <g:identifier_exists>no</g:identifier_exists>",
     ]
     if apparel:
-        lines.extend([
-            f"      <g:item_group_id>{html.escape(prod['id'])}</g:item_group_id>",
-            "      <g:age_group>adult</g:age_group>",
-            "      <g:gender>unisex</g:gender>",
-            "      <g:color>black</g:color>",
-            f"      <g:size>{html.escape(apparel['size'])}</g:size>",
-        ])
+        lines.append(f"      <g:item_group_id>{html.escape(prod['id'])}</g:item_group_id>")
+        lines.append("      <g:age_group>adult</g:age_group>")
+        lines.append("      <g:gender>unisex</g:gender>")
+        if apparel.get("color"):
+            lines.append(f"      <g:color>{html.escape(apparel['color'])}</g:color>")
+        if apparel.get("size"):
+            lines.append(f"      <g:size>{html.escape(apparel['size'])}</g:size>")
     lines.extend([
         f"      <g:google_product_category>{html.escape(g_cat)}</g:google_product_category>",
         f"      <g:product_type>{html.escape(prod['dept'])} &gt; {html.escape(prod['category'])}</g:product_type>",
@@ -1030,9 +1055,10 @@ def merchant_item_xml(prod, *, item_id, title, price, sale_price, apparel=None):
 def generate_google_shopping_feed():
     """Write google_merchant_feed.xml and google_shopping_feed.xml.
 
-    Apparel gets one item per verified Fourthwall size. Products with no
-    verified sizes are omitted rather than given a guessed size. Training-gear
-    items stay single rows and do not receive apparel attributes.
+    Clothing, including the Headwear cap, gets one item per verified size.
+    Products with no verified sizes are omitted rather than given a guessed
+    size. The gym bag stays a non-apparel row. APC-C04 and APC-C39 are never
+    emitted.
     """
     fw_variants = load_fourthwall_variant_prices()
     items_xml = []
@@ -1040,7 +1066,13 @@ def generate_google_shopping_feed():
     apparel_products = []
     non_apparel = []
     for prod in products:
-        g_cat = google_category_for(prod)
+        if prod["id"] in BANNED_FEED_IDS or prod.get("handle") in DELISTED_NOINDEX_HANDLES:
+            gaps.append(f"{prod['id']}: banned design excluded")
+            continue
+        image = (prod.get("image") or "").lower()
+        if "apc-c04" in image or "apc-c39" in image:
+            gaps.append(f"{prod['id']}: banned artwork image excluded")
+            continue
         title = prod.get("seo_title") or prod["title"]
         if not is_apparel_product(prod):
             retail = float(prod["retail_price"])
@@ -1059,16 +1091,23 @@ def generate_google_shopping_feed():
         if not offers:
             gaps.append(f"{prod['id']}: apparel omitted; no verified sold sizes")
             continue
+        color = sold_color(prod)
+        if not color:
+            gaps.append(f"{prod['id']}: color omitted; no black image or black-only description")
         apparel_products.append(prod["id"])
         for offer in offers:
             price, sale = feed_prices(prod, offer["price"])
+            # One sold size keeps the existing product id. Multiple sizes need
+            # a stable suffix so each variant stays unique.
+            item_id = prod["id"] if len(offers) == 1 else f"{prod['id']}-{offer['size']}"
+            variant_title = title if len(offers) == 1 else f"{title} - {offer['size']}"
             items_xml.append(merchant_item_xml(
                 prod,
-                item_id=f"{prod['id']}-{offer['size']}",
-                title=f"{title} - {offer['size']}",
+                item_id=item_id,
+                title=variant_title,
                 price=price,
                 sale_price=sale,
-                apparel=offer,
+                apparel={**offer, "color": color},
             ))
 
     rss_xml = f"""<?xml version="1.0" encoding="UTF-8"?>

@@ -6829,7 +6829,12 @@
       <g:brand>Apex Hybrid Co</g:brand>
       <g:mpn>APC-C13</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>Sporting Goods &gt; Exercise &amp; Fitness</g:google_product_category>
+      <g:item_group_id>APC-C13</g:item_group_id>
+      <g:age_group>adult</g:age_group>
+      <g:gender>unisex</g:gender>
+      <g:color>black</g:color>
+      <g:size>One size</g:size>
+      <g:google_product_category>Apparel &amp; Accessories &gt; Clothing Accessories &gt; Hats</g:google_product_category>
       <g:product_type>Training Gear &gt; Headwear</g:product_type>
       <g:shipping>
         <g:country>US</g:country>
