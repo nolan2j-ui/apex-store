@@ -79,7 +79,7 @@ cityBar.style.background="linear-gradient(90deg,"+c.a+","+c.b+")";
 dallasCopy.style.display=k==="dallas"?"":"none";
 buyBtn.dataset.city=k;crumb.textContent=cityName.textContent;
 if(!window._d){window._d=[citySub.innerHTML,cityHL.innerHTML];}
-if(k==="dallas"){citySub.innerHTML=_d[0];cityHL.innerHTML=_d[1];}else{citySub.textContent="Packable race warmup · Black with "+c.a+"→"+c.b+" fade & white crest · Made to order · S–XL $68, 2XL $70";cityHL.innerHTML="<li>Left-chest crest</li><li>Black garment · "+c.a+"→"+c.b+" + white artwork</li><li>Lightweight, packable, water-resistant shell</li><li>Limited "+c.n+" race-week run</li>";}
+if(k==="dallas"){citySub.innerHTML=_d[0];cityHL.innerHTML=_d[1];}else{citySub.textContent="Packable race warmup · Black with "+c.a+"→"+c.b+" fade & white crest · Made to order · XS–XL $68, 2XL $70, 3XL $72";cityHL.innerHTML="<li>Left-chest crest</li><li>Black garment · "+c.a+"→"+c.b+" + white artwork</li><li>Lightweight, packable, water-resistant shell</li><li>Limited "+c.n+" race-week run</li>";}
 if(c.buy){buyBtn.href=c.buy;buyBtn.textContent="Buy Now · $68.00 →";buyBtn.style.opacity="";buyBtn.style.pointerEvents="";buyBtn.removeAttribute("aria-disabled");}
 else{buyBtn.removeAttribute("href");buyBtn.textContent="Coming soon · "+c.n;buyBtn.style.opacity=".55";buyBtn.style.pointerEvents="none";buyBtn.setAttribute("aria-disabled","true");}
 document.querySelectorAll("#cityToggle button").forEach(b=>{const on=b.dataset.c===k;b.setAttribute("aria-selected",on);b.style.background=on?"linear-gradient(90deg,"+c.a+","+c.b+")":"#fff";});}

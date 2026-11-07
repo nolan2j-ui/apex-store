@@ -958,6 +958,15 @@ def catalog_size_variant_ids(prod):
     return {}
 
 
+def load_city_jacket_variant_file():
+    """Live Fourthwall pull for Denver, Anaheim, Nashville, and Vancouver."""
+    path = os.path.join(BASE_DIR, "fourthwall_city_jacket_variants.json")
+    if not os.path.exists(path):
+        return {}
+    data = json.load(open(path, encoding="utf-8"))
+    return data
+
+
 def load_fourthwall_variant_prices():
     """Size prices and ids from app.js FW_VARIANTS, the checkout source."""
     path = os.path.join(BASE_DIR, "app.js")
@@ -970,14 +979,37 @@ def load_fourthwall_variant_prices():
     return json.loads(raw)
 
 
-def verified_size_offers(prod, fw_variants):
+def verified_size_offers(prod, fw_variants, city_jackets=None):
     """Sizes whose catalog variant id matches Fourthwall and has a price.
 
     Returns (offers, gaps). Offers are not invented: a size is dropped when
-    either source lacks it or the ids disagree.
+    either source lacks it or the ids disagree. The city-jacket file is
+    authoritative for APC-C47 through APC-C50 and must agree with catalog
+    and the checkout map.
     """
     catalog_ids = catalog_size_variant_ids(prod)
     fw_entry = (fw_variants.get(prod["id"]) or {}).get("variants") or {}
+    city = (city_jackets or {}).get(prod["id"])
+    if city:
+        offers = []
+        gaps = []
+        expected_url = city["url"]
+        actual_url = prod.get("fourthwall_product_url") or ""
+        if actual_url != expected_url:
+            gaps.append(f"{prod['id']}: Fourthwall URL {actual_url} != verified {expected_url}")
+        prices = city_jackets["prices"]
+        for size, variant_id in city["variants"].items():
+            price = float(prices[size])
+            cat_id = catalog_ids.get(size)
+            fw_size = fw_entry.get(size) or {}
+            if cat_id != variant_id or fw_size.get("id") != variant_id or float(fw_size.get("price") or -1) != price:
+                gaps.append(f"{prod['id']} {size}: city-jacket record disagrees with catalog or checkout map")
+                continue
+            offers.append({"size": size, "variant_id": variant_id, "price": price})
+        extra = [size for size in list(catalog_ids) + list(fw_entry) if size not in city["variants"]]
+        for size in sorted(set(extra)):
+            gaps.append(f"{prod['id']} {size}: size is not in the verified city-jacket pull")
+        return offers, gaps
     offers = []
     gaps = []
     for size, variant_id in catalog_ids.items():
@@ -1061,6 +1093,11 @@ def generate_google_shopping_feed():
     emitted.
     """
     fw_variants = load_fourthwall_variant_prices()
+    city_file = load_city_jacket_variant_file()
+    city_products = city_file.get("products") or {}
+    if city_products:
+        city_products = dict(city_products)
+        city_products["prices"] = city_file.get("prices") or {}
     items_xml = []
     gaps = []
     apparel_products = []
@@ -1086,7 +1123,7 @@ def generate_google_shopping_feed():
             ))
             non_apparel.append(prod["id"])
             continue
-        offers, offer_gaps = verified_size_offers(prod, fw_variants)
+        offers, offer_gaps = verified_size_offers(prod, fw_variants, city_products)
         gaps.extend(offer_gaps)
         if not offers:
             gaps.append(f"{prod['id']}: apparel omitted; no verified sold sizes")
