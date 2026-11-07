@@ -42,6 +42,11 @@ os.makedirs(os.path.join(BASE_DIR, "articles"), exist_ok=True)
 
 def google_category_for(prod):
     dept = prod.get("dept", "")
+    category = prod.get("category", "")
+    # Headwear is a clothing accessory. Do not bury it under the Training Gear
+    # department's Sporting Goods bucket. Gym bags stay non-apparel.
+    if category == "Headwear":
+        return "Apparel & Accessories > Clothing Accessories > Hats"
     if dept in ("Tees & Pump Covers", "Breathable Tech Shirts", "Race City Editions", "Muscle Tanks"):
         return "Apparel & Accessories > Clothing > Shirts & Tops"
     if dept == "Hoodies":
@@ -904,40 +909,243 @@ def generate_article_pages():
         out.write(hub_html)
 
 
-def generate_google_shopping_feed():
-    items_xml = []
-    for prod in products:
-        link = f"{SITE_URL}/products/{prod['handle']}.html"
-        img_link = f"{SITE_URL}/{prod['image']}"
-        price = f"{prod['retail_price']:.2f} USD"
-        sale_price = f"{prod['retail_price']:.2f} USD"
-        list_price = f"{(prod.get('list_price') or prod['retail_price']):.2f} USD"
-        g_cat = google_category_for(prod)
-        feed_title = prod.get("seo_title", prod["title"])
+def is_apparel_product(prod):
+    """Apparel is whatever the Merchant category already classifies as apparel."""
+    return google_category_for(prod).startswith("Apparel & Accessories")
 
-        items_xml.append(
-            f"""    <item>
-      <g:id>{html.escape(prod['id'])}</g:id>
-      <g:title>{html.escape(feed_title)}</g:title>
-      <g:description>{html.escape(prod['short_desc'])}</g:description>
-      <g:link>{link}</g:link>
-      <g:image_link>{img_link}</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>{list_price}</g:price>
-      <g:sale_price>{sale_price}</g:sale_price>
-      <g:brand>Apex Hybrid Co</g:brand>
-      <g:mpn>{html.escape(prod['id'])}</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>{html.escape(g_cat)}</g:google_product_category>
-      <g:product_type>{html.escape(prod['dept'])} &gt; {html.escape(prod['category'])}</g:product_type>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>"""
-        )
+
+# Delisted artwork. Never emit these even if they reappear in the catalog.
+BANNED_FEED_IDS = {"APC-C04", "APC-C39"}
+
+
+def sold_color(prod):
+    """Return black only with a source other than a duplicated White variant map.
+
+    White/Default maps often repeat the Black variant id and do not prove a
+    second color is sold. A black image filename, or an explicit black-only
+    description on a product with no colorways, does.
+    """
+    image = (prod.get("image") or "").lower()
+    if "-black." in image or "-black?" in image:
+        return "black"
+    if prod.get("has_colorways") is False:
+        blob = f"{prod.get('short_desc') or ''} {prod.get('title') or ''}".lower()
+        if "black" in blob:
+            return "black"
+    return None
+
+
+def catalog_size_variant_ids(prod):
+    """Sold size -> Fourthwall variant id from catalog.json.
+
+    Read the Black map or a flat size map. Ignore White and Default keys:
+    those copies reuse the same variant ids and are not evidence of color.
+    """
+    fv = prod.get("fourthwall_variants") or {}
+    if not isinstance(fv, dict) or not fv:
+        return {}
+    if all(isinstance(v, dict) and v.get("id") for v in fv.values()):
+        return {size: info["id"] for size, info in fv.items()}
+    black = fv.get("Black")
+    if isinstance(black, dict):
+        ids = {}
+        for size, val in black.items():
+            if isinstance(val, str) and val:
+                ids[size] = val
+            elif isinstance(val, dict) and val.get("id"):
+                ids[size] = val["id"]
+        return ids
+    return {}
+
+
+def load_city_jacket_variant_file():
+    """Live Fourthwall pull for Denver, Anaheim, Nashville, and Vancouver."""
+    path = os.path.join(BASE_DIR, "fourthwall_city_jacket_variants.json")
+    if not os.path.exists(path):
+        return {}
+    data = json.load(open(path, encoding="utf-8"))
+    return data
+
+
+def load_fourthwall_variant_prices():
+    """Size prices and ids from app.js FW_VARIANTS, the checkout source."""
+    path = os.path.join(BASE_DIR, "app.js")
+    text = open(path, encoding="utf-8").read()
+    marker = "const FW_VARIANTS = "
+    start = text.find(marker)
+    if start < 0:
+        raise RuntimeError("FW_VARIANTS missing from app.js")
+    raw = text[start + len(marker):].split("\n", 1)[0].rstrip().rstrip(";")
+    return json.loads(raw)
+
+
+def verified_size_offers(prod, fw_variants, city_jackets=None):
+    """Sizes whose catalog variant id matches Fourthwall and has a price.
+
+    Returns (offers, gaps). Offers are not invented: a size is dropped when
+    either source lacks it or the ids disagree. The city-jacket file is
+    authoritative for APC-C47 through APC-C50 and must agree with catalog
+    and the checkout map.
+    """
+    catalog_ids = catalog_size_variant_ids(prod)
+    fw_entry = (fw_variants.get(prod["id"]) or {}).get("variants") or {}
+    city = (city_jackets or {}).get(prod["id"])
+    if city:
+        offers = []
+        gaps = []
+        expected_url = city["url"]
+        actual_url = prod.get("fourthwall_product_url") or ""
+        if actual_url != expected_url:
+            gaps.append(f"{prod['id']}: Fourthwall URL {actual_url} != verified {expected_url}")
+        prices = city_jackets["prices"]
+        for size, variant_id in city["variants"].items():
+            price = float(prices[size])
+            cat_id = catalog_ids.get(size)
+            fw_size = fw_entry.get(size) or {}
+            if cat_id != variant_id or fw_size.get("id") != variant_id or float(fw_size.get("price") or -1) != price:
+                gaps.append(f"{prod['id']} {size}: city-jacket record disagrees with catalog or checkout map")
+                continue
+            offers.append({"size": size, "variant_id": variant_id, "price": price})
+        extra = [size for size in list(catalog_ids) + list(fw_entry) if size not in city["variants"]]
+        for size in sorted(set(extra)):
+            gaps.append(f"{prod['id']} {size}: size is not in the verified city-jacket pull")
+        return offers, gaps
+    offers = []
+    gaps = []
+    for size, variant_id in catalog_ids.items():
+        fw_size = fw_entry.get(size)
+        if not fw_size or fw_size.get("id") != variant_id or fw_size.get("price") is None:
+            gaps.append(f"{prod['id']} {size}: catalog/Fourthwall variant mismatch")
+            continue
+        offers.append({
+            "size": size,
+            "variant_id": variant_id,
+            "price": float(fw_size["price"]),
+        })
+    fw_only = [size for size in fw_entry if size not in catalog_ids]
+    for size in fw_only:
+        gaps.append(f"{prod['id']} {size}: Fourthwall size missing from catalog")
+    if not catalog_ids and not fw_entry:
+        gaps.append(f"{prod['id']}: no size variants in catalog or Fourthwall")
+    return offers, gaps
+
+
+def money_usd(amount):
+    return f"{float(amount):.2f} USD"
+
+
+def feed_prices(prod, variant_price):
+    """Keep the existing list/sale pair when it still applies to this size."""
+    retail = float(prod["retail_price"])
+    list_price = float(prod.get("list_price") or retail)
+    if variant_price == retail and list_price > retail:
+        return money_usd(list_price), money_usd(variant_price)
+    return money_usd(variant_price), money_usd(variant_price)
+
+
+def merchant_item_xml(prod, *, item_id, title, price, sale_price, apparel=None):
+    link = f"{SITE_URL}/products/{prod['handle']}.html"
+    image = prod.get("image") or ""
+    img_link = image if image.startswith("http") else f"{SITE_URL}/{image.lstrip('/')}"
+    g_cat = google_category_for(prod)
+    lines = [
+        "    <item>",
+        f"      <g:id>{html.escape(item_id)}</g:id>",
+        f"      <g:title>{html.escape(title)}</g:title>",
+        f"      <g:description>{html.escape(prod['short_desc'])}</g:description>",
+        f"      <g:link>{html.escape(link)}</g:link>",
+        f"      <g:image_link>{html.escape(img_link)}</g:image_link>",
+        "      <g:condition>new</g:condition>",
+        "      <g:availability>in_stock</g:availability>",
+        f"      <g:price>{price}</g:price>",
+        f"      <g:sale_price>{sale_price}</g:sale_price>",
+        "      <g:brand>Apex Hybrid Co</g:brand>",
+        f"      <g:mpn>{html.escape(prod['id'])}</g:mpn>",
+        "      <g:identifier_exists>no</g:identifier_exists>",
+    ]
+    if apparel:
+        lines.append(f"      <g:item_group_id>{html.escape(prod['id'])}</g:item_group_id>")
+        lines.append("      <g:age_group>adult</g:age_group>")
+        lines.append("      <g:gender>unisex</g:gender>")
+        if apparel.get("color"):
+            lines.append(f"      <g:color>{html.escape(apparel['color'])}</g:color>")
+        if apparel.get("size"):
+            lines.append(f"      <g:size>{html.escape(apparel['size'])}</g:size>")
+    lines.extend([
+        f"      <g:google_product_category>{html.escape(g_cat)}</g:google_product_category>",
+        f"      <g:product_type>{html.escape(prod['dept'])} &gt; {html.escape(prod['category'])}</g:product_type>",
+        "      <g:shipping>",
+        "        <g:country>US</g:country>",
+        "        <g:service>Standard Ground</g:service>",
+        "        <g:price>0.00 USD</g:price>",
+        "      </g:shipping>",
+        "    </item>",
+    ])
+    return "\n".join(lines)
+
+
+def generate_google_shopping_feed():
+    """Write google_merchant_feed.xml and google_shopping_feed.xml.
+
+    Clothing, including the Headwear cap, gets one item per verified size.
+    Products with no verified sizes are omitted rather than given a guessed
+    size. The gym bag stays a non-apparel row. APC-C04 and APC-C39 are never
+    emitted.
+    """
+    fw_variants = load_fourthwall_variant_prices()
+    city_file = load_city_jacket_variant_file()
+    city_products = city_file.get("products") or {}
+    if city_products:
+        city_products = dict(city_products)
+        city_products["prices"] = city_file.get("prices") or {}
+    items_xml = []
+    gaps = []
+    apparel_products = []
+    non_apparel = []
+    for prod in products:
+        if prod["id"] in BANNED_FEED_IDS or prod.get("handle") in DELISTED_NOINDEX_HANDLES:
+            gaps.append(f"{prod['id']}: banned design excluded")
+            continue
+        image = (prod.get("image") or "").lower()
+        if "apc-c04" in image or "apc-c39" in image:
+            gaps.append(f"{prod['id']}: banned artwork image excluded")
+            continue
+        title = prod.get("seo_title") or prod["title"]
+        if not is_apparel_product(prod):
+            retail = float(prod["retail_price"])
+            price, sale = feed_prices(prod, retail)
+            items_xml.append(merchant_item_xml(
+                prod,
+                item_id=prod["id"],
+                title=title,
+                price=price,
+                sale_price=sale,
+            ))
+            non_apparel.append(prod["id"])
+            continue
+        offers, offer_gaps = verified_size_offers(prod, fw_variants, city_products)
+        gaps.extend(offer_gaps)
+        if not offers:
+            gaps.append(f"{prod['id']}: apparel omitted; no verified sold sizes")
+            continue
+        color = sold_color(prod)
+        if not color:
+            gaps.append(f"{prod['id']}: color omitted; no black image or black-only description")
+        apparel_products.append(prod["id"])
+        for offer in offers:
+            price, sale = feed_prices(prod, offer["price"])
+            # One sold size keeps the existing product id. Multiple sizes need
+            # a stable suffix so each variant stays unique.
+            item_id = prod["id"] if len(offers) == 1 else f"{prod['id']}-{offer['size']}"
+            variant_title = title if len(offers) == 1 else f"{title} - {offer['size']}"
+            items_xml.append(merchant_item_xml(
+                prod,
+                item_id=item_id,
+                title=variant_title,
+                price=price,
+                sale_price=sale,
+                apparel={**offer, "color": color},
+            ))
 
     rss_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
@@ -949,10 +1157,23 @@ def generate_google_shopping_feed():
   </channel>
 </rss>
 """
-    with open(os.path.join(BASE_DIR, "google_shopping_feed.xml"), "w", encoding="utf-8") as f:
-        f.write(rss_xml)
-    with open(os.path.join(BASE_DIR, "google_merchant_feed.xml"), "w", encoding="utf-8") as f:
-        f.write(rss_xml)
+    for filename in ("google_shopping_feed.xml", "google_merchant_feed.xml"):
+        with open(os.path.join(BASE_DIR, filename), "w", encoding="utf-8") as f:
+            f.write(rss_xml)
+    summary = {
+        "items": len(items_xml),
+        "apparel_products": apparel_products,
+        "non_apparel": non_apparel,
+        "gaps": gaps,
+    }
+    print(
+        f"Merchant feed: {len(items_xml)} items, "
+        f"{len(apparel_products)} apparel products, "
+        f"{len(non_apparel)} non-apparel, {len(gaps)} gaps"
+    )
+    for gap in gaps:
+        print(f"  gap: {gap}")
+    return summary
 
 
 

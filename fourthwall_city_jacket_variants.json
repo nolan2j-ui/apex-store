@@ -1,0 +1,73 @@
+{
+  "pulled": "2026-11-06T17:10-08:00",
+  "color": "Black",
+  "currency": "USD",
+  "prices": {
+    "XS": 68,
+    "S": 68,
+    "M": 68,
+    "L": 68,
+    "XL": 68,
+    "2XL": 70,
+    "3XL": 72
+  },
+  "all_in_stock": true,
+  "products": {
+    "APC-C47": {
+      "city": "Denver",
+      "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-denver-race-day",
+      "product_id": "9a79017e-dcca-4326-ae11-3a3615aad893",
+      "variants": {
+        "XS": "d18be3b5-e1c0-41db-9c6e-4af872a0656e",
+        "S": "b4bb75cd-7351-41d2-8c5b-edb645c79901",
+        "M": "49a70789-ff66-4530-8883-b775102487c9",
+        "L": "04d6fe08-b677-455d-8f0b-34da2541ffbc",
+        "XL": "284b13ab-b857-4849-bfe9-f8437e23e0eb",
+        "2XL": "609497f7-f428-4269-b954-ce8b2975082e",
+        "3XL": "784f7aee-911e-4cbf-8a50-fc3955d0c9ed"
+      }
+    },
+    "APC-C48": {
+      "city": "Anaheim",
+      "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-anaheim-race-day",
+      "product_id": "557755d0-1893-401e-a335-b0328b63252d",
+      "variants": {
+        "XS": "09b2e4e6-3b63-418f-9669-085406f68b76",
+        "S": "9aaaa0cc-34b8-44fd-b190-2fbd05010cfd",
+        "M": "84739359-672a-4505-a6ea-c85c4a654a82",
+        "L": "dfb61407-e94f-42a3-9040-5baf77f33357",
+        "XL": "6f908b2e-83dc-4f09-9ca0-4035aabe3bb0",
+        "2XL": "636e0288-b874-4af0-9029-65faeef71345",
+        "3XL": "aaba7ca1-cc86-4de2-b164-30d1fa6e6b70"
+      }
+    },
+    "APC-C49": {
+      "city": "Nashville",
+      "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-nashville-race-day",
+      "product_id": "3e3e391e-287f-4d3c-96b7-8ac2cecc6494",
+      "variants": {
+        "XS": "3b359a10-5903-41aa-a561-6f25116ecc0b",
+        "S": "cc1685fc-4451-4048-a24c-ec36c6840bf3",
+        "M": "33e2fb39-ec59-4f54-87c1-115abac69ddc",
+        "L": "544f0ee9-427c-40d5-bcba-9d521c178385",
+        "XL": "53f97ac6-0c6b-4944-a24c-fe7221789f8c",
+        "2XL": "2281f7f4-f0a0-4d78-b6a6-74acd468d0d6",
+        "3XL": "fa56b60f-2650-4043-9d0d-57e4df78abf0"
+      }
+    },
+    "APC-C50": {
+      "city": "Vancouver",
+      "url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-vancouver-race-day",
+      "product_id": "005256ff-7622-4e7c-b3cf-48949baa6aa6",
+      "variants": {
+        "XS": "55bb3750-8434-4166-b1dd-414a77a343b7",
+        "S": "4f5ffa91-d8de-4a55-ae84-61f0e84db1c3",
+        "M": "14b9fd59-4309-4f54-ac2d-be4baab7b2b0",
+        "L": "756a654f-ea4d-4ee9-99c5-7ce6f60eff73",
+        "XL": "e8da8e96-d2a6-42b2-8e67-d52578ed34a1",
+        "2XL": "5d6b7c07-e61f-4bfa-a4fd-aea9b86c12f0",
+        "3XL": "336d2761-2b13-4060-b748-54a99426f77e"
+      }
+    }
+  }
+}

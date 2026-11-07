@@ -90,7 +90,7 @@
       "short_desc": "Denver Race Day packable warmup — black with left-chest crest. Stockyards Event Ctr · Nov 12–15, 2026.",
       "highlights": [
         "Black Denver Race Day jacket · left-chest + full back print",
-        "Made to order · S–XL $68 · 2XL $70",
+        "Made to order · XS–XL $68 · 2XL $70 · 3XL $72",
         "Free US shipping on Fourthwall checkout",
         "Limited Denver race-week run"
       ],
@@ -108,8 +108,37 @@
       "fourthwall_checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-denver-race-day",
       "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-denver-race-day",
       "product_page_url": "https://www.apexhybridco.com/products/dallas-race-day.html#denver",
-      "fourthwall_variants": {},
-      "fourthwall_default_variant_id": null,
+      "fourthwall_variants": {
+        "XS": {
+          "id": "d18be3b5-e1c0-41db-9c6e-4af872a0656e",
+          "price": 68.0
+        },
+        "S": {
+          "id": "b4bb75cd-7351-41d2-8c5b-edb645c79901",
+          "price": 68.0
+        },
+        "M": {
+          "id": "49a70789-ff66-4530-8883-b775102487c9",
+          "price": 68.0
+        },
+        "L": {
+          "id": "04d6fe08-b677-455d-8f0b-34da2541ffbc",
+          "price": 68.0
+        },
+        "XL": {
+          "id": "284b13ab-b857-4849-bfe9-f8437e23e0eb",
+          "price": 68.0
+        },
+        "2XL": {
+          "id": "609497f7-f428-4269-b954-ce8b2975082e",
+          "price": 70.0
+        },
+        "3XL": {
+          "id": "784f7aee-911e-4cbf-8a50-fc3955d0c9ed",
+          "price": 72.0
+        }
+      },
+      "fourthwall_default_variant_id": "49a70789-ff66-4530-8883-b775102487c9",
       "product_url": "https://www.apexhybridco.com/products/dallas-race-day.html#denver"
     },
     {
@@ -133,7 +162,7 @@
       "short_desc": "Anaheim Race Day packable warmup — black with left-chest crest. Anaheim Conv Center · Dec 3–6, 2026.",
       "highlights": [
         "Black Anaheim Race Day jacket · left-chest + full back print",
-        "Made to order · S–XL $68 · 2XL $70",
+        "Made to order · XS–XL $68 · 2XL $70 · 3XL $72",
         "Free US shipping on Fourthwall checkout",
         "Limited Anaheim race-week run"
       ],
@@ -151,8 +180,37 @@
       "fourthwall_checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-anaheim-race-day",
       "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-anaheim-race-day",
       "product_page_url": "https://www.apexhybridco.com/products/dallas-race-day.html#anaheim",
-      "fourthwall_variants": {},
-      "fourthwall_default_variant_id": null,
+      "fourthwall_variants": {
+        "XS": {
+          "id": "09b2e4e6-3b63-418f-9669-085406f68b76",
+          "price": 68.0
+        },
+        "S": {
+          "id": "9aaaa0cc-34b8-44fd-b190-2fbd05010cfd",
+          "price": 68.0
+        },
+        "M": {
+          "id": "84739359-672a-4505-a6ea-c85c4a654a82",
+          "price": 68.0
+        },
+        "L": {
+          "id": "dfb61407-e94f-42a3-9040-5baf77f33357",
+          "price": 68.0
+        },
+        "XL": {
+          "id": "6f908b2e-83dc-4f09-9ca0-4035aabe3bb0",
+          "price": 68.0
+        },
+        "2XL": {
+          "id": "636e0288-b874-4af0-9029-65faeef71345",
+          "price": 70.0
+        },
+        "3XL": {
+          "id": "aaba7ca1-cc86-4de2-b164-30d1fa6e6b70",
+          "price": 72.0
+        }
+      },
+      "fourthwall_default_variant_id": "84739359-672a-4505-a6ea-c85c4a654a82",
       "product_url": "https://www.apexhybridco.com/products/dallas-race-day.html#anaheim"
     },
     {
@@ -176,7 +234,7 @@
       "short_desc": "Nashville Race Day packable warmup — black with left-chest crest. Music City Center · Dec 9–13, 2026.",
       "highlights": [
         "Black Nashville Race Day jacket · left-chest + full back print",
-        "Made to order · S–XL $68 · 2XL $70",
+        "Made to order · XS–XL $68 · 2XL $70 · 3XL $72",
         "Free US shipping on Fourthwall checkout",
         "Limited Nashville race-week run"
       ],
@@ -194,8 +252,37 @@
       "fourthwall_checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-nashville-race-day",
       "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-nashville-race-day",
       "product_page_url": "https://www.apexhybridco.com/products/dallas-race-day.html#nashville",
-      "fourthwall_variants": {},
-      "fourthwall_default_variant_id": null,
+      "fourthwall_variants": {
+        "XS": {
+          "id": "3b359a10-5903-41aa-a561-6f25116ecc0b",
+          "price": 68.0
+        },
+        "S": {
+          "id": "cc1685fc-4451-4048-a24c-ec36c6840bf3",
+          "price": 68.0
+        },
+        "M": {
+          "id": "33e2fb39-ec59-4f54-87c1-115abac69ddc",
+          "price": 68.0
+        },
+        "L": {
+          "id": "544f0ee9-427c-40d5-bcba-9d521c178385",
+          "price": 68.0
+        },
+        "XL": {
+          "id": "53f97ac6-0c6b-4944-a24c-fe7221789f8c",
+          "price": 68.0
+        },
+        "2XL": {
+          "id": "2281f7f4-f0a0-4d78-b6a6-74acd468d0d6",
+          "price": 70.0
+        },
+        "3XL": {
+          "id": "fa56b60f-2650-4043-9d0d-57e4df78abf0",
+          "price": 72.0
+        }
+      },
+      "fourthwall_default_variant_id": "33e2fb39-ec59-4f54-87c1-115abac69ddc",
       "product_url": "https://www.apexhybridco.com/products/dallas-race-day.html#nashville"
     },
     {
@@ -219,7 +306,7 @@
       "short_desc": "Vancouver Race Day packable warmup — black with left-chest crest. Vancouver Conv Centre · Dec 17–20, 2026.",
       "highlights": [
         "Black Vancouver Race Day jacket · left-chest + full back print",
-        "Made to order · S–XL $68 · 2XL $70",
+        "Made to order · XS–XL $68 · 2XL $70 · 3XL $72",
         "Free US shipping on Fourthwall checkout",
         "Limited Vancouver race-week run"
       ],
@@ -237,8 +324,37 @@
       "fourthwall_checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-vancouver-race-day",
       "checkout_url": "https://apex-hybrid-co-shop.fourthwall.com/products/apex-vancouver-race-day",
       "product_page_url": "https://www.apexhybridco.com/products/dallas-race-day.html#vancouver",
-      "fourthwall_variants": {},
-      "fourthwall_default_variant_id": null,
+      "fourthwall_variants": {
+        "XS": {
+          "id": "55bb3750-8434-4166-b1dd-414a77a343b7",
+          "price": 68.0
+        },
+        "S": {
+          "id": "4f5ffa91-d8de-4a55-ae84-61f0e84db1c3",
+          "price": 68.0
+        },
+        "M": {
+          "id": "14b9fd59-4309-4f54-ac2d-be4baab7b2b0",
+          "price": 68.0
+        },
+        "L": {
+          "id": "756a654f-ea4d-4ee9-99c5-7ce6f60eff73",
+          "price": 68.0
+        },
+        "XL": {
+          "id": "e8da8e96-d2a6-42b2-8e67-d52578ed34a1",
+          "price": 68.0
+        },
+        "2XL": {
+          "id": "5d6b7c07-e61f-4bfa-a4fd-aea9b86c12f0",
+          "price": 70.0
+        },
+        "3XL": {
+          "id": "336d2761-2b13-4060-b748-54a99426f77e",
+          "price": 72.0
+        }
+      },
+      "fourthwall_default_variant_id": "14b9fd59-4309-4f54-ac2d-be4baab7b2b0",
       "product_url": "https://www.apexhybridco.com/products/dallas-race-day.html#vancouver"
     },
     {
